@@ -13,5 +13,5 @@ type-check:
 test:
 	poetry run pytest -s --cov=food_co2_estimator --cov-report=term-missing --cov-fail-under=80
 
-all: install lint-check format
+all: install lint format type-check test
 

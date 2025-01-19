@@ -63,10 +63,13 @@ def generate_output(
         co2_data = ingredient.co2_per_kg_db
         search_result = ingredient.co2_per_kg_search
 
+        weight_key = "Weight" if language == Languages.English else "Vægt"
+        search_key = "Search" if language == Languages.English else "Søgning"
+
         comments = {
-            "Weight": weight_estimate.weight_calculation if weight_estimate else None,
+            weight_key: weight_estimate.weight_calculation if weight_estimate else None,
             "DB": co2_data.explanation if co2_data else None,
-            "Search": search_result.explanation if search_result else None,
+            search_key: search_result.explanation if search_result else None,
         }
 
         all_comments.append(

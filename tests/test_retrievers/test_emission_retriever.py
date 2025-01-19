@@ -3,7 +3,7 @@ from typing import List, Tuple
 import pytest
 from langchain_core.documents import Document
 
-from food_co2_estimator.retrievers.emission_retriever import (
+from food_co2_estimator.retrievers.vector_db_retriever import (
     INGREDIENT_UNITS,
     NUMBER_WORDS,
     batch_emission_retriever,
@@ -220,7 +220,8 @@ def test_parse_retriever_output():
     assert result == expected
 
 
-def test_batch_emission_retriever(monkeypatch: pytest.MonkeyPatch):
+@pytest.mark.asyncio
+async def test_batch_emission_retriever(monkeypatch: pytest.MonkeyPatch):
     # Arrange
     ingredients = ["2 kg tomatoes", "1 liter milk", "3 large eggs"]
 
@@ -231,19 +232,19 @@ def test_batch_emission_retriever(monkeypatch: pytest.MonkeyPatch):
     }
 
     class MockRetrieverChain:
-        def batch(self, inputs):
+        async def abatch(self, inputs: List[str]):
             return list(mock_retriever_output.values())
 
     def mock_get_emission_retriever_chain(*args, **kwargs):
         return MockRetrieverChain()
 
     monkeypatch.setattr(
-        "food_co2_estimator.retrievers.emission_retriever.get_emission_retriever_chain",
+        "food_co2_estimator.retrievers.vector_db_retriever.get_emission_retriever_chain",
         mock_get_emission_retriever_chain,
     )
 
     # Act
-    result = batch_emission_retriever(ingredients)
+    result = await batch_emission_retriever(ingredients)
 
     # Assert
     expected = dict(zip(ingredients, mock_retriever_output.values()))

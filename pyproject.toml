@@ -35,6 +35,7 @@ openpyxl = "^3.1.2"
 tqdm = "^4.67.0"
 pytest-cov = "^4.0.0"
 pytest-mock = "^3.14.0"
+pytest-asyncio = "^0.25.2"
 
 
 [build-system]
@@ -55,4 +56,9 @@ reportMissingTypeStubs = false
 reportUnknownVariableType = false
 
 [tool.pytest.ini_options]
-filterwarnings = ["ignore::DeprecationWarning:pydantic.*:"]
+addopts = "-vv --cov=food_co2_estimator --cov-report=term-missing"
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::DeprecationWarning:pydantic.*:",
+    "ignore::DeprecationWarning:bs4.builder._lxml",
+]

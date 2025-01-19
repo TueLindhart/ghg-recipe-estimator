@@ -4,7 +4,7 @@ from food_co2_estimator.prompt_templates.rag_co2_estimator import (
     RAG_CO2_EMISSION_PROMPT,
 )
 from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions
-from food_co2_estimator.retrievers.emission_retriever import batch_emission_retriever
+from food_co2_estimator.retrievers.vector_db_retriever import batch_emission_retriever
 from food_co2_estimator.utils.openai_model import get_model
 
 
