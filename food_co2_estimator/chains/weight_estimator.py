@@ -2,7 +2,7 @@ from typing import Any
 
 from langchain.schema.runnable import RunnableSerializable
 
-from food_co2_estimator.logging import log_with_url
+from food_co2_estimator.logging_wrapper import log_with_url
 from food_co2_estimator.prompt_templates.weight_estimator import WEIGHT_EST_PROMPT
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates

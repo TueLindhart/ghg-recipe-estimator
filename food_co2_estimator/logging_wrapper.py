@@ -1,8 +1,10 @@
 import functools
 import inspect
+import logging
 
-from food_co2_estimator.main import logger
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
+
+logger = logging.getLogger("CO2Estimator")
 
 
 def log_with_url(func):

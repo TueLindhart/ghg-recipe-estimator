@@ -3,7 +3,7 @@ from langchain_core.runnables import RunnablePassthrough
 from food_co2_estimator.chains.rag_co2_estimator import (
     weight_above_negligeble_threshold,
 )
-from food_co2_estimator.logging import log_with_url
+from food_co2_estimator.logging_wrapper import log_with_url
 from food_co2_estimator.prompt_templates.search_co2_estimator import (
     SEARCH_CO2_EMISSION_PROMPT,
 )

@@ -17,8 +17,6 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
 from food_co2_estimator.url.url2markdown import get_markdown_from_url
 from food_co2_estimator.utils import generate_output
 
-logger = logging.getLogger(__name__)
-
 
 def log_expeption_message(url: str, message: str):
     logging.exception(f"URL={url}: {message}")
@@ -117,17 +115,12 @@ async def async_estimator(
 if __name__ == "__main__":
     from time import time
 
-    # url = "https://www.valdemarsro.dk/spaghetti-bolognese/"
-    # url = "https://www.valdemarsro.dk/greasy-portobello-burger-med-boenneboef/"
-    # url = "https://www.valdemarsro.dk/red-thai-curry/"
-    # url = "https://www.bbcgoodfood.com/recipes/best-spaghetti-bolognese-recipe"
-
-    url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
-    url = "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
-    url = "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
-    url = "https://gourministeriet.dk/vores-favorit-bolognese/"
-    url = "https://hot-thai-kitchen.com/green-curry-new-2/"
-    url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
+    # url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
+    # url = "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
+    # url = "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
+    # url = "https://gourministeriet.dk/vores-favorit-bolognese/"
+    # url = "https://hot-thai-kitchen.com/green-curry-new-2/"
+    # url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
     url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
 
     start_time = time()
