@@ -1,160 +1,23 @@
 import asyncio
-import functools
-import inspect
 import logging
-import re
 
-from food_co2_estimator.chains.rag_co2_estimator import rag_co2_emission_chain
-from food_co2_estimator.chains.recipe_extractor import get_recipe_extractor_chain
-from food_co2_estimator.chains.search_co2_estimator import get_search_co2_emission_chain
-from food_co2_estimator.chains.translator import get_translation_chain
-from food_co2_estimator.chains.weight_estimator import get_weight_estimator_chain
-from food_co2_estimator.language.detector import Languages, detect_language
-from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions
-from food_co2_estimator.pydantic_models.recipe_extractor import (
-    EnrichedIngredient,
-    EnrichedRecipe,
-    ExtractedRecipe,
+from food_co2_estimator.chains.rag_co2_estimator import (
+    get_co2_emissions,
 )
-from food_co2_estimator.pydantic_models.search_co2_estimator import CO2SearchResults
-from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
+from food_co2_estimator.chains.recipe_extractor import (
+    extract_recipe,
+)
+from food_co2_estimator.chains.search_co2_estimator import get_co2_search_emissions
+from food_co2_estimator.chains.translator import get_translation_chain
+from food_co2_estimator.chains.weight_estimator import get_weight_estimates
+from food_co2_estimator.language.detector import Languages, detect_language
+from food_co2_estimator.pydantic_models.recipe_extractor import (
+    EnrichedRecipe,
+)
 from food_co2_estimator.url.url2markdown import get_markdown_from_url
 from food_co2_estimator.utils import generate_output
 
-NUMBER_PERSONS_REGEX = r".*\?antal=(\d+)"
-
 logger = logging.getLogger(__name__)
-
-
-def log_with_url(func):
-    """
-    Decorator that tries to find 'url' in the call.
-      1) If kwargs['url'] is present, use that.
-      2) Else if kwargs['recipe'] is an EnrichedRecipe with a .url field, use that.
-      3) Else use "NO_URL_FOUND".
-    Logs 'Calling function...' before and 'Finished function...' after.
-    """
-
-    def _get_url(args, kwargs: dict[str, str]):
-        extracted_url = kwargs.get("url", None)
-        if extracted_url is not None:
-            return extracted_url
-
-        all_args = [arg for arg in args] + [value for value in kwargs.values()]
-        for arg in all_args:
-            if isinstance(arg, EnrichedRecipe):
-                return arg.url
-
-        return "NO_URL_FOUND"
-
-    @functools.wraps(func)
-    def sync_wrapper(*args, **kwargs):
-        # Try to get url from kwargs['url']
-        extracted_url = _get_url(args, kwargs)
-
-        logger.info("URL=%s: Calling function: %s", extracted_url, func.__name__)
-        result = func(*args, **kwargs)
-        logger.info("URL=%s: Finished function: %s", extracted_url, func.__name__)
-        return result
-
-    @functools.wraps(func)
-    async def async_wrapper(*args, **kwargs):
-        extracted_url = _get_url(args, kwargs)
-        logger.info("URL=%s: Calling function: %s", extracted_url, func.__name__)
-        result = await func(*args, **kwargs)
-        logger.info("URL=%s: Finished function: %s", extracted_url, func.__name__)
-        return result
-
-    # Return the async or sync wrapper depending on the original function
-    if inspect.iscoroutinefunction(func):
-        return async_wrapper
-
-    return sync_wrapper
-
-
-@log_with_url
-async def get_co2_emissions(
-    verbose: bool,
-    negligeble_threshold: float,
-    recipe: EnrichedRecipe,
-) -> CO2Emissions:
-    emission_chain = rag_co2_emission_chain(verbose)
-
-    ingredients_input = [
-        item.en_name
-        for item in recipe.ingredients
-        if weight_above_negligeble_threshold(item, negligeble_threshold)
-    ]
-
-    parsed_rag_emissions: CO2Emissions = await emission_chain.ainvoke(ingredients_input)
-
-    return parsed_rag_emissions
-
-
-def weight_above_negligeble_threshold(
-    item: EnrichedIngredient, negligeble_threshold: float
-) -> bool:
-    return (
-        item.weight_estimate is not None
-        and item.weight_estimate.weight_in_kg is not None
-        and item.weight_estimate.weight_in_kg >= negligeble_threshold
-    )
-
-
-@log_with_url
-async def extract_recipe(text: str, url: str, verbose: bool) -> ExtractedRecipe:
-    recipe_extractor_chain = get_recipe_extractor_chain(verbose=verbose)
-    recipe: ExtractedRecipe = await recipe_extractor_chain.ainvoke({"input": text})
-
-    # If number is provided in url, then use that instead of llm estimate
-    persons = extract_person_from_url(url)
-    recipe.persons = persons if isinstance(persons, int) else recipe.persons
-
-    return recipe
-
-
-def extract_person_from_url(url) -> int | None:
-    match = re.match(NUMBER_PERSONS_REGEX, url)
-    if match:
-        return int(match.group(1))
-
-
-@log_with_url
-async def get_weight_estimates(
-    verbose: bool, recipe: EnrichedRecipe
-) -> WeightEstimates:
-    weight_estimator_chain = get_weight_estimator_chain(verbose=verbose)
-    weight_output: WeightEstimates = await weight_estimator_chain.ainvoke(
-        {"input": recipe.get_ingredients_en_name_list()}
-    )  # type: ignore
-
-    return weight_output
-
-
-@log_with_url
-async def get_co2_search_emissions(
-    verbose: bool,
-    recipe: EnrichedRecipe,
-    negligeble_threshold: float,
-) -> CO2SearchResults:
-    co2_search_input_items = [
-        item.en_name
-        for item in recipe.ingredients
-        if co2_per_kg_not_found(item)
-        and weight_above_negligeble_threshold(item, negligeble_threshold)
-        and item.en_name is not None
-    ]
-    if not co2_search_input_items:
-        return CO2SearchResults(search_results=[])
-    search_chain = get_search_co2_emission_chain(verbose=verbose)
-    search_results: CO2SearchResults = await search_chain.ainvoke(
-        co2_search_input_items
-    )  # type: ignore
-    return search_results
-
-
-def co2_per_kg_not_found(item: EnrichedIngredient):
-    return item.co2_per_kg_db is None or item.co2_per_kg_db.co2_per_kg is None
 
 
 def log_expeption_message(url: str, message: str):
