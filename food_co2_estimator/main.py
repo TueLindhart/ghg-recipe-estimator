@@ -117,17 +117,17 @@ async def async_estimator(
 if __name__ == "__main__":
     from time import time
 
-    # url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
-    # url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
     # url = "https://www.valdemarsro.dk/spaghetti-bolognese/"
-    # url = "https://www.valdemarsro.dk/hjemmelavede-burgere/"
     # url = "https://www.valdemarsro.dk/greasy-portobello-burger-med-boenneboef/"
     # url = "https://www.valdemarsro.dk/red-thai-curry/"
     # url = "https://www.bbcgoodfood.com/recipes/best-spaghetti-bolognese-recipe"
-    # url = "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
-    # url = "https://gourministeriet.dk/vores-favorit-bolognese/"
-    # url = "https://hot-thai-kitchen.com/green-curry-new-2/"
-    # url = "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
+
+    url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
+    url = "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
+    url = "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
+    url = "https://gourministeriet.dk/vores-favorit-bolognese/"
+    url = "https://hot-thai-kitchen.com/green-curry-new-2/"
+    url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
     url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
 
     start_time = time()
