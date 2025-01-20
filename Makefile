@@ -1,5 +1,5 @@
 install:
-	poetry install --with test --no-root --no-interaction
+	poetry install --with test --no-interaction
 
 lint:
 	poetry run ruff check --fix
