@@ -38,6 +38,7 @@ pytest = "^8.3.4"
 pytest-cov = "^4.0.0"
 pytest-mock = "^3.14.0"
 pytest-asyncio = "^0.25.2"
+pytest-xdist = "^3.6.1"
 
 
 [build-system]
@@ -58,9 +59,10 @@ reportMissingTypeStubs = false
 reportUnknownVariableType = false
 
 [tool.pytest.ini_options]
-addopts = "-vv --cov=food_co2_estimator --cov-report=term-missing"
+addopts = "-vv -n auto"
 testpaths = ["tests"]
 filterwarnings = [
     "ignore::DeprecationWarning:pydantic.*:",
     "ignore::DeprecationWarning:bs4.builder._lxml",
 ]
+asyncio_default_fixture_loop_scope = "function"

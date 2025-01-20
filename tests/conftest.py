@@ -20,18 +20,13 @@ def dummy_recipe():
 
 
 @pytest.fixture(params=TEST_URLS.keys())
-def markdown_content(request: pytest.FixtureRequest):
+def markdown_and_expected_extracted_recipe(request: pytest.FixtureRequest):
     file_name = request.param
     input_filepath = os.path.join(TEXT_INPUT_DIR, file_name + ".md")
     with open(input_filepath, "r", encoding="utf-8") as file:
-        text = file.read()
-    return text
+        markdown_text = file.read()
 
-
-@pytest.fixture(params=TEST_URLS.keys())
-def expected_extracted_recipe(request: pytest.FixtureRequest):
-    file_name = request.param
     expected_output_filepath = os.path.join(EXTRACTED_RECIPE_DIR, file_name + ".json")
     with open(expected_output_filepath, "r", encoding="utf-8") as file:
         expected_output = json.load(file)
-    return ExtractedRecipe(**expected_output)
+    return markdown_text, ExtractedRecipe(**expected_output)

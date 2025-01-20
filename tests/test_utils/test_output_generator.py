@@ -363,6 +363,12 @@ def enriched_recipe_search_danish():
             ),
         ),
     ],
+    ids=[
+        "test_db_english",
+        "test_search_english",
+        "test_db_danish",
+        "test_search_danish",
+    ],
 )
 def test_generate_output(
     request: pytest.FixtureRequest,
