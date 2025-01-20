@@ -4,7 +4,7 @@ from typing import List
 from langchain_core.documents import Document
 from langchain_core.vectorstores import VectorStoreRetriever
 
-from food_co2_estimator.data.vector_store import get_vector_store
+from food_co2_estimator.data.vector_store.vector_store import get_vector_store
 
 # List of number words to recognize spelled-out quantities
 NUMBER_WORDS = [
