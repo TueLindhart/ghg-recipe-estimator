@@ -23,8 +23,7 @@ jobs:
           cache: "poetry"
 
       - name: Install dependencies
-        run: |
-          make install
+        run: poetry install --with test --no-interaction
 
       - name: Check linting
         run: |
