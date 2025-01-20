@@ -40,7 +40,7 @@ async def test_extract_recipe_with_persons_in_url(
     assert result == dummy_recipe
 
 
-# @pytest.mark.asyncio(loop_scope="function")
+# @pytest.mark.asyncio
 # async def test_extract_recipe_chain(
 #     markdown_and_expected_extracted_recipe: tuple[str, ExtractedRecipe],
 # ):
