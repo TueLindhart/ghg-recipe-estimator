@@ -1,12 +1,14 @@
 import json
 import os
 
+from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
     ExtractedRecipe,
 )
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 from tests.data_paths import (
+    CO2_EMISSIONS_DIR,
     ENRICHED_RECIPE_DIR,
     EXTRACTED_RECIPE_DIR,
     TEXT_INPUT_DIR,
@@ -55,3 +57,10 @@ def get_expected_enriched_recipe(file_name: str) -> EnrichedRecipe:
 def get_expected_weight_estimates(file_name: str) -> WeightEstimates:
     weight_estimates_json = load_json_file(folder=WEIGHT_EST_DIR, file_name=file_name)
     return WeightEstimates(**weight_estimates_json)
+
+
+def get_expected_rag_co2_estimates(file_name: str) -> CO2Emissions:
+    rag_co2_emissions_json = load_json_file(
+        folder=CO2_EMISSIONS_DIR, file_name=file_name
+    )
+    return CO2Emissions(**rag_co2_emissions_json)

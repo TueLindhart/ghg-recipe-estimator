@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 import pytest
 
 from food_co2_estimator.pydantic_models.recipe_extractor import (
@@ -7,6 +9,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
 from tests.load_files import (
     get_expected_enriched_recipe,
     get_expected_extracted_recipe,
+    get_expected_rag_co2_estimates,
     get_expected_weight_estimates,
     get_recipe_markdown_text,
 )
@@ -37,10 +40,23 @@ def enriched_recipe_fixture(request: pytest.FixtureRequest):
     return file_name, get_expected_enriched_recipe(file_name)
 
 
+@pytest.fixture
 def enriched_recipe_with_weight_est_fixture(
     enriched_recipe_fixture: tuple[str, EnrichedRecipe],
 ) -> tuple[str, EnrichedRecipe]:
     file_name, enriched_recipe = enriched_recipe_fixture
+    enriched_recipe = deepcopy(enriched_recipe)
     weight_estimates = get_expected_weight_estimates(file_name)
     enriched_recipe.update_with_weight_estimates(weight_estimates)
+    return file_name, enriched_recipe
+
+
+@pytest.fixture
+def enriched_recipe_with_co2_est_fixture(
+    enriched_recipe_with_weight_est_fixture: tuple[str, EnrichedRecipe],
+) -> tuple[str, EnrichedRecipe]:
+    file_name, enriched_recipe = enriched_recipe_with_weight_est_fixture
+    enriched_recipe = deepcopy(enriched_recipe)
+    co2_estimates = get_expected_rag_co2_estimates(file_name)
+    enriched_recipe.update_with_co2_per_kg_db(co2_estimates)
     return file_name, enriched_recipe

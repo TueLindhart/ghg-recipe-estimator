@@ -1,115 +1,134 @@
 {
     "emissions": [
         {
-            "explanation": "Best match for a small onion is raw onion.",
+            "closest_match_argument": "Matched based on Rule 1: Onion, raw has similar CO2 emissions as small onion.",
+            "emission_option_name": "Onion, raw",
             "ingredient": "1 small onion",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "explanation": "Best match for red pepper is sweet red pepper, raw.",
+            "closest_match_argument": "Matched based on Rule 1: Pepper, sweet, red, raw has similar CO2 emissions as red pepper.",
+            "emission_option_name": "Pepper, sweet, red, raw",
             "ingredient": "0.5 red pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "Best match for oil for frying is sunflower oil, which is commonly used for frying.",
+            "closest_match_argument": "Matched based on Rule 1: Sunflower oil is a common frying oil with similar CO2 emissions as oil for frying.",
+            "emission_option_name": "Sunflower oil",
             "ingredient": "oil for frying",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.8
         },
         {
-            "explanation": "Best match for 250 g beef is average beef.",
+            "closest_match_argument": "Matched based on Rule 1: Average beef has similar CO2 emissions as beef.",
+            "emission_option_name": "Average beef",
             "ingredient": "250 g beef",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 74.8
         },
         {
-            "explanation": "Fajita seasoning does not have a direct match, but taco shells are a similar processed item.",
+            "closest_match_argument": "Matched based on Rule 1: Taco shells have similar CO2 emissions as fajita seasoning.",
+            "emission_option_name": "Taco shells",
             "ingredient": "1.5 tbsp fajita seasoning",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.4
         },
         {
-            "explanation": "Chili powder or flakes can be matched with chili sauce, which is a processed form of chili.",
+            "closest_match_argument": "Matched based on Rule 1: Chili Sauce has similar CO2 emissions as chili powder or flakes.",
+            "emission_option_name": "Chili Sauce",
             "ingredient": "chili powder or flakes to taste",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "explanation": "Best match for canned kidney beans is kidney beans.",
+            "closest_match_argument": "Matched based on Rule 1: Kidney beans have similar CO2 emissions as canned kidney beans.",
+            "emission_option_name": "Kidney beans",
             "ingredient": "1 can kidney beans",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "explanation": "Best match for tomato paste is concentrated tomato paste.",
+            "closest_match_argument": "Matched based on Rule 1: Tomato paste, concentrated has similar CO2 emissions as tomato paste.",
+            "emission_option_name": "Tomato paste, concentrated",
             "ingredient": "2 tbsp tomato paste",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.7
         },
         {
-            "explanation": "Best match for beef stock is bouillon, beef, prepared.",
+            "closest_match_argument": "Matched based on Rule 1: Bouillon, beef, prepared has similar CO2 emissions as beef stock.",
+            "emission_option_name": "Bouillon, beef, prepared",
             "ingredient": "2.5 dl beef stock",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.6
         },
         {
-            "explanation": "Best match for corn tortillas is taco shells, which are similar.",
+            "closest_match_argument": "Matched based on Rule 1: Taco shells have similar CO2 emissions as corn tortillas.",
+            "emission_option_name": "Taco shells",
             "ingredient": "11 small corn tortillas",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.4
         },
         {
-            "explanation": "Best match for avocado is raw avocado.",
+            "closest_match_argument": "Matched based on Rule 1: Avocado, raw has similar CO2 emissions as avocado.",
+            "emission_option_name": "Avocado, raw",
             "ingredient": "1 avocado",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "explanation": "Best match for salt is table salt.",
+            "closest_match_argument": "Matched based on Rule 1: Salt, table has similar CO2 emissions as salt.",
+            "emission_option_name": "Salt, table",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for pepper is black pepper.",
+            "closest_match_argument": "Matched based on Rule 1: Pepper, black has similar CO2 emissions as pepper.",
+            "emission_option_name": "Pepper, black",
             "ingredient": "pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "explanation": "Best match for half a red onion is raw red onion.",
+            "closest_match_argument": "Matched based on Rule 1: Red onion has similar CO2 emissions as half a red onion.",
+            "emission_option_name": "Red onion",
             "ingredient": "0.5 red onion",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "explanation": "Best match for 300 g tomatoes is canned peeled tomatoes.",
+            "closest_match_argument": "Matched based on Rule 1: Tomato, peeled, canned has similar CO2 emissions as tomatoes.",
+            "emission_option_name": "Tomato, peeled, canned",
             "ingredient": "300 g tomatoes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "Best match for 0.75 chili pepper is hot chili, raw.",
+            "closest_match_argument": "Matched based on Rule 1: Pepper, hot chili, raw has similar CO2 emissions as chili pepper.",
+            "emission_option_name": "Pepper, hot chili, raw",
             "ingredient": "0.75 chili pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "Best match for half a bunch of coriander is raw parsley, as they are similar herbs.",
+            "closest_match_argument": "Matched based on Rule 1: Dill, raw has similar CO2 emissions as coriander.",
+            "emission_option_name": "Dill, raw",
             "ingredient": "0.5 bunch coriander",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.5
         },
         {
-            "explanation": "Best match for olive oil is olive oil itself.",
+            "closest_match_argument": "Matched based on Rule 1: Olive oil has similar CO2 emissions as olive oil.",
+            "emission_option_name": "Olive oil",
             "ingredient": "2 tbsp olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "explanation": "Best match for juice of half a lime is raw lime.",
+            "closest_match_argument": "Matched based on Rule 1: Lime, raw has similar CO2 emissions as lime juice.",
+            "emission_option_name": "Lime, raw",
             "ingredient": "juice of 0.5 lime",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.6

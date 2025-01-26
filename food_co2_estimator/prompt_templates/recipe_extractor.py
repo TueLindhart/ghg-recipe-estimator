@@ -12,15 +12,15 @@ WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
         "500 gram torskefilet",
         "1 tsk havsalt",
         "2 stk æg",
-        "1 stk gulerod, fintrevet",
+        "1 stk gulerod",
         "0.5 dl fløde (13%)",
-        "0.5 tsk revet muskatnød",
+        "0.5 tsk muskatnød",
         "1 tsk peber",
         "2 spsk olie",
         "4 dl creme fraiche (18%)",
         "4 stk æggeblomme",
-        "2 spsk frisk dild, hakket",
-        "4 spsk frisk persille, hakket",
+        "2 spsk frisk dild",
+        "4 spsk frisk persille",
     ],
     persons=4,
     instructions=(
@@ -47,7 +47,7 @@ NO_RECIPE_RESPONSE = NO_RECIPE_RESPONSE_OBJ.model_dump_json()
 EXAMPLE_INPUT_1 = """
 dansk hovedret 12 tilberedningstid 45 minutter arbejdstid 25 minutter print bedøm denne opskrift rated 4
 / 5 based on 1 customer reviews hov! du skal være logget ind. log ind bliv medlem ingredienser (12) 1 2 3 4 5 6 7 8
-antal personer: 500 gram torskefilet 1 tsk havsalt 2 stk æg 1 stk gulerod 0.5 deciliter fløde 13% 0.5 tsk revet
+antal personer: 500 gram torskefilet, i skiver 1 tsk havsalt 2 stk æg 1 stk gulerod 0.5 deciliter fløde 13% 0.5 tsk revet
 muskatnød 1 tsk peber 2 spsk olie 4 deciliter creme fraiche 18% 4 stk æggeblomme 2 spsk frisk dild 4 spsk frisk persille
 Forbered fiskefarsen ved at skære torskefileten i mindre stykker og blend den sammen med havsalt i en foodprocessor til en fin konsistens. Tilsæt de to hele æg, fintrevet gulerod, fløde, muskatnød og peber. Blend igen, indtil ingredienserne er godt blandet og konsistensen er jævn. Smag til med salt og peber efter behov
 Forvarm ovnen til 180 grader. Smør en lille brødform eller ildfast fad med lidt olie og hæld fiskefarsen i formen. Glat overfladen ud. Bag terrinen i ovnen i cirka 25-30 minutter, eller indtil den er fast og let gylden på toppen
@@ -72,7 +72,7 @@ Follow all these instructions carefully to extract the ingredients:
 2. If there is extra information for an ingredient that does not is relevant in explaining the ingredient, then remove it.
     - Example: "1 dl olive oil (for frying)" to "1 dl olive oil".
 3. Remove any information that describes how the ingredient should be prepared.
-    - Example: "1 onion (chopped)" to "1 onion", "1 kg kartofler, hakkede i små tern" to "1 kg kartofler".
+    - Example: "1 onion (chopped)" to "1 onion", "1 kg kartofler, hakkede i små tern" to "1 kg kartofler", "2 medium carrots, diced" to "2 medium carrots".
 4. Always use the abbreviation for units of measurements.
     - Example: "deciliter" to "dl", "teaspoon" to "tsp", "tablespoon" to "tbsp", "gram" to "g", "kilogram" to "kg", etc.
 5. If an ingredient has a range of amounts, then choose the average amount.

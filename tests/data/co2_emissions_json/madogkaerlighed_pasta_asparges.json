@@ -1,73 +1,85 @@
 {
     "emissions": [
         {
-            "explanation": "Best match for fresh pasta is raw pasta.",
+            "closest_match_argument": "Matched based on Rule 1: Fresh pasta is closely related to 'Pasta, raw' as a type of pasta.",
+            "emission_option_name": "Pasta, raw",
             "ingredient": "250 g fresh pasta",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "explanation": "Best match for onion is raw onion.",
+            "closest_match_argument": "Matched based on Rule 1: Onion, finely chopped is closely related to 'Onion, raw'.",
+            "emission_option_name": "Onion, raw",
             "ingredient": "1 onion, finely chopped",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "explanation": "Best match for green asparagus is raw asparagus.",
+            "closest_match_argument": "Matched based on Rule 1: Green asparagus is closely related to 'Asparagus, green, raw'.",
+            "emission_option_name": "Asparagus, green, raw",
             "ingredient": "1 bunch of green asparagus",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "No suitable match for squash; using canned tomato as closest option.",
+            "closest_match_argument": "Matched based on Rule 1: Squash, roughly diced is closely related to 'Squash, raw'.",
+            "emission_option_name": "Squash, raw",
             "ingredient": "1 squash, roughly diced",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 0.8
         },
         {
-            "explanation": "Best match for fresh basil is fresh basil.",
+            "closest_match_argument": "Matched based on Rule 1: Fresh basil is closely related to 'Basil, fresh'.",
+            "emission_option_name": "Basil, fresh",
             "ingredient": "1 large handful of fresh basil, chopped",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for cream is whipping cream.",
+            "closest_match_argument": "Matched based on Rule 1: Cream is closely related to 'Cream, whipping, 38 % fat'.",
+            "emission_option_name": "Cream, whipping, 38 % fat",
             "ingredient": "2 dl cream",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.7
         },
         {
-            "explanation": "Best match for water is tap water.",
+            "closest_match_argument": "Matched based on Rule 1: Water is closely related to 'Bottled still water'.",
+            "emission_option_name": "Bottled still water",
             "ingredient": "1 dl water",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.0
+            "co2_per_kg": 0.5
         },
         {
-            "explanation": "Best match for grated parmesan is hard cheese, Parmesan.",
+            "closest_match_argument": "Matched based on Rule 1: Grated parmesan is closely related to 'Cheese, semihard, Mozzarella, 30 % fidm.' as a cheese product.",
+            "emission_option_name": "Cheese, semihard, Mozzarella, 30 % fidm.",
             "ingredient": "6 tbsp grated parmesan",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.4
         },
         {
-            "explanation": "Best match for mozzarella is semihard mozzarella.",
+            "closest_match_argument": "Matched based on Rule 1: Mozzarella is closely related to 'Cheese, semihard, Mozzarella, 30 % fidm.' as a cheese product.",
+            "emission_option_name": "Cheese, semihard, Mozzarella, 30 % fidm.",
             "ingredient": "1 handful of mozzarella",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.4
         },
         {
-            "explanation": "Best match for salt is table salt.",
+            "closest_match_argument": "Matched based on Rule 1: Salt is closely related to 'Salt, table'.",
+            "emission_option_name": "Salt, table",
             "ingredient": "A little salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for pepper is black pepper.",
+            "closest_match_argument": "Matched based on Rule 1: Pepper is closely related to 'Pepper, black'.",
+            "emission_option_name": "Pepper, black",
             "ingredient": "A little pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "explanation": "Best match for oil is olive oil.",
+            "closest_match_argument": "Matched based on Rule 1: Oil for frying is closely related to 'Olive oil'.",
+            "emission_option_name": "Olive oil",
             "ingredient": "Oil for frying",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9

@@ -4,7 +4,7 @@ import pytest
 
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
-from tests.load_files import get_expected_weight_estimates
+from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 
 ACCEPTABLE_WEIGHT_ERROR = 0.05  # kg (this range should be refined in the future)
 TOTAL_ACCEPTABLE_ERROR = 0.5  # kg (this range should be refined in the future)
@@ -14,15 +14,20 @@ IN_KG_REGEX = r"= \d+(\.\d+)? (kg|kilogram)"
 
 @pytest.mark.asyncio
 async def test_weight_estimator_chain(
-    enriched_recipe_fixture: tuple[str, EnrichedRecipe],
+    enriched_recipe_with_weight_est_fixture: tuple[str, EnrichedRecipe],
 ):
-    file_name, enriched_recipe = enriched_recipe_fixture
+    enriched_recipe = enriched_recipe_with_weight_est_fixture[1]
+    # Parse the expected weight estimates
+    expected_weight_estimates = WeightEstimates(
+        weight_estimates=[
+            ingredient.weight_estimate
+            for ingredient in enriched_recipe.ingredients
+            if ingredient.weight_estimate is not None
+        ]
+    )
 
     # Estimate weights using weight estimator
     weight_estimates = await get_weight_estimates(verbose=False, recipe=enriched_recipe)
-
-    # Load expected weight estimates
-    expected_weight_estimates = get_expected_weight_estimates(file_name)
 
     # Compare the weight estimates with the expected output
     for ingredient, expected_ingredient in zip(

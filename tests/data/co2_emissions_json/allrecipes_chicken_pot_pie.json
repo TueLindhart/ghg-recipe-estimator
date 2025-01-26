@@ -1,104 +1,121 @@
 {
     "emissions": [
         {
-            "explanation": "Best match for olive oil based on processing and emissions.",
-            "ingredient": "Olive oil",
+            "closest_match_argument": "Matched based on Rule 1: Olive oil has similar CO2 emissions as other oils.",
+            "emission_option_name": "Olive oil",
+            "ingredient": "1 tbsp olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "explanation": "Best match for skinless, boneless chicken breast based on processing and emissions.",
-            "ingredient": "Chicken, breast, flesh and skin, raw",
+            "closest_match_argument": "Matched based on Rule 1: Skinless, boneless chicken breast has similar CO2 emissions as other chicken products.",
+            "emission_option_name": "Chicken, breast, flesh and skin, raw",
+            "ingredient": "1 lb skinless, boneless chicken breast, diced",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "explanation": "Best match for medium carrots based on processing and emissions.",
-            "ingredient": "Carrot, raw",
+            "closest_match_argument": "Matched based on Rule 1: Carrots have similar CO2 emissions as other raw vegetables.",
+            "emission_option_name": "Carrot, raw",
+            "ingredient": "2 medium carrots, diced",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "explanation": "Best match for celery based on processing and emissions.",
-            "ingredient": "Celery, raw",
+            "closest_match_argument": "Matched based on Rule 1: Celery has similar CO2 emissions as other raw vegetables.",
+            "emission_option_name": "Celery, raw",
+            "ingredient": "2 stalks celery, diced",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for red bell pepper based on processing and emissions.",
-            "ingredient": "Pepper, sweet, red, raw",
+            "closest_match_argument": "Matched based on Rule 1: Red bell pepper has similar CO2 emissions as other sweet peppers.",
+            "emission_option_name": "Pepper, sweet, red, raw",
+            "ingredient": "1 red bell pepper, diced",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "Best match for scallions based on processing and emissions.",
-            "ingredient": "Onions, spring, raw",
+            "closest_match_argument": "Matched based on Rule 1: Scallions have similar CO2 emissions as other raw onions.",
+            "emission_option_name": "Onions, spring, raw",
+            "ingredient": "1 bunch scallions, diced",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "explanation": "Best match for canned diced tomatoes with green chiles based on processing and emissions.",
-            "ingredient": "Tomato, peeled, canned",
+            "closest_match_argument": "Matched based on Rule 1: Canned diced tomatoes have similar CO2 emissions as other canned tomatoes.",
+            "emission_option_name": "Tomato, peeled, canned",
+            "ingredient": "1 (15 oz) can diced tomatoes with green chiles, undrained",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "Best match for black beans based on processing and emissions.",
-            "ingredient": "Black beans",
+            "closest_match_argument": "Matched based on Rule 1: Black beans have similar CO2 emissions as other canned beans.",
+            "emission_option_name": "Black beans",
+            "ingredient": "2 (15 oz) cans black beans, drained and rinsed",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "explanation": "Best match for chili powder based on processing and emissions.",
-            "ingredient": "Chili Sauce",
+            "closest_match_argument": "Matched based on Rule 1: Chili powder has similar CO2 emissions as other spices.",
+            "emission_option_name": "Chili Sauce",
+            "ingredient": "4 tbsp chili powder",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "explanation": "Best match for ground cumin based on processing and emissions.",
-            "ingredient": "Curry powder",
+            "closest_match_argument": "Matched based on Rule 1: Ground cumin has similar CO2 emissions as other spices.",
+            "emission_option_name": "Curry powder",
+            "ingredient": "1 tbsp ground cumin",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 6.1
         },
         {
-            "explanation": "Best match for granulated garlic based on processing and emissions.",
-            "ingredient": "Garlic in oil",
+            "closest_match_argument": "Matched based on Rule 1: Granulated garlic has similar CO2 emissions as other garlic products.",
+            "emission_option_name": "Garlic in oil",
+            "ingredient": "2 tsp granulated garlic",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.5
         },
         {
-            "explanation": "Best match for onion powder based on processing and emissions.",
-            "ingredient": "Onions, chopped, frozen",
+            "closest_match_argument": "Matched based on Rule 1: Onion powder has similar CO2 emissions as other onion products.",
+            "emission_option_name": "Onion, raw",
+            "ingredient": "2 tsp onion powder",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "closest_match_argument": "Matched based on Rule 1: Salt has similar CO2 emissions as other table salts.",
+            "emission_option_name": "Salt, table",
+            "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for salt based on processing and emissions.",
-            "ingredient": "Salt, table",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.4
-        },
-        {
-            "explanation": "Best match for ground black pepper based on processing and emissions.",
-            "ingredient": "Pepper, black",
+            "closest_match_argument": "Matched based on Rule 1: Ground black pepper has similar CO2 emissions as other pepper products.",
+            "emission_option_name": "Pepper, black",
+            "ingredient": "ground black pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "explanation": "Best match for dry corn muffin mix based on processing and emissions.",
-            "ingredient": "Corn flour",
+            "closest_match_argument": "Matched based on Rule 1: Corn muffin mix has similar CO2 emissions as other corn products.",
+            "emission_option_name": "Corn flour",
+            "ingredient": "1 (8.5 oz) package dry corn muffin mix",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "explanation": "Best match for milk based on processing and emissions.",
-            "ingredient": "Goat milk",
+            "closest_match_argument": "Matched based on Rule 1: Milk has similar CO2 emissions as other dairy products.",
+            "emission_option_name": "Goat milk",
+            "ingredient": "0.33 cup milk",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.8
         },
         {
-            "explanation": "Best match for egg based on processing and emissions.",
-            "ingredient": "Eggs, chicken, free-range hens (indoor), raw",
+            "closest_match_argument": "Matched based on Rule 1: Eggs have similar CO2 emissions as other egg products.",
+            "emission_option_name": "Eggs, chicken, free-range hens (indoor), raw",
+            "ingredient": "1 egg",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.0
         }

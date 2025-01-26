@@ -192,7 +192,7 @@ def get_clean_regex():
     return regex
 
 
-def get_emission_retriever(k: int = 5, **kwargs) -> VectorStoreRetriever:
+def get_emission_retriever(k: int = 10, **kwargs) -> VectorStoreRetriever:
     vector_store = get_vector_store()
     return vector_store.as_retriever(k=k, **kwargs)
 

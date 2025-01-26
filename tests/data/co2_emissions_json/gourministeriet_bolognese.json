@@ -1,73 +1,85 @@
 {
     "emissions": [
         {
-            "explanation": "Best match for minced beef is beef mince with 10-15% fat, raw.",
+            "closest_match_argument": "Matched based on Rule 1: Minced beef has similar CO2 emissions as beef products.",
+            "emission_option_name": "Beef, mince, 10-15% fat, raw",
             "ingredient": "1 kg minced beef",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 48.0
         },
         {
-            "explanation": "Best match for large onions is raw onions.",
+            "closest_match_argument": "Matched based on Rule 1: Onions have similar CO2 emissions as raw onions.",
+            "emission_option_name": "Onion, raw",
             "ingredient": "3 large onions",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "explanation": "Best match for carrots is raw carrots.",
+            "closest_match_argument": "Matched based on Rule 1: Carrots have similar CO2 emissions as raw carrots.",
+            "emission_option_name": "Carrot, raw",
             "ingredient": "3 carrots",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "explanation": "Best match for celery is raw celery.",
+            "closest_match_argument": "Matched based on Rule 1: Celery has similar CO2 emissions as raw celery.",
+            "emission_option_name": "Celery, raw",
             "ingredient": "2.5 stalks celery",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for garlic is raw garlic.",
+            "closest_match_argument": "Matched based on Rule 1: Garlic has similar CO2 emissions as raw garlic.",
+            "emission_option_name": "Garlic, raw",
             "ingredient": "6 cloves garlic",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "explanation": "Best match for fresh basil leaves is fresh basil.",
+            "closest_match_argument": "Matched using Rule 2 and the 'broader category' example: Fresh basil leaves fall under 'basil.'",
+            "emission_option_name": "Basil, fresh",
             "ingredient": "1 handful fresh basil leaves",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for tomato concentrate is concentrated tomato paste.",
+            "closest_match_argument": "Matched based on Rule 1: Tomato concentrate has similar CO2 emissions as concentrated tomato paste.",
+            "emission_option_name": "Tomato paste, concentrated",
             "ingredient": "150 g tomato concentrate",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.7
         },
         {
-            "explanation": "Best match for chopped tomatoes is peeled canned tomatoes.",
+            "closest_match_argument": "Matched based on Rule 1: Canned chopped tomatoes have similar CO2 emissions as peeled canned tomatoes.",
+            "emission_option_name": "Tomato, peeled, canned",
             "ingredient": "3 tins chopped tomatoes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "explanation": "Best match for red wine is red wine.",
+            "closest_match_argument": "Matched based on Rule 1: Red wine has similar CO2 emissions as wine products.",
+            "emission_option_name": "Wine, red",
             "ingredient": "2 dl red wine",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "explanation": "Best match for olive oil is olive oil.",
+            "closest_match_argument": "Matched based on Rule 1: Olive oil has similar CO2 emissions as oil products.",
+            "emission_option_name": "Olive oil",
             "ingredient": "0.5 dl olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "explanation": "Best match for salt is table salt.",
+            "closest_match_argument": "Matched based on Rule 1: Salt has similar CO2 emissions as table salt.",
+            "emission_option_name": "Salt, table",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "explanation": "Best match for pepper is black pepper.",
+            "closest_match_argument": "Matched based on Rule 1: Pepper has similar CO2 emissions as black pepper.",
+            "emission_option_name": "Pepper, black",
             "ingredient": "pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2

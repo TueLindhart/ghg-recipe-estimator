@@ -4,13 +4,21 @@ from pydantic import BaseModel, Field
 
 
 class CO2perKg(BaseModel):
-    explanation: str = Field(
-        description="Comment about result. For instance what closest result is."
+    closest_match_argument: str = Field(
+        description="A concise reference to the instructions or specific cases used to determine why the selected "
+        "emission option is the closest match. The explanation should indicate which rules or examples "
+        "in the provided matching instructions were applied."
     )
-    ingredient: str = Field(description="Name of ingredient")
+    emission_option_name: str = Field(
+        description="Name of emission option which is the closest match."
+    )
+    ingredient: str = Field(
+        description="Name of ingredient exactly transcribed from ingredients input with no modifications"
+    )
     unit: str = Field(description="The unit which is kg CO2e per kg")
     co2_per_kg: Optional[float] = Field(
-        description="kg CO2 per kg for ingredient", default=None
+        description="kg CO2 per kg directly 'copy-pasted' from closest match.",
+        default=None,
     )
 
 

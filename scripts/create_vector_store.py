@@ -21,8 +21,6 @@ emission_records_dk: List[Dict[Any, Any]] = df_dk.to_dict(orient="records")
 emission_records_gb: List[Dict[Any, Any]] = df_gb.to_dict(orient="records")
 
 # Initialize vector store and translator
-vector_store = get_vector_store()
-vector_store.reset_collection()
 translator = MyTranslator.default()
 
 documents = []
@@ -30,7 +28,8 @@ uuids = []
 
 # Loop over the records with a progress bar
 for id, (emission_record_dk, emission_record_gb) in enumerate(
-    tqdm(zip(emission_records_dk, emission_records_gb)), 1
+    tqdm(zip(emission_records_dk, emission_records_gb), total=len(emission_records_dk)),
+    1,
 ):
     en_name: str | None = emission_record_gb.get("Name", None)
     if en_name is None:
@@ -47,4 +46,6 @@ for id, (emission_record_dk, emission_record_gb) in enumerate(
     uuids.append(str(uuid4()))
 
 # Add documents to the vector store
+vector_store = get_vector_store()
+vector_store.reset_collection()
 vector_store.add_documents(documents)
