@@ -10,7 +10,7 @@ class CO2perKg(BaseModel):
         "in the provided matching instructions were applied."
     )
     emission_option_name: str = Field(
-        description="Name of emission option which is the closest match."
+        description="Name of the closest match to ingredient."
     )
     ingredient: str = Field(
         description="Name of ingredient exactly transcribed from ingredients input with no modifications"
