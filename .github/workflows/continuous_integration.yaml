@@ -41,3 +41,5 @@ jobs:
       - name: Run tests
         run: |
           make test
+        env:
+          super_secret: ${{ secrets.GHACTIONSOPENAIKEY }}
