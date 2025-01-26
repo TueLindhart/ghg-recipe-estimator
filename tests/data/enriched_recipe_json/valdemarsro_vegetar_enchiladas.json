@@ -43,8 +43,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 løg, finthakket",
-            "en_name": "1 onion, finely chopped",
+            "original_name": "1 løg",
+            "en_name": "1 onion",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -71,8 +71,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 spsk olivenolie, til stegning",
-            "en_name": "1 tbsp olive oil, for frying",
+            "original_name": "1 spsk olivenolie",
+            "en_name": "1 tbsp olive oil",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -85,29 +85,29 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "sort peber, friskkværnet",
-            "en_name": "freshly ground black pepper",
+            "original_name": "sort peber",
+            "en_name": "black pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 løg, finthakket",
-            "en_name": "1 onion, finely chopped",
+            "original_name": "1 løg",
+            "en_name": "1 onion",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 fed hvidløg, finthakkede",
-            "en_name": "2 cloves garlic, finely chopped",
+            "original_name": "2 fed hvidløg",
+            "en_name": "2 cloves garlic",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 squash, groftrevet",
-            "en_name": "1 squash, coarsely grated",
+            "original_name": "1 squash",
+            "en_name": "1 squash",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -162,15 +162,15 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "150 g cheddar ost, friskrevet",
-            "en_name": "150 g cheddar cheese, freshly grated",
+            "original_name": "150 g cheddar ost",
+            "en_name": "150 g cheddar cheese",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 håndfuld frisk koriander, eller bredbladet persille",
-            "en_name": "1 handful fresh coriander, or broad-leaf parsley",
+            "original_name": "1 håndfuld frisk koriander",
+            "en_name": "1 handful fresh coriander",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -183,21 +183,21 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "sort peber, friskkværnet",
-            "en_name": "freshly ground black pepper",
+            "original_name": "sort peber",
+            "en_name": "black pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 spsk smør, til formen",
-            "en_name": "1 tbsp butter, for the pan",
+            "original_name": "1 spsk smør",
+            "en_name": "1 tbsp butter",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
     "persons": 4,
-    "instructions": "Roast all the spices in a dry pan until they start to smell nice. Add oil, garlic and onion and sauté until the onions are soft. Stir in the flour and then add the vegetable stock and chopped tomatoes. Stir everything together well and let the sauce simmer for 15 minutes without a lid. Season with salt and freshly ground pepper. Heat the oil in a pan and sauté the onion and garlic until the onions are soft. Add the squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid, until it boils a little. Add the black beans and kidney beans and heat through. Toast the corn kernels in a little butter on a pan until they become crispy and get a little color. Spread each tortilla pancake with enchilada sauce and then add the bean filling, corn and cheddar cheese on top, roll up and place in a greased ovenproof dish. Spread the remaining enchilada sauce over the top and sprinkle with more cheese. Spread the bean filling and corn kernels on the sides of the dish, if there is any left. Bake in a preheated oven at 175 degrees Celsius for about 18 minutes. Sprinkle with cilantro before serving.",
+    "instructions": "Roast all the spices in a dry pan until they start to smell. Add the oil, garlic and onion and sauté until the onions are soft. Stir flour into the filling, then add vegetable stock and chopped tomatoes. Stir everything together well and let the sauce simmer for 15 minutes without a lid. Season with salt and freshly ground pepper. Heat oil in a pan and sauté onion and garlic until the onions are soft. Add the squash, chopped tomatoes, cumin and coriander and let it simmer for 15 minutes without a lid. Add the black beans and kidney beans and heat well. Toast the corn kernels in a little butter in a pan until they are crispy and slightly coloured. Spread each tortilla pancake with enchilada sauce and then add bean filling, corn and cheddar cheese on top, roll up and place in a greased ovenproof dish. Spread the last of the enchilada sauce over and sprinkle with more cheese. Spread bean filling and corn kernels on the sides of the dish if there is any left over. Bake them in a preheated oven at 175 degrees Celsius for about 18 minutes. Sprinkle with coriander before serving.",
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
 }

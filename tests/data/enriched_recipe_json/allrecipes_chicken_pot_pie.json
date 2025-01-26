@@ -8,50 +8,50 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 lb skinless, boneless chicken breast, diced",
-            "en_name": "1 lb skinless, boneless chicken breast, diced",
+            "original_name": "1 lb skinless, boneless chicken breast",
+            "en_name": "1 lb skinless, boneless chicken breast",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 medium carrots, diced",
-            "en_name": "2 medium carrots, diced",
+            "original_name": "2 medium carrots",
+            "en_name": "2 medium carrots",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 stalks celery, diced",
-            "en_name": "2 stalks celery, diced",
+            "original_name": "2 stalks celery",
+            "en_name": "2 stalks of celery",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 red bell pepper, diced",
-            "en_name": "1 red bell pepper, diced",
+            "original_name": "1 red bell pepper",
+            "en_name": "1 red bell pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 bunch scallions, diced",
-            "en_name": "1 bunch scallions, diced",
+            "original_name": "1 bunch scallions",
+            "en_name": "1 bunch scallions",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 (15 oz) can diced tomatoes with green chiles, undrained",
-            "en_name": "1 (15 oz) can diced tomatoes with green chiles, undrained",
+            "original_name": "1 (15 oz) can diced tomatoes with green chiles",
+            "en_name": "1 (15 oz) can diced tomatoes with green chiles",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 (15 oz) cans black beans, drained and rinsed",
-            "en_name": "2 (15 oz) cans black beans, drained and rinsed",
+            "original_name": "2 (15 oz) cans black beans",
+            "en_name": "2 (15 oz) cans black beans",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -99,8 +99,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "ground black pepper",
-            "en_name": "ground black pepper",
+            "original_name": "black pepper",
+            "en_name": "black pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -128,6 +128,6 @@
         }
     ],
     "persons": 6,
-    "instructions": "Preheat the oven to 400 degrees F (200 degrees C). Heat oil in a Dutch over medium heat. Add chicken and cook until no longer pink inside, about 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions; cook until tender, about 5 minutes. Stir in tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Cook until heated through, about 5 minutes more. In a bowl, combine cornbread mix with milk and egg. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture. Bake until the cornbread is golden and beginning to brown, 20 to 25 minutes.",
+    "instructions": "Preheat the oven to 400 degrees F (200 degrees C). Heat oil in a Dutch over medium heat. Add chicken and cook until no longer pink inside, about 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions, and cook until tender, about 5 minutes. Stir in tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Cook until heated through, about 5 minutes more. In a bowl, combine cornbread mix with milk and egg. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture. Place the Dutch oven in the preheated oven and bake until the cornbread is golden, about 20 to 25 minutes.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }

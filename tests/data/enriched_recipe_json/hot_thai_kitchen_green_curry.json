@@ -1,84 +1,84 @@
 {
     "ingredients": [
         {
-            "original_name": "1.75 cups coconut milk",
-            "en_name": "1.75 cups coconut milk",
+            "original_name": "420 ml kokosmælk",
+            "en_name": "420 ml coconut milk",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "3.5 tbsp green curry paste",
-            "en_name": "3.5 tbsp green curry paste",
+            "original_name": "50 g green curry paste",
+            "en_name": "50 g green curry paste",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 cup chicken stock, unsalted",
-            "en_name": "1 cup chicken stock, unsalted",
+            "original_name": "240 ml kyllingebouillon, usaltet",
+            "en_name": "240 ml chicken stock, unsalted",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 lb chicken thigh, boneless, skinless, 1-inch pieces",
-            "en_name": "1 lb chicken thigh, boneless, skinless, 1-inch pieces",
+            "original_name": "450 g kyllingelår, benfri, uden skind, 1-tommers stykker",
+            "en_name": "450 g chicken thighs, boneless, skinless, 1-inch pieces",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 tbsp light brown sugar",
-            "en_name": "2 tbsp light brown sugar",
+            "original_name": "24 g sukker, lys brun eller granuleret",
+            "en_name": "24 g light brown or granulated sugar",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1.5 - 2 tbsp fish sauce",
-            "en_name": "1.5 - 2 tbsp fish sauce",
+            "original_name": "22.5-30 ml fiskesauce",
+            "en_name": "22.5-30 ml fish sauce",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "4 makrut lime leaves",
-            "en_name": "4 makrut lime leaves",
+            "original_name": "4 stk kaffir lime blade",
+            "en_name": "4 kaffir lime leaves",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 can bamboo shoots strips, drained and rinsed",
-            "en_name": "1 can bamboo shoots strips, drained and rinsed",
+            "original_name": "1 550ml-dåse bambusskud, drænet og skyllet",
+            "en_name": "1 550 ml can bamboo shoots, drained and rinsed",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 cup Thai basil leaves",
-            "en_name": "1 cup Thai basil leaves",
+            "original_name": "22 g thai basilikum blade",
+            "en_name": "22 g Thai basil leaves",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "0.25 red bell pepper, julienned",
-            "en_name": "0.25 red bell pepper, julienned",
+            "original_name": "¼ rød peberfrugt, julienned",
+            "en_name": "¼ red pepper, julienned",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "Jasmine rice for serving",
-            "en_name": "Jasmine rice for serving",
+            "original_name": "jasmine ris til servering",
+            "en_name": "jasmine rice for serving",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
     "persons": 4,
-    "instructions": "1. Reduce ¾ cup coconut milk until thick and coconut oil starts to separate from the coconut milk. 2. Add curry paste and sauté, stirring constantly over medium heat for about 2 minutes until aromatic. 3. Add chicken thigh and stir to mix with the paste. 4. Add chicken stock, remaining 1 cup of coconut milk, palm sugar and 1 tablespoon of fish sauce. Add makrut lime leaves and bring to a simmer. Simmer gently for 10-15 minutes or until the chicken is fork tender. 5. Once the curry is done simmering, add bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in Thai basil and red bell pepper. 8. Serve with jasmine rice.",
+    "instructions": "1. Reduce ¾ cup coconut milk until very thick and coconut oil begins to separate from the coconut milk. 2. Add curry paste and sauté, stirring constantly over medium heat for about 2 minutes, until aromatic. 3. Add chicken thighs and stir to combine with the paste. 4. Add chicken stock, remaining 1 cup coconut milk, palm sugar, and 1 tablespoon fish sauce. Add kaffir lime leaves and simmer for 10-15 minutes, or until chicken is tender. 5. Add bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in Thai basil and serve with jasmine rice.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

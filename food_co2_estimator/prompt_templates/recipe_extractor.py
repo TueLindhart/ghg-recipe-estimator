@@ -9,7 +9,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import ExtractedRecipe
 
 WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
     ingredients=[
-        "500 gram torskefilet",
+        "500 g torskefilet",
         "1 tsk havsalt",
         "2 stk æg",
         "1 stk gulerod",
@@ -21,6 +21,10 @@ WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
         "4 stk æggeblomme",
         "2 spsk frisk dild",
         "4 spsk frisk persille",
+        "1 kop mælk",
+        "2 fede hvidløg",
+        "0.25 bdt koriander",
+        "1 håndfuld frisk basilikum",
     ],
     persons=4,
     instructions=(
@@ -45,10 +49,25 @@ NO_RECIPE_RESPONSE_OBJ = ExtractedRecipe(
 NO_RECIPE_RESPONSE = NO_RECIPE_RESPONSE_OBJ.model_dump_json()
 
 EXAMPLE_INPUT_1 = """
-dansk hovedret 12 tilberedningstid 45 minutter arbejdstid 25 minutter print bedøm denne opskrift rated 4
-/ 5 based on 1 customer reviews hov! du skal være logget ind. log ind bliv medlem ingredienser (12) 1 2 3 4 5 6 7 8
-antal personer: 500 gram torskefilet, i skiver 1 tsk havsalt 2 stk æg 1 stk gulerod 0.5 deciliter fløde 13% 0.5 tsk revet
-muskatnød 1 tsk peber 2 spsk olie 4 deciliter creme fraiche 18% 4 stk æggeblomme 2 spsk frisk dild 4 spsk frisk persille
+**Ingredienser**
+- 500 g torskefilet, i skiver
+- 1 tsk havsalt
+- 2 stk æg
+- 1 stk gulerod
+- ½ dl fløde 13%
+- ½ tsk revet muskatnød
+- 1 teskefuld peber
+- to spsk olie
+- 4 dl creme fraiche 18%
+- fire stykker æggeblomme
+- 2 spsk frisk dild
+- 4 spiseskefulde frisk persille
+- 1 kop mælk
+- to fede hvidløg
+- ¼ bundt koriander
+- 1 håndfuld frisk basilikum
+
+**Fremgangsmåde**
 Forbered fiskefarsen ved at skære torskefileten i mindre stykker og blend den sammen med havsalt i en foodprocessor til en fin konsistens. Tilsæt de to hele æg, fintrevet gulerod, fløde, muskatnød og peber. Blend igen, indtil ingredienserne er godt blandet og konsistensen er jævn. Smag til med salt og peber efter behov
 Forvarm ovnen til 180 grader. Smør en lille brødform eller ildfast fad med lidt olie og hæld fiskefarsen i formen. Glat overfladen ud. Bag terrinen i ovnen i cirka 25-30 minutter, eller indtil den er fast og let gylden på toppen
 I en lille skål piskes creme fraiche sammen med æggeblommerne, hakket dild og persille. Smag til med salt og peber. Opvarm forsigtigt saucen i en lille gryde over lav varme, indtil den er varm, men undgå at koge den for at undgå at æggeblommerne skiller
@@ -79,7 +98,8 @@ Follow all these instructions carefully to extract the ingredients:
     - Example: "1-2 cloves of garlic" to "1.5 cloves of garlic".
 6. If an ingredient line has multiple ingredients, then split them into separate lines.
     - Example: "salt and pepper" to "salt" and "pepper", "1 mozarella and 2 tomatoes" to "1 mozarella" and "2 tomatoes".
-7. Transcribe the ingredient exactly as it appears in the text except if it violates instruction above. Very important to follow this instruction above!
+7. Transcribe the ingredient exactly as it appears in the text except if other instructions apply.
+    - Example. "1 cup of milk" to "1 cup of milk", "2 fed hvidløg" til "2 fed hvidløg".
 8. If same ingredient is mentioned multiple times, then include it that many times in the list.
 9. List the ingredients in the exact same order as they appear in the text.
 
