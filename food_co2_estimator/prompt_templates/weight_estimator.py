@@ -14,9 +14,7 @@ from food_co2_estimator.pydantic_models.weight_estimator import (
 EN_WEIGHT_RECALCULATIONS = """
 1 can = 400 g = 0.4 kg
 1 bouillon cube = 4 g = 0.004 kg
-1 large onion = 285 g = 0.285 kg
-1 medium onion = 170 g = 0.170 kg
-1 small onion = 115 g = 0.115 kg
+1 onion = 170 g = 0.170 kg
 1 bell pepper = 150 g = 0.150 kg
 1 can tomato paste = 140 g = 0.140 kg
 1 tablespoon/tbsp. = 15 g  = 0.015 kg
@@ -127,6 +125,8 @@ ANSWER_EXAMPLE_OBJ = WeightEstimates(
 
 ANSWER_EXAMPLE = ANSWER_EXAMPLE_OBJ.model_dump_json(indent=2)
 
+WEIGHT_CONVERSION_TEMPLATE_EXPLANATION = "<ingredient name> = <weight in grams>, <amount> * <weight in grams> = <total weight in grams> = <total weight in kg>"
+
 WEIGHT_EST_SYSTEM_PROMPT = """
 Given a list of ingredients, estimate the weights in kilogram for each ingredient.
 Explain your reasoning for the estimation of weights.
@@ -134,9 +134,18 @@ Explain your reasoning for the estimation of weights.
 The following general weights can be used for estimation:
 {recalculations}
 
-If an ingredient is not found in the list of general weights, try to give your best estimate
-of the weight in kilogram/kg of the ingredient and say (estimated by LLM model).
-Your estimate must always be a python float. Therefore, you must not provide any intervals.
+
+**Instructions:**
+1. If ingredient has amount and weight specified, convert the weight to kilogram/kg by following the template for explanation:
+    '{weight_conversion_template}'.
+1. If an ingredient is not found in the list of general weights, try to give your best estimate
+    of the weight in kilogram/kg of the ingredient and follow the template for explanation:
+    'Ingredient not found in general weights. LLM estimate is: {weight_conversion_template}.
+2. If the amount of the ingredient is unspecific, then provide an estimate of the weight in kg given the context of all the ingredients and follow the template for explanation:
+    'Amount of ingredient not specified. LLM estimate is: <ingredient name> = <total weight in kg>.
+    *Context refers to the amount of the other ingredients in the list to provide a reasonable estimate of weight.
+    - Example: 'Serving with rice' depends on the number of servings the ingredient list implies.
+3. Your estimate must always be a python float. Therefore, you must not provide any intervals.
 
 Input is given after "Ingredients:"
 """
@@ -161,5 +170,6 @@ WEIGHT_EST_PROMPT = ChatPromptTemplate(
         "recalculations": EN_WEIGHT_RECALCULATIONS,
         "input_example": EN_INPUT_EXAMPLE,
         "answer_example": ANSWER_EXAMPLE,
+        "weight_conversion_template": WEIGHT_CONVERSION_TEMPLATE_EXPLANATION,
     },
 )

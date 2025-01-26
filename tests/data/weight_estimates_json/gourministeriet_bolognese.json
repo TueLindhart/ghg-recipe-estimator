@@ -1,0 +1,84 @@
+{
+    "weight_estimates": [
+        {
+            "ingredient": "1 kg minced beef",
+            "weight_calculation": "1 kg minced beef = 1.0 kg",
+            "weight_in_kg": 1.0
+        },
+        {
+            "ingredient": "3 large onions",
+            "weight_calculation": "1 onion = 170 g, 3 * 170 g = 510 g = 0.510 kg",
+            "weight_in_kg": 0.51
+        },
+        {
+            "ingredient": "3 carrots",
+            "weight_calculation": "1 carrot = 100 g, 3 * 100 g = 300 g = 0.300 kg",
+            "weight_in_kg": 0.3
+        },
+        {
+            "ingredient": "2.5 stalks celery",
+            "weight_calculation": "1 stalk celery = 40 g (estimated by LLM model), 2.5 * 40 g = 100 g = 0.100 kg",
+            "weight_in_kg": 0.1
+        },
+        {
+            "ingredient": "6 cloves garlic",
+            "weight_calculation": "1 clove garlic = 4 g, 6 * 4 g = 24 g = 0.024 kg",
+            "weight_in_kg": 0.024
+        },
+        {
+            "ingredient": "1 handful fresh basil leaves",
+            "weight_calculation": "1 handful of herbs = 25 g = 0.025 kg",
+            "weight_in_kg": 0.025
+        },
+        {
+            "ingredient": "150 g tomato concentrate",
+            "weight_calculation": "150 g = 0.150 kg",
+            "weight_in_kg": 0.15
+        },
+        {
+            "ingredient": "3 tins chopped tomatoes",
+            "weight_calculation": "1 tin = 400 g, 3 * 400 g = 1200 g = 1.200 kg",
+            "weight_in_kg": 1.2
+        },
+        {
+            "ingredient": "2 dl red wine",
+            "weight_calculation": "2 dl = 0.2 kg",
+            "weight_in_kg": 0.2
+        },
+        {
+            "ingredient": "0.5 tsp rosemary",
+            "weight_calculation": "0.5 tsp = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_in_kg": 0.0025
+        },
+        {
+            "ingredient": "0.5 tsp thyme",
+            "weight_calculation": "0.5 tsp = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_in_kg": 0.0025
+        },
+        {
+            "ingredient": "1 tsp oregano",
+            "weight_calculation": "1 tsp = 5 g = 0.005 kg",
+            "weight_in_kg": 0.005
+        },
+        {
+            "ingredient": "1 tsp basil",
+            "weight_calculation": "1 tsp = 5 g = 0.005 kg",
+            "weight_in_kg": 0.005
+        },
+        {
+            "ingredient": "0.5 dl olive oil",
+            "weight_calculation": "0.5 dl = 0.05 kg",
+            "weight_in_kg": 0.05
+        },
+        {
+            "ingredient": "salt",
+            "weight_calculation": "amount of salt not specified",
+            "weight_in_kg": null
+        },
+        {
+            "ingredient": "pepper",
+            "weight_calculation": "amount of pepper not specified",
+            "weight_in_kg": null
+        }
+    ]
+}

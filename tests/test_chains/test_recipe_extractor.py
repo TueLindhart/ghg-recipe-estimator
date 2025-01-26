@@ -34,9 +34,11 @@ async def test_extract_recipe_with_persons_in_url(
 
 @pytest.mark.asyncio
 async def test_extract_recipe_chain(
-    markdown_and_expected_extracted_recipe: tuple[str, ExtractedRecipe],
+    markdown_and_expected_extracted_recipe_fixture: tuple[str, ExtractedRecipe],
 ):
-    markdown_content, expected_extracted_recipe = markdown_and_expected_extracted_recipe
+    markdown_content, expected_extracted_recipe = (
+        markdown_and_expected_extracted_recipe_fixture
+    )
     result = await extract_recipe(markdown_content, "www.example.com", verbose=False)
 
     for ingredient, expected_ingredient in zip(
