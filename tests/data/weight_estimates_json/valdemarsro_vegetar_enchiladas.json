@@ -31,7 +31,7 @@
             "weight_in_kg": 0.015
         },
         {
-            "ingredient": "1 onion, finely chopped",
+            "ingredient": "1 onion",
             "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
@@ -51,7 +51,7 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 tbsp olive oil, for frying",
+            "ingredient": "1 tbsp olive oil",
             "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
@@ -61,22 +61,22 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "freshly ground black pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "ingredient": "black pepper",
+            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "1 onion, finely chopped",
+            "ingredient": "1 onion",
             "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "2 cloves garlic, finely chopped",
+            "ingredient": "2 cloves garlic",
             "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "1 squash, coarsely grated",
+            "ingredient": "1 squash",
             "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
@@ -116,12 +116,12 @@
             "weight_in_kg": 0.24
         },
         {
-            "ingredient": "150 g cheddar cheese, freshly grated",
+            "ingredient": "150 g cheddar cheese",
             "weight_calculation": "150 g = 150 g = 0.15 kg",
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "1 handful fresh coriander, or broad-leaf parsley",
+            "ingredient": "1 handful fresh coriander",
             "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
@@ -131,12 +131,12 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "freshly ground black pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "ingredient": "black pepper",
+            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "1 tbsp butter, for the pan",
+            "ingredient": "1 tbsp butter",
             "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         }

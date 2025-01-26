@@ -79,6 +79,16 @@
             "ingredient": "pepper",
             "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
             "weight_in_kg": 0.03
+        },
+        {
+            "ingredient": "pasta as desired",
+            "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 6 servings * 0.125 kg = 0.75 kg",
+            "weight_in_kg": 0.75
+        },
+        {
+            "ingredient": "grated parmesan",
+            "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.025 kg, 6 servings * 0.025 kg = 0.15 kg",
+            "weight_in_kg": 0.15
         }
     ]
 }

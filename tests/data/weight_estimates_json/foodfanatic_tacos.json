@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "1 can kidney beans",
-            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
@@ -54,6 +54,11 @@
             "ingredient": "11 small corn tortillas",
             "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
             "weight_in_kg": 0.33
+        },
+        {
+            "ingredient": "1 portion of tomato salsa",
+            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+            "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 avocado",

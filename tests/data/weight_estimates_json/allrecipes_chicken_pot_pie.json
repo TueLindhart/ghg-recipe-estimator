@@ -6,37 +6,37 @@
             "weight_in_kg": 0.015
         },
         {
-            "ingredient": "1 lb skinless, boneless chicken breast, diced",
+            "ingredient": "1 lb skinless, boneless chicken breast",
             "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.454 kg",
             "weight_in_kg": 0.454
         },
         {
-            "ingredient": "2 medium carrots, diced",
+            "ingredient": "2 medium carrots",
             "weight_calculation": "1 medium carrot = 100 g, 2 * 100 g = 200 g = 0.200 kg",
             "weight_in_kg": 0.2
         },
         {
-            "ingredient": "2 stalks celery, diced",
-            "weight_calculation": "1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.080 kg",
+            "ingredient": "2 stalks of celery",
+            "weight_calculation": "1 stalk of celery = 40 g, 2 * 40 g = 80 g = 0.080 kg",
             "weight_in_kg": 0.08
         },
         {
-            "ingredient": "1 red bell pepper, diced",
+            "ingredient": "1 red bell pepper",
             "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.150 kg",
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "1 bunch scallions, diced",
+            "ingredient": "1 bunch scallions",
             "weight_calculation": "1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.100 kg",
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 (15 oz) can diced tomatoes with green chiles, undrained",
+            "ingredient": "1 (15 oz) can diced tomatoes with green chiles",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "2 (15 oz) cans black beans, drained and rinsed",
+            "ingredient": "2 (15 oz) cans black beans",
             "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
             "weight_in_kg": 0.8
         },
@@ -67,12 +67,12 @@
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.030 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "ground black pepper",
-            "weight_calculation": "Amount of ground black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.030 kg",
+            "ingredient": "black pepper",
+            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
@@ -82,8 +82,8 @@
         },
         {
             "ingredient": "0.33 cup milk",
-            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.079 kg",
-            "weight_in_kg": 0.079
+            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
+            "weight_in_kg": 0.0792
         },
         {
             "ingredient": "1 egg",
