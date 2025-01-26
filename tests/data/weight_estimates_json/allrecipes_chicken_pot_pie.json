@@ -2,13 +2,13 @@
     "weight_estimates": [
         {
             "ingredient": "1 tbsp olive oil",
-            "weight_calculation": "1 tbsp = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "1 lb skinless, boneless chicken breast, diced",
-            "weight_calculation": "1 lb = 453.592 g = 0.453592 kg",
-            "weight_in_kg": 0.453592
+            "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.454 kg",
+            "weight_in_kg": 0.454
         },
         {
             "ingredient": "2 medium carrots, diced",
@@ -22,22 +22,22 @@
         },
         {
             "ingredient": "1 red bell pepper, diced",
-            "weight_calculation": "1 red bell pepper = 150 g = 0.150 kg",
+            "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.150 kg",
             "weight_in_kg": 0.15
         },
         {
             "ingredient": "1 bunch scallions, diced",
-            "weight_calculation": "1 bunch scallions = 100 g (estimated by LLM model) = 0.100 kg",
+            "weight_calculation": "1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.100 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "1 (15 oz) can diced tomatoes with green chiles, undrained",
-            "weight_calculation": "1 can = 400 g (approximate for 15 oz) = 0.4 kg",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
             "ingredient": "2 (15 oz) cans black beans, drained and rinsed",
-            "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.800 kg",
+            "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
             "weight_in_kg": 0.8
         },
         {
@@ -47,7 +47,7 @@
         },
         {
             "ingredient": "1 tbsp ground cumin",
-            "weight_calculation": "1 tbsp = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
@@ -67,27 +67,27 @@
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "amount of salt not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.030 kg",
+            "weight_in_kg": 0.03
         },
         {
             "ingredient": "ground black pepper",
-            "weight_calculation": "amount of ground black pepper not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of ground black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.030 kg",
+            "weight_in_kg": 0.03
         },
         {
             "ingredient": "1 (8.5 oz) package dry corn muffin mix",
-            "weight_calculation": "1 package = 240 g (approximate for 8.5 oz) = 0.240 kg",
+            "weight_calculation": "1 package = 240 g, 1 * 240 g = 240 g = 0.240 kg",
             "weight_in_kg": 0.24
         },
         {
             "ingredient": "0.33 cup milk",
-            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
-            "weight_in_kg": 0.0792
+            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.079 kg",
+            "weight_in_kg": 0.079
         },
         {
             "ingredient": "1 egg",
-            "weight_calculation": "1 egg = 50 g = 0.050 kg",
+            "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.050 kg",
             "weight_in_kg": 0.05
         }
     ]

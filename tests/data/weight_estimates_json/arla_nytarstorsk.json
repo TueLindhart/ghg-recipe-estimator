@@ -2,17 +2,17 @@
     "weight_estimates": [
         {
             "ingredient": "25 g butter",
-            "weight_calculation": "25 g = 0.025 kg",
+            "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "400 g beetroot, diced",
-            "weight_calculation": "400 g = 0.4 kg",
+            "weight_calculation": "400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
             "ingredient": "1 dl dark balsamic vinegar",
-            "weight_calculation": "1 dl = 0.1 kg",
+            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -22,22 +22,22 @@
         },
         {
             "ingredient": "1 tsp coarse salt",
-            "weight_calculation": "1 tsp = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "600 g cod loin",
-            "weight_calculation": "600 g = 0.6 kg",
+            "weight_calculation": "600 g = 600 g = 0.6 kg",
             "weight_in_kg": 0.6
         },
         {
             "ingredient": "25 g butter, melted",
-            "weight_calculation": "25 g = 0.025 kg",
+            "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "0.5 tsp coarse salt",
-            "weight_calculation": "0.5 tsp = 2.5 g = 0.0025 kg",
+            "weight_calculation": "0.5 tsp = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
@@ -47,7 +47,7 @@
         },
         {
             "ingredient": "2.5 dl water",
-            "weight_calculation": "2.5 dl = 0.25 kg",
+            "weight_calculation": "2.5 dl = 250 g, 2.5 * 100 g = 250 g = 0.25 kg",
             "weight_in_kg": 0.25
         },
         {
@@ -57,38 +57,38 @@
         },
         {
             "ingredient": "75 g finely chopped shallots",
-            "weight_calculation": "75 g = 0.075 kg",
+            "weight_calculation": "75 g = 75 g = 0.075 kg",
             "weight_in_kg": 0.075
         },
         {
             "ingredient": "200 g cold butter, diced",
-            "weight_calculation": "200 g = 0.2 kg",
+            "weight_calculation": "200 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "0.75 tsp coarse salt",
-            "weight_calculation": "0.75 tsp = 3.75 g = 0.00375 kg",
+            "weight_calculation": "0.75 tsp = 3.75 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
             "weight_in_kg": 0.00375
         },
         {
             "ingredient": "freshly ground pepper",
-            "weight_calculation": "amount of pepper not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_in_kg": 0.02
         },
         {
             "ingredient": "fresh herbs",
-            "weight_calculation": "amount of fresh herbs not specified. LLM estimate is: fresh herbs = 0.025 kg.",
-            "weight_in_kg": 0.025
+            "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 servings * 0.025 kg = 0.1 kg",
+            "weight_in_kg": 0.1
         },
         {
             "ingredient": "100 g fried bacon cubes",
-            "weight_calculation": "100 g = 0.1 kg",
+            "weight_calculation": "100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "4 soft-boiled quail eggs",
-            "weight_calculation": "1 quail egg = 10 g (estimated by LLM model), 4 * 10 g = 40 g = 0.040 kg",
-            "weight_in_kg": 0.04
+            "weight_calculation": "1 quail egg = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "weight_in_kg": 0.06
         }
     ]
 }

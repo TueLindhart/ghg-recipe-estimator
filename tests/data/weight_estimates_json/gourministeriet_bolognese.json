@@ -2,22 +2,22 @@
     "weight_estimates": [
         {
             "ingredient": "1 kg minced beef",
-            "weight_calculation": "1 kg minced beef = 1.0 kg",
+            "weight_calculation": "1 kg minced beef = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
             "weight_in_kg": 1.0
         },
         {
             "ingredient": "3 large onions",
-            "weight_calculation": "1 onion = 170 g, 3 * 170 g = 510 g = 0.510 kg",
+            "weight_calculation": "1 onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
             "weight_in_kg": 0.51
         },
         {
             "ingredient": "3 carrots",
-            "weight_calculation": "1 carrot = 100 g, 3 * 100 g = 300 g = 0.300 kg",
+            "weight_calculation": "1 carrot = 100 g, 3 * 100 g = 300 g = 0.3 kg",
             "weight_in_kg": 0.3
         },
         {
             "ingredient": "2.5 stalks celery",
-            "weight_calculation": "1 stalk celery = 40 g (estimated by LLM model), 2.5 * 40 g = 100 g = 0.100 kg",
+            "weight_calculation": "1 stalk celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -27,58 +27,58 @@
         },
         {
             "ingredient": "1 handful fresh basil leaves",
-            "weight_calculation": "1 handful of herbs = 25 g = 0.025 kg",
+            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "150 g tomato concentrate",
-            "weight_calculation": "150 g = 0.150 kg",
+            "weight_calculation": "150 g = 150 g = 0.15 kg",
             "weight_in_kg": 0.15
         },
         {
             "ingredient": "3 tins chopped tomatoes",
-            "weight_calculation": "1 tin = 400 g, 3 * 400 g = 1200 g = 1.200 kg",
+            "weight_calculation": "1 tin = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
             "weight_in_kg": 1.2
         },
         {
             "ingredient": "2 dl red wine",
-            "weight_calculation": "2 dl = 0.2 kg",
+            "weight_calculation": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "0.5 tsp rosemary",
-            "weight_calculation": "0.5 tsp = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "0.5 tsp thyme",
-            "weight_calculation": "0.5 tsp = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "1 tsp oregano",
-            "weight_calculation": "1 tsp = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp basil",
-            "weight_calculation": "1 tsp = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "0.5 dl olive oil",
-            "weight_calculation": "0.5 dl = 0.05 kg",
+            "weight_calculation": "0.5 dl = 50 g, 1 * 50 g = 50 g = 0.05 kg",
             "weight_in_kg": 0.05
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "amount of salt not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "weight_in_kg": 0.03
         },
         {
             "ingredient": "pepper",
-            "weight_calculation": "amount of pepper not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "weight_in_kg": 0.03
         }
     ]
 }

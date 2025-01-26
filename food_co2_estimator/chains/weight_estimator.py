@@ -22,8 +22,10 @@ async def get_weight_estimates(
     verbose: bool, recipe: EnrichedRecipe
 ) -> WeightEstimates:
     weight_estimator_chain = get_weight_estimator_chain(verbose=verbose)
+
+    servings = recipe.persons if recipe.persons is not None else "Estimate"
     weight_output: WeightEstimates = await weight_estimator_chain.ainvoke(
-        {"input": recipe.get_ingredients_en_name_list()}
+        {"input": recipe.get_ingredients_en_name_list(), "servings": servings},
     )  # type: ignore
 
     return weight_output

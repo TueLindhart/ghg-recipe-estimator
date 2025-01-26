@@ -2,7 +2,7 @@
     "weight_estimates": [
         {
             "ingredient": "250 g fresh pasta",
-            "weight_calculation": "250 g = 0.250 kg",
+            "weight_calculation": "250 g = 250 g = 0.25 kg",
             "weight_in_kg": 0.25
         },
         {
@@ -12,37 +12,37 @@
         },
         {
             "ingredient": "1 onion, finely chopped",
-            "weight_calculation": "1 onion = 170 g = 0.170 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
             "ingredient": "1 bunch of green asparagus",
-            "weight_calculation": "1 bunch asparagus = 500 g = 0.500 kg",
+            "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "weight_in_kg": 0.5
         },
         {
             "ingredient": "1 squash, roughly diced",
-            "weight_calculation": "1 squash = 400 g = 0.400 kg",
+            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
             "ingredient": "1 large handful of fresh basil, chopped",
-            "weight_calculation": "1 large handful of herbs = 0.025 kg",
+            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "2 dl cream",
-            "weight_calculation": "2 dl = 0.2 kg",
+            "weight_calculation": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 dl water",
-            "weight_calculation": "1 dl = 0.1 kg",
+            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "1 vegetable stock cube",
-            "weight_calculation": "1 bouillon cube = 4 g = 0.004 kg",
+            "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
@@ -52,23 +52,23 @@
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "1 handful of mozzarella = 100 g (estimated by LLM model) = 0.100 kg",
+            "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "A little salt",
-            "weight_calculation": "amount of salt not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+            "weight_in_kg": 0.01
         },
         {
             "ingredient": "A little pepper",
-            "weight_calculation": "amount of pepper not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+            "weight_in_kg": 0.01
         },
         {
             "ingredient": "Oil for frying",
-            "weight_calculation": "amount of oil not specified",
-            "weight_in_kg": null
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.020 kg, 2 servings * 0.020 kg = 0.04 kg",
+            "weight_in_kg": 0.04
         }
     ]
 }
