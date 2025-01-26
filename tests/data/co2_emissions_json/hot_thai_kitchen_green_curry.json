@@ -1,0 +1,64 @@
+{
+    "emissions": [
+        {
+            "explanation": "Coconut milk is a high-emission ingredient due to its production process.",
+            "ingredient": "Coconut milk",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 6.3
+        },
+        {
+            "explanation": "Green curry paste is a processed ingredient with significant emissions.",
+            "ingredient": "Green curry paste",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.1
+        },
+        {
+            "explanation": "Chicken stock is a liquid derived from chicken, with lower emissions than whole chicken.",
+            "ingredient": "Bouillon, chicken, prepared",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Chicken thighs are a common poultry cut with moderate emissions.",
+            "ingredient": "Chicken, leg, flesh and skin, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.0
+        },
+        {
+            "explanation": "Brown sugar has a moderate emission factor due to its processing.",
+            "ingredient": "Sugar, brown",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.4
+        },
+        {
+            "explanation": "Fish sauce is a fermented product with significant emissions.",
+            "ingredient": "Fish balls, canned",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.2
+        },
+        {
+            "explanation": "Canned bamboo shoots are processed and have moderate emissions.",
+            "ingredient": "Bamboo shoots, canned, nonsalted",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.4
+        },
+        {
+            "explanation": "Fresh basil has low emissions compared to dried herbs.",
+            "ingredient": "Basil, fresh",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Red bell pepper has moderate emissions as a fresh vegetable.",
+            "ingredient": "Pepper, sweet, red, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Jasmine rice is a staple grain with higher emissions than some other rice forms.",
+            "ingredient": "Rice, parboiled, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.1
+        }
+    ]
+}

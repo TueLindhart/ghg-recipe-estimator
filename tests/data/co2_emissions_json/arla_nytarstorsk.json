@@ -1,0 +1,88 @@
+{
+    "emissions": [
+        {
+            "explanation": "Best match for butter, considering processing level.",
+            "ingredient": "Butter, salt added",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 3.3
+        },
+        {
+            "explanation": "Best match for raw beetroot, as it is the least processed option.",
+            "ingredient": "Beet, red, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for dark balsamic vinegar, as it is a type of vinegar.",
+            "ingredient": "Vinegar",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.6
+        },
+        {
+            "explanation": "Best match for sugar, considering processing level.",
+            "ingredient": "Sugar, sucrose, white",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.7
+        },
+        {
+            "explanation": "Best match for cod loin, as it is the raw form of cod.",
+            "ingredient": "Cod, fillet, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.8
+        },
+        {
+            "explanation": "Best match for melted butter, considering processing level.",
+            "ingredient": "Butter, salt added",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 3.3
+        },
+        {
+            "explanation": "Best match for water, as it is the least processed option.",
+            "ingredient": "Water, tap, drinking, average values",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.0
+        },
+        {
+            "explanation": "Best match for mustard seeds, as they are the raw form of mustard.",
+            "ingredient": "Mustard, yellow, ready made",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.9
+        },
+        {
+            "explanation": "Best match for finely chopped shallots, considering processing level.",
+            "ingredient": "Onions, chopped, frozen",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for cold butter, considering processing level.",
+            "ingredient": "Butter, salt added",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 3.3
+        },
+        {
+            "explanation": "Best match for freshly ground pepper, as it is a common spice.",
+            "ingredient": "Pepper, black",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "explanation": "Best match for fresh herbs, considering processing level.",
+            "ingredient": "Basil, fresh",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for fried bacon cubes, considering processing level.",
+            "ingredient": "Bacon, frying, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 6.4
+        },
+        {
+            "explanation": "Best match for quail eggs, as they are a type of egg.",
+            "ingredient": "Squab (pigeon), raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 3.3
+        }
+    ]
+}

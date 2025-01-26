@@ -1,0 +1,76 @@
+{
+    "emissions": [
+        {
+            "explanation": "Best match for fresh pasta is raw pasta.",
+            "ingredient": "250 g fresh pasta",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.1
+        },
+        {
+            "explanation": "Best match for onion is raw onion.",
+            "ingredient": "1 onion, finely chopped",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for green asparagus is raw asparagus.",
+            "ingredient": "1 bunch of green asparagus",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "No suitable match for squash; using canned tomato as closest option.",
+            "ingredient": "1 squash, roughly diced",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Best match for fresh basil is fresh basil.",
+            "ingredient": "1 large handful of fresh basil, chopped",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for cream is whipping cream.",
+            "ingredient": "2 dl cream",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.7
+        },
+        {
+            "explanation": "Best match for water is tap water.",
+            "ingredient": "1 dl water",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.0
+        },
+        {
+            "explanation": "Best match for grated parmesan is hard cheese, Parmesan.",
+            "ingredient": "6 tbsp grated parmesan",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.4
+        },
+        {
+            "explanation": "Best match for mozzarella is semihard mozzarella.",
+            "ingredient": "1 handful of mozzarella",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.4
+        },
+        {
+            "explanation": "Best match for salt is table salt.",
+            "ingredient": "A little salt",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for pepper is black pepper.",
+            "ingredient": "A little pepper",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "explanation": "Best match for oil is olive oil.",
+            "ingredient": "Oil for frying",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.9
+        }
+    ]
+}

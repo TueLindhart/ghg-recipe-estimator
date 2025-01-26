@@ -1,0 +1,118 @@
+{
+    "emissions": [
+        {
+            "explanation": "Best match for olive oil",
+            "ingredient": "1 tbsp olive oil",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.9
+        },
+        {
+            "explanation": "Best match for onion, finely chopped",
+            "ingredient": "1 onion, finely chopped",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for vegetable broth",
+            "ingredient": "1 dl vegetable broth",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.5
+        },
+        {
+            "explanation": "Best match for chopped tomatoes",
+            "ingredient": "1 can chopped tomatoes",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Best match for olive oil, for frying",
+            "ingredient": "1 tbsp olive oil, for frying",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.9
+        },
+        {
+            "explanation": "Best match for salt",
+            "ingredient": "salt",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for freshly ground black pepper",
+            "ingredient": "freshly ground black pepper",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "explanation": "Best match for onion, finely chopped (duplicate)",
+            "ingredient": "1 onion, finely chopped",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for squash, coarsely grated",
+            "ingredient": "1 squash, coarsely grated",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.8
+        },
+        {
+            "explanation": "Best match for chopped tomatoes (duplicate)",
+            "ingredient": "1 can chopped tomatoes",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Best match for black beans",
+            "ingredient": "1 can black beans",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.2
+        },
+        {
+            "explanation": "Best match for kidney beans",
+            "ingredient": "1 can kidney beans",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.2
+        },
+        {
+            "explanation": "Best match for corn",
+            "ingredient": "300 g corn",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.0
+        },
+        {
+            "explanation": "Best match for tortillas pancakes",
+            "ingredient": "8 tortillas pancakes",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.2
+        },
+        {
+            "explanation": "Best match for cheddar cheese, freshly grated",
+            "ingredient": "150 g cheddar cheese, freshly grated",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.4
+        },
+        {
+            "explanation": "Best match for fresh coriander or broad-leaf parsley",
+            "ingredient": "1 handful fresh coriander, or broad-leaf parsley",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.5
+        },
+        {
+            "explanation": "Best match for salt (duplicate)",
+            "ingredient": "salt",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for freshly ground black pepper (duplicate)",
+            "ingredient": "freshly ground black pepper",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "explanation": "Best match for butter, for the pan",
+            "ingredient": "1 tbsp butter, for the pan",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 3.3
+        }
+    ]
+}

@@ -12,6 +12,8 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
 from food_co2_estimator.retrievers.vector_db_retriever import batch_emission_retriever
 from food_co2_estimator.utils.openai_model import get_model
 
+NEGLIGIBLE_THRESHOLD = 0.01
+
 
 def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
     llm = get_model(

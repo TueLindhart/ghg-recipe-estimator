@@ -1,0 +1,76 @@
+{
+    "emissions": [
+        {
+            "explanation": "Best match for minced beef is beef mince with 10-15% fat, raw.",
+            "ingredient": "1 kg minced beef",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 48.0
+        },
+        {
+            "explanation": "Best match for large onions is raw onions.",
+            "ingredient": "3 large onions",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for carrots is raw carrots.",
+            "ingredient": "3 carrots",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for celery is raw celery.",
+            "ingredient": "2.5 stalks celery",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for garlic is raw garlic.",
+            "ingredient": "6 cloves garlic",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.2
+        },
+        {
+            "explanation": "Best match for fresh basil leaves is fresh basil.",
+            "ingredient": "1 handful fresh basil leaves",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for tomato concentrate is concentrated tomato paste.",
+            "ingredient": "150 g tomato concentrate",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.7
+        },
+        {
+            "explanation": "Best match for chopped tomatoes is peeled canned tomatoes.",
+            "ingredient": "3 tins chopped tomatoes",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Best match for red wine is red wine.",
+            "ingredient": "2 dl red wine",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.6
+        },
+        {
+            "explanation": "Best match for olive oil is olive oil.",
+            "ingredient": "0.5 dl olive oil",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.9
+        },
+        {
+            "explanation": "Best match for salt is table salt.",
+            "ingredient": "salt",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for pepper is black pepper.",
+            "ingredient": "pepper",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        }
+    ]
+}

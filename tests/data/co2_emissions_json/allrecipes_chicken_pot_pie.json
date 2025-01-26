@@ -1,0 +1,106 @@
+{
+    "emissions": [
+        {
+            "explanation": "Best match for olive oil based on processing and emissions.",
+            "ingredient": "Olive oil",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.9
+        },
+        {
+            "explanation": "Best match for skinless, boneless chicken breast based on processing and emissions.",
+            "ingredient": "Chicken, breast, flesh and skin, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "explanation": "Best match for medium carrots based on processing and emissions.",
+            "ingredient": "Carrot, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "explanation": "Best match for celery based on processing and emissions.",
+            "ingredient": "Celery, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for red bell pepper based on processing and emissions.",
+            "ingredient": "Pepper, sweet, red, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Best match for scallions based on processing and emissions.",
+            "ingredient": "Onions, spring, raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.8
+        },
+        {
+            "explanation": "Best match for canned diced tomatoes with green chiles based on processing and emissions.",
+            "ingredient": "Tomato, peeled, canned",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "explanation": "Best match for black beans based on processing and emissions.",
+            "ingredient": "Black beans",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.2
+        },
+        {
+            "explanation": "Best match for chili powder based on processing and emissions.",
+            "ingredient": "Chili Sauce",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.1
+        },
+        {
+            "explanation": "Best match for ground cumin based on processing and emissions.",
+            "ingredient": "Curry powder",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 6.1
+        },
+        {
+            "explanation": "Best match for granulated garlic based on processing and emissions.",
+            "ingredient": "Garlic in oil",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.5
+        },
+        {
+            "explanation": "Best match for onion powder based on processing and emissions.",
+            "ingredient": "Onions, chopped, frozen",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for salt based on processing and emissions.",
+            "ingredient": "Salt, table",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "explanation": "Best match for ground black pepper based on processing and emissions.",
+            "ingredient": "Pepper, black",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "explanation": "Best match for dry corn muffin mix based on processing and emissions.",
+            "ingredient": "Corn flour",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.6
+        },
+        {
+            "explanation": "Best match for milk based on processing and emissions.",
+            "ingredient": "Goat milk",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 2.8
+        },
+        {
+            "explanation": "Best match for egg based on processing and emissions.",
+            "ingredient": "Eggs, chicken, free-range hens (indoor), raw",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.0
+        }
+    ]
+}

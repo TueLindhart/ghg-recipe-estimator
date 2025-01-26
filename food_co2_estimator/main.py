@@ -2,6 +2,7 @@ import asyncio
 import logging
 
 from food_co2_estimator.chains.rag_co2_estimator import (
+    NEGLIGIBLE_THRESHOLD,
     get_co2_emissions,
 )
 from food_co2_estimator.chains.recipe_extractor import (
@@ -25,7 +26,7 @@ def log_expeption_message(url: str, message: str):
 async def async_estimator(
     url: str,
     verbose: bool = False,
-    negligeble_threshold: float = 0.01,
+    negligeble_threshold: float = NEGLIGIBLE_THRESHOLD,
     logging_level=logging.INFO,
 ):
     logging.basicConfig(level=logging_level)
