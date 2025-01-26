@@ -42,4 +42,4 @@ jobs:
         run: |
           make test
         env:
-          super_secret: ${{ secrets.GHACTIONSOPENAIKEY }}
+          super_secret: ${{ secrets.OPEN_API_KEY }}
