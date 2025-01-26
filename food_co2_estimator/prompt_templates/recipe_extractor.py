@@ -25,6 +25,7 @@ WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
         "2 fede hvidløg",
         "0.25 bdt koriander",
         "1 håndfuld frisk basilikum",
+        "200 g smør",
     ],
     persons=4,
     instructions=(
@@ -66,6 +67,7 @@ EXAMPLE_INPUT_1 = """
 - to fede hvidløg
 - ¼ bundt koriander
 - 1 håndfuld frisk basilikum
+- 200 g smør (i små stykker)
 
 **Fremgangsmåde**
 Forbered fiskefarsen ved at skære torskefileten i mindre stykker og blend den sammen med havsalt i en foodprocessor til en fin konsistens. Tilsæt de to hele æg, fintrevet gulerod, fløde, muskatnød og peber. Blend igen, indtil ingredienserne er godt blandet og konsistensen er jævn. Smag til med salt og peber efter behov

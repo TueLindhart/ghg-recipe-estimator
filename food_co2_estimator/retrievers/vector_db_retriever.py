@@ -97,6 +97,9 @@ INGREDIENT_UNITS = sorted(
         "drop",
         "drops",
         "large",
+        "small",
+        "medium",
+        "soft-boiled",
         # Short Units
         "t",
         "c",

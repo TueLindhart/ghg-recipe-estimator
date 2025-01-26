@@ -1,120 +1,120 @@
 {
     "emissions": [
         {
-            "closest_match_argument": "Matched based on Rule 1: Olive oil has a specific CO2 emission factor.",
-            "emission_option_name": "Olive oil",
+            "closest_match_argument": "Matched based on Rule 1: Olive oil is a common cooking oil with specific emissions.",
+            "emission_option_name": "1 tbsp olive oil",
             "ingredient": "1 tbsp olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Skinless, boneless chicken breast is a specific form of chicken with a defined CO2 emission factor.",
-            "emission_option_name": "Chicken, breast, flesh and skin, raw",
+            "closest_match_argument": "Matched based on Rule 1: Skinless, boneless chicken breast has specific emissions associated with poultry.",
+            "emission_option_name": "1 lb skinless, boneless chicken breast",
             "ingredient": "1 lb skinless, boneless chicken breast",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Carrots have a specific CO2 emission factor.",
-            "emission_option_name": "Carrot, raw",
+            "closest_match_argument": "Matched based on Rule 1: Raw carrots have specific emissions associated with their production.",
+            "emission_option_name": "2 medium carrots",
             "ingredient": "2 medium carrots",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Celery has a specific CO2 emission factor.",
-            "emission_option_name": "Celery, raw",
+            "closest_match_argument": "Matched based on Rule 1: Raw celery has specific emissions associated with its production.",
+            "emission_option_name": "2 stalks of celery",
             "ingredient": "2 stalks of celery",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Red bell pepper has a specific CO2 emission factor.",
-            "emission_option_name": "Pepper, sweet, red, raw",
+            "closest_match_argument": "Matched based on Rule 1: Red bell pepper has specific emissions associated with its production.",
+            "emission_option_name": "1 red bell pepper",
             "ingredient": "1 red bell pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Scallions are a specific type of onion with a defined CO2 emission factor.",
-            "emission_option_name": "Onions, spring, raw",
+            "closest_match_argument": "Matched based on Rule 1: Spring onions (scallions) have specific emissions associated with their production.",
+            "emission_option_name": "1 bunch scallions",
             "ingredient": "1 bunch scallions",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Canned diced tomatoes have a specific CO2 emission factor.",
-            "emission_option_name": "Tomato, peeled, canned",
+            "closest_match_argument": "Matched based on Rule 1: Canned diced tomatoes have specific emissions associated with their processing.",
+            "emission_option_name": "1 (15 oz) can diced tomatoes with green chiles",
             "ingredient": "1 (15 oz) can diced tomatoes with green chiles",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Black beans have a specific CO2 emission factor.",
-            "emission_option_name": "Black beans",
+            "closest_match_argument": "Matched based on Rule 1: Canned black beans have specific emissions associated with their processing.",
+            "emission_option_name": "2 (15 oz) cans black beans",
             "ingredient": "2 (15 oz) cans black beans",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Chili powder has a specific CO2 emission factor.",
-            "emission_option_name": "Chili Sauce",
+            "closest_match_argument": "Matched based on Rule 1: Chili powder has specific emissions associated with its processing.",
+            "emission_option_name": "4 tbsp chili powder",
             "ingredient": "4 tbsp chili powder",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Ground cumin has a specific CO2 emission factor.",
-            "emission_option_name": "Curry powder",
+            "closest_match_argument": "Matched based on Rule 1: Ground cumin has specific emissions associated with its processing.",
+            "emission_option_name": "1 tbsp ground cumin",
             "ingredient": "1 tbsp ground cumin",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Granulated garlic has a specific CO2 emission factor.",
-            "emission_option_name": "Garlic, raw",
+            "closest_match_argument": "Matched based on Rule 1: Granulated garlic has specific emissions associated with its processing.",
+            "emission_option_name": "2 tsp granulated garlic",
             "ingredient": "2 tsp granulated garlic",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Onion powder has a specific CO2 emission factor.",
-            "emission_option_name": "Red onion",
+            "closest_match_argument": "Matched based on Rule 1: Onion powder has specific emissions associated with its processing.",
+            "emission_option_name": "2 tsp onion powder",
             "ingredient": "2 tsp onion powder",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Salt has a specific CO2 emission factor.",
-            "emission_option_name": "Salt, table",
+            "closest_match_argument": "Matched based on Rule 1: Table salt has specific emissions associated with its production.",
+            "emission_option_name": "salt",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Black pepper has a specific CO2 emission factor.",
-            "emission_option_name": "Pepper, black",
+            "closest_match_argument": "Matched based on Rule 1: Black pepper has specific emissions associated with its production.",
+            "emission_option_name": "black pepper",
             "ingredient": "black pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Dry corn muffin mix has a specific CO2 emission factor.",
-            "emission_option_name": "Corn flour",
+            "closest_match_argument": "Matched based on Rule 1: Dry corn muffin mix has specific emissions associated with its processing.",
+            "emission_option_name": "1 (8.5 oz) package dry corn muffin mix",
             "ingredient": "1 (8.5 oz) package dry corn muffin mix",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Milk has a specific CO2 emission factor.",
-            "emission_option_name": "Goat milk",
+            "closest_match_argument": "Matched based on Rule 1: Milk has specific emissions associated with its production.",
+            "emission_option_name": "0.33 cup milk",
             "ingredient": "0.33 cup milk",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 2.8
+            "co2_per_kg": 5.0
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Eggs have a specific CO2 emission factor.",
-            "emission_option_name": "Eggs, chicken, free-range hens (indoor), raw",
+            "closest_match_argument": "Matched based on Rule 1: One egg has specific emissions associated with its production.",
+            "emission_option_name": "1 egg",
             "ingredient": "1 egg",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.0

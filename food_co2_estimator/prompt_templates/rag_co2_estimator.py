@@ -8,6 +8,13 @@ You can only provide kg CO2e per kg results that exist in the provided emission 
 - The accuracy and reliability of the output depend entirely on the provided emission options.
 - Generating CO2 emissions data that is not explicitly provided would undermine trust in the results, as it would no longer reflect real, validated data.
 
+**Explanation for emission option names**
+- First "text instance before "," is the actual ingredient.
+- "the named following "," are further information about processing and sources.
+- Examples:
+   - "Noodles, eggs": The ingredient is Noodles made from eggs.
+   - "Tomatoes, canned": The ingredient is canned tomatoes. 
+
 Follow these rules to find the best match and extrapolate logically:
 
 1. **Use Realistic CO2 Emission Comparisons Based on Common Sense**
@@ -34,6 +41,7 @@ Follow these rules to find the best match and extrapolate logically:
      - Almond milk does not originate from the same source nor have similar composition as cow's milk, so almond milk is not a subcategory of milk.
      - Brown rice is a type of rice; "rice" is a valid broader category.
      - Soy milk is derived from soybeans, not cows; it is not a sub-category of cow's milk.
+     - "Noodles, eggs" is NOT a good match for eggs as noodles are not eggs!
 
 3. **Do Not Use Final Meals as Best Matches:**
    - We match at the ingredient level, not at the meal level.
@@ -97,11 +105,9 @@ All the above rules aim to ensure the best estimate of CO2 emission per kg for a
 - Keep explanations brief, referencing only the specific rules or examples applied.
 - Examples:
    - Ingredient: "pancetta"
-   Closest Match Argument: "Matched based on Rule 1: Pancetta and bacon have similar CO2 emissions as pork products."
+   Closest Match Argument: "Matched based on Rule 1: Pancetta and bacon are both pork products and have similar emissions"
    - Ingredient: "almond milk"
    Closest Match Argument: "Matched using Rule 2 and the 'broader category' example: Almond milk falls under 'almonds.'"
-   - Ingredient: "dried basil"
-   Closest Match Argument: "Rule 4 applied: Considered processing (drying) to select the most appropriate match."
    - Ingredient: "burger"
    Closest Match Argument: "No match provided as per Rule 3: Burger is a final meal."
 

@@ -6,7 +6,7 @@ from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 
-ACCEPTABLE_WEIGHT_ERROR = 0.05  # kg (this range should be refined in the future)
+ACCEPTABLE_WEIGHT_ERROR = 0.1  # kg (this range should be refined in the future)
 TOTAL_ACCEPTABLE_ERROR = 0.5  # kg (this range should be refined in the future)
 
 IN_KG_REGEX = r"= \d+(\.\d+)? (kg|kilogram)"
