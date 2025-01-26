@@ -19,14 +19,14 @@ def dummy_recipe():
     )
 
 
-def extracted_recipe(file_name: str) -> ExtractedRecipe:
+def get_extracted_recipe(file_name: str) -> ExtractedRecipe:
     expected_output_filepath = os.path.join(EXTRACTED_RECIPE_DIR, file_name + ".json")
     with open(expected_output_filepath, "r", encoding="utf-8") as file:
         expected_output = json.load(file)
     return ExtractedRecipe(**expected_output)
 
 
-def recipe_markdown_text(file_name: str) -> str:
+def get_recipe_markdown_text(file_name: str) -> str:
     input_filepath = os.path.join(TEXT_INPUT_DIR, file_name + ".md")
     with open(input_filepath, "r", encoding="utf-8") as file:
         markdown_text = file.read()
@@ -36,7 +36,7 @@ def recipe_markdown_text(file_name: str) -> str:
 @pytest.fixture(params=TEST_URLS.keys())
 def markdown_and_expected_extracted_recipe(request: pytest.FixtureRequest):
     file_name = request.param
-    markdown_text = recipe_markdown_text(file_name)
+    markdown_text = get_recipe_markdown_text(file_name)
 
-    expected_output = extracted_recipe(file_name)
+    expected_output = get_extracted_recipe(file_name)
     return markdown_text, expected_output
