@@ -1,122 +1,122 @@
 {
     "emissions": [
         {
-            "closest_match_argument": "Matched based on Rule 1: Olive oil is a common cooking oil with specific emissions.",
-            "emission_option_name": "1 tbsp olive oil",
+            "closest_match_explanation": "Matched based on Rule 1: Olive oil is a common cooking oil with known emissions.",
+            "closest_match_name": "1 tbsp olive oil",
             "ingredient": "1 tbsp olive oil",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Skinless, boneless chicken breast has specific emissions associated with poultry.",
-            "emission_option_name": "1 lb skinless, boneless chicken breast",
+            "closest_match_explanation": "Matched based on Rule 1: Skinless, boneless chicken breast has specific emissions associated with poultry.",
+            "closest_match_name": "1 lb skinless, boneless chicken breast",
             "ingredient": "1 lb skinless, boneless chicken breast",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Raw carrots have specific emissions associated with their production.",
-            "emission_option_name": "2 medium carrots",
+            "closest_match_explanation": "Matched based on Rule 1: Raw carrots have a standard emission factor for vegetables.",
+            "closest_match_name": "2 medium carrots",
             "ingredient": "2 medium carrots",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Raw celery has specific emissions associated with its production.",
-            "emission_option_name": "2 stalks of celery",
+            "closest_match_explanation": "Matched based on Rule 1: Raw celery has a standard emission factor for vegetables.",
+            "closest_match_name": "2 stalks of celery",
             "ingredient": "2 stalks of celery",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Red bell pepper has specific emissions associated with its production.",
-            "emission_option_name": "1 red bell pepper",
+            "closest_match_explanation": "Matched based on Rule 1: Red bell pepper is a common vegetable with known emissions.",
+            "closest_match_name": "1 red bell pepper",
             "ingredient": "1 red bell pepper",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Spring onions (scallions) have specific emissions associated with their production.",
-            "emission_option_name": "1 bunch scallions",
+            "closest_match_explanation": "Matched based on Rule 1: Spring onions (scallions) have a standard emission factor for vegetables.",
+            "closest_match_name": "1 bunch scallions",
             "ingredient": "1 bunch scallions",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Canned diced tomatoes have specific emissions associated with their processing.",
-            "emission_option_name": "1 (15 oz) can diced tomatoes with green chiles",
+            "closest_match_explanation": "Matched based on Rule 1: Canned diced tomatoes have specific emissions associated with canned vegetables.",
+            "closest_match_name": "1 (15 oz) can diced tomatoes with green chiles",
             "ingredient": "1 (15 oz) can diced tomatoes with green chiles",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Canned black beans have specific emissions associated with their processing.",
-            "emission_option_name": "2 (15 oz) cans black beans",
+            "closest_match_explanation": "Matched based on Rule 1: Black beans have specific emissions associated with legumes.",
+            "closest_match_name": "2 (15 oz) cans black beans",
             "ingredient": "2 (15 oz) cans black beans",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Chili powder has specific emissions associated with its processing.",
-            "emission_option_name": "4 tbsp chili powder",
+            "closest_match_explanation": "Matched based on Rule 1: Chili powder is a spice with known emissions.",
+            "closest_match_name": "4 tbsp chili powder",
             "ingredient": "4 tbsp chili powder",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Ground cumin has specific emissions associated with its processing.",
-            "emission_option_name": "1 tbsp ground cumin",
+            "closest_match_explanation": "Matched based on Rule 1: Ground cumin is a spice with known emissions.",
+            "closest_match_name": "1 tbsp ground cumin",
             "ingredient": "1 tbsp ground cumin",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Granulated garlic has specific emissions associated with its processing.",
-            "emission_option_name": "2 tsp granulated garlic",
+            "closest_match_explanation": "Matched based on Rule 1: Granulated garlic has specific emissions associated with garlic products.",
+            "closest_match_name": "2 tsp granulated garlic",
             "ingredient": "2 tsp granulated garlic",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Onion powder has specific emissions associated with its processing.",
-            "emission_option_name": "2 tsp onion powder",
+            "closest_match_explanation": "Matched based on Rule 1: Onion powder has specific emissions associated with onion products.",
+            "closest_match_name": "2 tsp onion powder",
             "ingredient": "2 tsp onion powder",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Table salt has specific emissions associated with its production.",
-            "emission_option_name": "salt",
+            "closest_match_explanation": "Matched based on Rule 1: Table salt has a standard emission factor for salt.",
+            "closest_match_name": "salt",
             "ingredient": "salt",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Black pepper has specific emissions associated with its production.",
-            "emission_option_name": "black pepper",
+            "closest_match_explanation": "Matched based on Rule 1: Black pepper is a spice with known emissions.",
+            "closest_match_name": "black pepper",
             "ingredient": "black pepper",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Dry corn muffin mix has specific emissions associated with its processing.",
-            "emission_option_name": "1 (8.5 oz) package dry corn muffin mix",
+            "closest_match_explanation": "Matched based on Rule 1: Corn flour has specific emissions associated with corn products.",
+            "closest_match_name": "1 (8.5 oz) package dry corn muffin mix",
             "ingredient": "1 (8.5 oz) package dry corn muffin mix",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Milk has specific emissions associated with its production.",
-            "emission_option_name": "0.33 cup milk",
+            "closest_match_explanation": "Matched based on Rule 1: Milk has specific emissions associated with dairy products.",
+            "closest_match_name": "0.33 cup milk",
             "ingredient": "0.33 cup milk",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 5.0
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: One egg has specific emissions associated with its production.",
-            "emission_option_name": "1 egg",
+            "closest_match_explanation": "Matched based on Rule 1: Eggs have specific emissions associated with poultry products.",
+            "closest_match_name": "1 egg",
             "ingredient": "1 egg",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.0
         }
     ]

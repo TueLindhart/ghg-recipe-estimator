@@ -98,8 +98,8 @@ def test_update_with_co2_per_kg_db(recipe: EnrichedRecipe):
     co2_emissions = CO2Emissions(
         emissions=[
             CO2perKg(
-                closest_match_argument="Matches 'tomatoes, canned' best.",
-                emission_option_name="tomatoes, canned",
+                closest_match_explanation="Matches 'tomatoes, canned' best.",
+                closest_match_name="tomatoes, canned",
                 ingredient="1 can of tomatoes",
                 co2_per_kg=2.5,
                 unit="kg",

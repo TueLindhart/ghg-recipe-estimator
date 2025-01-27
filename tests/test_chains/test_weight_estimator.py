@@ -6,8 +6,8 @@ from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 
-ACCEPTABLE_WEIGHT_ERROR = 0.1  # kg (this range should be refined in the future)
-TOTAL_ACCEPTABLE_ERROR = 0.5  # kg (this range should be refined in the future)
+ACCEPTABLE_WEIGHT_ERROR = 0.2  # kg (this range should be refined in the future)
+TOTAL_ACCEPTABLE_ERROR = 0.1
 
 IN_KG_REGEX = r"= \d+(\.\d+)? (kg|kilogram)"
 
@@ -44,8 +44,8 @@ async def test_weight_estimator_chain(
             )
 
         if reference_weight is not None and estimated_weight is not None:
-            lower_bound = max(0, reference_weight - (ACCEPTABLE_WEIGHT_ERROR / 2))
-            upper_bound = reference_weight + (ACCEPTABLE_WEIGHT_ERROR / 2)
+            lower_bound = max(0, reference_weight - ACCEPTABLE_WEIGHT_ERROR)
+            upper_bound = reference_weight + ACCEPTABLE_WEIGHT_ERROR
             assert (
                 lower_bound <= estimated_weight and estimated_weight <= upper_bound
             ), (

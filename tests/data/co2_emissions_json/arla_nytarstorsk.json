@@ -1,101 +1,101 @@
 {
     "emissions": [
         {
-            "closest_match_argument": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to other butter options.",
-            "emission_option_name": "Butter, salt added",
+            "closest_match_explanation": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to 'Butter, salt added.'",
+            "closest_match_name": "Butter, salt added",
             "ingredient": "25 g butter",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Beetroot and canned beetroot are both forms of beet and have similar emissions.",
-            "emission_option_name": "Beet, red, raw",
+            "closest_match_explanation": "Matched based on Rule 1: Beetroot is a root vegetable and has similar emissions to 'Beet, red, raw.'",
+            "closest_match_name": "Beet, red, raw",
             "ingredient": "400 g beetroot",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Dark balsamic vinegar falls under the general category of vinegar.",
-            "emission_option_name": "Vinegar",
+            "closest_match_explanation": "Matched based on Rule 1: Dark balsamic vinegar is a type of vinegar and has similar emissions to 'Vinegar.'",
+            "closest_match_name": "Vinegar",
             "ingredient": "1 dl dark balsamic vinegar",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Sugar, brown and sugar, sucrose, white are both types of sugar with similar emissions.",
-            "emission_option_name": "Sugar, sucrose, white",
+            "closest_match_explanation": "Matched based on Rule 1: Sugar is a sweetener and has similar emissions to 'Sugar, sucrose, white.'",
+            "closest_match_name": "Sugar, sucrose, white",
             "ingredient": "2 tbsp sugar",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Cod loin and cod fillet are both forms of cod and have similar emissions.",
-            "emission_option_name": "Cod, fillet, raw",
+            "closest_match_explanation": "Matched based on Rule 1: Cod loin is a fish and has similar emissions to 'Cod, fillet, raw.'",
+            "closest_match_name": "Cod, fillet, raw",
             "ingredient": "600 g cod loin",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to other butter options.",
-            "emission_option_name": "Butter, salt added",
+            "closest_match_explanation": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to 'Butter, salt added.'",
+            "closest_match_name": "Butter, salt added",
             "ingredient": "25 g butter (melted)",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_argument": "Matched based on Rule 9: Water is provided as a specific option with a known emission value.",
-            "emission_option_name": "Water, tap, drinking, average values",
+            "closest_match_explanation": "Matched based on Rule 1: Water has no emissions, so it is treated as '0.'",
+            "closest_match_name": "Bottled still water",
             "ingredient": "2.5 dl water",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.0
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Whole yellow mustard seeds and ready-made mustard are both forms of mustard and have similar emissions.",
-            "emission_option_name": "Mustard, yellow, ready made",
+            "closest_match_explanation": "Matched based on Rule 1: Whole yellow mustard seeds are seeds and have similar emissions to 'Wheat, kernels, whole/cracked.'",
+            "closest_match_name": "Wheat, kernels, whole/cracked",
             "ingredient": "3 tbsp whole yellow mustard seeds",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 1.9
+            "unit": "kg CO2 per kg",
+            "co2_per_kg": 1.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Finely chopped shallots and onions are both forms of onion and have similar emissions.",
-            "emission_option_name": "Onions, chopped, frozen",
+            "closest_match_explanation": "Matched based on Rule 1: Finely chopped shallots are a type of onion and have similar emissions to 'Onions, chopped, frozen.'",
+            "closest_match_name": "Onions, chopped, frozen",
             "ingredient": "75 g finely chopped shallots",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to other butter options.",
-            "emission_option_name": "Butter, salt added",
+            "closest_match_explanation": "Matched based on Rule 1: Cold butter is a dairy product and has similar emissions to 'Butter, salt added.'",
+            "closest_match_name": "Butter, salt added",
             "ingredient": "200 g cold butter",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Freshly ground pepper and black pepper are both forms of pepper and have similar emissions.",
-            "emission_option_name": "Pepper, black",
+            "closest_match_explanation": "Matched based on Rule 1: Freshly ground pepper is a spice and has similar emissions to 'Pepper, black.'",
+            "closest_match_name": "Pepper, black",
             "ingredient": "freshly ground pepper",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Fresh herbs and basil, fresh are both forms of herbs and have similar emissions.",
-            "emission_option_name": "Basil, fresh",
+            "closest_match_explanation": "Matched based on Rule 1: Fresh herbs are a category of herbs and have similar emissions to 'Basil, fresh.'",
+            "closest_match_name": "Basil, fresh",
             "ingredient": "fresh herbs",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Fried bacon cubes and bacon are both pork products and have similar emissions.",
-            "emission_option_name": "Bacon, frying, raw",
+            "closest_match_explanation": "Matched based on Rule 1: Fried bacon cubes are a type of bacon and have similar emissions to 'Bacon, frying, raw.'",
+            "closest_match_name": "Bacon, frying, raw",
             "ingredient": "100 g fried bacon cubes",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 6.4
         },
         {
-            "closest_match_argument": "Matched based on Rule 1: Quail eggs and eggs are both forms of eggs and have similar emissions.",
-            "emission_option_name": "Noodles, eggs",
+            "closest_match_explanation": "Matched based on Rule 1: Quail eggs are a type of egg and have similar emissions to 'Noodles, eggs.'",
+            "closest_match_name": "Noodles, eggs",
             "ingredient": "4 soft-boiled quail eggs",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.7
         }
     ]

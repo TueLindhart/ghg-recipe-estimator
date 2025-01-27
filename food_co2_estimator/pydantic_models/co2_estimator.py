@@ -4,12 +4,12 @@ from pydantic import BaseModel, Field
 
 
 class CO2perKg(BaseModel):
-    closest_match_argument: str = Field(
+    closest_match_explanation: str = Field(
         description="A concise reference to the instructions or specific cases used to determine why the selected "
         "emission option is the closest match. The explanation should indicate which rules or examples "
         "in the provided matching instructions were applied."
     )
-    emission_option_name: str = Field(
+    closest_match_name: str = Field(
         description="Name of the closest match to ingredient. Example: 'Tomatoes, canned.'"
     )
     ingredient: str = Field(

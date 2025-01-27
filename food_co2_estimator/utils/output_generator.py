@@ -68,7 +68,7 @@ def generate_output(
 
         comments = {
             weight_key: weight_estimate.weight_calculation if weight_estimate else None,
-            "DB": co2_data.closest_match_argument if co2_data else None,
+            "DB": co2_data.closest_match_explanation if co2_data else None,
             search_key: search_result.explanation if search_result else None,
         }
 
