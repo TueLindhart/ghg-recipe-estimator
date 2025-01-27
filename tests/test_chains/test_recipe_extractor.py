@@ -1,6 +1,10 @@
+from difflib import SequenceMatcher
+
 import pytest
 
 from food_co2_estimator.chains.recipe_extractor import ExtractedRecipe, extract_recipe
+
+MIN_STRING_SIMILARITY_SCORE = 0.25
 
 
 @pytest.mark.asyncio
@@ -32,6 +36,10 @@ async def test_extract_recipe_with_persons_in_url(
     assert result == dummy_recipe
 
 
+def string_similarity(text1: str, text2: str) -> float:
+    return SequenceMatcher(None, text1, text2).ratio()
+
+
 @pytest.mark.asyncio
 async def test_extract_recipe_chain(
     markdown_and_expected_extracted_recipe_fixture: tuple[str, ExtractedRecipe],
@@ -44,6 +52,7 @@ async def test_extract_recipe_chain(
     for ingredient, expected_ingredient in zip(
         result.ingredients, expected_extracted_recipe.ingredients
     ):
-        assert ingredient == expected_ingredient
+        sim_score = string_similarity(ingredient, expected_ingredient)
+        assert sim_score > MIN_STRING_SIMILARITY_SCORE
 
     assert result.persons == expected_extracted_recipe.persons

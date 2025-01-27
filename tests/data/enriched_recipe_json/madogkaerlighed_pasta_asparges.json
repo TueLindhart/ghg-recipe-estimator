@@ -92,14 +92,14 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "olie til stegning",
-            "en_name": "oil for frying",
+            "original_name": "olie",
+            "en_name": "oil",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
     "persons": 2,
-    "instructions": "Put a pot of water over the pasta. Cook the pasta according to the instructions on the package and pour off the water. Snap off the ends of the green asparagus and cut them into approx. 1 cm long pieces. Sauté the onion and garlic in oil in a hot pan. Add the squash and asparagus and sauté for a few minutes, sprinkle with salt and pepper. Add the water to the pan and crumble the stock cube in. Pour in the cream together with the grated parmesan and stir everything well. Turn the fresh pasta into the mixture and finally the mozzarella and fresh basil. Season with extra ground pepper.",
+    "instructions": "Put a pot of water over the pasta. Cook according to the instructions on the package and pour off the water. Snap off the ends of the green asparagus and cut them into approx. 1 cm long pieces. Sauté the onion and garlic in oil in a hot pan. Add the squash and asparagus and sauté for a few more minutes, sprinkle with salt and pepper. Add the water to the pan and crumble the stock cube in. Pour in the cream together with the grated parmesan and stir everything well. Toss the fresh pasta in the mixture and finally the mozzarella and fresh basil. Season with extra ground pepper.",
     "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
 }

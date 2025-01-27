@@ -43,8 +43,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "25 g smør (smeltet)",
-            "en_name": "25 g butter (melted)",
+            "original_name": "25 g smør",
+            "en_name": "25 g butter",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -128,6 +128,6 @@
         }
     ],
     "persons": 4,
-    "instructions": "Melt the butter in a pan over high heat, sauté the beetroot for approx. 2 min. Add the vinegar, sugar and salt, cook over high heat for approx. 5 min. Put the beetroot in an ovenproof dish and let them soak for approx. 2 hours. Divide the cod into four pieces, place them in a greased dish, brush with butter and sprinkle with salt. Bake the fish for approx. 12 min. at 200°. Whisk together the flour and a little water, add the rest of the water, mustard seeds and onion, cook for approx. 10 min. Whisk in the cold butter a little at a time, heat the sauce without boiling, add salt and pepper. Arrange the beetroot on plates, place the cod on top, garnish with bacon, quail eggs, herbs and serve with sauce.",
+    "instructions": "### Marinated beetroot\nMelt the butter in a saucepan over high heat, but without browning. Sauté the beetroot for approx. 2 min. Add the vinegar, sugar and salt and cook over high heat and without a lid for approx. 5 min. Put the beetroot in an ovenproof dish and let them steep for approx. 2 hours and taste.\n\n### Cod\nCut the cod into four equal pieces. Place the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 min. at 200° - traditional oven. Warm the beetroot on a rack at the bottom of the oven for the last 5 min. - pour off some of the liquid from the beetroot when serving, if necessary.\n\n### Mustard sauce\nWhisk flour and a little of the water together in a saucepan. Add the rest of the water, mustard seeds and onion. Cook the mixture over low heat and under a lid for approx. 10 min. Remove the saucepan from the heat and whisk in the cold butter little by little. Heat the sauce (it must not boil) and add salt and pepper. Taste.\n\n### How to serve New Year's cod\nFirst arrange the beetroot on four plates, place the cod on top, garnish with bacon, quail eggs, herbs and serve with sauce on the side.",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
 }

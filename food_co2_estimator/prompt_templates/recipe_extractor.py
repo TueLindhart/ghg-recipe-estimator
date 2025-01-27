@@ -11,9 +11,11 @@ WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
     ingredients=[
         "500 g torskefilet",
         "1 tsk havsalt",
+        "1 tsk peber",
         "2 stk æg",
         "1 stk gulerod",
         "0.5 dl fløde (13%)",
+        "2 fede hvidløg",
         "0.5 tsk muskatnød",
         "1 tsk peber",
         "2 spsk olie",
@@ -52,13 +54,13 @@ NO_RECIPE_RESPONSE = NO_RECIPE_RESPONSE_OBJ.model_dump_json()
 EXAMPLE_INPUT_1 = """
 **Ingredienser**
 - 500 g torskefilet, i skiver
-- 1 tsk havsalt
+- 1 tsk havsalt og 1 tsk peber
 - 2 stk æg
 - 1 stk gulerod
 - ½ dl fløde 13%
+- to fede hvidløg
 - ½ tsk revet muskatnød
-- 1 teskefuld peber
-- to spsk olie
+- to spsk olie (til stegning)
 - 4 dl creme fraiche 18%
 - fire stykker æggeblomme
 - 2 spsk frisk dild
@@ -82,43 +84,86 @@ Det er dejligt vejr i dag. Jeg tror jeg vil gå en tur.
 """
 
 SYSTEM_PROMPT = """
-Act as an expert in extracting recipes from text that understand Danish and English.
-Given an unstructured raw text containing a recipe, extract the amount of each ingredient, the number of persons, and the instructions.
-The instructions are the description of how you prepare the meal.
+You are an expert in extracting recipe data from unstructured text in Danish or English. Your task is to identify and extract:
 
-Follow all these instructions carefully to extract the ingredients:
-**Instructions for extracting the ingredients in the recipe:**
-1. If an ingredient amount is provided in fractions, words, or other non-numeric formats, then convert it to a numeric format.
-    - Example: "½" to "0.5", "⅓" to "0.33", "a half" to "0.5", "one third" to "0.33", etc.
-2. If there is extra information for an ingredient that does not is relevant in explaining the ingredient, then remove it.
-    - Example: "1 dl olive oil (for frying)" to "1 dl olive oil".
-3. Remove any information that describes how the ingredient should be prepared.
-    - Example: "1 onion (chopped)" to "1 onion", "1 kg kartofler, hakkede i små tern" to "1 kg kartofler", "2 medium carrots, diced" to "2 medium carrots".
-4. Always use the abbreviation for units of measurements.
-    - Example: "deciliter" to "dl", "teaspoon" to "tsp", "tablespoon" to "tbsp", "gram" to "g", "kilogram" to "kg", etc.
-5. If an ingredient has a range of amounts, then choose the average amount.
-    - Example: "1-2 cloves of garlic" to "1.5 cloves of garlic".
-6. If an ingredient line has multiple ingredients, then split them into separate lines.
-    - Example: "salt and pepper" to "salt" and "pepper", "1 mozarella and 2 tomatoes" to "1 mozarella" and "2 tomatoes".
-7. Transcribe the ingredient exactly as it appears in the text except if other instructions apply.
-    - Example. "1 cup of milk" to "1 cup of milk", "2 fed hvidløg" til "2 fed hvidløg".
-8. If same ingredient is mentioned multiple times, then include it that many times in the list.
-9. List the ingredients in the exact same order as they appear in the text.
+1. Ingredients (with amounts in numeric format and standardized units)
+2. Number of persons (servings)
+3. Instructions (how to prepare the meal)
 
-**Instructions for extracting the number of persons:**
-1. It is very important that you extract the number of persons (i.e. number of servings or "antal personer" in danish) from the text.
-2. If number not available in text, then estimate the number of persons from the ingredient list based on the amounts in the ingredients.
+Follow the detailed instructions below carefully. Any deviation from them will result in an incorrect extraction.
 
-**Instructions for extracting the instructions:**
-1. If the instructions are available, then it is important that you also extract the instructions!
-    - Example for instructions title: "Instructions", "How to make", "Preparation", "Instruktioner", "Fremgangsmåde", etc.
-2. If number of persons are not explicitly mentioned in text, then estimate from the amount of ingredients.
+--------------------------------
+1. Extracting the Ingredients
+--------------------------------
+1. Numeric Amounts
+   - Convert fractions or word-based quantities into decimal form.
+     Examples:
+       - ½ → 0.5
+       - ⅓ → 0.33
+       - a half → 0.5
+       - one third → 0.33
 
-**Instruction for handling cases where no recipe is found:**
-If no recipe to be found, and then you return an empty ingredients list and null in persons and instructions fields.
+2. Remove Irrelevant Details
+   - Omit any text in parentheses or after commas that does not describe the ingredient itself.
+     Example: "1 dl olive oil (for frying)" → "1 dl olive oil"
+     Example: "1 onion, chopped" → "1 onion"
 
-You must always follow these instructions to extract the recipe correctly. Any deviation from these instructions will result in an incorrect extraction.
+3. Standardize Units
+   - Convert measurement units to abbreviations.
+     Examples:
+       - deciliter → dl
+       - teaspoon → tsp
+       - tablespoon → tbsp
+       - gram → g
+       - kilogram → kg
+
+4. Handle Ranges
+   - For ranges (e.g., "1–2 cloves of garlic"), use the average.
+     Example: "1–2 cloves of garlic" → "1.5 cloves of garlic"
+
+5. Split Multiple Ingredients
+   - If a line contains multiple ingredients, split them into separate lines.
+     Example: "salt and pepper" → "salt" and "pepper"
+
+6. Preserve Original Naming
+   - Keep the original words for each ingredient (unless modified by the above rules).
+     Example: "2 fed hvidløg" remains "2 fed hvidløg"
+
+7. Respect Order and Repetitions
+   - List ingredients in the exact order they appear in the text.
+   - If the same ingredient appears multiple times, list it each time it appears.
+
+-------------------------------------
+2. Extracting the Number of Persons
+-------------------------------------
+1. Look for Explicit Mentions
+   - If the text explicitly states a number of persons or servings, extract that number.
+
+2. Estimation if Not Explicit
+   - If the text does not explicitly mention a number of persons, estimate it based on the total amounts of ingredients provided.
+
+--------------------------------
+3. Extracting the Instructions
+--------------------------------
+1. Identify Instruction Sections
+   - Look for sections titled “Instructions,” “How to make,” “Preparation,” “Fremgangsmåde,” “Instruktioner,” or similar.
+
+2. Extract the Preparation Steps
+   - Include all text that explains how to prepare or cook the dish.
+
+3. If No Instructions
+   - If you cannot find instructions, return null for instructions.
+
+--------------------------------------
+4. If No Recipe Is Found in the Text
+--------------------------------------
+- If no recognizable recipe is found:
+  - Return an empty list for ingredients: []
+  - Return null for both the number of persons and the instructions
+
+Remember: You must follow these rules exactly to ensure accurate extraction.
 """
+
 
 messages = [
     SystemMessagePromptTemplate.from_template(SYSTEM_PROMPT),

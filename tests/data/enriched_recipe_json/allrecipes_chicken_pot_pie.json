@@ -8,8 +8,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 lb skinless, boneless chicken breast",
-            "en_name": "1 lb skinless, boneless chicken breast",
+            "original_name": "1 lb chicken breast",
+            "en_name": "1 lb chicken breast",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -43,15 +43,15 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 (15 oz) can diced tomatoes with green chiles",
-            "en_name": "1 (15 oz) can diced tomatoes with green chiles",
+            "original_name": "1 can diced tomatoes with green chiles (15 ounce)",
+            "en_name": "1 can diced tomatoes with green chiles (15 ounces)",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 (15 oz) cans black beans",
-            "en_name": "2 (15 oz) cans black beans",
+            "original_name": "2 cans black beans (15 ounce)",
+            "en_name": "2 cans black beans (15 ounces)",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -106,8 +106,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 (8.5 oz) package dry corn muffin mix",
-            "en_name": "1 (8.5 oz) package dry corn muffin mix",
+            "original_name": "1 package dry corn muffin mix (8.5 ounce)",
+            "en_name": "1 package dry corn muffin mix (8.5 ounces)",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -128,6 +128,6 @@
         }
     ],
     "persons": 6,
-    "instructions": "Preheat the oven to 400 degrees F (200 degrees C). Heat oil in a Dutch over medium heat. Add chicken and cook until no longer pink inside, about 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions, and cook until tender, about 5 minutes. Stir in tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Cook until heated through, about 5 minutes more. In a bowl, combine cornbread mix with milk and egg. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture. Place the Dutch oven in the preheated oven and bake until the cornbread is golden, about 20 to 25 minutes.",
+    "instructions": "1. Preheat the oven to 400 degrees F (200 degrees C). 2. Heat oil in a Dutch over medium heat. Add chicken. Cook, stirring occasionally, until no longer pink inside, 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions and cook until tender, about 5 minutes. Add tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Stir to combine. Cook until heated through, about 5 minutes more. 3. While the mixture simmers, combine the cornbread mix with milk and egg in a bowl. 4. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture to form the crust. 5. Place the Dutch oven in the preheated oven and bake until the cornbread is golden and beginning to brown, 20 to 25 minutes.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }
