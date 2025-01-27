@@ -8,9 +8,9 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Skinless, boneless chicken breast is a direct match.",
+            "closest_match_explanation": "Matched based on Rule 1: Chicken breast is a direct match.",
             "closest_match_name": "Chicken, breast, flesh and skin, raw",
-            "ingredient": "1 lb skinless, boneless chicken breast",
+            "ingredient": "1 lb chicken breast",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
@@ -45,14 +45,14 @@
         {
             "closest_match_explanation": "Matched based on Rule 1: Tomato, peeled, canned is a direct match.",
             "closest_match_name": "Tomato, peeled, canned",
-            "ingredient": "1 (15 oz) can diced tomatoes with green chiles",
+            "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
             "closest_match_explanation": "Matched based on Rule 1: Black beans is a direct match.",
             "closest_match_name": "Black beans",
-            "ingredient": "2 (15 oz) cans black beans",
+            "ingredient": "2 cans black beans (15 ounces)",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
@@ -78,11 +78,11 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Onion, raw is a direct match.",
-            "closest_match_name": "Onion, raw",
+            "closest_match_explanation": "Matched based on Rule 1: Red onion is a direct match.",
+            "closest_match_name": "Red onion",
             "ingredient": "2 tsp onion powder",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 0.8
         },
         {
             "closest_match_explanation": "Matched based on Rule 1: Salt, table is a direct match.",
@@ -101,23 +101,23 @@
         {
             "closest_match_explanation": "Matched based on Rule 1: Corn flour is a direct match.",
             "closest_match_name": "Corn flour",
-            "ingredient": "1 (8.5 oz) package dry corn muffin mix",
+            "ingredient": "1 package dry corn muffin mix (8.5 ounces)",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Goat milk is a direct match.",
-            "closest_match_name": "Goat milk",
+            "closest_match_explanation": "Matched based on Rule 1: Milk is a direct match.",
+            "closest_match_name": "Milk",
             "ingredient": "0.33 cup milk",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 2.8
+            "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Noodles, eggs is a direct match.",
-            "closest_match_name": "Noodles, eggs",
+            "closest_match_explanation": "Matched based on Rule 1: Eggs is a direct match.",
+            "closest_match_name": "Eggs",
             "ingredient": "1 egg",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 1.7
+            "co2_per_kg": 1.0
         }
     ]
 }

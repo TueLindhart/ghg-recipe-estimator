@@ -16,7 +16,7 @@
             "weight_in_kg": 0.24
         },
         {
-            "ingredient": "450 g chicken thighs, boneless, skinless, 1-inch pieces",
+            "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
             "weight_calculation": "450 g = 450 g = 0.45 kg",
             "weight_in_kg": 0.45
         },
@@ -27,21 +27,21 @@
         },
         {
             "ingredient": "22.5-30 ml fish sauce",
-            "weight_calculation": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+            "weight_calculation": "Average of 22.5 ml and 30 ml = 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
             "weight_in_kg": 0.02625
         },
         {
-            "ingredient": "4 kaffir lime leaves",
-            "weight_calculation": "Amount of kaffir lime leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+            "ingredient": "4 makrut lime leaves",
+            "weight_calculation": "Amount of makrut lime leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
-            "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
-            "weight_calculation": "1 can = 550 g, 1 * 550 g = 550 g = 0.55 kg",
+            "ingredient": "550 ml bamboo shoots, drained and rinsed",
+            "weight_calculation": "550 ml = 550 g, 1 * 550 g = 550 g = 0.55 kg",
             "weight_in_kg": 0.55
         },
         {
-            "ingredient": "22 g Thai basil leaves",
+            "ingredient": "22 g Thai basil",
             "weight_calculation": "22 g = 22 g = 0.022 kg",
             "weight_in_kg": 0.022
         },
@@ -51,7 +51,7 @@
             "weight_in_kg": 0.0375
         },
         {
-            "ingredient": "jasmine rice for serving",
+            "ingredient": "jasmine rice, to serve",
             "weight_calculation": "Amount of jasmine rice not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
             "weight_in_kg": 0.5
         }

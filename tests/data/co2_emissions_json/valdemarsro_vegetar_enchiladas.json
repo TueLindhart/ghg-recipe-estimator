@@ -85,35 +85,21 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Cheddar cheese is a close match for cheese.",
+            "closest_match_explanation": "Matched based on Rule 1: Blue cheese is the closest match for cheddar cheese.",
             "closest_match_name": "Blue cheese",
             "ingredient": "150 g cheddar cheese",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Cress, garden, raw is a close match for fresh coriander.",
-            "closest_match_name": "Cress, garden, raw",
+            "closest_match_explanation": "Matched based on Rule 1: Dill, raw is a close match for fresh coriander.",
+            "closest_match_name": "Dill, raw",
             "ingredient": "1 handful fresh coriander",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.5
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Salt, table is a direct match.",
-            "closest_match_name": "Salt, table",
-            "ingredient": "salt",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.4
-        },
-        {
-            "closest_match_explanation": "Matched based on Rule 1: Pepper, black is a direct match.",
-            "closest_match_name": "Pepper, black",
-            "ingredient": "black pepper",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 5.2
-        },
-        {
-            "closest_match_explanation": "Matched based on Rule 1: Butter, salt added is a close match for butter.",
+            "closest_match_explanation": "Matched based on Rule 1: Butter, salt added is a direct match.",
             "closest_match_name": "Butter, salt added",
             "ingredient": "1 tbsp butter",
             "unit": "kg CO2e / kg",

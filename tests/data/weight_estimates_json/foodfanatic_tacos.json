@@ -7,7 +7,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -82,7 +82,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -91,12 +91,12 @@
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "0.75 chili pepper",
-            "weight_calculation": "1 bell pepper = 150 g, 0.75 * 150 g = 112.5 g = 0.1125 kg",
-            "weight_in_kg": 0.1125
+            "ingredient": "0.5 - 1 chili pepper",
+            "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "weight_in_kg": 0.025
         },
         {
-            "ingredient": "0.5 bunch coriander",
+            "ingredient": "0.5 bunch of coriander",
             "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },

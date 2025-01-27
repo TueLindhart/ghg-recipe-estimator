@@ -122,18 +122,8 @@
         },
         {
             "ingredient": "1 handful fresh coriander",
-            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 handful of fresh coriander = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
-        },
-        {
-            "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
-            "weight_in_kg": 0.02
-        },
-        {
-            "ingredient": "black pepper",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
-            "weight_in_kg": 0.02
         },
         {
             "ingredient": "1 tbsp butter",

@@ -5,10 +5,8 @@ from uuid import uuid4
 
 import pandas as pd
 from langchain_core.documents import Document
-from tqdm import tqdm  # Import tqdm for the progress bar
 
 from food_co2_estimator.data.vector_store.vector_store import get_vector_store
-from food_co2_estimator.language.translator import MyTranslator
 
 EXCEL_FILE_DIR = f"{os.getcwd()}/data/DBv2.xlsx"
 
@@ -20,22 +18,27 @@ df_gb = pd.read_excel(EXCEL_FILE_DIR, sheet_name="GB")
 emission_records_dk: List[Dict[Any, Any]] = df_dk.to_dict(orient="records")
 emission_records_gb: List[Dict[Any, Any]] = df_gb.to_dict(orient="records")
 
-# Initialize vector store and translator
-translator = MyTranslator.default()
-
 documents = []
 uuids = []
 
+document_rephrasing = {
+    "Eggs, chicken, free-range hens (indoor), raw": "Eggs",
+    "Milk, partly skimmed, 1.5 % fat": "Milk",
+    "Sunflower oil": "Oil for frying",
+}
+
 # Loop over the records with a progress bar
-for id, (emission_record_dk, emission_record_gb) in enumerate(
-    tqdm(zip(emission_records_dk, emission_records_gb), total=len(emission_records_dk)),
-    1,
+rephrasings = []
+for emission_record_dk, emission_record_gb in zip(
+    emission_records_dk, emission_records_gb
 ):
     en_name: str | None = emission_record_gb.get("Name", None)
     if en_name is None:
         logging.warning(f"Object {emission_record_gb} is not added to DB")
         continue
 
+    id = str(uuid4())
+    uuids.append(id)
     documents.append(
         Document(
             page_content=en_name,
@@ -43,7 +46,18 @@ for id, (emission_record_dk, emission_record_gb) in enumerate(
             id=id,
         )
     )
-    uuids.append(str(uuid4()))
+    rephrased_name = document_rephrasing.get(en_name)
+    if rephrased_name:
+        id = str(uuid4())
+        uuids.append(id)
+        documents.append(
+            Document(
+                page_content=rephrased_name,
+                metadata=emission_record_dk,
+                id=id,
+            )
+        )
+
 
 # Add documents to the vector store
 vector_store = get_vector_store()
