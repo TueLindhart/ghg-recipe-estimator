@@ -6,8 +6,8 @@ from food_co2_estimator.chains.rag_co2_estimator import (
 )
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
-ACCEPTABLE_CO2_ERROR = 0.05  # kg CO2e (this range should be refined in the future)
-AVERAGE_ACCEPTABLE_DEVIATION = 0.2
+ACCEPTABLE_RATIO_OF_DEVIATING_INGREDIENTS = 0.1  # 10 %
+ACCEPTABLE_AVG_DEVIATION = 0.25  # kg
 
 
 @pytest.mark.asyncio
@@ -31,9 +31,8 @@ async def test_rag_co2_estimator_chain(
     enriched_recipe.update_with_co2_per_kg_db(rag_co2_emissions)
 
     # Compare the CO2 emissions with the expected output
-    co2_emissions = []
-    expected_co2_emissions = []
     deviations = []
+    n_deviations = 0
     for ingredient, expected_ingredient in zip(
         enriched_recipe.ingredients, expected_enriched_recipe.ingredients
     ):
@@ -61,22 +60,26 @@ async def test_rag_co2_estimator_chain(
         if reference_co2 is None or estimated_co2 is None:
             continue
 
+        assert co2_per_kg_db.unit in [
+            "kg CO2e per kg",
+            "kg CO2 per kg",
+            "kg CO2e / kg",
+            "kg CO2 / kg",
+        ]
+
         deviation = abs(reference_co2 - estimated_co2)
         deviations.append(deviation)
 
-        # Model is not consistent enough yet to utilize below checks
-        # lower_bound = max(0, reference_co2 - (ACCEPTABLE_CO2_ERROR / 2))
-        # upper_bound = reference_co2 + (ACCEPTABLE_CO2_ERROR / 2)
-        # assert lower_bound <= estimated_co2 and estimated_co2 <= upper_bound, (
-        #     f"CO2 estimate for {ingredient.original_name} is out of the acceptable range: "
-        #     f"{estimated_co2} not in [{lower_bound}, {upper_bound}]"
-        # )
-
-        # co2_emissions.append(estimated_co2)
-        # expected_co2_emissions.append(reference_co2)
-
-    # assert len(co2_emissions) > 0, "No emissions at all. Probably a bug in tests"
+        if deviation != 0:
+            n_deviations += 1
 
     # Check the avg. deviation
     avg_deviation = sum(deviations) / len(deviations)
-    assert avg_deviation <= AVERAGE_ACCEPTABLE_DEVIATION
+    assert (
+        avg_deviation <= ACCEPTABLE_AVG_DEVIATION
+    ), f"kg CO2 / kg est. varies in avg. on: {round(avg_deviation * 100, 2)}%"
+
+    ratio_of_deviating_ingredients = n_deviations / len(deviations)
+    assert (
+        ratio_of_deviating_ingredients < ACCEPTABLE_RATIO_OF_DEVIATING_INGREDIENTS
+    ), f"{round(ratio_of_deviating_ingredients * 100, 2)}% of ingredients varies in kg CO2 per kg results"

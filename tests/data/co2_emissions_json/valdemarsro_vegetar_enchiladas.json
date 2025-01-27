@@ -1,105 +1,112 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched based on Rule 1: Olive oil is a direct match.",
+            "closest_match_explanation": "Matched '1 tbsp olive oil' to 'Olive oil' as it is the exact ingredient in the database.",
             "closest_match_name": "Olive oil",
             "ingredient": "1 tbsp olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Onion, raw is a direct match.",
+            "closest_match_explanation": "Matched '1 onion' to 'Onion, raw' as it is the exact ingredient in the database.",
             "closest_match_name": "Onion, raw",
             "ingredient": "1 onion",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Vegetable broth is a broader category, matched to Vegan minced, pea based.",
+            "closest_match_explanation": "Matched '1 dl vegetable broth' to 'Vegan minced, pea based' as it is the closest viable option in the database considering the processing level.",
             "closest_match_name": "Vegan minced, pea based",
             "ingredient": "1 dl vegetable broth",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.9
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Tomato, peeled, canned is a direct match.",
+            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'Tomato, peeled, canned' as it is the exact ingredient in the database.",
             "closest_match_name": "Tomato, peeled, canned",
             "ingredient": "1 can chopped tomatoes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Onion, raw is a direct match.",
-            "closest_match_name": "Onion, raw",
-            "ingredient": "1 onion",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.3
-        },
-        {
-            "closest_match_explanation": "Matched based on Rule 1: Salt, table is a direct match.",
+            "closest_match_explanation": "Matched 'salt' to 'Salt, table' as it is the exact ingredient in the database.",
             "closest_match_name": "Salt, table",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Pepper, black is a direct match.",
+            "closest_match_explanation": "Matched 'black pepper' to 'Pepper, black' as it is the exact ingredient in the database.",
             "closest_match_name": "Pepper, black",
             "ingredient": "black pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Squash, raw is a direct match.",
+            "closest_match_explanation": "Matched '1 onion' to 'Onion, raw' as it is the exact ingredient in the database.",
+            "closest_match_name": "Onion, raw",
+            "ingredient": "1 onion",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "closest_match_explanation": "Matched '1 squash' to 'Squash, raw' as it is the exact ingredient in the database.",
             "closest_match_name": "Squash, raw",
             "ingredient": "1 squash",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Black beans is a direct match.",
+            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'Tomato, peeled, canned' as it is the exact ingredient in the database.",
+            "closest_match_name": "Tomato, peeled, canned",
+            "ingredient": "1 can chopped tomatoes",
+            "unit": "kg CO2e / kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "closest_match_explanation": "Matched '1 can black beans' to 'Black beans' as it is the exact ingredient in the database.",
             "closest_match_name": "Black beans",
             "ingredient": "1 can black beans",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Kidney beans is a direct match.",
+            "closest_match_explanation": "Matched '1 can kidney beans' to 'Kidney beans' as it is the exact ingredient in the database.",
             "closest_match_name": "Kidney beans",
             "ingredient": "1 can kidney beans",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Corn cob is a direct match.",
+            "closest_match_explanation": "Matched '300 g corn' to 'Corn cob' as it is the closest viable option in the database considering the processing level.",
             "closest_match_name": "Corn cob",
             "ingredient": "300 g corn",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Tortilla bread, wheat is a direct match.",
+            "closest_match_explanation": "Matched '8 tortillas pancakes' to 'Tortilla bread, wheat' as it is the closest viable option in the database considering the processing level.",
             "closest_match_name": "Tortilla bread, wheat",
             "ingredient": "8 tortillas pancakes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Cheddar cheese is a broader category, matched to Blue cheese.",
+            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'Blue cheese' as it is the closest viable option in the database considering the processing level.",
             "closest_match_name": "Blue cheese",
             "ingredient": "150 g cheddar cheese",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Fresh coriander is a broader category, matched to Parsley, raw.",
-            "closest_match_name": "Parsley, raw",
+            "closest_match_explanation": "Matched '1 handful fresh coriander' to 'Dill, raw' as it is the closest viable option in the database considering the processing level.",
+            "closest_match_name": "Dill, raw",
             "ingredient": "1 handful fresh coriander",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.5
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Butter, salt added is a direct match.",
+            "closest_match_explanation": "Matched '1 tbsp butter' to 'Butter, salt added' as it is the closest viable option in the database considering the processing level.",
             "closest_match_name": "Butter, salt added",
             "ingredient": "1 tbsp butter",
             "unit": "kg CO2e / kg",

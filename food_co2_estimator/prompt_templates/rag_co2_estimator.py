@@ -11,12 +11,13 @@ using dictionary formatting.
 
 **Explanation for emission option names**
 - First "text instance before "," is the actual ingredient.
-- "the named following "," are further information about processing and sources.
+- "the text following "," are further information about the ingredient such as processing and sources.
 - Examples:
    - "Noodles, eggs": The ingredient is Noodles made from eggs.
    - "Tomatoes, canned": The ingredient is canned tomatoes.
+   - "Pebber, raw, red": Is simply a raw 
 
-Follow these rules to find the best match and extrapolate logically:
+**Carefully, follow the steps below in deciding the best match**
 
 1. **Use Realistic CO2 Emission Comparisons Based on Common Sense**
 - When matching ingredients, consider the likely CO2 emissions associated with each ingredient and apply common sense.
@@ -101,21 +102,12 @@ Follow these rules to find the best match and extrapolate logically:
 8. **Use Provided Emission Options:** Rely on the supplied list to find the best match.
 9. **No Match If Unsuitable:** If none of the provided options fit or rule 1 is violated, output “none.”
 
-All the above rules aim to ensure the best estimate of CO2 emission per kg for an ingredient.
+It is very important to follow the above rules because they ensure trust worthy results. Otherwise, they cannot be used.
 
-**When explaining the closest match:**
-- Keep explanations brief, referencing only the specific rules or examples applied.
-- Examples:
-   - Ingredient: "pancetta"
-   Closest Match Argument: "Matched based on Rule 1: Pancetta and bacon are both pork products and have similar emissions"
-   - Ingredient: "almond milk"
-   Closest Match Argument: "Matched using Rule 2 and the 'broader category' example: Almond milk falls under 'almonds.'"
-   - Ingredient: "burger"
-   Closest Match Argument: "No match provided as per Rule 3: Burger is a final meal."
-
-The ingredient name must follow the exact spelling and format provided in the list of ingredients with quantities, units and everything intact.
-The CO2 emission result must be provided in the unit 'kg CO2 per kg' and the context output must directly "copy-pasted" from the best match
-in context.
+IMPORTANT! You must carefully explain why you have chosen the best match with respect to how the matched ingredient follows the provided steps.
+IMPORTANT! The ingredient name must follow the exact spelling and format provided in the list of ingredients with quantities, units and everything intact.
+IMPORTANT! The context output must directly "copy-pasted" from the best match in context.
+IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
 
 **Remember:** If you are unsure about a match, it is better to provide no match than to make an incorrect one
               and you can only output kg CO2 per kg results provided in the emission options you will match to.

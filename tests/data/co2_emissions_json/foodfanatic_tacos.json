@@ -1,144 +1,144 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched based on Rule 1: Onion is a raw vegetable and matches with raw onion emissions.",
+            "closest_match_explanation": "Matched '1 small onion' to 'Onion, raw' as it is the most direct match available in the database.",
             "closest_match_name": "Onion, raw",
             "ingredient": "1 small onion",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Red pepper is a sweet pepper and matches with raw red pepper emissions.",
+            "closest_match_explanation": "Matched '0.5 red pepper' to 'Pepper, sweet, red, raw' as it is the most direct match available in the database.",
             "closest_match_name": "Pepper, sweet, red, raw",
             "ingredient": "0.5 red pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Oil for frying is a general category that includes various oils used for frying.",
+            "closest_match_explanation": "Matched 'oil for frying' to 'Oil for frying' as it is the most direct match available in the database.",
             "closest_match_name": "Oil for frying",
             "ingredient": "oil for frying",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Beef is a meat product and matches with average beef emissions.",
+            "closest_match_explanation": "Matched '250 g beef' to 'Average beef' as it is the most representative option for beef emissions.",
             "closest_match_name": "Average beef",
             "ingredient": "250 g beef",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 74.8
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Fajita seasoning is a spice mix that can be related to taco shells emissions.",
-            "closest_match_name": "Taco shells",
+            "closest_match_explanation": "Matched '1.5 tbsp fajita seasoning' to 'Chili Sauce' as it is the closest match available in the database.",
+            "closest_match_name": "Chili Sauce",
             "ingredient": "1.5 tbsp fajita seasoning",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 2.4
+            "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Chili powder or flakes are closely related to chili sauce emissions.",
+            "closest_match_explanation": "Matched 'chili powder or flakes to taste' to 'Chili Sauce' as it is the closest match available in the database.",
             "closest_match_name": "Chili Sauce",
             "ingredient": "chili powder or flakes to taste",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Kidney beans are a type of legume and match with kidney beans emissions.",
+            "closest_match_explanation": "Matched '1 can kidney beans' to 'Kidney beans' as it is the most direct match available in the database.",
             "closest_match_name": "Kidney beans",
             "ingredient": "1 can kidney beans",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Tomato paste is a concentrated form of tomatoes and matches with concentrated tomato paste emissions.",
+            "closest_match_explanation": "Matched '2 tbsp tomato paste' to 'Tomato paste, concentrated' as it is the most direct match available in the database.",
             "closest_match_name": "Tomato paste, concentrated",
             "ingredient": "2 tbsp tomato paste",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Beef stock is a liquid made from beef and matches with prepared beef bouillon emissions.",
+            "closest_match_explanation": "Matched '2.5 dl beef stock' to 'Bouillon, beef, prepared' as it is the most direct match available in the database.",
             "closest_match_name": "Bouillon, beef, prepared",
             "ingredient": "2.5 dl beef stock",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Corn tortillas are a type of bread made from corn and match with taco shells emissions.",
+            "closest_match_explanation": "Matched '11 small corn tortillas' to 'Taco shells' as it is the closest match available in the database.",
             "closest_match_name": "Taco shells",
             "ingredient": "11 small corn tortillas",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Tomato salsa is a sauce made from tomatoes and matches with canned tomatoes emissions.",
+            "closest_match_explanation": "Matched '1 portion of tomato salsa' to 'Tomato, peeled, canned' as it is the most direct match available in the database.",
             "closest_match_name": "Tomato, peeled, canned",
             "ingredient": "1 portion of tomato salsa",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Avocado is a fruit and matches with raw avocado emissions.",
+            "closest_match_explanation": "Matched '1 avocado' to 'Avocado, raw' as it is the most direct match available in the database.",
             "closest_match_name": "Avocado, raw",
             "ingredient": "1 avocado",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Salt is a mineral and matches with table salt emissions.",
+            "closest_match_explanation": "Matched 'salt' to 'Salt, table' as it is the most direct match available in the database.",
             "closest_match_name": "Salt, table",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Pepper is a spice and matches with black pepper emissions.",
+            "closest_match_explanation": "Matched 'pepper' to 'Pepper, black' as it is the most direct match available in the database.",
             "closest_match_name": "Pepper, black",
             "ingredient": "pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Red onion is a type of onion and matches with raw red onion emissions.",
+            "closest_match_explanation": "Matched '0.5 red onion' to 'Red onion' as it is the most direct match available in the database.",
             "closest_match_name": "Red onion",
             "ingredient": "0.5 red onion",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Tomatoes are a fruit and match with canned tomatoes emissions.",
+            "closest_match_explanation": "Matched '300 g tomatoes' to 'Tomato, peeled, canned' as it is the most direct match available in the database.",
             "closest_match_name": "Tomato, peeled, canned",
             "ingredient": "300 g tomatoes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Chili pepper is a type of hot pepper and matches with raw hot chili emissions.",
+            "closest_match_explanation": "Matched '0.5 - 1 chili pepper' to 'Pepper, hot chili, raw' as it is the most direct match available in the database.",
             "closest_match_name": "Pepper, hot chili, raw",
             "ingredient": "0.5 - 1 chili pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Coriander is an herb and matches with raw parsley emissions as a close alternative.",
+            "closest_match_explanation": "Matched '0.5 bunch of coriander' to 'Parsley, raw' as it is the closest match available in the database.",
             "closest_match_name": "Parsley, raw",
             "ingredient": "0.5 bunch of coriander",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.5
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Olive oil is a type of oil and matches with olive oil emissions.",
+            "closest_match_explanation": "Matched '2 tbsp olive oil' to 'Olive oil' as it is the most direct match available in the database.",
             "closest_match_name": "Olive oil",
             "ingredient": "2 tbsp olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Lime juice is a citrus product and matches with lemon emissions.",
-            "closest_match_name": "Lemon, raw",
+            "closest_match_explanation": "Matched 'juice of 0.5 lime' to 'Lime, raw' as it is the most direct match available in the database.",
+            "closest_match_name": "Lime, raw",
             "ingredient": "juice of 0.5 lime",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.7
+            "co2_per_kg": 0.6
         }
     ]
 }
