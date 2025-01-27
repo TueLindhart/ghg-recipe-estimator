@@ -1,98 +1,98 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to other butter options.",
+            "closest_match_explanation": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to 'Butter, salt added.'",
             "closest_match_name": "Butter, salt added",
             "ingredient": "25 g butter",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Beetroot is a vegetable and has similar emissions to other beetroot options.",
+            "closest_match_explanation": "Matched based on Rule 1: Beetroot is a root vegetable and 'Beet, red, raw' is a direct match.",
             "closest_match_name": "Beet, red, raw",
             "ingredient": "400 g beetroot",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Dark balsamic vinegar is a type of vinegar and has similar emissions to other vinegar options.",
+            "closest_match_explanation": "Matched based on Rule 1: Dark balsamic vinegar is a type of vinegar, matching 'Vinegar.'",
             "closest_match_name": "Vinegar",
             "ingredient": "1 dl dark balsamic vinegar",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Sugar is a common ingredient and has similar emissions to other sugar options.",
+            "closest_match_explanation": "Matched based on Rule 1: Sugar is a common ingredient, and 'Sugar, sucrose, white' is a direct match.",
             "closest_match_name": "Sugar, sucrose, white",
             "ingredient": "2 tbsp sugar",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Cod loin is a fish and has similar emissions to other cod options.",
+            "closest_match_explanation": "Matched based on Rule 1: Cod loin is a fish, and 'Cod, fillet, raw' is a direct match.",
             "closest_match_name": "Cod, fillet, raw",
             "ingredient": "600 g cod loin",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to other butter options.",
+            "closest_match_explanation": "Matched based on Rule 1: Butter is a dairy product and has similar emissions to 'Butter, salt added.'",
             "closest_match_name": "Butter, salt added",
             "ingredient": "25 g butter",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Water has no emissions associated with it.",
-            "closest_match_name": "Bottled still water",
+            "closest_match_explanation": "Matched based on Rule 9: Water is a common ingredient, and 'Water, tap, drinking, average values' is a direct match.",
+            "closest_match_name": "Water, tap, drinking, average values",
             "ingredient": "2.5 dl water",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.0
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Whole yellow mustard seeds are similar to mustard options.",
+            "closest_match_explanation": "Matched based on Rule 1: Whole yellow mustard seeds are a type of mustard, matching 'Mustard, yellow, ready made.'",
             "closest_match_name": "Mustard, yellow, ready made",
             "ingredient": "3 tbsp whole yellow mustard seeds",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.9
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Finely chopped shallots are similar to other onion options.",
-            "closest_match_name": "Red onion",
+            "closest_match_explanation": "Matched based on Rule 1: Finely chopped shallots are a type of onion, matching 'Onions, chopped, frozen.'",
+            "closest_match_name": "Onions, chopped, frozen",
             "ingredient": "75 g finely chopped shallots",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.8
+            "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Cold butter is a dairy product and has similar emissions to other butter options.",
+            "closest_match_explanation": "Matched based on Rule 1: Cold butter is a dairy product and has similar emissions to 'Butter, salt added.'",
             "closest_match_name": "Butter, salt added",
             "ingredient": "200 g cold butter",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Freshly ground pepper is similar to black pepper options.",
+            "closest_match_explanation": "Matched based on Rule 1: Freshly ground pepper is a spice, matching 'Pepper, black.'",
             "closest_match_name": "Pepper, black",
             "ingredient": "freshly ground pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Fresh herbs are similar to dried herbs and have similar emissions.",
+            "closest_match_explanation": "Matched based on Rule 1: Fresh herbs can be matched to 'Basil, fresh.'",
             "closest_match_name": "Basil, fresh",
             "ingredient": "fresh herbs",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Fried bacon cubes are similar to other bacon options.",
+            "closest_match_explanation": "Matched based on Rule 1: Fried bacon cubes are a type of bacon, matching 'Bacon, frying, raw.'",
             "closest_match_name": "Bacon, frying, raw",
             "ingredient": "100 g fried bacon cubes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 6.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Quail eggs are similar to chicken eggs in emissions.",
+            "closest_match_explanation": "Matched based on Rule 1: Quail eggs are a type of egg, matching 'Eggs.'",
             "closest_match_name": "Eggs",
             "ingredient": "4 soft-boiled quail eggs",
             "unit": "kg CO2e / kg",

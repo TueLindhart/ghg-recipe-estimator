@@ -15,11 +15,11 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Vegetable steaks are a close match for vegetable broth.",
-            "closest_match_name": "Vegetable steaks",
+            "closest_match_explanation": "Matched based on Rule 1: Vegetable broth is a broader category, matched to Vegan minced, pea based.",
+            "closest_match_name": "Vegan minced, pea based",
             "ingredient": "1 dl vegetable broth",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 1.5
+            "co2_per_kg": 0.9
         },
         {
             "closest_match_explanation": "Matched based on Rule 1: Tomato, peeled, canned is a direct match.",
@@ -71,7 +71,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Corn cob is a close match for corn.",
+            "closest_match_explanation": "Matched based on Rule 1: Corn cob is a direct match.",
             "closest_match_name": "Corn cob",
             "ingredient": "300 g corn",
             "unit": "kg CO2e / kg",
@@ -85,15 +85,15 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Blue cheese is the closest match for cheddar cheese.",
+            "closest_match_explanation": "Matched based on Rule 1: Cheddar cheese is a broader category, matched to Blue cheese.",
             "closest_match_name": "Blue cheese",
             "ingredient": "150 g cheddar cheese",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Dill, raw is a close match for fresh coriander.",
-            "closest_match_name": "Dill, raw",
+            "closest_match_explanation": "Matched based on Rule 1: Fresh coriander is a broader category, matched to Parsley, raw.",
+            "closest_match_name": "Parsley, raw",
             "ingredient": "1 handful fresh coriander",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.5
