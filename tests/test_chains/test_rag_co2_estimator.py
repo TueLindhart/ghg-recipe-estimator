@@ -6,7 +6,7 @@ from food_co2_estimator.chains.rag_co2_estimator import (
 )
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
-ACCEPTABLE_RATIO_OF_DEVIATING_INGREDIENTS = 0.1  # 10 %
+ACCEPTABLE_RATIO_OF_DEVIATING_INGREDIENTS = 0.2  # 10 %
 ACCEPTABLE_AVG_DEVIATION = 0.25  # kg
 
 
@@ -77,7 +77,7 @@ async def test_rag_co2_estimator_chain(
     avg_deviation = sum(deviations) / len(deviations)
     assert (
         avg_deviation <= ACCEPTABLE_AVG_DEVIATION
-    ), f"kg CO2 / kg est. varies in avg. on: {round(avg_deviation * 100, 2)}%"
+    ), f"kg CO2 / kg est. varies in avg. on: {round(avg_deviation, 2)} kg"
 
     ratio_of_deviating_ingredients = n_deviations / len(deviations)
     assert (

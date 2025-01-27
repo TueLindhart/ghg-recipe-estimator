@@ -45,6 +45,7 @@ using dictionary formatting.
      - Brown rice is a type of rice; "rice" is a valid broader category.
      - Soy milk is derived from soybeans, not cows; it is not a sub-category of cow's milk.
      - "Noodles, eggs" is NOT a good match for eggs as noodles are not eggs!
+     - "beef" should be matched to "Average beef" unless the ingredient exactly specifies the cut or that it is minced.
 
 3. **Do Not Use Final Meals as Best Matches:**
    - We match at the ingredient level, not at the meal level.

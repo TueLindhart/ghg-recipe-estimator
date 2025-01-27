@@ -15,7 +15,7 @@
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'Bouillon, chicken, prepared' as it is the closest match considering it is a chicken-based stock.",
+            "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'Bouillon, chicken, prepared' as it is the closest match considering it is a liquid chicken stock.",
             "closest_match_name": "Bouillon, chicken, prepared",
             "ingredient": "240 ml chicken stock, unsalted",
             "unit": "kg CO2e / kg",
@@ -36,7 +36,7 @@
             "co2_per_kg": 2.4
         },
         {
-            "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'Soya sauce' as it is the closest match considering the processing and type of ingredient.",
+            "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'Soya sauce' as it is the closest match considering the type of sauce.",
             "closest_match_name": "Soya sauce",
             "ingredient": "22.5-30 ml fish sauce",
             "unit": "kg CO2e / kg",

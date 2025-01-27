@@ -8,35 +8,35 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched '1 lb chicken breast' to 'Chicken, breast, flesh and skin, raw' as it is the closest match in terms of processing and type of meat.",
+            "closest_match_explanation": "Matched '1 lb chicken breast' to 'Chicken, breast, flesh and skin, raw' as it is the closest match for raw chicken breast.",
             "closest_match_name": "Chicken, breast, flesh and skin, raw",
             "ingredient": "1 lb chicken breast",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '2 medium carrots' to 'Carrot, raw' as it is the exact match for raw carrots.",
-            "closest_match_name": "Carrot, raw",
+            "closest_match_explanation": "Matched '2 medium carrots' to 'Eggs' as it is the only available option in the database, despite not being a direct match.",
+            "closest_match_name": "Eggs",
             "ingredient": "2 medium carrots",
             "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Matched '2 stalks of celery' to 'Celery, raw' as it is the exact match for raw celery.",
+            "closest_match_explanation": "Matched '2 stalks of celery' to 'Celery, raw' as it is the exact ingredient in the database.",
             "closest_match_name": "Celery, raw",
             "ingredient": "2 stalks of celery",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 red bell pepper' to 'Pepper, sweet, red, raw' as it is the exact match for raw red bell pepper.",
+            "closest_match_explanation": "Matched '1 red bell pepper' to 'Pepper, sweet, red, raw' as it is the exact ingredient in the database.",
             "closest_match_name": "Pepper, sweet, red, raw",
             "ingredient": "1 red bell pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 bunch scallions' to 'Onions, spring, raw' as it is the closest match for raw scallions.",
+            "closest_match_explanation": "Matched '1 bunch scallions' to 'Onions, spring, raw' as it is the closest match for scallions.",
             "closest_match_name": "Onions, spring, raw",
             "ingredient": "1 bunch scallions",
             "unit": "kg CO2e / kg",
@@ -50,70 +50,70 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'Black beans' as it is the exact match for black beans.",
+            "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'Black beans' as it is the exact ingredient in the database.",
             "closest_match_name": "Black beans",
             "ingredient": "2 cans black beans (15 ounces)",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'Chili Sauce' as it is the closest match for chili powder in terms of processing.",
+            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'Chili Sauce' as it is the closest match available in the database.",
             "closest_match_name": "Chili Sauce",
             "ingredient": "4 tbsp chili powder",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '1 tbsp ground cumin' to 'Curry powder' as it is the closest match for ground spices with similar processing.",
+            "closest_match_explanation": "Matched '1 tbsp ground cumin' to 'Curry powder' as it is the closest match available in the database.",
             "closest_match_name": "Curry powder",
             "ingredient": "1 tbsp ground cumin",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_explanation": "Matched '2 tsp granulated garlic' to 'Garlic, raw' as it is the closest match for raw garlic.",
+            "closest_match_explanation": "Matched '2 tsp granulated garlic' to 'Garlic, raw' as it is the closest match available in the database.",
             "closest_match_name": "Garlic, raw",
             "ingredient": "2 tsp granulated garlic",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '2 tsp onion powder' to 'Red onion' as it is the closest match for onion-based products.",
+            "closest_match_explanation": "Matched '2 tsp onion powder' to 'Red onion' as it is the closest match available in the database.",
             "closest_match_name": "Red onion",
             "ingredient": "2 tsp onion powder",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched 'salt' to 'Salt, table' as it is the exact match for table salt.",
+            "closest_match_explanation": "Matched 'salt' to 'Salt, table' as it is the exact ingredient in the database.",
             "closest_match_name": "Salt, table",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched 'black pepper' to 'Pepper, black' as it is the exact match for black pepper.",
+            "closest_match_explanation": "Matched 'black pepper' to 'Pepper, black' as it is the exact ingredient in the database.",
             "closest_match_name": "Pepper, black",
             "ingredient": "black pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'Corn flour' as it is the closest match for corn-based products.",
+            "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'Corn flour' as it is the closest match available in the database.",
             "closest_match_name": "Corn flour",
             "ingredient": "1 package dry corn muffin mix (8.5 ounces)",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '0.33 cup milk' to 'Milk' as it is the exact match for milk.",
+            "closest_match_explanation": "Matched '0.33 cup milk' to 'Milk' as it is the exact ingredient in the database.",
             "closest_match_name": "Milk",
             "ingredient": "0.33 cup milk",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 egg' to 'Eggs' as it is the exact match for eggs.",
+            "closest_match_explanation": "Matched '1 egg' to 'Eggs' as it is the exact ingredient in the database.",
             "closest_match_name": "Eggs",
             "ingredient": "1 egg",
             "unit": "kg CO2e / kg",

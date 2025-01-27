@@ -8,14 +8,14 @@
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched '400 g beetroot' to 'Beet, red, raw' as it is the most direct match with no processing involved.",
+            "closest_match_explanation": "Matched '400 g beetroot' to 'Beet, red, raw' as it is the most direct match for raw beetroot.",
             "closest_match_name": "Beet, red, raw",
             "ingredient": "400 g beetroot",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'Vinegar' as it is a general category that includes balsamic vinegar without additional processing.",
+            "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'Vinegar' as it is a general category that includes balsamic vinegar.",
             "closest_match_name": "Vinegar",
             "ingredient": "1 dl dark balsamic vinegar",
             "unit": "kg CO2e / kg",
@@ -29,7 +29,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched '600 g cod loin' to 'Cod, fillet, raw' as it is the most direct match with no processing involved.",
+            "closest_match_explanation": "Matched '600 g cod loin' to 'Cod, fillet, raw' as it is the most direct match for raw cod loin.",
             "closest_match_name": "Cod, fillet, raw",
             "ingredient": "600 g cod loin",
             "unit": "kg CO2e / kg",
@@ -71,7 +71,7 @@
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched 'freshly ground pepper' to 'Pepper, black' as it is the most direct match for this type of ingredient.",
+            "closest_match_explanation": "Matched 'freshly ground pepper' to 'Pepper, black' as it is the most direct match for black pepper.",
             "closest_match_name": "Pepper, black",
             "ingredient": "freshly ground pepper",
             "unit": "kg CO2e / kg",
@@ -92,7 +92,7 @@
             "co2_per_kg": 6.4
         },
         {
-            "closest_match_explanation": "Matched '4 soft-boiled quail eggs' to 'Eggs' as it is the most direct match for this type of ingredient.",
+            "closest_match_explanation": "Matched '4 soft-boiled quail eggs' to 'Eggs' as it is the closest match for eggs in general.",
             "closest_match_name": "Eggs",
             "ingredient": "4 soft-boiled quail eggs",
             "unit": "kg CO2e / kg",
