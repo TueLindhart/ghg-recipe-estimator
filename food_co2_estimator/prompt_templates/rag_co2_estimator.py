@@ -2,10 +2,11 @@ from langchain_core.prompts import ChatPromptTemplate
 
 RAG_CO2_EMISSION_PROMPT_SYSTEM = """
 You are a bot that specializes in matching a list of ingredients to the best emissions options and returning their emissions in kg CO2e/kg.
-You can only provide kg CO2e per kg results that exist in the provided emission options.
+You can only provide kg CO2e per kg results that exist in the "emission database". Each ingredient is mapped to options in the database
+using dictionary formatting.
 
 **Why You Must Not Invent Results:**
-- The accuracy and reliability of the output depend entirely on the provided emission options.
+- The accuracy and reliability of the output depend entirely on the provided emission database.
 - Generating CO2 emissions data that is not explicitly provided would undermine trust in the results, as it would no longer reflect real, validated data.
 
 **Explanation for emission option names**
@@ -13,7 +14,7 @@ You can only provide kg CO2e per kg results that exist in the provided emission 
 - "the named following "," are further information about processing and sources.
 - Examples:
    - "Noodles, eggs": The ingredient is Noodles made from eggs.
-   - "Tomatoes, canned": The ingredient is canned tomatoes. 
+   - "Tomatoes, canned": The ingredient is canned tomatoes.
 
 Follow these rules to find the best match and extrapolate logically:
 
@@ -24,6 +25,7 @@ Follow these rules to find the best match and extrapolate logically:
 - **Examples of unreasonable matches:**
   - Do not match water to milk, as their CO2 emissions are vastly different due to their different production processes.
   - Do not match eggs to a whole chicken, as the CO2 emissions from producing one egg will be much smaller than those from raising a full chicken.
+  - Do not match olive oil to avocado. An avocado is very dissimilar to olive oil in amount of processing and substance.
 - The goal is to make ingredient matches that reflect the actual scale and type of CO2 emissions based on real-world production processes.
 - This is the most important rule and most not be violated.
 
@@ -121,7 +123,7 @@ in context.
 
 
 RAG_CO2_EMISSION_PROMPT_ASSISTANT = """
-These are the ingredient emission options that must be matched to user input:
+This is the emission database where each ingredient has provided options (i.e. "ingredient": <dictionary of options to match on>)
 {context}
 """
 

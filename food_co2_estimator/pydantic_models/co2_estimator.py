@@ -10,7 +10,7 @@ class CO2perKg(BaseModel):
         "in the provided matching instructions were applied."
     )
     closest_match_name: str = Field(
-        description="Name of the closest match to ingredient. Example: 'Tomatoes, canned.'"
+        description="Name of the closest match in emission database. Example: 'Tomatoes, canned.'"
     )
     ingredient: str = Field(
         description="Name of ingredient exactly transcribed from ingredients input with no modifications. '2 cans of tomatoes.'"

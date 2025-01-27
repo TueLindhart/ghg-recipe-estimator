@@ -1,98 +1,98 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched based on Rule 1: Minced beef has similar emissions to 'Beef, mince, 10-15% fat, raw'.",
+            "closest_match_explanation": "Matched based on Rule 1: Minced beef and beef mince are both beef products and have similar emissions",
             "closest_match_name": "Beef, mince, 10-15% fat, raw",
             "ingredient": "1 kg minced beef",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 48.0
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Onions are matched to 'Onion, raw' as they are both raw onions.",
+            "closest_match_explanation": "Matched based on Rule 1: Onions are a common vegetable with similar emissions",
             "closest_match_name": "Onion, raw",
             "ingredient": "3 large onions",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Carrots are matched to 'Carrot, raw' as they are both raw carrots.",
+            "closest_match_explanation": "Matched based on Rule 1: Carrots are a common vegetable with similar emissions",
             "closest_match_name": "Carrot, raw",
             "ingredient": "3 carrots",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Celery is matched to 'Celery, raw' as they are both raw celery.",
+            "closest_match_explanation": "Matched based on Rule 1: Celery is a common vegetable with similar emissions",
             "closest_match_name": "Celery, raw",
             "ingredient": "2.5 stalks celery",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Garlic is matched to 'Garlic, raw' as they are both raw garlic.",
+            "closest_match_explanation": "Matched based on Rule 1: Garlic is a common vegetable with similar emissions",
             "closest_match_name": "Garlic, raw",
             "ingredient": "6 cloves garlic",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 2 and the 'broader category' example: Fresh basil leaves fall under 'Basil, fresh.'",
+            "closest_match_explanation": "Matched based on Rule 1: Fresh basil leaves are a common herb with similar emissions",
             "closest_match_name": "Basil, fresh",
             "ingredient": "1 handful fresh basil leaves",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Tomato concentrate is matched to 'Tomato paste, concentrated' as they are both concentrated tomato products.",
+            "closest_match_explanation": "Matched based on Rule 1: Tomato concentrate is a processed tomato product with similar emissions",
             "closest_match_name": "Tomato paste, concentrated",
             "ingredient": "150 g tomato concentrate",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Chopped tomatoes are matched to 'Tomato, peeled, canned' as they are both canned tomatoes.",
+            "closest_match_explanation": "Matched based on Rule 1: Canned tomatoes are a processed tomato product with similar emissions",
             "closest_match_name": "Tomato, peeled, canned",
             "ingredient": "3 tins chopped tomatoes",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Red wine is matched to 'Wine, red' as they are both red wine.",
+            "closest_match_explanation": "Matched based on Rule 1: Red wine is a common beverage with similar emissions",
             "closest_match_name": "Wine, red",
             "ingredient": "2 dl red wine",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Olive oil is matched to 'Olive oil' as they are both olive oil.",
+            "closest_match_explanation": "Matched based on Rule 1: Olive oil is a common cooking oil with similar emissions",
             "closest_match_name": "Olive oil",
             "ingredient": "0.5 dl olive oil",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Salt is matched to 'Salt, table' as they are both table salt.",
+            "closest_match_explanation": "Matched based on Rule 1: Table salt is a common seasoning with similar emissions",
             "closest_match_name": "Salt, table",
             "ingredient": "salt",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Pepper is matched to 'Pepper, black' as they are both black pepper.",
+            "closest_match_explanation": "Matched based on Rule 1: Black pepper is a common seasoning with similar emissions",
             "closest_match_name": "Pepper, black",
             "ingredient": "pepper",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Pasta is matched to 'Pasta, raw' as they are both raw pasta.",
+            "closest_match_explanation": "Matched based on Rule 1: Pasta is a common carbohydrate with similar emissions",
             "closest_match_name": "Pasta, raw",
             "ingredient": "pasta as desired",
             "unit": "kg CO2e / kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched based on Rule 1: Grated parmesan is matched to 'Cheese, hard, Parmesan, 32 % fidm.' as they are both Parmesan cheese.",
+            "closest_match_explanation": "Matched based on Rule 1: Grated Parmesan is a common cheese with similar emissions",
             "closest_match_name": "Cheese, hard, Parmesan, 32 % fidm.",
             "ingredient": "grated parmesan",
             "unit": "kg CO2e / kg",
