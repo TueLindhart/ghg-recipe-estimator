@@ -5,7 +5,7 @@ import validators
 from bs4 import BeautifulSoup
 from markdownify import markdownify as md
 
-from food_co2_estimator.url import (
+from food_co2_estimator.url.variables import (
     COMMENT_SELECTORS,
     HEADERS,
     TAGS_TO_DECOMPOSE,

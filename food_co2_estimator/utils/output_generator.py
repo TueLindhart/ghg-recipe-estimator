@@ -63,10 +63,13 @@ def generate_output(
         co2_data = ingredient.co2_per_kg_db
         search_result = ingredient.co2_per_kg_search
 
+        weight_key = "Weight" if language == Languages.English else "Vægt"
+        search_key = "Search" if language == Languages.English else "Søgning"
+
         comments = {
-            "Weight": weight_estimate.weight_calculation if weight_estimate else None,
-            "DB": co2_data.comment if co2_data else None,
-            "Search": search_result.explanation if search_result else None,
+            weight_key: weight_estimate.weight_calculation if weight_estimate else None,
+            "DB": co2_data.closest_match_explanation if co2_data else None,
+            search_key: search_result.explanation if search_result else None,
         }
 
         all_comments.append(
@@ -79,7 +82,7 @@ def generate_output(
 
         if weight_estimate.weight_in_kg <= negligeble_threshold:
             ingredients_output.append(
-                f"{ingredient.original_name}: {trans['negligible'].format(round(weight_estimate.weight_in_kg,3))}"
+                f"{ingredient.original_name}: {trans['negligible'].format(round(weight_estimate.weight_in_kg, 3))}"
             )
             continue
 
@@ -103,14 +106,14 @@ def generate_output(
             )
     if number_of_persons is not None:
         number_of_persons_text = f"\n{trans['persons']}: {number_of_persons}"
-        emission_per_person_text = f"\n{trans['emission_pr_person']}: {round(total_co2/number_of_persons,1)} kg CO2e / pr. person"
+        emission_per_person_text = f"\n{trans['emission_pr_person']}: {round(total_co2 / number_of_persons, 1)} kg CO2e / pr. person"
     else:
         number_of_persons_text = ""
         emission_per_person_text = ""
 
     output = (
         "----------------------------------------"
-        f"\n{trans['total']}: {round(total_co2,1)} kg CO2e"
+        f"\n{trans['total']}: {round(total_co2, 1)} kg CO2e"
         f"{number_of_persons_text}"
         f"{emission_per_person_text}"
         f"\n{trans['avg_meal_emission_pr_person']}: {MIN_DINNER_EMISSION_PER_CAPITA} - {MAX_DINNER_EMISSION_PER_CAPITA} kg CO2e / pr. person"
