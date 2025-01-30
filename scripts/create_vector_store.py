@@ -64,4 +64,5 @@ for emission_record_dk, emission_record_gb in zip(
 # Add documents to the vector store
 vector_store = get_vector_store()
 vector_store.reset_collection()
+vector_store.delete_collection()
 vector_store.add_documents(documents)
