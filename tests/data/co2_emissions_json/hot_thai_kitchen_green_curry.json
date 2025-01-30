@@ -1,73 +1,45 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '420 ml coconut milk' to 'Coconut milk' as it is the exact ingredient in the database.",
-            "closest_match_name": "Coconut milk",
+            "closest_match_explanation": "Matched '420 ml coconut milk' to 'coconut milk' as it is the exact ingredient in the database.",
+            "closest_match_name": "coconut milk",
             "ingredient": "420 ml coconut milk",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 6.3
         },
         {
-            "closest_match_explanation": "Matched '50 g green curry paste' to 'Green curry paste' as it is the exact ingredient in the database.",
-            "closest_match_name": "Green curry paste",
+            "closest_match_explanation": "Matched '50 g green curry paste' to 'green curry paste' as it is the exact ingredient in the database.",
+            "closest_match_name": "green curry paste",
             "ingredient": "50 g green curry paste",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'Bouillon, chicken, prepared' as it is the closest match considering it is a liquid chicken stock.",
-            "closest_match_name": "Bouillon, chicken, prepared",
+            "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering it is a prepared chicken stock.",
+            "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "240 ml chicken stock, unsalted",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' to 'Minced chicken' as it is the closest match considering the processing level and type of meat.",
-            "closest_match_name": "Minced chicken",
+            "closest_match_explanation": "Matched '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' to 'chicken, leg, flesh and skin, raw' as it is the closest match for chicken thighs in the database.",
+            "closest_match_name": "chicken, leg, flesh and skin, raw",
             "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 5.7
+            "unit": "kg CO2 per kg",
+            "co2_per_kg": 2.0
         },
         {
-            "closest_match_explanation": "Matched '24 g light brown or granulated sugar' to 'Sugar, brown' as it is the closest match for sugar type.",
-            "closest_match_name": "Sugar, brown",
-            "ingredient": "24 g light brown or granulated sugar",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 2.4
-        },
-        {
-            "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'Soya sauce' as it is the closest match considering the type of sauce.",
-            "closest_match_name": "Soya sauce",
-            "ingredient": "22.5-30 ml fish sauce",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 1.9
-        },
-        {
-            "closest_match_explanation": "Matched '550 ml bamboo shoots, drained and rinsed' to 'Bamboo shoots, canned, nonsalted' as it is the closest match considering the processing level.",
-            "closest_match_name": "Bamboo shoots, canned, nonsalted",
+            "closest_match_explanation": "Matched '550 ml bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the closest match for bamboo shoots in the database.",
+            "closest_match_name": "bamboo shoots, canned, nonsalted",
             "ingredient": "550 ml bamboo shoots, drained and rinsed",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "Matched '22 g Thai basil' to 'Basil, fresh' as it is the exact ingredient in the database.",
-            "closest_match_name": "Basil, fresh",
-            "ingredient": "22 g Thai basil",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 0.4
-        },
-        {
-            "closest_match_explanation": "Matched '¼ red pepper, julienned' to 'Pepper, sweet, red, raw' as it is the exact ingredient in the database.",
-            "closest_match_name": "Pepper, sweet, red, raw",
-            "ingredient": "¼ red pepper, julienned",
-            "unit": "kg CO2e / kg",
-            "co2_per_kg": 1.1
-        },
-        {
-            "closest_match_explanation": "Matched 'jasmine rice, to serve' to 'Rice, parboiled, raw' as it is the closest match considering the type of rice.",
-            "closest_match_name": "Rice, parboiled, raw",
+            "closest_match_explanation": "Matched 'jasmine rice, to serve' to 'rice, parboiled, raw' as it is the closest match for rice in the database.",
+            "closest_match_name": "rice, parboiled, raw",
             "ingredient": "jasmine rice, to serve",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2 per kg",
             "co2_per_kg": 5.1
         }
     ]

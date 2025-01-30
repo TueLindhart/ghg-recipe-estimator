@@ -22,10 +22,13 @@ documents = []
 uuids = []
 
 document_rephrasing = {
-    "Eggs, chicken, free-range hens (indoor), raw": "Eggs",
-    "Milk, partly skimmed, 1.5 % fat": "Milk",
-    "Sunflower oil": "Oil for frying",
+    "Eggs, chicken, free-range hens (indoor), raw": "eggs",
+    "Milk, partly skimmed, 1.5 % fat": "milk",
+    "Sunflower oil": "oil for frying",
+    # "Avocado, raw": "avocado",
 }
+
+READY_MEALS = "ready meals"
 
 # Loop over the records with a progress bar
 rephrasings = []
@@ -37,11 +40,14 @@ for emission_record_dk, emission_record_gb in zip(
         logging.warning(f"Object {emission_record_gb} is not added to DB")
         continue
 
+    if en_name.endswith(READY_MEALS):
+        continue
+
     id = str(uuid4())
     uuids.append(id)
     documents.append(
         Document(
-            page_content=en_name,
+            page_content=en_name.lower(),
             metadata=emission_record_dk,
             id=id,
         )

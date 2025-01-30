@@ -100,6 +100,7 @@ INGREDIENT_UNITS = sorted(
         "small",
         "medium",
         "soft-boiled",
+        "portion",
         # Short Units
         "t",
         "c",
@@ -219,7 +220,8 @@ async def batch_emission_retriever(inputs: List[str]):
     retriever_chain = get_emission_retriever_chain()
     cleaned_inputs = clean_ingredient_list(inputs)
     outputs = await retriever_chain.abatch(cleaned_inputs)
-    return dict(zip(inputs, outputs))
+    retriever_matches = dict(zip(inputs, outputs))
+    return retriever_matches
 
 
 def remove_quantities(ingredient: str) -> str:
@@ -308,5 +310,6 @@ def clean_ingredient_list(ingredients: List[str]) -> List[str]:
         no_quantity = remove_quantities(ingredient)
         # Remove units
         no_unit = remove_units(no_quantity)
-        cleaned_ingredients.append(no_unit)
+        lower_case = no_unit.lower()
+        cleaned_ingredients.append(lower_case)
     return cleaned_ingredients

@@ -15,18 +15,18 @@ using dictionary formatting.
 - Examples:
    - "Noodles, eggs": The ingredient is Noodles made from eggs.
    - "Tomatoes, canned": The ingredient is canned tomatoes.
-   - "Pebber, raw, red": Is simply a raw 
+   - "Pebber, raw, red": Is simply a raw.
 
-**Carefully, follow the steps below in deciding the best match**
+**Carefully, follow the rules below in deciding the best match**
 
 1. **Use Realistic CO2 Emission Comparisons Based on Common Sense**
 - When matching ingredients, consider the likely CO2 emissions associated with each ingredient and apply common sense.
 - **Examples of reasonable matches:**
   - Foods that are similar in nature, such as pancetta and pepperoni, are likely to have similar CO2 emissions since they both come from pork.
 - **Examples of unreasonable matches:**
-  - Do not match water to milk, as their CO2 emissions are vastly different due to their different production processes.
-  - Do not match eggs to a whole chicken, as the CO2 emissions from producing one egg will be much smaller than those from raising a full chicken.
-  - Do not match olive oil to avocado. An avocado is very dissimilar to olive oil in amount of processing and substance.
+  - Do NOT match water to milk, as their CO2 emissions are vastly different due to their different production processes.
+  - Do NOT match eggs to a whole chicken, as the CO2 emissions from producing one egg will be much smaller than those from raising a full chicken.
+  - Do NOT match avocado to olive oil. The have NOTHING in common. They are not same fruit and one is an oil with many more processes involved.
 - The goal is to make ingredient matches that reflect the actual scale and type of CO2 emissions based on real-world production processes.
 - This is the most important rule and most not be violated.
 
@@ -47,7 +47,7 @@ using dictionary formatting.
      - "Noodles, eggs" is NOT a good match for eggs as noodles are not eggs!
      - "beef" should be matched to "Average beef" unless the ingredient exactly specifies the cut or that it is minced.
 
-3. **Do Not Use Final Meals as Best Matches:**
+3. **Do Not Use Final Meals or Ready Meals as Best Matches:**
    - We match at the ingredient level, not at the meal level.
    - **Clarification Examples:**
      - Lasagna is a final meal.
@@ -89,10 +89,12 @@ using dictionary formatting.
 9. **Only Use Provided Emission Options**:
    - You must only select matches from the provided emission options.
    - If none of the provided options are suitable, leave the CO2 per kg result as 'none'.
+   - **Example:**
+      - Many forms of seasoning or spices do not have emission data. Here it is better to return 'none'. 
    - Do not invent or guess values; this ensures the output remains grounded in the provided data.
    - Expection: If it is water, then provide the value 0.
 
-**Summary of Decision Process:**
+**Summary of Decision Rules:**
 1. **Use Realistic Comparisons:** Match ingredients to emission factors that make sense based on common sense (e.g., pork-based meats to pork).
 2. **Broader Category if Needed:** If no exact match exists, choose a valid, more general category (e.g., use “pasta” for lasagna sheets) unless it violates rule 1.
 3. **Exclude Final Meals:** Only match individual ingredients, not entire dishes (e.g., “pasta sauce” is valid, but “lasagna” is not).
@@ -110,7 +112,7 @@ IMPORTANT! The ingredient name must follow the exact spelling and format provide
 IMPORTANT! The context output must directly "copy-pasted" from the best match in context.
 IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
 
-**Remember:** If you are unsure about a match, it is better to provide no match than to make an incorrect one
+**Remember:** It is very important that you only return a emission value if there is a good match that adheres to the rulesp provided 
               and you can only output kg CO2 per kg results provided in the emission options you will match to.
 """
 
