@@ -19,7 +19,7 @@ from food_co2_estimator.url.url2markdown import get_markdown_from_url
 from food_co2_estimator.utils import generate_output
 
 
-def log_expeption_message(url: str, message: str):
+def log_exception_message(url: str, message: str):
     logging.exception(f"URL={url}: {message}")
 
 
@@ -38,7 +38,7 @@ async def async_estimator(
     recipe = await extract_recipe(text=text, url=url, verbose=verbose)
     if len(recipe.ingredients) == 0:
         no_recipe_message = "I can't find a recipe in the provided URL."
-        log_expeption_message(url, no_recipe_message)
+        log_exception_message(url, no_recipe_message)
         return no_recipe_message
 
     # Detect language in ingredients
@@ -46,7 +46,7 @@ async def async_estimator(
     language = detect_language(enriched_recipe)
     if language is None:
         language_expection = f"Language is not recognized as {', '.join([lang.value for lang in Languages])}"
-        log_expeption_message(url, language_expection)
+        log_exception_message(url, language_expection)
         return language_expection
 
     translator = get_translation_chain()
@@ -56,8 +56,8 @@ async def async_estimator(
         )
     except Exception as e:
         translation_expection = "Something went wrong in translating recipies."
-        log_expeption_message(url, str(e))
-        log_expeption_message(url, translation_expection)
+        log_exception_message(url, str(e))
+        log_exception_message(url, translation_expection)
         return translation_expection
 
     try:
@@ -71,8 +71,8 @@ async def async_estimator(
         weight_est_exception = (
             "Something went wrong in estimating weights of ingredients."
         )
-        log_expeption_message(url, str(e))
-        log_expeption_message(url, weight_est_exception)
+        log_exception_message(url, str(e))
+        log_exception_message(url, weight_est_exception)
         return weight_est_exception
 
     try:
@@ -88,8 +88,8 @@ async def async_estimator(
         rag_emissions_exception = (
             "Something went wrong in estimating kg CO2e per kg for the ingredients"
         )
-        log_expeption_message(url, str(e))
-        log_expeption_message(url, rag_emissions_exception)
+        log_exception_message(url, str(e))
+        log_exception_message(url, rag_emissions_exception)
         return rag_emissions_exception
 
     # Check if any ingredients needs CO2 search
@@ -102,8 +102,8 @@ async def async_estimator(
         search_emissions_expection = (
             "Something went wrong when searching for kg CO2e per kg"
         )
-        log_expeption_message(url, str(e))
-        log_expeption_message(url, search_emissions_expection)
+        log_exception_message(url, str(e))
+        log_exception_message(url, search_emissions_expection)
 
     return generate_output(
         enriched_recipe=enriched_recipe,
