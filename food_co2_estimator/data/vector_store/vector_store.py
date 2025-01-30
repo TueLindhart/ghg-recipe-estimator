@@ -14,4 +14,5 @@ def get_vector_store() -> Chroma:
         collection_name=VECTOR_DB_COLLECTION_NAME,
         embedding_function=embeddings,
         persist_directory=VECTOR_DB_PERSIST_DIR,
+        collection_metadata={"hnsw:search_ef": 100},
     )

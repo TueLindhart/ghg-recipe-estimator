@@ -1,80 +1,80 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '1 lb chicken breast' to 'chicken, breast, flesh and skin, raw' as it is the closest option available for chicken breast.",
+            "closest_match_explanation": "Matched '1 lb chicken breast' to 'chicken, breast, flesh and skin, raw' as it is the least processed option available for chicken breast.",
             "closest_match_name": "chicken, breast, flesh and skin, raw",
             "ingredient": "1 lb chicken breast",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '2 medium carrots' to 'carrot, raw' as it is the least processed and most direct match for raw carrots.",
+            "closest_match_explanation": "Matched '2 medium carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
             "closest_match_name": "carrot, raw",
             "ingredient": "2 medium carrots",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '2 stalks of celery' to 'celery, raw' as it is the least processed and most direct match for raw celery.",
+            "closest_match_explanation": "Matched '2 stalks of celery' to 'celery, raw' as it is the least processed option available for celery.",
             "closest_match_name": "celery, raw",
             "ingredient": "2 stalks of celery",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 red bell pepper' to 'pepper, sweet, red, raw' as it is the most direct match for a raw red bell pepper.",
+            "closest_match_explanation": "Matched '1 red bell pepper' to 'pepper, sweet, red, raw' as it is the least processed option available for red bell pepper.",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "1 red bell pepper",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 bunch scallions' to 'onions, spring, raw' as it is the closest match for scallions, which are a type of green onion.",
+            "closest_match_explanation": "Matched '1 bunch scallions' to 'onions, spring, raw' as it is the least processed option available for scallions.",
             "closest_match_name": "onions, spring, raw",
             "ingredient": "1 bunch scallions",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant canned option for tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the most direct match for canned black beans.",
+            "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the most relevant option for canned black beans.",
             "closest_match_name": "black beans",
             "ingredient": "2 cans black beans (15 ounces)",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the closest match available for chili powder, considering processing levels.",
+            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option for chili powder, considering processing levels.",
             "closest_match_name": "chili sauce",
             "ingredient": "4 tbsp chili powder",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'corn flour' as it is the most relevant option for a corn-based mix.",
+            "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'corn flour' as it is the most relevant option for corn muffin mix.",
             "closest_match_name": "corn flour",
             "ingredient": "1 package dry corn muffin mix (8.5 ounces)",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the most direct match for milk without any processing involved.",
+            "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the most relevant option for milk.",
             "closest_match_name": "milk",
             "ingredient": "0.33 cup milk",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the most direct match for a single egg.",
+            "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the most relevant option for a single egg.",
             "closest_match_name": "eggs",
             "ingredient": "1 egg",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 1.0
         }
     ]

@@ -1,59 +1,59 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '400 g beetroot' to 'beet, red, raw' as it is the least processed and a direct match for raw beetroot.",
+            "closest_match_explanation": "Matched '400 g beetroot' to 'beet, red, raw' as it is the least processed option available for beetroot.",
             "closest_match_name": "beet, red, raw",
             "ingredient": "400 g beetroot",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category for vinegar and the best available match.",
+            "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category for vinegar without specific processing details.",
             "closest_match_name": "vinegar",
             "ingredient": "1 dl dark balsamic vinegar",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '600 g cod loin' to 'cod, fillet, raw' as it is the least processed and a direct match for raw cod.",
+            "closest_match_explanation": "Matched '600 g cod loin' to 'cod, fillet, raw' as it is the least processed option available for cod.",
             "closest_match_name": "cod, fillet, raw",
             "ingredient": "600 g cod loin",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most appropriate match for water with no processing.",
+            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the standard option for water emissions.",
             "closest_match_name": "water, tap, drinking, average values",
             "ingredient": "2.5 dl water",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.0
         },
         {
-            "closest_match_explanation": "Matched '75 g finely chopped shallots' to 'onion, raw' as it is the least processed and a direct match for raw onions.",
+            "closest_match_explanation": "Matched '75 g finely chopped shallots' to 'onion, raw' as it is the least processed option available for onions.",
             "closest_match_name": "onion, raw",
             "ingredient": "75 g finely chopped shallots",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '200 g cold butter' to 'butter, salt added' as it is the closest match for butter with no additional processing specified.",
+            "closest_match_explanation": "Matched '200 g cold butter' to 'butter, salt added' as it is the most relevant option for butter.",
             "closest_match_name": "butter, salt added",
             "ingredient": "200 g cold butter",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common fresh herb and the best available match.",
+            "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common fresh herb option available.",
             "closest_match_name": "basil, fresh",
             "ingredient": "fresh herbs",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '100 g fried bacon cubes' to 'bacon, frying, raw' as it is the closest match for fried bacon cubes considering processing.",
+            "closest_match_explanation": "Matched '100 g fried bacon cubes' to 'bacon, frying, raw' as it is the most relevant option for fried bacon.",
             "closest_match_name": "bacon, frying, raw",
             "ingredient": "100 g fried bacon cubes",
-            "unit": "kg CO2e / kg",
+            "unit": "kg CO2e per kg",
             "co2_per_kg": 6.4
         }
     ]

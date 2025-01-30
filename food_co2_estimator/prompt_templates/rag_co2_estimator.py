@@ -67,6 +67,8 @@ using dictionary formatting.
      - 'Tomato, canned' involves canning as a processing method.
      - 'Grapes, fermented' (wine) involves fermentation as a processing method.
      - Ingredient named 'Butter, for frying' would mean 'for frying' should be ignored in determining best match.
+     - "chicken, leg, flesh and skin, raw" is a better match than "minced chicken" to "chicken thigh" or "chicken breast" because
+       because "chicken, leg, flesh and skin, raw" is the least processed (raw) option and "minced chicken" is more processed.
 
 5. **If Multiple Viable Options Have Similar Processing Levels:**
    - Choose the one with the highest emission factor.
@@ -111,9 +113,6 @@ IMPORTANT! You must carefully explain why you have chosen the best match with re
 IMPORTANT! The ingredient name must follow the exact spelling and format provided in the list of ingredients with quantities, units and everything intact.
 IMPORTANT! The context output must directly "copy-pasted" from the best match in context.
 IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
-
-**Remember:** It is very important that you only return a emission value if there is a good match that adheres to the rulesp provided 
-              and you can only output kg CO2 per kg results provided in the emission options you will match to.
 """
 
 

@@ -43,24 +43,20 @@ for emission_record_dk, emission_record_gb in zip(
     if en_name.endswith(READY_MEALS):
         continue
 
-    id = str(uuid4())
-    uuids.append(id)
     documents.append(
         Document(
             page_content=en_name.lower(),
             metadata=emission_record_dk,
-            id=id,
+            id=str(uuid4()),
         )
     )
     rephrased_name = document_rephrasing.get(en_name)
     if rephrased_name:
-        id = str(uuid4())
-        uuids.append(id)
         documents.append(
             Document(
                 page_content=rephrased_name,
                 metadata=emission_record_dk,
-                id=id,
+                id=str(uuid4()),
             )
         )
 

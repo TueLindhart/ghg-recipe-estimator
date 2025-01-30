@@ -10,14 +10,15 @@ class CO2perKg(BaseModel):
         "in the provided matching instructions were applied."
     )
     closest_match_name: str = Field(
-        description="Name of the closest match in emission database. Example: 'Tomatoes, canned.'"
+        description="Name of the closest match in emission database. Example: 'Tomatoes, canned."
+        "Write 'No match' if there is no suitable match."
     )
     ingredient: str = Field(
         description="Name of ingredient exactly transcribed from ingredients input with no modifications. '2 cans of tomatoes.'"
     )
-    unit: str = Field(description="The unit which is kg CO2e per kg")
+    unit: str = Field(description="The unit which is 'kg CO2e per kg'")
     co2_per_kg: Optional[float] = Field(
-        description="kg CO2 per kg directly 'copy-pasted' from closest match.",
+        description="'kg CO2 per kg' directly 'copy-pasted' from closest match. Set to 'none' if there is no match.",
         default=None,
     )
 

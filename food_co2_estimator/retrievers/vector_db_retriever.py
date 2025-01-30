@@ -220,6 +220,8 @@ async def batch_emission_retriever(inputs: List[str]):
     retriever_chain = get_emission_retriever_chain()
     cleaned_inputs = clean_ingredient_list(inputs)
     outputs = await retriever_chain.abatch(cleaned_inputs)
+    if len(outputs) != len(cleaned_inputs):
+        raise ValueError
     retriever_matches = dict(zip(inputs, outputs))
     return retriever_matches
 

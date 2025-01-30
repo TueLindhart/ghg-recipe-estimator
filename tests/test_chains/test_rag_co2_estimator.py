@@ -82,9 +82,13 @@ async def test_rag_co2_estimator_chain(
     # Check the avg. deviation
     avg_deviation = sum(deviations) / len(deviations)
     error_message = f"kg CO2 / kg est. varies in avg. on: {round(avg_deviation, 2)} kg"
-    error_message += f"\n{print_max_deviation_ingredient(enriched_recipe.ingredients,
-                                                         expected_enriched_recipe.ingredients,
-                                                         deviations,)}"
+    if avg_deviation != 0:
+        error_message += "\n" + print_max_deviation_ingredient(
+            enriched_recipe.ingredients,
+            expected_enriched_recipe.ingredients,
+            deviations,
+        )
+
     assert avg_deviation <= ACCEPTABLE_AVG_DEVIATION, error_message
 
     ratio_of_deviating_ingredients = n_deviations / len(deviations)
