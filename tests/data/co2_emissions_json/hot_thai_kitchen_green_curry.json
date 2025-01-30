@@ -1,42 +1,42 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The best match for '420 ml coconut milk' is 'coconut milk' from the provided options, as it directly corresponds to the ingredient without any processing differences.",
+            "closest_match_explanation": "Matched '420 ml coconut milk' to 'coconut milk' as it is the exact ingredient in the database.",
             "closest_match_name": "coconut milk",
             "ingredient": "420 ml coconut milk",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 6.3
         },
         {
-            "closest_match_explanation": "The best match for '50 g green curry paste' is 'green curry paste' from the provided options, as it directly corresponds to the ingredient without any processing differences.",
+            "closest_match_explanation": "Matched '50 g green curry paste' to 'green curry paste' as it is the exact ingredient in the database.",
             "closest_match_name": "green curry paste",
             "ingredient": "50 g green curry paste",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "The best match for '240 ml chicken stock, unsalted' is 'bouillon, chicken, prepared' as it is the closest option related to chicken stock, which is a prepared form of chicken broth.",
+            "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering it is a chicken-based stock.",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "240 ml chicken stock, unsalted",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The best match for '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' is 'chicken, breast, flesh and skin, raw' as it is the closest option related to chicken thighs, which are a specific cut of chicken.",
+            "closest_match_explanation": "Matched '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' to 'chicken, thigh, flesh and skin, raw' as it is the closest match considering it is a specific cut of chicken.",
             "closest_match_name": "chicken, breast, flesh and skin, raw",
             "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "The best match for '550 ml bamboo shoots, drained and rinsed' is 'bamboo shoots, canned, nonsalted' as it is the closest option related to bamboo shoots, which are typically canned for preservation.",
+            "closest_match_explanation": "Matched '550 ml bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the closest match considering the processing involved (canned).",
             "closest_match_name": "bamboo shoots, canned, nonsalted",
             "ingredient": "550 ml bamboo shoots, drained and rinsed",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "The best match for 'jasmine rice, to serve' is 'rice, parboiled, raw' as it is the closest option related to rice, which is a broader category that includes jasmine rice.",
+            "closest_match_explanation": "Matched 'jasmine rice, to serve' to 'rice, parboiled, raw' as it is the closest match considering it is a type of rice.",
             "closest_match_name": "rice, parboiled, raw",
             "ingredient": "jasmine rice, to serve",
             "unit": "kg CO2e per kg",

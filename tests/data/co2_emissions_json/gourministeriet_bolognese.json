@@ -36,7 +36,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched '3 tins chopped tomatoes' to 'tomato, peeled, canned' as it is the best match for canned tomatoes.",
+            "closest_match_explanation": "Matched '3 tins chopped tomatoes' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "3 tins chopped tomatoes",
             "unit": "kg CO2e per kg",

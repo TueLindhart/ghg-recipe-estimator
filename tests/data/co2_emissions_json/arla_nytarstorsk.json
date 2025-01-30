@@ -22,7 +22,7 @@
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the standard option for water emissions.",
+            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most suitable option for water.",
             "closest_match_name": "water, tap, drinking, average values",
             "ingredient": "2.5 dl water",
             "unit": "kg CO2e per kg",

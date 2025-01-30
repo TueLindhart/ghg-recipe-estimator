@@ -36,7 +36,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant canned option for tomatoes.",
+            "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
             "unit": "kg CO2e per kg",
