@@ -29,7 +29,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the most relevant option for cream with a high fat content.",
+            "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the most relevant option for cream with a specific fat content.",
             "closest_match_name": "cream, whipping, 38 % fat",
             "ingredient": "2 dl cream",
             "unit": "kg CO2e per kg",

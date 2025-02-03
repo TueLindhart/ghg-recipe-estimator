@@ -8,14 +8,14 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate raw option for red pepper.",
+            "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for a raw red pepper.",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "0.5 red pepper",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and appropriate match for beef without specifying a cut.",
+            "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and relevant option for beef.",
             "closest_match_name": "average beef",
             "ingredient": "250 g beef",
             "unit": "kg CO2e per kg",
@@ -36,7 +36,7 @@
             "co2_per_kg": 0.6
         },
         {
-            "closest_match_explanation": "Matched '11 small corn tortillas' to 'tortilla bread, wheat' as it is the most appropriate match for tortillas.",
+            "closest_match_explanation": "Matched '11 small corn tortillas' to 'tortilla bread, wheat' as it is the most relevant option for tortillas.",
             "closest_match_name": "tortilla bread, wheat",
             "ingredient": "11 small corn tortillas",
             "unit": "kg CO2e per kg",
@@ -50,21 +50,21 @@
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for raw avocado.",
+            "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for a raw avocado.",
             "closest_match_name": "avocado, raw",
             "ingredient": "1 avocado",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '0.5 red onion' to 'onion, raw' as it is the least processed option available for onions.",
-            "closest_match_name": "onion, raw",
+            "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the least processed option available for red onions.",
+            "closest_match_name": "red onion",
             "ingredient": "0.5 red onion",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '300 g tomatoes' to 'tomato, peeled, canned' as it is the most appropriate match for canned tomatoes.",
+            "closest_match_explanation": "Matched '300 g tomatoes' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "300 g tomatoes",
             "unit": "kg CO2e per kg",

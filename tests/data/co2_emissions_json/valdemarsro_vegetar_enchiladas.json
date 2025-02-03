@@ -8,14 +8,14 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '1 dl vegetable broth' to 'bouillon, chicken, prepared' as it is a common prepared broth option.",
+            "closest_match_explanation": "Matched '1 dl vegetable broth' to 'bouillon, chicken, prepared' as it is a common form of vegetable broth and the closest match available.",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "1 dl vegetable broth",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the most relevant canned tomato option.",
+            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can chopped tomatoes",
             "unit": "kg CO2e per kg",
@@ -36,7 +36,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the most relevant canned tomato option.",
+            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can chopped tomatoes",
             "unit": "kg CO2e per kg",
@@ -57,21 +57,21 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the least processed option available for corn.",
+            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the closest match available for corn.",
             "closest_match_name": "corn cob",
             "ingredient": "300 g corn",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Matched '8 tortillas pancakes' to 'tortilla bread, wheat' as it is the most relevant option for tortillas.",
+            "closest_match_explanation": "Matched '8 tortillas pancakes' to 'tortilla bread, wheat' as it is the most direct match for tortillas.",
             "closest_match_name": "tortilla bread, wheat",
             "ingredient": "8 tortillas pancakes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match in terms of cheese type and processing.",
+            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese.",
             "closest_match_name": "blue cheese",
             "ingredient": "150 g cheddar cheese",
             "unit": "kg CO2e per kg",

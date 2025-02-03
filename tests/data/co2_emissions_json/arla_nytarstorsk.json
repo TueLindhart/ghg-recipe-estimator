@@ -55,6 +55,13 @@
             "ingredient": "100 g fried bacon cubes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 6.4
+        },
+        {
+            "closest_match_explanation": "Matched '4 soft-boiled quail eggs' to 'eggs' as it is a general category for eggs without specific processing details.",
+            "closest_match_name": "eggs",
+            "ingredient": "4 soft-boiled quail eggs",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 1.0
         }
     ]
 }

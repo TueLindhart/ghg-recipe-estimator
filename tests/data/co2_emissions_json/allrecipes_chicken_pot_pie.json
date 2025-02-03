@@ -36,14 +36,14 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can diced tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
+            "ingredient": "1 can diced tomatoes (15 ounces)",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the most relevant option for canned black beans.",
+            "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the most relevant option for black beans.",
             "closest_match_name": "black beans",
             "ingredient": "2 cans black beans (15 ounces)",
             "unit": "kg CO2e per kg",
@@ -71,7 +71,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the most relevant option for a single egg.",
+            "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the most relevant option for eggs.",
             "closest_match_name": "eggs",
             "ingredient": "1 egg",
             "unit": "kg CO2e per kg",

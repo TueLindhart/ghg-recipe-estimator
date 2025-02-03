@@ -29,7 +29,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '150 g tomato concentrate' to 'tomato paste, concentrated' as it is the closest match and reflects the processing level of concentration.",
+            "closest_match_explanation": "Matched '150 g tomato concentrate' to 'tomato paste, concentrated' as it is the closest match and involves similar processing.",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "150 g tomato concentrate",
             "unit": "kg CO2e per kg",

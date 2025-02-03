@@ -1,0 +1,209 @@
+{
+    "ingredients": [
+        {
+            "original_name": "250 g frisk pasta",
+            "en_name": "250 g fresh pasta",
+            "weight_estimate": {
+                "ingredient": "250 g fresh pasta",
+                "weight_calculation": "250 g = 250 g = 0.25 kg",
+                "weight_in_kg": 0.25
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '250 g fresh pasta' to 'pasta, raw' as it is the least processed option available for fresh pasta.",
+                "closest_match_name": "pasta, raw",
+                "ingredient": "250 g fresh pasta",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 2.1
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 fed hvidløg",
+            "en_name": "2 cloves of garlic",
+            "weight_estimate": {
+                "ingredient": "2 cloves of garlic",
+                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+                "weight_in_kg": 0.008
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 løg",
+            "en_name": "1 onion",
+            "weight_estimate": {
+                "ingredient": "1 onion",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+                "weight_in_kg": 0.17
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_name": "onion, raw",
+                "ingredient": "1 onion",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.3
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 bdt grønne asparges",
+            "en_name": "1 bunch of green asparagus",
+            "weight_estimate": {
+                "ingredient": "1 bunch of green asparagus",
+                "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+                "weight_in_kg": 0.5
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 bunch of green asparagus' to 'asparagus, green, raw' as it is the least processed option available for green asparagus.",
+                "closest_match_name": "asparagus, green, raw",
+                "ingredient": "1 bunch of green asparagus",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.1
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 squash",
+            "en_name": "1 squash",
+            "weight_estimate": {
+                "ingredient": "1 squash",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+                "weight_in_kg": 0.4
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 squash' to 'squash, raw' as it is the least processed option available for squash.",
+                "closest_match_name": "squash, raw",
+                "ingredient": "1 squash",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.8
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 håndfuld frisk basilikum",
+            "en_name": "1 handful of fresh basil",
+            "weight_estimate": {
+                "ingredient": "1 handful of fresh basil",
+                "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 dl fløde",
+            "en_name": "2 dl cream",
+            "weight_estimate": {
+                "ingredient": "2 dl cream",
+                "weight_calculation": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
+                "weight_in_kg": 0.2
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the most relevant option for cream with a specific fat content.",
+                "closest_match_name": "cream, whipping, 38 % fat",
+                "ingredient": "2 dl cream",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.7
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 dl vand",
+            "en_name": "1 dl water",
+            "weight_estimate": {
+                "ingredient": "1 dl water",
+                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_in_kg": 0.1
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the most common and least processed option for water.",
+                "closest_match_name": "water, tap, drinking, average values",
+                "ingredient": "1 dl water",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.0
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 grøntsags bouillonterning",
+            "en_name": "1 vegetable stock cube",
+            "weight_estimate": {
+                "ingredient": "1 vegetable stock cube",
+                "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
+                "weight_in_kg": 0.004
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "6 spsk revet parmesan",
+            "en_name": "6 tbsp grated parmesan",
+            "weight_estimate": {
+                "ingredient": "6 tbsp grated parmesan",
+                "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+                "weight_in_kg": 0.09
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the most relevant option for grated parmesan cheese.",
+                "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
+                "ingredient": "6 tbsp grated parmesan",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 håndfuld mozzarella",
+            "en_name": "1 handful of mozzarella",
+            "weight_estimate": {
+                "ingredient": "1 handful of mozzarella",
+                "weight_calculation": "Amount of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_in_kg": 0.1
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most relevant option for mozzarella cheese.",
+                "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
+                "ingredient": "1 handful of mozzarella",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "salt",
+            "en_name": "salt",
+            "weight_estimate": {
+                "ingredient": "salt",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "peber",
+            "en_name": "pepper",
+            "weight_estimate": {
+                "ingredient": "pepper",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "olie",
+            "en_name": "oil",
+            "weight_estimate": {
+                "ingredient": "oil",
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.010 kg, 2 servings * 0.010 kg = 0.02 kg",
+                "weight_in_kg": 0.02
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        }
+    ],
+    "persons": 2,
+    "instructions": "Put a pot of water over the pasta. Cook according to the instructions on the package and pour off the water. Snap off the ends of the green asparagus and cut them into approx. 1 cm long pieces. Sauté the onion and garlic in oil in a hot pan. Add the squash and asparagus and sauté for a few more minutes, sprinkle with salt and pepper. Add the water to the pan and crumble the stock cube in. Pour in the cream together with the grated parmesan and stir everything well. Toss the fresh pasta in the mixture and finally the mozzarella and fresh basil. Season with extra ground pepper.",
+    "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
+}

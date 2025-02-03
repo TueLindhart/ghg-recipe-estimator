@@ -21,18 +21,18 @@
             "weight_in_kg": 0.45
         },
         {
-            "ingredient": "24 g light brown or granulated sugar",
+            "ingredient": "24 g light brown sugar",
             "weight_calculation": "24 g = 24 g = 0.024 kg",
             "weight_in_kg": 0.024
         },
         {
             "ingredient": "22.5-30 ml fish sauce",
-            "weight_calculation": "Average of 22.5 ml and 30 ml = 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
-            "weight_in_kg": 0.02625
+            "weight_calculation": "Amount of fish sauce not specified. LLM estimate is: 30 ml = 30 g, 1 * 30 g = 30 g = 0.03 kg",
+            "weight_in_kg": 0.03
         },
         {
-            "ingredient": "4 makrut lime leaves",
-            "weight_calculation": "Amount of makrut lime leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+            "ingredient": "4 kaffir lime leaves",
+            "weight_calculation": "Amount of kaffir lime leaves not specified. LLM estimate is: 4 leaves = 4 g, 1 * 4 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
@@ -47,7 +47,7 @@
         },
         {
             "ingredient": "¼ red pepper, julienned",
-            "weight_calculation": "1 red pepper = 150 g, ¼ * 150 g = 37.5 g = 0.0375 kg",
+            "weight_calculation": "Amount of red pepper not specified. LLM estimate is: 1 red pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
             "weight_in_kg": 0.0375
         },
         {

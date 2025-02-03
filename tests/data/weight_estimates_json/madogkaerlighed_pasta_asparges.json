@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "1 bunch of green asparagus",
-            "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "weight_in_kg": 0.5
         },
         {

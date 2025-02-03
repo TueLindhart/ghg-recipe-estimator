@@ -87,8 +87,8 @@
         },
         {
             "ingredient": "4 soft-boiled quail eggs",
-            "weight_calculation": "1 quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg",
-            "weight_in_kg": 0.04
+            "weight_calculation": "1 quail egg = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "weight_in_kg": 0.06
         }
     ]
 }
