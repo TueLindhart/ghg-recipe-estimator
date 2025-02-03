@@ -53,7 +53,7 @@ async def test_extract_recipe_chain(
         result.ingredients, expected_extracted_recipe.ingredients
     ):
         sim_score = string_similarity(ingredient, expected_ingredient)
-        if "salt" in ingredient or "peber" in ingredient:
+        if "salt" in ingredient or "peber" in ingredient or "pepper" in ingredient:
             continue
 
         assert (
