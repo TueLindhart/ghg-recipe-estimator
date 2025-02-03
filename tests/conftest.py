@@ -9,6 +9,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
 from tests.load_files import (
     get_expected_enriched_recipe,
     get_expected_extracted_recipe,
+    get_expected_final_enriched_recipe,
     get_expected_rag_co2_estimates,
     get_expected_weight_estimates,
     get_recipe_markdown_text,
@@ -60,3 +61,20 @@ def enriched_recipe_with_co2_est_fixture(
     co2_estimates = get_expected_rag_co2_estimates(file_name)
     enriched_recipe.update_with_co2_per_kg_db(co2_estimates)
     return file_name, enriched_recipe
+
+
+@pytest.fixture(params=TEST_URLS.keys())
+def markdown_and_expected_enriched_recipe(
+    request: pytest.FixtureRequest,
+) -> tuple[str, ExtractedRecipe, EnrichedRecipe, EnrichedRecipe]:
+    file_name = request.param
+    markdown_text = get_recipe_markdown_text(file_name)
+    expected_extracted_recipe = get_expected_extracted_recipe(file_name)
+    enriched_recipe = get_expected_enriched_recipe(file_name)
+    final_enriched_recipe = get_expected_final_enriched_recipe(file_name)
+    return (
+        markdown_text,
+        expected_extracted_recipe,
+        enriched_recipe,
+        final_enriched_recipe,
+    )

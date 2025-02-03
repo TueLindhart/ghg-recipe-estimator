@@ -3,115 +3,104 @@ from unittest.mock import Mock
 import pytest
 
 from food_co2_estimator.main import async_estimator
-from tests.load_files import (
-    get_expected_enriched_recipe,
-    get_expected_extracted_recipe,
-    get_expected_rag_co2_estimates,
-    get_expected_weight_estimates,
+from food_co2_estimator.pydantic_models.recipe_extractor import (
+    EnrichedRecipe,
+    ExtractedRecipe,
 )
 
-
-@pytest.fixture
-def enriched_recipe_fixture():
-    file_name = "valdemarsro_vegetar_enchiladas"
-    return get_expected_enriched_recipe(file_name)
-
-
-@pytest.fixture
-def extracted_recipe_fixture():
-    file_name = "valdemarsro_vegetar_enchiladas"
-    return get_expected_extracted_recipe(file_name)
-
-
-@pytest.fixture
-def weight_estimates_fixture():
-    file_name = "valdemarsro_vegetar_enchiladas"
-    return get_expected_weight_estimates(file_name)
-
-
-@pytest.fixture
-def rag_co2_estimates_fixture():
-    file_name = "valdemarsro_vegetar_enchiladas"
-    return get_expected_rag_co2_estimates(file_name)
+MAX_TOTAL_RATIO_DIFFERENCE = 0.05
 
 
 @pytest.mark.asyncio
-async def test_async_estimator_static(
-    monkeypatch,
-    enriched_recipe_fixture,
-    extracted_recipe_fixture,
-    weight_estimates_fixture,
-    rag_co2_estimates_fixture,
+async def test_async_estimator(
+    monkeypatch: pytest.MonkeyPatch,
+    markdown_and_expected_enriched_recipe: tuple[
+        str, ExtractedRecipe, EnrichedRecipe, EnrichedRecipe
+    ],
 ):
+    (
+        markdown_text,
+        expected_extracted_recipe,
+        expected_enriched_recipe,
+        expected_final_enriched_recipe,
+    ) = markdown_and_expected_enriched_recipe
+
     # Mock get_markdown_from_url
-    mock_get_markdown_from_url = Mock(return_value="Sample recipe text")
+    mock_get_markdown_from_url = Mock(return_value=markdown_text)
     monkeypatch.setattr(
-        "food_co2_estimator.url.url2markdown.get_markdown_from_url",
+        "food_co2_estimator.main.get_markdown_from_url",
         mock_get_markdown_from_url,
     )
 
     # Mock extract_recipe
-    async def mock_extract_recipe(text, url, verbose):
-        return extracted_recipe_fixture
+    async def mock_extract_recipe(text: str, url: str, verbose: bool):
+        return expected_extracted_recipe
 
-    monkeypatch.setattr(
-        "food_co2_estimator.chains.recipe_extractor.extract_recipe", mock_extract_recipe
-    )
-
-    # Mock detect_language
-    mock_detect_language = Mock(return_value="da")
-    monkeypatch.setattr(
-        "food_co2_estimator.language.detector.detect_language", mock_detect_language
-    )
+    monkeypatch.setattr("food_co2_estimator.main.extract_recipe", mock_extract_recipe)
 
     # Mock get_translation_chain
     mock_translation_chain = Mock()
 
     async def mock_ainvoke(inputs):
-        return enriched_recipe_fixture
+        return expected_enriched_recipe
 
     mock_translation_chain.ainvoke = mock_ainvoke
     monkeypatch.setattr(
-        "food_co2_estimator.chains.translator.get_translation_chain",
+        "food_co2_estimator.main.get_translation_chain",
         Mock(return_value=mock_translation_chain),
     )
 
-    # Mock get_weight_estimates
-    async def mock_get_weight_estimates(verbose, recipe):
-        return weight_estimates_fixture
-
-    monkeypatch.setattr(
-        "food_co2_estimator.chains.weight_estimator.get_weight_estimates",
-        mock_get_weight_estimates,
-    )
-
-    # Mock get_co2_emissions
-    async def mock_get_co2_emissions(verbose, recipe, negligeble_threshold):
-        return rag_co2_estimates_fixture
-
-    monkeypatch.setattr(
-        "food_co2_estimator.chains.rag_co2_estimator.get_co2_emissions",
-        mock_get_co2_emissions,
-    )
-
-    # Mock get_co2_search_emissions
-    async def mock_get_co2_search_emissions(verbose, recipe, negligeble_threshold):
-        return rag_co2_estimates_fixture
-
-    monkeypatch.setattr(
-        "food_co2_estimator.chains.search_co2_estimator.get_co2_search_emissions",
-        mock_get_co2_search_emissions,
-    )
-
     # Call the function
-    result = await async_estimator(url=url, verbose=False)
+    result = await async_estimator(
+        url="http://example.com",
+        verbose=False,
+        return_output_string=False,
+    )
 
-    # Assert the results
-    assert "Total CO2 emission" in result
-    assert "Estimated number of persons" in result
-    assert "Emission pr. person" in result
-    assert "Avg. Danish dinner emission pr person" in result
-    assert "The calculation method per ingredient is" in result
-    assert "2 tomatoes" in result
-    assert "1 liter of milk" in result
-    assert "3 large eggs" in result
+    if isinstance(result, str):
+        raise ValueError()
+
+    # Assert no need to use search
+    for ingredient in result.ingredients:
+        assert (
+            ingredient.co2_per_kg_search is None
+        ), "Estimator had to use google search"
+
+    emission_per_ingredient = calculate_emission_per_ingredient(result)
+    expected_emission_per_ingredient = calculate_emission_per_ingredient(
+        expected_final_enriched_recipe
+    )
+
+    assert len(emission_per_ingredient) == len(expected_emission_per_ingredient)
+
+    total_emission = calculate_total_emission(emission_per_ingredient)
+    total_expected_emission = calculate_total_emission(expected_emission_per_ingredient)
+
+    ratio_difference = (
+        abs(total_emission - total_expected_emission) / total_expected_emission
+    )
+    assert (
+        ratio_difference <= MAX_TOTAL_RATIO_DIFFERENCE
+    ), f"Total emission difference in % is above max: {round(ratio_difference * 100, 2)} > {MAX_TOTAL_RATIO_DIFFERENCE}"
+
+
+def calculate_emission_per_ingredient(
+    recipe: EnrichedRecipe,
+) -> list[tuple[str, float]]:
+    emission_per_ingredient: list[tuple[str, float]] = []
+    for ingredient in recipe.ingredients:
+        if (
+            ingredient.weight_estimate is not None
+            and ingredient.weight_estimate.weight_in_kg is not None
+            and ingredient.co2_per_kg_db is not None
+            and ingredient.co2_per_kg_db.co2_per_kg is not None
+        ):
+            weight = ingredient.weight_estimate.weight_in_kg
+            co2_per_kg = ingredient.co2_per_kg_db.co2_per_kg
+            emission = weight * co2_per_kg
+            emission_per_ingredient.append((ingredient.original_name, emission))
+    return emission_per_ingredient
+
+
+def calculate_total_emission(emission_per_ingredient: list[tuple[str, float]]) -> float:
+    return sum(emission for _, emission in emission_per_ingredient)

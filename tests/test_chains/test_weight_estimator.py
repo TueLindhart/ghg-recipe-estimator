@@ -7,7 +7,8 @@ from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 
 ACCEPTABLE_WEIGHT_ERROR = 0.2  # kg (this range should be refined in the future)
-TOTAL_ACCEPTABLE_ERROR = 0.1
+# TOTAL_ACCEPTABLE_ERROR = 0.25  # kg
+TOTAL_ACCEPTABLE_RATIO_ERROR = 0.05
 
 IN_KG_REGEX = r"= \d+(\.\d+)? (kg|kilogram)"
 
@@ -74,11 +75,11 @@ async def test_weight_estimator_chain(
         for ingredient in expected_weight_estimates.weight_estimates
         if ingredient.weight_in_kg is not None
     )
-    lower_bound = max(0, reference_total_weight - TOTAL_ACCEPTABLE_ERROR)
-    upper_bound = reference_total_weight + TOTAL_ACCEPTABLE_ERROR
-    assert (
-        lower_bound <= estimated_total_weight and estimated_total_weight <= upper_bound
-    ), (
-        f"Total weight estimate is out of the acceptable range: "
-        f"{estimated_total_weight} not in [{lower_bound}, {upper_bound}]"
+
+    ratio_difference = (
+        abs(estimated_total_weight - reference_total_weight) / reference_total_weight
+    )
+    assert ratio_difference <= TOTAL_ACCEPTABLE_RATIO_ERROR, (
+        f"Total weight estimate is out of the acceptable ratio range: "
+        f"{ratio_difference} < {TOTAL_ACCEPTABLE_RATIO_ERROR}"
     )

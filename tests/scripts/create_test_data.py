@@ -36,7 +36,7 @@ async def process_and_store_enriched_recipe(file_name: str, url: str):
     enriched_recipe.update_with_co2_per_kg_db(co2_estimates)
 
     # Store the final enriched recipe with translations as JSON
-    final_output_filepath = os.path.join(FINAL_ENRICHED_RECIPE_DIR, file_name)
+    final_output_filepath = os.path.join(FINAL_ENRICHED_RECIPE_DIR, file_name + ".json")
     with open(final_output_filepath, "w", encoding="utf-8") as file:
         json.dump(enriched_recipe.model_dump(), file, ensure_ascii=False, indent=4)
     print(f"Stored final enriched JSON output for {url} in {final_output_filepath}")

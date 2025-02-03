@@ -23,7 +23,7 @@ def log_exception_message(url: str, message: str):
     logging.exception(f"URL={url}: {message}")
 
 
-async def async_estimator(
+async def get_enriched_recipe(
     url: str,
     verbose: bool = False,
     negligeble_threshold: float = NEGLIGIBLE_THRESHOLD,
@@ -104,13 +104,100 @@ async def async_estimator(
         )
         log_exception_message(url, str(e))
         log_exception_message(url, search_emissions_expection)
+    return enriched_recipe
 
-    return generate_output(
-        enriched_recipe=enriched_recipe,
-        negligeble_threshold=negligeble_threshold,
-        number_of_persons=enriched_recipe.persons,
-        language=language,
-    )
+
+async def async_estimator(
+    url: str,
+    verbose: bool = False,
+    negligeble_threshold: float = NEGLIGIBLE_THRESHOLD,
+    logging_level=logging.INFO,
+    return_output_string: bool = True,
+):
+    logging.basicConfig(level=logging_level)
+    text = get_markdown_from_url(url)
+    if text is None:
+        return "Unable to extraxt text from provided URL"
+
+    # Extract ingredients from text
+    recipe = await extract_recipe(text=text, url=url, verbose=verbose)
+    if len(recipe.ingredients) == 0:
+        no_recipe_message = "I can't find a recipe in the provided URL."
+        log_exception_message(url, no_recipe_message)
+        return no_recipe_message
+
+    # Detect language in ingredients
+    enriched_recipe = EnrichedRecipe.from_extracted_recipe(url, recipe)
+    language = detect_language(enriched_recipe)
+    if language is None:
+        language_expection = f"Language is not recognized as {', '.join([lang.value for lang in Languages])}"
+        log_exception_message(url, language_expection)
+        return language_expection
+
+    translator = get_translation_chain()
+    try:
+        enriched_recipe: EnrichedRecipe = await translator.ainvoke(
+            {"recipe": enriched_recipe, "language": language}
+        )
+    except Exception as e:
+        translation_expection = "Something went wrong in translating recipies."
+        log_exception_message(url, str(e))
+        log_exception_message(url, translation_expection)
+        return translation_expection
+
+    try:
+        # Estimate weights using weight estimator
+        parsed_weight_output = await get_weight_estimates(
+            verbose,
+            enriched_recipe,
+        )
+        enriched_recipe.update_with_weight_estimates(parsed_weight_output)
+    except Exception as e:
+        weight_est_exception = (
+            "Something went wrong in estimating weights of ingredients."
+        )
+        log_exception_message(url, str(e))
+        log_exception_message(url, weight_est_exception)
+        return weight_est_exception
+
+    try:
+        # Estimate the kg CO2e per kg for each weight ingredien
+        parsed_rag_emissions = await get_co2_emissions(
+            verbose,
+            negligeble_threshold,
+            enriched_recipe,
+        )
+        enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
+
+    except Exception as e:
+        rag_emissions_exception = (
+            "Something went wrong in estimating kg CO2e per kg for the ingredients"
+        )
+        log_exception_message(url, str(e))
+        log_exception_message(url, rag_emissions_exception)
+        return rag_emissions_exception
+
+    # Check if any ingredients needs CO2 search
+    try:
+        parsed_search_results = await get_co2_search_emissions(
+            verbose, enriched_recipe, negligeble_threshold
+        )
+        enriched_recipe.update_with_co2_per_kg_search(parsed_search_results)
+    except Exception as e:
+        search_emissions_expection = (
+            "Something went wrong when searching for kg CO2e per kg"
+        )
+        log_exception_message(url, str(e))
+        log_exception_message(url, search_emissions_expection)
+
+    if return_output_string:
+        return generate_output(
+            enriched_recipe=enriched_recipe,
+            negligeble_threshold=negligeble_threshold,
+            number_of_persons=enriched_recipe.persons,
+            language=language,
+        )
+    return enriched_recipe
 
 
 if __name__ == "__main__":
