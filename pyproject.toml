@@ -59,7 +59,7 @@ reportMissingTypeStubs = false
 reportUnknownVariableType = false
 
 [tool.pytest.ini_options]
-addopts = "-vv -n auto"
+addopts = "-vv -n auto -x"
 testpaths = ["tests"]
 filterwarnings = [
     "ignore::DeprecationWarning:pydantic.*:",

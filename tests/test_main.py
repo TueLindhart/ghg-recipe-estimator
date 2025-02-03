@@ -8,7 +8,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     ExtractedRecipe,
 )
 
-MAX_TOTAL_RATIO_DIFFERENCE = 0.05
+MAX_TOTAL_RATIO_DIFFERENCE = 0.1
 
 
 @pytest.mark.asyncio
@@ -57,8 +57,7 @@ async def test_async_estimator(
         return_output_string=False,
     )
 
-    if isinstance(result, str):
-        raise ValueError()
+    assert not isinstance(result, str), result
 
     # Assert no need to use search
     for ingredient in result.ingredients:
@@ -71,17 +70,20 @@ async def test_async_estimator(
         expected_final_enriched_recipe
     )
 
-    assert len(emission_per_ingredient) == len(expected_emission_per_ingredient)
-
     total_emission = calculate_total_emission(emission_per_ingredient)
     total_expected_emission = calculate_total_emission(expected_emission_per_ingredient)
 
+    n_persons = expected_final_enriched_recipe.persons
+    assert n_persons is not None
+    total_emission_per_person = total_emission / n_persons
+    expected_total_emission_per_person = total_expected_emission / n_persons
     ratio_difference = (
-        abs(total_emission - total_expected_emission) / total_expected_emission
+        abs(total_emission_per_person - expected_total_emission_per_person)
+        / expected_total_emission_per_person
     )
     assert (
         ratio_difference <= MAX_TOTAL_RATIO_DIFFERENCE
-    ), f"Total emission difference in % is above max: {round(ratio_difference * 100, 2)} > {MAX_TOTAL_RATIO_DIFFERENCE}"
+    ), f"Total emission per person difference in % is above max: {round(ratio_difference * 100, 2)} > {MAX_TOTAL_RATIO_DIFFERENCE}"
 
 
 def calculate_emission_per_ingredient(

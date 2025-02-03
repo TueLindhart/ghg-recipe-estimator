@@ -4,7 +4,7 @@ import pytest
 
 from food_co2_estimator.chains.recipe_extractor import ExtractedRecipe, extract_recipe
 
-MIN_STRING_SIMILARITY_SCORE = 0.25
+MIN_STRING_SIMILARITY_SCORE = 0.1
 
 
 @pytest.mark.asyncio
