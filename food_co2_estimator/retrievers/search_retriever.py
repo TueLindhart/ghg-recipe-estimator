@@ -2,7 +2,7 @@ import asyncio
 
 from langchain_community.utilities import GoogleSerperAPIWrapper
 
-from food_co2_estimator.retrievers.emission_retriever import clean_ingredient_list
+from food_co2_estimator.retrievers.vector_db_retriever import clean_ingredient_list
 
 
 async def batch_co2_search_retriever(ingredients: list[str]):

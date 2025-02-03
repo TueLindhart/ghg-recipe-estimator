@@ -5,7 +5,7 @@ from langchain_core.runnables import Runnable
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel
 
-DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_MODEL = "gpt-4o-mini-2024-07-18"
 
 
 def get_model_name_from_env() -> str:

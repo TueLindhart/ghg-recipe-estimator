@@ -1,0 +1,309 @@
+{
+    "ingredients": [
+        {
+            "original_name": "1 lille løg",
+            "en_name": "1 small onion",
+            "weight_estimate": {
+                "ingredient": "1 small onion",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+                "weight_in_kg": 0.17
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_name": "onion, raw",
+                "ingredient": "1 small onion",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.3
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 fed hvidløg",
+            "en_name": "2 cloves of garlic",
+            "weight_estimate": {
+                "ingredient": "2 cloves of garlic",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "weight_in_kg": 0.008
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.5 rød peberfrugt",
+            "en_name": "0.5 red pepper",
+            "weight_estimate": {
+                "ingredient": "0.5 red pepper",
+                "weight_calculation": "1 bell pepper = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
+                "weight_in_kg": 0.075
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for a raw red pepper.",
+                "closest_match_name": "pepper, sweet, red, raw",
+                "ingredient": "0.5 red pepper",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.1
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "olie til stegning",
+            "en_name": "oil for frying",
+            "weight_estimate": {
+                "ingredient": "oil for frying",
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
+                "weight_in_kg": 0.03
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "250 g oksekød",
+            "en_name": "250 g beef",
+            "weight_estimate": {
+                "ingredient": "250 g beef",
+                "weight_calculation": "250 g = 250 g = 0.250 kg",
+                "weight_in_kg": 0.25
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and relevant option for beef.",
+                "closest_match_name": "average beef",
+                "ingredient": "250 g beef",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 74.8
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1.5 spsk fajitakrydderi",
+            "en_name": "1.5 tbsp fajita seasoning",
+            "weight_estimate": {
+                "ingredient": "1.5 tbsp fajita seasoning",
+                "weight_calculation": "1 tbsp = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
+                "weight_in_kg": 0.0225
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "chilipulver eller flager efter smag",
+            "en_name": "chili powder or flakes to taste",
+            "weight_estimate": {
+                "ingredient": "chili powder or flakes to taste",
+                "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 dåse kidneybønner",
+            "en_name": "1 can kidney beans",
+            "weight_estimate": {
+                "ingredient": "1 can kidney beans",
+                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "weight_in_kg": 0.4
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+                "closest_match_name": "kidney beans",
+                "ingredient": "1 can kidney beans",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 spsk tomatpuré",
+            "en_name": "2 tbsp tomato paste",
+            "weight_estimate": {
+                "ingredient": "2 tbsp tomato paste",
+                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+                "weight_in_kg": 0.03
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2.5 dl oksefond",
+            "en_name": "2.5 dl beef stock",
+            "weight_estimate": {
+                "ingredient": "2.5 dl beef stock",
+                "weight_calculation": "2.5 dl = 250 g, 1 * 250 g = 250 g = 0.250 kg",
+                "weight_in_kg": 0.25
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2.5 dl beef stock' to 'bouillon, beef, prepared' as it is the least processed option available for beef stock.",
+                "closest_match_name": "bouillon, beef, prepared",
+                "ingredient": "2.5 dl beef stock",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.6
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "10-12 små majstortillas",
+            "en_name": "10-12 small corn tortillas",
+            "weight_estimate": {
+                "ingredient": "10-12 small corn tortillas",
+                "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
+                "weight_in_kg": 0.36
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '10-12 small corn tortillas' to 'tortilla bread, wheat' as it is the most relevant option for tortillas.",
+                "closest_match_name": "tortilla bread, wheat",
+                "ingredient": "10-12 small corn tortillas",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 portion tomatsalsa",
+            "en_name": "1 portion of tomato salsa",
+            "weight_estimate": {
+                "ingredient": "1 portion of tomato salsa",
+                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+                "weight_in_kg": 0.2
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 portion of tomato salsa' to 'salsa, hot' as it is the most relevant option for salsa.",
+                "closest_match_name": "salsa, hot",
+                "ingredient": "1 portion of tomato salsa",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 avocado",
+            "en_name": "1 avocado",
+            "weight_estimate": {
+                "ingredient": "1 avocado",
+                "weight_calculation": "1 avocado = 200 g, 1 * 200 g = 200 g = 0.200 kg",
+                "weight_in_kg": 0.2
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for a raw avocado.",
+                "closest_match_name": "avocado, raw",
+                "ingredient": "1 avocado",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "salt",
+            "en_name": "salt",
+            "weight_estimate": {
+                "ingredient": "salt",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "peber",
+            "en_name": "pepper",
+            "weight_estimate": {
+                "ingredient": "pepper",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.5 rødløg",
+            "en_name": "0.5 red onion",
+            "weight_estimate": {
+                "ingredient": "0.5 red onion",
+                "weight_calculation": "1 onion = 170 g, 0.5 * 170 g = 85 g = 0.085 kg",
+                "weight_in_kg": 0.085
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the most appropriate match for a raw red onion.",
+                "closest_match_name": "red onion",
+                "ingredient": "0.5 red onion",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.8
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 fed hvidløg",
+            "en_name": "2 cloves of garlic",
+            "weight_estimate": {
+                "ingredient": "2 cloves of garlic",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "weight_in_kg": 0.008
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "300 g tomater",
+            "en_name": "300 g tomatoes",
+            "weight_estimate": {
+                "ingredient": "300 g tomatoes",
+                "weight_calculation": "300 g = 300 g = 0.300 kg",
+                "weight_in_kg": 0.3
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '300 g tomatoes' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+                "closest_match_name": "tomato, peeled, canned",
+                "ingredient": "300 g tomatoes",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.1
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.5 - 1 chilipeber",
+            "en_name": "0.5 - 1 chili pepper",
+            "weight_estimate": {
+                "ingredient": "0.5 - 1 chili pepper",
+                "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.5 bdt koriander",
+            "en_name": "0.5 bunch of coriander",
+            "weight_estimate": {
+                "ingredient": "0.5 bunch of coriander",
+                "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 spsk olivenolie",
+            "en_name": "2 tbsp olive oil",
+            "weight_estimate": {
+                "ingredient": "2 tbsp olive oil",
+                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+                "weight_in_kg": 0.03
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "saften af 0.5 lime",
+            "en_name": "juice of 0.5 lime",
+            "weight_estimate": {
+                "ingredient": "juice of 0.5 lime",
+                "weight_calculation": "Amount of lime juice not specified. LLM estimate is: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        }
+    ],
+    "persons": 2,
+    "instructions": "Peel and chop the onion and garlic, and cut the pepper into cubes. Heat oil in a pan, and sauté the onion and garlic over medium heat until the onions are clear. Turn up the heat and brown the meat in the same pan. Add the spices and pepper, and continue to fry for a few minutes. Add tomato paste, kidney beans and beef stock and simmer for 10-15 minutes, until the liquid has almost evaporated. Season with salt and pepper and, if necessary, extra chili. Warm the tortillas in a 200 degree oven for about 10 minutes. Divide the chili over the tacos, and top with tomato salsa and avocado. Serve with extra lime and hot sauce, if desired. For the tomato salsa: Peel and chop the onion and garlic. Roughly dice the tomatoes and finely chop the chili pepper. Chop the coriander. Mix everything together with olive oil, lime juice, salt and pepper.",
+    "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
+}

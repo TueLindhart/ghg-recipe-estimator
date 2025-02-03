@@ -1,6 +1,5 @@
 from typing import Optional
 
-from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field
 
 
@@ -12,7 +11,9 @@ class CO2SearchResult(BaseModel):
     explanation: str = Field(
         description="Explanation of how the final search result is chosen in step-by-step logic"
     )
-    unit: Optional[str] = Field(description="Unit of search result.", default=None)
+    unit: Optional[str] = Field(
+        description="Unit of search result which is 'kg CO2e per kg'", default=None
+    )
     result: Optional[float] = Field(
         description="Result in kg CO2e per kg. null/None if no useable result is found",
         default=None,
@@ -21,6 +22,3 @@ class CO2SearchResult(BaseModel):
 
 class CO2SearchResults(BaseModel):
     search_results: list[CO2SearchResult]
-
-
-search_co2_output_parser = PydanticOutputParser(pydantic_object=CO2SearchResult)

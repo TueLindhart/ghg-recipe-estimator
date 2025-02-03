@@ -24,6 +24,8 @@ Follow these instructions carefully:
      - Select the single value best aligned with the reference range for that ingredient category.
      - If still uncertain, pick the median of the plausible values.
    - Do not provide ranges as the final answer. Provide only a single numeric value if possible.
+   - Do not do any calculations on the most likely value based on the provided weight information.
+      - Example: You should report the same value regardless of the weight is 0.5 kg or 1 kg.
 
 4. If No Suitable Value is Found for an Ingredient:
    - If no numeric CO2e per kg estimate can be confidently determined, "result" should be null.
@@ -47,6 +49,8 @@ Follow these instructions carefully:
    - "explanation" should describe the reasoning for the chosen value or for why no value could be found.
    - "unit" should be "kg CO2e per kg" only if a numeric "result" is provided, otherwise null.
    - "result" should be a single numeric value or null. Do not provide ranges.
+
+
 
 Your final response must strictly follow the above structure and formatting.
 

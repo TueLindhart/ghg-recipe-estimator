@@ -1,0 +1,259 @@
+{
+    "ingredients": [
+        {
+            "original_name": "25 g smør",
+            "en_name": "25 g butter",
+            "weight_estimate": {
+                "ingredient": "25 g butter",
+                "weight_calculation": "25 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "400 g rødbeder",
+            "en_name": "400 g beetroot",
+            "weight_estimate": {
+                "ingredient": "400 g beetroot",
+                "weight_calculation": "400 g = 400 g = 0.4 kg",
+                "weight_in_kg": 0.4
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '400 g beetroot' to 'beet, red, raw' as it is the least processed option available for beetroot.",
+                "closest_match_name": "beet, red, raw",
+                "ingredient": "400 g beetroot",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.3
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 dl mørk balsamicoeddike",
+            "en_name": "1 dl dark balsamic vinegar",
+            "weight_estimate": {
+                "ingredient": "1 dl dark balsamic vinegar",
+                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_in_kg": 0.1
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category for vinegar without specific processing details.",
+                "closest_match_name": "vinegar",
+                "ingredient": "1 dl dark balsamic vinegar",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.6
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 spsk sukker",
+            "en_name": "2 tbsp sugar",
+            "weight_estimate": {
+                "ingredient": "2 tbsp sugar",
+                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+                "weight_in_kg": 0.03
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 tsk groft salt",
+            "en_name": "1 tsp coarse salt",
+            "weight_estimate": {
+                "ingredient": "1 tsp coarse salt",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_in_kg": 0.005
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "600 g torskeloin",
+            "en_name": "600 g cod loin",
+            "weight_estimate": {
+                "ingredient": "600 g cod loin",
+                "weight_calculation": "600 g = 600 g = 0.6 kg",
+                "weight_in_kg": 0.6
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '600 g cod loin' to 'cod, fillet, raw' as it is the least processed option available for cod.",
+                "closest_match_name": "cod, fillet, raw",
+                "ingredient": "600 g cod loin",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 2.8
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "25 g smør",
+            "en_name": "25 g butter",
+            "weight_estimate": {
+                "ingredient": "25 g butter",
+                "weight_calculation": "25 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.5 tsk groft salt",
+            "en_name": "0.5 tsp coarse salt",
+            "weight_estimate": {
+                "ingredient": "0.5 tsp coarse salt",
+                "weight_calculation": "0.5 tsp = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+                "weight_in_kg": 0.0025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1.5 tsk hvedemel",
+            "en_name": "1.5 tsp wheat flour",
+            "weight_estimate": {
+                "ingredient": "1.5 tsp wheat flour",
+                "weight_calculation": "1 tsp = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+                "weight_in_kg": 0.0075
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2.5 dl vand",
+            "en_name": "2.5 dl water",
+            "weight_estimate": {
+                "ingredient": "2.5 dl water",
+                "weight_calculation": "2.5 dl = 250 g, 2.5 * 100 g = 250 g = 0.25 kg",
+                "weight_in_kg": 0.25
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most suitable option for water.",
+                "closest_match_name": "water, tap, drinking, average values",
+                "ingredient": "2.5 dl water",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.0
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "3 spsk hele gule sennepsfrø",
+            "en_name": "3 tbsp whole yellow mustard seeds",
+            "weight_estimate": {
+                "ingredient": "3 tbsp whole yellow mustard seeds",
+                "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+                "weight_in_kg": 0.045
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "75 g finthakkede skalotteløg",
+            "en_name": "75 g finely chopped shallots",
+            "weight_estimate": {
+                "ingredient": "75 g finely chopped shallots",
+                "weight_calculation": "75 g = 75 g = 0.075 kg",
+                "weight_in_kg": 0.075
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '75 g finely chopped shallots' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_name": "onion, raw",
+                "ingredient": "75 g finely chopped shallots",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.3
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "200 g koldt smør",
+            "en_name": "200 g cold butter",
+            "weight_estimate": {
+                "ingredient": "200 g cold butter",
+                "weight_calculation": "200 g = 200 g = 0.2 kg",
+                "weight_in_kg": 0.2
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '200 g cold butter' to 'butter, salt added' as it is the most relevant option for butter.",
+                "closest_match_name": "butter, salt added",
+                "ingredient": "200 g cold butter",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 3.3
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.75 tsk groft salt",
+            "en_name": "0.75 tsp coarse salt",
+            "weight_estimate": {
+                "ingredient": "0.75 tsp coarse salt",
+                "weight_calculation": "0.75 tsp = 3.75 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+                "weight_in_kg": 0.00375
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "friskkværnet peber",
+            "en_name": "freshly ground pepper",
+            "weight_estimate": {
+                "ingredient": "freshly ground pepper",
+                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+                "weight_in_kg": 0.02
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "friske krydderurter",
+            "en_name": "fresh herbs",
+            "weight_estimate": {
+                "ingredient": "fresh herbs",
+                "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 servings * 0.025 kg = 0.1 kg",
+                "weight_in_kg": 0.1
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common type of fresh herb.",
+                "closest_match_name": "basil, fresh",
+                "ingredient": "fresh herbs",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "100 g stegte bacontern",
+            "en_name": "100 g fried bacon cubes",
+            "weight_estimate": {
+                "ingredient": "100 g fried bacon cubes",
+                "weight_calculation": "100 g = 100 g = 0.1 kg",
+                "weight_in_kg": 0.1
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '100 g fried bacon cubes' to 'bacon, frying, raw' as it is the most relevant option for fried bacon.",
+                "closest_match_name": "bacon, frying, raw",
+                "ingredient": "100 g fried bacon cubes",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 6.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "4 blødkogte vagtelæg",
+            "en_name": "4 soft-boiled quail eggs",
+            "weight_estimate": {
+                "ingredient": "4 soft-boiled quail eggs",
+                "weight_calculation": "1 quail egg = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+                "weight_in_kg": 0.06
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '4 soft-boiled quail eggs' to 'eggs' as it is a general category for eggs without specific processing details.",
+                "closest_match_name": "eggs",
+                "ingredient": "4 soft-boiled quail eggs",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.0
+            },
+            "co2_per_kg_search": null
+        }
+    ],
+    "persons": 4,
+    "instructions": "Melt the butter in a pan over high heat, sauté the beetroot for approx. 2 min. Add the vinegar, sugar and salt, cook over high heat without a lid for approx. 5 min. Put the beetroot in an ovenproof dish and let them soak for approx. 2 hours. Divide the cod into four pieces, place them in a greased dish, brush with butter and sprinkle with salt. Bake the fish for approx. 12 min. at 200°. Warm the beetroot for the last 5 min. Whisk together the flour and a little water, add the rest of the water, mustard seeds and onion, cook over low heat for approx. 10 min. Whisk in the cold butter a little at a time, heat the sauce without boiling, add salt and pepper. Arrange the beetroot on plates, place the cod on top, garnish with bacon, quail eggs, herbs and serve with sauce.",
+    "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
+}

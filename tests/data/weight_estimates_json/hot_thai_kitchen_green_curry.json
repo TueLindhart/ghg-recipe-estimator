@@ -1,0 +1,59 @@
+{
+    "weight_estimates": [
+        {
+            "ingredient": "420 ml coconut milk",
+            "weight_calculation": "420 ml = 420 g, 1 * 420 g = 420 g = 0.42 kg",
+            "weight_in_kg": 0.42
+        },
+        {
+            "ingredient": "50 g green curry paste",
+            "weight_calculation": "50 g = 50 g = 0.05 kg",
+            "weight_in_kg": 0.05
+        },
+        {
+            "ingredient": "240 ml chicken stock, unsalted",
+            "weight_calculation": "240 ml = 240 g, 1 * 240 g = 240 g = 0.24 kg",
+            "weight_in_kg": 0.24
+        },
+        {
+            "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
+            "weight_calculation": "450 g = 450 g = 0.45 kg",
+            "weight_in_kg": 0.45
+        },
+        {
+            "ingredient": "24 g light brown sugar",
+            "weight_calculation": "24 g = 24 g = 0.024 kg",
+            "weight_in_kg": 0.024
+        },
+        {
+            "ingredient": "22.5-30 ml fish sauce",
+            "weight_calculation": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+            "weight_in_kg": 0.02625
+        },
+        {
+            "ingredient": "4 kaffir lime leaves",
+            "weight_calculation": "Amount of kaffir lime leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+            "weight_in_kg": 0.004
+        },
+        {
+            "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
+            "weight_calculation": "1 can = 550 g, 1 * 550 g = 550 g = 0.55 kg",
+            "weight_in_kg": 0.55
+        },
+        {
+            "ingredient": "22 g Thai basil",
+            "weight_calculation": "22 g = 22 g = 0.022 kg",
+            "weight_in_kg": 0.022
+        },
+        {
+            "ingredient": "¼ red pepper, julienned",
+            "weight_calculation": "1 red pepper = 150 g, ¼ * 150 g = 37.5 g = 0.0375 kg",
+            "weight_in_kg": 0.0375
+        },
+        {
+            "ingredient": "jasmine rice, to serve",
+            "weight_calculation": "Amount of jasmine rice not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
+            "weight_in_kg": 0.5
+        }
+    ]
+}

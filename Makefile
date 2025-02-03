@@ -1,5 +1,5 @@
 install:
-	poetry install --with dev --no-root --no-interaction
+	poetry install --with test --no-interaction
 
 lint:
 	poetry run ruff check --fix
@@ -10,5 +10,8 @@ format:
 type-check:
 	poetry run pyright
 
-all: install lint-check format
+test:
+	poetry run pytest -s -x -n auto --cov=food_co2_estimator --cov-report=term-missing --cov-fail-under=80
+
+all: install lint format type-check test
 
