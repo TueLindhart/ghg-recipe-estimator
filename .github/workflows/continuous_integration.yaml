@@ -44,3 +44,4 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
+          GPT_MODEL: ${{ secrets.GPT_MODEL }}
