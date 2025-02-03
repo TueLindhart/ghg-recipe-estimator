@@ -18,7 +18,7 @@ class CO2perKg(BaseModel):
     )
     unit: str = Field(description="The unit which is 'kg CO2e per kg'")
     co2_per_kg: Optional[float] = Field(
-        description="'kg CO2 per kg' directly 'copy-pasted' from closest match. Set to 'none' if there is no match.",
+        description="'kg CO2 per kg' directly 'copy-pasted' from closest match. Set to 'none' if there is no good match.",
         default=None,
     )
 

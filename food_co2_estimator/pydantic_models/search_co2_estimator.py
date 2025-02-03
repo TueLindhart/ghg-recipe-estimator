@@ -11,7 +11,9 @@ class CO2SearchResult(BaseModel):
     explanation: str = Field(
         description="Explanation of how the final search result is chosen in step-by-step logic"
     )
-    unit: Optional[str] = Field(description="Unit of search result.", default=None)
+    unit: Optional[str] = Field(
+        description="Unit of search result which is 'kg CO2e per kg'", default=None
+    )
     result: Optional[float] = Field(
         description="Result in kg CO2e per kg. null/None if no useable result is found",
         default=None,
