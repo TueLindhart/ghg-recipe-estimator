@@ -81,9 +81,10 @@ async def test_async_estimator(
         abs(total_emission_per_person - expected_total_emission_per_person)
         / expected_total_emission_per_person
     )
-    assert (
-        ratio_difference <= MAX_TOTAL_RATIO_DIFFERENCE
-    ), f"Total emission per person difference in % is above max: {round(ratio_difference * 100, 2)} > {MAX_TOTAL_RATIO_DIFFERENCE}"
+    assert ratio_difference <= MAX_TOTAL_RATIO_DIFFERENCE, (
+        f"Total emission per person difference in % is above max: {round(ratio_difference * 100, 2)}% > {MAX_TOTAL_RATIO_DIFFERENCE * 100}%"
+        f"Total emission is result={total_emission} kg, expected = {total_expected_emission} kg"
+    )
 
 
 def calculate_emission_per_ingredient(

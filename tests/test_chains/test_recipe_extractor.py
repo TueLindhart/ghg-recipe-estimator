@@ -53,6 +53,10 @@ async def test_extract_recipe_chain(
         result.ingredients, expected_extracted_recipe.ingredients
     ):
         sim_score = string_similarity(ingredient, expected_ingredient)
-        assert sim_score > MIN_STRING_SIMILARITY_SCORE
+        assert (
+            sim_score > MIN_STRING_SIMILARITY_SCORE
+        ), f" '{ingredient}' and '{expected_ingredient}': Similarity score {sim_score} is not greater than {MIN_STRING_SIMILARITY_SCORE}"
 
-    assert result.persons == expected_extracted_recipe.persons
+    assert (
+        result.persons == expected_extracted_recipe.persons
+    ), f"Expected {expected_extracted_recipe.persons} persons, but got {result.persons}"

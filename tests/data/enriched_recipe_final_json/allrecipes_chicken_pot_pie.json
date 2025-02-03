@@ -67,7 +67,7 @@
             "en_name": "1 red bell pepper",
             "weight_estimate": {
                 "ingredient": "1 red bell pepper",
-                "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+                "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
@@ -97,34 +97,34 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 can diced tomatoes (15 ounce)",
-            "en_name": "1 can diced tomatoes (15 ounces)",
+            "original_name": "1 can diced tomatoes (15 oz)",
+            "en_name": "1 can diced tomatoes (15 oz)",
             "weight_estimate": {
-                "ingredient": "1 can diced tomatoes (15 ounces)",
+                "ingredient": "1 can diced tomatoes (15 oz)",
                 "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can diced tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the best match for canned tomatoes.",
+                "closest_match_explanation": "Matched '1 can diced tomatoes (15 oz)' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 can diced tomatoes (15 ounces)",
+                "ingredient": "1 can diced tomatoes (15 oz)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             },
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 cans black beans (15 ounce)",
-            "en_name": "2 cans black beans (15 ounces)",
+            "original_name": "2 cans black beans (15 oz each)",
+            "en_name": "2 cans black beans (15 oz each)",
             "weight_estimate": {
-                "ingredient": "2 cans black beans (15 ounces)",
+                "ingredient": "2 cans black beans (15 oz each)",
                 "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
                 "weight_in_kg": 0.8
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the best match for black beans.",
+                "closest_match_explanation": "Matched '2 cans black beans (15 oz each)' to 'black beans' as it is the least processed option available for black beans.",
                 "closest_match_name": "black beans",
-                "ingredient": "2 cans black beans (15 ounces)",
+                "ingredient": "2 cans black beans (15 oz each)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             },
@@ -139,7 +139,7 @@
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most processed option available for chili powder.",
+                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the closest match available for chili powder, considering processing levels.",
                 "closest_match_name": "chili sauce",
                 "ingredient": "4 tbsp chili powder",
                 "unit": "kg CO2e per kg",
@@ -214,17 +214,17 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 package dry corn muffin mix (8.5 ounce)",
-            "en_name": "1 package dry corn muffin mix (8.5 ounces)",
+            "original_name": "1 package dry corn muffin mix (8.5 oz)",
+            "en_name": "1 package dry corn muffin mix (8.5 oz)",
             "weight_estimate": {
-                "ingredient": "1 package dry corn muffin mix (8.5 ounces)",
+                "ingredient": "1 package dry corn muffin mix (8.5 oz)",
                 "weight_calculation": "1 package = 240 g, 1 * 240 g = 240 g = 0.24 kg",
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'corn flour' as it is the best match for corn muffin mix.",
+                "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 oz)' to 'corn flour' as it is the least processed option available for corn products.",
                 "closest_match_name": "corn flour",
-                "ingredient": "1 package dry corn muffin mix (8.5 ounces)",
+                "ingredient": "1 package dry corn muffin mix (8.5 oz)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.6
             },
@@ -239,7 +239,7 @@
                 "weight_in_kg": 0.0792
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the best match for milk.",
+                "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the least processed option available for milk.",
                 "closest_match_name": "milk",
                 "ingredient": "0.33 cup milk",
                 "unit": "kg CO2e per kg",
@@ -256,7 +256,7 @@
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the best match for eggs.",
+                "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the least processed option available for eggs.",
                 "closest_match_name": "eggs",
                 "ingredient": "1 egg",
                 "unit": "kg CO2e per kg",
@@ -266,6 +266,6 @@
         }
     ],
     "persons": 6,
-    "instructions": "1. Preheat the oven to 400 degrees F (200 degrees C). 2. Heat oil in a Dutch over medium heat. Add chicken. Cook, stirring occasionally, until no longer pink inside, 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions and cook until tender, about 5 minutes. Add tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Stir to combine. Cook until heated through, about 5 minutes more. 3. While the mixture simmers, combine the cornbread mix with milk and egg in a bowl. 4. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture to form the crust. 5. Place the Dutch oven in the preheated oven and bake until the cornbread is golden and beginning to brown, 20 to 25 minutes.",
+    "instructions": "1. Preheat the oven to 400 degrees F (200 degrees C). 2. Heat oil in a Dutch over medium heat. Add chicken. Cook, stirring occasionally, until no longer pink inside, 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions and cook until tender, about 5 minutes. Add tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Stir to combine. Cook until heated through, about 5 minutes more. 3. While the mixture simmers, combine cornbread mix with milk and egg in a bowl. 4. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture to form the crust. 5. Place the Dutch oven in the preheated oven and bake until the cornbread is golden and beginning to brown, 20 to 25 minutes.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }

@@ -1,42 +1,42 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '420 ml coconut milk' to 'coconut milk' as it is the exact ingredient in the database.",
+            "closest_match_explanation": "The best match for '420 ml coconut milk' is 'coconut milk' as it directly corresponds to the ingredient without any processing differences. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
             "closest_match_name": "coconut milk",
             "ingredient": "420 ml coconut milk",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 6.3
         },
         {
-            "closest_match_explanation": "Matched '50 g green curry paste' to 'green curry paste' as it is the exact ingredient in the database.",
+            "closest_match_explanation": "The best match for '50 g green curry paste' is 'green curry paste' as it is the exact ingredient listed in the database. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
             "closest_match_name": "green curry paste",
             "ingredient": "50 g green curry paste",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering it is a chicken-based stock.",
+            "closest_match_explanation": "The best match for '240 ml chicken stock, unsalted' is 'bouillon, chicken, prepared' as it represents a similar product derived from chicken. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "240 ml chicken stock, unsalted",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' to 'chicken, breast, flesh and skin, raw' as it is the closest match in terms of processing and type of chicken.",
+            "closest_match_explanation": "The best match for '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' is 'chicken, breast, flesh and skin, raw' as it is the closest in terms of processing and type of meat. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
             "closest_match_name": "chicken, breast, flesh and skin, raw",
             "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '1 550 ml can bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient in the database.",
+            "closest_match_explanation": "The best match for '1 550 ml can bamboo shoots, drained and rinsed' is 'bamboo shoots, canned, nonsalted' as it directly corresponds to the ingredient without any processing differences. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
             "closest_match_name": "bamboo shoots, canned, nonsalted",
             "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "Matched 'jasmine rice, to serve' to 'rice, parboiled, raw' as it is the closest match in terms of processing and type of rice.",
+            "closest_match_explanation": "The best match for 'jasmine rice, to serve' is 'rice, parboiled, raw' as it represents a broader category of rice that is least processed. This follows rule 2 for broader categories and rule 9 for using provided emission options.",
             "closest_match_name": "rice, parboiled, raw",
             "ingredient": "jasmine rice, to serve",
             "unit": "kg CO2e per kg",

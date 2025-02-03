@@ -22,7 +22,7 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": null,
@@ -37,7 +37,7 @@
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate raw option for red pepper.",
+                "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for a raw red pepper.",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.5 red pepper",
                 "unit": "kg CO2e per kg",
@@ -65,7 +65,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and appropriate match for beef without specifying a cut.",
+                "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and relevant option for beef.",
                 "closest_match_name": "average beef",
                 "ingredient": "250 g beef",
                 "unit": "kg CO2e per kg",
@@ -100,7 +100,7 @@
             "en_name": "1 can kidney beans",
             "weight_estimate": {
                 "ingredient": "1 can kidney beans",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
@@ -141,17 +141,17 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "11 små majstortillas",
-            "en_name": "11 small corn tortillas",
+            "original_name": "10-12 små majstortillas",
+            "en_name": "10-12 small corn tortillas",
             "weight_estimate": {
-                "ingredient": "11 small corn tortillas",
-                "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
-                "weight_in_kg": 0.33
+                "ingredient": "10-12 small corn tortillas",
+                "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
+                "weight_in_kg": 0.36
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '11 small corn tortillas' to 'tortilla bread, wheat' as it is the most appropriate match for tortillas.",
+                "closest_match_explanation": "Matched '10-12 small corn tortillas' to 'tortilla bread, wheat' as it is the most relevant option for tortillas.",
                 "closest_match_name": "tortilla bread, wheat",
-                "ingredient": "11 small corn tortillas",
+                "ingredient": "10-12 small corn tortillas",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             },
@@ -183,7 +183,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for raw avocado.",
+                "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for a raw avocado.",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 avocado",
                 "unit": "kg CO2e per kg",
@@ -222,7 +222,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the most appropriate match for red onion.",
+                "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the most appropriate match for a raw red onion.",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 red onion",
                 "unit": "kg CO2e per kg",
@@ -235,7 +235,7 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": null,

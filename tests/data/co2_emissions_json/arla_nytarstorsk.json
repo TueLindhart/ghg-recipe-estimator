@@ -8,21 +8,21 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category that includes balsamic vinegar.",
+            "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category for vinegar without specific processing details.",
             "closest_match_name": "vinegar",
             "ingredient": "1 dl dark balsamic vinegar",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '600 g cod loin' to 'cod, fillet, raw' as it is the least processed form of cod available.",
+            "closest_match_explanation": "Matched '600 g cod loin' to 'cod, fillet, raw' as it is the least processed option available for cod.",
             "closest_match_name": "cod, fillet, raw",
             "ingredient": "600 g cod loin",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most common and least processed form of water.",
+            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most suitable option for water.",
             "closest_match_name": "water, tap, drinking, average values",
             "ingredient": "2.5 dl water",
             "unit": "kg CO2e per kg",
@@ -36,14 +36,14 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '200 g cold butter (in small pieces)' to 'butter, salt added' as it is the most relevant option for butter.",
+            "closest_match_explanation": "Matched '200 g cold butter' to 'butter, salt added' as it is the most relevant option for butter.",
             "closest_match_name": "butter, salt added",
-            "ingredient": "200 g cold butter (in small pieces)",
+            "ingredient": "200 g cold butter",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common fresh herb option available.",
+            "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common type of fresh herb.",
             "closest_match_name": "basil, fresh",
             "ingredient": "fresh herbs",
             "unit": "kg CO2e per kg",
@@ -57,7 +57,7 @@
             "co2_per_kg": 6.4
         },
         {
-            "closest_match_explanation": "Matched '4 soft-boiled quail eggs' to 'eggs' as it is a general category that includes quail eggs.",
+            "closest_match_explanation": "Matched '4 soft-boiled quail eggs' to 'eggs' as it is a general category for eggs without specific processing details.",
             "closest_match_name": "eggs",
             "ingredient": "4 soft-boiled quail eggs",
             "unit": "kg CO2e per kg",

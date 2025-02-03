@@ -15,7 +15,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the exact form of canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can chopped tomatoes",
             "unit": "kg CO2e per kg",
@@ -36,35 +36,35 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the exact form of canned tomatoes.",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can chopped tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the most direct match for canned black beans.",
+            "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the exact form of black beans.",
             "closest_match_name": "black beans",
             "ingredient": "1 can black beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the most direct match for canned kidney beans.",
+            "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the exact form of kidney beans.",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can kidney beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the least processed option available for corn.",
+            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the closest match available for corn.",
             "closest_match_name": "corn cob",
             "ingredient": "300 g corn",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Matched '8 tortillas pancakes' to 'tortilla bread, wheat' as it is the most direct match for tortillas.",
+            "closest_match_explanation": "Matched '8 tortillas pancakes' to 'tortilla bread, wheat' as it is the closest match available for tortillas.",
             "closest_match_name": "tortilla bread, wheat",
             "ingredient": "8 tortillas pancakes",
             "unit": "kg CO2e per kg",

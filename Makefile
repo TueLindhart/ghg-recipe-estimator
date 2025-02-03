@@ -11,7 +11,7 @@ type-check:
 	poetry run pyright
 
 test:
-	poetry run pytest -n auto -s --cov=food_co2_estimator --cov-report=term-missing --cov-fail-under=80
+	poetry run pytest -s -x -n auto --cov=food_co2_estimator --cov-report=term-missing --cov-fail-under=80
 
 all: install lint format type-check test
 
