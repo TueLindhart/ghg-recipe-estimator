@@ -54,7 +54,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 bunch of green asparagus' to 'asparagus, green, raw' as it is the least processed option available for green asparagus.",
+                "closest_match_explanation": "Matched '1 bunch of green asparagus' to 'asparagus, green, raw' as it is the least processed option available for asparagus.",
                 "closest_match_name": "asparagus, green, raw",
                 "ingredient": "1 bunch of green asparagus",
                 "unit": "kg CO2e per kg",
@@ -99,7 +99,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the most relevant option for cream with a specific fat content.",
+                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the least processed option available for cream.",
                 "closest_match_name": "cream, whipping, 38 % fat",
                 "ingredient": "2 dl cream",
                 "unit": "kg CO2e per kg",
@@ -116,7 +116,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the most common and least processed option for water.",
+                "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the least processed option available for water.",
                 "closest_match_name": "water, tap, drinking, average values",
                 "ingredient": "1 dl water",
                 "unit": "kg CO2e per kg",
@@ -144,7 +144,7 @@
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the most relevant option for grated parmesan cheese.",
+                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the least processed option available for parmesan cheese.",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "6 tbsp grated parmesan",
                 "unit": "kg CO2e per kg",
@@ -161,7 +161,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most relevant option for mozzarella cheese.",
+                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the least processed option available for mozzarella.",
                 "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
                 "ingredient": "1 handful of mozzarella",
                 "unit": "kg CO2e per kg",

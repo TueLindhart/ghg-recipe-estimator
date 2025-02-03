@@ -2,22 +2,22 @@
     "weight_estimates": [
         {
             "ingredient": "1 tsp ground cumin",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp ground cinnamon",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp smoked paprika",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp ground coriander",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             "ingredient": "1 tbsp olive oil",
-            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "1 tsp wheat flour",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "1 tbsp olive oil",
-            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
@@ -87,12 +87,12 @@
         },
         {
             "ingredient": "1 tsp ground cumin",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp ground coriander",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -127,7 +127,7 @@
         },
         {
             "ingredient": "1 tbsp butter",
-            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         }
     ]

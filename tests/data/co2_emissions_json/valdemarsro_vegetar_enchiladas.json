@@ -43,21 +43,21 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the exact match for canned black beans.",
+            "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the most direct match for canned black beans.",
             "closest_match_name": "black beans",
             "ingredient": "1 can black beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+            "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the most direct match for canned kidney beans.",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can kidney beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the closest match available for corn.",
+            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the least processed option available for corn.",
             "closest_match_name": "corn cob",
             "ingredient": "300 g corn",
             "unit": "kg CO2e per kg",
@@ -71,7 +71,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese.",
+            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese with a similar processing level.",
             "closest_match_name": "blue cheese",
             "ingredient": "150 g cheddar cheese",
             "unit": "kg CO2e per kg",

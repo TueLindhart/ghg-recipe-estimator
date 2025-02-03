@@ -67,7 +67,7 @@
             "en_name": "1 red bell pepper",
             "weight_estimate": {
                 "ingredient": "1 red bell pepper",
-                "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+                "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
@@ -101,11 +101,11 @@
             "en_name": "1 can diced tomatoes (15 ounces)",
             "weight_estimate": {
                 "ingredient": "1 can diced tomatoes (15 ounces)",
-                "weight_calculation": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
-                "weight_in_kg": 0.425
+                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can diced tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+                "closest_match_explanation": "Matched '1 can diced tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the best match for canned tomatoes.",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "1 can diced tomatoes (15 ounces)",
                 "unit": "kg CO2e per kg",
@@ -118,11 +118,11 @@
             "en_name": "2 cans black beans (15 ounces)",
             "weight_estimate": {
                 "ingredient": "2 cans black beans (15 ounces)",
-                "weight_calculation": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
-                "weight_in_kg": 0.85
+                "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
+                "weight_in_kg": 0.8
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the most relevant option for black beans.",
+                "closest_match_explanation": "Matched '2 cans black beans (15 ounces)' to 'black beans' as it is the best match for black beans.",
                 "closest_match_name": "black beans",
                 "ingredient": "2 cans black beans (15 ounces)",
                 "unit": "kg CO2e per kg",
@@ -139,7 +139,7 @@
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option for chili powder, considering processing levels.",
+                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most processed option available for chili powder.",
                 "closest_match_name": "chili sauce",
                 "ingredient": "4 tbsp chili powder",
                 "unit": "kg CO2e per kg",
@@ -222,7 +222,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'corn flour' as it is the most relevant option for corn muffin mix.",
+                "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 ounces)' to 'corn flour' as it is the best match for corn muffin mix.",
                 "closest_match_name": "corn flour",
                 "ingredient": "1 package dry corn muffin mix (8.5 ounces)",
                 "unit": "kg CO2e per kg",
@@ -239,7 +239,7 @@
                 "weight_in_kg": 0.0792
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the most relevant option for milk.",
+                "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the best match for milk.",
                 "closest_match_name": "milk",
                 "ingredient": "0.33 cup milk",
                 "unit": "kg CO2e per kg",
@@ -256,7 +256,7 @@
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the most relevant option for eggs.",
+                "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the best match for eggs.",
                 "closest_match_name": "eggs",
                 "ingredient": "1 egg",
                 "unit": "kg CO2e per kg",

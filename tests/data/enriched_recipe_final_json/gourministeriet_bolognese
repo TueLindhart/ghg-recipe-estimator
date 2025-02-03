@@ -246,11 +246,11 @@
             "en_name": "grated parmesan",
             "weight_estimate": {
                 "ingredient": "grated parmesan",
-                "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 6 servings * 0.02 kg = 0.12 kg",
-                "weight_in_kg": 0.12
+                "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.05 kg, 6 servings * 0.05 kg = 0.3 kg",
+                "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the closest match for grated parmesan cheese.",
+                "closest_match_explanation": "Matched 'grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the closest match for grated parmesan.",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "grated parmesan",
                 "unit": "kg CO2e per kg",

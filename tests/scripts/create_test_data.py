@@ -2,7 +2,7 @@ import asyncio
 import json
 import os
 
-from tests.data_paths import ENRICHED_RECIPE_DIR
+from tests.data_paths import FINAL_ENRICHED_RECIPE_DIR
 from tests.load_files import (
     get_expected_enriched_recipe,
     get_expected_rag_co2_estimates,
@@ -16,7 +16,7 @@ from tests.scripts.create_weight_estimates import save_weight_estimates
 from tests.urls import TEST_URLS
 
 # Directory to store the results
-os.makedirs(ENRICHED_RECIPE_DIR, exist_ok=True)
+os.makedirs(FINAL_ENRICHED_RECIPE_DIR, exist_ok=True)
 
 
 async def process_and_store_enriched_recipe(file_name: str, url: str):
@@ -36,7 +36,7 @@ async def process_and_store_enriched_recipe(file_name: str, url: str):
     enriched_recipe.update_with_co2_per_kg_db(co2_estimates)
 
     # Store the final enriched recipe with translations as JSON
-    final_output_filepath = os.path.join(ENRICHED_RECIPE_DIR, file_name + "_final.json")
+    final_output_filepath = os.path.join(FINAL_ENRICHED_RECIPE_DIR, file_name)
     with open(final_output_filepath, "w", encoding="utf-8") as file:
         json.dump(enriched_recipe.model_dump(), file, ensure_ascii=False, indent=4)
     print(f"Stored final enriched JSON output for {url} in {final_output_filepath}")

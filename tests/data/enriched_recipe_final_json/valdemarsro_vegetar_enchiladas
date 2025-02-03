@@ -5,7 +5,7 @@
             "en_name": "1 tsp ground cumin",
             "weight_estimate": {
                 "ingredient": "1 tsp ground cumin",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -16,7 +16,7 @@
             "en_name": "1 tsp ground cinnamon",
             "weight_estimate": {
                 "ingredient": "1 tsp ground cinnamon",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -27,7 +27,7 @@
             "en_name": "1 tsp smoked paprika",
             "weight_estimate": {
                 "ingredient": "1 tsp smoked paprika",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -38,7 +38,7 @@
             "en_name": "1 tsp ground coriander",
             "weight_estimate": {
                 "ingredient": "1 tsp ground coriander",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -60,7 +60,7 @@
             "en_name": "1 tbsp olive oil",
             "weight_estimate": {
                 "ingredient": "1 tbsp olive oil",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,
@@ -88,7 +88,7 @@
             "en_name": "1 tsp wheat flour",
             "weight_estimate": {
                 "ingredient": "1 tsp wheat flour",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -133,7 +133,7 @@
             "en_name": "1 tbsp olive oil",
             "weight_estimate": {
                 "ingredient": "1 tbsp olive oil",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,
@@ -228,7 +228,7 @@
             "en_name": "1 tsp ground cumin",
             "weight_estimate": {
                 "ingredient": "1 tsp ground cumin",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -239,7 +239,7 @@
             "en_name": "1 tsp ground coriander",
             "weight_estimate": {
                 "ingredient": "1 tsp ground coriander",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null,
@@ -254,7 +254,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the exact match for canned black beans.",
+                "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the most direct match for canned black beans.",
                 "closest_match_name": "black beans",
                 "ingredient": "1 can black beans",
                 "unit": "kg CO2e per kg",
@@ -271,7 +271,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+                "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the most direct match for canned kidney beans.",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can kidney beans",
                 "unit": "kg CO2e per kg",
@@ -288,7 +288,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the closest match available for corn.",
+                "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the least processed option available for corn.",
                 "closest_match_name": "corn cob",
                 "ingredient": "300 g corn",
                 "unit": "kg CO2e per kg",
@@ -322,7 +322,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese.",
+                "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese with a similar processing level.",
                 "closest_match_name": "blue cheese",
                 "ingredient": "150 g cheddar cheese",
                 "unit": "kg CO2e per kg",
@@ -346,7 +346,7 @@
             "en_name": "1 tbsp butter",
             "weight_estimate": {
                 "ingredient": "1 tbsp butter",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,

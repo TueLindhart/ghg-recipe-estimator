@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '420 ml coconut milk' is 'coconut milk' as it directly corresponds to the ingredient without any processing differences. This follows rule 1 for realistic comparisons and rule 8 for using provided emission options.",
+                "closest_match_explanation": "Matched '420 ml coconut milk' to 'coconut milk' as it is the exact ingredient in the database.",
                 "closest_match_name": "coconut milk",
                 "ingredient": "420 ml coconut milk",
                 "unit": "kg CO2e per kg",
@@ -26,7 +26,7 @@
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '50 g green curry paste' is 'green curry paste' as it is the exact ingredient listed in the database. This follows rule 1 for realistic comparisons and rule 8 for using provided emission options.",
+                "closest_match_explanation": "Matched '50 g green curry paste' to 'green curry paste' as it is the exact ingredient in the database.",
                 "closest_match_name": "green curry paste",
                 "ingredient": "50 g green curry paste",
                 "unit": "kg CO2e per kg",
@@ -43,7 +43,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '240 ml chicken stock, unsalted' is 'bouillon, chicken, prepared' as it is the closest match in terms of processing and type. This follows rule 1 for realistic comparisons and rule 8 for using provided emission options.",
+                "closest_match_explanation": "Matched '240 ml chicken stock, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering it is a chicken-based stock.",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "240 ml chicken stock, unsalted",
                 "unit": "kg CO2e per kg",
@@ -60,7 +60,7 @@
                 "weight_in_kg": 0.45
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' is 'chicken, breast, flesh and skin, raw' as it is the closest match in terms of processing and type. This follows rule 1 for realistic comparisons and rule 8 for using provided emission options.",
+                "closest_match_explanation": "Matched '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' to 'chicken, breast, flesh and skin, raw' as it is the closest match in terms of processing and type of chicken.",
                 "closest_match_name": "chicken, breast, flesh and skin, raw",
                 "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
                 "unit": "kg CO2e per kg",
@@ -84,8 +84,8 @@
             "en_name": "22.5-30 ml fish sauce",
             "weight_estimate": {
                 "ingredient": "22.5-30 ml fish sauce",
-                "weight_calculation": "Amount of fish sauce not specified. LLM estimate is: 30 ml = 30 g, 1 * 30 g = 30 g = 0.03 kg",
-                "weight_in_kg": 0.03
+                "weight_calculation": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+                "weight_in_kg": 0.02625
             },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -95,24 +95,24 @@
             "en_name": "4 kaffir lime leaves",
             "weight_estimate": {
                 "ingredient": "4 kaffir lime leaves",
-                "weight_calculation": "Amount of kaffir lime leaves not specified. LLM estimate is: 4 leaves = 4 g, 1 * 4 g = 4 g = 0.004 kg",
+                "weight_calculation": "Amount of kaffir lime leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "550 ml bambusskud, drænet og skyllet",
-            "en_name": "550 ml bamboo shoots, drained and rinsed",
+            "original_name": "1 550 ml dåse bambusskud, drænet og skyllet",
+            "en_name": "1 550 ml can bamboo shoots, drained and rinsed",
             "weight_estimate": {
-                "ingredient": "550 ml bamboo shoots, drained and rinsed",
-                "weight_calculation": "550 ml = 550 g, 1 * 550 g = 550 g = 0.55 kg",
+                "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
+                "weight_calculation": "1 can = 550 g, 1 * 550 g = 550 g = 0.55 kg",
                 "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '550 ml bamboo shoots, drained and rinsed' is 'bamboo shoots, canned, nonsalted' as it is the closest match in terms of processing and type. This follows rule 1 for realistic comparisons and rule 8 for using provided emission options.",
+                "closest_match_explanation": "Matched '1 550 ml can bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient in the database.",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
-                "ingredient": "550 ml bamboo shoots, drained and rinsed",
+                "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.4
             },
@@ -134,7 +134,7 @@
             "en_name": "¼ red pepper, julienned",
             "weight_estimate": {
                 "ingredient": "¼ red pepper, julienned",
-                "weight_calculation": "Amount of red pepper not specified. LLM estimate is: 1 red pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
+                "weight_calculation": "1 red pepper = 150 g, ¼ * 150 g = 37.5 g = 0.0375 kg",
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": null,
@@ -149,7 +149,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for 'jasmine rice, to serve' is 'rice, parboiled, raw' as it is the closest match in terms of processing and type. This follows rule 1 for realistic comparisons and rule 8 for using provided emission options.",
+                "closest_match_explanation": "Matched 'jasmine rice, to serve' to 'rice, parboiled, raw' as it is the closest match in terms of processing and type of rice.",
                 "closest_match_name": "rice, parboiled, raw",
                 "ingredient": "jasmine rice, to serve",
                 "unit": "kg CO2e per kg",
@@ -159,6 +159,6 @@
         }
     ],
     "persons": 4,
-    "instructions": "1. Reduce ¾ cup coconut milk until thick and coconut oil begins to separate from the coconut milk. 2. Add curry paste and sauté, stirring constantly over medium heat for about 2 minutes, until aromatic. 3. Add chicken thighs and stir to combine with the paste. 4. Add chicken stock, remaining 1 cup coconut milk, palm sugar, and 1 tablespoon fish sauce. Add the kaffir lime leaves and simmer for 10-15 minutes, or until the chicken is tender. 5. Add the bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in the Thai basil and serve with jasmine rice.",
+    "instructions": "1. Reduce ¾ cup coconut milk until thick and coconut oil begins to separate from the coconut milk. 2. Add curry paste and sauté, stirring constantly over medium heat, about 2 minutes, until aromatic. 3. Add chicken thighs and stir to combine with the paste. 4. Add chicken stock, remaining 1 cup coconut milk, palm sugar, and 1 tablespoon fish sauce. Add the kaffir lime leaves and simmer for 10-15 minutes, or until the chicken is tender. 5. Add the bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in the Thai basil and serve with jasmine rice.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

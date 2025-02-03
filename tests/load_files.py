@@ -11,6 +11,7 @@ from tests.data_paths import (
     CO2_EMISSIONS_DIR,
     ENRICHED_RECIPE_DIR,
     EXTRACTED_RECIPE_DIR,
+    FINAL_ENRICHED_RECIPE_DIR,
     TEXT_INPUT_DIR,
     WEIGHT_EST_DIR,
 )
@@ -45,6 +46,13 @@ def get_expected_extracted_recipe(file_name: str) -> ExtractedRecipe:
         folder=EXTRACTED_RECIPE_DIR, file_name=file_name
     )
     return ExtractedRecipe(**extracted_recipe_json)
+
+
+def get_expected_final_enriched_recipe(file_name: str) -> EnrichedRecipe:
+    enriched_recipe_json = load_json_file(
+        folder=FINAL_ENRICHED_RECIPE_DIR, file_name=file_name
+    )
+    return EnrichedRecipe(**enriched_recipe_json)
 
 
 def get_expected_enriched_recipe(file_name: str) -> EnrichedRecipe:

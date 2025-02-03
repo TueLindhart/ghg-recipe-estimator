@@ -37,7 +37,7 @@
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for a raw red pepper.",
+                "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate raw option for red pepper.",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.5 red pepper",
                 "unit": "kg CO2e per kg",
@@ -65,7 +65,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and relevant option for beef.",
+                "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and appropriate match for beef without specifying a cut.",
                 "closest_match_name": "average beef",
                 "ingredient": "250 g beef",
                 "unit": "kg CO2e per kg",
@@ -149,7 +149,7 @@
                 "weight_in_kg": 0.33
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '11 small corn tortillas' to 'tortilla bread, wheat' as it is the most relevant option for tortillas.",
+                "closest_match_explanation": "Matched '11 small corn tortillas' to 'tortilla bread, wheat' as it is the most appropriate match for tortillas.",
                 "closest_match_name": "tortilla bread, wheat",
                 "ingredient": "11 small corn tortillas",
                 "unit": "kg CO2e per kg",
@@ -183,7 +183,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for a raw avocado.",
+                "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for raw avocado.",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 avocado",
                 "unit": "kg CO2e per kg",
@@ -222,7 +222,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the least processed option available for red onions.",
+                "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the most appropriate match for red onion.",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 red onion",
                 "unit": "kg CO2e per kg",
@@ -304,6 +304,6 @@
         }
     ],
     "persons": 2,
-    "instructions": "Peel and chop the onion and garlic, and cut the pepper into cubes. Heat oil in a pan, and sauté the onion and garlic over medium heat until the onions are clear. Brown the meat in the same pan. Add the spices and pepper, and continue to fry for a few minutes. Add tomato paste, kidney beans and beef stock and simmer for 10-15 minutes, until the liquid has almost evaporated. Season with salt and pepper and, if necessary, extra chili. Warm the tortillas in a 200 degree oven for about 10 minutes. Divide the chili over the tacos, and top with tomato salsa and avocado. Serve with extra lime and hot sauce, if desired. For the tomato salsa: Peel and chop the onion and garlic. Roughly dice the tomatoes and finely chop the chili pepper. Chop the coriander. Mix everything together with olive oil, lime juice, salt and pepper.",
+    "instructions": "Peel and chop the onion and garlic, and cut the pepper into cubes. Heat oil in a pan, and sauté the onion and garlic over medium heat until the onions are clear. Turn up the heat and brown the meat in the same pan. Add the spices and pepper, and continue to fry for a few minutes. Add tomato paste, kidney beans and beef stock and simmer for 10-15 minutes, until the liquid has almost evaporated. Season with salt and pepper and, if necessary, extra chili. Warm the tortillas in a 200 degree oven for about 10 minutes. Divide the chili over the tacos, and top with tomato salsa and avocado. Serve with extra lime and hot sauce, if desired. For the tomato salsa: Peel and chop the onion and garlic. Roughly dice the tomatoes and finely chop the chili pepper. Chop the coriander. Mix everything together with olive oil, lime juice, salt and pepper.",
     "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
 }
