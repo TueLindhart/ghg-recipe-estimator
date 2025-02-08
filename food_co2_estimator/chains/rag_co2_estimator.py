@@ -12,7 +12,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
 from food_co2_estimator.retrievers.vector_db_retriever import batch_emission_retriever
 from food_co2_estimator.utils.openai_model import get_model
 
-NEGLIGIBLE_THRESHOLD = 0.05
+NEGLIGIBLE_THRESHOLD = 0.025
 
 
 def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
@@ -34,7 +34,7 @@ def weight_above_negligeble_threshold(
     return (
         item.weight_estimate is not None
         and item.weight_estimate.weight_in_kg is not None
-        and item.weight_estimate.weight_in_kg >= negligeble_threshold
+        and item.weight_estimate.weight_in_kg > negligeble_threshold
     )
 
 
