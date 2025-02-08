@@ -134,6 +134,9 @@ CO2e Emission Notes: ${
     card.appendChild(commentButton);
     cardsContainer.appendChild(card);
   });
+
+  // Initialize the bar chart with the ingredients data
+  initializeBarChart(parsedData.ingredients);
 }
 
 // Function to show a tooltip near the button
@@ -185,4 +188,43 @@ function showTooltip(button, text) {
       }
     });
   }, 10);
+}
+
+function initializeBarChart(ingredientData) {
+  const filteredData = ingredientData.filter(
+    (ingredient) => ingredient.co2_kg !== null && ingredient.co2_kg > 0
+  );
+
+  const ctx = document.getElementById("emissionsChart").getContext("2d");
+  const chart = new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: filteredData.map((ingredient) => ingredient.name),
+      datasets: [
+        {
+          label: "CO2 Emissions (kg)",
+          data: filteredData.map((ingredient) => ingredient.co2_kg),
+          backgroundColor: "rgb(12, 61, 61)",
+          borderColor: "rgb(6, 31, 31)",
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: true,
+            text: "CO2 Emissions (kg)",
+          },
+        },
+      },
+    },
+  });
 }

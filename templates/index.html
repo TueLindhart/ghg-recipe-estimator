@@ -51,13 +51,21 @@
 
       <!-- Bottom section: Ingredients -->
       <div class="bottom-section">
-        <h3>Ingredients</h3>
+        <h2>Ingredients</h2>
         <div class="ingredient-grid" id="ingredientCards">
           <!-- Ingredient cards will be populated here via JavaScript -->
         </div>
       </div>
+
+      <!-- Bar Chart section: Emissions per Ingredient -->
+      <div class="chart-section">
+        <h2>Emissions per Ingredient</h2>
+        <canvas id="emissionsChart"></canvas>
+      </div>
     </div>
 
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Main JavaScript file -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <!-- Comparison-specific JavaScript -->
