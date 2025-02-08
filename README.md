@@ -104,6 +104,8 @@ The following environment variables must be set in the .env file:
 - `MY_MAIL`: Your mail for MyMemory translation provider. Increases the number of translations cap.
 - `GPT_MODEL`: Model to be used when calling OpenAI.
 
+Test PR
+
 Set the following environment variables in your `.env` file:
 
 ```bash
