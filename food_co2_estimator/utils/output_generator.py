@@ -132,6 +132,9 @@ def generate_output_model(
             )
         )
 
+    # Sort ingredients by CO2 emission in descending order.
+    ingredients_list.sort(key=lambda x: (x.co2_kg is not None, x.co2_kg), reverse=True)
+
     # Calculate per-person CO2 if number_of_persons is provided and valid.
     if number_of_persons is not None and number_of_persons > 0:
         co2_per_person = round(total_co2 / number_of_persons, 1)
