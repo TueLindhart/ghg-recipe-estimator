@@ -1,8 +1,6 @@
 import asyncio
 import logging
 
-from sympy import false
-
 from food_co2_estimator.chains.rag_co2_estimator import (
     NEGLIGIBLE_THRESHOLD,
     get_co2_emissions,
@@ -14,7 +12,9 @@ from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.language.detector import Languages, detect_language
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.url.url2markdown import get_markdown_from_url
-from food_co2_estimator.utils.output_generator import generate_output_model  # This function returns a Pydantic model
+from food_co2_estimator.utils.output_generator import (
+    generate_output_model,  # This function returns a Pydantic model
+)
 
 
 def log_exception_message(url: str, message: str):
@@ -64,27 +64,37 @@ async def async_estimator(
         parsed_weight_output = await get_weight_estimates(verbose, enriched_recipe)
         enriched_recipe.update_with_weight_estimates(parsed_weight_output)
     except Exception as e:
-        weight_est_exception = "Something went wrong in estimating weights of ingredients."
+        weight_est_exception = (
+            "Something went wrong in estimating weights of ingredients."
+        )
         log_exception_message(url, str(e))
         log_exception_message(url, weight_est_exception)
         return weight_est_exception
 
     try:
         # Estimate the kg CO2e per kg for each ingredient using RAG
-        parsed_rag_emissions = await get_co2_emissions(verbose, negligeble_threshold, enriched_recipe)
+        parsed_rag_emissions = await get_co2_emissions(
+            verbose, negligeble_threshold, enriched_recipe
+        )
         enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
     except Exception as e:
-        rag_emissions_exception = "Something went wrong in estimating kg CO2e per kg for the ingredients."
+        rag_emissions_exception = (
+            "Something went wrong in estimating kg CO2e per kg for the ingredients."
+        )
         log_exception_message(url, str(e))
         log_exception_message(url, rag_emissions_exception)
         return rag_emissions_exception
 
     # Check if any ingredients need a CO2 search estimation
     try:
-        parsed_search_results = await get_co2_search_emissions(verbose, enriched_recipe, negligeble_threshold)
+        parsed_search_results = await get_co2_search_emissions(
+            verbose, enriched_recipe, negligeble_threshold
+        )
         enriched_recipe.update_with_co2_per_kg_search(parsed_search_results)
     except Exception as e:
-        search_emissions_exception = "Something went wrong when searching for kg CO2e per kg."
+        search_emissions_exception = (
+            "Something went wrong when searching for kg CO2e per kg."
+        )
         log_exception_message(url, str(e))
         log_exception_message(url, search_emissions_exception)
 
@@ -94,9 +104,8 @@ async def async_estimator(
             enriched_recipe=enriched_recipe,
             negligible_threshold=negligeble_threshold,
             number_of_persons=enriched_recipe.persons,
-            language=language,
         )
-        return output_model.json()
+        return output_model.model_dump_json()
     return enriched_recipe
 
 
@@ -114,7 +123,9 @@ if __name__ == "__main__":
 
     start_time = time()
     result = asyncio.run(
-        async_estimator(url=url, verbose=True, logging_level=logging.INFO, return_output_string=True)
+        async_estimator(
+            url=url, verbose=True, logging_level=logging.INFO, return_output_string=True
+        )
     )
     print(result)
     end_time = time()
