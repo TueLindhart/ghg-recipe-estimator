@@ -121,6 +121,7 @@ This is the emission database where each ingredient has provided options (i.e. "
 {context}
 """
 
+
 RAG_CO2_EMISSION_PROMPT_INPUT_TEMPLATE = """
 Give me emissions for this list of ingredients:
 {ingredients}
