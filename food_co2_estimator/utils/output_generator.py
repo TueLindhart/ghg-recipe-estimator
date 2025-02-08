@@ -1,18 +1,20 @@
-from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
 # Constants for average Danish dinner emission per person
 MIN_DINNER_EMISSION_PER_CAPITA = 1.3
 MAX_DINNER_EMISSION_PER_CAPITA = 2.2
 
-from typing import Optional, List
+from typing import List, Optional
+
 from pydantic import BaseModel
+
 
 class IngredientOutput(BaseModel):
     name: str
     weight_kg: Optional[float] = None
     co2_kg: Optional[float] = None
     comment: Optional[str] = None
+
 
 class RecipeCO2Output(BaseModel):
     total_co2_kg: float
@@ -21,18 +23,16 @@ class RecipeCO2Output(BaseModel):
     avg_meal_emission_per_person_range_kg: List[float]
     ingredients: List[IngredientOutput]
 
-from food_co2_estimator.language.detector import Languages
-from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
 # Constants for average Danish dinner emission per person
 MIN_DINNER_EMISSION_PER_CAPITA = 1.3
 MAX_DINNER_EMISSION_PER_CAPITA = 2.2
 
+
 def generate_output_model(
     enriched_recipe: EnrichedRecipe,
     negligible_threshold: float,
     number_of_persons: int | None,
-    language: Languages = Languages.English,
 ) -> RecipeCO2Output:
     total_co2 = 0.0
     ingredients_list = []
@@ -50,7 +50,7 @@ def generate_output_model(
                     name=ingredient.original_name,
                     weight_kg=None,
                     co2_kg=None,
-                    comment="unable to estimate weight"
+                    comment="unable to estimate weight",
                 )
             )
             continue
@@ -63,7 +63,7 @@ def generate_output_model(
                     name=ingredient.original_name,
                     weight_kg=wt,
                     co2_kg=0,
-                    comment=f"weight on {wt} kg is negligible"
+                    comment=f"weight on {wt} kg is negligible",
                 )
             )
             continue
@@ -95,7 +95,7 @@ def generate_output_model(
                 name=ingredient.original_name,
                 weight_kg=round(weight_estimate.weight_in_kg, 3),
                 co2_kg=computed_co2,
-                comment=comment
+                comment=comment,
             )
         )
 
@@ -110,8 +110,11 @@ def generate_output_model(
         total_co2_kg=round(total_co2, 1),
         number_of_persons=number_of_persons,
         co2_per_person_kg=co2_per_person,
-        avg_meal_emission_per_person_range_kg=[MIN_DINNER_EMISSION_PER_CAPITA, MAX_DINNER_EMISSION_PER_CAPITA],
-        ingredients=ingredients_list
+        avg_meal_emission_per_person_range_kg=[
+            MIN_DINNER_EMISSION_PER_CAPITA,
+            MAX_DINNER_EMISSION_PER_CAPITA,
+        ],
+        ingredients=ingredients_list,
     )
-    
+
     return output_model
