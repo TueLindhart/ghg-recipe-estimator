@@ -33,6 +33,28 @@ document.addEventListener("DOMContentLoaded", () => {
       statusDiv.textContent = `An error occurred: ${error.message}`;
     }
   });
+
+  const toggleChartButton = document.getElementById("toggleChart");
+  const chartPane = document.getElementById("chartPane");
+  const emissionChartCanvas = document.getElementById("emissionChart");
+
+  toggleChartButton.addEventListener("click", () => {
+    if (chartPane.style.display === "none" || chartPane.style.display === "") {
+      chartPane.style.display = "block";
+      showEmissionChart(parsedData.ingredients);
+    } else {
+      chartPane.style.display = "none";
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (
+      !chartPane.contains(event.target) &&
+      event.target !== toggleChartButton
+    ) {
+      chartPane.style.display = "none";
+    }
+  });
 });
 
 async function pollForResult(inputHash) {
@@ -185,4 +207,33 @@ function showTooltip(button, text) {
       }
     });
   }, 10);
+}
+
+function showEmissionChart(ingredients) {
+  const ctx = document.getElementById("emissionChart").getContext("2d");
+  const labels = ingredients.map((ing) => ing.name);
+  const data = ingredients.map((ing) => ing.co2_kg || 0);
+
+  new Chart(ctx, {
+    type: "bar",
+    data: {
+      labels: labels,
+      datasets: [
+        {
+          label: "CO2 Emission (kg)",
+          data: data,
+          backgroundColor: "rgba(75, 192, 192, 0.2)",
+          borderColor: "rgba(75, 192, 192, 1)",
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+      },
+    },
+  });
 }

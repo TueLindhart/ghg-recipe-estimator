@@ -56,25 +56,17 @@
           <!-- Ingredient cards will be populated here via JavaScript -->
         </div>
       </div>
-    </div>
 
-    <div class="bottom-section">
-      <h3>Ingredients</h3>
-      <div class="bottom-container">
-        <!-- Ingredient Cards -->
-        <div class="ingredient-grid" id="ingredientCards"></div>
-        
-        <!-- Collapsible Pane for Chart -->
-        <div class="chart-pane" id="chartPane">
-          <button id="toggleChart">Show Emissions Chart</button>
-          <canvas id="emissionChart"></canvas>
-        </div>
+      <!-- Bottom section: Ingredients and Chart -->
+      <div class="chart-pane" id="chartPane">
+        <button id="toggleChart">Show Emissions Chart</button>
+        <canvas id="emissionChart"></canvas>
       </div>
     </div>
+
     <!-- Main JavaScript file -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <!-- Comparison-specific JavaScript -->
     <script src="{{ url_for('static', filename='js/comparison.js') }}"></script>
-    <!-- Bottom section: Ingredients and Chart -->
   </body>
 </html>
