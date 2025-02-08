@@ -49,7 +49,6 @@ def get_comparison():
         input_value = float(request.args.get("value", 0))
     except (ValueError, TypeError):
         input_value = 0
-    input_unit = request.args.get("unit", "").lower()
 
     # Load the stored comparison data
     try:
