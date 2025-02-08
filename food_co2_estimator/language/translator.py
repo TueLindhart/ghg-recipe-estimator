@@ -5,6 +5,7 @@ from enum import Enum
 from typing import List, Protocol, TypedDict
 
 from deep_translator import GoogleTranslator
+from deep_translator.exceptions import TranslationNotFound
 from translate import Translator
 
 from food_co2_estimator.language.detector import Languages
@@ -113,7 +114,18 @@ def _translate_if_not_english(recipe: EnrichedRecipe, language: str):
     my_translator.switch_translator(index)
 
     for tries in range(N_RETRIES):
-        translation = my_translator.translate(inputs_str)
+        try:
+            translation = my_translator.translate(inputs_str)
+        except TranslationNotFound:
+            logging.warning(
+                f"Translation failed. Trying other provider. Retry {tries + 1}/{N_RETRIES}"
+            )
+            # Update the index and switch the translator
+            index = (index + 1) % len(my_translator.translators)
+            _translation_cache["index"] = index
+            my_translator.switch_translator(index)
+            continue
+
         translated_recipe = extract_translated_recipe(translation, recipe)
 
         if len(recipe.ingredients) == len(translated_recipe.ingredients):
