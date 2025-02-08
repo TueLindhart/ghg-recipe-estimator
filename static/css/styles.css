@@ -10,6 +10,8 @@ body {
 .top-bar {
   display: flex;
   align-items: center;
+  padding: 20px; /* doubled the padding to increase height */
+  background: #f0f0f0;
   gap: 10px;
   background: #f0f0f0;
   padding: 20px;
