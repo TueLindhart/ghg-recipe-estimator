@@ -1,140 +1,117 @@
 from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
-# Avg. dinner emission per person method:
-# 1. Get Food emission per person per year here: https://concito.dk/udgivelser/danmarks-globale-forbrugsudledninger which is 1.97 ton / per capita
-# 2. Estimate emission per day per capita: 1.97 / 365.25 * 1000 = 5.39 kg CO2 / per capita
-# 3. Calculate ratio of dinenr calorie amount wrt. to daily calorie intake:
-#     Minimum case; 600 calories / 2500 calories = 0.24. Maximum case: 0.4. Avg. case = 700 / 2250 = 0.31
-# 4. Assume dinner emission is equivalent to amount of calories to estimate avg. dinner emission.
-#    5.39 * 0.24 = 1.69 kg CO2 per capita
-
+# Constants for average Danish dinner emission per person
 MIN_DINNER_EMISSION_PER_CAPITA = 1.3
 MAX_DINNER_EMISSION_PER_CAPITA = 2.2
 
+from typing import Optional, List
+from pydantic import BaseModel
 
-def generate_output(
+class IngredientOutput(BaseModel):
+    name: str
+    weight_kg: Optional[float] = None
+    co2_kg: Optional[float] = None
+    comment: Optional[str] = None
+
+class RecipeCO2Output(BaseModel):
+    total_co2_kg: float
+    number_of_persons: Optional[int] = None
+    co2_per_person_kg: Optional[float] = None
+    avg_meal_emission_per_person_range_kg: List[float]
+    ingredients: List[IngredientOutput]
+
+from food_co2_estimator.language.detector import Languages
+from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
+
+# Constants for average Danish dinner emission per person
+MIN_DINNER_EMISSION_PER_CAPITA = 1.3
+MAX_DINNER_EMISSION_PER_CAPITA = 2.2
+
+def generate_output_model(
     enriched_recipe: EnrichedRecipe,
-    negligeble_threshold: float,
+    negligible_threshold: float,
     number_of_persons: int | None,
     language: Languages = Languages.English,
-) -> str:
-    translations = {
-        Languages.English: {
-            "unable": "unable to estimate weight",
-            "negligible": "weight on {} kg is negligible",
-            "not_found": "CO2e per kg not found",
-            "total": "Total CO2 emission",
-            "persons": "Estimated number of persons",
-            "emission_pr_person": "Emission pr. person",
-            "avg_meal_emission_pr_person": "Avg. Danish dinner emission pr person",
-            "method": "The calculation method per ingredient is",
-            "legends": "Legends",
-            "db": "(DB) - Data from SQL Database (https://denstoreklimadatabase.dk)",
-            "search": "(Search) - Data obtained from search",
-            "comments": "Comments",
-            "for": "For",
-        },
-        Languages.Danish: {
-            "unable": "kan ikke skønne vægt",
-            "negligible": "vægt på {} kg er negligerbar",
-            "not_found": "CO2e per kg ikke fundet",
-            "total": "Samlet CO2-udslip",
-            "persons": "Estimeret antal personer",
-            "emission_pr_person": "Emission pr. person",
-            "avg_meal_emission_pr_person": "Gennemsnitligt aftensmad udledning pr. person",
-            "method": "Beregningsmetoden pr. ingrediens er",
-            "legends": "Forklaring",
-            "db": "(DB) - Data fra SQL Database (https://denstoreklimadatabase.dk)",
-            "search": "(Søgning) - Data opnået fra søgning",
-            "comments": "Kommentarer",
-            "for": "For",
-        },
-    }
+) -> RecipeCO2Output:
+    total_co2 = 0.0
+    ingredients_list = []
 
-    trans = translations.get(language, translations[Languages.English])
-
-    ingredients_output = []
-    total_co2 = 0
-    all_comments = []
-
+    # Process each ingredient in the enriched recipe.
     for ingredient in enriched_recipe.ingredients:
         weight_estimate = ingredient.weight_estimate
         co2_data = ingredient.co2_per_kg_db
         search_result = ingredient.co2_per_kg_search
 
-        weight_key = "Weight" if language == Languages.English else "Vægt"
-        search_key = "Search" if language == Languages.English else "Søgning"
+        # If no weight estimate is available, add an ingredient with an error comment.
+        if weight_estimate is None or weight_estimate.weight_in_kg is None:
+            ingredients_list.append(
+                IngredientOutput(
+                    name=ingredient.original_name,
+                    weight_kg=None,
+                    co2_kg=None,
+                    comment="unable to estimate weight"
+                )
+            )
+            continue
 
-        comments = {
-            weight_key: weight_estimate.weight_calculation if weight_estimate else None,
-            "DB": co2_data.closest_match_explanation if co2_data else None,
-            search_key: search_result.explanation if search_result else None,
-        }
+        # If the weight is negligible, mark it as such and set CO2 to 0.
+        if weight_estimate.weight_in_kg <= negligible_threshold:
+            wt = round(weight_estimate.weight_in_kg, 3)
+            ingredients_list.append(
+                IngredientOutput(
+                    name=ingredient.original_name,
+                    weight_kg=wt,
+                    co2_kg=0,
+                    comment=f"weight on {wt} kg is negligible"
+                )
+            )
+            continue
 
-        all_comments.append(
-            {"ingredient": ingredient.original_name, "comments": comments}
+        computed_co2 = None
+        comment = ""
+        # Prefer CO2 data from the DB.
+        if co2_data and co2_data.co2_per_kg:
+            computed_co2 = round(co2_data.co2_per_kg * weight_estimate.weight_in_kg, 2)
+            comment = (
+                f"{round(weight_estimate.weight_in_kg, 2)} kg * "
+                f"{round(co2_data.co2_per_kg, 2)} kg CO2e/kg (DB) = {computed_co2} kg CO2e"
+            )
+        # Fallback to using search result data.
+        elif search_result and search_result.result:
+            computed_co2 = round(search_result.result * weight_estimate.weight_in_kg, 2)
+            comment = (
+                f"{round(weight_estimate.weight_in_kg, 2)} kg * "
+                f"{round(search_result.result, 2)} kg CO2e/kg (Search) = {computed_co2} kg CO2e"
+            )
+        else:
+            comment = "CO2e per kg not found"
+
+        if computed_co2 is not None:
+            total_co2 += computed_co2
+
+        ingredients_list.append(
+            IngredientOutput(
+                name=ingredient.original_name,
+                weight_kg=round(weight_estimate.weight_in_kg, 3),
+                co2_kg=computed_co2,
+                comment=comment
+            )
         )
 
-        if weight_estimate is None or weight_estimate.weight_in_kg is None:
-            ingredients_output.append(f"{ingredient.original_name}: {trans['unable']}")
-            continue
-
-        if weight_estimate.weight_in_kg <= negligeble_threshold:
-            ingredients_output.append(
-                f"{ingredient.original_name}: {trans['negligible'].format(round(weight_estimate.weight_in_kg, 3))}"
-            )
-            continue
-
-        if co2_data and co2_data.co2_per_kg:
-            co2_value = round(co2_data.co2_per_kg * weight_estimate.weight_in_kg, 2)
-            ingredients_output.append(
-                f"{ingredient.original_name}: {round(weight_estimate.weight_in_kg, 2)} kg * {round(co2_data.co2_per_kg, 2)} kg CO2e / kg (DB) = {co2_value} kg CO2e"
-            )
-            total_co2 += co2_value
-
-        elif search_result and search_result.result:
-            co2_value = round(search_result.result * weight_estimate.weight_in_kg, 2)
-            ingredients_output.append(
-                f"{ingredient.original_name}: {round(weight_estimate.weight_in_kg, 2)} kg * {round(search_result.result, 2)} kg CO2e / kg (Search) = {co2_value} kg CO2e"
-            )
-            total_co2 += co2_value
-
-        else:
-            ingredients_output.append(
-                f"{ingredient.original_name}: {trans['not_found']}"
-            )
-    if number_of_persons is not None:
-        number_of_persons_text = f"\n{trans['persons']}: {number_of_persons}"
-        emission_per_person_text = f"\n{trans['emission_pr_person']}: {round(total_co2 / number_of_persons, 1)} kg CO2e / pr. person"
+    # Calculate per-person CO2 if number_of_persons is provided and valid.
+    if number_of_persons is not None and number_of_persons > 0:
+        co2_per_person = round(total_co2 / number_of_persons, 1)
     else:
-        number_of_persons_text = ""
-        emission_per_person_text = ""
+        co2_per_person = None
 
-    output = (
-        "----------------------------------------"
-        f"\n{trans['total']}: {round(total_co2, 1)} kg CO2e"
-        f"{number_of_persons_text}"
-        f"{emission_per_person_text}"
-        f"\n{trans['avg_meal_emission_pr_person']}: {MIN_DINNER_EMISSION_PER_CAPITA} - {MAX_DINNER_EMISSION_PER_CAPITA} kg CO2e / pr. person"
-        "\n----------------------------------------"
-        f"\n{trans['method']}: X kg * Y kg CO2e / kg = Z kg CO2e"
+    # Create the top-level output model.
+    output_model = RecipeCO2Output(
+        total_co2_kg=round(total_co2, 1),
+        number_of_persons=number_of_persons,
+        co2_per_person_kg=co2_per_person,
+        avg_meal_emission_per_person_range_kg=[MIN_DINNER_EMISSION_PER_CAPITA, MAX_DINNER_EMISSION_PER_CAPITA],
+        ingredients=ingredients_list
     )
-    output += "\n" + "\n".join(ingredients_output)
-    output += "\n----------------------------------------"
-
-    # Legends
-    output += f"\n\n{trans['legends']}:"
-    output += f"\n{trans['db']}"
-    output += f"\n{trans['search']}"
-
-    # Append comments
-    output += f"\n\n{trans['comments']}:"
-    for comment in all_comments:
-        ingredient = comment["ingredient"]
-        output += f"\n{trans['for']} {ingredient}:"
-        for key, value in comment["comments"].items():
-            if value:
-                output += f"\n- {key}: {value}"
-
-    return output
+    
+    return output_model
