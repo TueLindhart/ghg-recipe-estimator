@@ -3,10 +3,13 @@ import hashlib
 import threading
 
 from flask import Flask, jsonify, render_template, request
+from comparison_api import comparison_api
 
 from food_co2_estimator.main import async_estimator
 
 app = Flask(__name__)
+
+app.register_blueprint(comparison_api)
 
 results = {}  # Temporary storage for results
 

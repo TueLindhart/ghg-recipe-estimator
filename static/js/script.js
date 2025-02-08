@@ -75,7 +75,7 @@ function updateUI(parsedData) {
     document.getElementById("avgRange").textContent = "";
   }
 
-  // Update ingredients grid
+  // Update ingredients.
   const cardsContainer = document.getElementById("ingredientCards");
   cardsContainer.innerHTML = "";
 

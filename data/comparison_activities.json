@@ -1,0 +1,98 @@
+[
+    {
+        "id": "guid-1234",
+        "name": "Flight from Paris to Berlin",
+        "description": "The amount of CO2 produced when flying economy class from Paris to Berlin.",
+        "value": 193,
+        "unit": "kg",
+        "measure": "CO2"
+    },
+    {
+        "id": "guid-5678",
+        "name": "Drive from NYC to Boston",
+        "description": "CO2 produced when driving a mid-size car from NYC to Boston.",
+        "value": 150,
+        "unit": "kg",
+        "measure": "CO2"
+    },
+    {
+        "id": "guid-9101",
+        "name": "Round-trip flight from New York to London",
+        "description": "CO₂ emissions from an economy class round-trip flight between New York and London.",
+        "value": 986,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-1121",
+        "name": "Annual electricity usage of an average U.S. household",
+        "description": "CO₂ emissions from the average annual electricity consumption of a U.S. household.",
+        "value": 6570,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-3141",
+        "name": "Producing 1 kilogram of beef",
+        "description": "CO₂ emissions associated with the production of 1 kilogram of beef.",
+        "value": 60,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-5161",
+        "name": "Charging a smartphone for a year",
+        "description": "CO₂ emissions from charging a smartphone daily for one year.",
+        "value": 12,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-7181",
+        "name": "Driving 100 kilometers in a gasoline car",
+        "description": "CO₂ emissions from driving 100 kilometers in an average gasoline-powered car.",
+        "value": 19,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-9202",
+        "name": "One load of laundry in a washing machine",
+        "description": "CO₂ emissions from washing a load of laundry at 40°C.",
+        "value": 0.6,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-1222",
+        "name": "Using a 10-watt LED light bulb for 5 hours daily for a year",
+        "description": "CO₂ emissions from using a 10-watt LED light bulb for 5 hours daily over a year.",
+        "value": 7.3,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-3242",
+        "name": "Producing 1 kilogram of cheese",
+        "description": "CO₂ emissions associated with the production of 1 kilogram of cheese.",
+        "value": 13.5,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-5262",
+        "name": "Streaming 1 hour of video in high definition",
+        "description": "CO₂ emissions from streaming 1 hour of high-definition video.",
+        "value": 0.36,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-7282",
+        "name": "Manufacturing a new laptop",
+        "description": "CO₂ emissions from the production of a new laptop.",
+        "value": 200,
+        "unit": "kg",
+        "measure": "CO₂"
+    }
+]
