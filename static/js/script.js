@@ -55,15 +55,10 @@ async function pollForResult(inputHash) {
 }
 
 function updateUI(parsedData) {
-  // Use the user-provided URL for the iframe:
-  const recipeFrame = document.getElementById("recipeFrame");
-  recipeFrame.src = currentInputURL;
-
-  // Update summary
+  // Update summary information.
   document.getElementById("totalCO2").textContent = parsedData.total_co2_kg || "N/A";
   document.getElementById("numberOfPersons").textContent = parsedData.number_of_persons || "N/A";
   document.getElementById("co2PerPerson").textContent = parsedData.co2_per_person_kg || "N/A";
-
   const avgRange = parsedData.avg_meal_emission_per_person_range_kg;
   if (avgRange && avgRange.length === 2) {
     document.getElementById("avgRange").textContent = `${avgRange[0]} - ${avgRange[1]}`;
@@ -71,17 +66,15 @@ function updateUI(parsedData) {
     document.getElementById("avgRange").textContent = "N/A";
   }
 
-  // Update ingredients grid
+  // Update ingredients.
   const cardsContainer = document.getElementById("ingredientCards");
   cardsContainer.innerHTML = "";
-
   parsedData.ingredients.forEach(ing => {
     const card = document.createElement("div");
     card.className = "ingredient-card";
 
-    // Placeholder image
     const img = document.createElement("img");
-    img.src = "placeholder.jpg"; // Replace with a real placeholder if desired
+    img.src = "placeholder.jpg"; // Replace with a real image if available
     img.alt = ing.name;
 
     const title = document.createElement("h5");
@@ -93,11 +86,16 @@ function updateUI(parsedData) {
     const co2 = document.createElement("p");
     co2.textContent = `CO2: ${ing.co2_kg !== null ? ing.co2_kg + " kg" : "N/A"}`;
 
-
     card.appendChild(img);
     card.appendChild(title);
     card.appendChild(weight);
     card.appendChild(co2);
     cardsContainer.appendChild(card);
   });
+
+  // Call the comparison API.
+  // Pass the total CO2 value (from the recipe) and assume the unit is "kg".
+  if (window.fetchComparisonData && parsedData.total_co2_kg) {
+    window.fetchComparisonData(parsedData.total_co2_kg, 'kg');
+  }
 }
