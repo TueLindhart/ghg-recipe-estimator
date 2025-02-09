@@ -1,38 +1,5 @@
-from typing import List, Optional
-
-from pydantic import BaseModel, Field
-
+from food_co2_estimator.pydantic_models.output import IngredientOutput, RecipeCO2Output
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
-
-# Constants for average Danish dinner emission per person
-MIN_DINNER_EMISSION_PER_CAPITA = 1.3
-MAX_DINNER_EMISSION_PER_CAPITA = 2.2
-
-
-class IngredientOutput(BaseModel):
-    name: str = Field(description="Name of ingredient.")
-    ingredient_id: str | None = Field(description="ingredient Id from vector DB")
-    weight_kg: float | None = Field(
-        description="Weight",
-    )
-    co2_per_kg: float | None = Field(
-        description="kg CO2e / kg",
-    )
-    co2_kg: float | None = Field(description="CO2 Emission in kg")
-    calculation_notes: str | None = Field(description="Comment")
-    weight_estimation_notes: str | None = Field(
-        description="Comment on weight estimation"
-    )
-    co2_emission_notes: str | None = Field(description="Comment on CO2 emission")
-
-
-class RecipeCO2Output(BaseModel):
-    total_co2_kg: float
-    number_of_persons: Optional[int] = None
-    co2_per_person_kg: float | None = None
-    avg_meal_emission_per_person_range_kg: List[float]
-    ingredients: List[IngredientOutput]
-
 
 # Constants for average Danish dinner emission per person
 MIN_DINNER_EMISSION_PER_CAPITA = 1.3

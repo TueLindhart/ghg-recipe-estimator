@@ -10,6 +10,7 @@ from food_co2_estimator.chains.search_co2_estimator import get_co2_search_emissi
 from food_co2_estimator.chains.translator import get_translation_chain
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.language.detector import Languages, detect_language
+from food_co2_estimator.pydantic_models.output import RecipeCO2Output
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.url.url2markdown import get_markdown_from_url
 from food_co2_estimator.utils.output_generator import (
@@ -26,7 +27,7 @@ async def async_estimator(
     verbose: bool = False,
     negligeble_threshold: float = NEGLIGIBLE_THRESHOLD,
     logging_level=logging.INFO,
-):
+) -> RecipeCO2Output | str:
     logging.basicConfig(level=logging_level)
     text = get_markdown_from_url(url)
     if text is None:
