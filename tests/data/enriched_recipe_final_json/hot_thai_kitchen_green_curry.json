@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '420 ml of coconut milk' to 'coconut milk' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Matched 'coconut milk' to 'coconut milk' as it is the exact ingredient with the same processing level.",
                 "ingredient_id": "Ra00404",
                 "closest_match_name": "coconut milk",
                 "ingredient": "420 ml of coconut milk",
@@ -27,7 +27,7 @@
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '50 g green curry paste' to 'green curry paste' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Matched 'green curry paste' to 'green curry paste' as it is the exact ingredient with the same processing level.",
                 "ingredient_id": "Ra00469",
                 "closest_match_name": "green curry paste",
                 "ingredient": "50 g green curry paste",
@@ -45,7 +45,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '240 ml of chicken broth, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering processing and type.",
+                "closest_match_explanation": "Matched 'chicken broth, unsalted' to 'bouillon, chicken, prepared' as it is a similar product with the same processing level.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "240 ml of chicken broth, unsalted",
@@ -63,7 +63,7 @@
                 "weight_in_kg": 0.45
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '450 g of chicken thighs, without legs and skins, cut into 1-inch pieces' to 'minced chicken' as it is the most processed option available.",
+                "closest_match_explanation": "Matched 'chicken thighs, without legs and skins, cut into 1-inch pieces' to 'minced chicken' as it is the closest match considering processing level.",
                 "ingredient_id": "Ra00386",
                 "closest_match_name": "minced chicken",
                 "ingredient": "450 g of chicken thighs, without legs and skins, cut into 1-inch pieces",
@@ -88,11 +88,11 @@
             "en_name": "22.5-30 ml fish sauce",
             "weight_estimate": {
                 "ingredient": "22.5-30 ml fish sauce",
-                "weight_calculation": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+                "weight_calculation": "Average of 22.5 ml and 30 ml = 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
                 "weight_in_kg": 0.02625
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'soya sauce' as it is the closest match available in the database.",
+                "closest_match_explanation": "Matched 'fish sauce' to 'soya sauce' as it is a similar condiment with a comparable processing level.",
                 "ingredient_id": "Ra00373",
                 "closest_match_name": "soya sauce",
                 "ingredient": "22.5-30 ml fish sauce",
@@ -121,7 +121,7 @@
                 "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 550 ml can of bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Matched 'bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient with the same processing level.",
                 "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
                 "ingredient": "1 550 ml can of bamboo shoots, drained and rinsed",
@@ -146,11 +146,11 @@
             "en_name": "¼ red pepper, julienned",
             "weight_estimate": {
                 "ingredient": "¼ red pepper, julienned",
-                "weight_calculation": "1 red pepper = 150 g, ¼ * 150 g = 37.5 g = 0.0375 kg",
+                "weight_calculation": "1 red pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '¼ red pepper, julienned' to 'pepper, sweet, red, raw' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Matched 'red pepper, julienned' to 'pepper, sweet, red, raw' as it is the exact ingredient with the same processing level.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "¼ red pepper, julienned",

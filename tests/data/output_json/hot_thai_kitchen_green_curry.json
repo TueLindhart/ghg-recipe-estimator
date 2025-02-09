@@ -64,7 +64,7 @@
             "co2_per_kg": 1.9,
             "co2_kg": 0.05,
             "calculation_notes": "0.03 kg * 1.9 kg CO2e/kg (DB) = 0.05 kg CO2e",
-            "weight_estimation_notes": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+            "weight_estimation_notes": "Average of 22.5 ml and 30 ml = 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
             "co2_emission_notes": "Best match in CO2 database is: soya sauce"
         },
         {
@@ -74,7 +74,7 @@
             "co2_per_kg": 1.1,
             "co2_kg": 0.04,
             "calculation_notes": "0.04 kg * 1.1 kg CO2e/kg (DB) = 0.04 kg CO2e",
-            "weight_estimation_notes": "1 red pepper = 150 g, ¼ * 150 g = 37.5 g = 0.0375 kg",
+            "weight_estimation_notes": "1 red pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
             "co2_emission_notes": "Best match in CO2 database is: pepper, sweet, red, raw"
         },
         {

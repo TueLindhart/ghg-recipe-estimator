@@ -82,8 +82,8 @@
         },
         {
             "ingredient": "0.33 Cup Milk",
-            "weight_calculation": "1 cup = 240 ml, 0.33 cup = 80 g, 1 * 80 g = 80 g = 0.08 kg",
-            "weight_in_kg": 0.08
+            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
+            "weight_in_kg": 0.0792
         },
         {
             "ingredient": "1 Egg",

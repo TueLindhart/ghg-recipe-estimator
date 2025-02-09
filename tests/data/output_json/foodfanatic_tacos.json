@@ -1,7 +1,7 @@
 {
-    "total_co2_kg": 20.6,
+    "total_co2_kg": 39.7,
     "number_of_persons": 2,
-    "co2_per_person_kg": 10.3,
+    "co2_per_person_kg": 19.9,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -18,14 +18,34 @@
             "co2_emission_notes": "Best match in CO2 database is: average beef"
         },
         {
+            "name": "2.5 dl oksefond",
+            "ingredient_id": "Ra00503",
+            "weight_kg": 0.25,
+            "co2_per_kg": 74.8,
+            "co2_kg": 18.7,
+            "calculation_notes": "0.25 kg * 74.8 kg CO2e/kg (DB) = 18.7 kg CO2e",
+            "weight_estimation_notes": "2.5 dl = 250 g, 1 * 250 g = 250 g = 0.250 kg",
+            "co2_emission_notes": "Best match in CO2 database is: average beef"
+        },
+        {
             "name": "1 dåse kidneybønner",
             "ingredient_id": "Ra00422",
             "weight_kg": 0.4,
             "co2_per_kg": 1.2,
             "co2_kg": 0.48,
             "calculation_notes": "0.4 kg * 1.2 kg CO2e/kg (DB) = 0.48 kg CO2e",
-            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "co2_emission_notes": "Best match in CO2 database is: kidney beans"
+        },
+        {
+            "name": "11 små majstortillas",
+            "ingredient_id": "Ra00401",
+            "weight_kg": 0.33,
+            "co2_per_kg": 1.2,
+            "co2_kg": 0.4,
+            "calculation_notes": "0.33 kg * 1.2 kg CO2e/kg (DB) = 0.4 kg CO2e",
+            "weight_estimation_notes": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
+            "co2_emission_notes": "Best match in CO2 database is: tortilla bread, wheat"
         },
         {
             "name": "300 g tomater",
@@ -140,11 +160,11 @@
         {
             "name": "1.5 spsk fajitakrydderi",
             "ingredient_id": null,
-            "weight_kg": null,
+            "weight_kg": 0.022,
             "co2_per_kg": null,
             "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
+            "calculation_notes": "Weight on 0.022 kg is negligible",
+            "weight_estimation_notes": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
             "co2_emission_notes": null
         },
         {
@@ -155,26 +175,6 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
             "weight_estimation_notes": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "2.5 dl oksefond",
-            "ingredient_id": null,
-            "weight_kg": null,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "11 små majstortillas",
-            "ingredient_id": null,
-            "weight_kg": null,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
             "co2_emission_notes": null
         },
         {
@@ -210,12 +210,12 @@
         {
             "name": "0.5 bdt koriander",
             "ingredient_id": null,
-            "weight_kg": null,
+            "weight_kg": 0.025,
             "co2_per_kg": null,
             "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
-            "co2_emission_notes": null
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
+            "co2_emission_notes": "Unable to find CO2 emission"
         },
         {
             "name": "saften af 0.5 lime",

@@ -146,7 +146,7 @@
             "en_name": "6 tbsp grated parmesan",
             "weight_estimate": {
                 "ingredient": "6 tbsp grated parmesan",
-                "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+                "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.090 kg",
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {

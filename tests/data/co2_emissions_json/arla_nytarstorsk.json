@@ -33,7 +33,7 @@
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most common form of water and has the lowest emissions.",
+            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most relevant option for water.",
             "ingredient_id": "Ra00068",
             "closest_match_name": "water, tap, drinking, average values",
             "ingredient": "2.5 dl water",

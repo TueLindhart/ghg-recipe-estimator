@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "1 can of kidney beans",
-            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
@@ -97,7 +97,7 @@
         },
         {
             "ingredient": "0.5 Bdt coriander",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
@@ -107,7 +107,7 @@
         },
         {
             "ingredient": "The juice of 0.5 lime",
-            "weight_calculation": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
             "weight_in_kg": 0.035
         }
     ]
