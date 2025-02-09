@@ -87,8 +87,8 @@
         },
         {
             "ingredient": "grated parmesan",
-            "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 6 servings * 0.02 kg = 0.12 kg",
-            "weight_in_kg": 0.12
+            "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.025 kg, 6 servings * 0.025 kg = 0.15 kg",
+            "weight_in_kg": 0.15
         }
     ]
 }
