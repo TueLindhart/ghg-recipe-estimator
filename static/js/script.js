@@ -68,9 +68,7 @@ function updateUI(parsedData) {
 
   const avgRange = parsedData.avg_meal_emission_per_person_range_kg;
   if (avgRange && avgRange.length === 2) {
-    document.getElementById(
-      "avgRange"
-    ).textContent = `${avgRange[0]} - ${avgRange[1]}`;
+    document.getElementById("avgRange").textContent = `${avgRange[0]} - ${avgRange[1]}`;
   } else {
     document.getElementById("avgRange").textContent = "";
   }
@@ -78,7 +76,6 @@ function updateUI(parsedData) {
   // Update ingredients.
   const cardsContainer = document.getElementById("ingredientCards");
   cardsContainer.innerHTML = "";
-
   parsedData.ingredients.forEach((ing) => {
     const card = document.createElement("div");
     card.className = "ingredient-card";
@@ -105,7 +102,6 @@ function updateUI(parsedData) {
     commentButton.textContent = "Show Notes";
     commentButton.style.cursor = "pointer";
     commentButton.style.position = "relative";
-
     commentButton.addEventListener("click", (event) => {
       showTooltip(
         event.target,
@@ -139,6 +135,13 @@ CO2e Emission Notes: ${
   initializeBarChart(parsedData.ingredients);
 }
 
+  // **Call the comparison API**: 
+  // Check that the total emission is available before calling.
+  if (window.fetchComparisonData && parsedData.total_co2_kg) {
+    console.log("Calling fetchComparisonData with total_co2_kg:", parsedData.total_co2_kg);
+    window.fetchComparisonData(parsedData.total_co2_kg, "kg");
+  }
+}
 // Function to show a tooltip near the button
 function showTooltip(button, text) {
   // Remove any existing tooltip
