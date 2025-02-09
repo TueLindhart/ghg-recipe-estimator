@@ -1,6 +1,6 @@
 import json
-import random
 import logging
+import random
 
 from flask import Blueprint, jsonify, request
 
@@ -10,15 +10,20 @@ comparison_api = Blueprint("comparison_api", __name__)
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)  # Ensure debug level logging
 
+
 def generate_context_text(record, input_value):
     """
     Generate a context text by comparing the input_value (e.g., recipe emission)
     to the stored value for the given activity.
     """
-    logger.debug("generate_context_text called with record: %s and input_value: %s", record, input_value)
+    logger.debug(
+        "generate_context_text called with record: %s and input_value: %s",
+        record,
+        input_value,
+    )
     stored_value = record.get("value", 0)
     if stored_value == 0:
-        text = "Comparison data is insufficient for a meaningful comparison."
+        text = "Sammenligningsdata er utilstrækkelige til en meningsfuld sammenligning."
         logger.debug("Stored value is 0; returning: %s", text)
         return text
 
@@ -28,24 +33,25 @@ def generate_context_text(record, input_value):
     logger.debug("Calculated ratio: %s, percent: %s", ratio, percent)
 
     if ratio < 0.5:
-        text = f"Your recipe are about {percent}% of those from {record['name']}."
+        text = f"Din opskrift er omkring {percent}% af {record['description']}."
     elif ratio < 0.9:
-        text = f"Your recipe are {record['name']} (around {percent}%)."
+        text = f"Din opskrift er {record['description']} (omkring {percent}%)."
     elif ratio <= 1.1:
-        text = f"Your recipe are roughly equivalent to {record['name']}."
+        text = f"Din opskrift svarer nogenlunde til {record['description']}."
     elif ratio <= 2:
         excess = round((ratio - 1) * 100)
-        text = f"Your recipe are approximately {percent}% of those from {record['name']}, which is about {excess}% more."
+        text = f"Din opskrift er cirka {percent}% af {record['description']}, hvilket er omkring {excess}% mere."
     else:
-        text = f"Your recipe are significantly higher than those from {record['name']} (over {round(ratio, 1)} times as much)."
-    
+        text = f"Din opskrift er væsentligt højere end {record['description']} (over {round(ratio, 1)} gange så meget)."
+
     logger.debug("Generated context text: %s", text)
     return text
+
 
 @comparison_api.route("/api/comparison", methods=["GET"])
 def get_comparison():
     logger.debug("Received request for /api/comparison")
-    
+
     # Get input parameters from the query string.
     try:
         input_value = float(request.args.get("value", 0))
@@ -62,11 +68,11 @@ def get_comparison():
         logger.debug("Loaded comparisons: %s", comparisons)
     except Exception as e:
         logger.error("Error loading comparisons: %s", e)
-        return jsonify({"error": "Comparison data not available"}), 500
+        return jsonify({"error": "Sammenligningsdata ikke tilgængelige"}), 500
 
     if not comparisons:
         logger.warning("No comparisons found in data file.")
-        return jsonify({"error": "No comparison data found"}), 404
+        return jsonify({"error": "Ingen sammenligningsdata fundet"}), 404
 
     # Randomly select one record from the stored comparisons.
     record = random.choice(comparisons)

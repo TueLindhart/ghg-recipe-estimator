@@ -1,10 +1,10 @@
 <!-- templates/index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe CO2 Emission Calculator</title>
+    <title>Opskrift CO2 Emissionsberegner</title>
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <!-- Comparison Specific Stylesheet -->
@@ -13,9 +13,9 @@
   <body>
     <!-- Top input area -->
     <div class="top-bar">
-      <label for="urlInput">Enter recipe URL:</label>
+      <label for="urlInput">Indtast opskrift URL:</label>
       <textarea id="urlInput" name="urlInput" rows="1"></textarea>
-      <button id="calculateButton">Calculate CO2e Emission</button>
+      <button id="calculateButton">Beregn CO2e Emission</button>
       <div id="statusDiv"></div>
     </div>
 
@@ -25,7 +25,7 @@
       <div class="top-section">
         <!-- Summary panel -->
         <div class="summary">
-          <h2>Summary</h2>
+          <h2>Oversigt</h2>
           <div class="summary-grid">
             <div class="summary-box">
               <p>Total CO2:</p>
@@ -36,11 +36,11 @@
               <span id="co2PerPerson"></span> kg
             </div>
             <div class="summary-box">
-              <p>Persons</p>
+              <p>Personer</p>
               <span id="numberOfPersons"></span>
             </div>
             <div class="summary-box">
-              <p>Average:</p>
+              <p>Gennemsnit:</p>
               <span id="avgRange"></span> kg
             </div>
           </div>
@@ -51,7 +51,7 @@
 
       <!-- Bottom section: Ingredients -->
       <div class="bottom-section">
-        <h2>Ingredients</h2>
+        <h2>Ingredienser</h2>
         <div class="ingredient-grid" id="ingredientCards">
           <!-- Ingredient cards will be populated here via JavaScript -->
         </div>
@@ -59,7 +59,7 @@
 
       <!-- Bar Chart section: Emissions per Ingredient -->
       <div class="chart-section">
-        <h2>Emissions per Ingredient</h2>
+        <h2>Emissioner per Ingrediens</h2>
         <div class="chart-container">
           <canvas id="emissionsChart"></canvas>
         </div>

@@ -2,21 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("Comparison block JS loaded.");
 
   // Global function to fetch comparison data.
-  window.fetchComparisonData = function(value, unit) {
-    const apiUrl = `/api/comparison?value=${encodeURIComponent(value)}&unit=${encodeURIComponent(unit)}`;
+  window.fetchComparisonData = function (value, unit) {
+    const apiUrl = `/api/comparison?value=${encodeURIComponent(
+      value
+    )}&unit=${encodeURIComponent(unit)}`;
     console.log("Fetching comparison data from:", apiUrl);
     fetch(apiUrl)
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
-          throw new Error("API response not ok");
+          throw new Error("API-svar ikke ok");
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         console.log("Comparison data received:", data);
         updateComparisonBlock(data);
       })
-      .catch(err => {
+      .catch((err) => {
         console.error("Error fetching comparison data:", err);
       });
   };
