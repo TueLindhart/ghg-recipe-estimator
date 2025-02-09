@@ -1,5 +1,5 @@
 {
-    "total_co2_kg": 39.7,
+    "total_co2_kg": 39.8,
     "number_of_persons": 2,
     "co2_per_person_kg": 19.9,
     "avg_meal_emission_per_person_range_kg": [
@@ -34,17 +34,17 @@
             "co2_per_kg": 1.2,
             "co2_kg": 0.48,
             "calculation_notes": "0.4 kg * 1.2 kg CO2e/kg (DB) = 0.48 kg CO2e",
-            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "co2_emission_notes": "Best match in CO2 database is: kidney beans"
         },
         {
-            "name": "11 små majstortillas",
+            "name": "10-12 små majstortillas",
             "ingredient_id": "Ra00401",
-            "weight_kg": 0.33,
+            "weight_kg": 0.36,
             "co2_per_kg": 1.2,
-            "co2_kg": 0.4,
-            "calculation_notes": "0.33 kg * 1.2 kg CO2e/kg (DB) = 0.4 kg CO2e",
-            "weight_estimation_notes": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
+            "co2_kg": 0.43,
+            "calculation_notes": "0.36 kg * 1.2 kg CO2e/kg (DB) = 0.43 kg CO2e",
+            "weight_estimation_notes": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
             "co2_emission_notes": "Best match in CO2 database is: tortilla bread, wheat"
         },
         {
@@ -56,6 +56,16 @@
             "calculation_notes": "0.3 kg * 1.1 kg CO2e/kg (DB) = 0.33 kg CO2e",
             "weight_estimation_notes": "300 g = 300 g = 0.300 kg",
             "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
+        },
+        {
+            "name": "1 portion tomatsalsa",
+            "ingredient_id": "Ra00400",
+            "weight_kg": 0.2,
+            "co2_per_kg": 1.4,
+            "co2_kg": 0.28,
+            "calculation_notes": "0.2 kg * 1.4 kg CO2e/kg (DB) = 0.28 kg CO2e",
+            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+            "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
         },
         {
             "name": "1 avocado",
@@ -86,26 +96,6 @@
             "calculation_notes": "0.03 kg * 5.9 kg CO2e/kg (DB) = 0.18 kg CO2e",
             "weight_estimation_notes": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
-        },
-        {
-            "name": "1 portion tomatsalsa",
-            "ingredient_id": "Ra00400",
-            "weight_kg": 0.1,
-            "co2_per_kg": 1.4,
-            "co2_kg": 0.14,
-            "calculation_notes": "0.1 kg * 1.4 kg CO2e/kg (DB) = 0.14 kg CO2e",
-            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
-            "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
-        },
-        {
-            "name": "0.75 chilipeber",
-            "ingredient_id": "Ra00009",
-            "weight_kg": 0.113,
-            "co2_per_kg": 1.1,
-            "co2_kg": 0.12,
-            "calculation_notes": "0.11 kg * 1.1 kg CO2e/kg (DB) = 0.12 kg CO2e",
-            "weight_estimation_notes": "1 bell pepper = 150 g, 0.75 * 150 g = 112.5 g = 0.1125 kg",
-            "co2_emission_notes": "Best match in CO2 database is: pepper, hot chili, raw"
         },
         {
             "name": "0.5 rød peberfrugt",
@@ -154,7 +144,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.008 kg is negligible",
-            "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_estimation_notes": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
             "co2_emission_notes": null
         },
         {
@@ -204,8 +194,18 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.008 kg is negligible",
-            "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_estimation_notes": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
             "co2_emission_notes": null
+        },
+        {
+            "name": "0.5 - 1 chilipeber",
+            "ingredient_id": null,
+            "weight_kg": 0.025,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Unable to find CO2 emission"
         },
         {
             "name": "0.5 bdt koriander",
@@ -214,7 +214,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "co2_emission_notes": "Unable to find CO2 emission"
         },
         {

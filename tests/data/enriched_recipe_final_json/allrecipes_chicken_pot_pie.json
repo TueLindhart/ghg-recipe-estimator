@@ -5,25 +5,25 @@
             "en_name": "1 tbsp olive oil",
             "weight_estimate": {
                 "ingredient": "1 tbsp olive oil",
-                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 lb chicken breast",
-            "en_name": "1 lb chicken breast",
+            "original_name": "1 lb skinless boneless chicken breast",
+            "en_name": "1 lb Skinless Boneless Chicken Breast",
             "weight_estimate": {
-                "ingredient": "1 lb chicken breast",
+                "ingredient": "1 lb Skinless Boneless Chicken Breast",
                 "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
                 "weight_in_kg": 0.453592
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 lb chicken breast' to 'chicken, breast, flesh and skin, raw' as it is the least processed option available for chicken breast.",
+                "closest_match_explanation": "Matched '1 lb Skinless Boneless Chicken Breast' to 'chicken, breast, flesh and skin, raw' as it is the least processed option available for chicken breast.",
                 "ingredient_id": "Ra00055",
                 "closest_match_name": "chicken, breast, flesh and skin, raw",
-                "ingredient": "1 lb chicken breast",
+                "ingredient": "1 lb Skinless Boneless Chicken Breast",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             },
@@ -102,36 +102,36 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 can diced tomatoes (15 ounce)",
-            "en_name": "1 Can Diced Tomatoes (15 ounces)",
+            "original_name": "1 can diced tomatoes (15 oz)",
+            "en_name": "1 can diced tomatoes (15 oz)",
             "weight_estimate": {
-                "ingredient": "1 Can Diced Tomatoes (15 ounces)",
+                "ingredient": "1 can diced tomatoes (15 oz)",
                 "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Can Diced Tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
+                "closest_match_explanation": "Matched '1 can diced tomatoes (15 oz)' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 Can Diced Tomatoes (15 ounces)",
+                "ingredient": "1 can diced tomatoes (15 oz)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             },
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 cans black beans (15 ounce)",
-            "en_name": "2 Cans Black Beans (15 ounces)",
+            "original_name": "2 cans black beans (15 oz each)",
+            "en_name": "2 Cans Black Beans (15 oz Each)",
             "weight_estimate": {
-                "ingredient": "2 Cans Black Beans (15 ounces)",
+                "ingredient": "2 Cans Black Beans (15 oz Each)",
                 "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
                 "weight_in_kg": 0.8
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 Cans Black Beans (15 ounces)' to 'black beans' as it is the least processed option available for black beans.",
+                "closest_match_explanation": "Matched '2 Cans Black Beans (15 oz Each)' to 'black beans' as it is the least processed option available for black beans.",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
-                "ingredient": "2 Cans Black Beans (15 ounces)",
+                "ingredient": "2 Cans Black Beans (15 oz Each)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             },
@@ -142,11 +142,11 @@
             "en_name": "4 tbsp chili powder",
             "weight_estimate": {
                 "ingredient": "4 tbsp chili powder",
-                "weight_calculation": "1 tablespoon = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+                "weight_calculation": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option available for chili powder, considering processing levels.",
+                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the closest match available for chili powder, considering processing levels.",
                 "ingredient_id": "Ra00484",
                 "closest_match_name": "chili sauce",
                 "ingredient": "4 tbsp chili powder",
@@ -160,7 +160,7 @@
             "en_name": "1 tbsp ground cumin",
             "weight_estimate": {
                 "ingredient": "1 tbsp ground cumin",
-                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,
@@ -171,7 +171,7 @@
             "en_name": "2 tsp granulated garlic",
             "weight_estimate": {
                 "ingredient": "2 tsp granulated garlic",
-                "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -182,7 +182,7 @@
             "en_name": "2 tsp onion powder",
             "weight_estimate": {
                 "ingredient": "2 tsp onion powder",
-                "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -193,7 +193,7 @@
             "en_name": "0.25 tsp hot smoked paprika",
             "weight_estimate": {
                 "ingredient": "0.25 tsp hot smoked paprika",
-                "weight_calculation": "1 teaspoon = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
+                "weight_calculation": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
                 "weight_in_kg": 0.00125
             },
             "co2_per_kg_db": null,
@@ -236,18 +236,18 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 package dry corn muffin mix (8.5 ounce)",
-            "en_name": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
+            "original_name": "1 package dry corn muffin mix (8.5 oz)",
+            "en_name": "1 Package Dry Corn Muffin Mix (8.5 OZ)",
             "weight_estimate": {
-                "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
+                "ingredient": "1 Package Dry Corn Muffin Mix (8.5 OZ)",
                 "weight_calculation": "1 package = 240 g, 1 * 240 g = 240 g = 0.24 kg",
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the most relevant option available for corn muffin mix, considering processing levels.",
+                "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 OZ)' to 'corn flour' as it is the closest match available for corn muffin mix, considering processing levels.",
                 "ingredient_id": "Ra00107",
                 "closest_match_name": "corn flour",
-                "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
+                "ingredient": "1 Package Dry Corn Muffin Mix (8.5 OZ)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.6
             },
@@ -258,8 +258,8 @@
             "en_name": "0.33 Cup Milk",
             "weight_estimate": {
                 "ingredient": "0.33 Cup Milk",
-                "weight_calculation": "1 cup = 240 ml, 0.33 cup = 80 g, 1 * 80 g = 80 g = 0.08 kg",
-                "weight_in_kg": 0.08
+                "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
+                "weight_in_kg": 0.0792
             },
             "co2_per_kg_db": {
                 "closest_match_explanation": "Matched '0.33 Cup Milk' to 'milk' as it is the least processed option available for milk.",

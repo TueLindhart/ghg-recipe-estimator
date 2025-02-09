@@ -7,7 +7,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -51,14 +51,14 @@
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "11 small cornstortillas",
-            "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
-            "weight_in_kg": 0.33
+            "ingredient": "10-12 small cornstortillas",
+            "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
+            "weight_in_kg": 0.36
         },
         {
             "ingredient": "1 serving of tomato salsa",
-            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
-            "weight_in_kg": 0.1
+            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+            "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 Avocado",
@@ -82,7 +82,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -91,9 +91,9 @@
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "0.75 chili pepper",
-            "weight_calculation": "1 bell pepper = 150 g, 0.75 * 150 g = 112.5 g = 0.1125 kg",
-            "weight_in_kg": 0.1125
+            "ingredient": "0.5 - 1 chili pepper",
+            "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "weight_in_kg": 0.025
         },
         {
             "ingredient": "0.5 Bdt coriander",
@@ -107,7 +107,7 @@
         },
         {
             "ingredient": "The juice of 0.5 lime",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
+            "weight_calculation": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
             "weight_in_kg": 0.035
         }
     ]

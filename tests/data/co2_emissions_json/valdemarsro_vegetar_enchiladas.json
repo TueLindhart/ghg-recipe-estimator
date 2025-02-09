@@ -73,7 +73,7 @@
             "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the most direct match for tortilla pancakes.",
+            "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the closest match for tortilla pancakes.",
             "ingredient_id": "Ra00401",
             "closest_match_name": "tortilla bread, wheat",
             "ingredient": "8 Tortilla's pancakes",

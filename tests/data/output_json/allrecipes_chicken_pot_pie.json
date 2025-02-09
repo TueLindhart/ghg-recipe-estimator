@@ -8,7 +8,7 @@
     ],
     "ingredients": [
         {
-            "name": "1 lb chicken breast",
+            "name": "1 lb skinless boneless chicken breast",
             "ingredient_id": "Ra00055",
             "weight_kg": 0.454,
             "co2_per_kg": 5.2,
@@ -18,7 +18,7 @@
             "co2_emission_notes": "Best match in CO2 database is: chicken, breast, flesh and skin, raw"
         },
         {
-            "name": "2 cans black beans (15 ounce)",
+            "name": "2 cans black beans (15 oz each)",
             "ingredient_id": "Ra00439",
             "weight_kg": 0.8,
             "co2_per_kg": 1.2,
@@ -28,7 +28,7 @@
             "co2_emission_notes": "Best match in CO2 database is: black beans"
         },
         {
-            "name": "1 can diced tomatoes (15 ounce)",
+            "name": "1 can diced tomatoes (15 oz)",
             "ingredient_id": "Ra00361",
             "weight_kg": 0.4,
             "co2_per_kg": 1.1,
@@ -38,7 +38,7 @@
             "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
         },
         {
-            "name": "1 package dry corn muffin mix (8.5 ounce)",
+            "name": "1 package dry corn muffin mix (8.5 oz)",
             "ingredient_id": "Ra00107",
             "weight_kg": 0.24,
             "co2_per_kg": 1.6,
@@ -74,7 +74,7 @@
             "co2_per_kg": 2.1,
             "co2_kg": 0.13,
             "calculation_notes": "0.06 kg * 2.1 kg CO2e/kg (DB) = 0.13 kg CO2e",
-            "weight_estimation_notes": "1 tablespoon = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
             "co2_emission_notes": "Best match in CO2 database is: chili sauce"
         },
         {
@@ -110,11 +110,11 @@
         {
             "name": "0.33 cup milk",
             "ingredient_id": "Ra00342",
-            "weight_kg": 0.08,
+            "weight_kg": 0.079,
             "co2_per_kg": 0.4,
             "co2_kg": 0.03,
             "calculation_notes": "0.08 kg * 0.4 kg CO2e/kg (DB) = 0.03 kg CO2e",
-            "weight_estimation_notes": "1 cup = 240 ml, 0.33 cup = 80 g, 1 * 80 g = 80 g = 0.08 kg",
+            "weight_estimation_notes": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
             "co2_emission_notes": "Best match in CO2 database is: milk"
         },
         {
@@ -134,7 +134,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.015 kg is negligible",
-            "weight_estimation_notes": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "co2_emission_notes": null
         },
         {
@@ -144,7 +144,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.015 kg is negligible",
-            "weight_estimation_notes": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "co2_emission_notes": null
         },
         {
@@ -154,7 +154,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "co2_emission_notes": null
         },
         {
@@ -164,7 +164,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "co2_emission_notes": null
         },
         {
@@ -174,7 +174,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.001 kg is negligible",
-            "weight_estimation_notes": "1 teaspoon = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
             "co2_emission_notes": null
         },
         {

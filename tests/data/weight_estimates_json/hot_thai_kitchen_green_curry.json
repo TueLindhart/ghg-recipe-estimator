@@ -1,57 +1,57 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "420 ml of coconut milk",
-            "weight_calculation": "420 ml = 420 g, 1 * 420 g = 420 g = 0.42 kg",
+            "ingredient": "1.75 Cups Coconut Milk",
+            "weight_calculation": "1 cup = 240 g, 1.75 * 240 g = 420 g = 0.42 kg",
             "weight_in_kg": 0.42
         },
         {
-            "ingredient": "50 g green curry paste",
-            "weight_calculation": "50 g = 50 g = 0.05 kg",
-            "weight_in_kg": 0.05
+            "ingredient": "3.5 TBSP Green Curry Paste",
+            "weight_calculation": "1 tbsp. = 15 g, 3.5 * 15 g = 52.5 g = 0.0525 kg",
+            "weight_in_kg": 0.0525
         },
         {
-            "ingredient": "240 ml of chicken broth, unsalted",
-            "weight_calculation": "240 ml = 240 g, 1 * 240 g = 240 g = 0.24 kg",
+            "ingredient": "1 Cup Chicken Stock",
+            "weight_calculation": "1 cup = 240 g, 1 * 240 g = 240 g = 0.24 kg",
             "weight_in_kg": 0.24
         },
         {
-            "ingredient": "450 g of chicken thighs, without legs and skins, cut into 1-inch pieces",
-            "weight_calculation": "450 g = 450 g = 0.45 kg",
-            "weight_in_kg": 0.45
+            "ingredient": "1 lb chicken thigh",
+            "weight_calculation": "1 lb = 454 g, 1 * 454 g = 454 g = 0.454 kg",
+            "weight_in_kg": 0.454
         },
         {
-            "ingredient": "24 g light brown sugar",
-            "weight_calculation": "24 g = 24 g = 0.024 kg",
-            "weight_in_kg": 0.024
+            "ingredient": "2 TBSP Palm Sugar",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+            "weight_in_kg": 0.03
         },
         {
-            "ingredient": "22.5-30 ml fish sauce",
-            "weight_calculation": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
-            "weight_in_kg": 0.02625
+            "ingredient": "1.5 - 2 tbsp fish sauce",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+            "weight_in_kg": 0.03
         },
         {
-            "ingredient": "4 Kaffir Lime Leaves",
-            "weight_calculation": "Amount of Kaffir Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+            "ingredient": "4 Makrut Lime Leaves",
+            "weight_calculation": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
-            "ingredient": "1 550 ml can of bamboo shoots, drained and rinsed",
-            "weight_calculation": "1 can = 550 g, 1 * 550 g = 550 g = 0.55 kg",
-            "weight_in_kg": 0.55
+            "ingredient": "1 Can Bamboo Shoots",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_in_kg": 0.4
         },
         {
-            "ingredient": "22 g Thai basil",
-            "weight_calculation": "22 g = 22 g = 0.022 kg",
-            "weight_in_kg": 0.022
+            "ingredient": "1 Cup Thai Basil Leaves",
+            "weight_calculation": "1 cup = 30 g, 1 * 30 g = 30 g = 0.030 kg",
+            "weight_in_kg": 0.03
         },
         {
-            "ingredient": "¼ red pepper, julienned",
-            "weight_calculation": "1 red pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
+            "ingredient": "0.25 Red Bell Pepper",
+            "weight_calculation": "1 red bell pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
             "weight_in_kg": 0.0375
         },
         {
-            "ingredient": "JasminRis for serving",
+            "ingredient": "Jasmine Rice for Serving",
             "weight_calculation": "Amount of ingredient not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
             "weight_in_kg": 0.5
         }

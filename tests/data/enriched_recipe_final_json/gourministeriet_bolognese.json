@@ -9,7 +9,7 @@
                 "weight_in_kg": 1.0
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 kg of minced beef' to 'beef, mince, 5-10% fat, raw' as it is the closest match based on the type of meat and processing level.",
+                "closest_match_explanation": "Matched '1 kg of minced beef' to 'beef, mince, 5-10% fat, raw' as it is the closest match for minced beef with a specific fat content, following rules 1 and 4.",
                 "ingredient_id": "Ra00016",
                 "closest_match_name": "beef, mince, 5-10% fat, raw",
                 "ingredient": "1 kg of minced beef",
@@ -27,7 +27,7 @@
                 "weight_in_kg": 0.51
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3 large onions' to 'onion, raw' as it is the least processed and a direct match for raw onions.",
+                "closest_match_explanation": "Matched '3 large onions' to 'onion, raw' as it is the least processed and a direct match for raw onions, following rules 1 and 4.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "3 large onions",
@@ -45,7 +45,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3 carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
+                "closest_match_explanation": "Matched '3 carrots' to 'carrot, raw' as it is the least processed option available for carrots, following rules 1 and 4.",
                 "ingredient_id": "Ra00257",
                 "closest_match_name": "carrot, raw",
                 "ingredient": "3 carrots",
@@ -63,7 +63,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2.5 Stems of leaf celery' to 'celery, raw' as it is the least processed option available for celery.",
+                "closest_match_explanation": "Matched '2.5 Stems of leaf celery' to 'celery, raw' as it is the least processed option available for celery, following rules 1 and 4.",
                 "ingredient_id": "Ra00153",
                 "closest_match_name": "celery, raw",
                 "ingredient": "2.5 Stems of leaf celery",
@@ -103,7 +103,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '150 g tomato concentrate' to 'tomato paste, concentrated' as it is the closest match based on processing level and type.",
+                "closest_match_explanation": "Matched '150 g tomato concentrate' to 'tomato paste, concentrated' as it is the closest match for concentrated tomato products, following rules 1 and 4.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "150 g tomato concentrate",
@@ -121,7 +121,7 @@
                 "weight_in_kg": 1.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3 DS chopped tomatoes' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
+                "closest_match_explanation": "Matched '3 DS chopped tomatoes' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes, following rules 1 and 4.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "3 DS chopped tomatoes",
@@ -139,7 +139,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 dl red wine' to 'wine, red' as it is a direct match for red wine.",
+                "closest_match_explanation": "Matched '2 dl red wine' to 'wine, red' as it is a direct match for red wine, following rules 1 and 4.",
                 "ingredient_id": "Ra00377",
                 "closest_match_name": "wine, red",
                 "ingredient": "2 dl red wine",
@@ -201,7 +201,7 @@
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 dl olive oil' to 'olive oil' as it is a direct match for olive oil.",
+                "closest_match_explanation": "Matched '0.5 dl olive oil' to 'olive oil' as it is a direct match for olive oil, following rules 1 and 4.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "0.5 dl olive oil",
@@ -219,7 +219,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the least processed and a direct match for table salt.",
+                "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the least processed and a direct match for table salt, following rules 1 and 4.",
                 "ingredient_id": "Ra00151",
                 "closest_match_name": "salt, table",
                 "ingredient": "salt",
@@ -237,7 +237,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'pepper' to 'pepper, black' as it is the most common type of pepper and a direct match.",
+                "closest_match_explanation": "Matched 'pepper' to 'pepper, black' as it is the most common type of pepper and a direct match, following rules 1 and 4.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
                 "ingredient": "pepper",
@@ -255,7 +255,7 @@
                 "weight_in_kg": 0.75
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Pasta as desired' to 'pasta, raw' as it is the least processed option available for pasta.",
+                "closest_match_explanation": "Matched 'Pasta as desired' to 'pasta, raw' as it is the least processed option available for pasta, following rules 1 and 4.",
                 "ingredient_id": "Ra00234",
                 "closest_match_name": "pasta, raw",
                 "ingredient": "Pasta as desired",
@@ -273,6 +273,6 @@
         }
     ],
     "persons": 6,
-    "instructions": " Blend onion, celery, carrots and garlic to a uniform mass. Heat the olive oil at medium heat and sweat the blended mass well for 5-10 minutes without browning. Add the chopped beef and brown it well. Let the tomato concentrate simmer for a minute. Pour the red wine over and let it boil through so that the alcohol is burned off. Add the peeled tomatoes, the spices and fresh basil. Let the bolognese simmer for a minimum of 1 hour, but preferably 2-3 hours if the time is for it. Serve with the family's favorite pasta and a good sprinkle of parmesan.",
+    "instructions": " Blend onion, celery, carrots and garlic to a uniform mass. Heat the olive oil at medium heat and sweat the blended mass well, preferably 5-10 minutes, without it browning. Then add the chopped beef and brown it well and let tomato concentrate simmer with a minute. Pour the red wine over and let it boil through so that the alcohol is burned off. Add the peeled tomatoes, spices and fresh basil and simmer for a minimum of 1 hour, but preferably 2-3 hours if the time is for it. Serve at the family's favorite pasta and a good sprinkle of parmesan.",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
 }
