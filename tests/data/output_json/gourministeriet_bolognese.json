@@ -1,0 +1,191 @@
+{
+    "total_co2_kg": 55.6,
+    "number_of_persons": 6,
+    "co2_per_person_kg": 9.3,
+    "avg_meal_emission_per_person_range_kg": [
+        1.3,
+        2.2
+    ],
+    "ingredients": [
+        {
+            "name": "1 kg hakket oksekød",
+            "ingredient_id": "Ra00016",
+            "weight_kg": 1.0,
+            "co2_per_kg": 50.6,
+            "co2_kg": 50.6,
+            "calculation_notes": "1.0 kg * 50.6 kg CO2e/kg (DB) = 50.6 kg CO2e",
+            "weight_estimation_notes": "1 kg of minced beef = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
+            "co2_emission_notes": "Best match in CO2 database is: beef, mince, 5-10% fat, raw"
+        },
+        {
+            "name": "pasta efter ønske",
+            "ingredient_id": "Ra00234",
+            "weight_kg": 0.75,
+            "co2_per_kg": 2.1,
+            "co2_kg": 1.58,
+            "calculation_notes": "0.75 kg * 2.1 kg CO2e/kg (DB) = 1.58 kg CO2e",
+            "weight_estimation_notes": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 6 servings * 0.125 kg = 0.75 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pasta, raw"
+        },
+        {
+            "name": "3 ds hakkede tomater",
+            "ingredient_id": "Ra00361",
+            "weight_kg": 1.2,
+            "co2_per_kg": 1.1,
+            "co2_kg": 1.32,
+            "calculation_notes": "1.2 kg * 1.1 kg CO2e/kg (DB) = 1.32 kg CO2e",
+            "weight_estimation_notes": "1 can = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
+            "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
+        },
+        {
+            "name": "revet parmesan",
+            "ingredient_id": "Ra00079",
+            "weight_kg": 0.12,
+            "co2_per_kg": 5.4,
+            "co2_kg": 0.65,
+            "calculation_notes": "0.12 kg * 5.4 kg CO2e/kg (DB) = 0.65 kg CO2e",
+            "weight_estimation_notes": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 6 servings * 0.02 kg = 0.12 kg",
+            "co2_emission_notes": "Best match in CO2 database is: cheese, hard, parmesan, 32 % fidm."
+        },
+        {
+            "name": "150 g tomatkoncentrat",
+            "ingredient_id": "Ra00368",
+            "weight_kg": 0.15,
+            "co2_per_kg": 2.7,
+            "co2_kg": 0.41,
+            "calculation_notes": "0.15 kg * 2.7 kg CO2e/kg (DB) = 0.41 kg CO2e",
+            "weight_estimation_notes": "150 g = 150 g = 0.15 kg",
+            "co2_emission_notes": "Best match in CO2 database is: tomato paste, concentrated"
+        },
+        {
+            "name": "2 dl rødvin",
+            "ingredient_id": "Ra00377",
+            "weight_kg": 0.2,
+            "co2_per_kg": 1.6,
+            "co2_kg": 0.32,
+            "calculation_notes": "0.2 kg * 1.6 kg CO2e/kg (DB) = 0.32 kg CO2e",
+            "weight_estimation_notes": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
+            "co2_emission_notes": "Best match in CO2 database is: wine, red"
+        },
+        {
+            "name": "0.5 dl olivenolie",
+            "ingredient_id": "Ra00349",
+            "weight_kg": 0.05,
+            "co2_per_kg": 5.9,
+            "co2_kg": 0.3,
+            "calculation_notes": "0.05 kg * 5.9 kg CO2e/kg (DB) = 0.3 kg CO2e",
+            "weight_estimation_notes": "0.5 dl = 50 g, 1 * 50 g = 50 g = 0.05 kg",
+            "co2_emission_notes": "Best match in CO2 database is: olive oil"
+        },
+        {
+            "name": "peber",
+            "ingredient_id": "Ra00302",
+            "weight_kg": 0.03,
+            "co2_per_kg": 5.2,
+            "co2_kg": 0.16,
+            "calculation_notes": "0.03 kg * 5.2 kg CO2e/kg (DB) = 0.16 kg CO2e",
+            "weight_estimation_notes": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, black"
+        },
+        {
+            "name": "3 store løg",
+            "ingredient_id": "Ra00266",
+            "weight_kg": 0.51,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.15,
+            "calculation_notes": "0.51 kg * 0.3 kg CO2e/kg (DB) = 0.15 kg CO2e",
+            "weight_estimation_notes": "1 onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
+            "co2_emission_notes": "Best match in CO2 database is: onion, raw"
+        },
+        {
+            "name": "3 gulerødder",
+            "ingredient_id": "Ra00257",
+            "weight_kg": 0.3,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.09,
+            "calculation_notes": "0.3 kg * 0.3 kg CO2e/kg (DB) = 0.09 kg CO2e",
+            "weight_estimation_notes": "1 carrot = 100 g, 3 * 100 g = 300 g = 0.3 kg",
+            "co2_emission_notes": "Best match in CO2 database is: carrot, raw"
+        },
+        {
+            "name": "2.5 stængler bladselleri",
+            "ingredient_id": "Ra00153",
+            "weight_kg": 0.1,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.04,
+            "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg (DB) = 0.04 kg CO2e",
+            "weight_estimation_notes": "1 stem of leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: celery, raw"
+        },
+        {
+            "name": "salt",
+            "ingredient_id": "Ra00151",
+            "weight_kg": 0.03,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.03 kg * 0.4 kg CO2e/kg (DB) = 0.01 kg CO2e",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Best match in CO2 database is: salt, table"
+        },
+        {
+            "name": "6 fed hvidløg",
+            "ingredient_id": null,
+            "weight_kg": 0.024,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.024 kg is negligible",
+            "weight_estimation_notes": "1 clove garlic = 4 g, 6 * 4 g = 24 g = 0.024 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "1 håndfuld friske basilikumblade",
+            "ingredient_id": null,
+            "weight_kg": 0.025,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Unable to find CO2 emission"
+        },
+        {
+            "name": "0.5 tsk rosmarin",
+            "ingredient_id": null,
+            "weight_kg": 0.003,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.003 kg is negligible",
+            "weight_estimation_notes": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "0.5 tsk timian",
+            "ingredient_id": null,
+            "weight_kg": 0.003,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.003 kg is negligible",
+            "weight_estimation_notes": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "1 tsk oregano",
+            "ingredient_id": null,
+            "weight_kg": 0.005,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.005 kg is negligible",
+            "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "1 tsk basilikum",
+            "ingredient_id": null,
+            "weight_kg": 0.005,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.005 kg is negligible",
+            "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "co2_emission_notes": null
+        }
+    ]
+}

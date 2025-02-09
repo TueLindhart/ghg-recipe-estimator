@@ -5,18 +5,16 @@ from food_co2_estimator.chains.rag_co2_estimator import (
     NEGLIGIBLE_THRESHOLD,
     get_co2_emissions,
 )
-from food_co2_estimator.chains.recipe_extractor import (
-    extract_recipe,
-)
+from food_co2_estimator.chains.recipe_extractor import extract_recipe
 from food_co2_estimator.chains.search_co2_estimator import get_co2_search_emissions
 from food_co2_estimator.chains.translator import get_translation_chain
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.language.detector import Languages, detect_language
-from food_co2_estimator.pydantic_models.recipe_extractor import (
-    EnrichedRecipe,
-)
+from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.url.url2markdown import get_markdown_from_url
-from food_co2_estimator.utils import generate_output
+from food_co2_estimator.utils.output_generator import (
+    generate_output_model,
+)
 
 
 def log_exception_message(url: str, message: str):
@@ -28,12 +26,11 @@ async def async_estimator(
     verbose: bool = False,
     negligeble_threshold: float = NEGLIGIBLE_THRESHOLD,
     logging_level=logging.INFO,
-    return_output_string: bool = True,
-):
+) -> str:
     logging.basicConfig(level=logging_level)
     text = get_markdown_from_url(url)
     if text is None:
-        return "Unable to extraxt text from provided URL"
+        return "Unable to extract text from provided URL"
 
     # Extract ingredients from text
     recipe = await extract_recipe(text=text, url=url, verbose=verbose)
@@ -46,9 +43,9 @@ async def async_estimator(
     enriched_recipe = EnrichedRecipe.from_extracted_recipe(url, recipe)
     language = detect_language(enriched_recipe)
     if language is None:
-        language_expection = f"Language is not recognized as {', '.join([lang.value for lang in Languages])}"
-        log_exception_message(url, language_expection)
-        return language_expection
+        language_exception = f"Language is not recognized as {', '.join([lang.value for lang in Languages])}"
+        log_exception_message(url, language_exception)
+        return language_exception
 
     translator = get_translation_chain()
     try:
@@ -56,17 +53,14 @@ async def async_estimator(
             {"recipe": enriched_recipe, "language": language}
         )
     except Exception as e:
-        translation_expection = "Something went wrong in translating recipies."
+        translation_exception = "Something went wrong in translating recipes."
         log_exception_message(url, str(e))
-        log_exception_message(url, translation_expection)
-        return translation_expection
+        log_exception_message(url, translation_exception)
+        return translation_exception
 
     try:
         # Estimate weights using weight estimator
-        parsed_weight_output = await get_weight_estimates(
-            verbose,
-            enriched_recipe,
-        )
+        parsed_weight_output = await get_weight_estimates(verbose, enriched_recipe)
         enriched_recipe.update_with_weight_estimates(parsed_weight_output)
     except Exception as e:
         weight_est_exception = (
@@ -77,48 +71,45 @@ async def async_estimator(
         return weight_est_exception
 
     try:
-        # Estimate the kg CO2e per kg for each weight ingredien
+        # Estimate the kg CO2e per kg for each ingredient using RAG
         parsed_rag_emissions = await get_co2_emissions(
-            verbose,
-            negligeble_threshold,
-            enriched_recipe,
+            verbose, negligeble_threshold, enriched_recipe
         )
         enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
-
     except Exception as e:
         rag_emissions_exception = (
-            "Something went wrong in estimating kg CO2e per kg for the ingredients"
+            "Something went wrong in estimating kg CO2e per kg for the ingredients."
         )
         log_exception_message(url, str(e))
         log_exception_message(url, rag_emissions_exception)
         return rag_emissions_exception
 
-    # Check if any ingredients needs CO2 search
+    # Check if any ingredients need a CO2 search estimation
     try:
         parsed_search_results = await get_co2_search_emissions(
             verbose, enriched_recipe, negligeble_threshold
         )
         enriched_recipe.update_with_co2_per_kg_search(parsed_search_results)
     except Exception as e:
-        search_emissions_expection = (
-            "Something went wrong when searching for kg CO2e per kg"
+        search_emissions_exception = (
+            "Something went wrong when searching for kg CO2e per kg."
         )
         log_exception_message(url, str(e))
-        log_exception_message(url, search_emissions_expection)
+        log_exception_message(url, search_emissions_exception)
 
-    if return_output_string:
-        return generate_output(
-            enriched_recipe=enriched_recipe,
-            negligeble_threshold=negligeble_threshold,
-            number_of_persons=enriched_recipe.persons,
-            language=language,
-        )
-    return enriched_recipe
+    # Build a Pydantic model and return its JSON representation
+    output_model = generate_output_model(
+        enriched_recipe=enriched_recipe,
+        negligeble_threshold=negligeble_threshold,
+        number_of_persons=enriched_recipe.persons,
+    )
+    return output_model.model_dump_json()
 
 
 if __name__ == "__main__":
     from time import time
 
+    # Example URLs (uncomment the one you want to test)
     # url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
     # url = "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
     # url = "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
@@ -128,8 +119,13 @@ if __name__ == "__main__":
     url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
 
     start_time = time()
-    print(
-        asyncio.run(async_estimator(url=url, verbose=True, logging_level=logging.INFO))
+    result = asyncio.run(
+        async_estimator(
+            url=url,
+            verbose=True,
+            logging_level=logging.INFO,
+        )
     )
+    print(result)
     end_time = time()
     print(f"Async time elapsed: {end_time - start_time}s")

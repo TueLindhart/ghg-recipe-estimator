@@ -204,10 +204,25 @@ def get_emission_retriever(k: int = 10, **kwargs) -> VectorStoreRetriever:
 def parse_retriever_output(documents: List[Document]):
     results = {}
     for document in documents:
-        if "Total kg CO2e/kg" in document.metadata.keys():
-            emission = document.metadata["Total kg CO2e/kg"]
-            emission_rounded = round(float(emission), 1)
-            results[document.page_content] = f"{emission_rounded} kg CO2e / kg"
+        metadata = document.metadata
+        if "Total kg CO2e/kg" in metadata:
+            # Extract and round the emission value.
+            try:
+                emission = float(metadata["Total kg CO2e/kg"])
+                emission_rounded = round(emission, 1)
+            except (ValueError, TypeError):
+                emission_rounded = None
+
+            # Extract the database id if it exists.
+            ID_Ra = metadata.get("ID_Ra", None)
+
+            # Instead of mapping to a string, we now map to a dictionary.
+            results[document.page_content] = {
+                "emission": f"{emission_rounded} kg CO2e / kg"
+                if emission_rounded is not None
+                else "none",
+                "id": ID_Ra,
+            }
     return results
 
 

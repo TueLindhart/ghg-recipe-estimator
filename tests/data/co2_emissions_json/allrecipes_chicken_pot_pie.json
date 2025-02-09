@@ -2,78 +2,105 @@
     "emissions": [
         {
             "closest_match_explanation": "Matched '1 lb chicken breast' to 'chicken, breast, flesh and skin, raw' as it is the least processed option available for chicken breast.",
+            "ingredient_id": "Ra00055",
             "closest_match_name": "chicken, breast, flesh and skin, raw",
             "ingredient": "1 lb chicken breast",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '2 medium carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
+            "closest_match_explanation": "Matched '2 Medium Carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
+            "ingredient_id": "Ra00257",
             "closest_match_name": "carrot, raw",
-            "ingredient": "2 medium carrots",
+            "ingredient": "2 Medium Carrots",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '2 stalks of celery' to 'celery, raw' as it is the least processed option available for celery.",
+            "closest_match_explanation": "Matched '2 Stalks Celery' to 'celery, raw' as it is the least processed option available for celery.",
+            "ingredient_id": "Ra00153",
             "closest_match_name": "celery, raw",
-            "ingredient": "2 stalks of celery",
+            "ingredient": "2 Stalks Celery",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 red bell pepper' to 'pepper, sweet, red, raw' as it is the least processed option available for red bell pepper.",
+            "closest_match_explanation": "Matched '1 Red Bell Pepper' to 'pepper, sweet, red, raw' as it is the least processed option available for red bell pepper.",
+            "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
-            "ingredient": "1 red bell pepper",
+            "ingredient": "1 Red Bell Pepper",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 bunch scallions' to 'onions, spring, raw' as it is the least processed option available for scallions.",
+            "closest_match_explanation": "Matched '1 Bunch Scallions' to 'onions, spring, raw' as it is the least processed option available for scallions.",
+            "ingredient_id": "Ra00267",
             "closest_match_name": "onions, spring, raw",
-            "ingredient": "1 bunch scallions",
+            "ingredient": "1 Bunch Scallions",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can diced tomatoes (15 oz)' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant canned option for tomatoes.",
+            "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "1 can diced tomatoes (15 oz)",
+            "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '2 cans black beans (15 oz each)' to 'black beans' as it is the least processed option available for black beans.",
+            "closest_match_explanation": "Matched '2 Cans Black Beans (15 ounces)' to 'black beans' as it is the most relevant option for canned black beans.",
+            "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
-            "ingredient": "2 cans black beans (15 oz each)",
+            "ingredient": "2 Cans Black Beans (15 ounces)",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the closest match available for chili powder, considering processing levels.",
+            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option for chili powder.",
+            "ingredient_id": "Ra00484",
             "closest_match_name": "chili sauce",
             "ingredient": "4 tbsp chili powder",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 oz)' to 'corn flour' as it is the least processed option available for corn products.",
-            "closest_match_name": "corn flour",
-            "ingredient": "1 package dry corn muffin mix (8.5 oz)",
-            "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.6
-        },
-        {
-            "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the least processed option available for milk.",
-            "closest_match_name": "milk",
-            "ingredient": "0.33 cup milk",
+            "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the most relevant option for table salt.",
+            "ingredient_id": "Ra00151",
+            "closest_match_name": "salt, table",
+            "ingredient": "salt",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the least processed option available for eggs.",
+            "closest_match_explanation": "Matched 'Black Pepper' to 'pepper, black' as it is the most relevant option for black pepper.",
+            "ingredient_id": "Ra00302",
+            "closest_match_name": "pepper, black",
+            "ingredient": "Black Pepper",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 5.2
+        },
+        {
+            "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the most relevant option for corn muffin mix.",
+            "ingredient_id": "Ra00107",
+            "closest_match_name": "corn flour",
+            "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 1.6
+        },
+        {
+            "closest_match_explanation": "Matched '0.33 Cup Milk' to 'milk' as it is the most relevant option for milk.",
+            "ingredient_id": "Ra00342",
+            "closest_match_name": "milk",
+            "ingredient": "0.33 Cup Milk",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 0.4
+        },
+        {
+            "closest_match_explanation": "Matched '1 Egg' to 'eggs' as it is the most relevant option for eggs.",
+            "ingredient_id": "Ra00108",
             "closest_match_name": "eggs",
-            "ingredient": "1 egg",
+            "ingredient": "1 Egg",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.0
         }

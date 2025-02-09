@@ -101,6 +101,7 @@ def test_update_with_co2_per_kg_db(recipe: EnrichedRecipe):
                 closest_match_explanation="Matches 'tomatoes, canned' best.",
                 closest_match_name="tomatoes, canned",
                 ingredient="1 can of tomatoes",
+                ingredient_id="123",
                 co2_per_kg=2.5,
                 unit="kg",
             )

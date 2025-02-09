@@ -1,0 +1,191 @@
+{
+    "total_co2_kg": 4.9,
+    "number_of_persons": 6,
+    "co2_per_person_kg": 0.8,
+    "avg_meal_emission_per_person_range_kg": [
+        1.3,
+        2.2
+    ],
+    "ingredients": [
+        {
+            "name": "1 lb chicken breast",
+            "ingredient_id": "Ra00055",
+            "weight_kg": 0.454,
+            "co2_per_kg": 5.2,
+            "co2_kg": 2.36,
+            "calculation_notes": "0.45 kg * 5.2 kg CO2e/kg (DB) = 2.36 kg CO2e",
+            "weight_estimation_notes": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
+            "co2_emission_notes": "Best match in CO2 database is: chicken, breast, flesh and skin, raw"
+        },
+        {
+            "name": "2 cans black beans (15 ounce)",
+            "ingredient_id": "Ra00439",
+            "weight_kg": 0.85,
+            "co2_per_kg": 1.2,
+            "co2_kg": 1.02,
+            "calculation_notes": "0.85 kg * 1.2 kg CO2e/kg (DB) = 1.02 kg CO2e",
+            "weight_estimation_notes": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
+            "co2_emission_notes": "Best match in CO2 database is: black beans"
+        },
+        {
+            "name": "1 can diced tomatoes with green chiles (15 ounce)",
+            "ingredient_id": "Ra00361",
+            "weight_kg": 0.425,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.47,
+            "calculation_notes": "0.42 kg * 1.1 kg CO2e/kg (DB) = 0.47 kg CO2e",
+            "weight_estimation_notes": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
+            "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
+        },
+        {
+            "name": "1 package dry corn muffin mix (8.5 ounce)",
+            "ingredient_id": "Ra00107",
+            "weight_kg": 0.24,
+            "co2_per_kg": 1.6,
+            "co2_kg": 0.38,
+            "calculation_notes": "0.24 kg * 1.6 kg CO2e/kg (DB) = 0.38 kg CO2e",
+            "weight_estimation_notes": "1 package = 240 g, 1 * 240 g = 240 g = 0.24 kg",
+            "co2_emission_notes": "Best match in CO2 database is: corn flour"
+        },
+        {
+            "name": "1 red bell pepper",
+            "ingredient_id": "Ra00001",
+            "weight_kg": 0.15,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.17,
+            "calculation_notes": "0.15 kg * 1.1 kg CO2e/kg (DB) = 0.17 kg CO2e",
+            "weight_estimation_notes": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, sweet, red, raw"
+        },
+        {
+            "name": "black pepper",
+            "ingredient_id": "Ra00302",
+            "weight_kg": 0.03,
+            "co2_per_kg": 5.2,
+            "co2_kg": 0.16,
+            "calculation_notes": "0.03 kg * 5.2 kg CO2e/kg (DB) = 0.16 kg CO2e",
+            "weight_estimation_notes": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, black"
+        },
+        {
+            "name": "4 tbsp chili powder",
+            "ingredient_id": "Ra00484",
+            "weight_kg": 0.06,
+            "co2_per_kg": 2.1,
+            "co2_kg": 0.13,
+            "calculation_notes": "0.06 kg * 2.1 kg CO2e/kg (DB) = 0.13 kg CO2e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "co2_emission_notes": "Best match in CO2 database is: chili sauce"
+        },
+        {
+            "name": "1 bunch scallions",
+            "ingredient_id": "Ra00267",
+            "weight_kg": 0.1,
+            "co2_per_kg": 0.8,
+            "co2_kg": 0.08,
+            "calculation_notes": "0.1 kg * 0.8 kg CO2e/kg (DB) = 0.08 kg CO2e",
+            "weight_estimation_notes": "1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: onions, spring, raw"
+        },
+        {
+            "name": "2 medium carrots",
+            "ingredient_id": "Ra00257",
+            "weight_kg": 0.2,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.06,
+            "calculation_notes": "0.2 kg * 0.3 kg CO2e/kg (DB) = 0.06 kg CO2e",
+            "weight_estimation_notes": "1 medium carrot = 100 g, 2 * 100 g = 200 g = 0.2 kg",
+            "co2_emission_notes": "Best match in CO2 database is: carrot, raw"
+        },
+        {
+            "name": "1 egg",
+            "ingredient_id": "Ra00108",
+            "weight_kg": 0.05,
+            "co2_per_kg": 1.0,
+            "co2_kg": 0.05,
+            "calculation_notes": "0.05 kg * 1.0 kg CO2e/kg (DB) = 0.05 kg CO2e",
+            "weight_estimation_notes": "1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg",
+            "co2_emission_notes": "Best match in CO2 database is: eggs"
+        },
+        {
+            "name": "2 stalks celery",
+            "ingredient_id": "Ra00153",
+            "weight_kg": 0.08,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.03,
+            "calculation_notes": "0.08 kg * 0.4 kg CO2e/kg (DB) = 0.03 kg CO2e",
+            "weight_estimation_notes": "1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.08 kg",
+            "co2_emission_notes": "Best match in CO2 database is: celery, raw"
+        },
+        {
+            "name": "0.33 cup milk",
+            "ingredient_id": "Ra00342",
+            "weight_kg": 0.079,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.03,
+            "calculation_notes": "0.08 kg * 0.4 kg CO2e/kg (DB) = 0.03 kg CO2e",
+            "weight_estimation_notes": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
+            "co2_emission_notes": "Best match in CO2 database is: milk"
+        },
+        {
+            "name": "salt",
+            "ingredient_id": "Ra00151",
+            "weight_kg": 0.03,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.03 kg * 0.4 kg CO2e/kg (DB) = 0.01 kg CO2e",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Best match in CO2 database is: salt, table"
+        },
+        {
+            "name": "1 tbsp olive oil",
+            "ingredient_id": null,
+            "weight_kg": 0.015,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.015 kg is negligible",
+            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "1 tbsp ground cumin",
+            "ingredient_id": null,
+            "weight_kg": 0.015,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.015 kg is negligible",
+            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "2 tsp granulated garlic",
+            "ingredient_id": null,
+            "weight_kg": 0.01,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.01 kg is negligible",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "2 tsp onion powder",
+            "ingredient_id": null,
+            "weight_kg": 0.01,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.01 kg is negligible",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "0.25 tsp hot smoked paprika",
+            "ingredient_id": null,
+            "weight_kg": 0.001,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.001 kg is negligible",
+            "weight_estimation_notes": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
+            "co2_emission_notes": null
+        }
+    ]
+}

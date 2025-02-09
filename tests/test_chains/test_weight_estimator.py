@@ -35,7 +35,7 @@ async def test_weight_estimator_chain(
         weight_estimates.weight_estimates, expected_weight_estimates.weight_estimates
     ):
         assert (
-            ingredient.ingredient == expected_ingredient.ingredient
+            ingredient.ingredient.strip() == expected_ingredient.ingredient.strip()
         ), f"Ingredient mismatch: {ingredient.ingredient} != {expected_ingredient.ingredient}"
         estimated_weight = ingredient.weight_in_kg
         reference_weight = expected_ingredient.weight_in_kg

@@ -2,7 +2,7 @@
     "ingredients": [
         {
             "original_name": "1 kg hakket oksekød",
-            "en_name": "1 kg minced beef",
+            "en_name": "1 kg of minced beef",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -23,21 +23,21 @@
         },
         {
             "original_name": "2.5 stængler bladselleri",
-            "en_name": "2.5 stalks celery",
+            "en_name": "2.5 Stems of leaf celery",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
             "original_name": "6 fed hvidløg",
-            "en_name": "6 cloves garlic",
+            "en_name": "6 cloves of garlic",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
             "original_name": "1 håndfuld friske basilikumblade",
-            "en_name": "1 handful fresh basil leaves",
+            "en_name": "1 handful of fresh basil leaves",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -51,7 +51,7 @@
         },
         {
             "original_name": "3 ds hakkede tomater",
-            "en_name": "3 tins chopped tomatoes",
+            "en_name": "3 DS chopped tomatoes",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -114,7 +114,7 @@
         },
         {
             "original_name": "pasta efter ønske",
-            "en_name": "pasta as desired",
+            "en_name": "Pasta as desired",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -128,6 +128,6 @@
         }
     ],
     "persons": 6,
-    "instructions": "Blend the onion, celery, carrots and garlic until smooth. Heat the olive oil over medium heat and sauté the blended mass well, preferably for 5-10 minutes, without browning. Then add the minced beef and brown it well, and let the tomato concentrate sauté for a minute. Pour in the red wine and let it cook through so that the alcohol burns off. Add the peeled tomatoes, spices and fresh basil and let the bolognese simmer for at least 1 hour, but preferably 2-3 hours if time allows. Serve with the family's favorite pasta and a good sprinkle of parmesan.",
+    "instructions": " Blend onion, celery, carrots and garlic to a uniform mass. Heat the olive oil at medium heat and sweat the blended mass well for 5-10 minutes without browning. Add the chopped beef and brown it well. Let the tomato concentrate simmer for a minute. Pour the red wine over and let it boil through so that the alcohol is burned off. Add the peeled tomatoes, spices and fresh basil, and simmer for a minimum of 1 hour, but preferably 2-3 hours. Serve with the family's favorite pasta and a good sprinkle of parmesan.",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
 }

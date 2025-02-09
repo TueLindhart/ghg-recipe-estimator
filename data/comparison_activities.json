@@ -1,0 +1,98 @@
+[
+    {
+        "id": "guid-1234",
+        "name": "Flyvning fra Paris til Berlin",
+        "description": "mængden af CO2 produceret ved at flyve på økonomiklasse fra Paris til Berlin.",
+        "value": 193,
+        "unit": "kg",
+        "measure": "CO2"
+    },
+    {
+        "id": "guid-5678",
+        "name": "Kørsel fra NYC til Boston",
+        "description": "CO₂ produceret ved at køre i en mellemstor bil fra NYC til Boston.",
+        "value": 150,
+        "unit": "kg",
+        "measure": "CO2"
+    },
+    {
+        "id": "guid-9101",
+        "name": "Returrejse med fly fra New York til London",
+        "description": "CO₂-udledning fra en økonomiklasse returrejse med fly mellem New York og London.",
+        "value": 986,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-1121",
+        "name": "Årligt elforbrug for en gennemsnitlig amerikansk husstand",
+        "description": "CO₂-udledning fra det gennemsnitlige årlige elforbrug for en amerikansk husstand.",
+        "value": 6570,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-3141",
+        "name": "Produktion af 1 kilogram oksekød",
+        "description": "CO₂-udledning forbundet med produktionen af 1 kilogram oksekød.",
+        "value": 60,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-5161",
+        "name": "Opladning af en smartphone i et år",
+        "description": "CO₂-udledning fra daglig opladning af en smartphone i et år.",
+        "value": 12,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-7181",
+        "name": "Kørsel 100 kilometer i en benzinbil",
+        "description": "CO₂-udledning fra kørsel 100 kilometer i en gennemsnitlig benzinbil.",
+        "value": 19,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-9202",
+        "name": "En vask i en vaskemaskine",
+        "description": "CO₂-udledning fra at vaske en vask ved 40°C.",
+        "value": 0.6,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-1222",
+        "name": "Brug af en 10-watt LED-pære i 5 timer dagligt i et år",
+        "description": "CO₂-udledning fra brug af en 10-watt LED-pære i 5 timer dagligt over et år.",
+        "value": 7.3,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-3242",
+        "name": "Produktion af 1 kilogram ost",
+        "description": "CO₂-udledning forbundet med produktionen af 1 kilogram ost.",
+        "value": 13.5,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-5262",
+        "name": "Streaming af 1 time video i høj opløsning",
+        "description": "CO₂-udledning fra streaming af 1 time video i høj opløsning.",
+        "value": 0.36,
+        "unit": "kg",
+        "measure": "CO₂"
+    },
+    {
+        "id": "guid-7282",
+        "name": "Fremstilling af en ny bærbar computer",
+        "description": "CO₂-udledning fra produktionen af en ny bærbar computer.",
+        "value": 200,
+        "unit": "kg",
+        "measure": "CO₂"
+    }
+]

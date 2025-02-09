@@ -1,0 +1,241 @@
+/* Main Stylesheet */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; 
+}
+/* Top bar: input area */
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+#urlInput {
+  width: 600px;
+  border: 2px solid darkgreen;
+  border-radius: 0;
+  resize: none;
+}
+
+#calculateButton {
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#calculateButton:hover {
+  background-color: #006400;
+}
+
+#statusDiv {
+  margin-left: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Main container for the new layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: calc(100vh - 50px); /* adjust if necessary */
+  padding: 20px;
+}
+
+/* Top section with summary and comparisons */
+.top-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Summary panel on the left */
+.summary {
+  flex: 1;
+  min-width: 280px;
+  padding: 15px;
+  background: #fff;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Summary grid styling */
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Summary box styling */
+.summary-box {
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Ensure labels and values are distinct */
+.summary-box p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.summary-box span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Comparisons panel on the right */
+.comparison {
+  flex: 1;
+  min-width: 280px;
+  padding: 15px;
+  background: #fff;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+}
+
+/* Container for round comparison cards */
+.comparison-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Style for each comparison card */
+.comparison-card {
+  width: 120px;
+  height: 120px;
+  border: 2px solid darkgreen;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Bottom section: Ingredients */
+.bottom-section {
+  padding: 15px;
+  background: #fff;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  flex-grow: 1; /* Allow the section to grow and fill available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 40vh;
+}
+
+/* Bottom section: Ingredients */
+.chart-section {
+  padding: 15px;
+  background: #fff;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  flex-grow: 1; /* Allow the section to grow and fill available space */
+  overflow-y: scroll; /* Disable vertical scrolling */
+  height: 60vh; /* Adjust this value as needed */
+}
+
+.chart-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
+
+
+/* Grid for ingredient cards */
+.ingredient-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual ingredient card styling */
+.ingredient-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(33% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Ingredient card image styling */
+.ingredient-card img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ingredient-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .ingredient-card {
+    width: 100%;
+  }
+}
+
+.bottom-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.chart-pane {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  background: #fff;
+  border: 2px solid darkgreen;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chart-pane.expanded {
+  width: 400px;
+}
+
+#toggleChart {
+  display: block;
+  margin-bottom: 10px;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#toggleChart:hover {
+  background-color: #006400;
+}

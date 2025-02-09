@@ -1,8 +1,8 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "1 kg minced beef",
-            "weight_calculation": "1 kg = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
+            "ingredient": "1 kg of minced beef",
+            "weight_calculation": "1 kg of minced beef = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
             "weight_in_kg": 1.0
         },
         {
@@ -16,17 +16,17 @@
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "2.5 stalks celery",
-            "weight_calculation": "1 stalk celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
+            "ingredient": "2.5 Stems of leaf celery",
+            "weight_calculation": "1 stem of leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "6 cloves garlic",
+            "ingredient": "6 cloves of garlic",
             "weight_calculation": "1 clove garlic = 4 g, 6 * 4 g = 24 g = 0.024 kg",
             "weight_in_kg": 0.024
         },
         {
-            "ingredient": "1 handful fresh basil leaves",
+            "ingredient": "1 handful of fresh basil leaves",
             "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
@@ -36,8 +36,8 @@
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "3 tins chopped tomatoes",
-            "weight_calculation": "1 tin = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
+            "ingredient": "3 DS chopped tomatoes",
+            "weight_calculation": "1 can = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
             "weight_in_kg": 1.2
         },
         {
@@ -81,14 +81,14 @@
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "pasta as desired",
+            "ingredient": "Pasta as desired",
             "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 6 servings * 0.125 kg = 0.75 kg",
             "weight_in_kg": 0.75
         },
         {
             "ingredient": "grated parmesan",
-            "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.025 kg, 6 servings * 0.025 kg = 0.15 kg",
-            "weight_in_kg": 0.15
+            "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 6 servings * 0.02 kg = 0.12 kg",
+            "weight_in_kg": 0.12
         }
     ]
 }

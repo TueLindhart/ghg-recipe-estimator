@@ -21,7 +21,7 @@ def load_file(file_name: str, file_type: str) -> str:
         return file.read()
 
 
-async def process_and_store_recipe(file_name: str, url: str):
+async def process_and_store_recipe(file_name: str, url: str) -> EnrichedRecipe:
     # Read the content from the markdown file
     text = load_file(file_name, "md")
 
@@ -40,7 +40,7 @@ async def process_and_store_recipe(file_name: str, url: str):
 
     # Translate the recipe if needed
     translator = get_translation_chain()
-    enriched_recipe = await translator.ainvoke(
+    enriched_recipe: EnrichedRecipe = await translator.ainvoke(
         {"recipe": enriched_recipe, "language": language}
     )
     # Store the enriched recipe with translations as JSON
@@ -48,6 +48,7 @@ async def process_and_store_recipe(file_name: str, url: str):
     with open(enriched_output_filepath, "w", encoding="utf-8") as file:
         json.dump(enriched_recipe.model_dump(), file, ensure_ascii=False, indent=4)
     print(f"Stored enriched JSON output for {url} in {enriched_output_filepath}")
+    return enriched_recipe
 
 
 async def main():

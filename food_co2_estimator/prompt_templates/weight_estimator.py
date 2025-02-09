@@ -146,13 +146,14 @@ The following general weights can be used for estimation:
 **Instructions:**
 1. If ingredient has amount and weight specified, convert the weight to kilogram/kg by following the template for 'weight_calculation':
     '{weight_conversion_template}'.
-1. If an ingredient is not found in the list of general weights, try to give your best estimate
+2. If an ingredient is not found in the list of general weights, try to give your best estimate
     of the weight in kilogram/kg of the ingredient and follow the template for 'weight_calculation':
     '{ingredient_not_found_template}'.
-2. If the amount of the ingredient is unspecific, then provide an estimate of the weight in kg given the number of servings and follow the template for 'weight_calculation':
+3. If the amount of the ingredient is unspecific, then provide an estimate of the weight in kg given the number of servings and follow the template for 'weight_calculation':
     '{amount_not_specified_template}'.
     - Example: 'Serving with rice' depends on the number of servings the ingredient list implies.
-3. Your estimate must always be a python float. Therefore, you must not provide any intervals.
+4. Your estimate must always be a python float. Therefore, you must not provide any intervals.
+5. **IMPORTANT:** Do not alter the name of the ingredient in your response. The ingredient name must be exactly the same as provided in the input.
 
 Input is given after "Ingredients:"
 

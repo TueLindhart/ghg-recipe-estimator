@@ -207,8 +207,12 @@ def test_integrated_cleaning(input_string: str, expected: str):
 def test_parse_retriever_output():
     # Arrange
     mock_documents = [
-        Document(page_content="beef", metadata={"Total kg CO2e/kg": 60.0}),
-        Document(page_content="chicken", metadata={"Total kg CO2e/kg": 6.1}),
+        Document(
+            page_content="beef", metadata={"Total kg CO2e/kg": 60.0, "ID_Ra": "123"}
+        ),
+        Document(
+            page_content="chicken", metadata={"Total kg CO2e/kg": 6.1, "ID_Ra": "456"}
+        ),
         Document(page_content="no_emission", metadata={}),
     ]
 
@@ -216,7 +220,10 @@ def test_parse_retriever_output():
     result = parse_retriever_output(mock_documents)
 
     # Assert
-    expected = {"beef": "60.0 kg CO2e / kg", "chicken": "6.1 kg CO2e / kg"}
+    expected = {
+        "beef": {"emission": "60.0 kg CO2e / kg", "id": "123"},
+        "chicken": {"emission": "6.1 kg CO2e / kg", "id": "456"},
+    }
     assert result == expected
 
 

@@ -1,74 +1,116 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions.",
+            "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions, following rule 4.",
+            "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 small onion",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '0.5 red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for a raw red pepper.",
+            "closest_match_explanation": "Matched '0.5 Red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for raw red pepper, following rule 1.",
+            "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
-            "ingredient": "0.5 red pepper",
+            "ingredient": "0.5 Red pepper",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '250 g beef' to 'average beef' as it is the most general and relevant option for beef.",
+            "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil specified, following rule 8.",
+            "ingredient_id": "Ra00348",
+            "closest_match_name": "oil for frying",
+            "ingredient": "Oil for frying",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 2.8
+        },
+        {
+            "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the most general and representative option for beef, following rule 2.",
+            "ingredient_id": "Ra00503",
             "closest_match_name": "average beef",
-            "ingredient": "250 g beef",
+            "ingredient": "250 g of beef",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 74.8
         },
         {
-            "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+            "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans, following rule 8.",
+            "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
-            "ingredient": "1 can kidney beans",
+            "ingredient": "1 can of kidney beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl beef stock' to 'bouillon, beef, prepared' as it is the least processed option available for beef stock.",
-            "closest_match_name": "bouillon, beef, prepared",
-            "ingredient": "2.5 dl beef stock",
+            "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available, following rule 4.",
+            "ingredient_id": "Ra00368",
+            "closest_match_name": "tomato paste, concentrated",
+            "ingredient": "2 tablespoons tomato puree",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.6
+            "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched '10-12 small corn tortillas' to 'tortilla bread, wheat' as it is the most relevant option for tortillas.",
+            "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef-based products, following rule 2.",
+            "ingredient_id": "Ra00503",
+            "closest_match_name": "average beef",
+            "ingredient": "2.5 dl beef fund",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 74.8
+        },
+        {
+            "closest_match_explanation": "Matched '11 small cornstortillas' to 'tortilla bread, wheat' as it is the closest match for tortillas, following rule 2.",
+            "ingredient_id": "Ra00401",
             "closest_match_name": "tortilla bread, wheat",
-            "ingredient": "10-12 small corn tortillas",
+            "ingredient": "11 small cornstortillas",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '1 portion of tomato salsa' to 'salsa, hot' as it is the most relevant option for salsa.",
+            "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the most appropriate match for a tomato-based salsa, following rule 1.",
+            "ingredient_id": "Ra00400",
             "closest_match_name": "salsa, hot",
-            "ingredient": "1 portion of tomato salsa",
+            "ingredient": "1 serving of tomato salsa",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "Matched '1 avocado' to 'avocado, raw' as it is the exact match for a raw avocado.",
+            "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado, following rule 8.",
+            "ingredient_id": "Ra00317",
             "closest_match_name": "avocado, raw",
-            "ingredient": "1 avocado",
+            "ingredient": "1 Avocado",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '0.5 red onion' to 'red onion' as it is the most appropriate match for a raw red onion.",
+            "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion, following rule 8.",
+            "ingredient_id": "Ra00485",
             "closest_match_name": "red onion",
-            "ingredient": "0.5 red onion",
+            "ingredient": "0.5 Red onion",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '300 g tomatoes' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+            "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most appropriate match for processed tomatoes, following rule 4.",
+            "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "300 g tomatoes",
+            "ingredient": "300 g of tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
+        },
+        {
+            "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil, following rule 8.",
+            "ingredient_id": "Ra00349",
+            "closest_match_name": "olive oil",
+            "ingredient": "2 tablespoons olive oil",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 5.9
+        },
+        {
+            "closest_match_explanation": "Matched 'The juice of 0.5 lime' to 'lime, raw' as it is the most appropriate match for lime juice, following rule 1.",
+            "ingredient_id": "Ra00332",
+            "closest_match_name": "lime, raw",
+            "ingredient": "The juice of 0.5 lime",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 0.6
         }
     ]
 }

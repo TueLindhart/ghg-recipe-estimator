@@ -39,21 +39,30 @@ class EnrichedIngredient(BaseModel):
         return [cls(original_name=ingredient) for ingredient in ingredients]
 
     def is_name_match(self, name: str) -> bool:
-        return self.en_name == name
+        return self.en_name is not None and self.en_name.strip() == name.strip()
 
     def set_english_name(self, english_name: str):
-        self.en_name = english_name
+        self.en_name = english_name.strip()
 
     def set_weight_estimate(self, weight_estimate: WeightEstimate):
-        if self.en_name == weight_estimate.ingredient:
+        if (
+            self.en_name is not None
+            and self.en_name.strip() == weight_estimate.ingredient.strip()
+        ):
             self.weight_estimate = weight_estimate
 
     def set_co2_per_kg_db(self, co2_per_kg: CO2perKg):
-        if self.en_name == co2_per_kg.ingredient:
+        if (
+            self.en_name is not None
+            and self.en_name.strip() == co2_per_kg.ingredient.strip()
+        ):
             self.co2_per_kg_db = co2_per_kg
 
     def set_co2_per_kg_search(self, co2_per_kg_search: CO2SearchResult):
-        if self.en_name == co2_per_kg_search.ingredient:
+        if (
+            self.en_name is not None
+            and self.en_name.strip() == co2_per_kg_search.ingredient.strip()
+        ):
             self.co2_per_kg_search = co2_per_kg_search
 
 
@@ -85,7 +94,10 @@ class EnrichedRecipe(ExtractedRecipe):
     ) -> list[EnrichedIngredient]:
         matched_ingredients = []
         for ingredient in self.ingredients:
-            if ingredient.en_name == obj.ingredient:
+            if (
+                ingredient.en_name is not None
+                and ingredient.en_name.strip() == obj.ingredient.strip()
+            ):
                 matched_ingredients.append(ingredient)
         return matched_ingredients
 

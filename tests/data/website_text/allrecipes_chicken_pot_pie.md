@@ -181,7 +181,6 @@ This was a great use up food in the pantry dish! Easy, and tasty. I didn't have 
 of 07
 
 Photo by 
-fabeveryday
 
 12/03/2020
 This was really easy and really delicious! The only change I made was to reduce the amount of chili powder so it wasn’t too spicy for my kids. 

@@ -1,0 +1,151 @@
+{
+    "total_co2_kg": 2.8,
+    "number_of_persons": 2,
+    "co2_per_person_kg": 1.4,
+    "avg_meal_emission_per_person_range_kg": [
+        1.3,
+        2.2
+    ],
+    "ingredients": [
+        {
+            "name": "1 bdt grønne asparges",
+            "ingredient_id": "Ra00163",
+            "weight_kg": 0.5,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.55,
+            "calculation_notes": "0.5 kg * 1.1 kg CO2e/kg (DB) = 0.55 kg CO2e",
+            "weight_estimation_notes": "1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "co2_emission_notes": "Best match in CO2 database is: asparagus, green, raw"
+        },
+        {
+            "name": "1 håndfuld mozzarella",
+            "ingredient_id": "Ra00080",
+            "weight_kg": 0.1,
+            "co2_per_kg": 5.4,
+            "co2_kg": 0.54,
+            "calculation_notes": "0.1 kg * 5.4 kg CO2e/kg (DB) = 0.54 kg CO2e",
+            "weight_estimation_notes": "1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: cheese, semihard, mozzarella, 30 % fidm."
+        },
+        {
+            "name": "250 g frisk pasta",
+            "ingredient_id": "Ra00234",
+            "weight_kg": 0.25,
+            "co2_per_kg": 2.1,
+            "co2_kg": 0.53,
+            "calculation_notes": "0.25 kg * 2.1 kg CO2e/kg (DB) = 0.53 kg CO2e",
+            "weight_estimation_notes": "250 g = 250 g = 0.25 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pasta, raw"
+        },
+        {
+            "name": "6 spsk revet parmesan",
+            "ingredient_id": "Ra00079",
+            "weight_kg": 0.09,
+            "co2_per_kg": 5.4,
+            "co2_kg": 0.49,
+            "calculation_notes": "0.09 kg * 5.4 kg CO2e/kg (DB) = 0.49 kg CO2e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+            "co2_emission_notes": "Best match in CO2 database is: cheese, hard, parmesan, 32 % fidm."
+        },
+        {
+            "name": "2 dl fløde",
+            "ingredient_id": "Ra00345",
+            "weight_kg": 0.2,
+            "co2_per_kg": 1.7,
+            "co2_kg": 0.34,
+            "calculation_notes": "0.2 kg * 1.7 kg CO2e/kg (DB) = 0.34 kg CO2e",
+            "weight_estimation_notes": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
+            "co2_emission_notes": "Best match in CO2 database is: cream, whipping, 38 % fat"
+        },
+        {
+            "name": "1 squash",
+            "ingredient_id": "Ra00003",
+            "weight_kg": 0.4,
+            "co2_per_kg": 0.8,
+            "co2_kg": 0.32,
+            "calculation_notes": "0.4 kg * 0.8 kg CO2e/kg (DB) = 0.32 kg CO2e",
+            "weight_estimation_notes": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+            "co2_emission_notes": "Best match in CO2 database is: squash, raw"
+        },
+        {
+            "name": "1 løg",
+            "ingredient_id": "Ra00266",
+            "weight_kg": 0.17,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.05,
+            "calculation_notes": "0.17 kg * 0.3 kg CO2e/kg (DB) = 0.05 kg CO2e",
+            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "co2_emission_notes": "Best match in CO2 database is: onion, raw"
+        },
+        {
+            "name": "2 fed hvidløg",
+            "ingredient_id": null,
+            "weight_kg": 0.008,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.008 kg is negligible",
+            "weight_estimation_notes": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "1 håndfuld frisk basilikum",
+            "ingredient_id": null,
+            "weight_kg": 0.025,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Unable to find CO2 emission"
+        },
+        {
+            "name": "1 dl vand",
+            "ingredient_id": "Ra00068",
+            "weight_kg": 0.1,
+            "co2_per_kg": 0.0,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: water, tap, drinking, average values"
+        },
+        {
+            "name": "1 grøntsags bouillonterning",
+            "ingredient_id": null,
+            "weight_kg": 0.004,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.004 kg is negligible",
+            "weight_estimation_notes": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "salt",
+            "ingredient_id": null,
+            "weight_kg": 0.01,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.01 kg is negligible",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "peber",
+            "ingredient_id": null,
+            "weight_kg": 0.01,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.01 kg is negligible",
+            "weight_estimation_notes": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "olie",
+            "ingredient_id": null,
+            "weight_kg": 0.02,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.02 kg is negligible",
+            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
+            "co2_emission_notes": null
+        }
+    ]
+}

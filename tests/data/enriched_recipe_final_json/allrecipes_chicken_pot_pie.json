@@ -21,6 +21,7 @@
             },
             "co2_per_kg_db": {
                 "closest_match_explanation": "Matched '1 lb chicken breast' to 'chicken, breast, flesh and skin, raw' as it is the least processed option available for chicken breast.",
+                "ingredient_id": "Ra00055",
                 "closest_match_name": "chicken, breast, flesh and skin, raw",
                 "ingredient": "1 lb chicken breast",
                 "unit": "kg CO2e per kg",
@@ -30,16 +31,17 @@
         },
         {
             "original_name": "2 medium carrots",
-            "en_name": "2 medium carrots",
+            "en_name": "2 Medium Carrots",
             "weight_estimate": {
-                "ingredient": "2 medium carrots",
+                "ingredient": "2 Medium Carrots",
                 "weight_calculation": "1 medium carrot = 100 g, 2 * 100 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 medium carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
+                "closest_match_explanation": "Matched '2 Medium Carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
+                "ingredient_id": "Ra00257",
                 "closest_match_name": "carrot, raw",
-                "ingredient": "2 medium carrots",
+                "ingredient": "2 Medium Carrots",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             },
@@ -47,16 +49,17 @@
         },
         {
             "original_name": "2 stalks celery",
-            "en_name": "2 stalks of celery",
+            "en_name": "2 Stalks Celery",
             "weight_estimate": {
-                "ingredient": "2 stalks of celery",
-                "weight_calculation": "1 stalk of celery = 40 g, 2 * 40 g = 80 g = 0.08 kg",
+                "ingredient": "2 Stalks Celery",
+                "weight_calculation": "1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.08 kg",
                 "weight_in_kg": 0.08
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 stalks of celery' to 'celery, raw' as it is the least processed option available for celery.",
+                "closest_match_explanation": "Matched '2 Stalks Celery' to 'celery, raw' as it is the least processed option available for celery.",
+                "ingredient_id": "Ra00153",
                 "closest_match_name": "celery, raw",
-                "ingredient": "2 stalks of celery",
+                "ingredient": "2 Stalks Celery",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             },
@@ -64,16 +67,17 @@
         },
         {
             "original_name": "1 red bell pepper",
-            "en_name": "1 red bell pepper",
+            "en_name": "1 Red Bell Pepper",
             "weight_estimate": {
-                "ingredient": "1 red bell pepper",
+                "ingredient": "1 Red Bell Pepper",
                 "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 red bell pepper' to 'pepper, sweet, red, raw' as it is the least processed option available for red bell pepper.",
+                "closest_match_explanation": "Matched '1 Red Bell Pepper' to 'pepper, sweet, red, raw' as it is the least processed option available for red bell pepper.",
+                "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
-                "ingredient": "1 red bell pepper",
+                "ingredient": "1 Red Bell Pepper",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             },
@@ -81,50 +85,53 @@
         },
         {
             "original_name": "1 bunch scallions",
-            "en_name": "1 bunch scallions",
+            "en_name": "1 Bunch Scallions",
             "weight_estimate": {
-                "ingredient": "1 bunch scallions",
+                "ingredient": "1 Bunch Scallions",
                 "weight_calculation": "1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 bunch scallions' to 'onions, spring, raw' as it is the least processed option available for scallions.",
+                "closest_match_explanation": "Matched '1 Bunch Scallions' to 'onions, spring, raw' as it is the least processed option available for scallions.",
+                "ingredient_id": "Ra00267",
                 "closest_match_name": "onions, spring, raw",
-                "ingredient": "1 bunch scallions",
+                "ingredient": "1 Bunch Scallions",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.8
             },
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 can diced tomatoes (15 oz)",
-            "en_name": "1 can diced tomatoes (15 oz)",
+            "original_name": "1 can diced tomatoes with green chiles (15 ounce)",
+            "en_name": "1 can diced tomatoes with green chiles (15 ounces)",
             "weight_estimate": {
-                "ingredient": "1 can diced tomatoes (15 oz)",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-                "weight_in_kg": 0.4
+                "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
+                "weight_calculation": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
+                "weight_in_kg": 0.425
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can diced tomatoes (15 oz)' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
+                "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant canned option for tomatoes.",
+                "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 can diced tomatoes (15 oz)",
+                "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             },
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2 cans black beans (15 oz each)",
-            "en_name": "2 cans black beans (15 oz each)",
+            "original_name": "2 cans black beans (15 ounce)",
+            "en_name": "2 Cans Black Beans (15 ounces)",
             "weight_estimate": {
-                "ingredient": "2 cans black beans (15 oz each)",
-                "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
-                "weight_in_kg": 0.8
+                "ingredient": "2 Cans Black Beans (15 ounces)",
+                "weight_calculation": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
+                "weight_in_kg": 0.85
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 cans black beans (15 oz each)' to 'black beans' as it is the least processed option available for black beans.",
+                "closest_match_explanation": "Matched '2 Cans Black Beans (15 ounces)' to 'black beans' as it is the most relevant option for canned black beans.",
+                "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
-                "ingredient": "2 cans black beans (15 oz each)",
+                "ingredient": "2 Cans Black Beans (15 ounces)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             },
@@ -139,7 +146,8 @@
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the closest match available for chili powder, considering processing levels.",
+                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option for chili powder.",
+                "ingredient_id": "Ra00484",
                 "closest_match_name": "chili sauce",
                 "ingredient": "4 tbsp chili powder",
                 "unit": "kg CO2e per kg",
@@ -199,32 +207,47 @@
                 "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
                 "weight_in_kg": 0.03
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the most relevant option for table salt.",
+                "ingredient_id": "Ra00151",
+                "closest_match_name": "salt, table",
+                "ingredient": "salt",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4
+            },
             "co2_per_kg_search": null
         },
         {
             "original_name": "black pepper",
-            "en_name": "black pepper",
+            "en_name": "Black Pepper",
             "weight_estimate": {
-                "ingredient": "black pepper",
+                "ingredient": "Black Pepper",
                 "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
                 "weight_in_kg": 0.03
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'Black Pepper' to 'pepper, black' as it is the most relevant option for black pepper.",
+                "ingredient_id": "Ra00302",
+                "closest_match_name": "pepper, black",
+                "ingredient": "Black Pepper",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.2
+            },
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 package dry corn muffin mix (8.5 oz)",
-            "en_name": "1 package dry corn muffin mix (8.5 oz)",
+            "original_name": "1 package dry corn muffin mix (8.5 ounce)",
+            "en_name": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
             "weight_estimate": {
-                "ingredient": "1 package dry corn muffin mix (8.5 oz)",
+                "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
                 "weight_calculation": "1 package = 240 g, 1 * 240 g = 240 g = 0.24 kg",
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 package dry corn muffin mix (8.5 oz)' to 'corn flour' as it is the least processed option available for corn products.",
+                "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the most relevant option for corn muffin mix.",
+                "ingredient_id": "Ra00107",
                 "closest_match_name": "corn flour",
-                "ingredient": "1 package dry corn muffin mix (8.5 oz)",
+                "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.6
             },
@@ -232,16 +255,17 @@
         },
         {
             "original_name": "0.33 cup milk",
-            "en_name": "0.33 cup milk",
+            "en_name": "0.33 Cup Milk",
             "weight_estimate": {
-                "ingredient": "0.33 cup milk",
+                "ingredient": "0.33 Cup Milk",
                 "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
                 "weight_in_kg": 0.0792
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.33 cup milk' to 'milk' as it is the least processed option available for milk.",
+                "closest_match_explanation": "Matched '0.33 Cup Milk' to 'milk' as it is the most relevant option for milk.",
+                "ingredient_id": "Ra00342",
                 "closest_match_name": "milk",
-                "ingredient": "0.33 cup milk",
+                "ingredient": "0.33 Cup Milk",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             },
@@ -249,16 +273,17 @@
         },
         {
             "original_name": "1 egg",
-            "en_name": "1 egg",
+            "en_name": "1 Egg",
             "weight_estimate": {
-                "ingredient": "1 egg",
+                "ingredient": "1 Egg",
                 "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg",
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 egg' to 'eggs' as it is the least processed option available for eggs.",
+                "closest_match_explanation": "Matched '1 Egg' to 'eggs' as it is the most relevant option for eggs.",
+                "ingredient_id": "Ra00108",
                 "closest_match_name": "eggs",
-                "ingredient": "1 egg",
+                "ingredient": "1 Egg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.0
             },
@@ -266,6 +291,6 @@
         }
     ],
     "persons": 6,
-    "instructions": "1. Preheat the oven to 400 degrees F (200 degrees C). 2. Heat oil in a Dutch over medium heat. Add chicken. Cook, stirring occasionally, until no longer pink inside, 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions and cook until tender, about 5 minutes. Add tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Stir to combine. Cook until heated through, about 5 minutes more. 3. While the mixture simmers, combine cornbread mix with milk and egg in a bowl. 4. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture to form the crust. 5. Place the Dutch oven in the preheated oven and bake until the cornbread is golden and beginning to brown, 20 to 25 minutes.",
+    "instructions": " 1. PREHEAT THE OUTSIDE TO 400 Degrees F (200 Degrees C). 2nd Heat Oil in a Dutch above Medium Heat. Add Chicken. Cook, Stirring Occasionally, Until No Longer Pink Inside, 5 Two 7 Minutes. Add Carrots, Celery, Bell Pepper, and Scallions and Cook Until Tender, About 5 Minutes. Add Tomatoes, Black Beans, Chili Powder, Cumin, Garlic, Onion Powder, Paprika, Salt, and Black Pepper. Stir two Combine. Cook Until Heated Through, About 5 Minutes More. 3. 4th Remove Dutch above From Heat and Spread Cornbread Batter on Top of Chicken Mixture to Form The Crust. 5. Place dutch above in the preheated above and bake Until cornbread is golden and beginning to brown, 20 two 25 minutes.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }

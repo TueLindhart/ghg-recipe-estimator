@@ -23,14 +23,14 @@
         },
         {
             "original_name": "1 bdt grønne asparges",
-            "en_name": "1 bunch of green asparagus",
+            "en_name": "1 BDT Green Asparagus",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
             "original_name": "1 squash",
-            "en_name": "1 squash",
+            "en_name": "1 Squash",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -58,7 +58,7 @@
         },
         {
             "original_name": "1 grøntsags bouillonterning",
-            "en_name": "1 vegetable stock cube",
+            "en_name": "1 vegetable broth cube",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -93,13 +93,13 @@
         },
         {
             "original_name": "olie",
-            "en_name": "oil",
+            "en_name": "Oil",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
     "persons": 2,
-    "instructions": "Put a pot of water over the pasta. Cook according to the instructions on the package and pour off the water. Snap off the ends of the green asparagus and cut them into approx. 1 cm long pieces. Sauté the onion and garlic in oil in a hot pan. Add the squash and asparagus and sauté for a few more minutes, sprinkle with salt and pepper. Add the water to the pan and crumble the stock cube in. Pour in the cream together with the grated parmesan and stir everything well. Toss the fresh pasta in the mixture and finally the mozzarella and fresh basil. Season with extra ground pepper.",
+    "instructions": " Put a saucepan over with water to the pasta. Cook it according to the instructions on the package and pour the water off. Crack the ends of the green asparagus and cut them for approx. 1 cm long pieces. Sweat onion and garlic in oil on a hot pan. Add squash and asparagus and sweat it for a few more minutes, sprinkle with salt and pepper. Put the water on the pan and crumble the broth cube in. Pour the cream on with grated parmesan and turn it all around well. Turn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste with extra grinded pepper.",
     "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
 }

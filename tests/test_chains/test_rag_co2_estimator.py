@@ -10,7 +10,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
 )
 
-ACCEPTABLE_RATIO_OF_DEVIATING_INGREDIENTS = 0.2  # 10 %
+ACCEPTABLE_RATIO_OF_DEVIATING_INGREDIENTS = 0.2  # 20 %
 ACCEPTABLE_AVG_DEVIATION = 0.25  # kg
 
 
