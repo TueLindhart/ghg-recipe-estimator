@@ -11,6 +11,7 @@ MAX_DINNER_EMISSION_PER_CAPITA = 2.2
 
 class IngredientOutput(BaseModel):
     name: str = Field(description="Name of ingredient.")
+    ingredient_id: str | None = Field(description="ingredient Id from vector DB")
     weight_kg: float | None = Field(
         description="Weight",
     )
@@ -62,6 +63,7 @@ def generate_output_model(
             ingredients_list.append(
                 IngredientOutput(
                     name=ingredient.original_name,
+                    ingredient_id=None,
                     weight_kg=None,
                     co2_kg=None,
                     co2_per_kg=None,
@@ -79,6 +81,7 @@ def generate_output_model(
             ingredients_list.append(
                 IngredientOutput(
                     name=ingredient.original_name,
+                    ingredient_id=None,
                     weight_kg=wt,
                     co2_kg=None,
                     co2_per_kg=None,
@@ -116,6 +119,7 @@ def generate_output_model(
             if search_result
             else "Unable to find CO2 emission"
         )
+        ingredient_id = ingredient.co2_per_kg_db.ingredient_id if ingredient.co2_per_kg_db else None
 
         if computed_co2 is not None:
             total_co2 += computed_co2
@@ -123,6 +127,7 @@ def generate_output_model(
         ingredients_list.append(
             IngredientOutput(
                 name=ingredient.original_name,
+                ingredient_id=ingredient_id,
                 weight_kg=round(weight_estimate.weight_in_kg, 3),
                 co2_per_kg=co2_per_kg,
                 co2_kg=computed_co2,
