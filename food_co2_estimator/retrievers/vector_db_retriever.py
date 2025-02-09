@@ -218,8 +218,10 @@ def parse_retriever_output(documents: List[Document]):
 
             # Instead of mapping to a string, we now map to a dictionary.
             results[document.page_content] = {
-                "emission": f"{emission_rounded} kg CO2e / kg" if emission_rounded is not None else "none",
-                "id": ID_Ra
+                "emission": f"{emission_rounded} kg CO2e / kg"
+                if emission_rounded is not None
+                else "none",
+                "id": ID_Ra,
             }
     return results
 

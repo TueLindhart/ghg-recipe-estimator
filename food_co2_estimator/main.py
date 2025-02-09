@@ -13,7 +13,7 @@ from food_co2_estimator.language.detector import Languages, detect_language
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.url.url2markdown import get_markdown_from_url
 from food_co2_estimator.utils.output_generator import (
-    generate_output_model,  # This function returns a Pydantic model
+    generate_output_model,
 )
 
 
