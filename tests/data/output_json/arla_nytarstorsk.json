@@ -1,5 +1,5 @@
 {
-    "total_co2_kg": 3.5,
+    "total_co2_kg": 3.6,
     "number_of_persons": 4,
     "co2_per_person_kg": 0.9,
     "avg_meal_emission_per_person_range_kg": [
@@ -78,13 +78,23 @@
             "co2_emission_notes": "Best match in CO2 database is: sugar, sucrose, white"
         },
         {
+            "name": "4 blødkogte vagtelæg",
+            "ingredient_id": "Ra00108",
+            "weight_kg": 0.06,
+            "co2_per_kg": 1.0,
+            "co2_kg": 0.06,
+            "calculation_notes": "0.06 kg * 1.0 kg CO2e/kg (DB) = 0.06 kg CO2e",
+            "weight_estimation_notes": "1 quail egg = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "co2_emission_notes": "Best match in CO2 database is: eggs"
+        },
+        {
             "name": "friske krydderurter",
             "ingredient_id": "Ra00486",
             "weight_kg": 0.1,
             "co2_per_kg": 0.4,
             "co2_kg": 0.04,
             "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg (DB) = 0.04 kg CO2e",
-            "weight_estimation_notes": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 servings * 0.025 kg = 0.1 kg",
+            "weight_estimation_notes": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: basil, fresh"
         },
         {
@@ -174,17 +184,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.02 kg is negligible",
-            "weight_estimation_notes": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "4 blødkogte vagtelæg",
-            "ingredient_id": null,
-            "weight_kg": null,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
+            "weight_estimation_notes": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "co2_emission_notes": null
         }
     ]

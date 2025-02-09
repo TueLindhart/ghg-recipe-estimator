@@ -1,5 +1,5 @@
 {
-    "total_co2_kg": 39.8,
+    "total_co2_kg": 39.7,
     "number_of_persons": 2,
     "co2_per_person_kg": 19.9,
     "avg_meal_emission_per_person_range_kg": [
@@ -38,13 +38,13 @@
             "co2_emission_notes": "Best match in CO2 database is: kidney beans"
         },
         {
-            "name": "10-12 små majstortillas",
+            "name": "11 små majstortillas",
             "ingredient_id": "Ra00401",
-            "weight_kg": 0.36,
+            "weight_kg": 0.33,
             "co2_per_kg": 1.2,
-            "co2_kg": 0.43,
-            "calculation_notes": "0.36 kg * 1.2 kg CO2e/kg (DB) = 0.43 kg CO2e",
-            "weight_estimation_notes": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
+            "co2_kg": 0.4,
+            "calculation_notes": "0.33 kg * 1.2 kg CO2e/kg (DB) = 0.4 kg CO2e",
+            "weight_estimation_notes": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
             "co2_emission_notes": "Best match in CO2 database is: tortilla bread, wheat"
         },
         {
@@ -64,7 +64,7 @@
             "co2_per_kg": 1.4,
             "co2_kg": 0.28,
             "calculation_notes": "0.2 kg * 1.4 kg CO2e/kg (DB) = 0.28 kg CO2e",
-            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.100 kg, 2 servings * 0.100 kg = 0.200 kg",
             "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
         },
         {
@@ -78,16 +78,6 @@
             "co2_emission_notes": "Best match in CO2 database is: avocado, raw"
         },
         {
-            "name": "olie til stegning",
-            "ingredient_id": "Ra00349",
-            "weight_kg": 0.03,
-            "co2_per_kg": 5.9,
-            "co2_kg": 0.18,
-            "calculation_notes": "0.03 kg * 5.9 kg CO2e/kg (DB) = 0.18 kg CO2e",
-            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
-            "co2_emission_notes": "Best match in CO2 database is: olive oil"
-        },
-        {
             "name": "2 spsk olivenolie",
             "ingredient_id": "Ra00349",
             "weight_kg": 0.03,
@@ -96,6 +86,16 @@
             "calculation_notes": "0.03 kg * 5.9 kg CO2e/kg (DB) = 0.18 kg CO2e",
             "weight_estimation_notes": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
+        },
+        {
+            "name": "olie til stegning",
+            "ingredient_id": "Ra00348",
+            "weight_kg": 0.04,
+            "co2_per_kg": 2.8,
+            "co2_kg": 0.11,
+            "calculation_notes": "0.04 kg * 2.8 kg CO2e/kg (DB) = 0.11 kg CO2e",
+            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.020 kg, 2 servings * 0.020 kg = 0.040 kg",
+            "co2_emission_notes": "Best match in CO2 database is: oil for frying"
         },
         {
             "name": "0.5 rød peberfrugt",
@@ -138,13 +138,23 @@
             "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
+            "name": "saften af 0.5 lime",
+            "ingredient_id": "Ra00332",
+            "weight_kg": 0.035,
+            "co2_per_kg": 0.6,
+            "co2_kg": 0.02,
+            "calculation_notes": "0.04 kg * 0.6 kg CO2e/kg (DB) = 0.02 kg CO2e",
+            "weight_estimation_notes": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
+            "co2_emission_notes": "Best match in CO2 database is: lime, raw"
+        },
+        {
             "name": "2 fed hvidløg",
             "ingredient_id": null,
             "weight_kg": 0.008,
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.008 kg is negligible",
-            "weight_estimation_notes": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "co2_emission_notes": null
         },
         {
@@ -194,7 +204,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.008 kg is negligible",
-            "weight_estimation_notes": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "co2_emission_notes": null
         },
         {
@@ -216,16 +226,6 @@
             "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
             "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "co2_emission_notes": "Unable to find CO2 emission"
-        },
-        {
-            "name": "saften af 0.5 lime",
-            "ingredient_id": null,
-            "weight_kg": null,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
-            "co2_emission_notes": null
         }
     ]
 }

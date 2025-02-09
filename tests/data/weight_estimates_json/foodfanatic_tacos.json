@@ -7,7 +7,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -17,8 +17,8 @@
         },
         {
             "ingredient": "Oil for frying",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
-            "weight_in_kg": 0.03
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.020 kg, 2 servings * 0.020 kg = 0.040 kg",
+            "weight_in_kg": 0.04
         },
         {
             "ingredient": "250 g of beef",
@@ -51,13 +51,13 @@
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "10-12 small cornstortillas",
-            "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
-            "weight_in_kg": 0.36
+            "ingredient": "11 small cornstortillas",
+            "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
+            "weight_in_kg": 0.33
         },
         {
             "ingredient": "1 serving of tomato salsa",
-            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.100 kg, 2 servings * 0.100 kg = 0.200 kg",
             "weight_in_kg": 0.2
         },
         {
@@ -82,7 +82,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {

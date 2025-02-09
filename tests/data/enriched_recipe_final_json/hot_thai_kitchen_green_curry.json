@@ -110,10 +110,10 @@
         },
         {
             "original_name": "4 makrut lime leaves",
-            "en_name": "4 Makrut Lime Leaves",
+            "en_name": "4 MAKRUT LIME LEAVES",
             "weight_estimate": {
-                "ingredient": "4 Makrut Lime Leaves",
-                "weight_calculation": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+                "ingredient": "4 MAKRUT LIME LEAVES",
+                "weight_calculation": "Amount of MAKRUT LIME LEAVES not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
             "co2_per_kg_db": null,
@@ -146,7 +146,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the closest match for fresh basil in the database.",
+                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the exact ingredient in the database with a specific emission factor.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 Cup Thai Basil Leaves",
@@ -174,14 +174,25 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "Jasmine rice for serving",
-            "en_name": "Jasmine Rice for Serving ",
-            "weight_estimate": null,
-            "co2_per_kg_db": null,
+            "original_name": "jasmine rice",
+            "en_name": "Jasmine Rice",
+            "weight_estimate": {
+                "ingredient": "Jasmine Rice",
+                "weight_calculation": "Amount of ingredient not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
+                "weight_in_kg": 0.5
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'Jasmine Rice' to 'rice, parboiled, raw' as it is the closest match available in the database.",
+                "ingredient_id": "Ra00300",
+                "closest_match_name": "rice, parboiled, raw",
+                "ingredient": "Jasmine Rice",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.1
+            },
             "co2_per_kg_search": null
         }
     ],
     "persons": 4,
-    "instructions": " Reduce ¾ Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate From The Coconut Milk. Add the Curry Paste and Sauté, Stirring Constantly over Medium Heat for About 2 Minutes Until Aromatic. Add Chicken Thigh and Stir to Mix With The Paste. Add Chicken Stock, Remaining 1 Cup of Coconut Milk, Palm Sugar and 1 Tablespoon of Fish Sauce. Grab The Makrut Lime Leaves, Twist Them to Bruise and Release Aroma, Then Tear Them Into Chunks and Add Them to the Pot. Bring to a simmer and light simmer gently for 10-15 minutes or until the chicken is fork tender. Once the Curry is Done Simmering, Add Bamboo Shoots and Bring to a Boil. Taste and Add More Fish Sauce and or Sugar as Needed. Add Thai Basil and Stir Just Until The Basil Is Wilted. Serve with Jasmine Rice.",
+    "instructions": " Reduce ¾ Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate. Add the Curry Paste and Sauté for About 2 Minutes Until Aromatic. Add Chicken Thigh and Stir to Mix With The Paste. Add Chicken Stock, Remaining Coconut Milk, Palm Sugar, and Fish Sauce. Add Bruised Makrut Lime Leaves and Sims for 10-15 minutes Until Chicken Is Fork Tender. Add Bamboo Shoots and Bring to a Boil. Taste and Adjust Seasoning. Add Thai Basil and Serve with Jasmine Rice.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

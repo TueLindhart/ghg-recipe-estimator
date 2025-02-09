@@ -1,7 +1,7 @@
 {
-    "total_co2_kg": 4.5,
+    "total_co2_kg": 7.1,
     "number_of_persons": 4,
-    "co2_per_person_kg": 1.1,
+    "co2_per_person_kg": 1.8,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -16,6 +16,16 @@
             "calculation_notes": "0.42 kg * 6.3 kg CO2e/kg (DB) = 2.65 kg CO2e",
             "weight_estimation_notes": "1 cup = 240 g, 1.75 * 240 g = 420 g = 0.42 kg",
             "co2_emission_notes": "Best match in CO2 database is: coconut milk"
+        },
+        {
+            "name": "jasmine rice",
+            "ingredient_id": "Ra00300",
+            "weight_kg": 0.5,
+            "co2_per_kg": 5.1,
+            "co2_kg": 2.55,
+            "calculation_notes": "0.5 kg * 5.1 kg CO2e/kg (DB) = 2.55 kg CO2e",
+            "weight_estimation_notes": "Amount of ingredient not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
+            "co2_emission_notes": "Best match in CO2 database is: rice, parboiled, raw"
         },
         {
             "name": "1 lb chicken thigh",
@@ -104,17 +114,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
-            "weight_estimation_notes": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "Jasmine rice for serving",
-            "ingredient_id": null,
-            "weight_kg": null,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
+            "weight_estimation_notes": "Amount of MAKRUT LIME LEAVES not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
             "co2_emission_notes": null
         }
     ]

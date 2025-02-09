@@ -57,7 +57,7 @@
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the closest match for fresh basil in the database.",
+            "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the exact ingredient in the database with a specific emission factor.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "1 Cup Thai Basil Leaves",
@@ -71,6 +71,14 @@
             "ingredient": "0.25 Red Bell Pepper",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
+        },
+        {
+            "closest_match_explanation": "Matched 'Jasmine Rice' to 'rice, parboiled, raw' as it is the closest match available in the database.",
+            "ingredient_id": "Ra00300",
+            "closest_match_name": "rice, parboiled, raw",
+            "ingredient": "Jasmine Rice",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 5.1
         }
     ]
 }

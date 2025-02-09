@@ -72,12 +72,12 @@
         },
         {
             "ingredient": "freshly ground pepper",
-            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "fresh herbs",
-            "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 servings * 0.025 kg = 0.1 kg",
+            "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {

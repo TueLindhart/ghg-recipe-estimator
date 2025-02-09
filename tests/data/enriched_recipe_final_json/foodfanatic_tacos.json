@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions, following rule 4.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 small onion",
@@ -23,7 +23,7 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": null,
@@ -38,7 +38,7 @@
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate raw option for red pepper.",
+                "closest_match_explanation": "Matched '0.5 Red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for raw red pepper, following rule 1.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.5 Red pepper",
@@ -52,16 +52,16 @@
             "en_name": "Oil for frying",
             "weight_estimate": {
                 "ingredient": "Oil for frying",
-                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
-                "weight_in_kg": 0.03
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.020 kg, 2 servings * 0.020 kg = 0.040 kg",
+                "weight_in_kg": 0.04
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Oil for frying' to 'olive oil' as it has the highest emissions among the oil options provided.",
-                "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
+                "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil specified, following rule 8.",
+                "ingredient_id": "Ra00348",
+                "closest_match_name": "oil for frying",
                 "ingredient": "Oil for frying",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.9
+                "co2_per_kg": 2.8
             },
             "co2_per_kg_search": null
         },
@@ -74,7 +74,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the most general and representative option for beef emissions.",
+                "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the most general and representative option for beef, following rule 2.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "250 g of beef",
@@ -114,7 +114,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans, following rule 8.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -132,7 +132,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available.",
+                "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available, following rule 4.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "2 tablespoons tomato puree",
@@ -150,7 +150,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef emissions.",
+                "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef-based products, following rule 2.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "2.5 dl beef fund",
@@ -160,18 +160,18 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "10-12 små majstortillas",
-            "en_name": "10-12 small cornstortillas",
+            "original_name": "11 små majstortillas",
+            "en_name": "11 small cornstortillas",
             "weight_estimate": {
-                "ingredient": "10-12 small cornstortillas",
-                "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
-                "weight_in_kg": 0.36
+                "ingredient": "11 small cornstortillas",
+                "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
+                "weight_in_kg": 0.33
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '10-12 small cornstortillas' to 'tortilla bread, wheat' as it is the most appropriate option for tortillas.",
+                "closest_match_explanation": "Matched '11 small cornstortillas' to 'tortilla bread, wheat' as it is the closest match for tortillas, following rule 2.",
                 "ingredient_id": "Ra00401",
                 "closest_match_name": "tortilla bread, wheat",
-                "ingredient": "10-12 small cornstortillas",
+                "ingredient": "11 small cornstortillas",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             },
@@ -182,11 +182,11 @@
             "en_name": "1 serving of tomato salsa",
             "weight_estimate": {
                 "ingredient": "1 serving of tomato salsa",
-                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
+                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.100 kg, 2 servings * 0.100 kg = 0.200 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the most relevant option for salsa.",
+                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the most appropriate match for a tomato-based salsa, following rule 1.",
                 "ingredient_id": "Ra00400",
                 "closest_match_name": "salsa, hot",
                 "ingredient": "1 serving of tomato salsa",
@@ -204,7 +204,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado emissions.",
+                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado, following rule 8.",
                 "ingredient_id": "Ra00317",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 Avocado",
@@ -244,7 +244,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion emissions.",
+                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion, following rule 8.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 Red onion",
@@ -258,7 +258,7 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": null,
@@ -273,7 +273,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most appropriate match for processed tomatoes, following rule 4.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "300 g of tomatoes",
@@ -313,7 +313,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil emissions.",
+                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil, following rule 8.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "2 tablespoons olive oil",
@@ -324,9 +324,20 @@
         },
         {
             "original_name": "saften af 0.5 lime",
-            "en_name": "The juice of 0.5 lime ",
-            "weight_estimate": null,
-            "co2_per_kg_db": null,
+            "en_name": "The juice of 0.5 lime",
+            "weight_estimate": {
+                "ingredient": "The juice of 0.5 lime",
+                "weight_calculation": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
+                "weight_in_kg": 0.035
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'The juice of 0.5 lime' to 'lime, raw' as it is the most appropriate match for lime juice, following rule 1.",
+                "ingredient_id": "Ra00332",
+                "closest_match_name": "lime, raw",
+                "ingredient": "The juice of 0.5 lime",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.6
+            },
             "co2_per_kg_search": null
         }
     ],

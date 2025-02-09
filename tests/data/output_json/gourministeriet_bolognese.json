@@ -1,7 +1,7 @@
 {
-    "total_co2_kg": 55.0,
+    "total_co2_kg": 55.6,
     "number_of_persons": 6,
-    "co2_per_person_kg": 9.2,
+    "co2_per_person_kg": 9.3,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -36,6 +36,16 @@
             "calculation_notes": "1.2 kg * 1.1 kg CO2e/kg (DB) = 1.32 kg CO2e",
             "weight_estimation_notes": "1 can = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
             "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
+        },
+        {
+            "name": "revet parmesan",
+            "ingredient_id": "Ra00079",
+            "weight_kg": 0.12,
+            "co2_per_kg": 5.4,
+            "co2_kg": 0.65,
+            "calculation_notes": "0.12 kg * 5.4 kg CO2e/kg (DB) = 0.65 kg CO2e",
+            "weight_estimation_notes": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 6 servings * 0.02 kg = 0.12 kg",
+            "co2_emission_notes": "Best match in CO2 database is: cheese, hard, parmesan, 32 % fidm."
         },
         {
             "name": "150 g tomatkoncentrat",
@@ -175,16 +185,6 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "revet parmesan",
-            "ingredient_id": null,
-            "weight_kg": null,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
             "co2_emission_notes": null
         }
     ]

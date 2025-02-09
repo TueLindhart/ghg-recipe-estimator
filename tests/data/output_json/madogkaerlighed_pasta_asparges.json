@@ -14,7 +14,7 @@
             "co2_per_kg": 1.1,
             "co2_kg": 0.55,
             "calculation_notes": "0.5 kg * 1.1 kg CO2e/kg (DB) = 0.55 kg CO2e",
-            "weight_estimation_notes": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "weight_estimation_notes": "1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "co2_emission_notes": "Best match in CO2 database is: asparagus, green, raw"
         },
         {
@@ -24,7 +24,7 @@
             "co2_per_kg": 5.4,
             "co2_kg": 0.54,
             "calculation_notes": "0.1 kg * 5.4 kg CO2e/kg (DB) = 0.54 kg CO2e",
-            "weight_estimation_notes": "1 handful of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: cheese, semihard, mozzarella, 30 % fidm."
         },
         {
@@ -54,7 +54,7 @@
             "co2_per_kg": 1.7,
             "co2_kg": 0.34,
             "calculation_notes": "0.2 kg * 1.7 kg CO2e/kg (DB) = 0.34 kg CO2e",
-            "weight_estimation_notes": "2 dl = 0.2 kg, 2 * 0.1 kg = 0.2 kg",
+            "weight_estimation_notes": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
             "co2_emission_notes": "Best match in CO2 database is: cream, whipping, 38 % fat"
         },
         {
@@ -104,7 +104,7 @@
             "co2_per_kg": 0.0,
             "co2_kg": null,
             "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: water, tap, drinking, average values"
         },
         {
@@ -140,11 +140,11 @@
         {
             "name": "olie",
             "ingredient_id": null,
-            "weight_kg": null,
+            "weight_kg": 0.02,
             "co2_per_kg": null,
             "co2_kg": null,
-            "calculation_notes": "Without weight estimate can CO2 not be calculated",
-            "weight_estimation_notes": "Could not estimate weight",
+            "calculation_notes": "Weight on 0.02 kg is negligible",
+            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
             "co2_emission_notes": null
         }
     ]

@@ -31,8 +31,8 @@
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "4 Makrut Lime Leaves",
-            "weight_calculation": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+            "ingredient": "4 MAKRUT LIME LEAVES",
+            "weight_calculation": "Amount of MAKRUT LIME LEAVES not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
@@ -51,7 +51,7 @@
             "weight_in_kg": 0.0375
         },
         {
-            "ingredient": "Jasmine Rice for Serving",
+            "ingredient": "Jasmine Rice",
             "weight_calculation": "Amount of ingredient not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
             "weight_in_kg": 0.5
         }
