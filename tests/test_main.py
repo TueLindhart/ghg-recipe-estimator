@@ -52,12 +52,14 @@ async def test_async_estimator(
     )
 
     # Call the function
-    output = await async_estimator(
+    output_str = await async_estimator(
         url="http://example.com",
         verbose=False,
     )
-
-    assert not isinstance(output, str), output
+    try:
+        output = RecipeCO2Output.parse_raw(output_str)
+    except Exception as e:
+        raise AssertionError(f"Could not parse output as RecipeCO2Output: {e}")
 
     # Assert no need to use search
     for ingredient in output.ingredients:

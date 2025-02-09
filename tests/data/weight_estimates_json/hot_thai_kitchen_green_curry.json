@@ -16,7 +16,7 @@
             "weight_in_kg": 0.24
         },
         {
-            "ingredient": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
+            "ingredient": "450 g of chicken thighs, without legs and skins, cut into 1-inch pieces",
             "weight_calculation": "450 g = 450 g = 0.45 kg",
             "weight_in_kg": 0.45
         },

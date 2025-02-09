@@ -26,7 +26,7 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 large handful of fresh basil",
+            "ingredient": "1 handful of fresh basil",
             "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "Amount of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {

@@ -1,7 +1,7 @@
 {
-    "total_co2_kg": 4.6,
+    "total_co2_kg": 6.3,
     "number_of_persons": 4,
-    "co2_per_person_kg": 1.2,
+    "co2_per_person_kg": 1.6,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -18,14 +18,14 @@
             "co2_emission_notes": "Best match in CO2 database is: coconut milk"
         },
         {
-            "name": "450 g kyllingelår, uden ben, uden skind, 1-tommers stykker",
-            "ingredient_id": "Ra00053",
+            "name": "450 g kyllingelår, uden ben og skind, skåret i 1-tommers stykker",
+            "ingredient_id": "Ra00386",
             "weight_kg": 0.45,
-            "co2_per_kg": 2.0,
-            "co2_kg": 0.9,
-            "calculation_notes": "0.45 kg * 2.0 kg CO2e/kg (DB) = 0.9 kg CO2e",
+            "co2_per_kg": 5.7,
+            "co2_kg": 2.56,
+            "calculation_notes": "0.45 kg * 5.7 kg CO2e/kg (DB) = 2.56 kg CO2e",
             "weight_estimation_notes": "450 g = 450 g = 0.45 kg",
-            "co2_emission_notes": "Best match in CO2 database is: chicken, leg, flesh and skin, raw"
+            "co2_emission_notes": "Best match in CO2 database is: minced chicken"
         },
         {
             "name": "550 ml bambusskud, drænet og skyllet",

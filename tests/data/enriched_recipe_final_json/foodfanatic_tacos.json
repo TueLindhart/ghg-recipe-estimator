@@ -56,12 +56,12 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Oil for frying' to 'olive oil' as it has the highest emissions among the oil options provided.",
-                "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
+                "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil specified.",
+                "ingredient_id": "Ra00348",
+                "closest_match_name": "oil for frying",
                 "ingredient": "Oil for frying",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.9
+                "co2_per_kg": 2.8
             },
             "co2_per_kg_search": null
         },
@@ -74,7 +74,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the standard representation for beef emissions.",
+                "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the general category for beef without specifying a cut.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "250 g of beef",
@@ -110,7 +110,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the direct match for canned beans.",
+                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -145,8 +145,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "10-12 små majstortillas",
-            "en_name": "10-12 small cornstortillas",
+            "original_name": "11 små majstortillas",
+            "en_name": "11 small cornstortillas",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -160,7 +160,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the most relevant option for salsa.",
+                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the most appropriate match for a salsa product.",
                 "ingredient_id": "Ra00400",
                 "closest_match_name": "salsa, hot",
                 "ingredient": "1 serving of tomato salsa",
@@ -178,7 +178,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the direct match for raw avocado emissions.",
+                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for a raw avocado.",
                 "ingredient_id": "Ra00317",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 Avocado",
@@ -218,7 +218,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the direct match for red onion emissions.",
+                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 Red onion",
@@ -247,7 +247,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
+                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most appropriate match for canned tomatoes.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "300 g of tomatoes",
@@ -261,8 +261,8 @@
             "en_name": "0.5 - 1 chili pepper",
             "weight_estimate": {
                 "ingredient": "0.5 - 1 chili pepper",
-                "weight_calculation": "1 chili pepper = 10 g, 0.5 * 10 g = 5 g = 0.005 kg",
-                "weight_in_kg": 0.005
+                "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
             },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -270,7 +270,11 @@
         {
             "original_name": "0.5 bdt koriander",
             "en_name": "0.5 Bdt coriander",
-            "weight_estimate": null,
+            "weight_estimate": {
+                "ingredient": "0.5 Bdt coriander",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
+            },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
@@ -283,7 +287,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the direct match for olive oil emissions.",
+                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "2 tablespoons olive oil",

@@ -100,7 +100,7 @@
             "en_name": "1 dl vegetable broth",
             "weight_estimate": {
                 "ingredient": "1 dl vegetable broth",
-                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
@@ -198,7 +198,7 @@
             "en_name": "1 Squash",
             "weight_estimate": {
                 "ingredient": "1 Squash",
-                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
@@ -314,7 +314,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the closest match for tortilla pancakes.",
+                "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the most direct match for tortilla pancakes.",
                 "ingredient_id": "Ra00401",
                 "closest_match_name": "tortilla bread, wheat",
                 "ingredient": "8 Tortilla's pancakes",
@@ -361,6 +361,6 @@
         }
     ],
     "persons": 4,
-    "instructions": " ** Enchilada's sauce ** Shake all the spices in a dry saucepan until they start to smell nice. Add oil, garlic and onion and saute until the onions are soft. Stir in flour into the filling and then add vegetable broth and chopped tomatoes. Stir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper. ** Fill ** Heat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through. Shake the corn kernels in a little butter on a pan until they get crispy and get a little color. ** Collect Enchiladas ** Grease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish. Distribute the last enchilada sauce over and sprinkle with more cheese. Distribute bean filling and corn kernels in the sides of the dish if there is anything left over. Bake them in a preheated oven at 175 degrees hot air for about 18 minutes. Sprinkle with coriander before serving.",
+    "instructions": " ** Enchilada's sauce ** Shake all the spices in a dry saucepan until they start to smell nice. Add oil, garlic and onion and saute until the onions are soft. Stir in flour into the filling and then add vegetable broth and chopped tomatoes. Stir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper. ** Fill ** Heat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through. Shake the corn kernels in a little butter on a pan until they get crispy and get a little color. ** Gather Enchiladas ** Grease each tortilla pancake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish. Distribute the last enchilada sauce over and sprinkle with more cheese. Distribute bean filling and corn kernels in the sides of the dish if there is anything left over. Bake them in a preheated oven at 175 degrees hot air for about 18 minutes. Sprinkle with coriander before serving.",
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
 }

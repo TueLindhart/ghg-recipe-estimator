@@ -54,7 +54,7 @@
             "co2_per_kg": 0.8,
             "co2_kg": 0.32,
             "calculation_notes": "0.4 kg * 0.8 kg CO2e/kg (DB) = 0.32 kg CO2e",
-            "weight_estimation_notes": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_estimation_notes": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "co2_emission_notes": "Best match in CO2 database is: squash, raw"
         },
         {
@@ -114,7 +114,7 @@
             "co2_per_kg": 0.4,
             "co2_kg": 0.04,
             "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg (DB) = 0.04 kg CO2e",
-            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: bouillon, chicken, prepared"
         },
         {

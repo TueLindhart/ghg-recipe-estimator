@@ -45,7 +45,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '240 ml of chicken broth, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering it is a prepared chicken broth.",
+                "closest_match_explanation": "Matched '240 ml of chicken broth, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering the processing level and type.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "240 ml of chicken broth, unsalted",
@@ -55,20 +55,20 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "450 g kyllingelår, uden ben, uden skind, 1-tommers stykker",
-            "en_name": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
+            "original_name": "450 g kyllingelår, uden ben og skind, skåret i 1-tommers stykker",
+            "en_name": "450 g of chicken thighs, without legs and skins, cut into 1-inch pieces",
             "weight_estimate": {
-                "ingredient": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
+                "ingredient": "450 g of chicken thighs, without legs and skins, cut into 1-inch pieces",
                 "weight_calculation": "450 g = 450 g = 0.45 kg",
                 "weight_in_kg": 0.45
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '450 g of chicken thighs, without legs, without skins, 1-inch pieces' to 'chicken, leg, flesh and skin, raw' as it is the closest match considering it is raw chicken thigh meat.",
-                "ingredient_id": "Ra00053",
-                "closest_match_name": "chicken, leg, flesh and skin, raw",
-                "ingredient": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
+                "closest_match_explanation": "Matched '450 g of chicken thighs, without legs and skins, cut into 1-inch pieces' to 'minced chicken' as it is the most processed option available for chicken thighs.",
+                "ingredient_id": "Ra00386",
+                "closest_match_name": "minced chicken",
+                "ingredient": "450 g of chicken thighs, without legs and skins, cut into 1-inch pieces",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.0
+                "co2_per_kg": 5.7
             },
             "co2_per_kg_search": null
         },
@@ -92,7 +92,7 @@
                 "weight_in_kg": 0.02625
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'soya sauce' as it is the closest match available in the database, considering the lack of a direct match for fish sauce.",
+                "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'soya sauce' as it is the closest match available in the database, considering the processing level.",
                 "ingredient_id": "Ra00373",
                 "closest_match_name": "soya sauce",
                 "ingredient": "22.5-30 ml fish sauce",
@@ -121,7 +121,7 @@
                 "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '550 ml of bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the closest match considering it is a canned product.",
+                "closest_match_explanation": "Matched '550 ml of bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the exact match in the database.",
                 "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
                 "ingredient": "550 ml of bamboo shoots, drained and rinsed",
@@ -150,7 +150,7 @@
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '¼ red pepper, julienned' to 'pepper, sweet, red, raw' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Matched '¼ red pepper, julienned' to 'pepper, sweet, red, raw' as it is the exact match in the database.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "¼ red pepper, julienned",
@@ -168,6 +168,6 @@
         }
     ],
     "persons": 4,
-    "instructions": " 1. Reduce ¾ cup of coconut milk until it is thick and the coconut oil begins to separate from the coconut milk. 2. Add the curry paste and saute while stirring constantly over medium heat for approx. 2 minutes until aromatic. 3. Add chicken thighs and stir to mix with the pasta. 4. Add chicken broth, the remaining 1 cup of coconut milk, palm sugar and 1 tablespoon of fish sauce. Add Kaffir lime leaves and simmer for 10-15 minutes, or until the chicken is tender. 5. Add bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in Thai basil and serve with jasmine rice.",
+    "instructions": " 1. Reduce ¾ cup of coconut milk until it is thick and the coconut oil begins to separate from the coconut milk. 2. Add the curry paste and saute while stirring constantly over medium heat for approx. 2 minutes until aromatic. 3. Add the chicken thighs and stir to mix with the pasta. 4. Add chicken broth, the remaining 1 cup of coconut milk, palm sugar and 1 tablespoon of fish sauce. Add the Kaffir lime leaves and simmer for 10-15 minutes, or until the chicken is tender. 5. Add the bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in Thai basil and serve with jasmine rice.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

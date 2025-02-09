@@ -134,7 +134,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
-            "weight_estimation_notes": "0.5 tsp. = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_estimation_notes": "0.5 tsp. = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
             "co2_emission_notes": null
         },
         {
@@ -154,7 +154,7 @@
             "co2_per_kg": 0.0,
             "co2_kg": null,
             "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "2.5 dl = 250 g, 2.5 * 100 g = 250 g = 0.25 kg",
+            "weight_estimation_notes": "2.5 dl = 250 g, 1 * 250 g = 250 g = 0.25 kg",
             "co2_emission_notes": "Best match in CO2 database is: water, tap, drinking, average values"
         },
         {
@@ -164,7 +164,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
-            "weight_estimation_notes": "0.75 tsp. = 3.75 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "weight_estimation_notes": "0.75 tsp. = 3.75 g, 1 * 3.75 g = 3.75 g = 0.00375 kg",
             "co2_emission_notes": null
         },
         {

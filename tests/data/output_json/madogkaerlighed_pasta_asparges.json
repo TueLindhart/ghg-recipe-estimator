@@ -24,7 +24,7 @@
             "co2_per_kg": 5.4,
             "co2_kg": 0.54,
             "calculation_notes": "0.1 kg * 5.4 kg CO2e/kg (DB) = 0.54 kg CO2e",
-            "weight_estimation_notes": "Amount of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: cheese, semihard, mozzarella, 30 % fidm."
         },
         {
@@ -88,7 +88,7 @@
             "co2_emission_notes": null
         },
         {
-            "name": "1 stor håndfuld frisk basilikum",
+            "name": "1 håndfuld frisk basilikum",
             "ingredient_id": null,
             "weight_kg": 0.025,
             "co2_per_kg": null,

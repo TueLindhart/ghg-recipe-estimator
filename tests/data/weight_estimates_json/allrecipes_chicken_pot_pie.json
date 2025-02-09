@@ -31,18 +31,18 @@
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
-            "weight_calculation": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
-            "weight_in_kg": 0.425
+            "ingredient": "1 Can Diced Tomatoes (15 ounces)",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_in_kg": 0.4
         },
         {
             "ingredient": "2 Cans Black Beans (15 ounces)",
-            "weight_calculation": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
-            "weight_in_kg": 0.85
+            "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
+            "weight_in_kg": 0.8
         },
         {
             "ingredient": "4 tbsp chili powder",
-            "weight_calculation": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.060 kg",
+            "weight_calculation": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
             "weight_in_kg": 0.06
         },
         {
@@ -52,12 +52,12 @@
         },
         {
             "ingredient": "2 tsp granulated garlic",
-            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "2 tsp onion powder",
-            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
@@ -87,7 +87,7 @@
         },
         {
             "ingredient": "1 Egg",
-            "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.050 kg",
+            "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg",
             "weight_in_kg": 0.05
         }
     ]

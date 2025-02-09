@@ -51,9 +51,9 @@
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "10-12 small corn tortillas",
-            "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
-            "weight_in_kg": 0.36
+            "ingredient": "11 small corn tortillas",
+            "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
+            "weight_in_kg": 0.33
         },
         {
             "ingredient": "1 serving of tomato salsa",
@@ -92,12 +92,12 @@
         },
         {
             "ingredient": "0.5 - 1 chili pepper",
-            "weight_calculation": "1 chili pepper = 10 g, 0.5 * 10 g = 5 g = 0.005 kg",
-            "weight_in_kg": 0.005
+            "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "weight_in_kg": 0.025
         },
         {
-            "ingredient": "0.5 bunch coriander",
-            "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "ingredient": "0.5 Bdt coriander",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
@@ -107,8 +107,8 @@
         },
         {
             "ingredient": "The juice of 0.5 lime",
-            "weight_calculation": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
-            "weight_in_kg": 0.035
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime = 100 g, 0.5 * 100 g = 50 g = 0.050 kg",
+            "weight_in_kg": 0.05
         }
     ]
 }

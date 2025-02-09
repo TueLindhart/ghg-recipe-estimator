@@ -1,5 +1,5 @@
 {
-    "total_co2_kg": 4.9,
+    "total_co2_kg": 4.8,
     "number_of_persons": 6,
     "co2_per_person_kg": 0.8,
     "avg_meal_emission_per_person_range_kg": [
@@ -20,21 +20,21 @@
         {
             "name": "2 cans black beans (15 ounce)",
             "ingredient_id": "Ra00439",
-            "weight_kg": 0.85,
+            "weight_kg": 0.8,
             "co2_per_kg": 1.2,
-            "co2_kg": 1.02,
-            "calculation_notes": "0.85 kg * 1.2 kg CO2e/kg (DB) = 1.02 kg CO2e",
-            "weight_estimation_notes": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
+            "co2_kg": 0.96,
+            "calculation_notes": "0.8 kg * 1.2 kg CO2e/kg (DB) = 0.96 kg CO2e",
+            "weight_estimation_notes": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
             "co2_emission_notes": "Best match in CO2 database is: black beans"
         },
         {
-            "name": "1 can diced tomatoes with green chiles (15 ounce)",
+            "name": "1 can diced tomatoes (15 ounce)",
             "ingredient_id": "Ra00361",
-            "weight_kg": 0.425,
+            "weight_kg": 0.4,
             "co2_per_kg": 1.1,
-            "co2_kg": 0.47,
-            "calculation_notes": "0.42 kg * 1.1 kg CO2e/kg (DB) = 0.47 kg CO2e",
-            "weight_estimation_notes": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
+            "co2_kg": 0.44,
+            "calculation_notes": "0.4 kg * 1.1 kg CO2e/kg (DB) = 0.44 kg CO2e",
+            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
         },
         {
@@ -74,7 +74,7 @@
             "co2_per_kg": 2.1,
             "co2_kg": 0.13,
             "calculation_notes": "0.06 kg * 2.1 kg CO2e/kg (DB) = 0.13 kg CO2e",
-            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.060 kg",
+            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
             "co2_emission_notes": "Best match in CO2 database is: chili sauce"
         },
         {
@@ -154,7 +154,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "co2_emission_notes": null
         },
         {
@@ -164,7 +164,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "co2_emission_notes": null
         },
         {
