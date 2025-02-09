@@ -211,13 +211,16 @@ function initializeBarChart(ingredientData) {
       ],
     },
     options: {
+      indexAxis: "y", // This makes the bar chart horizontal
+      maintainAspectRatio: false,
+      responsive: true,
       plugins: {
         legend: {
           display: false,
         },
       },
       scales: {
-        y: {
+        x: {
           beginAtZero: true,
           title: {
             display: true,
