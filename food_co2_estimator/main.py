@@ -102,7 +102,7 @@ async def async_estimator(
         # Build a Pydantic model and return its JSON representation
         output_model = generate_output_model(
             enriched_recipe=enriched_recipe,
-            negligible_threshold=negligeble_threshold,
+            negligeble_threshold=negligeble_threshold,
             number_of_persons=enriched_recipe.persons,
         )
         return output_model.model_dump_json()

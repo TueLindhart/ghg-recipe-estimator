@@ -2,6 +2,8 @@ import asyncio
 import json
 import os
 
+from food_co2_estimator.chains.rag_co2_estimator import NEGLIGIBLE_THRESHOLD
+from food_co2_estimator.utils.output_generator import generate_output_model
 from tests.data_paths import FINAL_ENRICHED_RECIPE_DIR
 from tests.load_files import (
     get_expected_enriched_recipe,
@@ -34,6 +36,8 @@ async def process_and_store_enriched_recipe(file_name: str, url: str):
 
     enriched_recipe.update_with_weight_estimates(weight_estimates)
     enriched_recipe.update_with_co2_per_kg_db(co2_estimates)
+
+    output_model = generate_output_model(enriched_recipe=enriched_recipe, negligeble_threshold=NEGLIGIBLE_THRESHOLD, number_of_persons=)
 
     # Store the final enriched recipe with translations as JSON
     final_output_filepath = os.path.join(FINAL_ENRICHED_RECIPE_DIR, file_name + ".json")
