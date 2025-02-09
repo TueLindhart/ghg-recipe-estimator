@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 handful of cheese = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {

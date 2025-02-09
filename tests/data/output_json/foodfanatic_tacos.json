@@ -1,5 +1,5 @@
 {
-    "total_co2_kg": 20.6,
+    "total_co2_kg": 20.5,
     "number_of_persons": 2,
     "co2_per_person_kg": 10.3,
     "avg_meal_emission_per_person_range_kg": [
@@ -38,16 +38,6 @@
             "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
         },
         {
-            "name": "1 portion tomatsalsa",
-            "ingredient_id": "Ra00400",
-            "weight_kg": 0.2,
-            "co2_per_kg": 1.4,
-            "co2_kg": 0.28,
-            "calculation_notes": "0.2 kg * 1.4 kg CO2e/kg (DB) = 0.28 kg CO2e",
-            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
-            "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
-        },
-        {
             "name": "1 avocado",
             "ingredient_id": "Ra00317",
             "weight_kg": 0.2,
@@ -56,6 +46,16 @@
             "calculation_notes": "0.2 kg * 1.2 kg CO2e/kg (DB) = 0.24 kg CO2e",
             "weight_estimation_notes": "1 avocado = 200 g, 1 * 200 g = 200 g = 0.200 kg",
             "co2_emission_notes": "Best match in CO2 database is: avocado, raw"
+        },
+        {
+            "name": "olie til stegning",
+            "ingredient_id": "Ra00349",
+            "weight_kg": 0.03,
+            "co2_per_kg": 5.9,
+            "co2_kg": 0.18,
+            "calculation_notes": "0.03 kg * 5.9 kg CO2e/kg (DB) = 0.18 kg CO2e",
+            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
+            "co2_emission_notes": "Best match in CO2 database is: olive oil"
         },
         {
             "name": "2 spsk olivenolie",
@@ -68,6 +68,16 @@
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
         },
         {
+            "name": "1 portion tomatsalsa",
+            "ingredient_id": "Ra00400",
+            "weight_kg": 0.1,
+            "co2_per_kg": 1.4,
+            "co2_kg": 0.14,
+            "calculation_notes": "0.1 kg * 1.4 kg CO2e/kg (DB) = 0.14 kg CO2e",
+            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
+        },
+        {
             "name": "0.5 rød peberfrugt",
             "ingredient_id": "Ra00001",
             "weight_kg": 0.075,
@@ -76,16 +86,6 @@
             "calculation_notes": "0.07 kg * 1.1 kg CO2e/kg (DB) = 0.08 kg CO2e",
             "weight_estimation_notes": "1 bell pepper = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
             "co2_emission_notes": "Best match in CO2 database is: pepper, sweet, red, raw"
-        },
-        {
-            "name": "olie til stegning",
-            "ingredient_id": "Ra00348",
-            "weight_kg": 0.03,
-            "co2_per_kg": 2.8,
-            "co2_kg": 0.08,
-            "calculation_notes": "0.03 kg * 2.8 kg CO2e/kg (DB) = 0.08 kg CO2e",
-            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
-            "co2_emission_notes": "Best match in CO2 database is: oil for frying"
         },
         {
             "name": "2 spsk tomatpuré",
@@ -210,12 +210,12 @@
         {
             "name": "0.5 bdt koriander",
             "ingredient_id": null,
-            "weight_kg": 0.025,
+            "weight_kg": null,
             "co2_per_kg": null,
             "co2_kg": null,
-            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Unable to find CO2 emission"
+            "calculation_notes": "Without weight estimate can CO2 not be calculated",
+            "weight_estimation_notes": "Could not estimate weight",
+            "co2_emission_notes": null
         },
         {
             "name": "saften af 0.5 lime",

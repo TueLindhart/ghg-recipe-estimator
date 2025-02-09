@@ -1,7 +1,7 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "1 tsp steady cumin",
+            "ingredient": "1 teaspoon of cumin",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
@@ -42,7 +42,7 @@
         },
         {
             "ingredient": "1 dl vegetable broth",
-            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -86,7 +86,7 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 tsp steady cumin",
+            "ingredient": "1 teaspoon of cumin",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },

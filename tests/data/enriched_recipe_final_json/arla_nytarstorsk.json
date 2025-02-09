@@ -20,7 +20,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '400 g of beets' to 'beet, red, raw' as it is the least processed and a direct match for raw beets.",
+                "closest_match_explanation": "Matched '400 g of beets' to 'beet, red, raw' as it is the least processed option available for beets.",
                 "ingredient_id": "Ra00259",
                 "closest_match_name": "beet, red, raw",
                 "ingredient": "400 g of beets",
@@ -38,7 +38,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a direct match for vinegar without additional processing.",
+                "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category for vinegar and represents the processing involved.",
                 "ingredient_id": "Ra00150",
                 "closest_match_name": "vinegar",
                 "ingredient": "1 dl dark balsamic vinegar",
@@ -56,7 +56,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, sucrose, white' as it is a common form of sugar and has the highest emissions among the options.",
+                "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, sucrose, white' as it is a common form of sugar and represents the processing involved.",
                 "ingredient_id": "Ra00318",
                 "closest_match_name": "sugar, sucrose, white",
                 "ingredient": "2 tablespoons sugar",
@@ -85,7 +85,7 @@
                 "weight_in_kg": 0.6
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '600 g of codeloin' to 'cod, fillet, raw' as it is the least processed option available for cod and closely matches the ingredient type.",
+                "closest_match_explanation": "Matched '600 g of codeloin' to 'cod, fillet, raw' as it is the least processed option available for cod and represents the fish category.",
                 "ingredient_id": "Ra00194",
                 "closest_match_name": "cod, fillet, raw",
                 "ingredient": "600 g of codeloin",
@@ -136,7 +136,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most suitable option for water with no emissions.",
+                "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most relevant option for water.",
                 "ingredient_id": "Ra00068",
                 "closest_match_name": "water, tap, drinking, average values",
                 "ingredient": "2.5 dl water",
@@ -154,7 +154,7 @@
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3 tablespoons whole yellow mustard seeds' to 'mustard, yellow, ready made' as it is the closest match in terms of processing and type.",
+                "closest_match_explanation": "Matched '3 tablespoons whole yellow mustard seeds' to 'mustard, yellow, ready made' as it is the closest processed option available for mustard seeds.",
                 "ingredient_id": "Ra00303",
                 "closest_match_name": "mustard, yellow, ready made",
                 "ingredient": "3 tablespoons whole yellow mustard seeds",
@@ -190,7 +190,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '200 g of cold butter (in small pieces)' to 'butter, salt added' as it is the most relevant option for butter with the highest emissions.",
+                "closest_match_explanation": "Matched '200 g of cold butter (in small pieces)' to 'butter, salt added' as it is the most relevant option for butter.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
                 "ingredient": "200 g of cold butter (in small pieces)",
@@ -230,7 +230,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a direct match for fresh herbs with the lowest emissions.",
+                "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common fresh herb and represents the least processed option available.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "fresh herbs",
@@ -248,7 +248,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the most relevant option for bacon with the highest emissions.",
+                "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the most relevant option for bacon and represents the processing involved.",
                 "ingredient_id": "Ra00044",
                 "closest_match_name": "bacon, frying, raw",
                 "ingredient": "100 g of fried bacon",

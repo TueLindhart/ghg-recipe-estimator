@@ -41,7 +41,7 @@
             "co2_per_kg": 1.7
         },
         {
-            "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the least processed option available for water, following rules 1 and 4.",
+            "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the least processed option available for water, following rules 1 and 9.",
             "ingredient_id": "Ra00068",
             "closest_match_name": "water, tap, drinking, average values",
             "ingredient": "1 dl water",

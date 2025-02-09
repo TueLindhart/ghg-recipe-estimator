@@ -54,7 +54,7 @@
             "co2_per_kg": 1.1,
             "co2_kg": 0.17,
             "calculation_notes": "0.15 kg * 1.1 kg CO2e/kg (DB) = 0.17 kg CO2e",
-            "weight_estimation_notes": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+            "weight_estimation_notes": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
             "co2_emission_notes": "Best match in CO2 database is: pepper, sweet, red, raw"
         },
         {
@@ -68,16 +68,6 @@
             "co2_emission_notes": "Best match in CO2 database is: pepper, black"
         },
         {
-            "name": "4 tbsp chili powder",
-            "ingredient_id": "Ra00484",
-            "weight_kg": 0.06,
-            "co2_per_kg": 2.1,
-            "co2_kg": 0.13,
-            "calculation_notes": "0.06 kg * 2.1 kg CO2e/kg (DB) = 0.13 kg CO2e",
-            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
-            "co2_emission_notes": "Best match in CO2 database is: chili sauce"
-        },
-        {
             "name": "1 bunch scallions",
             "ingredient_id": "Ra00267",
             "weight_kg": 0.1,
@@ -86,6 +76,16 @@
             "calculation_notes": "0.1 kg * 0.8 kg CO2e/kg (DB) = 0.08 kg CO2e",
             "weight_estimation_notes": "1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: onions, spring, raw"
+        },
+        {
+            "name": "4 tbsp chili powder",
+            "ingredient_id": "Ra00009",
+            "weight_kg": 0.06,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.07,
+            "calculation_notes": "0.06 kg * 1.1 kg CO2e/kg (DB) = 0.07 kg CO2e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.060 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, hot chili, raw"
         },
         {
             "name": "2 medium carrots",
@@ -154,7 +154,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
             "co2_emission_notes": null
         },
         {
@@ -164,7 +164,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
             "co2_emission_notes": null
         },
         {

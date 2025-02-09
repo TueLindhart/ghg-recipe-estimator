@@ -57,7 +57,7 @@ async def test_async_estimator(
         verbose=False,
     )
     try:
-        output = RecipeCO2Output.parse_raw(output_str)
+        output = RecipeCO2Output.model_validate_json(output_str)
     except Exception as e:
         raise AssertionError(f"Could not parse output as RecipeCO2Output: {e}")
 

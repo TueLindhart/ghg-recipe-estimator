@@ -41,7 +41,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 Can Diced Tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the only canned option available for tomatoes.",
+            "closest_match_explanation": "Matched '1 Can Diced Tomatoes (15 ounces)' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 Can Diced Tomatoes (15 ounces)",
@@ -49,7 +49,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '2 Cans Black Beans (15 ounces)' to 'black beans' as it is the only option available for black beans.",
+            "closest_match_explanation": "Matched '2 Cans Black Beans (15 ounces)' to 'black beans' as it is the least processed option available for black beans.",
             "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
             "ingredient": "2 Cans Black Beans (15 ounces)",
@@ -57,15 +57,15 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most processed option available for chili powder.",
-            "ingredient_id": "Ra00484",
-            "closest_match_name": "chili sauce",
+            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'pepper, hot chili, raw' as it is the closest match available for chili powder considering processing levels.",
+            "ingredient_id": "Ra00009",
+            "closest_match_name": "pepper, hot chili, raw",
             "ingredient": "4 tbsp chili powder",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.1
+            "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the only option available for salt.",
+            "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the least processed option available for salt.",
             "ingredient_id": "Ra00151",
             "closest_match_name": "salt, table",
             "ingredient": "salt",
@@ -73,7 +73,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched 'Black Pepper' to 'pepper, black' as it is the only option available for black pepper.",
+            "closest_match_explanation": "Matched 'Black Pepper' to 'pepper, black' as it is the least processed option available for black pepper.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "Black Pepper",
@@ -81,7 +81,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the only option available for corn muffin mix.",
+            "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the least processed option available for corn muffin mix.",
             "ingredient_id": "Ra00107",
             "closest_match_name": "corn flour",
             "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
@@ -89,7 +89,7 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '0.33 Cup Milk' to 'milk' as it is the only option available for milk.",
+            "closest_match_explanation": "Matched '0.33 Cup Milk' to 'milk' as it is the least processed option available for milk.",
             "ingredient_id": "Ra00342",
             "closest_match_name": "milk",
             "ingredient": "0.33 Cup Milk",
