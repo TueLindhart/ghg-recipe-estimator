@@ -2,16 +2,17 @@
     "ingredients": [
         {
             "original_name": "420 ml kokosmælk",
-            "en_name": "420 ml coconut milk",
+            "en_name": "420 ml of coconut milk",
             "weight_estimate": {
-                "ingredient": "420 ml coconut milk",
+                "ingredient": "420 ml of coconut milk",
                 "weight_calculation": "420 ml = 420 g, 1 * 420 g = 420 g = 0.42 kg",
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '420 ml coconut milk' is 'coconut milk' as it directly corresponds to the ingredient without any processing differences. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
+                "closest_match_explanation": "Matched '420 ml of coconut milk' to 'coconut milk' as it is the exact ingredient in the database.",
+                "ingredient_id": "Ra00404",
                 "closest_match_name": "coconut milk",
-                "ingredient": "420 ml coconut milk",
+                "ingredient": "420 ml of coconut milk",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 6.3
             },
@@ -26,7 +27,8 @@
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '50 g green curry paste' is 'green curry paste' as it is the exact ingredient listed in the database. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
+                "closest_match_explanation": "Matched '50 g green curry paste' to 'green curry paste' as it is the exact ingredient in the database.",
+                "ingredient_id": "Ra00469",
                 "closest_match_name": "green curry paste",
                 "ingredient": "50 g green curry paste",
                 "unit": "kg CO2e per kg",
@@ -36,35 +38,37 @@
         },
         {
             "original_name": "240 ml kyllingebouillon, usaltet",
-            "en_name": "240 ml chicken stock, unsalted",
+            "en_name": "240 ml of chicken broth, unsalted",
             "weight_estimate": {
-                "ingredient": "240 ml chicken stock, unsalted",
+                "ingredient": "240 ml of chicken broth, unsalted",
                 "weight_calculation": "240 ml = 240 g, 1 * 240 g = 240 g = 0.24 kg",
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '240 ml chicken stock, unsalted' is 'bouillon, chicken, prepared' as it represents a similar product derived from chicken. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
+                "closest_match_explanation": "Matched '240 ml of chicken broth, unsalted' to 'bouillon, chicken, prepared' as it is the closest match considering it is a prepared chicken broth.",
+                "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
-                "ingredient": "240 ml chicken stock, unsalted",
+                "ingredient": "240 ml of chicken broth, unsalted",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             },
             "co2_per_kg_search": null
         },
         {
-            "original_name": "450 g kyllingelår, uden ben og skind, skåret i 1-tommers stykker",
-            "en_name": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
+            "original_name": "450 g kyllingelår, uden ben, uden skind, 1-tommers stykker",
+            "en_name": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
             "weight_estimate": {
-                "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
+                "ingredient": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
                 "weight_calculation": "450 g = 450 g = 0.45 kg",
                 "weight_in_kg": 0.45
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '450 g chicken thighs, boneless and skinless, cut into 1-inch pieces' is 'chicken, breast, flesh and skin, raw' as it is the closest in terms of processing and type of meat. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
-                "closest_match_name": "chicken, breast, flesh and skin, raw",
-                "ingredient": "450 g chicken thighs, boneless and skinless, cut into 1-inch pieces",
+                "closest_match_explanation": "Matched '450 g of chicken thighs, without legs, without skins, 1-inch pieces' to 'chicken, leg, flesh and skin, raw' as it is the closest match considering it is raw chicken thigh meat.",
+                "ingredient_id": "Ra00053",
+                "closest_match_name": "chicken, leg, flesh and skin, raw",
+                "ingredient": "450 g of chicken thighs, without legs, without skins, 1-inch pieces",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.2
+                "co2_per_kg": 2.0
             },
             "co2_per_kg_search": null
         },
@@ -84,35 +88,43 @@
             "en_name": "22.5-30 ml fish sauce",
             "weight_estimate": {
                 "ingredient": "22.5-30 ml fish sauce",
-                "weight_calculation": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+                "weight_calculation": "Average of 22.5 ml and 30 ml = 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
                 "weight_in_kg": 0.02625
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '22.5-30 ml fish sauce' to 'soya sauce' as it is the closest match available in the database, considering the lack of a direct match for fish sauce.",
+                "ingredient_id": "Ra00373",
+                "closest_match_name": "soya sauce",
+                "ingredient": "22.5-30 ml fish sauce",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.9
+            },
             "co2_per_kg_search": null
         },
         {
             "original_name": "4 kaffir limeblade",
-            "en_name": "4 kaffir lime leaves",
+            "en_name": "4 Kaffir Lime Leaves",
             "weight_estimate": {
-                "ingredient": "4 kaffir lime leaves",
-                "weight_calculation": "Amount of kaffir lime leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+                "ingredient": "4 Kaffir Lime Leaves",
+                "weight_calculation": "Amount of Kaffir Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 550 ml dåse bambusskud, drænet og skyllet",
-            "en_name": "1 550 ml can bamboo shoots, drained and rinsed",
+            "original_name": "550 ml bambusskud, drænet og skyllet",
+            "en_name": "550 ml of bamboo shoots, drained and rinsed",
             "weight_estimate": {
-                "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
-                "weight_calculation": "1 can = 550 g, 1 * 550 g = 550 g = 0.55 kg",
+                "ingredient": "550 ml of bamboo shoots, drained and rinsed",
+                "weight_calculation": "550 ml = 550 g, 1 * 550 g = 550 g = 0.55 kg",
                 "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for '1 550 ml can bamboo shoots, drained and rinsed' is 'bamboo shoots, canned, nonsalted' as it directly corresponds to the ingredient without any processing differences. This follows rule 1 for realistic comparisons and rule 9 for using provided emission options.",
+                "closest_match_explanation": "Matched '550 ml of bamboo shoots, drained and rinsed' to 'bamboo shoots, canned, nonsalted' as it is the closest match considering it is a canned product.",
+                "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
-                "ingredient": "1 550 ml can bamboo shoots, drained and rinsed",
+                "ingredient": "550 ml of bamboo shoots, drained and rinsed",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.4
             },
@@ -137,28 +149,25 @@
                 "weight_calculation": "1 red pepper = 150 g, ¼ * 150 g = 37.5 g = 0.0375 kg",
                 "weight_in_kg": 0.0375
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '¼ red pepper, julienned' to 'pepper, sweet, red, raw' as it is the exact ingredient in the database.",
+                "ingredient_id": "Ra00001",
+                "closest_match_name": "pepper, sweet, red, raw",
+                "ingredient": "¼ red pepper, julienned",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.1
+            },
             "co2_per_kg_search": null
         },
         {
             "original_name": "jasminris til servering",
-            "en_name": "jasmine rice, to serve",
-            "weight_estimate": {
-                "ingredient": "jasmine rice, to serve",
-                "weight_calculation": "Amount of jasmine rice not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
-                "weight_in_kg": 0.5
-            },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "The best match for 'jasmine rice, to serve' is 'rice, parboiled, raw' as it represents a broader category of rice that is least processed. This follows rule 2 for broader categories and rule 9 for using provided emission options.",
-                "closest_match_name": "rice, parboiled, raw",
-                "ingredient": "jasmine rice, to serve",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.1
-            },
+            "en_name": "JasminRis for serving ",
+            "weight_estimate": null,
+            "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
     "persons": 4,
-    "instructions": "1. Reduce ¾ cup coconut milk until thick and coconut oil begins to separate from the coconut milk. 2. Add curry paste and sauté, stirring constantly over medium heat, about 2 minutes, until aromatic. 3. Add chicken thighs and stir to combine with the paste. 4. Add chicken stock, remaining 1 cup coconut milk, palm sugar, and 1 tablespoon fish sauce. Add the kaffir lime leaves and simmer for 10-15 minutes, or until the chicken is tender. 5. Add the bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in the Thai basil and serve with jasmine rice.",
+    "instructions": " 1. Reduce ¾ cup of coconut milk until it is thick and the coconut oil begins to separate from the coconut milk. 2. Add the curry paste and saute while stirring constantly over medium heat for approx. 2 minutes until aromatic. 3. Add chicken thighs and stir to mix with the pasta. 4. Add chicken broth, the remaining 1 cup of coconut milk, palm sugar and 1 tablespoon of fish sauce. Add Kaffir lime leaves and simmer for 10-15 minutes, or until the chicken is tender. 5. Add bamboo shoots and bring to a boil. 6. Taste and add more fish sauce and/or sugar as needed. 7. Stir in Thai basil and serve with jasmine rice.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

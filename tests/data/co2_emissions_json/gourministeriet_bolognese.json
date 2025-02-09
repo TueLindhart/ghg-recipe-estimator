@@ -1,74 +1,92 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '1 kg minced beef' to 'beef, mince, 5-10% fat, raw' as it is the closest match for minced beef and follows the rules for realistic comparisons and processing levels.",
+            "closest_match_explanation": "Matched '1 kg of minced beef' to 'beef, mince, 5-10% fat, raw' as it is the closest match based on the type of meat and processing level.",
+            "ingredient_id": "Ra00016",
             "closest_match_name": "beef, mince, 5-10% fat, raw",
-            "ingredient": "1 kg minced beef",
+            "ingredient": "1 kg of minced beef",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 50.6
         },
         {
-            "closest_match_explanation": "Matched '3 large onions' to 'onion, raw' as it is the least processed option available and follows the rules for processing levels.",
+            "closest_match_explanation": "Matched '3 large onions' to 'onion, raw' as it is the least processed and a direct match for raw onions.",
+            "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "3 large onions",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '3 carrots' to 'carrot, raw' as it is the least processed option available and follows the rules for processing levels.",
+            "closest_match_explanation": "Matched '3 carrots' to 'carrot, raw' as it is the least processed option available for carrots.",
+            "ingredient_id": "Ra00257",
             "closest_match_name": "carrot, raw",
             "ingredient": "3 carrots",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '2.5 stalks celery' to 'celery, raw' as it is the least processed option available and follows the rules for processing levels.",
+            "closest_match_explanation": "Matched '2.5 Stems of leaf celery' to 'celery, raw' as it is the least processed option available for celery.",
+            "ingredient_id": "Ra00153",
             "closest_match_name": "celery, raw",
-            "ingredient": "2.5 stalks celery",
+            "ingredient": "2.5 Stems of leaf celery",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '150 g tomato concentrate' to 'tomato paste, concentrated' as it is the closest match for concentrated tomato products and follows the rules for processing levels.",
+            "closest_match_explanation": "Matched '150 g tomato concentrate' to 'tomato paste, concentrated' as it is the closest match based on processing and type of ingredient.",
+            "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "150 g tomato concentrate",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched '3 tins chopped tomatoes' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes and follows the rules for processing levels.",
+            "closest_match_explanation": "Matched '3 DS chopped tomatoes' to 'tomato, peeled, canned' as it is the least processed option available for canned tomatoes.",
+            "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "3 tins chopped tomatoes",
+            "ingredient": "3 DS chopped tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '2 dl red wine' to 'wine, red' as it is the only available option for red wine and follows the rules for realistic comparisons.",
+            "closest_match_explanation": "Matched '2 dl red wine' to 'wine, red' as it is a direct match for red wine.",
+            "ingredient_id": "Ra00377",
             "closest_match_name": "wine, red",
             "ingredient": "2 dl red wine",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '0.5 dl olive oil' to 'olive oil' as it is the only available option for olive oil and follows the rules for realistic comparisons.",
+            "closest_match_explanation": "Matched '0.5 dl olive oil' to 'olive oil' as it is a direct match for olive oil.",
+            "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "0.5 dl olive oil",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched 'pasta as desired' to 'pasta, raw' as it is the least processed option available for pasta and follows the rules for processing levels.",
-            "closest_match_name": "pasta, raw",
-            "ingredient": "pasta as desired",
+            "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the least processed and a direct match for table salt.",
+            "ingredient_id": "Ra00151",
+            "closest_match_name": "salt, table",
+            "ingredient": "salt",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.1
+            "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched 'grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the closest match for grated parmesan and follows the rules for realistic comparisons and processing levels.",
-            "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
-            "ingredient": "grated parmesan",
+            "closest_match_explanation": "Matched 'pepper' to 'pepper, black' as it is the most common type of pepper and a direct match.",
+            "ingredient_id": "Ra00302",
+            "closest_match_name": "pepper, black",
+            "ingredient": "pepper",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.4
+            "co2_per_kg": 5.2
+        },
+        {
+            "closest_match_explanation": "Matched 'Pasta as desired' to 'pasta, raw' as it is the least processed option available for pasta.",
+            "ingredient_id": "Ra00234",
+            "closest_match_name": "pasta, raw",
+            "ingredient": "Pasta as desired",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 2.1
         }
     ]
 }

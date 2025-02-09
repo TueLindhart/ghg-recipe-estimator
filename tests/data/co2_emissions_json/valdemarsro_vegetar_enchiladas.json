@@ -2,6 +2,7 @@
     "emissions": [
         {
             "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
+            "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 onion",
             "unit": "kg CO2e per kg",
@@ -9,69 +10,79 @@
         },
         {
             "closest_match_explanation": "Matched '1 dl vegetable broth' to 'bouillon, chicken, prepared' as it is a common form of vegetable broth and the closest match available.",
+            "ingredient_id": "Ra00213",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "1 dl vegetable broth",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the exact form of canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can of chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
+            "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "1 can chopped tomatoes",
+            "ingredient": "1 can of chopped tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
             "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
+            "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 onion",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Matched '1 squash' to 'squash, raw' as it is the least processed option available for squash.",
+            "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed option available for squash.",
+            "ingredient_id": "Ra00003",
             "closest_match_name": "squash, raw",
-            "ingredient": "1 squash",
+            "ingredient": "1 Squash",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can chopped tomatoes' to 'tomato, peeled, canned' as it is the exact form of canned tomatoes.",
+            "closest_match_explanation": "Matched '1 can of chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
+            "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "1 can chopped tomatoes",
+            "ingredient": "1 can of chopped tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 can black beans' to 'black beans' as it is the exact form of black beans.",
+            "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the exact match for black beans.",
+            "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
-            "ingredient": "1 can black beans",
+            "ingredient": "1 can of black beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '1 can kidney beans' to 'kidney beans' as it is the exact form of kidney beans.",
+            "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for kidney beans.",
+            "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
-            "ingredient": "1 can kidney beans",
+            "ingredient": "1 can of kidney beans",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '300 g corn' to 'corn cob' as it is the closest match available for corn.",
+            "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed option available for corn.",
+            "ingredient_id": "Ra00417",
             "closest_match_name": "corn cob",
-            "ingredient": "300 g corn",
+            "ingredient": "300 g of corn",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Matched '8 tortillas pancakes' to 'tortilla bread, wheat' as it is the closest match available for tortillas.",
+            "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the closest match for tortilla pancakes.",
+            "ingredient_id": "Ra00401",
             "closest_match_name": "tortilla bread, wheat",
-            "ingredient": "8 tortillas pancakes",
+            "ingredient": "8 Tortilla's pancakes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese with a similar processing level.",
+            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese.",
+            "ingredient_id": "Ra00494",
             "closest_match_name": "blue cheese",
             "ingredient": "150 g cheddar cheese",
             "unit": "kg CO2e per kg",

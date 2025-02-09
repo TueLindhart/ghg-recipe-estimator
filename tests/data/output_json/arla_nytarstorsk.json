@@ -1,0 +1,191 @@
+{
+    "total_co2_kg": 3.5,
+    "number_of_persons": 4,
+    "co2_per_person_kg": 0.9,
+    "avg_meal_emission_per_person_range_kg": [
+        1.3,
+        2.2
+    ],
+    "ingredients": [
+        {
+            "name": "600 g torskeloin",
+            "ingredient_id": "Ra00194",
+            "weight_kg": 0.6,
+            "co2_per_kg": 2.8,
+            "co2_kg": 1.68,
+            "calculation_notes": "0.6 kg * 2.8 kg CO2e/kg (DB) = 1.68 kg CO2e",
+            "weight_estimation_notes": "600 g = 600 g = 0.6 kg",
+            "co2_emission_notes": "Best match in CO2 database is: cod, fillet, raw"
+        },
+        {
+            "name": "200 g koldt smør (i små stykker)",
+            "ingredient_id": "Ra00037",
+            "weight_kg": 0.2,
+            "co2_per_kg": 3.3,
+            "co2_kg": 0.66,
+            "calculation_notes": "0.2 kg * 3.3 kg CO2e/kg (DB) = 0.66 kg CO2e",
+            "weight_estimation_notes": "200 g = 200 g = 0.2 kg",
+            "co2_emission_notes": "Best match in CO2 database is: butter, salt added"
+        },
+        {
+            "name": "100 g stegte bacontern",
+            "ingredient_id": "Ra00044",
+            "weight_kg": 0.1,
+            "co2_per_kg": 6.4,
+            "co2_kg": 0.64,
+            "calculation_notes": "0.1 kg * 6.4 kg CO2e/kg (DB) = 0.64 kg CO2e",
+            "weight_estimation_notes": "100 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: bacon, frying, raw"
+        },
+        {
+            "name": "1 dl mørk balsamicoeddike",
+            "ingredient_id": "Ra00150",
+            "weight_kg": 0.1,
+            "co2_per_kg": 1.6,
+            "co2_kg": 0.16,
+            "calculation_notes": "0.1 kg * 1.6 kg CO2e/kg (DB) = 0.16 kg CO2e",
+            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: vinegar"
+        },
+        {
+            "name": "400 g rødbeder",
+            "ingredient_id": "Ra00259",
+            "weight_kg": 0.4,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.12,
+            "calculation_notes": "0.4 kg * 0.3 kg CO2e/kg (DB) = 0.12 kg CO2e",
+            "weight_estimation_notes": "400 g = 400 g = 0.4 kg",
+            "co2_emission_notes": "Best match in CO2 database is: beet, red, raw"
+        },
+        {
+            "name": "3 spsk hele gule sennepsfrø",
+            "ingredient_id": "Ra00303",
+            "weight_kg": 0.045,
+            "co2_per_kg": 1.9,
+            "co2_kg": 0.09,
+            "calculation_notes": "0.04 kg * 1.9 kg CO2e/kg (DB) = 0.09 kg CO2e",
+            "weight_estimation_notes": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "co2_emission_notes": "Best match in CO2 database is: mustard, yellow, ready made"
+        },
+        {
+            "name": "2 spsk sukker",
+            "ingredient_id": "Ra00318",
+            "weight_kg": 0.03,
+            "co2_per_kg": 2.7,
+            "co2_kg": 0.08,
+            "calculation_notes": "0.03 kg * 2.7 kg CO2e/kg (DB) = 0.08 kg CO2e",
+            "weight_estimation_notes": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+            "co2_emission_notes": "Best match in CO2 database is: sugar, sucrose, white"
+        },
+        {
+            "name": "friske krydderurter",
+            "ingredient_id": "Ra00486",
+            "weight_kg": 0.1,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.04,
+            "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg (DB) = 0.04 kg CO2e",
+            "weight_estimation_notes": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 servings * 0.025 kg = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: basil, fresh"
+        },
+        {
+            "name": "75 g finthakkede skalotteløg",
+            "ingredient_id": "Ra00266",
+            "weight_kg": 0.075,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.02,
+            "calculation_notes": "0.07 kg * 0.3 kg CO2e/kg (DB) = 0.02 kg CO2e",
+            "weight_estimation_notes": "75 g = 75 g = 0.075 kg",
+            "co2_emission_notes": "Best match in CO2 database is: onion, raw"
+        },
+        {
+            "name": "25 g smør",
+            "ingredient_id": null,
+            "weight_kg": 0.025,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "25 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Unable to find CO2 emission"
+        },
+        {
+            "name": "1 tsk groft salt",
+            "ingredient_id": null,
+            "weight_kg": 0.005,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.005 kg is negligible",
+            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "25 g smør (smeltet)",
+            "ingredient_id": null,
+            "weight_kg": 0.025,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "25 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Unable to find CO2 emission"
+        },
+        {
+            "name": "0.5 tsk groft salt",
+            "ingredient_id": null,
+            "weight_kg": 0.003,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.003 kg is negligible",
+            "weight_estimation_notes": "0.5 tsp. = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "1.5 tsk hvedemel",
+            "ingredient_id": null,
+            "weight_kg": 0.007,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.007 kg is negligible",
+            "weight_estimation_notes": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "2.5 dl vand",
+            "ingredient_id": "Ra00068",
+            "weight_kg": 0.25,
+            "co2_per_kg": 0.0,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "2.5 dl = 250 g, 2.5 * 100 g = 250 g = 0.25 kg",
+            "co2_emission_notes": "Best match in CO2 database is: water, tap, drinking, average values"
+        },
+        {
+            "name": "0.75 tsk groft salt",
+            "ingredient_id": null,
+            "weight_kg": 0.004,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.004 kg is negligible",
+            "weight_estimation_notes": "0.75 tsp. = 3.75 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "friskkværnet peber",
+            "ingredient_id": null,
+            "weight_kg": 0.02,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Weight on 0.02 kg is negligible",
+            "weight_estimation_notes": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "co2_emission_notes": null
+        },
+        {
+            "name": "4 blødkogte vagtelæg",
+            "ingredient_id": null,
+            "weight_kg": null,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Without weight estimate can CO2 not be calculated",
+            "weight_estimation_notes": "Could not estimate weight",
+            "co2_emission_notes": null
+        }
+    ]
+}

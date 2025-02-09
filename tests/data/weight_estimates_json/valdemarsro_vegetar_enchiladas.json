@@ -1,33 +1,33 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "1 tsp ground cumin",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "ingredient": "1 tsp steady cumin",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 tsp ground cinnamon",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "ingredient": "1 teaspoon of cinnamon",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 tsp smoked paprika",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "ingredient": "1 teaspoon smoked paprika",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 tsp ground coriander",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "ingredient": "1 tsp steady coriander",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "2 cloves garlic",
+            "ingredient": "2 cloves of garlic",
             "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "1 tbsp olive oil",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "ingredient": "1 tablespoon olive oil",
+            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "1 tsp wheat flour",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -46,13 +46,13 @@
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 can chopped tomatoes",
+            "ingredient": "1 can of chopped tomatoes",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 tbsp olive oil",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "ingredient": "1 tablespoon olive oil",
+            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
@@ -61,7 +61,7 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "black pepper",
+            "ingredient": "Black pepper",
             "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
@@ -71,47 +71,47 @@
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "2 cloves garlic",
+            "ingredient": "2 cloves of garlic",
             "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "1 squash",
+            "ingredient": "1 Squash",
             "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 can chopped tomatoes",
+            "ingredient": "1 can of chopped tomatoes",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 tsp ground cumin",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "ingredient": "1 tsp steady cumin",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 tsp ground coriander",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "ingredient": "1 tsp steady coriander",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 can black beans",
+            "ingredient": "1 can of black beans",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 can kidney beans",
+            "ingredient": "1 can of kidney beans",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "300 g corn",
+            "ingredient": "300 g of corn",
             "weight_calculation": "300 g = 300 g = 0.3 kg",
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "8 tortillas pancakes",
+            "ingredient": "8 Tortilla's pancakes",
             "weight_calculation": "1 tortilla = 30 g, 8 * 30 g = 240 g = 0.24 kg",
             "weight_in_kg": 0.24
         },
@@ -121,13 +121,13 @@
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "1 handful fresh coriander",
-            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "ingredient": "1 handful of fresh coriander",
+            "weight_calculation": "1 handful of fresh coriander = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "1 tbsp butter",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "ingredient": "1 tablespoon butter",
+            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         }
     ]

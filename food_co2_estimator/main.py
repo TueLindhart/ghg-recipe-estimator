@@ -26,7 +26,6 @@ async def async_estimator(
     verbose: bool = False,
     negligeble_threshold: float = NEGLIGIBLE_THRESHOLD,
     logging_level=logging.INFO,
-    return_output_string: bool = True,
 ):
     logging.basicConfig(level=logging_level)
     text = get_markdown_from_url(url)
@@ -98,15 +97,13 @@ async def async_estimator(
         log_exception_message(url, str(e))
         log_exception_message(url, search_emissions_exception)
 
-    if return_output_string:
-        # Build a Pydantic model and return its JSON representation
-        output_model = generate_output_model(
-            enriched_recipe=enriched_recipe,
-            negligeble_threshold=negligeble_threshold,
-            number_of_persons=enriched_recipe.persons,
-        )
-        return output_model.model_dump_json()
-    return enriched_recipe
+    # Build a Pydantic model and return its JSON representation
+    output_model = generate_output_model(
+        enriched_recipe=enriched_recipe,
+        negligeble_threshold=negligeble_threshold,
+        number_of_persons=enriched_recipe.persons,
+    )
+    return output_model.model_dump_json()
 
 
 if __name__ == "__main__":

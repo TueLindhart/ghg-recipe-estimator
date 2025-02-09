@@ -11,23 +11,23 @@
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "0.5 red pepper",
+            "ingredient": "0.5 Red pepper",
             "weight_calculation": "1 bell pepper = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
             "weight_in_kg": 0.075
         },
         {
-            "ingredient": "oil for frying",
+            "ingredient": "Oil for frying",
             "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.030 kg",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "250 g beef",
+            "ingredient": "250 g of beef",
             "weight_calculation": "250 g = 250 g = 0.250 kg",
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "1.5 tbsp fajita seasoning",
-            "weight_calculation": "1 tbsp = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
+            "ingredient": "1.5 tablespoons fajita seasoning",
+            "weight_calculation": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
             "weight_in_kg": 0.0225
         },
         {
@@ -36,17 +36,17 @@
             "weight_in_kg": 0.01
         },
         {
-            "ingredient": "1 can kidney beans",
-            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "ingredient": "1 can of kidney beans",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "2 tbsp tomato paste",
-            "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+            "ingredient": "2 tablespoons tomato puree",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "2.5 dl beef stock",
+            "ingredient": "2.5 dl beef broth",
             "weight_calculation": "2.5 dl = 250 g, 1 * 250 g = 250 g = 0.250 kg",
             "weight_in_kg": 0.25
         },
@@ -56,12 +56,12 @@
             "weight_in_kg": 0.36
         },
         {
-            "ingredient": "1 portion of tomato salsa",
+            "ingredient": "1 serving of tomato salsa",
             "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 2 servings * 0.1 kg = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
-            "ingredient": "1 avocado",
+            "ingredient": "1 Avocado",
             "weight_calculation": "1 avocado = 200 g, 1 * 200 g = 200 g = 0.200 kg",
             "weight_in_kg": 0.2
         },
@@ -76,7 +76,7 @@
             "weight_in_kg": 0.01
         },
         {
-            "ingredient": "0.5 red onion",
+            "ingredient": "0.5 Red onion",
             "weight_calculation": "1 onion = 170 g, 0.5 * 170 g = 85 g = 0.085 kg",
             "weight_in_kg": 0.085
         },
@@ -86,29 +86,29 @@
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "300 g tomatoes",
+            "ingredient": "300 g of tomatoes",
             "weight_calculation": "300 g = 300 g = 0.300 kg",
             "weight_in_kg": 0.3
         },
         {
             "ingredient": "0.5 - 1 chili pepper",
-            "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "weight_in_kg": 0.025
+            "weight_calculation": "1 chili pepper = 10 g, 0.5 * 10 g = 5 g = 0.005 kg",
+            "weight_in_kg": 0.005
         },
         {
-            "ingredient": "0.5 bunch of coriander",
+            "ingredient": "0.5 bunch coriander",
             "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "2 tbsp olive oil",
-            "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+            "ingredient": "2 tablespoons olive oil",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "juice of 0.5 lime",
-            "weight_calculation": "Amount of lime juice not specified. LLM estimate is: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "weight_in_kg": 0.025
+            "ingredient": "The juice of 0.5 lime",
+            "weight_calculation": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
+            "weight_in_kg": 0.035
         }
     ]
 }
