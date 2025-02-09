@@ -33,7 +33,7 @@
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most relevant option for water.",
+            "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most common form of water and has the lowest emissions.",
             "ingredient_id": "Ra00068",
             "closest_match_name": "water, tap, drinking, average values",
             "ingredient": "2.5 dl water",
@@ -65,7 +65,7 @@
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common fresh herb and represents the least processed option available.",
+            "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common fresh herb and represents the least processed option.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "fresh herbs",
@@ -73,7 +73,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the most relevant option for bacon and represents the processing involved.",
+            "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the most relevant option for fried bacon.",
             "ingredient_id": "Ra00044",
             "closest_match_name": "bacon, frying, raw",
             "ingredient": "100 g of fried bacon",

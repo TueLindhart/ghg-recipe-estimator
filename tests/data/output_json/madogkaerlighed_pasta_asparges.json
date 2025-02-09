@@ -14,7 +14,7 @@
             "co2_per_kg": 1.1,
             "co2_kg": 0.55,
             "calculation_notes": "0.5 kg * 1.1 kg CO2e/kg (DB) = 0.55 kg CO2e",
-            "weight_estimation_notes": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "weight_estimation_notes": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "co2_emission_notes": "Best match in CO2 database is: asparagus, green, raw"
         },
         {
@@ -24,7 +24,7 @@
             "co2_per_kg": 5.4,
             "co2_kg": 0.54,
             "calculation_notes": "0.1 kg * 5.4 kg CO2e/kg (DB) = 0.54 kg CO2e",
-            "weight_estimation_notes": "1 handful of cheese = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 handful of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: cheese, semihard, mozzarella, 30 % fidm."
         },
         {

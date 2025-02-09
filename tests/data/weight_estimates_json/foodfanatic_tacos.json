@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "1 can of kidney beans",
-            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
@@ -46,7 +46,7 @@
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "2.5 dl beef stock",
+            "ingredient": "2.5 dl beef broth",
             "weight_calculation": "2.5 dl = 250 g, 1 * 250 g = 250 g = 0.250 kg",
             "weight_in_kg": 0.25
         },
@@ -91,9 +91,9 @@
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "0.5 - 1 chili pepper",
-            "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "weight_in_kg": 0.025
+            "ingredient": "0.75 chili pepper",
+            "weight_calculation": "1 bell pepper = 150 g, 0.75 * 150 g = 112.5 g = 0.1125 kg",
+            "weight_in_kg": 0.1125
         },
         {
             "ingredient": "0.5 bunch coriander",
@@ -107,8 +107,8 @@
         },
         {
             "ingredient": "The juice of 0.5 lime",
-            "weight_calculation": "Amount of lime juice not specified. LLM estimate is: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "weight_in_kg": 0.025
+            "weight_calculation": "1 lime = 70 g, 0.5 * 70 g = 35 g = 0.035 kg",
+            "weight_in_kg": 0.035
         }
     ]
 }

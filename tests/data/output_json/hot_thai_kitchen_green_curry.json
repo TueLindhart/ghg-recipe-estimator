@@ -28,13 +28,13 @@
             "co2_emission_notes": "Best match in CO2 database is: minced chicken"
         },
         {
-            "name": "550 ml bambusskud, drænet og skyllet",
+            "name": "1 550 ml dåse bambusskud, drænet og skyllet",
             "ingredient_id": "Ra00365",
             "weight_kg": 0.55,
             "co2_per_kg": 1.4,
             "co2_kg": 0.77,
             "calculation_notes": "0.55 kg * 1.4 kg CO2e/kg (DB) = 0.77 kg CO2e",
-            "weight_estimation_notes": "550 ml = 550 g, 1 * 550 g = 550 g = 0.55 kg",
+            "weight_estimation_notes": "1 can = 550 g, 1 * 550 g = 550 g = 0.55 kg",
             "co2_emission_notes": "Best match in CO2 database is: bamboo shoots, canned, nonsalted"
         },
         {
@@ -64,7 +64,7 @@
             "co2_per_kg": 1.9,
             "co2_kg": 0.05,
             "calculation_notes": "0.03 kg * 1.9 kg CO2e/kg (DB) = 0.05 kg CO2e",
-            "weight_estimation_notes": "Average of 22.5 ml and 30 ml = 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
+            "weight_estimation_notes": "Average of 22.5 ml and 30 ml is 26.25 ml = 26.25 g, 1 * 26.25 g = 26.25 g = 0.02625 kg",
             "co2_emission_notes": "Best match in CO2 database is: soya sauce"
         },
         {

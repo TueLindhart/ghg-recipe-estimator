@@ -5,7 +5,7 @@
             "en_name": "1 tbsp olive oil",
             "weight_estimate": {
                 "ingredient": "1 tbsp olive oil",
-                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,
@@ -142,16 +142,16 @@
             "en_name": "4 tbsp chili powder",
             "weight_estimate": {
                 "ingredient": "4 tbsp chili powder",
-                "weight_calculation": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.060 kg",
+                "weight_calculation": "1 tablespoon = 15 g, 4 * 15 g = 60 g = 0.06 kg",
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'pepper, hot chili, raw' as it is the closest match available for chili powder considering processing levels.",
-                "ingredient_id": "Ra00009",
-                "closest_match_name": "pepper, hot chili, raw",
+                "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option available for chili powder, considering processing levels.",
+                "ingredient_id": "Ra00484",
+                "closest_match_name": "chili sauce",
                 "ingredient": "4 tbsp chili powder",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1
+                "co2_per_kg": 2.1
             },
             "co2_per_kg_search": null
         },
@@ -160,7 +160,7 @@
             "en_name": "1 tbsp ground cumin",
             "weight_estimate": {
                 "ingredient": "1 tbsp ground cumin",
-                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": null,
@@ -171,7 +171,7 @@
             "en_name": "2 tsp granulated garlic",
             "weight_estimate": {
                 "ingredient": "2 tsp granulated garlic",
-                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -182,7 +182,7 @@
             "en_name": "2 tsp onion powder",
             "weight_estimate": {
                 "ingredient": "2 tsp onion powder",
-                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -193,7 +193,7 @@
             "en_name": "0.25 tsp hot smoked paprika",
             "weight_estimate": {
                 "ingredient": "0.25 tsp hot smoked paprika",
-                "weight_calculation": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
                 "weight_in_kg": 0.00125
             },
             "co2_per_kg_db": null,
@@ -244,7 +244,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the least processed option available for corn muffin mix.",
+                "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the most relevant option available for corn muffin mix, considering processing levels.",
                 "ingredient_id": "Ra00107",
                 "closest_match_name": "corn flour",
                 "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
@@ -258,8 +258,8 @@
             "en_name": "0.33 Cup Milk",
             "weight_estimate": {
                 "ingredient": "0.33 Cup Milk",
-                "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
-                "weight_in_kg": 0.0792
+                "weight_calculation": "1 cup = 240 ml, 0.33 cup = 80 g, 1 * 80 g = 80 g = 0.08 kg",
+                "weight_in_kg": 0.08
             },
             "co2_per_kg_db": {
                 "closest_match_explanation": "Matched '0.33 Cup Milk' to 'milk' as it is the least processed option available for milk.",

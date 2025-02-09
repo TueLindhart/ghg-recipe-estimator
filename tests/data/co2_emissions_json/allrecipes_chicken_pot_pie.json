@@ -57,12 +57,12 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'pepper, hot chili, raw' as it is the closest match available for chili powder considering processing levels.",
-            "ingredient_id": "Ra00009",
-            "closest_match_name": "pepper, hot chili, raw",
+            "closest_match_explanation": "Matched '4 tbsp chili powder' to 'chili sauce' as it is the most relevant option available for chili powder, considering processing levels.",
+            "ingredient_id": "Ra00484",
+            "closest_match_name": "chili sauce",
             "ingredient": "4 tbsp chili powder",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 2.1
         },
         {
             "closest_match_explanation": "Matched 'salt' to 'salt, table' as it is the least processed option available for salt.",
@@ -81,7 +81,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the least processed option available for corn muffin mix.",
+            "closest_match_explanation": "Matched '1 Package Dry Corn Muffin Mix (8.5 ounces)' to 'corn flour' as it is the most relevant option available for corn muffin mix, considering processing levels.",
             "ingredient_id": "Ra00107",
             "closest_match_name": "corn flour",
             "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",

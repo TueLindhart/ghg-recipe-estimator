@@ -3,6 +3,7 @@ import json
 import os
 
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
+from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 from tests.conftest import get_expected_enriched_recipe
 from tests.data_paths import WEIGHT_EST_DIR
 from tests.urls import TEST_URLS
@@ -11,7 +12,7 @@ from tests.urls import TEST_URLS
 os.makedirs(WEIGHT_EST_DIR, exist_ok=True)
 
 
-async def save_weight_estimates(file_name: str, url: str):
+async def save_weight_estimates(file_name: str, url: str) -> WeightEstimates:
     enriched_recipe = get_expected_enriched_recipe(file_name)
     weight_estimate = await get_weight_estimates(verbose=False, recipe=enriched_recipe)
 
@@ -20,6 +21,7 @@ async def save_weight_estimates(file_name: str, url: str):
     with open(output_filepath, "w", encoding="utf-8") as file:
         json.dump(weight_estimate.model_dump(), file, ensure_ascii=False, indent=4)
     print(f"Stored JSON output for {url} in {output_filepath}")
+    return weight_estimate
 
 
 async def main():

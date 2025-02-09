@@ -1,5 +1,5 @@
 {
-    "total_co2_kg": 20.5,
+    "total_co2_kg": 20.6,
     "number_of_persons": 2,
     "co2_per_person_kg": 10.3,
     "avg_meal_emission_per_person_range_kg": [
@@ -24,7 +24,7 @@
             "co2_per_kg": 1.2,
             "co2_kg": 0.48,
             "calculation_notes": "0.4 kg * 1.2 kg CO2e/kg (DB) = 0.48 kg CO2e",
-            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "co2_emission_notes": "Best match in CO2 database is: kidney beans"
         },
         {
@@ -76,6 +76,16 @@
             "calculation_notes": "0.1 kg * 1.4 kg CO2e/kg (DB) = 0.14 kg CO2e",
             "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
+        },
+        {
+            "name": "0.75 chilipeber",
+            "ingredient_id": "Ra00009",
+            "weight_kg": 0.113,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.12,
+            "calculation_notes": "0.11 kg * 1.1 kg CO2e/kg (DB) = 0.12 kg CO2e",
+            "weight_estimation_notes": "1 bell pepper = 150 g, 0.75 * 150 g = 112.5 g = 0.1125 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, hot chili, raw"
         },
         {
             "name": "0.5 rød peberfrugt",
@@ -196,16 +206,6 @@
             "calculation_notes": "Weight on 0.008 kg is negligible",
             "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "co2_emission_notes": null
-        },
-        {
-            "name": "0.5 - 1 chilipeber",
-            "ingredient_id": null,
-            "weight_kg": 0.025,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Unable to find CO2 emission"
         },
         {
             "name": "0.5 bdt koriander",

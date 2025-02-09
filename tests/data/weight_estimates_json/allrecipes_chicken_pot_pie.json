@@ -2,7 +2,7 @@
     "weight_estimates": [
         {
             "ingredient": "1 tbsp olive oil",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
@@ -42,27 +42,27 @@
         },
         {
             "ingredient": "4 tbsp chili powder",
-            "weight_calculation": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.060 kg",
+            "weight_calculation": "1 tablespoon = 15 g, 4 * 15 g = 60 g = 0.06 kg",
             "weight_in_kg": 0.06
         },
         {
             "ingredient": "1 tbsp ground cumin",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "2 tsp granulated garlic",
-            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "2 tsp onion powder",
-            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.010 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "0.25 tsp hot smoked paprika",
-            "weight_calculation": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
             "weight_in_kg": 0.00125
         },
         {
@@ -82,12 +82,12 @@
         },
         {
             "ingredient": "0.33 Cup Milk",
-            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
-            "weight_in_kg": 0.0792
+            "weight_calculation": "1 cup = 240 ml, 0.33 cup = 80 g, 1 * 80 g = 80 g = 0.08 kg",
+            "weight_in_kg": 0.08
         },
         {
             "ingredient": "1 Egg",
-            "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.050 kg",
+            "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg",
             "weight_in_kg": 0.05
         }
     ]

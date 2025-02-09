@@ -5,11 +5,6 @@ import os
 from food_co2_estimator.chains.rag_co2_estimator import NEGLIGIBLE_THRESHOLD
 from food_co2_estimator.utils.output_generator import generate_output_model
 from tests.data_paths import FINAL_ENRICHED_RECIPE_DIR, OUTPUT_RECIPE_DIR
-from tests.load_files import (
-    get_expected_enriched_recipe,
-    get_expected_rag_co2_estimates,
-    get_expected_weight_estimates,
-)
 from tests.scripts.create_extracted_recipe import (
     process_and_store_recipe as extract_recipe_and_save,
 )
@@ -24,16 +19,15 @@ os.makedirs(OUTPUT_RECIPE_DIR, exist_ok=True)
 
 async def process_and_store_enriched_recipe(file_name: str, url: str):
     # Extract the recipe and save it
-    await extract_recipe_and_save(file_name, url)
-    enriched_recipe = get_expected_enriched_recipe(file_name)
+    enriched_recipe = await extract_recipe_and_save(file_name, url)
 
     # Estimate weights and save them
-    await save_weight_estimates(file_name, url)
-    weight_estimates = get_expected_weight_estimates(file_name)
+    if enriched_recipe:
+        weight_estimates = await save_weight_estimates(file_name, url)
 
     # Estimate CO2 emissions and save them
-    await save_rag_co2_estimates(file_name, url)
-    co2_estimates = get_expected_rag_co2_estimates(file_name)
+    if weight_estimates:
+        co2_estimates = await save_rag_co2_estimates(file_name, url)
 
     enriched_recipe.update_with_weight_estimates(weight_estimates)
     enriched_recipe.update_with_co2_per_kg_db(co2_estimates)

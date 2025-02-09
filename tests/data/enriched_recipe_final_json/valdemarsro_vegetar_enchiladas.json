@@ -49,7 +49,7 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": null,
@@ -100,7 +100,7 @@
             "en_name": "1 dl vegetable broth",
             "weight_estimate": {
                 "ingredient": "1 dl vegetable broth",
-                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
@@ -187,7 +187,7 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": null,
@@ -198,7 +198,7 @@
             "en_name": "1 Squash",
             "weight_estimate": {
                 "ingredient": "1 Squash",
-                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {

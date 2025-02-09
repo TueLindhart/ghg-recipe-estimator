@@ -6,6 +6,7 @@ from food_co2_estimator.chains.rag_co2_estimator import (
     NEGLIGIBLE_THRESHOLD,
     get_co2_emissions,
 )
+from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions
 from tests.conftest import get_expected_enriched_recipe
 from tests.data_paths import CO2_EMISSIONS_DIR
 from tests.load_files import get_expected_weight_estimates
@@ -15,7 +16,7 @@ from tests.urls import TEST_URLS
 os.makedirs(CO2_EMISSIONS_DIR, exist_ok=True)
 
 
-async def save_rag_co2_estimates(file_name: str, url: str):
+async def save_rag_co2_estimates(file_name: str, url: str) -> CO2Emissions:
     enriched_recipe = get_expected_enriched_recipe(file_name)
     weight_estimates = get_expected_weight_estimates(file_name)
     enriched_recipe.update_with_weight_estimates(weight_estimates)
@@ -33,6 +34,8 @@ async def save_rag_co2_estimates(file_name: str, url: str):
     with open(output_filepath, "w", encoding="utf-8") as file:
         json.dump(rag_co2_estimates.model_dump(), file, ensure_ascii=False, indent=4)
     print(f"Stored JSON output for {url} in {output_filepath}")
+
+    return rag_co2_estimates
 
 
 async def main():

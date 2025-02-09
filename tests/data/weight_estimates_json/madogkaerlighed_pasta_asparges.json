@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "1 BDT Green Asparagus",
-            "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "weight_in_kg": 0.5
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "1 handful of cheese = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -67,8 +67,8 @@
         },
         {
             "ingredient": "Oil",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
-            "weight_in_kg": 0.02
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.03 kg",
+            "weight_in_kg": 0.03
         }
     ]
 }

@@ -52,7 +52,7 @@
             "en_name": "1 BDT Green Asparagus",
             "weight_estimate": {
                 "ingredient": "1 BDT Green Asparagus",
-                "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+                "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
@@ -121,7 +121,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the least processed option available for water, following rules 1 and 9.",
+                "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the least processed option available for water, following rules 1 and 4.",
                 "ingredient_id": "Ra00068",
                 "closest_match_name": "water, tap, drinking, average values",
                 "ingredient": "1 dl water",
@@ -164,7 +164,7 @@
             "en_name": "1 handful of mozzarella",
             "weight_estimate": {
                 "ingredient": "1 handful of mozzarella",
-                "weight_calculation": "1 handful of cheese = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 handful = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
