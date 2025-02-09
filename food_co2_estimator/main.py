@@ -121,7 +121,9 @@ if __name__ == "__main__":
     start_time = time()
     result = asyncio.run(
         async_estimator(
-            url=url, verbose=True, logging_level=logging.INFO, return_output_string=True
+            url=url,
+            verbose=True,
+            logging_level=logging.INFO,
         )
     )
     print(result)
