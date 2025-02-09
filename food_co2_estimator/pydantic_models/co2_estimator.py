@@ -9,7 +9,7 @@ class CO2perKg(BaseModel):
         "emission option is the closest match. The explanation should indicate which rules or examples "
         "in the provided matching instructions were applied."
     )
-    ingredientId: str = Field(
+    ingredient_id: str = Field(
         description="The id of the ingredient picked used to reference the db",
     )
     closest_match_name: str = Field(
