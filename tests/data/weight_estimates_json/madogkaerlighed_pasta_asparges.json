@@ -47,7 +47,7 @@
         },
         {
             "ingredient": "6 tbsp grated parmesan",
-            "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.090 kg",
             "weight_in_kg": 0.09
         },
         {
@@ -67,8 +67,8 @@
         },
         {
             "ingredient": "Oil",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 servings * 0.015 kg = 0.03 kg",
-            "weight_in_kg": 0.03
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
+            "weight_in_kg": 0.02
         }
     ]
 }

@@ -22,7 +22,7 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -72,12 +72,12 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
             "ingredient": "1 Squash",
-            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
@@ -122,7 +122,7 @@
         },
         {
             "ingredient": "1 handful of fresh coriander",
-            "weight_calculation": "1 handful of fresh coriander = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {

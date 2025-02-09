@@ -124,9 +124,9 @@ Send
 
 Om Valdemarsro
 
-**Jeg hedder Ann-Christine, og står bag alle opskrifterne her på Valdemarsro.**
+**Jeg hedder Ann-Christine, og det er mig der står bag opskrifterne her på Valdemarsro.**
 
-Min store passion er at lave mad, fotografere og finde på lækre og velsmagende opskrifter, som jeg elsker at dele med jer her på Valdemarsro, i mine kogebøger og i .
+Min store passion er at lave mad og finde på lækre og velsmagende opskrifter, som jeg elsker at dele med jer her på Valdemarsro, i mine kogebøger og i .
 
 Jeg bor i Aarhus sammen med Martin, vores børn Julie og Johan og vores søde Golden Retriever, Mille.
 

@@ -26,7 +26,7 @@
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "1.5 tablespoons fajita seasoning",
+            "ingredient": "1.5 tablespoons fajita crawling",
             "weight_calculation": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
             "weight_in_kg": 0.0225
         },
@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "1 can of kidney beans",
-            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
@@ -46,12 +46,12 @@
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "2.5 dl beef broth",
+            "ingredient": "2.5 dl beef fund",
             "weight_calculation": "2.5 dl = 250 g, 1 * 250 g = 250 g = 0.250 kg",
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "11 small corn tortillas",
+            "ingredient": "11 small cornstortillas",
             "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
             "weight_in_kg": 0.33
         },
@@ -96,8 +96,8 @@
             "weight_in_kg": 0.1125
         },
         {
-            "ingredient": "0.5 bunch coriander",
-            "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "ingredient": "0.5 Bdt coriander",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
             "weight_in_kg": 0.025
         },
         {

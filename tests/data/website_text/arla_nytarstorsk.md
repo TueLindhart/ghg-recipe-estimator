@@ -112,16 +112,15 @@ Relateret video
 
 Er du i tvivl om kogetiden på æg? Så se her hvordan Karolines Køkkenskole koger æg.
 
-Andre gode forslag
-------------------
+#### Andre gode forslag
 
-* 30 min
-
-  (59)
-* Tjek råvarekalenderen
 * 1 time 45 min
 
   (3)
+* Tradition for fornyelse
+* 30 min
+
+  (59)
 * 10 timer
 
   (20)
@@ -130,21 +129,7 @@ Andre gode forslag
   (3)
 * 2 timer 30 min
 
-  (714)
+  (715)
 * 30 min
 
   (13)
-
-**Arla Foods**
-Arla Foods amba head office
-Sønderhøj 14, 
-8260 Viby J 
-Denmark
-
-**Andre Arla websites**
-
-**Rapporter og info**
-
-**Følg**
-
-© 2025 Arla Foods

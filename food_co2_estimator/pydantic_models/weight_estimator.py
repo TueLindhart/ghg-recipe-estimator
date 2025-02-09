@@ -4,7 +4,9 @@ from pydantic import BaseModel, Field
 
 
 class WeightEstimate(BaseModel):
-    ingredient: str = Field(description="Ingredient as called in ingredient list")
+    ingredient: str = Field(
+        description="Exact name of the ingredient without any changes."
+    )
     weight_calculation: str = Field(
         description="Description of how weights are estimated"
     )
