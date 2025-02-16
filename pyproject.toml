@@ -21,6 +21,7 @@ langchain-chroma = "^0.1.4"
 translate = "^3.6.1"
 deep-translator = "^1.11.4"
 markdownify = "^0.14.1"
+google-cloud-storage = "^3.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -64,5 +65,6 @@ testpaths = ["tests"]
 filterwarnings = [
     "ignore::DeprecationWarning:pydantic.*:",
     "ignore::DeprecationWarning:bs4.builder._lxml",
+    "ignore::RuntimeWarning:google_crc32c.*:",      # Added to ignore the specific warning
 ]
 asyncio_default_fixture_loop_scope = "function"
