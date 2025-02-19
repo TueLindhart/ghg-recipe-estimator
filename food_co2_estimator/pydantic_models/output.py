@@ -21,6 +21,7 @@ class IngredientOutput(BaseModel):
 
 
 class RecipeCO2Output(BaseModel):
+    uuid: str
     total_co2_kg: float
     number_of_persons: int | None = None
     co2_per_person_kg: float | None = None

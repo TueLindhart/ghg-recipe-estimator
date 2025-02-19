@@ -1,6 +1,7 @@
 import asyncio
 import logging
 
+from food_co2_estimator.blob_caching import cache_results
 from food_co2_estimator.chains.rag_co2_estimator import (
     NEGLIGIBLE_THRESHOLD,
     get_co2_emissions,
@@ -21,6 +22,7 @@ def log_exception_message(url: str, message: str):
     logging.exception(f"URL={url}: {message}")
 
 
+@cache_results
 async def async_estimator(
     url: str,
     verbose: bool = False,

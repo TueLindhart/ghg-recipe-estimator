@@ -1,6 +1,6 @@
 from langchain_core.runnables import RunnablePassthrough, RunnableSerializable
 
-from food_co2_estimator.logging_wrapper import log_with_url
+from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.rag_co2_estimator import (
     RAG_CO2_EMISSION_PROMPT,
 )

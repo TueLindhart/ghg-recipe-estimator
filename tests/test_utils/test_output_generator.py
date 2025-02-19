@@ -257,6 +257,7 @@ def enriched_recipe_search_english():
             # Languages.English,
             0.1,
             RecipeCO2Output(
+                uuid="123",
                 total_co2_kg=1.9,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
@@ -300,6 +301,7 @@ def enriched_recipe_search_english():
             # Languages.English,
             0.1,
             RecipeCO2Output(
+                uuid="123",
                 total_co2_kg=1.8,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
