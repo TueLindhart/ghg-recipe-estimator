@@ -55,11 +55,11 @@ async def test_async_estimator(
     success, output = await async_estimator(
         runparams=RunParams(url="dummy_url"),
     )
-    if success is False or isinstance(output, str):
+    if success is False:
         raise RuntimeError(f"Failed to run async_estimator: {output}")
 
     # Assert no need to use search
-    output_model = RecipeCO2Output(**output)
+    output_model = RecipeCO2Output.model_validate_json(output)
     for ingredient in output_model.ingredients:
         if ingredient.co2_emission_notes is not None:
             assert (
