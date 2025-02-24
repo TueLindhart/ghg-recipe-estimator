@@ -1,6 +1,6 @@
 import datetime
 import json
-from unittest.mock import AsyncMock
+from unittest.mock import patch
 
 import pytest
 
@@ -186,14 +186,12 @@ def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
     runparams = RunParams(url="https://www.example.com")
     result = '{"key": "value"}'
 
-    mock_store_json_in_blob_storage = AsyncMock()
-    monkeypatch.setattr(
-        "food_co2_estimator.blob_caching.store_json_in_blob_storage",
-        mock_store_json_in_blob_storage,
+    mock_store_json_in_blob_storage = patch(
+        "food_co2_estimator.blob_caching.store_json_in_blob_storage"
     )
-
-    cache_estimator_result(runparams, result)
-    mock_store_json_in_blob_storage.assert_called_once()
+    with mock_store_json_in_blob_storage as mock_store:
+        cache_estimator_result(runparams, result)
+        mock_store.assert_called_once()
 
 
 def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
