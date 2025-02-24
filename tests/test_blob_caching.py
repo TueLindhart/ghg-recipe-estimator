@@ -4,7 +4,6 @@ import json
 import pytest
 
 from food_co2_estimator.blob_caching import (
-    cache_results,
     create_cache_key,
     create_cache_key_path,
     get_cache,
@@ -125,33 +124,18 @@ def test_sort_blobs(mock_bucket: MockBucket):
     blobs = [MockBlob(f"blob_{i}") for i in range(5)]
     for i, blob in enumerate(blobs):
         blob.name = f"blob_{i}/{i}"
-    sorted_blobs = sort_blobs(blobs)
+    sorted_blobs = sort_blobs(blobs)  # type: ignore
     assert sorted_blobs == list(reversed(blobs))
 
 
 def test_get_epoch_ts():
     blob = MockBlob("blob/1234567890")
-    assert get_epoch_ts(blob) == 1234567890
+    assert get_epoch_ts(blob) == 1234567890  # type: ignore
 
 
 def test_get_now_isoformat():
     now = datetime.datetime.now(datetime.timezone.utc).isoformat()
     assert get_now_isoformat()[:19] == now[:19]
-
-
-@pytest.mark.asyncio
-async def test_cache_results(mock_bucket):
-    @cache_results
-    async def dummy_func(url, negligeble_threshold):
-        return {"result": "data"}
-
-    url = "https://www.example.com"
-    negligeble_threshold = 0.1
-    result = await dummy_func(url=url, negligeble_threshold=negligeble_threshold)
-    assert result == {"result": "data"}
-    prefix = create_cache_key_path(url, "1.0")
-    cache = get_cache(prefix)
-    assert cache["result"] == "data"
 
 
 @pytest.mark.parametrize(

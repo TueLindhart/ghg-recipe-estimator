@@ -2,7 +2,7 @@ from copy import deepcopy
 
 import pytest
 
-from food_co2_estimator.pydantic_models.output import RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import RecipeCO2Output
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
     ExtractedRecipe,

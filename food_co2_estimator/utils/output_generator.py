@@ -1,6 +1,7 @@
-import uuid
-
-from food_co2_estimator.pydantic_models.output import IngredientOutput, RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import (
+    IngredientOutput,
+    RecipeCO2Output,
+)
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
 # Constants for average Danish dinner emission per person
@@ -119,7 +120,6 @@ def generate_output_model(
 
     # Create the top-level output model.
     output_model = RecipeCO2Output(
-        uuid=uuid.uuid4().hex,
         total_co2_kg=round(total_co2, 1),
         number_of_persons=number_of_persons,
         co2_per_person_kg=co2_per_person,

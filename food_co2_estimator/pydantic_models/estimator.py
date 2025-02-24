@@ -1,6 +1,35 @@
+import logging
+import uuid
 from typing import List
 
+import pydantic
 from pydantic import BaseModel, Field
+
+from food_co2_estimator.chains.rag_co2_estimator import NEGLIGIBLE_THRESHOLD
+
+
+def get_uuid() -> str:
+    return uuid.uuid4().hex
+
+
+class RunParams(pydantic.BaseModel):
+    url: str
+    uid: str = pydantic.Field(default_factory=get_uuid)
+    negligeble_threshold: float = NEGLIGIBLE_THRESHOLD
+
+    def __eq__(self, value: object) -> bool:
+        if not isinstance(value, RunParams):
+            return False
+        if self.url != value.url:
+            return False
+        if self.negligeble_threshold != value.negligeble_threshold:
+            return False
+        return True
+
+
+class LogParams(pydantic.BaseModel):
+    logging_level: int = logging.INFO
+    verbose: bool = False
 
 
 class IngredientOutput(BaseModel):
@@ -21,7 +50,6 @@ class IngredientOutput(BaseModel):
 
 
 class RecipeCO2Output(BaseModel):
-    uuid: str
     total_co2_kg: float
     number_of_persons: int | None = None
     co2_per_person_kg: float | None = None

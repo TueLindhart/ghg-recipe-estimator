@@ -1,34 +1,50 @@
 import asyncio
-import hashlib
 import threading
+from enum import StrEnum
+from typing import Callable, TypedDict
 
 from flask import Flask, jsonify, render_template, request
-from comparison_api import comparison_api
 
+from comparison_api import comparison_api
 from food_co2_estimator.main import async_estimator
+from food_co2_estimator.pydantic_models.estimator import RunParams
 
 app = Flask(__name__)
 
 app.register_blueprint(comparison_api)
 
-results = {}  # Temporary storage for results
+
+class StatusTypes(StrEnum):
+    Processing = "Processing"
+    Completed = "Completed"
+    Error = "Error"
 
 
-def hash_input(input_data):
-    """Generate a short hash from input data."""
-    return hashlib.md5(input_data.encode()).hexdigest()
+class Result(TypedDict):
+    status: str
+    result: str | None
 
 
-def run_in_thread(func, input_data):
+results = {}
+
+
+def run_in_thread(func: Callable, runparams: RunParams):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    hashed_input = hash_input(input_data)
     try:
-        result = loop.run_until_complete(func(input_data, verbose=True))
-        results[hashed_input] = result
+        success, result = loop.run_until_complete(func(runparams=runparams))
+        if not success:
+            results[runparams.uid] = Result(
+                status=StatusTypes.Error.value, result=result
+            )
+        else:
+            results[runparams.uid] = Result(
+                status=StatusTypes.Completed.value, result=result
+            )
     except Exception as exc_info:
-        print(str(exc_info))
-        results[hashed_input] = "Something went wrong. :-( Please try again."
+        results[runparams.uid] = Result(
+            status=StatusTypes.Error.value, result=str(exc_info)
+        )
     finally:
         loop.close()
 
@@ -40,26 +56,30 @@ def index():
 
 @app.route("/calculate")
 def calculate():
-    input_data = request.args.get("input_data")
-    if not input_data:
+    url = request.args.get("input_data")
+    if not url:
         return jsonify(status="No input provided"), 400
 
-    threading.Thread(target=run_in_thread, args=(async_estimator, input_data)).start()
+    runparams = RunParams(url=url)
+    results[runparams.uid] = Result(status=StatusTypes.Processing.value, result=None)
+    threading.Thread(
+        target=run_in_thread, kwargs={"func": async_estimator, "runparams": runparams}
+    ).start()
 
-    hashed_input = hash_input(input_data)
-    return (
-        jsonify(status="Processing", input_data=input_data, hashed_input=hashed_input),
-        202,
-    )  # Return 202 Accepted status
+    return jsonify(
+        status="Processing", input_data=url, uid=runparams.uid
+    ), 202  # Return 202 Accepted status
 
 
-@app.route("/results/<hashed_input>")
-def get_results(hashed_input):
-    result = results.get(hashed_input, None)
-    if result is not None:
-        return jsonify(status="Completed", result=result), 200
-    else:
-        return jsonify(status="Processing", input_data=hashed_input), 202
+@app.route("/status/<uid>")
+def status(uid):
+    result = results.get(uid)
+    if not result:
+        return jsonify(status="Not Found"), 404
+
+    if result["status"] == StatusTypes.Completed.value:
+        results.pop(uid)
+    return jsonify(result)
 
 
 if __name__ == "__main__":

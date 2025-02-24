@@ -1,7 +1,10 @@
 import pytest
 
 from food_co2_estimator.pydantic_models.co2_estimator import CO2perKg
-from food_co2_estimator.pydantic_models.output import IngredientOutput, RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import (
+    IngredientOutput,
+    RecipeCO2Output,
+)
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedIngredient,
     EnrichedRecipe,
@@ -257,7 +260,6 @@ def enriched_recipe_search_english():
             # Languages.English,
             0.1,
             RecipeCO2Output(
-                uuid="123",
                 total_co2_kg=1.9,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
@@ -301,7 +303,6 @@ def enriched_recipe_search_english():
             # Languages.English,
             0.1,
             RecipeCO2Output(
-                uuid="123",
                 total_co2_kg=1.8,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,

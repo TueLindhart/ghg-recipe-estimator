@@ -12,9 +12,14 @@ from google.cloud import storage
 
 from food_co2_estimator import __version__ as version
 from food_co2_estimator.logger_utils import logger
-from food_co2_estimator.pydantic_models.output import RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import RunParams
 
 CACHE_EXPIRATION_DAYS = 30
+
+
+def use_cache():
+    return os.environ.get("USE_CACHE") == "true"
+
 
 # Ignore the specific RuntimeWarning from google_crc32c
 warnings.filterwarnings(
@@ -24,10 +29,10 @@ warnings.filterwarnings(
     module="google_crc32c",
 )
 
-bucket_cache: dict[str, Any] = {"bucket": None}
+bucket_cache: dict[str, storage.Bucket | None] = {"bucket": None}
 
 
-def get_bucket():
+def get_bucket() -> storage.Bucket:
     BUCKET_NAME = os.environ.get("CACHE_BUCKET")
     bucket = bucket_cache["bucket"]
     if bucket is None:
@@ -37,7 +42,7 @@ def get_bucket():
             bucket_cache["bucket"] = bucket
         except DefaultCredentialsError as e:
             logging.info(f"Error: {e}")
-            raise
+            raise e
     return bucket
 
 
@@ -70,12 +75,12 @@ def store_json_in_blob_storage(blob_key: str, data: dict[str, Any]) -> None:
 
     bucket = get_bucket()
     blob = bucket.blob(blob_key)
-    blob.upload_from_string(json.dumps(data), content_type="application/json")
+    blob.upload_from_string(data=json.dumps(data), content_type="application/json")  # type: ignore
 
 
 def get_cache(prefix: str) -> dict[str, Any] | None:
     bucket = get_bucket()
-    blobs = list(bucket.list_blobs(prefix=prefix))
+    blobs = list(bucket.list_blobs(prefix=prefix))  # type: ignore
 
     if not blobs:
         return
@@ -83,7 +88,7 @@ def get_cache(prefix: str) -> dict[str, Any] | None:
     sorted_blobs = sort_blobs(blobs)
     for blob in sorted_blobs:
         try:
-            data_str = blob.download_as_string().decode("utf-8")
+            data_str = blob.download_as_string().decode("utf-8")  # type: ignore
             data: dict[str, Any] = json.loads(data_str)
         except Exception as e:
             logging.error(f"Error reading blob {blob.name}: {e}")
@@ -127,39 +132,53 @@ def get_now_isoformat() -> str:
 def cache_results(func):
     @functools.wraps(func)
     async def wrapper(*args, **kwargs):
-        url = kwargs.get("url")
-        negligeble_threshold = kwargs.get("negligeble_threshold")
-        if url is None or negligeble_threshold is None:
-            raise ValueError("url and negligeble_threshold must be provided")
+        # Get the function's argument names
+        arg_names = func.__code__.co_varnames[: func.__code__.co_argcount]
 
-        # Create cache key path and prefix
-        prefix = create_cache_key_path(url, version)
+        # Convert positional arguments to keyword arguments
+        kwargs.update(dict(zip(arg_names, args)))
+
+        runparams: RunParams | None = kwargs.get("runparams")
+        if runparams is None:
+            raise ValueError("runparams argument is required")
 
         # Check if cache exists
-        cache = get_cache(prefix)
-        if cache and cache.get("input") == {
-            "url": url,
-            "negligeble_threshold": negligeble_threshold,
-        }:
-            logger.info(f"URL={url}: Using cache")
-            return cache
+        if use_cache():
+            cache = fetch_matching_cache(runparams)
+            if cache is not None:
+                return cache
 
         # Call the original function and store the result in cache
-        result = await func(*args, **kwargs)
-        parsed_result = RecipeCO2Output.model_validate_json(result)
-
-        data = {
-            "input": {"url": url, "negligeble_threshold": negligeble_threshold},
-            "result": result,
-            "uuid": parsed_result.uuid,
-            "timestamp": get_now_isoformat(),
-        }
-        blob_key = create_cache_key(url, version)
-        store_json_in_blob_storage(blob_key, data)
-        logger.info(f"URL={url}: Stored result in blob storage")
-        return result
+        success, result = await func(**kwargs)
+        if success and use_cache():
+            cache_estimator_result(runparams, result)
+        return success, result
 
     return wrapper
+
+
+def cache_estimator_result(runparams: RunParams, result: str):
+    parsed_result = json.loads(result)
+    data = {
+        "runparams": runparams.model_dump(),
+        "result": parsed_result,
+        "timestamp": get_now_isoformat(),
+    }
+    blob_key = create_cache_key(runparams.url, version)
+    store_json_in_blob_storage(blob_key, data)
+    logger.info(f"URL={runparams.url}: Stored result in blob storage")
+
+
+def fetch_matching_cache(runparams: RunParams) -> tuple[bool, Any] | None:
+    prefix = create_cache_key_path(runparams.url, version)
+    cache = get_cache(prefix)
+    cache_runparams = cache.get("runparams") if cache else None
+    result = cache.get("result") if cache else None
+    if cache_runparams:
+        cache_runparams = RunParams(**cache_runparams)
+    if runparams == cache_runparams and result is not None:
+        logger.info(f"URL={runparams.url}: Using cache")
+        return True, json.dumps(result)
 
 
 if __name__ == "__main__":
