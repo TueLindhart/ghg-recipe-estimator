@@ -1,11 +1,15 @@
 import datetime
 import json
+from unittest.mock import AsyncMock
 
 import pytest
 
 from food_co2_estimator.blob_caching import (
+    cache_estimator_result,
+    cache_results,
     create_cache_key,
     create_cache_key_path,
+    fetch_matching_cache,
     get_cache,
     get_epoch_ts,
     get_now_isoformat,
@@ -13,6 +17,7 @@ from food_co2_estimator.blob_caching import (
     store_json_in_blob_storage,
     url_to_key,
 )
+from food_co2_estimator.pydantic_models.estimator import RunParams
 
 
 class MockData:
@@ -154,3 +159,54 @@ def test_get_now_isoformat():
 )
 def test_url_to_key(url, expected):
     assert url_to_key(url) == expected
+
+
+@pytest.mark.asyncio
+async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
+    async def mock_func(runparams):
+        return True, "result"
+
+    runparams = RunParams(url="https://www.example.com")
+    mock_cache_results = cache_results(mock_func)
+
+    monkeypatch.setattr("food_co2_estimator.blob_caching.use_cache", lambda: True)
+    monkeypatch.setattr(
+        "food_co2_estimator.blob_caching.fetch_matching_cache", lambda x: None
+    )
+    monkeypatch.setattr(
+        "food_co2_estimator.blob_caching.cache_estimator_result", lambda x, y: None
+    )
+
+    success, result = await mock_cache_results(runparams=runparams)
+    assert success is True
+    assert result == "result"
+
+
+def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
+    runparams = RunParams(url="https://www.example.com")
+    result = '{"key": "value"}'
+
+    mock_store_json_in_blob_storage = AsyncMock()
+    monkeypatch.setattr(
+        "food_co2_estimator.blob_caching.store_json_in_blob_storage",
+        mock_store_json_in_blob_storage,
+    )
+
+    cache_estimator_result(runparams, result)
+    mock_store_json_in_blob_storage.assert_called_once()
+
+
+def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
+    runparams = RunParams(url="https://www.example.com")
+    cache_data = {
+        "runparams": runparams.model_dump(),
+        "result": {"key": "value"},
+        "timestamp": get_now_isoformat(),
+    }
+
+    monkeypatch.setattr(
+        "food_co2_estimator.blob_caching.get_cache", lambda x: cache_data
+    )
+
+    result = fetch_matching_cache(runparams)
+    assert result == (True, json.dumps({"key": "value"}))
