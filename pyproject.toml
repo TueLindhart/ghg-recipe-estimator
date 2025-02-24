@@ -6,7 +6,7 @@ authors = ["Tue Thomsen"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.13.1"
+python = "^3.12"
 langchain = "^0.3.4"
 langdetect = "^1.0.9"
 flask = { extras = ["async"], version = "^2.3.2" }
