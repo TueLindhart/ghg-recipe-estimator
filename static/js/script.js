@@ -49,9 +49,10 @@ async function pollForResult(uid) {
       const parsedData = JSON.parse(data.result);
       updateUI(parsedData);
       statusDiv.textContent = "";
+      await fetch(`/clear-result/${uid}`);
     } else if (data.status === "Processing") {
       statusDiv.textContent = "Arbejder stadig på det ... vent venligst.";
-      setTimeout(() => pollForResult(uid), 1000); // Poll every 1 second
+      setTimeout(() => pollForResult(uid), 2000); // Poll every 1 second
     } else {
       statusDiv.textContent = `Fejl: ${data.error}`;
     }

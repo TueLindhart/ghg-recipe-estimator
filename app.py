@@ -77,9 +77,13 @@ def status(uid):
     if not result:
         return jsonify(status="Not Found"), 404
 
-    if result["status"] == StatusTypes.Completed.value:
-        results.pop(uid)
-    return jsonify(result)
+    return jsonify(result), 200
+
+
+@app.route("/clear-result/<uid>")
+def clear_result(uid):
+    results.pop(uid, None)
+    return jsonify(status="Cleared")
 
 
 if __name__ == "__main__":

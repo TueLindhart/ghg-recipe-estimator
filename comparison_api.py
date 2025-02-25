@@ -72,7 +72,7 @@ def get_comparison():
 
     # Randomly select one record from the stored comparisons.
     record = random.choice(comparisons)
-    logger.debug("Selected record: %s", record)
+    logger.debug("Selected record")
     stored_value = record.get("value", 0)
     if stored_value == 0:
         factor = 0
