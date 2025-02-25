@@ -44,7 +44,7 @@ def generate_context_text(record, input_value):
     else:
         text = f"Din opskrift er væsentligt højere end {record['description']} (over {round(ratio, 1)} gange så meget)."
 
-    logger.debug("Generated context text: %s", text)
+    logger.debug("Generated context text")
     return text
 
 
@@ -65,7 +65,7 @@ def get_comparison():
     try:
         with open("data/comparison_activities.json", "r") as f:
             comparisons = json.load(f)
-        logger.debug("Loaded comparisons: %s", comparisons)
+        logger.debug("Loaded comparisons")
     except Exception as e:
         logger.error("Error loading comparisons: %s", e)
         return jsonify({"error": "Sammenligningsdata ikke tilgængelige"}), 500
@@ -94,5 +94,5 @@ def get_comparison():
     record["contextFactor"] = contextFactor
     record["contextText"] = contextText
 
-    logger.debug("Final record to return: %s", record)
+    logger.debug("Final record to return.")
     return jsonify(record)
