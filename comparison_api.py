@@ -16,11 +16,7 @@ def generate_context_text(record, input_value):
     Generate a context text by comparing the input_value (e.g., recipe emission)
     to the stored value for the given activity.
     """
-    logger.debug(
-        "generate_context_text called with record: %s and input_value: %s",
-        record,
-        input_value,
-    )
+
     stored_value = record.get("value", 0)
     if stored_value == 0:
         text = "Sammenligningsdata er utilstrækkelige til en meningsfuld sammenligning."
