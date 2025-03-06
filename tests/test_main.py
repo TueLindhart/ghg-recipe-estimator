@@ -3,7 +3,7 @@ from unittest.mock import Mock
 import pytest
 
 from food_co2_estimator.main import async_estimator
-from food_co2_estimator.pydantic_models.output import RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import RecipeCO2Output, RunParams
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
     ExtractedRecipe,
@@ -52,25 +52,23 @@ async def test_async_estimator(
     )
 
     # Call the function
-    output_str = await async_estimator(
-        url="http://example.com",
-        verbose=False,
+    success, output = await async_estimator(
+        runparams=RunParams(url="dummy_url"),
     )
-    try:
-        output = RecipeCO2Output.model_validate_json(output_str)
-    except Exception as e:
-        raise AssertionError(f"Could not parse output as RecipeCO2Output: {e}")
+    if success is False:
+        raise RuntimeError(f"Failed to run async_estimator: {output}")
 
     # Assert no need to use search
-    for ingredient in output.ingredients:
+    output_model = RecipeCO2Output.model_validate_json(output)
+    for ingredient in output_model.ingredients:
         if ingredient.co2_emission_notes is not None:
             assert (
                 "Found by search." not in ingredient.co2_emission_notes
             ), "Ingredient found by search"
 
-    n_persons = output.number_of_persons
+    n_persons = output_model.number_of_persons
     assert n_persons is not None
-    total_emission_per_person = output.total_co2_kg / n_persons
+    total_emission_per_person = output_model.total_co2_kg / n_persons
     expected_total_emission_per_person = expected_output.total_co2_kg / n_persons
     ratio_difference = (
         abs(total_emission_per_person - expected_total_emission_per_person)
@@ -78,5 +76,5 @@ async def test_async_estimator(
     )
     assert ratio_difference <= MAX_TOTAL_RATIO_DIFFERENCE, (
         f"Total emission per person difference in % is above max: {round(ratio_difference * 100, 2)}% > {MAX_TOTAL_RATIO_DIFFERENCE * 100}%"
-        f"Total emission is result={output.total_co2_kg} kg, expected = {output.total_co2_kg} kg"
+        f"Total emission is result={output_model.total_co2_kg} kg, expected = {output_model.total_co2_kg} kg"
     )

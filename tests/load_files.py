@@ -2,7 +2,7 @@ import json
 import os
 
 from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions
-from food_co2_estimator.pydantic_models.output import RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import RecipeCO2Output
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
     ExtractedRecipe,

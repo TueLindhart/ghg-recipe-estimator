@@ -6,7 +6,7 @@ authors = ["Tue Thomsen"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.13.1"
+python = "^3.12"
 langchain = "^0.3.4"
 langdetect = "^1.0.9"
 flask = { extras = ["async"], version = "^2.3.2" }
@@ -21,6 +21,7 @@ langchain-chroma = "^0.1.4"
 translate = "^3.6.1"
 deep-translator = "^1.11.4"
 markdownify = "^0.14.1"
+google-cloud-storage = "^3.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -30,6 +31,7 @@ ruff = "^0.8.5"
 pandas = "^2.0.3"
 openpyxl = "^3.1.2"
 tqdm = "^4.67.0"
+punch = "^0.0.1"
 
 [tool.poetry.group.test.dependencies]
 ruff = "^0.8.5"
@@ -64,5 +66,8 @@ testpaths = ["tests"]
 filterwarnings = [
     "ignore::DeprecationWarning:pydantic.*:",
     "ignore::DeprecationWarning:bs4.builder._lxml",
+    "ignore::RuntimeWarning:google_crc32c.*:",                                                                                                           # Added to ignore the specific warning
+    "ignore::RuntimeWarning:google_crc32c.__init__:29",                                                                                                  # Ignore the specific warning line
+    "ignore:As the c extension couldn't be imported, `google-crc32c` is using a pure python implementation that is significantly slower:RuntimeWarning",
 ]
 asyncio_default_fixture_loop_scope = "function"

@@ -16,11 +16,7 @@ def generate_context_text(record, input_value):
     Generate a context text by comparing the input_value (e.g., recipe emission)
     to the stored value for the given activity.
     """
-    logger.debug(
-        "generate_context_text called with record: %s and input_value: %s",
-        record,
-        input_value,
-    )
+
     stored_value = record.get("value", 0)
     if stored_value == 0:
         text = "Sammenligningsdata er utilstrækkelige til en meningsfuld sammenligning."
@@ -44,7 +40,7 @@ def generate_context_text(record, input_value):
     else:
         text = f"Din opskrift er væsentligt højere end {record['description']} (over {round(ratio, 1)} gange så meget)."
 
-    logger.debug("Generated context text: %s", text)
+    logger.debug("Generated context text")
     return text
 
 
@@ -65,7 +61,7 @@ def get_comparison():
     try:
         with open("data/comparison_activities.json", "r") as f:
             comparisons = json.load(f)
-        logger.debug("Loaded comparisons: %s", comparisons)
+        logger.debug("Loaded comparisons")
     except Exception as e:
         logger.error("Error loading comparisons: %s", e)
         return jsonify({"error": "Sammenligningsdata ikke tilgængelige"}), 500
@@ -76,7 +72,7 @@ def get_comparison():
 
     # Randomly select one record from the stored comparisons.
     record = random.choice(comparisons)
-    logger.debug("Selected record: %s", record)
+    logger.debug("Selected record")
     stored_value = record.get("value", 0)
     if stored_value == 0:
         factor = 0
@@ -94,5 +90,5 @@ def get_comparison():
     record["contextFactor"] = contextFactor
     record["contextText"] = contextText
 
-    logger.debug("Final record to return: %s", record)
+    logger.debug("Final record to return.")
     return jsonify(record)

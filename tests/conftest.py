@@ -2,7 +2,7 @@ from copy import deepcopy
 
 import pytest
 
-from food_co2_estimator.pydantic_models.output import RecipeCO2Output
+from food_co2_estimator.pydantic_models.estimator import RecipeCO2Output
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
     ExtractedRecipe,
@@ -16,6 +16,11 @@ from tests.load_files import (
     get_recipe_markdown_text,
 )
 from tests.urls import TEST_URLS
+
+
+@pytest.fixture(autouse=True)
+def override_use_cache(monkeypatch: pytest.MonkeyPatch):
+    monkeypatch.setattr("food_co2_estimator.blob_caching.use_cache", lambda: False)
 
 
 @pytest.fixture

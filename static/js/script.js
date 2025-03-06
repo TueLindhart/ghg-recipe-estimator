@@ -19,39 +19,42 @@ document.addEventListener("DOMContentLoaded", () => {
       "Beregner CO2-udledning (dette kan tage et minut eller to)...";
 
     try {
-      const startResponse = await fetch(
+      const response = await fetch(
         `/calculate?input_data=${encodeURIComponent(input_data)}`
       );
-      if (startResponse.status !== 202) {
+      if (response.status !== 202) {
         statusDiv.textContent = "Fejl ved start af estimering.";
         return;
       }
 
-      const startData = await startResponse.json();
-      const inputHash = startData.hashed_input;
-      pollForResult(inputHash);
+      const data = await response.json();
+      if (data.status === "Processing") {
+        pollForResult(data.uid);
+      } else {
+        statusDiv.textContent = "Uventet svarstatus.";
+      }
     } catch (error) {
       statusDiv.textContent = `Der opstod en fejl: ${error.message}`;
     }
   });
 });
 
-async function pollForResult(inputHash) {
+async function pollForResult(uid) {
   const statusDiv = document.getElementById("statusDiv");
   try {
-    const response = await fetch(`/results/${inputHash}`);
+    const response = await fetch(`/status/${uid}`);
     const data = await response.json();
 
-    if (data.status === "Processing") {
-      statusDiv.textContent = "Arbejder stadig på det ... vent venligst.";
-      setTimeout(() => pollForResult(inputHash), 2000);
-    } else if (data.status === "Completed") {
+    if (data.status === "Completed") {
       const parsedData = JSON.parse(data.result);
       updateUI(parsedData);
-      // Clear the status message
       statusDiv.textContent = "";
+      await fetch(`/clear-result/${uid}`);
+    } else if (data.status === "Processing") {
+      statusDiv.textContent = "Arbejder stadig på det ... vent venligst.";
+      setTimeout(() => pollForResult(uid), 2000); // Poll every 1 second
     } else {
-      statusDiv.textContent = "Uventet svarstatus.";
+      statusDiv.textContent = `Fejl: ${data.error}`;
     }
   } catch (error) {
     statusDiv.textContent = `Der opstod en fejl: ${error.message}`;
@@ -147,6 +150,7 @@ CO2e Udledning Noter: ${
     window.fetchComparisonData(parsedData.total_co2_kg, "kg");
   }
 }
+
 // Function to show a tooltip near the button
 function showTooltip(button, text) {
   // Remove any existing tooltip
