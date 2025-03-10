@@ -59,7 +59,7 @@ def get_comparison():
 
     # Load the stored comparison data.
     try:
-        with open("data/comparison_activities.json", "r") as f:
+        with open("food_co2_estimator/data/comparison_activities.json", "r") as f:
             comparisons = json.load(f)
         logger.debug("Loaded comparisons")
     except Exception as e:

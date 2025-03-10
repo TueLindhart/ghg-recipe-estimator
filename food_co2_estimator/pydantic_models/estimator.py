@@ -1,4 +1,5 @@
 import logging
+import os
 import uuid
 from typing import List
 
@@ -12,10 +13,15 @@ def get_uuid() -> str:
     return uuid.uuid4().hex
 
 
+def env_use_cache():
+    return os.environ.get("USE_CACHE") == "true"
+
+
 class RunParams(pydantic.BaseModel):
     url: str
     uid: str = pydantic.Field(default_factory=get_uuid)
     negligeble_threshold: float = NEGLIGIBLE_THRESHOLD
+    use_cache: bool = pydantic.Field(default_factory=env_use_cache)
 
     def __eq__(self, value: object) -> bool:
         if not isinstance(value, RunParams):
