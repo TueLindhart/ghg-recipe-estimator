@@ -67,17 +67,17 @@ def mock_bucket(monkeypatch: pytest.MonkeyPatch):
         (
             "https://www.example.com/this/is/a/test?query=string",
             "1.0",
-            "example.com/path_this_is_a_test_arg_query_string/1.0",
+            "1.0/example.com/path_this_is_a_test_arg_query_string",
         ),
         (
             "https://www.example.com",
             "1.0",
-            "example.com/path_no_path_arg__no_query/1.0",
+            "1.0/example.com/path_no_path_arg__no_query",
         ),
         (
             "https://www.example.com/this/is/a/test",
             "1.0",
-            "example.com/path_this_is_a_test_arg__no_query/1.0",
+            "1.0/example.com/path_this_is_a_test_arg__no_query",
         ),
     ],
 )
@@ -91,17 +91,17 @@ def test_create_cache_key_path(url, version, expected):
         (
             "https://www.example.com/this/is/a/test?query=string",
             "1.0",
-            "example.com/path_this_is_a_test_arg_query_string/1.0/",
+            "1.0/example.com/path_this_is_a_test_arg_query_string/",
         ),
         (
             "https://www.example.com",
             "1.0",
-            "example.com/path_no_path_arg__no_query/1.0/",
+            "1.0/example.com/path_no_path_arg__no_query/",
         ),
         (
             "https://www.example.com/this/is/a/test",
             "1.0",
-            "example.com/path_this_is_a_test_arg__no_query/1.0/",
+            "1.0/example.com/path_this_is_a_test_arg__no_query/",
         ),
     ],
 )
@@ -166,10 +166,12 @@ async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
     async def mock_func(runparams):
         return True, "result"
 
-    runparams = RunParams(url="https://www.example.com")
+    runparams = RunParams(url="https://www.example.com", use_cache=True)
     mock_cache_results = cache_results(mock_func)
 
-    monkeypatch.setattr("food_co2_estimator.blob_caching.use_cache", lambda: True)
+    monkeypatch.setattr(
+        "food_co2_estimator.pydantic_models.estimator.env_use_cache", lambda: True
+    )
     monkeypatch.setattr(
         "food_co2_estimator.blob_caching.fetch_matching_cache", lambda x: None
     )
@@ -183,7 +185,7 @@ async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
 
 
 def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
-    runparams = RunParams(url="https://www.example.com")
+    runparams = RunParams(url="https://www.example.com", use_cache=True)
     result = '{"key": "value"}'
 
     mock_store_json_in_blob_storage = patch(
@@ -195,7 +197,7 @@ def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
 
 
 def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
-    runparams = RunParams(url="https://www.example.com")
+    runparams = RunParams(url="https://www.example.com", use_cache=True)
     cache_data = {
         "runparams": runparams.model_dump(),
         "result": {"key": "value"},
