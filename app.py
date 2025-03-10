@@ -7,7 +7,7 @@ from flask import Flask, jsonify, render_template, request
 
 from comparison_api import comparison_api
 from food_co2_estimator.main import async_estimator
-from food_co2_estimator.pydantic_models.estimator import RunParams
+from food_co2_estimator.pydantic_models.estimator import RunParams, env_use_cache
 
 app = Flask(__name__)
 
@@ -60,7 +60,9 @@ def calculate():
     if not url:
         return jsonify(status="No input provided"), 400
 
-    runparams = RunParams(url=url)
+    use_cache = request.args.get("use_cache")
+    use_cache = env_use_cache() if use_cache is None else use_cache.lower() == "true"
+    runparams = RunParams(url=url, use_cache=use_cache)
     results[runparams.uid] = Result(status=StatusTypes.Processing.value, result=None)
     threading.Thread(
         target=run_in_thread, kwargs={"func": async_estimator, "runparams": runparams}
