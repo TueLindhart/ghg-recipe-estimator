@@ -14,7 +14,7 @@ from food_co2_estimator import __version__ as version
 from food_co2_estimator.logger_utils import logger
 from food_co2_estimator.pydantic_models.estimator import RunParams
 
-CACHE_EXPIRATION_DAYS = 30
+CACHE_EXPIRATION_DAYS = 31
 
 
 # Ignore the specific RuntimeWarning from google_crc32c
