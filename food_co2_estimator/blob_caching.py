@@ -17,10 +17,6 @@ from food_co2_estimator.pydantic_models.estimator import RunParams
 CACHE_EXPIRATION_DAYS = 30
 
 
-def use_cache():
-    return os.environ.get("USE_CACHE") == "true"
-
-
 # Ignore the specific RuntimeWarning from google_crc32c
 warnings.filterwarnings(
     "ignore",
@@ -57,7 +53,7 @@ def create_cache_key_path(url: str, version: str) -> str:
     path = parsed_url.path if parsed_url.path else "_no_path"
     query = parsed_url.query if parsed_url.query else "_no_query"
     path_and_args = f"path{path}_arg_{query}"
-    cache_key_path = f"{url_to_key(base_url)}/{url_to_key(path_and_args)}/{version}"
+    cache_key_path = f"{version}/{url_to_key(base_url)}/{url_to_key(path_and_args)}"
     return cache_key_path
 
 
@@ -143,14 +139,14 @@ def cache_results(func):
             raise ValueError("runparams argument is required")
 
         # Check if cache exists
-        if use_cache():
+        if runparams.use_cache:
             cache = fetch_matching_cache(runparams)
             if cache is not None:
                 return cache
 
         # Call the original function and store the result in cache
         success, result = await func(**kwargs)
-        if success and use_cache():
+        if success and runparams.use_cache:
             cache_estimator_result(runparams, result)
         return success, result
 
