@@ -109,6 +109,10 @@ async def async_estimator(
         negligeble_threshold=runparams.negligeble_threshold,
         number_of_persons=enriched_recipe.persons,
     )
+    if not output_model.total_co2_kg > 0 or not output_model.co2_per_person_kg > 0:
+        calculation_failed_expection = "Emission became zero which is incorrect."
+        return False, calculation_failed_expection
+
     return True, output_model.model_dump_json()
 
 
