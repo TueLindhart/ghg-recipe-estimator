@@ -53,7 +53,7 @@ async def test_async_estimator(
 
     # Call the function
     success, output = await async_estimator(
-        runparams=RunParams(url="dummy_url"),
+        runparams=RunParams(url="dummy_url", use_cache=False),
     )
     if success is False:
         raise RuntimeError(f"Failed to run async_estimator: {output}")
@@ -76,5 +76,5 @@ async def test_async_estimator(
     )
     assert ratio_difference <= MAX_TOTAL_RATIO_DIFFERENCE, (
         f"Total emission per person difference in % is above max: {round(ratio_difference * 100, 2)}% > {MAX_TOTAL_RATIO_DIFFERENCE * 100}%"
-        f"Total emission is result={output_model.total_co2_kg} kg, expected = {output_model.total_co2_kg} kg"
+        f"Total emission is result={output_model.total_co2_kg} kg, expected = {expected_output.total_co2_kg} kg"
     )
