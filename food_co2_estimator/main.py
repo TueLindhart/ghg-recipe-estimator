@@ -130,7 +130,8 @@ if __name__ == "__main__":
     # url = "https://gourministeriet.dk/vores-favorit-bolognese/"
     # url = "https://hot-thai-kitchen.com/green-curry-new-2/"
     # url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
-    url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    # url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    url = "https://www.valdemarsro.dk/wok-med-kaal-og-friterede-spejlaeg/"
 
     start_time = time()
     runparams = RunParams(url=url)

@@ -146,7 +146,7 @@ def cache_results(func):
 
         # Call the original function and store the result in cache
         success, result = await func(**kwargs)
-        if success and runparams.use_cache:
+        if success:
             cache_estimator_result(runparams, result)
         return success, result
 
