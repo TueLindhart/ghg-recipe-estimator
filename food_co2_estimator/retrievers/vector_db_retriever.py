@@ -153,6 +153,8 @@ FILLER_WORDS = [
     "to",
     "whole",
     "with",
+    "warm",
+    "hot",
 ]
 
 

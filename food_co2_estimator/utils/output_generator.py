@@ -123,7 +123,9 @@ def generate_output_model(
 
     # Calculate per-person CO2 if number_of_persons is provided and valid.
     if number_of_persons is not None and number_of_persons > 0:
-        co2_per_person = round(total_co2 / number_of_persons, 1)
+        co2_per_person_raw = total_co2 / number_of_persons
+        n_decimal_places = 1 if co2_per_person_raw >= 0.5 else 2
+        co2_per_person = round(total_co2 / number_of_persons, n_decimal_places)
     else:
         co2_per_person = None
 
