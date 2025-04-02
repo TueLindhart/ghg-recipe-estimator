@@ -25,11 +25,11 @@ Skøn og nem opskrift på tacos med lyn-chili med oksekød, peberfrugt, tomat og
 
 4,80 fra 5 stemmer
 
-Antal: 2 personer
+Servings: 2 personer
 
 Forberedelse15 minutter minTilberedelse15 minutter minI alt30 minutter min
 
-### Ingredienser
+### Ingredients
 
 * 1 lille løg
 * 2 fed hvidløg

@@ -77,7 +77,7 @@
             "en_name": "1 Red Bell Pepper",
             "weight_estimate": {
                 "ingredient": "1 Red Bell Pepper",
-                "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+                "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
@@ -99,7 +99,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Bunch Scallions' to 'onions, spring, raw' as it is the most relevant option for raw scallions.",
+                "closest_match_explanation": "Matched '1 Bunch Scallions' to 'onions, spring, raw' as it is the least processed and most relevant option for scallions.",
                 "ingredient_id": "Ra00267",
                 "closest_match_name": "onions, spring, raw",
                 "ingredient": "1 Bunch Scallions",
@@ -113,8 +113,8 @@
             "en_name": "1 can diced tomatoes with green chiles (15 ounces)",
             "weight_estimate": {
                 "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
-                "weight_calculation": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
-                "weight_in_kg": 0.425
+                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
                 "closest_match_explanation": "Matched '1 can diced tomatoes with green chiles (15 ounces)' to 'tomato, peeled, canned' as it is the most relevant option for canned tomatoes.",
@@ -131,8 +131,8 @@
             "en_name": "2 Cans Black Beans (15 ounces)",
             "weight_estimate": {
                 "ingredient": "2 Cans Black Beans (15 ounces)",
-                "weight_calculation": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
-                "weight_in_kg": 0.85
+                "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
+                "weight_in_kg": 0.8
             },
             "co2_per_kg_db": {
                 "closest_match_explanation": "Matched '2 Cans Black Beans (15 ounces)' to 'black beans' as it is the exact ingredient with no processing involved.",
@@ -189,7 +189,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tsp granulated garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
+                "closest_match_explanation": "Matched '2 tsp granulated garlic' to 'garlic, raw' as it is the least processed and most relevant option for garlic.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 tsp granulated garlic",
@@ -207,7 +207,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tsp onion powder' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_explanation": "Matched '2 tsp onion powder' to 'onion, raw' as it is the least processed and most relevant option for onion.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "2 tsp onion powder",

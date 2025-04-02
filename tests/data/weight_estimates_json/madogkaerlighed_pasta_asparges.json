@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "1 BDT Green Asparagus",
-            "weight_calculation": "1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "weight_in_kg": 0.5
         },
         {
@@ -32,12 +32,12 @@
         },
         {
             "ingredient": "2 dl cream",
-            "weight_calculation": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
+            "weight_calculation": "2 dl = 0.2 kg, 2 * 0.1 kg = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 dl water",
-            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {

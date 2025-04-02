@@ -59,11 +59,11 @@
             "en_name": "Oil for frying",
             "weight_estimate": {
                 "ingredient": "Oil for frying",
-                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.020 kg, 2 servings * 0.020 kg = 0.040 kg",
-                "weight_in_kg": 0.04
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.030 kg",
+                "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil used for frying.",
+                "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the ingredient.",
                 "ingredient_id": "Ra00348",
                 "closest_match_name": "oil for frying",
                 "ingredient": "Oil for frying",
@@ -113,7 +113,7 @@
             "en_name": "chili powder or flakes to taste",
             "weight_estimate": {
                 "ingredient": "chili powder or flakes to taste",
-                "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
+                "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
@@ -131,11 +131,11 @@
             "en_name": "1 can of kidney beans",
             "weight_estimate": {
                 "ingredient": "1 can of kidney beans",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for the ingredient.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -153,7 +153,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available.",
+                "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed option available for tomatoes.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "2 tablespoons tomato puree",
@@ -171,7 +171,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef broth.",
+                "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef without specifying a cut.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "2.5 dl beef fund",
@@ -181,20 +181,20 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "11 små majstortillas",
-            "en_name": "11 small cornstortillas",
+            "original_name": "10-12 små majstortillas",
+            "en_name": "10-12 small cornstortillas",
             "weight_estimate": {
-                "ingredient": "11 small cornstortillas",
-                "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
-                "weight_in_kg": 0.33
+                "ingredient": "10-12 small cornstortillas",
+                "weight_calculation": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
+                "weight_in_kg": 0.36
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '11 small cornstortillas' to 'taco shells' as it is the closest match available for corn-based tortillas.",
-                "ingredient_id": "Ra00467",
-                "closest_match_name": "taco shells",
-                "ingredient": "11 small cornstortillas",
+                "closest_match_explanation": "Matched '10-12 small cornstortillas' to 'tortilla bread, wheat' as it is the closest match available for tortillas.",
+                "ingredient_id": "Ra00401",
+                "closest_match_name": "tortilla bread, wheat",
+                "ingredient": "10-12 small cornstortillas",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.4
+                "co2_per_kg": 1.2
             },
             "co2_per_kg_search": null
         },
@@ -203,11 +203,11 @@
             "en_name": "1 serving of tomato salsa",
             "weight_estimate": {
                 "ingredient": "1 serving of tomato salsa",
-                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.100 kg, 2 servings * 0.100 kg = 0.200 kg",
-                "weight_in_kg": 0.2
+                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+                "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the closest match available for a tomato-based salsa.",
+                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the closest match available for tomato salsa.",
                 "ingredient_id": "Ra00400",
                 "closest_match_name": "salsa, hot",
                 "ingredient": "1 serving of tomato salsa",
@@ -225,7 +225,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado.",
+                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for the ingredient.",
                 "ingredient_id": "Ra00317",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 Avocado",
@@ -239,7 +239,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -250,7 +250,7 @@
             "en_name": "pepper",
             "weight_estimate": {
                 "ingredient": "pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -265,7 +265,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion.",
+                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for the ingredient.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 Red onion",
@@ -301,7 +301,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most processed form of tomatoes available.",
+                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most processed option available for tomatoes.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "300 g of tomatoes",
@@ -337,7 +337,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Bdt coriander' to 'basil, fresh' as it is the closest available option for fresh herbs.",
+                "closest_match_explanation": "Matched '0.5 Bdt coriander' to 'basil, fresh' as it is the closest available option related to fresh herbs.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "0.5 Bdt coriander",
@@ -355,7 +355,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil.",
+                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for the ingredient.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "2 tablespoons olive oil",
@@ -384,6 +384,6 @@
         }
     ],
     "persons": 2,
-    "instructions": " arrow and chop the onion and garlic, and cut the peppers into cubes. Heat oil on a pan and saute the onion and garlic under even heat until the onions are clear. Turn up the flame and brown the meat on the same pan. Add spices and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Taste with salt and pepper and possibly extra chili. Lunch tortillas in a 200 degree hot oven for approx. 10 minutes. Distribute the lightning chili on tacos, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce. For tomato salsa: Arrow and chop onion and garlic. Chop the tomatoes into coarse cubes and finely chop the chili pepper. Cut the coriander. Mix it all together with olive oil, lime juice, salt and pepper.",
+    "instructions": " arrow and chop the onion and garlic, and cut the peppers into cubes. Heat oil on a pan and saute the onion and garlic under even heat until the onions are clear. Brown the meat on the same pan. Add spices and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Taste with salt and pepper and possibly extra chili. Lunch tortillas in a 200 degree hot oven for approx. 10 minutes. Distribute the lightning chili on tacos, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce.",
     "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
 }

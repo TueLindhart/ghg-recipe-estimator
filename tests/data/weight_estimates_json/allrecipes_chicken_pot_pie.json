@@ -22,7 +22,7 @@
         },
         {
             "ingredient": "1 Red Bell Pepper",
-            "weight_calculation": "1 red bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+            "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
             "weight_in_kg": 0.15
         },
         {
@@ -32,13 +32,13 @@
         },
         {
             "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
-            "weight_calculation": "1 can = 425 g, 1 * 425 g = 425 g = 0.425 kg",
-            "weight_in_kg": 0.425
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_in_kg": 0.4
         },
         {
             "ingredient": "2 Cans Black Beans (15 ounces)",
-            "weight_calculation": "1 can = 425 g, 2 * 425 g = 850 g = 0.85 kg",
-            "weight_in_kg": 0.85
+            "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
+            "weight_in_kg": 0.8
         },
         {
             "ingredient": "4 tbsp chili powder",

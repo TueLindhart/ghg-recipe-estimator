@@ -41,7 +41,7 @@
             "en_name": "1 dl dark balsamic vinegar",
             "weight_estimate": {
                 "ingredient": "1 dl dark balsamic vinegar",
-                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
@@ -63,12 +63,12 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, brown' as it is the least processed option available for sugar.",
-                "ingredient_id": "Ra00319",
-                "closest_match_name": "sugar, brown",
+                "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, sucrose, white' as it is a common form of sugar and represents a standard processing level.",
+                "ingredient_id": "Ra00318",
+                "closest_match_name": "sugar, sucrose, white",
                 "ingredient": "2 tablespoons sugar",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.4
+                "co2_per_kg": 2.7
             },
             "co2_per_kg_search": null
         },
@@ -124,7 +124,7 @@
             "en_name": "0.5 teaspoon coarse salt",
             "weight_estimate": {
                 "ingredient": "0.5 teaspoon coarse salt",
-                "weight_calculation": "0.5 tsp. = 2.5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+                "weight_calculation": "0.5 tsp. = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
                 "weight_in_kg": 0.0025
             },
             "co2_per_kg_db": null,
@@ -153,7 +153,7 @@
             "en_name": "2.5 dl water",
             "weight_estimate": {
                 "ingredient": "2.5 dl water",
-                "weight_calculation": "2.5 dl = 250 g, 2.5 * 100 g = 250 g = 0.25 kg",
+                "weight_calculation": "2.5 dl = 0.25 kg, 1 * 0.25 kg = 0.25 kg",
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": null,
@@ -218,7 +218,7 @@
             "en_name": "0.75 teaspoon coarse salt",
             "weight_estimate": {
                 "ingredient": "0.75 teaspoon coarse salt",
-                "weight_calculation": "0.75 tsp. = 3.75 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+                "weight_calculation": "0.75 tsp. = 3.75 g, 1 * 3.75 g = 3.75 g = 0.00375 kg",
                 "weight_in_kg": 0.00375
             },
             "co2_per_kg_db": null,
@@ -229,7 +229,7 @@
             "en_name": "freshly ground pepper",
             "weight_estimate": {
                 "ingredient": "freshly ground pepper",
-                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": {
@@ -247,7 +247,7 @@
             "en_name": "fresh herbs",
             "weight_estimate": {
                 "ingredient": "fresh herbs",
-                "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg",
+                "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 servings * 0.025 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
@@ -269,7 +269,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the least processed option available for bacon.",
+                "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the most relevant option for bacon.",
                 "ingredient_id": "Ra00044",
                 "closest_match_name": "bacon, frying, raw",
                 "ingredient": "100 g of fried bacon",
@@ -298,6 +298,6 @@
         }
     ],
     "persons": 4,
-    "instructions": " ### marinated beets\nMelt the butter in a saucepan at strong heat, but without browning. Sweat the beets for approx. 2 min. Add the vinegar, sugar and salt and cook them under heavy heat and without lid for approx. 5 min. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours and taste.\n\n### cod\nDivide the cod into four equal pieces. Put the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 min. at 200 ° - Traditional oven. Lunch the beets on a rack at the bottom of the oven for the last 5 min. - Pour if necessary. A little of the moisture from the beets at the serving.\n\n### Mustard sauce\nWhip flour and some of the water together in a saucepan. Add the rest of the water, mustard seeds and onions. Cook the mixture under low heat and under lid for approx. 10 min. Take the pan off the heat and whisk the cold butter in little by little. Heat the sauce (it must not boil) and add salt and pepper. Taste to.\n\n### How to prepare New Year's cod\nFirst place beets on four plates, come the cod on it, garnish with bacon, quail eggs, herbs and serve with sauce next door.",
+    "instructions": " ### marinated beets\nMelt the butter in a saucepan at strong heat, but without browning. Sweat the beets for approx. 2 min. Add the vinegar, sugar and salt and cook them under heavy heat and without lid for approx. 5 min. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours and taste.\n\n### cod\nDivide the cod into four equal pieces. Put the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 min. at 200 ° - Traditional oven. Lunch the beets on a rack at the bottom of the oven for the last 5 min. - Pour if necessary. A little of the moisture from the beets at the serving.\n\n### Mustard sauce\nWhip flour and some of the water together in a saucepan. Add the rest of the water, mustard seeds and onions. Cook the mixture under low heat and under lid for approx. 10 min. Take the pan off the heat and whisk the cold butter in little by little. Heat the sauce (it must not boil) and add salt and pepper. Taste to.\n\n### How to prepare New Year's cod\nServing first beets on four plates, came the cod on it, garnish with bacon, quail eggs, herbs and serve with sauce next door.",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
 }

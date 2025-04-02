@@ -49,7 +49,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is a common form of cream and represents a specific fat content.",
+            "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the least processed form of cream available in the database.",
             "ingredient_id": "Ra00345",
             "closest_match_name": "cream, whipping, 38 % fat",
             "ingredient": "2 dl cream",
@@ -57,7 +57,7 @@
             "co2_per_kg": 1.7
         },
         {
-            "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the specific type of cheese requested.",
+            "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the most relevant option for grated parmesan cheese.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
             "ingredient": "6 tbsp grated parmesan",
@@ -65,7 +65,7 @@
             "co2_per_kg": 5.4
         },
         {
-            "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the specific type of cheese requested.",
+            "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most relevant option for mozzarella cheese.",
             "ingredient_id": "Ra00080",
             "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
             "ingredient": "1 handful of mozzarella",
@@ -73,7 +73,7 @@
             "co2_per_kg": 5.4
         },
         {
-            "closest_match_explanation": "Matched 'Oil' to 'olive oil' as it is a common type of oil and has the highest emissions among the options.",
+            "closest_match_explanation": "Matched 'Oil' to 'olive oil' as it is the most relevant option for oil in the database.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "Oil",

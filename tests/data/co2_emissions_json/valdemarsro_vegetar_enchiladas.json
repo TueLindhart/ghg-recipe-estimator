@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+            "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -17,7 +17,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
+            "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 onion",
@@ -41,6 +41,14 @@
             "co2_per_kg": 1.1
         },
         {
+            "closest_match_explanation": "Matched '1 tablespoon olive oil' to 'olive oil' as it is the most direct and least processed form of olive oil available.",
+            "ingredient_id": "Ra00349",
+            "closest_match_name": "olive oil",
+            "ingredient": "1 tablespoon olive oil",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 5.9
+        },
+        {
             "closest_match_explanation": "Matched 'Black pepper' to 'pepper, black' as it is the most direct match for black pepper.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
@@ -49,7 +57,23 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed form of squash available in the database.",
+            "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
+            "ingredient_id": "Ra00266",
+            "closest_match_name": "onion, raw",
+            "ingredient": "1 onion",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 0.3
+        },
+        {
+            "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
+            "ingredient_id": "Ra00136",
+            "closest_match_name": "garlic, raw",
+            "ingredient": "2 cloves of garlic",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 1.2
+        },
+        {
+            "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed option available for squash.",
             "ingredient_id": "Ra00003",
             "closest_match_name": "squash, raw",
             "ingredient": "1 Squash",
@@ -57,7 +81,15 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the most direct match for canned black beans.",
+            "closest_match_explanation": "Matched '1 can of chopped tomatoes' to 'tomato, peeled, canned' as it is the most direct match for canned tomatoes.",
+            "ingredient_id": "Ra00361",
+            "closest_match_name": "tomato, peeled, canned",
+            "ingredient": "1 can of chopped tomatoes",
+            "unit": "kg CO2e per kg",
+            "co2_per_kg": 1.1
+        },
+        {
+            "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the most direct match for black beans.",
             "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
             "ingredient": "1 can of black beans",
@@ -65,7 +97,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the most direct match for canned kidney beans.",
+            "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the most direct match for kidney beans.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can of kidney beans",
@@ -73,7 +105,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed form of corn available in the database.",
+            "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed option available for corn.",
             "ingredient_id": "Ra00417",
             "closest_match_name": "corn cob",
             "ingredient": "300 g of corn",
@@ -89,7 +121,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest available option for cheese in the database.",
+            "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest available option for cheese, considering processing levels.",
             "ingredient_id": "Ra00494",
             "closest_match_name": "blue cheese",
             "ingredient": "150 g cheddar cheese",
@@ -97,7 +129,7 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '1 handful of fresh coriander' to 'parsley, raw' as it is the closest match available for fresh herbs in the database.",
+            "closest_match_explanation": "Matched '1 handful of fresh coriander' to 'parsley, raw' as it is the closest match available for fresh herbs.",
             "ingredient_id": "Ra00134",
             "closest_match_name": "parsley, raw",
             "ingredient": "1 handful of fresh coriander",

@@ -45,7 +45,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Chicken Stock' to 'bouillon, chicken, prepared' as it is the closest match considering processing level.",
+                "closest_match_explanation": "Matched '1 Cup Chicken Stock' to 'bouillon, chicken, prepared' as it is the closest match for chicken stock in the database.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 Cup Chicken Stock",
@@ -63,7 +63,7 @@
                 "weight_in_kg": 0.454
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 lb chicken thigh' to 'chicken, leg, flesh and skin, raw' as it is the least processed option available for chicken thighs.",
+                "closest_match_explanation": "Matched '1 lb chicken thigh' to 'chicken, leg, flesh and skin, raw' as it is the least processed option for chicken thighs in the database.",
                 "ingredient_id": "Ra00053",
                 "closest_match_name": "chicken, leg, flesh and skin, raw",
                 "ingredient": "1 lb chicken thigh",
@@ -81,7 +81,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 TBSP Palm Sugar' to 'sugar, brown' as it is the closest match in terms of processing and type of ingredient.",
+                "closest_match_explanation": "Matched '2 TBSP Palm Sugar' to 'sugar, brown' as it is the closest match for palm sugar in the database.",
                 "ingredient_id": "Ra00319",
                 "closest_match_name": "sugar, brown",
                 "ingredient": "2 TBSP Palm Sugar",
@@ -110,10 +110,10 @@
         },
         {
             "original_name": "4 makrut lime leaves",
-            "en_name": "4 MAKRUT LIME LEAVES",
+            "en_name": "4 Makrut Lime Leaves",
             "weight_estimate": {
-                "ingredient": "4 MAKRUT LIME LEAVES",
-                "weight_calculation": "Amount of MAKRUT LIME LEAVES not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+                "ingredient": "4 Makrut Lime Leaves",
+                "weight_calculation": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
             "co2_per_kg_db": null,
@@ -146,7 +146,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the closest match for fresh basil in the database.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 Cup Thai Basil Leaves",
@@ -174,7 +174,7 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "jasmine rice",
+            "original_name": "Jasmine rice",
             "en_name": "Jasmine Rice",
             "weight_estimate": {
                 "ingredient": "Jasmine Rice",
@@ -182,7 +182,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Jasmine Rice' to 'rice, parboiled, raw' as it is the closest match available in the database.",
+                "closest_match_explanation": "Matched 'Jasmine Rice' to 'rice, parboiled, raw' as it is the closest match for rice in the database.",
                 "ingredient_id": "Ra00300",
                 "closest_match_name": "rice, parboiled, raw",
                 "ingredient": "Jasmine Rice",
@@ -193,6 +193,6 @@
         }
     ],
     "persons": 4,
-    "instructions": " Reduce ¾ Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate. Add the Curry Paste and Sauté for About 2 Minutes Until Aromatic. Add Chicken Thigh and Stir to Mix With The Paste. Add Chicken Stock, Remaining Coconut Milk, Palm Sugar, and Fish Sauce. Add Bruised Makrut Lime Leaves and Sims for 10-15 minutes Until Chicken Is Fork Tender. Add Bamboo Shoots and Bring to a Boil. Taste and Adjust Seasoning. Add Thai Basil and Serve with Jasmine Rice.",
+    "instructions": " Reduce ¾ Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate. Add the Curry Paste and Sauté for About 2 Minutes Until Aromatic. Add Chicken Thigh and Stir to Mix With The Paste. Add Chicken Stock, Remaining Coconut Milk, Palm Sugar, and Fish Sauce. Bruise and Tear the Makrut Lime Leaves and Add Them to the Pot. Sims for 10-15 Minutes Until The Chicken Is Fork Tender. Add Bamboo Shoots and Bring to a Boil. Taste and Adjust Seasoning. Stir in Thai Basil and Serve with Jasmine Rice.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

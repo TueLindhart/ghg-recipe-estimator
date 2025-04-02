@@ -25,7 +25,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil used for frying.",
+            "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the ingredient.",
             "ingredient_id": "Ra00348",
             "closest_match_name": "oil for frying",
             "ingredient": "Oil for frying",
@@ -57,7 +57,7 @@
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
+            "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for the ingredient.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can of kidney beans",
@@ -65,7 +65,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available.",
+            "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed option available for tomatoes.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "2 tablespoons tomato puree",
@@ -73,7 +73,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef broth.",
+            "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef without specifying a cut.",
             "ingredient_id": "Ra00503",
             "closest_match_name": "average beef",
             "ingredient": "2.5 dl beef fund",
@@ -81,15 +81,15 @@
             "co2_per_kg": 74.8
         },
         {
-            "closest_match_explanation": "Matched '11 small cornstortillas' to 'taco shells' as it is the closest match available for corn-based tortillas.",
-            "ingredient_id": "Ra00467",
-            "closest_match_name": "taco shells",
-            "ingredient": "11 small cornstortillas",
+            "closest_match_explanation": "Matched '10-12 small cornstortillas' to 'tortilla bread, wheat' as it is the closest match available for tortillas.",
+            "ingredient_id": "Ra00401",
+            "closest_match_name": "tortilla bread, wheat",
+            "ingredient": "10-12 small cornstortillas",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.4
+            "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the closest match available for a tomato-based salsa.",
+            "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the closest match available for tomato salsa.",
             "ingredient_id": "Ra00400",
             "closest_match_name": "salsa, hot",
             "ingredient": "1 serving of tomato salsa",
@@ -97,7 +97,7 @@
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado.",
+            "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for the ingredient.",
             "ingredient_id": "Ra00317",
             "closest_match_name": "avocado, raw",
             "ingredient": "1 Avocado",
@@ -105,7 +105,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion.",
+            "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for the ingredient.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "red onion",
             "ingredient": "0.5 Red onion",
@@ -121,7 +121,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most processed form of tomatoes available.",
+            "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most processed option available for tomatoes.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "300 g of tomatoes",
@@ -137,7 +137,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '0.5 Bdt coriander' to 'basil, fresh' as it is the closest available option for fresh herbs.",
+            "closest_match_explanation": "Matched '0.5 Bdt coriander' to 'basil, fresh' as it is the closest available option related to fresh herbs.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "0.5 Bdt coriander",
@@ -145,7 +145,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil.",
+            "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for the ingredient.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "2 tablespoons olive oil",

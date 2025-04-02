@@ -25,12 +25,12 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, brown' as it is the least processed option available for sugar.",
-            "ingredient_id": "Ra00319",
-            "closest_match_name": "sugar, brown",
+            "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, sucrose, white' as it is a common form of sugar and represents a standard processing level.",
+            "ingredient_id": "Ra00318",
+            "closest_match_name": "sugar, sucrose, white",
             "ingredient": "2 tablespoons sugar",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.4
+            "co2_per_kg": 2.7
         },
         {
             "closest_match_explanation": "Matched '600 g of codeloin' to 'cod, fillet, raw' as it is the least processed option available for cod.",
@@ -97,7 +97,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the least processed option available for bacon.",
+            "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the most relevant option for bacon.",
             "ingredient_id": "Ra00044",
             "closest_match_name": "bacon, frying, raw",
             "ingredient": "100 g of fried bacon",

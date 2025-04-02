@@ -59,7 +59,7 @@
             "en_name": "1 BDT Green Asparagus",
             "weight_estimate": {
                 "ingredient": "1 BDT Green Asparagus",
-                "weight_calculation": "1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+                "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
@@ -113,11 +113,11 @@
             "en_name": "2 dl cream",
             "weight_estimate": {
                 "ingredient": "2 dl cream",
-                "weight_calculation": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
+                "weight_calculation": "2 dl = 0.2 kg, 2 * 0.1 kg = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is a common form of cream and represents a specific fat content.",
+                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the least processed form of cream available in the database.",
                 "ingredient_id": "Ra00345",
                 "closest_match_name": "cream, whipping, 38 % fat",
                 "ingredient": "2 dl cream",
@@ -131,7 +131,7 @@
             "en_name": "1 dl water",
             "weight_estimate": {
                 "ingredient": "1 dl water",
-                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": null,
@@ -157,7 +157,7 @@
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the specific type of cheese requested.",
+                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the most relevant option for grated parmesan cheese.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "6 tbsp grated parmesan",
@@ -171,11 +171,11 @@
             "en_name": "1 handful of mozzarella",
             "weight_estimate": {
                 "ingredient": "1 handful of mozzarella",
-                "weight_calculation": "1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the specific type of cheese requested.",
+                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most relevant option for mozzarella cheese.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
                 "ingredient": "1 handful of mozzarella",
@@ -215,7 +215,7 @@
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Oil' to 'olive oil' as it is a common type of oil and has the highest emissions among the options.",
+                "closest_match_explanation": "Matched 'Oil' to 'olive oil' as it is the most relevant option for oil in the database.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "Oil",

@@ -41,7 +41,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Matched '1 Bunch Scallions' to 'onions, spring, raw' as it is the most relevant option for raw scallions.",
+            "closest_match_explanation": "Matched '1 Bunch Scallions' to 'onions, spring, raw' as it is the least processed and most relevant option for scallions.",
             "ingredient_id": "Ra00267",
             "closest_match_name": "onions, spring, raw",
             "ingredient": "1 Bunch Scallions",
@@ -81,7 +81,7 @@
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_explanation": "Matched '2 tsp granulated garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
+            "closest_match_explanation": "Matched '2 tsp granulated garlic' to 'garlic, raw' as it is the least processed and most relevant option for garlic.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 tsp granulated garlic",
@@ -89,7 +89,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Matched '2 tsp onion powder' to 'onion, raw' as it is the least processed option available for onions.",
+            "closest_match_explanation": "Matched '2 tsp onion powder' to 'onion, raw' as it is the least processed and most relevant option for onion.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "2 tsp onion powder",

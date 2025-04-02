@@ -2,9 +2,9 @@
     "ingredients": [
         {
             "original_name": "1 tsk stødt spidskommen",
-            "en_name": "1 teaspoon of cumin",
+            "en_name": "1 tsp steady cumin",
             "weight_estimate": {
-                "ingredient": "1 teaspoon of cumin",
+                "ingredient": "1 tsp steady cumin",
                 "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
@@ -53,7 +53,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -89,7 +89,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
+                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -201,7 +201,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
+                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -219,7 +219,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -233,11 +233,11 @@
             "en_name": "1 Squash",
             "weight_estimate": {
                 "ingredient": "1 Squash",
-                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed form of squash available in the database.",
+                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed option available for squash.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
                 "ingredient": "1 Squash",
@@ -266,9 +266,9 @@
         },
         {
             "original_name": "1 tsk stødt spidskommen",
-            "en_name": "1 teaspoon of cumin",
+            "en_name": "1 tsp steady cumin",
             "weight_estimate": {
-                "ingredient": "1 teaspoon of cumin",
+                "ingredient": "1 tsp steady cumin",
                 "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
@@ -295,7 +295,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the most direct match for canned black beans.",
+                "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the most direct match for black beans.",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
                 "ingredient": "1 can of black beans",
@@ -313,7 +313,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the most direct match for canned kidney beans.",
+                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the most direct match for kidney beans.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -331,7 +331,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed form of corn available in the database.",
+                "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed option available for corn.",
                 "ingredient_id": "Ra00417",
                 "closest_match_name": "corn cob",
                 "ingredient": "300 g of corn",
@@ -367,7 +367,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest available option for cheese in the database.",
+                "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest available option for cheese, considering processing levels.",
                 "ingredient_id": "Ra00494",
                 "closest_match_name": "blue cheese",
                 "ingredient": "150 g cheddar cheese",
@@ -385,7 +385,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 handful of fresh coriander' to 'parsley, raw' as it is the closest match available for fresh herbs in the database.",
+                "closest_match_explanation": "Matched '1 handful of fresh coriander' to 'parsley, raw' as it is the closest match available for fresh herbs.",
                 "ingredient_id": "Ra00134",
                 "closest_match_name": "parsley, raw",
                 "ingredient": "1 handful of fresh coriander",
@@ -414,6 +414,6 @@
         }
     ],
     "persons": 4,
-    "instructions": " ** Enchilada's sauce ** Shake all the spices in a dry saucepan until they start to smell nice. Add oil, garlic and onion and saute until the onions are soft. Stir in flour into the filling and then add vegetable broth and chopped tomatoes. Stir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper. ** Fill ** Heat oil in a saucepan and saute onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through. Shake the corn kernels in a little butter on a pan until they get crispy and get a little color. ** Gather Enchiladas ** Grease each tortilla pancake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish. Distribute the last enchilada sauce over and sprinkle with more cheese. Distribute bean filling and corn kernels in the sides of the dish if there is anything left over. Bake them in a preheated oven at 175 degrees hot air for about 18 minutes. Sprinkle with coriander before serving.",
+    "instructions": " ** Enchilada's sauce ** Shake all the spices in a dry saucepan until they start to smell nice. Add oil, garlic and onion and saute until the onions are soft. Stir in flour into the filling and then add vegetable broth and chopped tomatoes. Stir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper. ** Fill ** Heat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through. Shake the corn kernels in a little butter on a pan until they get crispy and get a little color. ** Gather Enchiladas ** Grease each tortilla pancake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish. Distribute the last enchilada sauce over and sprinkle with more cheese. Distribute bean filling and corn kernels in the sides of the dish if there is anything left over. Bake them in a preheated oven at 175 degrees hot air for about 18 minutes. Sprinkle with coriander before serving.",
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
 }
