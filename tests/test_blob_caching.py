@@ -67,17 +67,17 @@ def mock_bucket(monkeypatch: pytest.MonkeyPatch):
         (
             "https://www.example.com/this/is/a/test?query=string",
             "1.0",
-            "example.com/path_this_is_a_test_arg_query_string/1.0",
+            "1.0/example.com/path_this_is_a_test_arg_query_string",
         ),
         (
             "https://www.example.com",
             "1.0",
-            "example.com/path_no_path_arg__no_query/1.0",
+            "1.0/example.com/path_no_path_arg__no_query",
         ),
         (
             "https://www.example.com/this/is/a/test",
             "1.0",
-            "example.com/path_this_is_a_test_arg__no_query/1.0",
+            "1.0/example.com/path_this_is_a_test_arg__no_query",
         ),
     ],
 )
@@ -91,17 +91,17 @@ def test_create_cache_key_path(url, version, expected):
         (
             "https://www.example.com/this/is/a/test?query=string",
             "1.0",
-            "example.com/path_this_is_a_test_arg_query_string/1.0/",
+            "1.0/example.com/path_this_is_a_test_arg_query_string/",
         ),
         (
             "https://www.example.com",
             "1.0",
-            "example.com/path_no_path_arg__no_query/1.0/",
+            "1.0/example.com/path_no_path_arg__no_query/",
         ),
         (
             "https://www.example.com/this/is/a/test",
             "1.0",
-            "example.com/path_this_is_a_test_arg__no_query/1.0/",
+            "1.0/example.com/path_this_is_a_test_arg__no_query/",
         ),
     ],
 )
