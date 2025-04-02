@@ -17,11 +17,16 @@ def env_use_cache():
     return os.environ.get("USE_CACHE") == "true"
 
 
+def env_store_in_cache():
+    return os.environ.get("STORE_IN_CACHE") == "true"
+
+
 class RunParams(pydantic.BaseModel):
     url: str
     uid: str = pydantic.Field(default_factory=get_uuid)
     negligeble_threshold: float = NEGLIGIBLE_THRESHOLD
     use_cache: bool = pydantic.Field(default_factory=env_use_cache)
+    store_in_cache: bool = pydantic.Field(default_factory=env_store_in_cache)
 
     def __eq__(self, value: object) -> bool:
         if not isinstance(value, RunParams):
