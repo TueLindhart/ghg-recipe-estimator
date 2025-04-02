@@ -22,8 +22,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "2.5 stængler bladselleri",
-            "en_name": "2.5 Stems of leaf celery",
+            "original_name": "2.5 stilke bladselleri",
+            "en_name": "2.5 Stalk leaf celery",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -31,13 +31,6 @@
         {
             "original_name": "6 fed hvidløg",
             "en_name": "6 cloves of garlic",
-            "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
-        },
-        {
-            "original_name": "1 håndfuld friske basilikumblade",
-            "en_name": "1 handful of fresh basil leaves",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -92,8 +85,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "0.5 dl olivenolie",
-            "en_name": "0.5 dl olive oil",
+            "original_name": "olie",
+            "en_name": "oil",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -106,8 +99,15 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "peber",
-            "en_name": "pepper",
+            "original_name": "friskkværnet peber",
+            "en_name": "freshly ground pepper",
+            "weight_estimate": null,
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 håndfuld friske basilikumblade",
+            "en_name": "1 handful of fresh basil leaves",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -121,13 +121,13 @@
         },
         {
             "original_name": "revet parmesan",
-            "en_name": "grated parmesan",
+            "en_name": "Torn parmesan",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
-    "persons": 6,
-    "instructions": " Blend onion, celery, carrots and garlic to a uniform mass. Heat the olive oil at medium heat and sweat the blended mass well for 5-10 minutes without browning. Add the chopped beef and brown it well. Let the tomato concentrate simmer for a minute. Pour the red wine over and let it boil through so that the alcohol is burned off. Add the peeled tomatoes, spices and fresh basil, and simmer for a minimum of 1 hour, but preferably 2-3 hours. Serve with the family's favorite pasta and a good sprinkle of parmesan.",
+    "persons": 8,
+    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\". Heat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside. Meanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you. In the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way. Then pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute. Pour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way. Before serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
 }

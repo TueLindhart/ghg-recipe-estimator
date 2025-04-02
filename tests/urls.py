@@ -6,4 +6,5 @@ TEST_URLS = {
     "hot_thai_kitchen_green_curry": "https://hot-thai-kitchen.com/green-curry-new-2/",
     "madogkaerlighed_pasta_asparges": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/",
     "valdemarsro_vegetar_enchiladas": "https://www.valdemarsro.dk/vegetar-enchiladas/",
+    "valdemarsro_tomatrisotto": "https://www.valdemarsro.dk/tomatrisotto/",
 }

@@ -86,9 +86,9 @@ Hvis du ikke serverer torsken som del af en menu, men som selvstændig ret, bør
 
 ### Energiindhold for hele retten:
 
-13667 kJ / 3266 kcal
+13677 kJ / 3269 kcal
 
-##### Næringsindhold pr. 100g
+### Næringsindhold pr. 100g
 
 724 kJ / 173 kcal
 
@@ -101,8 +101,7 @@ Hvis du ikke serverer torsken som del af en menu, men som selvstændig ret, bør
 | Kulhydrat: | 11,9 % | 5,1 g |
 | Fedt: | 73,3 % | 14,3 g |
 
-##### Dejlig dessert, der også kan bruges en festlig aften.
-
+**Dejlig dessert, der også kan bruges en festlig aften.**
 6 timer 30 min
 
 (29)
@@ -117,19 +116,19 @@ Er du i tvivl om kogetiden på æg? Så se her hvordan Karolines Køkkenskole ko
 * 1 time 45 min
 
   (3)
-* Tradition for fornyelse
+* Følg med på Instagram
 * 30 min
 
   (59)
-* 10 timer
-
-  (20)
 * 2 timer
 
   (3)
-* 2 timer 30 min
+* 10 timer
 
-  (715)
+  (20)
 * 30 min
 
-  (13)
+  (32)
+* 2 timer 30 min
+
+  (722)

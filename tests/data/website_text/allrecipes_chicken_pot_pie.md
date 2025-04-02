@@ -143,21 +143,18 @@ fabeveryday
 of 07
 
 Photo by 
-Linda Kramer
 01/18/2021
 
 03
 of 07
 
 Photo by 
-Linda Kramer
 01/18/2021
 
 04
 of 07
 
 Photo by 
-cacarovan
 
 01/09/2021
 Good but a little dry. Chicken pot pie is supposed to be soupy. I would leave the juices from the beans next time or maybe add some chicken broth. Also cut down in the chili powder. 4 Tablespoons is a ton. 
@@ -166,7 +163,6 @@ Good but a little dry. Chicken pot pie is supposed to be soupy. I would leave th
 of 07
 
 Photo by 
-NickGT
 12/31/2020
 
 06

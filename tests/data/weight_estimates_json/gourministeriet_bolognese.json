@@ -16,19 +16,14 @@
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "2.5 Stems of leaf celery",
-            "weight_calculation": "1 stem of leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
+            "ingredient": "2.5 Stalk leaf celery",
+            "weight_calculation": "1 stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "6 cloves of garlic",
             "weight_calculation": "1 clove garlic = 4 g, 6 * 4 g = 24 g = 0.024 kg",
             "weight_in_kg": 0.024
-        },
-        {
-            "ingredient": "1 handful of fresh basil leaves",
-            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
-            "weight_in_kg": 0.025
         },
         {
             "ingredient": "150 g tomato concentrate",
@@ -66,29 +61,34 @@
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "0.5 dl olive oil",
-            "weight_calculation": "0.5 dl = 50 g, 1 * 50 g = 50 g = 0.05 kg",
-            "weight_in_kg": 0.05
+            "ingredient": "oil",
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 8 servings * 0.01 kg = 0.08 kg",
+            "weight_in_kg": 0.08
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
-            "weight_in_kg": 0.03
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 8 servings * 0.005 kg = 0.04 kg",
+            "weight_in_kg": 0.04
         },
         {
-            "ingredient": "pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
-            "weight_in_kg": 0.03
+            "ingredient": "freshly ground pepper",
+            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 8 servings * 0.005 kg = 0.04 kg",
+            "weight_in_kg": 0.04
+        },
+        {
+            "ingredient": "1 handful of fresh basil leaves",
+            "weight_calculation": "1 handful of fresh basil leaves = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_in_kg": 0.025
         },
         {
             "ingredient": "Pasta as desired",
-            "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 6 servings * 0.125 kg = 0.75 kg",
-            "weight_in_kg": 0.75
+            "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 8 servings * 0.125 kg = 1.0 kg",
+            "weight_in_kg": 1.0
         },
         {
-            "ingredient": "grated parmesan",
-            "weight_calculation": "Amount of grated parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 6 servings * 0.02 kg = 0.12 kg",
-            "weight_in_kg": 0.12
+            "ingredient": "Torn parmesan",
+            "weight_calculation": "Amount of torn parmesan not specified. LLM estimate is: 1 serving = 0.05 kg, 8 servings * 0.05 kg = 0.4 kg",
+            "weight_in_kg": 0.4
         }
     ]
 }

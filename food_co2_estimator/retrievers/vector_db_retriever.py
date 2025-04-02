@@ -153,6 +153,8 @@ FILLER_WORDS = [
     "to",
     "whole",
     "with",
+    "warm",
+    "hot",
 ]
 
 
@@ -323,10 +325,14 @@ def clean_ingredient_list(ingredients: List[str]) -> List[str]:
     """
     cleaned_ingredients = []
     for ingredient in ingredients:
-        # Remove quantities
-        no_quantity = remove_quantities(ingredient)
-        # Remove units
-        no_unit = remove_units(no_quantity)
-        lower_case = no_unit.lower()
-        cleaned_ingredients.append(lower_case)
+        ingredient = clean_ingredient(ingredient)
+        cleaned_ingredients.append(ingredient)
     return cleaned_ingredients
+
+
+def clean_ingredient(ingredient):
+    # Remove quantities
+    ingredient = remove_quantities(ingredient)
+    # Remove units
+    ingredient = remove_units(ingredient)
+    return ingredient.lower()

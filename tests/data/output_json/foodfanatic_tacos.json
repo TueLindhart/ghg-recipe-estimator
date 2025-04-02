@@ -34,17 +34,17 @@
             "co2_per_kg": 1.2,
             "co2_kg": 0.48,
             "calculation_notes": "0.4 kg * 1.2 kg CO2e/kg (DB) = 0.48 kg CO2e",
-            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_estimation_notes": "1 can = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "co2_emission_notes": "Best match in CO2 database is: kidney beans"
         },
         {
-            "name": "11 små majstortillas",
+            "name": "10-12 små majstortillas",
             "ingredient_id": "Ra00401",
-            "weight_kg": 0.33,
+            "weight_kg": 0.36,
             "co2_per_kg": 1.2,
-            "co2_kg": 0.4,
-            "calculation_notes": "0.33 kg * 1.2 kg CO2e/kg (DB) = 0.4 kg CO2e",
-            "weight_estimation_notes": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.330 kg",
+            "co2_kg": 0.43,
+            "calculation_notes": "0.36 kg * 1.2 kg CO2e/kg (DB) = 0.43 kg CO2e",
+            "weight_estimation_notes": "1 tortilla = 30 g, 12 * 30 g = 360 g = 0.360 kg",
             "co2_emission_notes": "Best match in CO2 database is: tortilla bread, wheat"
         },
         {
@@ -56,16 +56,6 @@
             "calculation_notes": "0.3 kg * 1.1 kg CO2e/kg (DB) = 0.33 kg CO2e",
             "weight_estimation_notes": "300 g = 300 g = 0.300 kg",
             "co2_emission_notes": "Best match in CO2 database is: tomato, peeled, canned"
-        },
-        {
-            "name": "1 portion tomatsalsa",
-            "ingredient_id": "Ra00400",
-            "weight_kg": 0.2,
-            "co2_per_kg": 1.4,
-            "co2_kg": 0.28,
-            "calculation_notes": "0.2 kg * 1.4 kg CO2e/kg (DB) = 0.28 kg CO2e",
-            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.100 kg, 2 servings * 0.100 kg = 0.200 kg",
-            "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
         },
         {
             "name": "1 avocado",
@@ -88,14 +78,14 @@
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
         },
         {
-            "name": "olie til stegning",
-            "ingredient_id": "Ra00348",
-            "weight_kg": 0.04,
-            "co2_per_kg": 2.8,
-            "co2_kg": 0.11,
-            "calculation_notes": "0.04 kg * 2.8 kg CO2e/kg (DB) = 0.11 kg CO2e",
-            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.020 kg, 2 servings * 0.020 kg = 0.040 kg",
-            "co2_emission_notes": "Best match in CO2 database is: oil for frying"
+            "name": "1 portion tomatsalsa",
+            "ingredient_id": "Ra00400",
+            "weight_kg": 0.1,
+            "co2_per_kg": 1.4,
+            "co2_kg": 0.14,
+            "calculation_notes": "0.1 kg * 1.4 kg CO2e/kg (DB) = 0.14 kg CO2e",
+            "weight_estimation_notes": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "co2_emission_notes": "Best match in CO2 database is: salsa, hot"
         },
         {
             "name": "0.5 rød peberfrugt",
@@ -106,6 +96,16 @@
             "calculation_notes": "0.07 kg * 1.1 kg CO2e/kg (DB) = 0.08 kg CO2e",
             "weight_estimation_notes": "1 bell pepper = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
             "co2_emission_notes": "Best match in CO2 database is: pepper, sweet, red, raw"
+        },
+        {
+            "name": "olie til stegning",
+            "ingredient_id": "Ra00348",
+            "weight_kg": 0.03,
+            "co2_per_kg": 2.8,
+            "co2_kg": 0.08,
+            "calculation_notes": "0.03 kg * 2.8 kg CO2e/kg (DB) = 0.08 kg CO2e",
+            "weight_estimation_notes": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.030 kg",
+            "co2_emission_notes": "Best match in CO2 database is: oil for frying"
         },
         {
             "name": "2 spsk tomatpuré",
@@ -138,6 +138,36 @@
             "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
+            "name": "1.5 spsk fajitakrydderi",
+            "ingredient_id": "Ra00467",
+            "weight_kg": 0.022,
+            "co2_per_kg": 2.4,
+            "co2_kg": 0.05,
+            "calculation_notes": "0.02 kg * 2.4 kg CO2e/kg (DB) = 0.05 kg CO2e",
+            "weight_estimation_notes": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
+            "co2_emission_notes": "Best match in CO2 database is: taco shells"
+        },
+        {
+            "name": "0.5 - 1 chilipeber",
+            "ingredient_id": "Ra00009",
+            "weight_kg": 0.025,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.03,
+            "calculation_notes": "0.03 kg * 1.1 kg CO2e/kg (DB) = 0.03 kg CO2e",
+            "weight_estimation_notes": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, hot chili, raw"
+        },
+        {
+            "name": "chilipulver eller flager efter smag",
+            "ingredient_id": "Ra00484",
+            "weight_kg": 0.01,
+            "co2_per_kg": 2.1,
+            "co2_kg": 0.02,
+            "calculation_notes": "0.01 kg * 2.1 kg CO2e/kg (DB) = 0.02 kg CO2e",
+            "weight_estimation_notes": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
+            "co2_emission_notes": "Best match in CO2 database is: chili sauce"
+        },
+        {
             "name": "saften af 0.5 lime",
             "ingredient_id": "Ra00332",
             "weight_kg": 0.035,
@@ -149,33 +179,33 @@
         },
         {
             "name": "2 fed hvidløg",
-            "ingredient_id": null,
+            "ingredient_id": "Ra00136",
             "weight_kg": 0.008,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.008 kg is negligible",
+            "co2_per_kg": 1.2,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.01 kg * 1.2 kg CO2e/kg (DB) = 0.01 kg CO2e",
             "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Best match in CO2 database is: garlic, raw"
         },
         {
-            "name": "1.5 spsk fajitakrydderi",
-            "ingredient_id": null,
-            "weight_kg": 0.022,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.022 kg is negligible",
-            "weight_estimation_notes": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
-            "co2_emission_notes": null
+            "name": "2 fed hvidløg",
+            "ingredient_id": "Ra00136",
+            "weight_kg": 0.008,
+            "co2_per_kg": 1.2,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.01 kg * 1.2 kg CO2e/kg (DB) = 0.01 kg CO2e",
+            "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "co2_emission_notes": "Best match in CO2 database is: garlic, raw"
         },
         {
-            "name": "chilipulver eller flager efter smag",
-            "ingredient_id": null,
-            "weight_kg": 0.01,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
-            "co2_emission_notes": null
+            "name": "0.5 bdt koriander",
+            "ingredient_id": "Ra00486",
+            "weight_kg": 0.025,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.03 kg * 0.4 kg CO2e/kg (DB) = 0.01 kg CO2e",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Best match in CO2 database is: basil, fresh"
         },
         {
             "name": "salt",
@@ -183,9 +213,9 @@
             "weight_kg": 0.01,
             "co2_per_kg": null,
             "co2_kg": null,
-            "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
-            "co2_emission_notes": null
+            "calculation_notes": "Ingredient is ignored in calculation",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
+            "co2_emission_notes": "Ingredient is ignored in calculation"
         },
         {
             "name": "peber",
@@ -193,39 +223,9 @@
             "weight_kg": 0.01,
             "co2_per_kg": null,
             "co2_kg": null,
-            "calculation_notes": "Weight on 0.01 kg is negligible",
-            "weight_estimation_notes": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "2 fed hvidløg",
-            "ingredient_id": null,
-            "weight_kg": 0.008,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.008 kg is negligible",
-            "weight_estimation_notes": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "0.5 - 1 chilipeber",
-            "ingredient_id": null,
-            "weight_kg": 0.025,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Unable to find CO2 emission"
-        },
-        {
-            "name": "0.5 bdt koriander",
-            "ingredient_id": null,
-            "weight_kg": 0.025,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Unable to find CO2 emission"
+            "calculation_notes": "Ingredient is ignored in calculation",
+            "weight_estimation_notes": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
+            "co2_emission_notes": "Ingredient is ignored in calculation"
         }
     ]
 }

@@ -53,7 +53,7 @@ async def test_async_estimator(
 
     # Call the function
     success, output = await async_estimator(
-        runparams=RunParams(url="dummy_url", use_cache=False),
+        runparams=RunParams(url="dummy_url", use_cache=False, store_in_cache=False),
     )
     if success is False:
         raise RuntimeError(f"Failed to run async_estimator: {output}")

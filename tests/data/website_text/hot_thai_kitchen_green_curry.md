@@ -38,7 +38,7 @@ Green curry uses our basic curry making methods that you'll see in many differen
 12. Stir in red bell pepper and turn off the heat.
 
 13. Add Thai basil and stir just until wilted.
-14. The green curry is now ready to serve with jasmine rice!
+14. The green curry is now ready to serve with jasmine rice! *Note: The makrut lime leaves are for infusion purposes only; they are not meant to be eaten when left in large pieces.*
 
 How to Make Green Curry Vegan
 -----------------------------
@@ -91,7 +91,7 @@ By:
 
 Authentic recipe for Thai green curry with chicken and bamboo shoots which is a classic combination. This recipe uses traditional curry making technique with no added cooking oil. You can use store bought curry paste, or make your own. 
 
-4.88 from 73 votes
+4.88 from 75 votes
 
 Course Main CourseCuisine Thai
 
@@ -142,13 +142,13 @@ All my recipes come with step-by-step video tutorials with extra tips not mentio
 * Reduce **¾ cup coconut milk** until thick and coconut oil starts to separate from the coconut milk (if the oil doesn’t separate after it has reduced until very thick, it's okay, just proceed with the recipe).1¾ cups coconut milk
 * Add the **curry paste** and sauté, stirring constantly over medium heat for about 2 minutes until aromatic. If paste sticks to the bottom of the pan, you can deglaze with a little bit of the remaining coconut milk. 3 ½ Tablespoons green curry paste
 * Add **chicken thigh** and stir to mix with the paste. (Continue with instructions below if using chicken breast).1 lb chicken thigh
-* Add the **chicken stock, remaining 1 cup of coconut milk, palm sugar and 1 Tablespoon of the fish sauce.** Grab the **makrut lime leaves** and twist them to bruise and release aroma, then tear them into chunks and add them to the pot, discarding the center stems. Bring to a simmer and let simmer gently for 10-15 minutes or until the chicken is fork tender.1 cup chicken stock, 2 Tablespoons finely chopped palm sugar, 1 ½ - 2 Tablespoons fish sauce, 4 makrut lime leaves
+* Add the **chicken stock, remaining 1 cup of coconut milk, palm sugar and 1 Tablespoon of the fish sauce.** Grab the **makrut lime leaves** and twist them to bruise and release aroma, then tear them into chunks and add them to the pot, discarding the center stems. Bring to a simmer and let simmer gently for 10-15 minutes or until the chicken is fork tender.*\*The lime leaves are for infusion only and not meant to be eaten when left in large pieces. They are traditionally left in the curry, but be sure to inform your guests not to eat them.*1 cup chicken stock, 2 Tablespoons finely chopped palm sugar, 1 ½ - 2 Tablespoons fish sauce, 4 makrut lime leaves
 * Once the curry is done simmering, add **bamboo shoots** and bring to a boil. If you prefer your **peppers** to be more cooked, add them at this stage. Once boiling, remove from heat.1 550-ml can bamboo shoots strips, ¼ red bell pepper
 * Taste and add more fish sauce and/or sugar as needed. *\*If you feel that the curry is weak and needs more curry paste,* saute the additional curry paste in some oil in a small pot for a few minutes until aromatic, then add about a cup of the curry sauce to dissolve the paste and let it simmer for a few minutes, then stir it back into the curry.
 * Add **Thai basil** and **spur chilies or bell peppers** and stir just until the basil is wilted. Serve with **jasmine rice**1 cup Thai basil leaves, Jasmine rice for serving
 #### If using chicken breast:
 
-* After sautéing the curry paste, add **kaffir lime leaves, coconut milk, chicken stock, palm sugar and 1 tablespoon fish sauce**; bring to a simmer and let simmer for about 5 minutes.
+* After sautéing the curry paste, add **makrut lime leaves, coconut milk, chicken stock, palm sugar and 1 tablespoon fish sauce**; bring to a simmer and let simmer for about 5 minutes.*\*The lime leaves are for infusion only and not meant to be eaten when left in large pieces. They are traditionally left in the curry, but be sure to inform your guests not to eat them.*
 * Bring the curry sauce to a boil, then add the **marinated chicken breast** and cook until chicken is about 70% done, 1-2 minutes. Add the **bamboo shoots** and bring to a boil. If you prefer your **peppers** to be more cooked, add them at this stage. Once boiling, remove from heat.
 * Taste and add more fish sauce and/or sugar as needed. *\*If you feel that the curry is weak and needs more curry paste,* saute the additional curry paste in some oil in a small pot for a few minutes until aromatic, then add about a cup of the curry sauce to dissolve the paste and let it simmer for a few minutes, then stir it back into the curry.
 * Stir in **Thai basil** and **spur chilies or bell peppers.** Serve with **jasmine rice.**
@@ -191,4 +191,4 @@ Notify me via e-mail if anyone answers my comment.
 
 I'm Pai, a chef, author, and YouTuber. I'm here to demystify Thai cuisine and help you cook great Thai food at home. Want to learn more about me?
 
-### Quick Meals
+### Popular Classics

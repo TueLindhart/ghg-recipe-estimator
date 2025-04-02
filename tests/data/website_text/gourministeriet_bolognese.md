@@ -20,7 +20,7 @@ Klik & bedøm på stjernerne nedenfor
 
 Ret: HovedretKøkken: ItalienskNøgleord: Bolognese, Kødsauce, Kødsovs
 Samlet tid: 3 timer timer
-Ændre antalAntal: 6 Personer
+Ændre antalAntal: 8 Personer
 
    Følg mig på Instagram 
 
@@ -33,18 +33,18 @@ Jeg er i køkkenetUndgå at din skærm går i sort mens du er i køkkenet
 * ▢ 1 kg  hakket oksekød
 * ▢ 3  store løg
 * ▢ 3  gulerødder
-* ▢ 2-3 stængler  bladselleri
+* ▢ 2-3 stilke  bladselleri
 * ▢ 6 fed  hvidløg
-* ▢ 1 håndfuld  friske basilikumblade
 * ▢ 150 g  tomatkoncentrat
-* ▢ 3 ds  hakkede tomater
+* ▢ 3 ds  hakkede tomater eller polpa
 * ▢ 2 dl  rødvin
 * ▢  1/2 tsk  rosmarin
 * ▢  1/2 tsk  timian
 * ▢ 1 tsk  oregano
 * ▢ 1 tsk  basilikum
-* ▢  1/2 dl  olivenolie
-* ▢  Salt og peber
+* ▢    Olie
+* ▢  Salt og friskekværnet peber
+* ▢ 1 håndfuld  friske basilikumblade
 #### **Andet**
 
 * ▢  Pasta efter ønske
@@ -52,12 +52,13 @@ Jeg er i køkkenetUndgå at din skærm går i sort mens du er i køkkenet
 
 ### Sådan gør du
 
-* Blend løg, selleri, gulerødder og hvidløg til en ensartet masse. Alternativt kan det rives fint.
-* Varm olivenolien op ved middel varme, og svits den blendede masse godt af, gerne 5-10 min, uden det bruner.
-* Tilsæt derefter det hakkede oksekød, og brun det godt af, og lad til sidst tomatkoncentrat svitse med et minuts tid.
-* Hæld rødvinen over og lad det koge igennem så alkoholen brændes af.
-* Tilsæt de flåede tomater, krydderierne og frisk basilikum og lad nu bolognesen simre i minimum 1 time, men gerne 2-3 timer hvis tiden er til det.
-* Serveres ved familiens favorit pasta og et godt drys parmesan.
+* Mas kødet godt mellem dine hænder, til det ikke længere har de klassiske "hakket oksekød strimler".
+* Varm en god sjat olie i en stor gryde, og brun kødet godt af. Det må gerne få lidt stegeskorpe inden du hakker det godt med en grydeske. Fortsæt til det er godt brunet og krydr med salt og friskkværnet peber. Læg kødet til side.
+* Blend imens løg, gulerødder, bladselleri og hvidløg fint. Du kan også vælge at blende det groft, eller alternativt hakke det fint i hånden - det er op til dig.
+* I samme gryde varmes endnu en sjat olie, og grøntsagerne svitses godt af i ca. 10 minutter. Rør undervejs.
+* Hæld derefter det hakkede oksekød tilbage i gryden, tilsæt tomatkoncentrat og svitse med et minuts tid.
+* Hæld rødvinen over og lad det koge ind i 5 minutter, og tilsæt derefter tomat og krydderier. Lad bolognesen simre i minimum 1 time, gerne 2-3 timer hvis tiden er til det - rør undervejs.
+* Inden servering vendes de friske basilikumblade i, og bolognese smages til med salt og friskkværnet peber.
 
 Spaghetti bolognese – Opskrift på den bedste kødsauce
 

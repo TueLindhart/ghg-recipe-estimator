@@ -11,6 +11,11 @@ from translate import Translator
 from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
+# Pre-translation of the ingredients where the translation fails
+# This points towards translation is an unsustainable direction
+# Probably better to simply mix danish and english in prompts
+TRANSLATE_DICT = {"spidskål": "pointed cabbage"}
+
 # Global cache to keep track of the translator index
 _translation_cache = {"index": 0}
 
@@ -102,9 +107,9 @@ def _translate_if_not_english(recipe: EnrichedRecipe, language: str):
         )
         return recipe
 
-    inputs_str = SPLIT_STRING.join(
-        [ingredient.original_name for ingredient in recipe.ingredients]
-    )
+    ingredients = [ingredient.original_name for ingredient in recipe.ingredients]
+    ingredients = manuel_translation(ingredients)
+    inputs_str = SPLIT_STRING.join(ingredients)
     if recipe.instructions is not None:
         inputs_str += INSTRUCTIONS_DELIMITER + recipe.instructions
     my_translator = MyTranslator.default()
@@ -140,6 +145,14 @@ def _translate_if_not_english(recipe: EnrichedRecipe, language: str):
         my_translator.switch_translator(index)
 
     return translated_recipe
+
+
+def manuel_translation(ingredients: list[str]) -> list[str]:
+    for i, ingredient in enumerate(ingredients):
+        for key, value in TRANSLATE_DICT.items():
+            if key in ingredient:
+                ingredients[i] = ingredient.replace(key, value)
+    return ingredients
 
 
 def translate_if_not_english(input: TranslateDict):

@@ -18,7 +18,7 @@
             "co2_emission_notes": "Best match in CO2 database is: coconut milk"
         },
         {
-            "name": "jasmine rice",
+            "name": "Jasmine rice",
             "ingredient_id": "Ra00300",
             "weight_kg": 0.5,
             "co2_per_kg": 5.1,
@@ -114,8 +114,8 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
-            "weight_estimation_notes": "Amount of MAKRUT LIME LEAVES not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
-            "co2_emission_notes": null
+            "weight_estimation_notes": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+            "co2_emission_notes": "Weight on 0.004 kg is negligible"
         }
     ]
 }

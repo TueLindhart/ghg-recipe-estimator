@@ -29,6 +29,7 @@ async def async_estimator(
 ) -> tuple[bool, str]:
     if logparams is None:
         logparams = LogParams()
+
     logging.basicConfig(level=logparams.logging_level)
     text = get_markdown_from_url(runparams.url)
     if text is None:
@@ -130,7 +131,9 @@ if __name__ == "__main__":
     # url = "https://gourministeriet.dk/vores-favorit-bolognese/"
     # url = "https://hot-thai-kitchen.com/green-curry-new-2/"
     # url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
-    url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    # url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    # url = "https://www.valdemarsro.dk/wok-med-kaal-og-friterede-spejlaeg/"
+    url = "https://www.louisesmadblog.dk/bloede-tacos/"
 
     start_time = time()
     runparams = RunParams(url=url)
