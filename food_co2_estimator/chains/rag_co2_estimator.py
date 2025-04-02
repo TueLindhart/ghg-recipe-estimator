@@ -9,7 +9,10 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedIngredient,
     EnrichedRecipe,
 )
-from food_co2_estimator.retrievers.vector_db_retriever import batch_emission_retriever
+from food_co2_estimator.retrievers.vector_db_retriever import (
+    batch_emission_retriever,
+    clean_ingredient,
+)
 from food_co2_estimator.utils.openai_model import get_model
 
 NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
@@ -48,9 +51,11 @@ def above_weight_threshold(
 
 
 def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
+    if item.en_name is None:
+        return True
+    ingredient = clean_ingredient(item.en_name)
     return not any(
-        item.en_name is not None and ignored_ingredient in item.en_name.lower()
-        for ignored_ingredient in INGREDIENTS_TO_IGNORE
+        ignored_ingredient == ingredient for ignored_ingredient in INGREDIENTS_TO_IGNORE
     )
 
 

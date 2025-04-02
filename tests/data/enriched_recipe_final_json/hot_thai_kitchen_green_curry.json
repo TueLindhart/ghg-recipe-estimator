@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1.75 Cups Coconut Milk' to 'coconut milk' as it is the exact ingredient in the database with a specific emission factor.",
+                "closest_match_explanation": "Matched '1.75 Cups Coconut Milk' to 'coconut milk' as it is the exact ingredient in the database.",
                 "ingredient_id": "Ra00404",
                 "closest_match_name": "coconut milk",
                 "ingredient": "1.75 Cups Coconut Milk",
@@ -27,7 +27,7 @@
                 "weight_in_kg": 0.0525
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3.5 TBSP Green Curry Paste' to 'green curry paste' as it is the exact ingredient in the database with a specific emission factor.",
+                "closest_match_explanation": "Matched '3.5 TBSP Green Curry Paste' to 'green curry paste' as it is the exact ingredient in the database.",
                 "ingredient_id": "Ra00469",
                 "closest_match_name": "green curry paste",
                 "ingredient": "3.5 TBSP Green Curry Paste",
@@ -45,7 +45,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Chicken Stock' to 'bouillon, chicken, prepared' as it is the closest match for chicken stock in the database.",
+                "closest_match_explanation": "Matched '1 Cup Chicken Stock' to 'bouillon, chicken, prepared' as it is the closest match considering processing level.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 Cup Chicken Stock",
@@ -63,7 +63,7 @@
                 "weight_in_kg": 0.454
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 lb chicken thigh' to 'chicken, leg, flesh and skin, raw' as it is the most relevant option for chicken thigh in the database.",
+                "closest_match_explanation": "Matched '1 lb chicken thigh' to 'chicken, leg, flesh and skin, raw' as it is the least processed option available for chicken thighs.",
                 "ingredient_id": "Ra00053",
                 "closest_match_name": "chicken, leg, flesh and skin, raw",
                 "ingredient": "1 lb chicken thigh",
@@ -81,7 +81,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 TBSP Palm Sugar' to 'sugar, brown' as it is the closest match for palm sugar in the database.",
+                "closest_match_explanation": "Matched '2 TBSP Palm Sugar' to 'sugar, brown' as it is the closest match in terms of processing and type of ingredient.",
                 "ingredient_id": "Ra00319",
                 "closest_match_name": "sugar, brown",
                 "ingredient": "2 TBSP Palm Sugar",
@@ -128,7 +128,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Can Bamboo Shoots' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient in the database with a specific emission factor.",
+                "closest_match_explanation": "Matched '1 Can Bamboo Shoots' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient in the database.",
                 "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
                 "ingredient": "1 Can Bamboo Shoots",
@@ -146,7 +146,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the exact ingredient in the database with a specific emission factor.",
+                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the exact ingredient in the database.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 Cup Thai Basil Leaves",
@@ -164,7 +164,7 @@
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.25 Red Bell Pepper' to 'pepper, sweet, red, raw' as it is the exact ingredient in the database with a specific emission factor.",
+                "closest_match_explanation": "Matched '0.25 Red Bell Pepper' to 'pepper, sweet, red, raw' as it is the exact ingredient in the database.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.25 Red Bell Pepper",

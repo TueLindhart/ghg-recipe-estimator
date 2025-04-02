@@ -1,7 +1,7 @@
 {
-    "total_co2_kg": 4.9,
+    "total_co2_kg": 5.1,
     "number_of_persons": 6,
-    "co2_per_person_kg": 0.8,
+    "co2_per_person_kg": 0.9,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -78,6 +78,26 @@
             "co2_emission_notes": "Best match in CO2 database is: chili sauce"
         },
         {
+            "name": "1 tbsp olive oil",
+            "ingredient_id": "Ra00349",
+            "weight_kg": 0.015,
+            "co2_per_kg": 5.9,
+            "co2_kg": 0.09,
+            "calculation_notes": "0.01 kg * 5.9 kg CO2e/kg (DB) = 0.09 kg CO2e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "co2_emission_notes": "Best match in CO2 database is: olive oil"
+        },
+        {
+            "name": "1 tbsp ground cumin",
+            "ingredient_id": "Ra00304",
+            "weight_kg": 0.015,
+            "co2_per_kg": 6.1,
+            "co2_kg": 0.09,
+            "calculation_notes": "0.01 kg * 6.1 kg CO2e/kg (DB) = 0.09 kg CO2e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "co2_emission_notes": "Best match in CO2 database is: curry powder"
+        },
+        {
             "name": "1 bunch scallions",
             "ingredient_id": "Ra00267",
             "weight_kg": 0.1,
@@ -128,54 +148,24 @@
             "co2_emission_notes": "Best match in CO2 database is: milk"
         },
         {
-            "name": "salt",
-            "ingredient_id": "Ra00151",
-            "weight_kg": 0.03,
-            "co2_per_kg": 0.4,
-            "co2_kg": 0.01,
-            "calculation_notes": "0.03 kg * 0.4 kg CO2e/kg (DB) = 0.01 kg CO2e",
-            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
-            "co2_emission_notes": "Best match in CO2 database is: salt, table"
-        },
-        {
-            "name": "1 tbsp olive oil",
-            "ingredient_id": null,
-            "weight_kg": 0.015,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.015 kg is negligible",
-            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": null
-        },
-        {
-            "name": "1 tbsp ground cumin",
-            "ingredient_id": null,
-            "weight_kg": 0.015,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.015 kg is negligible",
-            "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": null
-        },
-        {
             "name": "2 tsp granulated garlic",
-            "ingredient_id": null,
+            "ingredient_id": "Ra00136",
             "weight_kg": 0.01,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.01 kg is negligible",
+            "co2_per_kg": 1.2,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.01 kg * 1.2 kg CO2e/kg (DB) = 0.01 kg CO2e",
             "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Best match in CO2 database is: garlic, raw"
         },
         {
             "name": "2 tsp onion powder",
-            "ingredient_id": null,
+            "ingredient_id": "Ra00266",
             "weight_kg": 0.01,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.01 kg is negligible",
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.0,
+            "calculation_notes": "0.01 kg * 0.3 kg CO2e/kg (DB) = 0.0 kg CO2e",
             "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
             "name": "0.25 tsp hot smoked paprika",
@@ -185,7 +175,17 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.001 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Weight on 0.001 kg is negligible"
+        },
+        {
+            "name": "salt",
+            "ingredient_id": null,
+            "weight_kg": 0.03,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Ingredient is ignored in calculation",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Ingredient is ignored in calculation"
         }
     ]
 }

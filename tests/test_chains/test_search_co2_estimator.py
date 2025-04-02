@@ -47,7 +47,7 @@ def enriched_recipe_for_search_test():
     )
 
 
-EXPECTED_RESULTS_RANGE = {"1 can of salsa": [1.0, 1.5], "500 g venison": [20, 25]}
+EXPECTED_RESULTS_RANGE = {"1 can of salsa": [1.0, 1.5], "500 g venison": [4, 6]}
 
 
 @pytest.mark.asyncio

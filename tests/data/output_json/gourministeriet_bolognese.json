@@ -1,7 +1,7 @@
 {
-    "total_co2_kg": 55.6,
+    "total_co2_kg": 55.5,
     "number_of_persons": 6,
-    "co2_per_person_kg": 9.3,
+    "co2_per_person_kg": 9.2,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -78,16 +78,6 @@
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
         },
         {
-            "name": "peber",
-            "ingredient_id": "Ra00302",
-            "weight_kg": 0.03,
-            "co2_per_kg": 5.2,
-            "co2_kg": 0.16,
-            "calculation_notes": "0.03 kg * 5.2 kg CO2e/kg (DB) = 0.16 kg CO2e",
-            "weight_estimation_notes": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
-            "co2_emission_notes": "Best match in CO2 database is: pepper, black"
-        },
-        {
             "name": "3 store løg",
             "ingredient_id": "Ra00266",
             "weight_kg": 0.51,
@@ -118,34 +108,24 @@
             "co2_emission_notes": "Best match in CO2 database is: celery, raw"
         },
         {
-            "name": "salt",
-            "ingredient_id": "Ra00151",
-            "weight_kg": 0.03,
-            "co2_per_kg": 0.4,
-            "co2_kg": 0.01,
-            "calculation_notes": "0.03 kg * 0.4 kg CO2e/kg (DB) = 0.01 kg CO2e",
-            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
-            "co2_emission_notes": "Best match in CO2 database is: salt, table"
-        },
-        {
             "name": "6 fed hvidløg",
-            "ingredient_id": null,
+            "ingredient_id": "Ra00136",
             "weight_kg": 0.024,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Weight on 0.024 kg is negligible",
+            "co2_per_kg": 1.2,
+            "co2_kg": 0.03,
+            "calculation_notes": "0.02 kg * 1.2 kg CO2e/kg (DB) = 0.03 kg CO2e",
             "weight_estimation_notes": "1 clove garlic = 4 g, 6 * 4 g = 24 g = 0.024 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Best match in CO2 database is: garlic, raw"
         },
         {
             "name": "1 håndfuld friske basilikumblade",
-            "ingredient_id": null,
+            "ingredient_id": "Ra00486",
             "weight_kg": 0.025,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.03 kg * 0.4 kg CO2e/kg (DB) = 0.01 kg CO2e",
             "weight_estimation_notes": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Unable to find CO2 emission"
+            "co2_emission_notes": "Best match in CO2 database is: basil, fresh"
         },
         {
             "name": "0.5 tsk rosmarin",
@@ -155,7 +135,7 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
             "weight_estimation_notes": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Weight on 0.003 kg is negligible"
         },
         {
             "name": "0.5 tsk timian",
@@ -165,7 +145,7 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
             "weight_estimation_notes": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Weight on 0.003 kg is negligible"
         },
         {
             "name": "1 tsk oregano",
@@ -175,7 +155,7 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
             "name": "1 tsk basilikum",
@@ -185,7 +165,27 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+        },
+        {
+            "name": "salt",
+            "ingredient_id": null,
+            "weight_kg": 0.03,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Ingredient is ignored in calculation",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Ingredient is ignored in calculation"
+        },
+        {
+            "name": "peber",
+            "ingredient_id": null,
+            "weight_kg": 0.03,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Ingredient is ignored in calculation",
+            "weight_estimation_notes": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "co2_emission_notes": "Ingredient is ignored in calculation"
         }
     ]
 }

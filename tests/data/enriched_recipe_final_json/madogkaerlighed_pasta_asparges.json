@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g fresh pasta' to 'pasta, raw' as it is the least processed option available for fresh pasta, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '250 g fresh pasta' to 'pasta, raw' as it is the least processed form of pasta available in the database.",
                 "ingredient_id": "Ra00234",
                 "closest_match_name": "pasta, raw",
                 "ingredient": "250 g fresh pasta",
@@ -26,7 +26,14 @@
                 "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+                "ingredient_id": "Ra00136",
+                "closest_match_name": "garlic, raw",
+                "ingredient": "2 cloves of garlic",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -38,7 +45,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -56,7 +63,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 BDT Green Asparagus' to 'asparagus, green, raw' as it is the least processed option available for green asparagus, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '1 BDT Green Asparagus' to 'asparagus, green, raw' as it is the least processed form of asparagus available in the database.",
                 "ingredient_id": "Ra00163",
                 "closest_match_name": "asparagus, green, raw",
                 "ingredient": "1 BDT Green Asparagus",
@@ -74,7 +81,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed option available for squash, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed form of squash available in the database.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
                 "ingredient": "1 Squash",
@@ -91,7 +98,14 @@
                 "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 handful of fresh basil' to 'basil, fresh' as it is the least processed form of basil available in the database.",
+                "ingredient_id": "Ra00486",
+                "closest_match_name": "basil, fresh",
+                "ingredient": "1 handful of fresh basil",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4
+            },
             "co2_per_kg_search": null
         },
         {
@@ -103,7 +117,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the least processed option available for cream, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is a common form of cream and represents a specific fat content.",
                 "ingredient_id": "Ra00345",
                 "closest_match_name": "cream, whipping, 38 % fat",
                 "ingredient": "2 dl cream",
@@ -120,14 +134,7 @@
                 "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 dl water' to 'water, tap, drinking, average values' as it is the least processed option available for water, following rules 1 and 4.",
-                "ingredient_id": "Ra00068",
-                "closest_match_name": "water, tap, drinking, average values",
-                "ingredient": "1 dl water",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.0
-            },
+            "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
@@ -150,7 +157,7 @@
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the least processed option available for parmesan cheese, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the specific type of cheese requested.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "6 tbsp grated parmesan",
@@ -168,7 +175,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the least processed option available for mozzarella cheese, following rules 1 and 4.",
+                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the specific type of cheese requested.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
                 "ingredient": "1 handful of mozzarella",
@@ -207,7 +214,14 @@
                 "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'Oil' to 'olive oil' as it is a common type of oil and has the highest emissions among the options.",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
+                "ingredient": "Oil",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.9
+            },
             "co2_per_kg_search": null
         }
     ],

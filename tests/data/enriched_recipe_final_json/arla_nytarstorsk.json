@@ -8,7 +8,14 @@
                 "weight_calculation": "25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '25 g butter' to 'butter, salt added' as it is the least processed option available for butter.",
+                "ingredient_id": "Ra00037",
+                "closest_match_name": "butter, salt added",
+                "ingredient": "25 g butter",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 3.3
+            },
             "co2_per_kg_search": null
         },
         {
@@ -38,7 +45,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is a general category for vinegar and represents the processing involved.",
+                "closest_match_explanation": "Matched '1 dl dark balsamic vinegar' to 'vinegar' as it is the most relevant option for vinegar without additional processing.",
                 "ingredient_id": "Ra00150",
                 "closest_match_name": "vinegar",
                 "ingredient": "1 dl dark balsamic vinegar",
@@ -56,12 +63,12 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, sucrose, white' as it is a common form of sugar and represents the processing involved.",
-                "ingredient_id": "Ra00318",
-                "closest_match_name": "sugar, sucrose, white",
+                "closest_match_explanation": "Matched '2 tablespoons sugar' to 'sugar, brown' as it is the least processed option available for sugar.",
+                "ingredient_id": "Ra00319",
+                "closest_match_name": "sugar, brown",
                 "ingredient": "2 tablespoons sugar",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.7
+                "co2_per_kg": 2.4
             },
             "co2_per_kg_search": null
         },
@@ -85,7 +92,7 @@
                 "weight_in_kg": 0.6
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '600 g of codeloin' to 'cod, fillet, raw' as it is the least processed option available for cod and represents the fish category.",
+                "closest_match_explanation": "Matched '600 g of codeloin' to 'cod, fillet, raw' as it is the least processed option available for cod.",
                 "ingredient_id": "Ra00194",
                 "closest_match_name": "cod, fillet, raw",
                 "ingredient": "600 g of codeloin",
@@ -102,7 +109,14 @@
                 "weight_calculation": "25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '25 g butter (melted)' to 'butter, salt added' as it is the least processed option available for butter.",
+                "ingredient_id": "Ra00037",
+                "closest_match_name": "butter, salt added",
+                "ingredient": "25 g butter (melted)",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 3.3
+            },
             "co2_per_kg_search": null
         },
         {
@@ -124,7 +138,14 @@
                 "weight_calculation": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
                 "weight_in_kg": 0.0075
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1.5 tsp wheat flour' to 'wheat, flour, wholemeal' as it is the least processed option available for flour.",
+                "ingredient_id": "Ra00103",
+                "closest_match_name": "wheat, flour, wholemeal",
+                "ingredient": "1.5 tsp wheat flour",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -135,14 +156,7 @@
                 "weight_calculation": "2.5 dl = 250 g, 2.5 * 100 g = 250 g = 0.25 kg",
                 "weight_in_kg": 0.25
             },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2.5 dl water' to 'water, tap, drinking, average values' as it is the most common form of water with no emissions.",
-                "ingredient_id": "Ra00068",
-                "closest_match_name": "water, tap, drinking, average values",
-                "ingredient": "2.5 dl water",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.0
-            },
+            "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
@@ -154,7 +168,7 @@
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3 tablespoons whole yellow mustard seeds' to 'mustard, yellow, ready made' as it is the closest processed option available for mustard seeds.",
+                "closest_match_explanation": "Matched '3 tablespoons whole yellow mustard seeds' to 'mustard, yellow, ready made' as it is the most relevant option for mustard seeds.",
                 "ingredient_id": "Ra00303",
                 "closest_match_name": "mustard, yellow, ready made",
                 "ingredient": "3 tablespoons whole yellow mustard seeds",
@@ -190,7 +204,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '200 g of cold butter (in small pieces)' to 'butter, salt added' as it is the most relevant option for butter.",
+                "closest_match_explanation": "Matched '200 g of cold butter (in small pieces)' to 'butter, salt added' as it is the least processed option available for butter.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
                 "ingredient": "200 g of cold butter (in small pieces)",
@@ -218,7 +232,14 @@
                 "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'freshly ground pepper' to 'pepper, black' as it is the most relevant option for ground pepper.",
+                "ingredient_id": "Ra00302",
+                "closest_match_name": "pepper, black",
+                "ingredient": "freshly ground pepper",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -230,7 +251,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is a common form of fresh herbs and represents the least processed option.",
+                "closest_match_explanation": "Matched 'fresh herbs' to 'basil, fresh' as it is the least processed option available for fresh herbs.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "fresh herbs",
@@ -248,7 +269,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the closest option available for bacon.",
+                "closest_match_explanation": "Matched '100 g of fried bacon' to 'bacon, frying, raw' as it is the least processed option available for bacon.",
                 "ingredient_id": "Ra00044",
                 "closest_match_name": "bacon, frying, raw",
                 "ingredient": "100 g of fried bacon",
@@ -266,7 +287,7 @@
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '4 soft-boiled quail egg' to 'eggs' as it is the most general category for eggs.",
+                "closest_match_explanation": "Matched '4 soft-boiled quail egg' to 'eggs' as it is the most relevant option for quail eggs.",
                 "ingredient_id": "Ra00108",
                 "closest_match_name": "eggs",
                 "ingredient": "4 soft-boiled quail egg",

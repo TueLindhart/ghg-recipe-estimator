@@ -52,7 +52,14 @@
                 "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+                "ingredient_id": "Ra00136",
+                "closest_match_name": "garlic, raw",
+                "ingredient": "2 cloves of garlic",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -63,7 +70,14 @@
                 "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 tablespoon olive oil' to 'olive oil' as it is the most direct and least processed form of olive oil available.",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
+                "ingredient": "1 tablespoon olive oil",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.9
+            },
             "co2_per_kg_search": null
         },
         {
@@ -75,7 +89,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -104,7 +118,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 dl vegetable broth' to 'bouillon, chicken, prepared' as it is a common form of vegetable broth and the closest match available.",
+                "closest_match_explanation": "Matched '1 dl vegetable broth' to 'bouillon, chicken, prepared' as it is the closest match available for a prepared broth.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 dl vegetable broth",
@@ -139,7 +153,14 @@
                 "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 tablespoon olive oil' to 'olive oil' as it is the most direct and least processed form of olive oil available.",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
+                "ingredient": "1 tablespoon olive oil",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.9
+            },
             "co2_per_kg_search": null
         },
         {
@@ -161,7 +182,14 @@
                 "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'Black pepper' to 'pepper, black' as it is the most direct match for black pepper.",
+                "ingredient_id": "Ra00302",
+                "closest_match_name": "pepper, black",
+                "ingredient": "Black pepper",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -173,7 +201,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed option available for onions.",
+                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -190,7 +218,14 @@
                 "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+                "ingredient_id": "Ra00136",
+                "closest_match_name": "garlic, raw",
+                "ingredient": "2 cloves of garlic",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -202,7 +237,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed option available for squash.",
+                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed form of squash available in the database.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
                 "ingredient": "1 Squash",
@@ -260,7 +295,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the exact match for black beans.",
+                "closest_match_explanation": "Matched '1 can of black beans' to 'black beans' as it is the most direct match for canned black beans.",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
                 "ingredient": "1 can of black beans",
@@ -278,7 +313,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for kidney beans.",
+                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the most direct match for canned kidney beans.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -296,7 +331,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed option available for corn.",
+                "closest_match_explanation": "Matched '300 g of corn' to 'corn cob' as it is the least processed form of corn available in the database.",
                 "ingredient_id": "Ra00417",
                 "closest_match_name": "corn cob",
                 "ingredient": "300 g of corn",
@@ -314,7 +349,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the closest match for tortilla pancakes.",
+                "closest_match_explanation": "Matched \"8 Tortilla's pancakes\" to 'tortilla bread, wheat' as it is the most direct match for tortilla bread.",
                 "ingredient_id": "Ra00401",
                 "closest_match_name": "tortilla bread, wheat",
                 "ingredient": "8 Tortilla's pancakes",
@@ -332,7 +367,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest match available for cheese.",
+                "closest_match_explanation": "Matched '150 g cheddar cheese' to 'blue cheese' as it is the closest available option for cheese in the database.",
                 "ingredient_id": "Ra00494",
                 "closest_match_name": "blue cheese",
                 "ingredient": "150 g cheddar cheese",
@@ -349,7 +384,14 @@
                 "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 handful of fresh coriander' to 'parsley, raw' as it is the closest match available for fresh herbs in the database.",
+                "ingredient_id": "Ra00134",
+                "closest_match_name": "parsley, raw",
+                "ingredient": "1 handful of fresh coriander",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.5
+            },
             "co2_per_kg_search": null
         },
         {
@@ -360,7 +402,14 @@
                 "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1 tablespoon butter' to 'butter, salt added' as it is the most direct match for butter.",
+                "ingredient_id": "Ra00037",
+                "closest_match_name": "butter, salt added",
+                "ingredient": "1 tablespoon butter",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 3.3
+            },
             "co2_per_kg_search": null
         }
     ],

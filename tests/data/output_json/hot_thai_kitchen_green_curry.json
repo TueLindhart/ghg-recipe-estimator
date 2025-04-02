@@ -115,7 +115,7 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
             "weight_estimation_notes": "Amount of MAKRUT LIME LEAVES not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
-            "co2_emission_notes": null
+            "co2_emission_notes": "Weight on 0.004 kg is negligible"
         }
     ]
 }

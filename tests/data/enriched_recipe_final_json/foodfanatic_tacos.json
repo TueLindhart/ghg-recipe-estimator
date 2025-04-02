@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions, following rule 4.",
+                "closest_match_explanation": "Matched '1 small onion' to 'onion, raw' as it is the least processed option available for onions.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 small onion",
@@ -26,7 +26,14 @@
                 "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
+                "ingredient_id": "Ra00136",
+                "closest_match_name": "garlic, raw",
+                "ingredient": "2 cloves of garlic",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -38,7 +45,7 @@
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Red pepper' to 'pepper, sweet, red, raw' as it is the most appropriate match for raw red pepper, following rule 1.",
+                "closest_match_explanation": "Matched '0.5 Red pepper' to 'pepper, sweet, red, raw' as it is the least processed option available for red peppers.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.5 Red pepper",
@@ -56,7 +63,7 @@
                 "weight_in_kg": 0.04
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil specified, following rule 8.",
+                "closest_match_explanation": "Matched 'Oil for frying' to 'oil for frying' as it is the exact match for the type of oil used for frying.",
                 "ingredient_id": "Ra00348",
                 "closest_match_name": "oil for frying",
                 "ingredient": "Oil for frying",
@@ -74,7 +81,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the most general and representative option for beef, following rule 2.",
+                "closest_match_explanation": "Matched '250 g of beef' to 'average beef' as it is the most representative option for beef without specifying a cut.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "250 g of beef",
@@ -91,7 +98,14 @@
                 "weight_calculation": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
                 "weight_in_kg": 0.0225
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '1.5 tablespoons fajita crawling' to 'taco shells' as it is the closest match available for a component of fajitas.",
+                "ingredient_id": "Ra00467",
+                "closest_match_name": "taco shells",
+                "ingredient": "1.5 tablespoons fajita crawling",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 2.4
+            },
             "co2_per_kg_search": null
         },
         {
@@ -102,7 +116,14 @@
                 "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.010 kg",
                 "weight_in_kg": 0.01
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched 'chili powder or flakes to taste' to 'chili sauce' as it is the closest available option related to chili flavoring.",
+                "ingredient_id": "Ra00484",
+                "closest_match_name": "chili sauce",
+                "ingredient": "chili powder or flakes to taste",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 2.1
+            },
             "co2_per_kg_search": null
         },
         {
@@ -114,7 +135,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans, following rule 8.",
+                "closest_match_explanation": "Matched '1 can of kidney beans' to 'kidney beans' as it is the exact match for canned kidney beans.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -132,7 +153,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available, following rule 4.",
+                "closest_match_explanation": "Matched '2 tablespoons tomato puree' to 'tomato paste, concentrated' as it is the most processed form of tomatoes available.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "2 tablespoons tomato puree",
@@ -150,7 +171,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef-based products, following rule 2.",
+                "closest_match_explanation": "Matched '2.5 dl beef fund' to 'average beef' as it is the most representative option for beef broth.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "2.5 dl beef fund",
@@ -168,12 +189,12 @@
                 "weight_in_kg": 0.33
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '11 small cornstortillas' to 'tortilla bread, wheat' as it is the closest match for tortillas, following rule 2.",
-                "ingredient_id": "Ra00401",
-                "closest_match_name": "tortilla bread, wheat",
+                "closest_match_explanation": "Matched '11 small cornstortillas' to 'taco shells' as it is the closest match available for corn-based tortillas.",
+                "ingredient_id": "Ra00467",
+                "closest_match_name": "taco shells",
                 "ingredient": "11 small cornstortillas",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 2.4
             },
             "co2_per_kg_search": null
         },
@@ -186,7 +207,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the most appropriate match for a tomato-based salsa, following rule 1.",
+                "closest_match_explanation": "Matched '1 serving of tomato salsa' to 'salsa, hot' as it is the closest match available for a tomato-based salsa.",
                 "ingredient_id": "Ra00400",
                 "closest_match_name": "salsa, hot",
                 "ingredient": "1 serving of tomato salsa",
@@ -204,7 +225,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado, following rule 8.",
+                "closest_match_explanation": "Matched '1 Avocado' to 'avocado, raw' as it is the exact match for raw avocado.",
                 "ingredient_id": "Ra00317",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 Avocado",
@@ -244,7 +265,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion, following rule 8.",
+                "closest_match_explanation": "Matched '0.5 Red onion' to 'red onion' as it is the exact match for red onion.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 Red onion",
@@ -261,7 +282,14 @@
                 "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed option available for garlic.",
+                "ingredient_id": "Ra00136",
+                "closest_match_name": "garlic, raw",
+                "ingredient": "2 cloves of garlic",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
             "co2_per_kg_search": null
         },
         {
@@ -273,7 +301,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most appropriate match for processed tomatoes, following rule 4.",
+                "closest_match_explanation": "Matched '300 g of tomatoes' to 'tomato, peeled, canned' as it is the most processed form of tomatoes available.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "300 g of tomatoes",
@@ -290,7 +318,14 @@
                 "weight_calculation": "1 chili pepper = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '0.5 - 1 chili pepper' to 'pepper, hot chili, raw' as it is the least processed option available for chili peppers.",
+                "ingredient_id": "Ra00009",
+                "closest_match_name": "pepper, hot chili, raw",
+                "ingredient": "0.5 - 1 chili pepper",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.1
+            },
             "co2_per_kg_search": null
         },
         {
@@ -301,7 +336,14 @@
                 "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
-            "co2_per_kg_db": null,
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Matched '0.5 Bdt coriander' to 'basil, fresh' as it is the closest available option for fresh herbs.",
+                "ingredient_id": "Ra00486",
+                "closest_match_name": "basil, fresh",
+                "ingredient": "0.5 Bdt coriander",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4
+            },
             "co2_per_kg_search": null
         },
         {
@@ -313,7 +355,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil, following rule 8.",
+                "closest_match_explanation": "Matched '2 tablespoons olive oil' to 'olive oil' as it is the exact match for olive oil.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "2 tablespoons olive oil",
@@ -331,7 +373,7 @@
                 "weight_in_kg": 0.035
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'The juice of 0.5 lime' to 'lime, raw' as it is the most appropriate match for lime juice, following rule 1.",
+                "closest_match_explanation": "Matched 'The juice of 0.5 lime' to 'lime, raw' as it is the least processed option available for lime.",
                 "ingredient_id": "Ra00332",
                 "closest_match_name": "lime, raw",
                 "ingredient": "The juice of 0.5 lime",

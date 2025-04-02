@@ -176,7 +176,7 @@ async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
         "food_co2_estimator.blob_caching.cache_estimator_result", lambda x, y: None
     )
     success, result = await mock_cache_results(runparams=runparams)
-    assert success is True
+    assert success
     assert result == "result"
 
 
