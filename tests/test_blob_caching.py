@@ -166,24 +166,22 @@ async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
     async def mock_func(runparams):
         return True, "result"
 
-    runparams = RunParams(url="https://www.example.com")
+    runparams = RunParams(url="https://www.example.com", use_cache=True)
     mock_cache_results = cache_results(mock_func)
 
-    monkeypatch.setattr("food_co2_estimator.blob_caching.use_cache", lambda: True)
     monkeypatch.setattr(
         "food_co2_estimator.blob_caching.fetch_matching_cache", lambda x: None
     )
     monkeypatch.setattr(
         "food_co2_estimator.blob_caching.cache_estimator_result", lambda x, y: None
     )
-
     success, result = await mock_cache_results(runparams=runparams)
     assert success is True
     assert result == "result"
 
 
 def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
-    runparams = RunParams(url="https://www.example.com")
+    runparams = RunParams(url="https://www.example.com", use_cache=True)
     result = '{"key": "value"}'
 
     mock_store_json_in_blob_storage = patch(
@@ -195,7 +193,7 @@ def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
 
 
 def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
-    runparams = RunParams(url="https://www.example.com")
+    runparams = RunParams(url="https://www.example.com", use_cache=True)
     cache_data = {
         "runparams": runparams.model_dump(),
         "result": {"key": "value"},

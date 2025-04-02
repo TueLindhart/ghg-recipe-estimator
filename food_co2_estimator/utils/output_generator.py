@@ -1,3 +1,7 @@
+from food_co2_estimator.chains.rag_co2_estimator import (
+    above_weight_threshold,
+    should_include_ingredient,
+)
 from food_co2_estimator.pydantic_models.estimator import (
     IngredientOutput,
     RecipeCO2Output,
@@ -45,9 +49,14 @@ def generate_output_model(
             continue
 
         # If the weight is negligible, mark it as such and set CO2 to 0.
-        if weight_estimate.weight_in_kg < negligeble_threshold:
+        if not should_include_ingredient(ingredient, negligeble_threshold):
             weight_estimation_notes = weight_estimate.weight_calculation
             wt = round(weight_estimate.weight_in_kg, 3)
+            calculation_notes = (
+                f"Weight on {wt} kg is negligible"
+                if not above_weight_threshold(ingredient, negligeble_threshold)
+                else "Ingredient is ignored in calculation"
+            )
             ingredients_list.append(
                 IngredientOutput(
                     name=ingredient.original_name,
@@ -55,8 +64,8 @@ def generate_output_model(
                     weight_kg=wt,
                     co2_kg=None,
                     co2_per_kg=None,
-                    co2_emission_notes=None,
-                    calculation_notes=f"Weight on {wt} kg is negligible",
+                    co2_emission_notes=calculation_notes,
+                    calculation_notes=calculation_notes,
                     weight_estimation_notes=weight_estimation_notes,
                 )
             )

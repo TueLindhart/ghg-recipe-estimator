@@ -12,7 +12,8 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
 from food_co2_estimator.retrievers.vector_db_retriever import batch_emission_retriever
 from food_co2_estimator.utils.openai_model import get_model
 
-NEGLIGIBLE_THRESHOLD = 0.025
+NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
+INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
 
 
 def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
@@ -28,13 +29,28 @@ def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
     )
 
 
-def weight_above_negligeble_threshold(
+def should_include_ingredient(
+    item: EnrichedIngredient, negligeble_threshold: float
+) -> bool:
+    return above_weight_threshold(item, negligeble_threshold) and ingredient_to_ignore(
+        item
+    )
+
+
+def above_weight_threshold(
     item: EnrichedIngredient, negligeble_threshold: float
 ) -> bool:
     return (
         item.weight_estimate is not None
         and item.weight_estimate.weight_in_kg is not None
-        and item.weight_estimate.weight_in_kg > negligeble_threshold
+        and negligeble_threshold < item.weight_estimate.weight_in_kg
+    )
+
+
+def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
+    return not any(
+        item.en_name is not None and ignored_ingredient in item.en_name.lower()
+        for ignored_ingredient in INGREDIENTS_TO_IGNORE
     )
 
 
@@ -49,7 +65,7 @@ async def get_co2_emissions(
     ingredients_input = [
         item.en_name
         for item in recipe.ingredients
-        if weight_above_negligeble_threshold(item, negligeble_threshold)
+        if should_include_ingredient(item, negligeble_threshold)
     ]
 
     parsed_rag_emissions: CO2Emissions = await emission_chain.ainvoke(ingredients_input)

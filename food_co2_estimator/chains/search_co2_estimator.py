@@ -1,7 +1,7 @@
 from langchain_core.runnables import RunnablePassthrough
 
 from food_co2_estimator.chains.rag_co2_estimator import (
-    weight_above_negligeble_threshold,
+    should_include_ingredient,
 )
 from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.search_co2_estimator import (
@@ -46,7 +46,7 @@ async def get_co2_search_emissions(
         item.en_name
         for item in recipe.ingredients
         if co2_per_kg_not_found(item)
-        and weight_above_negligeble_threshold(item, negligeble_threshold)
+        and should_include_ingredient(item, negligeble_threshold)
         and item.en_name is not None
     ]
     if not co2_search_input_items:

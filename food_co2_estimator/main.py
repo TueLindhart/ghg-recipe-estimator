@@ -29,6 +29,7 @@ async def async_estimator(
 ) -> tuple[bool, str]:
     if logparams is None:
         logparams = LogParams()
+
     logging.basicConfig(level=logparams.logging_level)
     text = get_markdown_from_url(runparams.url)
     if text is None:

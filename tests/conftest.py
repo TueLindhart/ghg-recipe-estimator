@@ -18,11 +18,6 @@ from tests.load_files import (
 from tests.urls import TEST_URLS
 
 
-@pytest.fixture(autouse=True)
-def override_use_cache(monkeypatch: pytest.MonkeyPatch):
-    monkeypatch.setattr("food_co2_estimator.blob_caching.use_cache", lambda: False)
-
-
 @pytest.fixture
 def dummy_recipe():
     return ExtractedRecipe(
