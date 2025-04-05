@@ -1,5 +1,3 @@
-# app.py
-import asyncio
 import logging
 import uuid
 from typing import Optional
@@ -7,12 +5,13 @@ from typing import Optional
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 # Import your existing async_estimator and models
 # (Adjust these imports to match your package structure)
 from food_co2_estimator.main import async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
+
 
 app = FastAPI()
 
@@ -33,8 +32,9 @@ job_results = {}
 
 class EstimateRequest(BaseModel):
     url: str
-    use_cache: bool = True
-    negligeble_threshold: Optional[float] = None  # If you need it
+    use_cache: bool = Field(default_factory=lambda: True, description="Use cached results if available")
+    store_in_cache: bool = Field(default_factory=lambda: True, description="Store results in cache for future use")
+    
 
 
 class EstimateResponse(BaseModel):
@@ -42,7 +42,7 @@ class EstimateResponse(BaseModel):
     status: str
 
 
-def run_estimator(uid: str, runparams: RunParams):
+async def run_estimator(uid: str, runparams: RunParams):
     """
     Background task that executes your async_estimator function.
     """
@@ -50,9 +50,7 @@ def run_estimator(uid: str, runparams: RunParams):
     try:
         # You can configure LogParams as needed
         logparams = LogParams(logging_level=logging.INFO)
-        success, result = asyncio.run(
-            async_estimator(runparams=runparams, logparams=logparams)
-        )
+        success, result = await async_estimator(runparams=runparams, logparams=logparams)
         if success:
             job_results[uid] = {"status": "Completed", "result": result}
         else:
@@ -63,7 +61,7 @@ def run_estimator(uid: str, runparams: RunParams):
 
 
 @app.post("/estimate", response_model=EstimateResponse)
-def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks):
+async def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks):
     """
     1) Generates a unique UID
     2) Saves 'Processing' status in memory
@@ -85,7 +83,7 @@ def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks
 
 
 @app.get("/status/{uid}")
-def get_status(uid: str):
+async def get_status(uid: str):
     """
     Polling endpoint to check job status: 'Processing', 'Completed', or 'Error'
     """
@@ -96,7 +94,7 @@ def get_status(uid: str):
 
 
 @app.delete("/status/{uid}")
-def clear_status(uid: str):
+async def clear_status(uid: str):
     """
     Optional: Clear the job result from memory once you have retrieved it.
     """
@@ -106,6 +104,7 @@ def clear_status(uid: str):
 
 if __name__ == "__main__":
     import uvicorn
-
+    
     # Run FastAPI on port 8000 (for example)
     uvicorn.run(app, host="127.0.0.1", port=8000)
+

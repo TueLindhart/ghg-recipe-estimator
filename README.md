@@ -12,6 +12,7 @@ This repository contains code for estimating CO2 emissions from the ingredient l
   - [Using the CO2 Estimator](#using-the-co2-estimator)
   - [Project Structure](#project-structure)
   - [Environment Variables](#environment-variables)
+- [Docker](#docker)
   
 
 ## Installation
@@ -97,23 +98,41 @@ The project is organized as follows:
 ```
 
 ## Environment Variables
-The following environment variables must be set in the .env file:
+Set the following environment variables according to template.env file:
 
-- `OPENAI_API_KEY`: Your OpenAI API key for accessing language models.
-- `SERPER_API_KEY`: Your Serper API key for using Serper to search google and structure results
-- `MY_MAIL`: Your mail for MyMemory translation provider. Increases the number of translations cap.
-- `GPT_MODEL`: Model to be used when calling OpenAI.
+# Docker
 
-Test PR
-
-Set the following environment variables in your `.env` file:
-
+1. Build image
 ```bash
-OPENAI_API_KEY=<your_key>
-SERPER_API_KEY=<your_key>
-MY_MAIL=<your_email>
-GPT_MODEL=<gpt_model>
+docker build -t $APP_NAME:latest --platform linux/amd64 -f Dockerfile.backend  .
 ```
 
+2. Test locally
+```bash
+docker run \
+  --env-file .env \
+  -p 8080:8080 \
+  -v "$(pwd)/.credentials:/var/secrets/credentials:ro" \
+  -e GOOGLE_APPLICATION_CREDENTIALS=/var/secrets/credentials/$GOOGLE_APPLICATION_CREDENTIALS_FILENAME \
+  -it $APP_NAME:latest
+```
 
+3. Push to google artifact registry
+
+```bash
+docker tag $APP_NAME $REGION-docker.pkg.dev/$PROJECT_ID/foodprint/$APP_NAME:latest
+docker push $REGION-docker.pkg.dev/$PROJECT_ID/foodprint/$APP_NAME:latest
+```
+
+4. Deploy app to cloud run
+
+```bash
+gcloud run deploy foodprint \
+  --image $REGION-docker.pkg.dev/$PROJECT_ID/foodprint/$APP_NAME:latest \
+  --platform managed \
+  --region $REGION \
+  --port 8080 \
+  --env-vars-file .env-files.yaml \
+  --allow-unauthenticated
+```
 
