@@ -2,18 +2,17 @@
 import asyncio
 import logging
 import uuid
-
-from fastapi import FastAPI, BackgroundTasks, HTTPException
-from pydantic import BaseModel
 from typing import Optional
-from fastapi.responses import JSONResponse
-from fastapi.middleware.cors import CORSMiddleware
 
+from fastapi import BackgroundTasks, FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 
 # Import your existing async_estimator and models
 # (Adjust these imports to match your package structure)
 from food_co2_estimator.main import async_estimator
-from food_co2_estimator.pydantic_models.estimator import RunParams, LogParams
+from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
 
 app = FastAPI()
 
@@ -31,14 +30,17 @@ app.add_middleware(
 # In-memory store for job results; in production, consider Redis or a DB
 job_results = {}
 
+
 class EstimateRequest(BaseModel):
     url: str
     use_cache: bool = True
     negligeble_threshold: Optional[float] = None  # If you need it
 
+
 class EstimateResponse(BaseModel):
     uid: str
     status: str
+
 
 def run_estimator(uid: str, runparams: RunParams):
     """
@@ -48,7 +50,9 @@ def run_estimator(uid: str, runparams: RunParams):
     try:
         # You can configure LogParams as needed
         logparams = LogParams(logging_level=logging.INFO)
-        success, result = asyncio.run(async_estimator(runparams=runparams, logparams=logparams))
+        success, result = asyncio.run(
+            async_estimator(runparams=runparams, logparams=logparams)
+        )
         if success:
             job_results[uid] = {"status": "Completed", "result": result}
         else:
@@ -56,6 +60,7 @@ def run_estimator(uid: str, runparams: RunParams):
     except Exception as e:
         logging.exception("Background estimation failed.")
         job_results[uid] = {"status": "Error", "result": str(e)}
+
 
 @app.post("/estimate", response_model=EstimateResponse)
 def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks):
@@ -71,14 +76,13 @@ def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks
     # Create your RunParams from the request
     runparams = RunParams(
         url=request.url,
-        use_cache=request.use_cache,
-        negligeble_threshold= 0.005 #request.negligeble_threshold,
     )
 
     # Kick off the background task
     background_tasks.add_task(run_estimator, uid, runparams)
 
     return EstimateResponse(uid=uid, status="Processing")
+
 
 @app.get("/status/{uid}")
 def get_status(uid: str):
@@ -90,6 +94,7 @@ def get_status(uid: str):
         raise HTTPException(status_code=404, detail="Job not found")
     return JSONResponse(content=job)
 
+
 @app.delete("/status/{uid}")
 def clear_status(uid: str):
     """
@@ -98,7 +103,9 @@ def clear_status(uid: str):
     job_results.pop(uid, None)
     return {"status": "Cleared"}
 
+
 if __name__ == "__main__":
     import uvicorn
+
     # Run FastAPI on port 8000 (for example)
     uvicorn.run(app, host="127.0.0.1", port=8000)
