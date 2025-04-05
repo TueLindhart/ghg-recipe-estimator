@@ -75,7 +75,7 @@ def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks
 
     # Create your RunParams from the request
     runparams = RunParams(
-        url=request.url,
+        url=request.url
     )
 
     # Kick off the background task
