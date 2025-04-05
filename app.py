@@ -1,92 +1,104 @@
+# app.py
 import asyncio
-import threading
-from enum import StrEnum
-from typing import Callable, TypedDict
+import logging
+import uuid
 
-from flask import Flask, jsonify, render_template, request
+from fastapi import FastAPI, BackgroundTasks, HTTPException
+from pydantic import BaseModel
+from typing import Optional
+from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 
-from comparison_api import comparison_api
+
+# Import your existing async_estimator and models
+# (Adjust these imports to match your package structure)
 from food_co2_estimator.main import async_estimator
-from food_co2_estimator.pydantic_models.estimator import RunParams, env_use_cache
+from food_co2_estimator.pydantic_models.estimator import RunParams, LogParams
 
-app = Flask(__name__)
+app = FastAPI()
 
-app.register_blueprint(comparison_api)
+origins = [
+    "http://localhost:5173",
+    # Add other allowed origins here
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+# In-memory store for job results; in production, consider Redis or a DB
+job_results = {}
 
+class EstimateRequest(BaseModel):
+    url: str
+    use_cache: bool = True
+    negligeble_threshold: Optional[float] = None  # If you need it
 
-class StatusTypes(StrEnum):
-    Processing = "Processing"
-    Completed = "Completed"
-    Error = "Error"
-
-
-class Result(TypedDict):
+class EstimateResponse(BaseModel):
+    uid: str
     status: str
-    result: str | None
 
-
-results = {}
-
-
-def run_in_thread(func: Callable, runparams: RunParams):
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+def run_estimator(uid: str, runparams: RunParams):
+    """
+    Background task that executes your async_estimator function.
+    """
+    logging.info(f"Starting CO2 estimation for UID={uid} URL={runparams.url}")
     try:
-        success, result = loop.run_until_complete(func(runparams=runparams))
-        if not success:
-            results[runparams.uid] = Result(
-                status=StatusTypes.Error.value, result=result
-            )
+        # You can configure LogParams as needed
+        logparams = LogParams(logging_level=logging.INFO)
+        success, result = asyncio.run(async_estimator(runparams=runparams, logparams=logparams))
+        if success:
+            job_results[uid] = {"status": "Completed", "result": result}
         else:
-            results[runparams.uid] = Result(
-                status=StatusTypes.Completed.value, result=result
-            )
-    except Exception as exc_info:
-        results[runparams.uid] = Result(
-            status=StatusTypes.Error.value, result=str(exc_info)
-        )
-    finally:
-        loop.close()
+            job_results[uid] = {"status": "Error", "result": result}
+    except Exception as e:
+        logging.exception("Background estimation failed.")
+        job_results[uid] = {"status": "Error", "result": str(e)}
 
+@app.post("/estimate", response_model=EstimateResponse)
+def start_estimation(request: EstimateRequest, background_tasks: BackgroundTasks):
+    """
+    1) Generates a unique UID
+    2) Saves 'Processing' status in memory
+    3) Schedules the run_estimator function in the background
+    4) Returns {uid, status="Processing"}
+    """
+    uid = str(uuid.uuid4())
+    job_results[uid] = {"status": "Processing", "result": None}
 
-@app.route("/")
-def index():
-    return render_template("index.html")
+    # Create your RunParams from the request
+    runparams = RunParams(
+        url=request.url,
+        use_cache=request.use_cache,
+        negligeble_threshold= 0.005 #request.negligeble_threshold,
+    )
 
+    # Kick off the background task
+    background_tasks.add_task(run_estimator, uid, runparams)
 
-@app.route("/calculate")
-def calculate():
-    url = request.args.get("input_data")
-    if not url:
-        return jsonify(status="No input provided"), 400
+    return EstimateResponse(uid=uid, status="Processing")
 
-    use_cache = request.args.get("use_cache")
-    use_cache = env_use_cache() if use_cache is None else use_cache.lower() == "true"
-    runparams = RunParams(url=url, use_cache=use_cache)
-    results[runparams.uid] = Result(status=StatusTypes.Processing.value, result=None)
-    threading.Thread(
-        target=run_in_thread, kwargs={"func": async_estimator, "runparams": runparams}
-    ).start()
+@app.get("/status/{uid}")
+def get_status(uid: str):
+    """
+    Polling endpoint to check job status: 'Processing', 'Completed', or 'Error'
+    """
+    job = job_results.get(uid)
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+    return JSONResponse(content=job)
 
-    return jsonify(
-        status="Processing", input_data=url, uid=runparams.uid
-    ), 202  # Return 202 Accepted status
-
-
-@app.route("/status/<uid>")
-def status(uid):
-    result = results.get(uid)
-    if not result:
-        return jsonify(status="Not Found"), 404
-
-    return jsonify(result), 200
-
-
-@app.route("/clear-result/<uid>")
-def clear_result(uid):
-    results.pop(uid, None)
-    return jsonify(status="Cleared")
-
+@app.delete("/status/{uid}")
+def clear_status(uid: str):
+    """
+    Optional: Clear the job result from memory once you have retrieved it.
+    """
+    job_results.pop(uid, None)
+    return {"status": "Cleared"}
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    import uvicorn
+    # Run FastAPI on port 8000 (for example)
+    uvicorn.run(app, host="127.0.0.1", port=8000)
