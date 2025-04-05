@@ -1,6 +1,5 @@
 import logging
 import uuid
-from typing import Optional
 
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -32,9 +31,13 @@ job_results = {}
 
 class EstimateRequest(BaseModel):
     url: str
-    use_cache: bool = Field(default_factory=lambda: True, description="Use cached results if available")
-    store_in_cache: bool = Field(default_factory=lambda: True, description="Store results in cache for future use")
-    
+    use_cache: bool = Field(
+        default_factory=lambda: True, description="Use cached results if available"
+    )
+    store_in_cache: bool = Field(
+        default_factory=lambda: True,
+        description="Store results in cache for future use",
+    )
 
 
 class EstimateResponse(BaseModel):
@@ -50,7 +53,9 @@ async def run_estimator(uid: str, runparams: RunParams):
     try:
         # You can configure LogParams as needed
         logparams = LogParams(logging_level=logging.INFO)
-        success, result = await async_estimator(runparams=runparams, logparams=logparams)
+        success, result = await async_estimator(
+            runparams=runparams, logparams=logparams
+        )
         if success:
             job_results[uid] = {"status": "Completed", "result": result}
         else:
@@ -104,7 +109,6 @@ async def clear_status(uid: str):
 
 if __name__ == "__main__":
     import uvicorn
-    
+
     # Run FastAPI on port 8000 (for example)
     uvicorn.run(app, host="127.0.0.1", port=8000)
-
