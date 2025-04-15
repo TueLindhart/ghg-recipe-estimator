@@ -5,9 +5,6 @@
   import ProgressBar from "$lib/components/ProgressBar.svelte";
   import { Button, Modal } from "flowbite-svelte";
 
-  // Set your FastAPI backend URL
-  const API_BASE = "http://localhost:8000";
-
   let recipeUrl = "";
   let statusMessage = "";
   let resultData = null; // Holds the API result data
@@ -32,13 +29,11 @@
     isProcessing = true;
     resultData = null;
     try {
-      const resp = await fetch(`${API_BASE}/estimate`, {
+      const resp = await fetch(`/api/estimate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           url: recipeUrl,
-          use_cache: true,
-          negligeble_threshold: null,
         }),
       });
       if (!resp.ok) {
@@ -59,7 +54,7 @@
   async function pollStatus() {
     if (!jobId) return;
     try {
-      const resp = await fetch(`${API_BASE}/status/${jobId}`);
+      const resp = await fetch(`/api/status/${jobId}`);
       if (!resp.ok) {
         statusMessage = `Fejl ved statusopdatering: ${resp.statusText}`;
         isProcessing = false;
