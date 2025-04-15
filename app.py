@@ -11,11 +11,11 @@ from pydantic import BaseModel, Field
 from food_co2_estimator.main import async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
 
-
 app = FastAPI()
 
 origins = [
     "http://localhost:5173",
+    "http://localhost:3000",
     # Add other allowed origins here
 ]
 app.add_middleware(
@@ -77,9 +77,7 @@ async def start_estimation(request: EstimateRequest, background_tasks: Backgroun
     job_results[uid] = {"status": "Processing", "result": None}
 
     # Create your RunParams from the request
-    runparams = RunParams(
-        url=request.url
-    )
+    runparams = RunParams(url=request.url)
 
     # Kick off the background task
     background_tasks.add_task(run_estimator, uid, runparams)

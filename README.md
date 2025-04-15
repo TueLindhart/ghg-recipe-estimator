@@ -12,6 +12,8 @@ This repository contains code for estimating CO2 emissions from the ingredient l
   - [Using the CO2 Estimator](#using-the-co2-estimator)
   - [Environment Variables](#environment-variables)
 - [Docker](#docker)
+  - [Build backend](#build-backend)
+  - [Build frontend](#build-frontend)
   
 
 ## Installation
@@ -63,12 +65,14 @@ Set the following environment variables according to template.env file:
 
 # Docker
 
-1. Build image
+## Build backend
+
+1. Build image locally
 ```bash
-docker build -t foodprint-backend:latest --platform linux/amd64 -f Dockerfile.backend  .
+docker build -t foodprint-backend:latest  .
 ```
 
-2. Test locally
+2. Test image locally
 ```bash
 docker run \
   --env-file .env \
@@ -78,25 +82,32 @@ docker run \
   -it foodprint-backend:latest
 ```
 
-3. Push to google artifact registry
-
+3. Build image in cloud and deploy
 ```bash
-docker tag foodprint-backend:latest $LOCATION-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest
-docker push $LOCATION-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest
+gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
 ```
 
-4. Deploy app to cloud run
+## Build frontend
 
+1. Build image locally
 ```bash
-gcloud run deploy foodprint \
-  --image $LOCATION-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest \
-  --platform managed \
-  --region $LOCATION \
-  --port 8080 \
-  --env-vars-file .env-files.yaml \
-  --allow-unauthenticated
+cd foodprint
+docker build -t foodprint-frontend:latest  .
 ```
 
-gcloud projects add-iam-policy-binding $PROJECT_ID \
-  --member="serviceAccount:748386344174-compute@developer.gserviceaccount.com" \
-  --role="roles/run.admin"
+2. Test image locally
+```bash
+docker run \
+  -p 3000:3000 \
+  -it foodprint-frontend:latest
+```
+
+3. Build image in cloud and deploy
+```bash
+cd foodprint
+gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
+```
+
+
+
+

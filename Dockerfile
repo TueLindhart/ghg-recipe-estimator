@@ -1,27 +1,35 @@
-FROM python:3.13-slim
+# Build stage 1
+FROM python:3.12-slim-bookworm AS builder
 
-# Install required tools
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
-    build-essential
+    build-essential && \
+    rm -rf /var/lib/apt/lists/*
 
-# Install Poetry
-RUN curl -sSL https://install.python-poetry.org | python3 -
-ENV PATH "/root/.local/bin:$PATH"
+ENV POETRY_VERSION=2.1.2
+RUN curl -sSL https://install.python-poetry.org | python3 - --version $POETRY_VERSION
 
-# Setup working directory
+ENV PATH="/root/.local/bin:$PATH"
+
 WORKDIR /app
 
-# Add poetry config
+ENV POETRY_VIRTUALENVS_IN_PROJECT=true
 COPY pyproject.toml poetry.lock ./
+RUN poetry install --only main --no-interaction --no-ansi --no-root
 
-RUN poetry config virtualenvs.create false && \
-    poetry install --without dev,test --no-interaction --no-ansi --no-root
-
-# Copy the rest of the application code
 COPY app.py comparison_api.py start.sh ./
 COPY food_co2_estimator/ food_co2_estimator/
 
+# Build stage 2
+FROM python:3.12-slim-bookworm
+
+WORKDIR /app
+COPY --from=builder /app /app
+
+ENV PATH="/app/.venv/bin:$PATH"
+
 EXPOSE 8080
 
-CMD ["poetry", "run", "bash", "./start.sh"]
+RUN chmod +x start.sh
+
+CMD ["./start.sh"]

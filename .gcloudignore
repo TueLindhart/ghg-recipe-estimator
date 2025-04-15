@@ -2,6 +2,7 @@
 .*
 
 # Remove these folders
+.venv/
 data/
 sandbox/
 scripts/
