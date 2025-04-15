@@ -1,5 +1,5 @@
 <script>
-  import { Card } from 'flowbite-svelte';
+  import { Card } from "flowbite-svelte";
   export let overviewData;
 </script>
 
