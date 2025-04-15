@@ -10,7 +10,6 @@ This repository contains code for estimating CO2 emissions from the ingredient l
   - [Running the Flask App](#running-the-flask-app)
   - [Heroku](#heroku)
   - [Using the CO2 Estimator](#using-the-co2-estimator)
-  - [Project Structure](#project-structure)
   - [Environment Variables](#environment-variables)
 - [Docker](#docker)
   
@@ -58,44 +57,6 @@ The CO2 estimator can be used to calculate the CO2 emissions of recipes. Here's 
 heroku logs --source app
 ```
 
-## Project Structure
-
-The project is organized as follows:
-
-```
-.
-├── .github/
-│   └── workflows/
-├── .vscode/
-│   ├── launch.json
-│   └── settings.json
-├── food_co2_estimator/
-│   ├── chains/
-│   ├── data/
-│   ├── language/
-│   ├── output_parsers/
-│   ├── prompt_templates/
-│   ├── pydantic_models/
-│   ├── retrievers/
-│   ├── url/
-│   ├── __init__.py
-│   ├── main.py
-├── sandbox/
-├── templates/
-│   └── index.html
-├── tests/
-├── .coverage
-├── .DS_Store
-├── .flake8
-├── .gitignore
-├── .python-version
-├── LICENSE
-├── Makefile
-├── poetry.lock
-├── pyproject.toml
-├── README.md
-└── app.py
-```
 
 ## Environment Variables
 Set the following environment variables according to template.env file:
@@ -104,7 +65,7 @@ Set the following environment variables according to template.env file:
 
 1. Build image
 ```bash
-docker build -t $APP_NAME:latest --platform linux/amd64 -f Dockerfile.backend  .
+docker build -t foodprint-backend:latest --platform linux/amd64 -f Dockerfile.backend  .
 ```
 
 2. Test locally
@@ -114,25 +75,28 @@ docker run \
   -p 8080:8080 \
   -v "$(pwd)/.credentials:/var/secrets/credentials:ro" \
   -e GOOGLE_APPLICATION_CREDENTIALS=/var/secrets/credentials/$GOOGLE_APPLICATION_CREDENTIALS_FILENAME \
-  -it $APP_NAME:latest
+  -it foodprint-backend:latest
 ```
 
 3. Push to google artifact registry
 
 ```bash
-docker tag $APP_NAME $REGION-docker.pkg.dev/$PROJECT_ID/foodprint/$APP_NAME:latest
-docker push $REGION-docker.pkg.dev/$PROJECT_ID/foodprint/$APP_NAME:latest
+docker tag foodprint-backend:latest $LOCATION-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest
+docker push $LOCATION-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest
 ```
 
 4. Deploy app to cloud run
 
 ```bash
 gcloud run deploy foodprint \
-  --image $REGION-docker.pkg.dev/$PROJECT_ID/foodprint/$APP_NAME:latest \
+  --image $LOCATION-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest \
   --platform managed \
-  --region $REGION \
+  --region $LOCATION \
   --port 8080 \
   --env-vars-file .env-files.yaml \
   --allow-unauthenticated
 ```
 
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member="serviceAccount:748386344174-compute@developer.gserviceaccount.com" \
+  --role="roles/run.admin"

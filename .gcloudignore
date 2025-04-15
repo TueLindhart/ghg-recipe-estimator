@@ -1,0 +1,16 @@
+# Ignore all files by default
+.*
+
+# Remove these folders
+data/
+sandbox/
+scripts/
+tests/
+LICENSE
+Makefile
+Procfile
+README.md
+
+# Ensure these folders are kept
+!food_co2_estimator/*
+!food_co2_estimator/data/
