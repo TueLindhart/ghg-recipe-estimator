@@ -2,7 +2,11 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     id: "Pull image for caching if exists"
     entrypoint: "bash"
-    args: ["-c", "docker pull gcr.io/$PROJECT_ID/[IMAGE_NAME]:latest || exit 0"]
+    args:
+      [
+        "-c",
+        "docker pull europe-north1-docker.pkg.dev/$PROJECT_ID/foodprint/foodprint-backend:latest || exit 0",
+      ]
   - name: "gcr.io/cloud-builders/docker"
     id: "Build image"
     args:
