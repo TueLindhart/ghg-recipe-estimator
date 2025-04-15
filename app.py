@@ -1,6 +1,8 @@
 import logging
+import os
 import uuid
 
+from dotenv import load_dotenv
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -11,13 +13,20 @@ from pydantic import BaseModel, Field
 from food_co2_estimator.main import async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
 
+load_dotenv()
+
 app = FastAPI()
 
 origins = [
     "http://localhost:5173",
     "http://localhost:3000",
+    "https://foodprint-frontend-748386344174.europe-north1.run.app",
     # Add other allowed origins here
 ]
+FRONTEND_URL = os.getenv("FRONTEND_URL")
+if FRONTEND_URL:
+    origins.append(FRONTEND_URL)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
