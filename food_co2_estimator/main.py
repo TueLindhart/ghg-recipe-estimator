@@ -1,5 +1,8 @@
 import asyncio
 import logging
+from enum import Enum
+
+from pydantic import BaseModel
 
 from food_co2_estimator.blob_caching import cache_results
 from food_co2_estimator.chains.rag_co2_estimator import (
@@ -16,6 +19,25 @@ from food_co2_estimator.url.url2markdown import get_markdown_from_url
 from food_co2_estimator.utils.output_generator import (
     generate_output_model,
 )
+from myredis import RedisCache
+
+
+class JobStatus(str, Enum):
+    ERROR = "Error"
+    COMPLETED = "Completed"
+    PROCESSING = "Processing"
+    EXTRACTING_TEXT = "Text"
+    EXTRACTING_RECIPE = "Recipe"
+    TRANSLATING = "Translating"
+    ESTIMATING_WEIGHTS = "Weights"
+    ESTIMATING_CO2 = "RAGCO2"
+    ESTIMATING_SEARCH_CO2 = "SearchCO2"
+    PREPARING_OUTPUT = "Preparing"
+
+
+class JobResult(BaseModel):
+    status: JobStatus
+    result: str | None = None
 
 
 def log_exception_message(url: str, message: str):
@@ -26,12 +48,15 @@ def log_exception_message(url: str, message: str):
 async def async_estimator(
     runparams: RunParams,
     logparams: LogParams | None = None,
+    redis_client: RedisCache | None = None,
 ) -> tuple[bool, str]:
     if logparams is None:
         logparams = LogParams()
 
     logging.basicConfig(level=logparams.logging_level)
     text = get_markdown_from_url(runparams.url)
+    if redis_client is not None:
+        await update_status(runparams, redis_client)
     if text is None:
         return False, "Unable to extract text from provided URL"
 
@@ -119,6 +144,14 @@ async def async_estimator(
         return False, calculation_failed_expection
 
     return True, output_model.model_dump_json()
+
+
+async def update_status(runparams: RunParams, redis_client: RedisCache):
+    status = JobResult(status=JobStatus.EXTRACTING_TEXT)
+    await redis_client.set(
+        runparams.uid,
+        status.model_dump_json(),
+    )
 
 
 if __name__ == "__main__":

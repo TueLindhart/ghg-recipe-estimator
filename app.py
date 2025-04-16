@@ -2,7 +2,6 @@ import logging
 import os
 import uuid
 from contextlib import asynccontextmanager
-from enum import Enum
 from typing import Annotated
 
 import redis.asyncio as aioredis
@@ -13,7 +12,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, Field
 
 from food_co2_estimator.logger_utils import logger
-from food_co2_estimator.main import async_estimator
+from food_co2_estimator.main import JobResult, JobStatus, async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
 from myredis import RedisCache
 
@@ -95,17 +94,6 @@ class EstimateRequest(BaseModel):
 class StartEstimateResponse(BaseModel):
     uid: str
     status: str
-
-
-class JobStatus(str, Enum):
-    ERROR = "Error"
-    COMPLETED = "Completed"
-    PROCESSING = "Processing"
-
-
-class JobResult(BaseModel):
-    status: JobStatus
-    result: str | None = None
 
 
 async def run_estimator(
