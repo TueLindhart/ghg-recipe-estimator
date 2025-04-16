@@ -11,5 +11,5 @@ if [ "$ENV" = "dev" ]; then
     uvicorn app:app --reload --host 0.0.0.0 --port 8000 --log-config logging_config.yaml
 else
     echo "Starting FastAPI in production mode with uvicorn..."
-    uvicorn app:app --workers 1 --host 0.0.0.0 --port ${PORT:-8080} --log-config logging_config.yaml
+    uvicorn app:app --workers 2 --host 0.0.0.0 --port ${PORT:-8080} --log-config logging_config.yaml
 fi
