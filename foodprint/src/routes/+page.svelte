@@ -10,6 +10,7 @@
   let resultData = null; // Holds the API result data
   let jobId = null; // Unique job id returned by FastAPI
   let isProcessing = false; // Controls whether the progress bar is shown
+  let status = ""; // Status of the estimation process
 
   // Modal state for showing ingredient notes
   let showModal = false;
@@ -61,8 +62,9 @@
         return;
       }
       const data = await resp.json();
+      status = data.status;
 
-      switch (data.status) {
+      switch (status) {
         case "Processing":
           statusMessage = "Behandler opskrift...";
           setTimeout(pollStatus, 2000);
@@ -125,12 +127,12 @@
 
   <!-- Separate Progress Bar -->
   {#if isProcessing && !resultData}
-    <ProgressBar />
+    <ProgressBar {status} />
   {/if}
 
-  <!-- Status Message -->
-  {#if statusMessage}
-    <p class="text-lg mb-4">{statusMessage}</p>
+  <!-- Status Message - only show for errors -->
+  {#if statusMessage && statusMessage.includes("Fejl")}
+    <p class="text-lg mb-4 text-red-600">{statusMessage}</p>
   {/if}
 
   {#if resultData}
