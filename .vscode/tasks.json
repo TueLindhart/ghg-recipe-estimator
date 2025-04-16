@@ -1,0 +1,22 @@
+//create task that starts redis-server when I am launching app
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Redis Server",
+            "type": "shell",
+            "command": "redis-server",
+            "problemMatcher": [],
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "dependsOn": "Run app",
+        }
+    ]
+}

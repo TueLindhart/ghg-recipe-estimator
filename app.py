@@ -5,29 +5,18 @@ from contextlib import asynccontextmanager
 from enum import Enum
 from typing import Annotated
 
-import aioredis
+import redis.asyncio as aioredis
 from dotenv import load_dotenv
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, Field
 
-# Import your existing async_estimator and models
-# (Adjust these imports to match your package structure)
 from food_co2_estimator.main import async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
+from myredis import RedisCache
 
 load_dotenv()
-
-
-async def redis_pool():
-    return aioredis.from_url(
-        os.getenv("REDIS_URL", "redis://localhost:6379"),
-        encoding="utf-8",
-        decode_responses=True,
-        ex=3600,
-    )
 
 
 @asynccontextmanager
@@ -36,11 +25,11 @@ async def lifespan(app: FastAPI):
     Lifespan event handler for FastAPI to manage Redis connection.
     """
     # Initialize Redis connection pool
-    redis = await redis_pool()
+    redis = await RedisCache.create()
     app.state.redis = redis
     yield
     # Cleanup on shutdown
-    await redis.close()
+    await redis.aclose()
 
 
 app = FastAPI(lifespan=lifespan)
@@ -172,7 +161,7 @@ async def start_estimation(
     if not access:
         raise HTTPException(status_code=401, detail="Unauthorized")
     uid = str(uuid.uuid4())
-    redis_client: aioredis.Redis = await app.state.redis
+    redis_client: aioredis.Redis = app.state.redis
     await redis_client.set(
         uid,
         JobResult(status=JobStatus.PROCESSING).model_dump_json(),
@@ -195,11 +184,11 @@ async def get_status(uid: str, access: Annotated[bool, Depends(verify_token)]):
     if not access:
         raise HTTPException(status_code=401, detail="Unauthorized")
 
-    redis_client: aioredis.Redis = await app.state.redis
+    redis_client: aioredis.Redis = app.state.redis
     job = await redis_client.get(uid)
     if not job:
         raise HTTPException(status_code=404, detail="Job not found")
-    return JSONResponse(content=JobResult.model_validate_json(job))
+    return JobResult.model_validate_json(job)
 
 
 @app.delete("/status/{uid}")
@@ -207,7 +196,7 @@ async def clear_status(uid: str):
     """
     Optional: Clear the job result from memory once you have retrieved it.
     """
-    redis_client: aioredis.Redis = await app.state.redis
+    redis_client: aioredis.Redis = app.state.redis
     await redis_client.delete(uid)
     return {"status": "Cleared"}
 
