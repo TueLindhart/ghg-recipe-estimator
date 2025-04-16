@@ -8,8 +8,8 @@ redis-server --daemonize yes --maxmemory 50mb --maxmemory-policy allkeys-lfu
 
 if [ "$ENV" = "dev" ]; then
     echo "Starting FastAPI in development mode with uvicorn (auto-reload enabled)..."
-    uvicorn app:app --reload --host 0.0.0.0 --port 8000
+    uvicorn app:app --reload --host 0.0.0.0 --port 8000 --log-config logging_config.yaml
 else
     echo "Starting FastAPI in production mode with uvicorn..."
-    uvicorn app:app --workers 2 --host 0.0.0.0 --port ${PORT:-8080} 
+    uvicorn app:app --workers 2 --host 0.0.0.0 --port ${PORT:-8080} --log-config logging_config.yaml
 fi

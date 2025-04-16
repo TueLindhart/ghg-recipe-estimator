@@ -1,21 +1,26 @@
 import json
-import random
 import logging
+import random
 
 from flask import Blueprint, jsonify, request
 
 comparison_api = Blueprint("comparison_api", __name__)
 
 # Set up a logger for this module (if not already set by your Flask app)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("foodprint")
 logger.setLevel(logging.DEBUG)  # Ensure debug level logging
+
 
 def generate_context_text(record, input_value):
     """
     Generate a context text by comparing the input_value (e.g., recipe emission)
     to the stored value for the given activity.
     """
-    logger.debug("generate_context_text called with record: %s and input_value: %s", record, input_value)
+    logger.debug(
+        "generate_context_text called with record: %s and input_value: %s",
+        record,
+        input_value,
+    )
     stored_value = record.get("value", 0)
     if stored_value == 0:
         text = "Comparison data is insufficient for a meaningful comparison."
@@ -38,14 +43,15 @@ def generate_context_text(record, input_value):
         text = f"Your recipe are approximately {percent}% of those from {record['name']}, which is about {excess}% more."
     else:
         text = f"Your recipe are significantly higher than those from {record['name']} (over {round(ratio, 1)} times as much)."
-    
+
     logger.debug("Generated context text: %s", text)
     return text
+
 
 @comparison_api.route("/api/comparison", methods=["GET"])
 def get_comparison():
     logger.debug("Received request for /api/comparison")
-    
+
     # Get input parameters from the query string.
     try:
         input_value = float(request.args.get("value", 0))

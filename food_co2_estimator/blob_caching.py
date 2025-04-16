@@ -1,7 +1,6 @@
 import datetime
 import functools
 import json
-import logging
 import os
 import urllib.parse
 import warnings
@@ -37,7 +36,7 @@ def get_bucket() -> storage.Bucket:
             bucket = storage_client.bucket(BUCKET_NAME)
             bucket_cache["bucket"] = bucket
         except DefaultCredentialsError as e:
-            logging.info(f"Error: {e}")
+            logger.info(f"Error: {e}")
             raise e
     return bucket
 
@@ -91,7 +90,7 @@ def get_cache(prefix: str) -> dict[str, Any] | None:
             data_str = blob.download_as_string().decode("utf-8")  # type: ignore
             data: dict[str, Any] = json.loads(data_str)
         except Exception as e:
-            logging.error(f"Error reading blob {blob.name}: {e}")
+            logger.error(f"Error reading blob {blob.name}: {e}")
             continue
 
         timestamp_str = data.get("timestamp")
@@ -105,10 +104,10 @@ def get_cache(prefix: str) -> dict[str, Any] | None:
 
         age = datetime.datetime.now(datetime.timezone.utc) - cached_time
         if age > datetime.timedelta(days=CACHE_EXPIRATION_DAYS):
-            logging.info(f"Latest blob {blob.name} is expired (age: {age.days} days)")
+            logger.info(f"Latest blob {blob.name} is expired (age: {age.days} days)")
             continue
 
-        logging.info(f"Cache hit using blob {blob.name} (age: {age.days} days)")
+        logger.info(f"Cache hit using blob {blob.name} (age: {age.days} days)")
         return data
 
 

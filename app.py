@@ -12,6 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, Field
 
+from food_co2_estimator.logger_utils import logger
 from food_co2_estimator.main import async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
 from myredis import RedisCache
@@ -115,7 +116,7 @@ async def run_estimator(
     """
     Background task that executes your async_estimator function.
     """
-    logging.info(f"Starting CO2 estimation for UID={uid} URL={runparams.url}")
+    logger.info(f"Starting CO2 estimation for UID={uid} URL={runparams.url}")
     try:
         # You can configure LogParams as needed
         logparams = LogParams(logging_level=logging.INFO)
@@ -137,9 +138,9 @@ async def run_estimator(
                 uid,
                 jobresult.model_dump_json(),
             )
-        logging.info(f"Completed CO2 estimation for UID={uid} URL={runparams.url}")
+        logger.info(f"Completed CO2 estimation for UID={uid} URL={runparams.url}")
     except Exception as e:
-        logging.exception("Background estimation failed.")
+        logger.exception("Background estimation failed.")
         await redis_client.set(
             uid,
             JobResult(status=JobStatus.ERROR, result=str(e)).model_dump_json(),
