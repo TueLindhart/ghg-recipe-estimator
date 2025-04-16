@@ -61,14 +61,44 @@
         return;
       }
       const data = await resp.json();
-      if (data.status === "Processing") {
-        setTimeout(pollStatus, 2000);
-      } else if (data.status === "Completed") {
-        resultData = JSON.parse(data.result);
-        isProcessing = false;
-      } else if (data.status === "Error") {
-        statusMessage = `Fejl: ${data.result}`;
-        isProcessing = false;
+
+      switch (data.status) {
+        case "Processing":
+          statusMessage = "Behandler opskrift...";
+          setTimeout(pollStatus, 2000);
+          break;
+        case "Completed":
+          resultData = JSON.parse(data.result);
+          statusMessage = "";
+          isProcessing = false;
+          break;
+        case "Error":
+          statusMessage = `Fejl: ${data.result}`;
+          isProcessing = false;
+          break;
+        case "Text":
+          statusMessage = "Henter opskrift fra URL...";
+          setTimeout(pollStatus, 2000);
+          break;
+        case "Recipe":
+          statusMessage = "Udtrækker ingredienser...";
+          setTimeout(pollStatus, 2000);
+          break;
+        case "Weights":
+          statusMessage = "Estimerer vægt per ingrediens...";
+          setTimeout(pollStatus, 2000);
+          break;
+        case "RAGCO2":
+          statusMessage = "Estimerer CO2 udledning per ingrediens...";
+          setTimeout(pollStatus, 2000);
+          break;
+        case "Preparing":
+          statusMessage = "Forbereder resultater...";
+          setTimeout(pollStatus, 2000);
+          break;
+        default:
+          statusMessage = `Ukendt status: ${data.status}`;
+          isProcessing = false;
       }
     } catch (err) {
       statusMessage = `Fejl ved polling: ${err.message}`;

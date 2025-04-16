@@ -1,5 +1,7 @@
 import redis.asyncio as aioredis
 
+from food_co2_estimator.pydantic_models.response_models import JobResult, JobStatus
+
 REDIS_EXPIRATION = 3600
 
 
@@ -26,6 +28,17 @@ class RedisCache:
         Set the value in Redis cache.
         """
         await self.redis_client.set(key, value, ex=self.expiration)
+
+    async def update_job_status(
+        self,
+        uid: str,
+        status: JobStatus,
+        result: str | None = None,
+    ):
+        await self.set(
+            uid,
+            JobResult(status=status, result=result).model_dump_json(),
+        )
 
     async def delete(self, key: str):
         """

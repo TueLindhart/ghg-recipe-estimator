@@ -1,5 +1,5 @@
 # Build stage 1
-FROM python:3.12-slim-bookworm AS builder
+FROM python:3.13-slim-bookworm AS builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
@@ -17,11 +17,11 @@ ENV POETRY_VIRTUALENVS_IN_PROJECT=true
 COPY pyproject.toml poetry.lock ./
 RUN poetry install --only main --no-interaction --no-ansi --no-root
 
-COPY app.py comparison_api.py start.sh myredis.py logging_config.yaml ./
+COPY app.py comparison_api.py start.sh  logging_config.yaml ./
 COPY food_co2_estimator/ food_co2_estimator/
 
 # Build stage 2
-FROM python:3.12-slim-bookworm
+FROM python:3.13-slim-bookworm
 
 WORKDIR /app
 COPY --from=builder /app /app
