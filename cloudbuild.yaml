@@ -5,8 +5,17 @@ steps:
     args: ["-c", "docker pull $_IMAGE_NAME || exit 0"]
   - name: "gcr.io/cloud-builders/docker"
     id: "Build image"
-    args: ["build", "-t", "$_IMAGE_NAME", "--cache-from", "$_IMAGE_NAME", "."]
-    automapSubstitutions: true
+    env: ["DOCKER_BUILDKIT=1"] # turn on BuildKit explicitly
+    args: [
+        "build",
+        "-t",
+        "$_IMAGE_NAME",
+        "--cache-from",
+        "$_IMAGE_NAME", # pull that image in the previous step
+        "--build-arg",
+        "BUILDKIT_INLINE_CACHE=1", # <-- critical
+        ".",
+      ]
   - name: "gcr.io/cloud-builders/docker"
     id: "Push image"
     args: ["push", "$_IMAGE_NAME"]
