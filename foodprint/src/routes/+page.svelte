@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import InputBar from "$lib/components/InputBar.svelte";
   import OverviewForm from "$lib/components/OverviewForm.svelte";
@@ -7,142 +7,146 @@
 
   let recipeUrl = "";
   let statusMessage = "";
-  let resultData = null; // Holds the API result data
-  let jobId = null; // Unique job id returned by FastAPI
-  let isProcessing = false; // Controls whether the progress bar is shown
+  let resultData: any = null;
+  let jobId: string | null = null;
+  let isProcessing = false;
 
-  // Modal state for showing ingredient notes
   let showModal = false;
   let selectedNotes = "";
 
-  // Update recipeUrl on input change
-  function handleInputChange(val) {
+  function handleInputChange(val: string) {
     recipeUrl = val;
   }
 
-  // Start the estimation process
-  async function startEstimation() {
+  /** call server action ?/startEstimation */
+  async function startEstimation(): Promise<void> {
     if (!recipeUrl) {
       statusMessage = "Angiv venligst en URL.";
       return;
     }
+
     isProcessing = true;
     resultData = null;
-    try {
-      const resp = await fetch(`/api/estimate`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          url: recipeUrl,
-        }),
-      });
-      if (!resp.ok) {
-        statusMessage = `Fejl ved start af estimering: ${resp.statusText}`;
-        isProcessing = false;
-        return;
-      }
-      const data = await resp.json();
-      jobId = data.uid;
-      pollStatus();
-    } catch (err) {
-      statusMessage = `Fejl: ${err.message}`;
+
+    const form = new FormData();
+    form.set("url", recipeUrl);
+    const resp = await fetch("?/startEstimation", {
+      method: "POST",
+      headers: { accept: "application/json" },
+      body: form,
+    });
+    const { type, data: payload } = await resp.json();
+
+    if (type === "error") {
+      +   statusMessage = payload?.error ?? resp.statusText;
       isProcessing = false;
+      return;
     }
+
+    jobId = data.jobId;
+    pollStatus();
   }
 
-  // Poll the status endpoint until the estimation completes
-  async function pollStatus() {
+  /** call server action ?/pollStatus every 2 s until done */
+  async function pollStatus(): Promise<void> {
     if (!jobId) return;
-    try {
-      const resp = await fetch(`/api/status/${jobId}`);
-      if (!resp.ok) {
-        statusMessage = `Fejl ved statusopdatering: ${resp.statusText}`;
-        isProcessing = false;
-        return;
-      }
-      const data = await resp.json();
 
-      switch (data.status) {
-        case "Processing":
-          statusMessage = "Behandler opskrift...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Completed":
-          resultData = JSON.parse(data.result);
-          statusMessage = "";
-          isProcessing = false;
-          break;
-        case "Error":
-          statusMessage = `Fejl: ${data.result}`;
-          isProcessing = false;
-          break;
-        case "Text":
-          statusMessage = "Henter opskrift fra URL...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Recipe":
-          statusMessage = "Udtrækker ingredienser...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Weights":
-          statusMessage = "Estimerer vægt per ingrediens...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "RAGCO2":
-          statusMessage = "Estimerer CO2 udledning per ingrediens...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Preparing":
-          statusMessage = "Forbereder resultater...";
-          setTimeout(pollStatus, 2000);
-          break;
-        default:
-          statusMessage = `Ukendt status: ${data.status}`;
-          isProcessing = false;
-      }
-    } catch (err) {
-      statusMessage = `Fejl ved polling: ${err.message}`;
+    const form = new FormData();
+    form.set("jobId", jobId);
+    const resp = await fetch("?/pollStatus", {
+      method: "POST",
+      headers: { accept: "application/json", "x-sveltekit-action": "true" },
+      body: form,
+    });
+
+    const data = await resp.json();
+
+    if (!resp.ok || data.error) {
+      statusMessage = data.error ?? resp.statusText;
       isProcessing = false;
+      return;
+    }
+
+    switch (data.status) {
+      case "Processing":
+        statusMessage = "Behandler opskrift...";
+        setTimeout(pollStatus, 2000);
+        break;
+      case "Completed":
+        resultData = JSON.parse(data.result);
+        statusMessage = "";
+        isProcessing = false;
+        break;
+      case "Error":
+        statusMessage = `Fejl: ${data.result}`;
+        isProcessing = false;
+        break;
+      case "Text":
+        statusMessage = "Henter opskrift fra URL...";
+        setTimeout(pollStatus, 2000);
+        break;
+      case "Recipe":
+        statusMessage = "Udtrækker ingredienser...";
+        setTimeout(pollStatus, 2000);
+        break;
+      case "Weights":
+        statusMessage = "Estimerer vægt per ingrediens...";
+        setTimeout(pollStatus, 2000);
+        break;
+      case "RAGCO2":
+        statusMessage = "Estimerer CO2 udledning per ingrediens...";
+        setTimeout(pollStatus, 2000);
+        break;
+      case "Preparing":
+        statusMessage = "Forbereder resultater...";
+        setTimeout(pollStatus, 2000);
+        break;
+      default:
+        statusMessage = `Ukendt status: ${data.status}`;
+        isProcessing = false;
     }
   }
 
-  // Open modal to display ingredient notes
-  function showNotes(ingredient) {
+  function showNotes(ingredient: any): void {
     selectedNotes = `Beregning Noter: ${ingredient.calculation_notes}
-  Vægt Estimering Noter: ${ingredient.weight_estimation_notes}
-  CO2e Udledning Noter: ${ingredient.co2_emission_notes}`;
+Vægt Estimering Noter: ${ingredient.weight_estimation_notes}
+CO2e Udledning Noter: ${ingredient.co2_emission_notes}`;
     showModal = true;
   }
 </script>
 
-<div class="container mx-auto px-4">
+<div class="container mx-auto px-4 flex flex-col items-center">
   <!-- Input Bar Component -->
-  <InputBar
-    {recipeUrl}
-    onInputChange={handleInputChange}
-    onButtonClick={startEstimation}
-  />
+  <div class="w-full max-w-2xl">
+    <InputBar
+      {recipeUrl}
+      onInputChange={handleInputChange}
+      onButtonClick={startEstimation}
+    />
+  </div>
 
   <!-- Separate Progress Bar -->
   {#if isProcessing && !resultData}
-    <ProgressBar />
+    <div class="w-full max-w-2xl">
+      <ProgressBar />
+    </div>
   {/if}
 
   <!-- Status Message -->
   {#if statusMessage}
-    <p class="text-lg mb-4">{statusMessage}</p>
+    <p class="text-lg mb-4 text-center">{statusMessage}</p>
   {/if}
 
   {#if resultData}
     <!-- Overview Section -->
-    <div class="mb-6">
-      <h2 class="text-xl font-bold mb-2">Oversigt</h2>
+    <div class="w-full max-w-2xl mb-6">
+      <h2 class="text-xl font-bold mb-2 text-center">Oversigt</h2>
       <OverviewForm overviewData={resultData} />
     </div>
 
     <!-- Ingredients Section -->
-    <div>
-      <h2 class="text-xl font-bold mb-2">Ingredienser</h2>
+    <div class="w-full max-w-4xl">
+      <h2 class="text-xl font-bold mb-2 text-center">Ingredienser</h2>
       <IngredientGrid
         ingredients={resultData.ingredients}
         onShowNotes={showNotes}
