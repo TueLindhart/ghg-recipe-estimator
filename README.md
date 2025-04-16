@@ -98,11 +98,15 @@ docker build -t foodprint-frontend:latest  .
 2. Test image locally
 ```bash
 docker run \
+  --env API_BASE="http://host.docker.internal:8000"  \
+  --env FOODPRINT_API_KEY=$FOODPRINT_API_KEY \
   -p 3000:3000 \
   -it foodprint-frontend:latest
 ```
 
-3. Build image in cloud and deploy
+Note, that http://host.docker.internal:8000 requires backend code is running locally 
+
+1. Build image in cloud and deploy
 ```bash
 cd foodprint
 gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 

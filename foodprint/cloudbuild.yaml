@@ -25,7 +25,9 @@ steps:
       - --max-instances=1
       - --min-instances=0
       - --memory=512Mi
+      - --service-account=foodprint-frontend@$PROJECT_ID.iam.gserviceaccount.com
       - --update-secrets=API_BASE=FoodprintBackendAPI:latest
+      - --update-secrets=FOODPRINT_API_KEY=FoodPrintAPIKey:latest
 images:
   - "$_IMAGE_NAME"
 substitutions:

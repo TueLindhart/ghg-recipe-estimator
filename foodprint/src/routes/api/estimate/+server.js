@@ -1,18 +1,25 @@
 import { env } from "$env/dynamic/private";
 import { json } from "@sveltejs/kit";
 
-console.log("Dynamic API_BASE:", env.API_BASE);
-
 export async function POST({ request }) {
   const { url } = await request.json();
-  const API_BASE = env.API_BASE;
-  console.log("API_BASE:", API_BASE);
 
+  // Check if API_BASE is defined
+  const API_BASE = env.API_BASE;
+  if (!API_BASE) {
+    return json({ error: "API_BASE is not defined" }, { status: 500 });
+  }
+  // Check if FOODPRINT_API_KEY is defined
+  const FOODPRINT_API_KEY = env.FOODPRINT_API_KEY;
+  if (!FOODPRINT_API_KEY) {
+    return json({ error: "FOODPRINT_API_KEY is not defined" }, { status: 500 });
+  }
   try {
     const resp = await fetch(`${API_BASE}/estimate`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${FOODPRINT_API_KEY}`,
       },
       body: JSON.stringify({ url }),
     });
@@ -27,6 +34,7 @@ export async function POST({ request }) {
     const data = await resp.json();
     return json(data);
   } catch (err) {
-    return json({ error: `Error: ${err.message}` }, { status: 500 });
+    console.error("Error fetching estimate:", err);
+    return json({ error: `Error: ${err}` }, { status: 500 });
   }
 }

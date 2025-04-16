@@ -9,5 +9,5 @@ if [ "$ENV" = "dev" ]; then
     uvicorn app:app --reload --host 0.0.0.0 --port 8000
 else
     echo "Starting FastAPI in production mode with uvicorn..."
-    uvicorn app:app --host 0.0.0.0 --port ${PORT:-8080}
+    uvicorn app:app --workers 4 --host 0.0.0.0 --port ${PORT:-8080} 
 fi

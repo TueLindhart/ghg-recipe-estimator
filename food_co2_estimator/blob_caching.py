@@ -15,6 +15,7 @@ from food_co2_estimator.logger_utils import logger
 from food_co2_estimator.pydantic_models.estimator import RunParams
 
 CACHE_EXPIRATION_DAYS = 31
+ENV = os.environ.get("ENV", "dev")
 
 # Ignore the specific RuntimeWarning from google_crc32c
 warnings.filterwarnings(
@@ -52,7 +53,11 @@ def create_cache_key_path(url: str, version: str) -> str:
     path = parsed_url.path if parsed_url.path else "_no_path"
     query = parsed_url.query if parsed_url.query else "_no_query"
     path_and_args = f"path{path}_arg_{query}"
-    cache_key_path = f"{version}/{url_to_key(base_url)}/{url_to_key(path_and_args)}"
+
+    # TODO: Instead of using prod and env structure, create a dev and prod project in GCS
+    cache_key_path = (
+        f"{ENV}/{version}/{url_to_key(base_url)}/{url_to_key(path_and_args)}"
+    )
     return cache_key_path
 
 
