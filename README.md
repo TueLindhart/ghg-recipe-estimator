@@ -79,6 +79,7 @@ docker run \
   -p 8080:8080 \
   -v "$(pwd)/.credentials:/var/secrets/credentials:ro" \
   -e GOOGLE_APPLICATION_CREDENTIALS=/var/secrets/credentials/$GOOGLE_APPLICATION_CREDENTIALS_FILENAME \
+  -e ENV=prod \
   -it foodprint-backend:latest
 ```
 
