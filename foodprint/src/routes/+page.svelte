@@ -10,6 +10,7 @@
   let resultData: any = null;
   let jobId: string | null = null;
   let isProcessing = false;
+  let status = "";
 
   let showModal = false;
   let selectedNotes = "";

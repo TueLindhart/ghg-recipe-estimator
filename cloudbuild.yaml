@@ -25,7 +25,7 @@ steps:
       - --port=8080
       - --max-instances=1
       - --min-instances=0
-      - --memory=512Mi
+      - --memory=1Gi
       - --set-env-vars=GPT_MODEL=gpt-4o-mini-2024-07-18
       - --set-env-vars=USE_CACHE=true
       - --set-env-vars=STORE_IN_CACHE=true
