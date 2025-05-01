@@ -1,4 +1,5 @@
 <script>
+  import { enhance } from "$app/forms";
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import InputBar from "$lib/components/InputBar.svelte";
   import OverviewForm from "$lib/components/OverviewForm.svelte";
@@ -7,108 +8,39 @@
 
   let recipeUrl = "";
   let statusMessage = "";
-  let resultData = null; // Holds the API result data
-  let jobId = null; // Unique job id returned by FastAPI
-  let isProcessing = false; // Controls whether the progress bar is shown
-  let status = ""; // Status of the estimation process
+  let resultData = null; // API-resultat
+  let isProcessing = false; // Styrer progress-bar
+  let status = ""; // Simpel status-streng
 
-  // Modal state for showing ingredient notes
+  // Modal-state
   let showModal = false;
   let selectedNotes = "";
 
-  // Update recipeUrl on input change
   function handleInputChange(val) {
     recipeUrl = val;
   }
 
-  // Start the estimation process
-  async function startEstimation() {
-    if (!recipeUrl) {
-      statusMessage = "Angiv venligst en URL.";
-      return;
-    }
-    isProcessing = true;
-    resultData = null;
-    try {
-      const resp = await fetch(`/api/estimate`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          url: recipeUrl,
-        }),
-      });
-      if (!resp.ok) {
-        statusMessage = `Fejl ved start af estimering: ${resp.statusText}`;
-        isProcessing = false;
-        return;
-      }
-      const data = await resp.json();
-      jobId = data.uid;
-      pollStatus();
-    } catch (err) {
-      statusMessage = `Fejl: ${err.message}`;
+  /* ---------- Svelte-Kit action helpers ---------- */
+  const enhanceOpts = {
+    pending: () => {
+      isProcessing = true;
+      statusMessage = "";
+      status = "Processing";
+      resultData = null;
+    },
+    error: (_e, { error }) => {
       isProcessing = false;
-    }
-  }
-
-  // Poll the status endpoint until the estimation completes
-  async function pollStatus() {
-    if (!jobId) return;
-    try {
-      const resp = await fetch(`/api/status/${jobId}`);
-      if (!resp.ok) {
-        statusMessage = `Fejl ved statusopdatering: ${resp.statusText}`;
-        isProcessing = false;
-        return;
-      }
-      const data = await resp.json();
-      status = data.status;
-
-      switch (status) {
-        case "Processing":
-          statusMessage = "Behandler opskrift...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Completed":
-          resultData = JSON.parse(data.result);
-          statusMessage = "";
-          isProcessing = false;
-          break;
-        case "Error":
-          statusMessage = `Fejl: ${data.result}`;
-          isProcessing = false;
-          break;
-        case "Text":
-          statusMessage = "Henter opskrift fra URL...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Recipe":
-          statusMessage = "Udtrækker ingredienser...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Weights":
-          statusMessage = "Estimerer vægt per ingrediens...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "RAGCO2":
-          statusMessage = "Estimerer CO2 udledning per ingrediens...";
-          setTimeout(pollStatus, 2000);
-          break;
-        case "Preparing":
-          statusMessage = "Forbereder resultater...";
-          setTimeout(pollStatus, 2000);
-          break;
-        default:
-          statusMessage = `Ukendt status: ${data.status}`;
-          isProcessing = false;
-      }
-    } catch (err) {
-      statusMessage = `Fejl ved polling: ${err.message}`;
+      statusMessage = error;
+      status = "Error";
+    },
+    result: (_e, { result }) => {
       isProcessing = false;
-    }
-  }
+      status = "Completed";
+      resultData = result;
+    },
+  };
 
-  // Open modal to display ingredient notes
+  /* ---------- Modal helpers ---------- */
   function showNotes(ingredient) {
     selectedNotes = `Beregning Noter: ${ingredient.calculation_notes}
   Vægt Estimering Noter: ${ingredient.weight_estimation_notes}
@@ -118,42 +50,40 @@
 </script>
 
 <div class="container mx-auto px-4">
-  <!-- Input Bar Component -->
-  <InputBar
-    {recipeUrl}
-    onInputChange={handleInputChange}
-    onButtonClick={startEstimation}
-  />
+  <!-- Hele siden er nu ét form der POST'er til +page.server.ts -->
+  <form method="POST" use:enhance={enhanceOpts}>
+    <!-- Input Bar -->
+    <InputBar {recipeUrl} onInputChange={handleInputChange} />
 
-  <!-- Separate Progress Bar -->
-  {#if isProcessing && !resultData}
-    <ProgressBar {status} />
-  {/if}
+    <!-- Progress Bar -->
+    {#if isProcessing && !resultData}
+      <ProgressBar {status} />
+    {/if}
 
-  <!-- Status Message - only show for errors -->
-  {#if statusMessage && statusMessage.includes("Fejl")}
-    <p class="text-lg mb-4 text-red-600">{statusMessage}</p>
-  {/if}
+    <!-- Fejlbeskeder -->
+    {#if statusMessage && status === "Error"}
+      <p class="text-lg mb-4 text-red-600">{statusMessage}</p>
+    {/if}
 
-  {#if resultData}
-    <!-- Overview Section -->
-    <div class="mb-6">
-      <h2 class="text-xl font-bold mb-2">Oversigt</h2>
-      <OverviewForm overviewData={resultData} />
-    </div>
+    <!-- Resultater -->
+    {#if resultData}
+      <div class="mb-6">
+        <h2 class="text-xl font-bold mb-2">Oversigt</h2>
+        <OverviewForm overviewData={resultData} />
+      </div>
 
-    <!-- Ingredients Section -->
-    <div>
-      <h2 class="text-xl font-bold mb-2">Ingredienser</h2>
-      <IngredientGrid
-        ingredients={resultData.ingredients}
-        onShowNotes={showNotes}
-      />
-    </div>
-  {/if}
+      <div>
+        <h2 class="text-xl font-bold mb-2">Ingredienser</h2>
+        <IngredientGrid
+          ingredients={resultData.ingredients}
+          onShowNotes={showNotes}
+        />
+      </div>
+    {/if}
+  </form>
 </div>
 
-<!-- Modal for showing ingredient notes -->
+<!-- Modal til noter -->
 <Modal show={showModal} on:close={() => (showModal = false)}>
   <div slot="header">
     <h3 class="text-xl font-semibold">Noter</h3>

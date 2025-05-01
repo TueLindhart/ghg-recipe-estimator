@@ -18,13 +18,14 @@
       </label>
       <input
         id="urlInput"
+        name="url"
         value={recipeUrl}
         on:input={(e) => onInputChange(e.target.value)}
         placeholder="https://example.com/din-opskrift"
         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
       />
     </div>
-    <Button on:click={onButtonClick} class="w-fit">
+    <Button type="submit" class="w-fit">
       Beregn CO2 Emission <ArrowRightOutline class="w-5 h-5 ml-2" />
     </Button>
   </div>
