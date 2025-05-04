@@ -1,6 +1,6 @@
 <script lang="ts">
-  import ProgressBar from "$lib/components/ProgressBar.svelte"; // YOUR component
   import { goto } from "$app/navigation";
+  import ProgressTimeline from "$lib/components/ProgressTimeline.svelte";
   import { onMount } from "svelte";
 
   // uid arrives from load()
@@ -35,9 +35,10 @@
   onMount(poll);
 </script>
 
-<!-- Your component needs **only** the status prop -->
-<ProgressBar {status} />
+<div class="container mx-auto px-4 py-8">
+  <ProgressTimeline {status} />
 
-{#if statusMessage}
-  <p class="text-lg text-red-600">{statusMessage}</p>
-{/if}
+  {#if statusMessage}
+    <p class="text-lg text-red-600">{statusMessage}</p>
+  {/if}
+</div>

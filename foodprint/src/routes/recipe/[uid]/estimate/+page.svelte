@@ -1,6 +1,7 @@
 <script lang="ts">
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import OverviewForm from "$lib/components/OverviewForm.svelte";
+  import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
   import { Button, Modal } from "flowbite-svelte";
 
   /* The loader’s return value arrives here. */
@@ -8,8 +9,10 @@
 
   let showModal = false;
   let selectedNotes = "";
+  let selectedIngredientName = "";
 
   function openNotes(ing: any) {
+    selectedIngredientName = ing.name;
     selectedNotes = `Beregning Noter: ${ing.calculation_notes}
 Vægt Estimering Noter: ${ing.weight_estimation_notes}
 CO2e Udledning Noter: ${ing.co2_emission_notes}`;
@@ -18,19 +21,21 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 </script>
 
 <div class="container mx-auto px-4">
-  <h2 class="text-xl font-bold mb-2">Oversigt</h2>
+  <div class="mt-4">
+    <ReturnHomeButton />
+  </div>
+  <h2 class="text-xl font-bold mb-4 mt-8">Oversigt</h2>
   <OverviewForm overviewData={data.result} />
-
-  <h2 class="text-xl font-bold mb-2">Ingredienser</h2>
+  <h2 class="text-xl font-bold mb-4 mt-8">Ingredienser</h2>
   <IngredientGrid
     ingredients={data.result.ingredients}
     onShowNotes={openNotes}
   />
 </div>
 
-<Modal show={showModal} on:close={() => (showModal = false)}>
+<Modal bind:open={showModal} on:close={() => (showModal = false)}>
   <div slot="header">
-    <h3 class="text-xl font-semibold">Noter</h3>
+    <h3 class="text-xl font-semibold">{selectedIngredientName}</h3>
   </div>
 
   <div class="p-6 space-y-2">
@@ -38,6 +43,6 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   </div>
 
   <div slot="footer" class="flex justify-end p-4">
-    <Button color="gray" on:click={() => (showModal = false)}>Luk</Button>
+    <Button on:click={() => (showModal = false)}>Luk</Button>
   </div>
 </Modal>

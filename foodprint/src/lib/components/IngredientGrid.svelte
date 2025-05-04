@@ -1,5 +1,5 @@
 <script>
-  import IngredientCard from './IngredientCard.svelte';
+  import IngredientCard from "./IngredientCard.svelte";
   export let ingredients = [];
   export let onShowNotes;
 </script>

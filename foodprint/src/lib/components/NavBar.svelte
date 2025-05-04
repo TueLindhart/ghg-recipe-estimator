@@ -11,7 +11,7 @@
 <Navbar class="border-b border-gray-200 dark:border-gray-700">
   <NavBrand {href}>
     <span
-      class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+      class="self-center whitespace-nowrap text-2xl md:text-3xl font-semibold dark:text-white"
     >
       MyFoodprint
     </span>
