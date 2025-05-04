@@ -7,13 +7,17 @@
   export let href: string = "/";
 </script>
 
-<!-- Header with a subtle bottom border to separate it from the body -->
-<Navbar class="border-b border-gray-200 dark:border-gray-700">
+<!-- Header without intrinsic bottom border -->
+<Navbar>
   <NavBrand {href}>
     <span
-      class="self-center whitespace-nowrap text-2xl md:text-3xl font-semibold dark:text-white"
+      class="self-center whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#404040]"
     >
       MyFoodprint
     </span>
   </NavBrand>
 </Navbar>
+<!-- Gradient line separator -->
+<div
+  class="w-full h-px bg-gradient-to-r from-[#f7797d] via-[#fbd786] to-[#c6ffdd]"
+></div>
