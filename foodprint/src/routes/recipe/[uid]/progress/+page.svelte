@@ -31,7 +31,7 @@
         setTimeout(poll, 2000);
       }
     } catch (e) {
-      statusMessage = `Ups! Noget gik galt. Prpøv igen.`;
+      statusMessage = `Ups! Noget gik galt. Prøv igen.`;
       console.error("Error fetching status:", e);
     }
   }
