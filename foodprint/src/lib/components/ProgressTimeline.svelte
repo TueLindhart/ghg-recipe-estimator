@@ -17,7 +17,7 @@
   }
 
   const steps: Step[] = [
-    { id: "Text", text: "Besøger side" },
+    { id: "Text", text: "Henter opskrift fra URL" },
     { id: "Recipe", text: "Udtrækker ingredienser" },
     { id: "Weights", text: "Estimerer vægt per ingrediens" },
     { id: "RAGCO2", text: "Estimerer CO2 udledning per ingrediens" },
