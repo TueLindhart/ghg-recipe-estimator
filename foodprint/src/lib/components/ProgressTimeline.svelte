@@ -65,7 +65,7 @@
   } {
     switch (stepStatus) {
       case "completed":
-        return { icon: CheckCircleSolid, colorClass: "text-green-500" };
+        return { icon: CheckCircleSolid, colorClass: "text-[#5ED4A3]" };
       case "in-progress":
         return { icon: ClockSolid, colorClass: "text-yellow-500" };
       case "not-started":

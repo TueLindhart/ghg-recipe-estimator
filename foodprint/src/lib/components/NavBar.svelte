@@ -19,5 +19,5 @@
 </Navbar>
 <!-- Gradient line separator -->
 <div
-  class="w-full h-px bg-gradient-to-r from-[#f7797d] via-[#fbd786] to-[#c6ffdd]"
+  class="w-full h-px bg-gradient-to-r from-[#f7797d] via-[#fbd786] to-[#5ED4A3]"
 ></div>

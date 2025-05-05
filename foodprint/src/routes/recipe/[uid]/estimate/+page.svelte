@@ -1,6 +1,6 @@
 <script lang="ts">
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
-  import OverviewForm from "$lib/components/OverviewForm.svelte";
+  import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
   import { Button, Modal } from "flowbite-svelte";
 
@@ -25,7 +25,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     <ReturnHomeButton />
   </div>
   <h2 class="text-xl font-bold mb-4 mt-8">Oversigt</h2>
-  <OverviewForm overviewData={data.result} />
+  <OverviewCard overviewData={data.result} />
   <h2 class="text-xl font-bold mb-4 mt-8">Ingredienser</h2>
   <IngredientGrid
     ingredients={data.result.ingredients}

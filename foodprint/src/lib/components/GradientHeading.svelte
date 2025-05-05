@@ -21,7 +21,7 @@
   {tag}
   class={`font-bold text-transparent bg-clip-text leading-tight
           bg-gradient-to-r 
-          from-[#f7797d] via-[#fbd786] to-[#c6ffdd]
+          from-[#f7797d] via-[#fbd786] to-[#5ED4A3]
           ${className}`}
 >
   {text}
