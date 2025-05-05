@@ -23,7 +23,7 @@
 
       if (status === "Completed") {
         setTimeout(() => {
-          goto(`/recipe/${uid}/result`);
+          goto(`/recipe/${uid}/estimate`);
         }, 1000);
       } else if (status === "Error") {
         statusMessage = `Fejl: ${resp.result}`;
