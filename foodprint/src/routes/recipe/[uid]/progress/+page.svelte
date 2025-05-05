@@ -1,5 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import GradientHeading from "$lib/components/GradientHeading.svelte";
   import ProgressTimeline from "$lib/components/ProgressTimeline.svelte";
   import { onMount } from "svelte";
 
@@ -21,24 +22,34 @@
       status = resp.status;
 
       if (status === "Completed") {
-        goto(`/recipe/${uid}/estimate`);
+        setTimeout(() => {
+          goto(`/recipe/${uid}/result`);
+        }, 1000);
       } else if (status === "Error") {
         statusMessage = `Fejl: ${resp.result}`;
       } else {
         setTimeout(poll, 2000);
       }
     } catch (e) {
-      statusMessage = `Fejl ved polling: ${(e as Error).message}`;
+      statusMessage = `Ups! Noget gik galt. Prpøv igen.`;
+      console.error("Error fetching status:", e);
     }
   }
 
   onMount(poll);
 </script>
 
-<div class="container mx-auto px-4 py-8">
+<div
+  class="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen"
+>
+  <GradientHeading
+    tag="h2"
+    text="Der arbejdes på din opskrift..."
+    className="mb-8 text-center"
+  />
   <ProgressTimeline {status} />
 
   {#if statusMessage}
-    <p class="text-lg text-red-600">{statusMessage}</p>
+    <p class="text-lg text-red-600 mt-4 text-center">{statusMessage}</p>
   {/if}
 </div>

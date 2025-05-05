@@ -7,6 +7,7 @@
   // Forventer en funktion der tager en string som argument
   export let onInputChange: (value: string) => void = () => {};
   export let onButtonClick: () => void = () => {};
+  export let disabled: boolean = false;
 </script>
 
 <Card class="mb-6 p-6 w-full max-w-xl mx-auto">
@@ -23,7 +24,7 @@
           required
         />
       </div>
-      <Button on:click={onButtonClick} size="lg" class="h-12">
+      <Button on:click={onButtonClick} size="lg" class="h-12" {disabled}>
         <ArrowRightOutline class="w-5 h-5 ml-2 self-center" />
       </Button>
     </div>

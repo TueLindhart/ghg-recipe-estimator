@@ -6,6 +6,7 @@
 
   let recipeUrl = "";
   let statusMessage = "";
+  let isLoading = false;
 
   // Beholder den oprindelige funktion til at opdatere recipeUrl
   const handleInputChange = (val: string) => {
@@ -13,12 +14,15 @@
   };
 
   async function startEstimation(): Promise<void> {
+    if (isLoading) return;
+
     statusMessage = ""; // Nulstil status
     if (!recipeUrl) {
       statusMessage = "Angiv venligst en URL.";
       return;
     }
 
+    isLoading = true;
     try {
       const r = await fetch("/api/estimate", {
         method: "POST",
@@ -35,11 +39,12 @@
       }
 
       const { uid } = (await r.json()) as { uid: string };
-
       goto(`/recipe/${uid}/progress`);
     } catch (err) {
       console.error("Fetch error:", err);
-      statusMessage = `Netværksfejl eller server utilgængelig: ${(err as Error).message}`;
+      statusMessage = `Ups! Noget gik galt. Prøv igen senere.`;
+    } finally {
+      isLoading = false;
     }
   }
 </script>
@@ -59,6 +64,7 @@
       {recipeUrl}
       onInputChange={handleInputChange}
       onButtonClick={startEstimation}
+      disabled={isLoading}
     />
 
     {#if statusMessage}

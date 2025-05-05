@@ -67,7 +67,7 @@
       case "completed":
         return { icon: CheckCircleSolid, colorClass: "text-green-500" };
       case "in-progress":
-        return { icon: ClockSolid, colorClass: "text-blue-500" };
+        return { icon: ClockSolid, colorClass: "text-yellow-500" };
       case "not-started":
       default:
         return { icon: CircleMinusSolid, colorClass: "text-gray-500" };
