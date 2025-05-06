@@ -6,7 +6,6 @@ from food_co2_estimator.chains.rag_co2_estimator import (
     get_co2_emissions,
 )
 from food_co2_estimator.chains.recipe_extractor import extract_recipe
-from food_co2_estimator.chains.search_co2_estimator import get_co2_search_emissions
 from food_co2_estimator.chains.translator import get_translation_chain
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.language.detector import Languages, detect_language
@@ -98,19 +97,6 @@ async def async_estimator(
         log_exception_message(runparams.url, str(e))
         log_exception_message(runparams.url, rag_emissions_exception)
         return False, rag_emissions_exception
-
-    # Check if any ingredients need a CO2 search estimation
-    try:
-        parsed_search_results = await get_co2_search_emissions(
-            logparams.verbose, enriched_recipe, runparams.negligeble_threshold
-        )
-        enriched_recipe.update_with_co2_per_kg_search(parsed_search_results)
-    except Exception as e:
-        search_emissions_exception = (
-            "Something went wrong when searching for kg CO2e per kg."
-        )
-        log_exception_message(runparams.url, str(e))
-        log_exception_message(runparams.url, search_emissions_exception)
 
     # Build a Pydantic model and return its JSON representation
     await update_status(runparams.uid, redis_client, JobStatus.PREPARING_OUTPUT)
