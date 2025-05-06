@@ -25,21 +25,32 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     <ReturnHomeButton />
   </div>
 
-  <h2 class="text-xl font-bold mb-4 mt-8">Oversigt</h2>
+  <h2 class="text-xl font-bold mb-4 mt-4">Oversigt</h2>
   <OverviewCard overviewData={data.result} />
 
-  <Tabs class="mt-8" tabStyle="pill">
-    <TabItem title="Ingredienser" open>
-      <IngredientGrid
-        ingredients={data.result.ingredients}
-        onShowNotes={openNotes}
-      />
-    </TabItem>
+  <!-- Wrapper div to enforce bottom spacing -->
+  <div class="mb-8">
+    <Tabs class="mt-8" tabStyle="pill">
+      <TabItem title="Ingredienser" open>
+        <div
+          class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto"
+        >
+          <IngredientGrid
+            ingredients={data.result.ingredients}
+            onShowNotes={openNotes}
+          />
+        </div>
+      </TabItem>
 
-    <TabItem title="Emission Barchart">
-      <EmissionBarChart ingredients={data.result.ingredients} />
-    </TabItem>
-  </Tabs>
+      <TabItem title="Graf">
+        <div
+          class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto"
+        >
+          <EmissionBarChart ingredients={data.result.ingredients} />
+        </div>
+      </TabItem>
+    </Tabs>
+  </div>
 </div>
 
 <Modal bind:open={showModal} on:close={() => (showModal = false)}>

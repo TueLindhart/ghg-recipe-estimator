@@ -14,7 +14,7 @@
   // Only keep positive emissions
   $: filtered = ingredients.filter((i) => i.co2_kg != null && i.co2_kg > 0);
 
-  // Build the single series for ApexCharts
+  // Build the single series for the chart
   $: series = [
     {
       name: "CO₂e udledning (kg)",
@@ -33,6 +33,8 @@
       height: "300px", // visible height
       maxWidth: "100%", // fill container width
       toolbar: { show: false },
+      offsetY: 0,
+      padding: { top: 0, bottom: 0 },
     },
     plotOptions: {
       bar: {
@@ -42,7 +44,7 @@
       },
     },
     dataLabels: { enabled: false },
-    series, // now part of options and reactive
+    series, // reactive series
     xaxis: {
       categories,
       title: { text: "CO₂ udledning (kg)" },
@@ -52,13 +54,13 @@
     },
     yaxis: {
       labels: {
-        style: { fontFamily: "Inter, sans-serif", fontSize: "12px" }, // increased font size
+        style: { fontFamily: "Inter, sans-serif", fontSize: "12px" },
       },
     },
     tooltip: { shared: true, intersect: false },
   };
 </script>
 
-<div class="mt-4 w-full">
+<div class="w-full">
   <Chart {options} />
 </div>
