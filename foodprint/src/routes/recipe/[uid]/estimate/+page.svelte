@@ -3,7 +3,7 @@
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
-  import { Button, Modal } from "flowbite-svelte";
+  import { Button, Modal, TabItem, Tabs } from "flowbite-svelte";
 
   export let data: { uid: string; result: any };
 
@@ -24,15 +24,22 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   <div class="mt-4">
     <ReturnHomeButton />
   </div>
+
   <h2 class="text-xl font-bold mb-4 mt-8">Oversigt</h2>
   <OverviewCard overviewData={data.result} />
-  <h2 class="text-xl font-bold mb-4 mt-8">Ingredienser</h2>
-  <IngredientGrid
-    ingredients={data.result.ingredients}
-    onShowNotes={openNotes}
-  />
-  <h2 class="text-xl font-bold mb-4 mt-8">Emission Barchart</h2>
-  <EmissionBarChart ingredients={data.result.ingredients} />
+
+  <Tabs class="mt-8" tabStyle="pill">
+    <TabItem title="Ingredienser" open>
+      <IngredientGrid
+        ingredients={data.result.ingredients}
+        onShowNotes={openNotes}
+      />
+    </TabItem>
+
+    <TabItem title="Emission Barchart">
+      <EmissionBarChart ingredients={data.result.ingredients} />
+    </TabItem>
+  </Tabs>
 </div>
 
 <Modal bind:open={showModal} on:close={() => (showModal = false)}>
