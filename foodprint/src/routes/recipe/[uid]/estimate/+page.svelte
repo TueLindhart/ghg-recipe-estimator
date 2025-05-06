@@ -1,10 +1,10 @@
 <script lang="ts">
+  import EmissionBarChart from "$lib/components/EmissionBarChart.svelte";
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
   import { Button, Modal } from "flowbite-svelte";
 
-  /* The loader’s return value arrives here. */
   export let data: { uid: string; result: any };
 
   let showModal = false;
@@ -31,6 +31,8 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     ingredients={data.result.ingredients}
     onShowNotes={openNotes}
   />
+  <h2 class="text-xl font-bold mb-4 mt-8">Emission Barchart</h2>
+  <EmissionBarChart ingredients={data.result.ingredients} />
 </div>
 
 <Modal bind:open={showModal} on:close={() => (showModal = false)}>
