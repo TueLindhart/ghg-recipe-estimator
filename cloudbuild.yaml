@@ -1,0 +1,54 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    id: "Pull image for caching if exists"
+    entrypoint: "bash"
+    args: ["-c", "docker pull $_IMAGE_NAME || exit 0"]
+  - name: "gcr.io/cloud-builders/docker"
+    id: "Build image"
+    env: ["DOCKER_BUILDKIT=1"] # turn on BuildKit explicitly
+    args: [
+        "build",
+        "-t",
+        "$_IMAGE_NAME",
+        "--cache-from",
+        "$_IMAGE_NAME", # pull that image in the previous step
+        "--build-arg",
+        "BUILDKIT_INLINE_CACHE=1", # <-- critical
+        ".",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    id: "Push image"
+    args: ["push", "$_IMAGE_NAME"]
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    id: "Deploy to Cloud Run"
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - foodprint-backend
+      - --allow-unauthenticated
+      - --image=$_IMAGE_NAME
+      - --service-account=foodprint-backend@$PROJECT_ID.iam.gserviceaccount.com
+      - --region=europe-north1
+      - --platform=managed
+      - --port=8080
+      - --max-instances=1
+      - --min-instances=0
+      - --memory=512Mi
+      - --set-env-vars=GPT_MODEL=gpt-4o-mini-2024-07-18
+      - --set-env-vars=USE_CACHE=true
+      - --set-env-vars=STORE_IN_CACHE=true
+      - --set-env-vars=ENV=prod
+      - --update-secrets=OPENAI_API_KEY=OpenAIAPIKey:latest
+      - --update-secrets=SERPER_API_KEY=SerperAPIKey:latest
+      - --update-secrets=MY_MAIL=MyMail:latest
+      - --update-secrets=CACHE_BUCKET=CacheBucketName:latest
+      - --update-secrets=FOODPRINT_API_KEY=FoodPrintAPIKey:latest
+      - --update-secrets=FRONTEND_URL=FoodPrintFrontendURL:latest
+
+images:
+  - "$_IMAGE_NAME"
+substitutions:
+  _IMAGE_NAME: europe-north1-docker.pkg.dev/${PROJECT_ID}/foodprint/foodprint-backend:latest
+options:
+  dynamicSubstitutions: true

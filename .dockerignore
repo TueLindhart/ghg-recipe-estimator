@@ -1,0 +1,20 @@
+# Ignore all files by default
+.*
+
+# Remove these folders and files
+.venv/
+data/
+foodprint/
+sandbox/
+scripts/
+tests/
+LICENSE
+Makefile
+Procfile
+README.md
+*.yaml
+
+
+# Ensure these folders are kept
+!food_co2_estimator/*
+!food_co2_estimator/data/

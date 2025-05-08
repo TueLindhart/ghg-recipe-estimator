@@ -1,7 +1,6 @@
 import datetime
 import functools
 import json
-import logging
 import os
 import urllib.parse
 import warnings
@@ -15,6 +14,7 @@ from food_co2_estimator.logger_utils import logger
 from food_co2_estimator.pydantic_models.estimator import RunParams
 
 CACHE_EXPIRATION_DAYS = 31
+ENV = os.environ.get("ENV", "dev")
 
 # Ignore the specific RuntimeWarning from google_crc32c
 warnings.filterwarnings(
@@ -36,7 +36,7 @@ def get_bucket() -> storage.Bucket:
             bucket = storage_client.bucket(BUCKET_NAME)
             bucket_cache["bucket"] = bucket
         except DefaultCredentialsError as e:
-            logging.info(f"Error: {e}")
+            logger.info(f"Error: {e}")
             raise e
     return bucket
 
@@ -52,7 +52,11 @@ def create_cache_key_path(url: str, version: str) -> str:
     path = parsed_url.path if parsed_url.path else "_no_path"
     query = parsed_url.query if parsed_url.query else "_no_query"
     path_and_args = f"path{path}_arg_{query}"
-    cache_key_path = f"{version}/{url_to_key(base_url)}/{url_to_key(path_and_args)}"
+
+    # TODO: Instead of using prod and env structure, create a dev and prod project in GCS
+    cache_key_path = (
+        f"{ENV}/{version}/{url_to_key(base_url)}/{url_to_key(path_and_args)}"
+    )
     return cache_key_path
 
 
@@ -86,7 +90,7 @@ def get_cache(prefix: str) -> dict[str, Any] | None:
             data_str = blob.download_as_string().decode("utf-8")  # type: ignore
             data: dict[str, Any] = json.loads(data_str)
         except Exception as e:
-            logging.error(f"Error reading blob {blob.name}: {e}")
+            logger.error(f"Error reading blob {blob.name}: {e}")
             continue
 
         timestamp_str = data.get("timestamp")
@@ -100,10 +104,10 @@ def get_cache(prefix: str) -> dict[str, Any] | None:
 
         age = datetime.datetime.now(datetime.timezone.utc) - cached_time
         if age > datetime.timedelta(days=CACHE_EXPIRATION_DAYS):
-            logging.info(f"Latest blob {blob.name} is expired (age: {age.days} days)")
+            logger.info(f"Latest blob {blob.name} is expired (age: {age.days} days)")
             continue
 
-        logging.info(f"Cache hit using blob {blob.name} (age: {age.days} days)")
+        logger.info(f"Cache hit using blob {blob.name} (age: {age.days} days)")
         return data
 
 

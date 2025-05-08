@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@plugin 'flowbite/plugin';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #f9f9f9;
+  --color-primary-100: #f2f2f2;
+  --color-primary-200: #e5e5e5;
+  --color-primary-300: #d4d4d4;
+  --color-primary-400: #a3a3a3;
+  --color-primary-500: #737373;
+  --color-primary-600: #525252;
+  --color-primary-700: #404040;
+  --color-primary-800: #262626;
+  --color-primary-900: #171717;
+}
+
+@source "../node_modules/flowbite-svelte/dist";
+
+/* Set the default font style to match the OverviewCard spans */
+body {
+  @apply font-sans tracking-tight text-gray-900;
+}

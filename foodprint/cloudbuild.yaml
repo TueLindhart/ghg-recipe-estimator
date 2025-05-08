@@ -1,0 +1,45 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    id: "Pull image for caching if exists"
+    entrypoint: "bash"
+    args: ["-c", "docker pull $_IMAGE_NAME || exit 0"]
+  - name: "gcr.io/cloud-builders/docker"
+    id: "Build image"
+    env: ["DOCKER_BUILDKIT=1"] # turn on BuildKit explicitly
+    args: [
+        "build",
+        "-t",
+        "$_IMAGE_NAME",
+        "--cache-from",
+        "$_IMAGE_NAME", # pull that image in the previous step
+        "--build-arg",
+        "BUILDKIT_INLINE_CACHE=1", # <-- critical
+        ".",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    id: "Push image"
+    args: ["push", "$_IMAGE_NAME"]
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    id: "Deploy to Cloud Run"
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - foodprint-frontend
+      - --allow-unauthenticated
+      - --image=$_IMAGE_NAME
+      - --region=europe-north1
+      - --platform=managed
+      - --port=3000
+      - --max-instances=1
+      - --min-instances=0
+      - --memory=512Mi
+      - --service-account=foodprint-frontend@$PROJECT_ID.iam.gserviceaccount.com
+      - --update-secrets=API_BASE=FoodprintBackendAPI:latest
+      - --update-secrets=FOODPRINT_API_KEY=FoodPrintAPIKey:latest
+images:
+  - "$_IMAGE_NAME"
+substitutions:
+  _IMAGE_NAME: europe-north1-docker.pkg.dev/${PROJECT_ID}/foodprint/foodprint-frontend:latest
+options:
+  dynamicSubstitutions: true

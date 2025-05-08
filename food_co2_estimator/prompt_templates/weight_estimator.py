@@ -152,7 +152,7 @@ The following general weights can be used for estimation:
 3. If the amount of the ingredient is unspecific, then provide an estimate of the weight in kg given the number of servings and follow the template for 'weight_calculation':
     '{amount_not_specified_template}'.
     - Example: 'Serving with rice' depends on the number of servings the ingredient list implies.
-4. Your estimate must always be a python float. Therefore, you must not provide any intervals.
+4. Your estimate must always be a python float. Therefore, you must not provide any intervals nor set the weight to None if you have calculated an estimate.
 5. **IMPORTANT:** Do not alter the name of the ingredient in your response. The ingredient name must be exactly the same as provided in the input.
 
 Input is given after "Ingredients:"

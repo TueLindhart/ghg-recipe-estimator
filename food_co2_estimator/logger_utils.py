@@ -4,7 +4,7 @@ import logging
 
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
-logger = logging.getLogger("CO2Estimator")
+logger = logging.getLogger("foodprint")
 
 
 def log_with_url(func):

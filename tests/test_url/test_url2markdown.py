@@ -1,6 +1,7 @@
 from unittest.mock import Mock
 
 import pytest
+import requests
 from bs4 import BeautifulSoup
 
 from food_co2_estimator.url.url2markdown import (
@@ -137,7 +138,7 @@ def test_remove_all_anchor_tags(html_content, expected_content):
             "Title\n=====\n\nParagraph",
         ),
         (
-            "<html><body><ul><li>Item 1</li><li>Item 2</li></body></ul>",
+            "<html><body><ul><li>Item 1</li><li>Item 2</li></ul></body></html>",
             "* Item 1\n* Item 2",
         ),
         ("<html><body><strong>Bold</strong></body></html>", "**Bold**"),
@@ -190,7 +191,7 @@ def test_convert_body_to_markdown(html_content, expected_markdown):
         ("https://example.com/simple", "Simple content"),
         ("https://example.com/complex", "Title\n=====\n\nComplex content"),
         ("https://example.com/empty", ""),  # Empty content
-        ("https://example.com/invalid", "Error: Invalid URL"),  # Invalid URL
+        ("https://example.com/invalid", None),  # Invalid URL
     ],
     ids=["simple_content", "complex_content", "empty_content", "invalid_url"],
 )
@@ -209,17 +210,95 @@ def test_get_markdown_from_url(mocker, url, expected_markdown):
                 self.text = text
 
             def raise_for_status(self):
-                pass
+                if self.text is None:
+                    raise requests.RequestException("Invalid URL")
 
-        if mock_html_content[url] is None:
-            raise Exception("Invalid URL")
         return MockResponse(mock_html_content[url])
 
-    mocker.patch("requests.get", side_effect=mock_requests_get)
+    mocker.patch(
+        "food_co2_estimator.url.url2markdown.requests.get",
+        side_effect=mock_requests_get,
+    )
 
-    if url == "https://example.com/invalid":
-        with pytest.raises(Exception, match="Invalid URL"):
-            get_markdown_from_url(url)
-    else:
-        result = get_markdown_from_url(url)
-        assert result == expected_markdown
+    result = get_markdown_from_url(url)
+    assert result == expected_markdown
+
+
+# A dummy response class for simulating requests.get responses
+class DummyResponse:
+    def __init__(self, text):
+        self.text = text
+
+    def raise_for_status(self):
+        pass
+
+
+def test_fetch_page_content_invalid_url(monkeypatch):
+    """Test that fetch_page_content returns None when the URL is invalid."""
+    # Supplying an invalid URL that validators.url should return False for.
+    invalid_url = "not-a-valid-url"
+    # Since the URL is invalid, requests.get will not be called.
+    result = fetch_page_content(invalid_url, {})
+    assert result is None
+
+
+def test_fetch_page_content_with_custom_headers(monkeypatch):
+    """Test that fetch_page_content calls requests.get with the provided headers."""
+    url = "https://example.com"
+    custom_headers = {"User-Agent": "TestAgent"}
+
+    def dummy_get(url_arg, headers):
+        # Verify that the URL and headers are passed correctly.
+        assert url_arg == url
+        assert headers == custom_headers
+        return DummyResponse("Custom header response")
+
+    monkeypatch.setattr(requests, "get", dummy_get)
+    result = fetch_page_content(url, custom_headers)
+    assert result == "Custom header response"
+
+
+def test_get_markdown_from_url_no_body(monkeypatch):
+    url = "https://example.com/no-body"
+    html_without_body = (
+        "<html><head><title>No Body</title></head><div>Missing body tag</div></html>"
+    )
+
+    def dummy_get(url_arg, headers):
+        return DummyResponse(html_without_body)
+
+    monkeypatch.setattr(requests, "get", dummy_get)
+    result = get_markdown_from_url(url)
+    # When there is no <body>, convert_body_to_markdown returns None.
+    assert result is None
+
+
+def test_get_markdown_from_url_fetch_failure(monkeypatch):
+    """Test that get_markdown_from_url returns None when fetching the page fails."""
+    url = "https://example.com/error"
+
+    def dummy_get(url_arg, headers):
+        raise requests.RequestException("Simulated network error")
+
+    monkeypatch.setattr(requests, "get", dummy_get)
+    result = get_markdown_from_url(url)
+    assert result is None
+
+
+def test_fetch_page_content_http_exception(monkeypatch):
+    """Test that fetch_page_content returns None when raise_for_status raises an HTTPError."""
+    url = "https://example.com"
+    headers = {}
+
+    class MockResponse:
+        text = "Error response"
+
+        def raise_for_status(self):
+            raise requests.HTTPError("HTTP error")
+
+    def dummy_get(url_arg, headers=None):
+        return MockResponse()
+
+    monkeypatch.setattr(requests, "get", dummy_get)
+    result = fetch_page_content(url, headers)
+    assert result is None

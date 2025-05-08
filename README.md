@@ -10,8 +10,10 @@ This repository contains code for estimating CO2 emissions from the ingredient l
   - [Running the Flask App](#running-the-flask-app)
   - [Heroku](#heroku)
   - [Using the CO2 Estimator](#using-the-co2-estimator)
-  - [Project Structure](#project-structure)
   - [Environment Variables](#environment-variables)
+- [Docker](#docker)
+  - [Build backend](#build-backend)
+  - [Build frontend](#build-frontend)
   
 
 ## Installation
@@ -57,63 +59,62 @@ The CO2 estimator can be used to calculate the CO2 emissions of recipes. Here's 
 heroku logs --source app
 ```
 
-## Project Structure
-
-The project is organized as follows:
-
-```
-.
-├── .github/
-│   └── workflows/
-├── .vscode/
-│   ├── launch.json
-│   └── settings.json
-├── food_co2_estimator/
-│   ├── chains/
-│   ├── data/
-│   ├── language/
-│   ├── output_parsers/
-│   ├── prompt_templates/
-│   ├── pydantic_models/
-│   ├── retrievers/
-│   ├── url/
-│   ├── __init__.py
-│   ├── main.py
-├── sandbox/
-├── templates/
-│   └── index.html
-├── tests/
-├── .coverage
-├── .DS_Store
-├── .flake8
-├── .gitignore
-├── .python-version
-├── LICENSE
-├── Makefile
-├── poetry.lock
-├── pyproject.toml
-├── README.md
-└── app.py
-```
 
 ## Environment Variables
-The following environment variables must be set in the .env file:
+Set the following environment variables according to template.env file:
 
-- `OPENAI_API_KEY`: Your OpenAI API key for accessing language models.
-- `SERPER_API_KEY`: Your Serper API key for using Serper to search google and structure results
-- `MY_MAIL`: Your mail for MyMemory translation provider. Increases the number of translations cap.
-- `GPT_MODEL`: Model to be used when calling OpenAI.
+# Docker
 
-Test PR
+Use following commands to build and deploy app.
 
-Set the following environment variables in your `.env` file:
+## Build backend
 
+1. Build image locally
 ```bash
-OPENAI_API_KEY=<your_key>
-SERPER_API_KEY=<your_key>
-MY_MAIL=<your_email>
-GPT_MODEL=<gpt_model>
+docker build -t foodprint-backend:latest  .
 ```
+
+2. Test image locally
+```bash
+docker run \
+  --env-file .env \
+  -p 8080:8080 \
+  -v "$(pwd)/.credentials:/var/secrets/credentials:ro" \
+  -e GOOGLE_APPLICATION_CREDENTIALS=/var/secrets/credentials/$GOOGLE_APPLICATION_CREDENTIALS_FILENAME \
+  -e ENV=prod \
+  -it foodprint-backend:latest
+```
+
+3. Build image in cloud and deploy
+```bash
+gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
+```
+
+## Build frontend
+
+1. Build image locally
+```bash
+cd foodprint
+docker build -t foodprint-frontend:latest  .
+```
+
+2. Test image locally
+```bash
+docker run \
+  --env API_BASE="http://host.docker.internal:8000"  \
+  --env FOODPRINT_API_KEY=$FOODPRINT_API_KEY \
+  -p 3000:3000 \
+  -it foodprint-frontend:latest
+```
+
+Note, that http://host.docker.internal:8000 requires backend code is running locally 
+
+1. Build image in cloud and deploy
+```bash
+cd foodprint
+gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
+```
+
 
 
 

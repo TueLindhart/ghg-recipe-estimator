@@ -16,9 +16,13 @@ from food_co2_estimator.url.variables import (
 def fetch_page_content(url: str, headers: dict) -> str | None:
     """Fetch the page content as text using requests."""
     if validators.url(url):
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()  # Raises HTTPError if the response was unsuccessful
-        return response.text
+        try:
+            # Check if the URL is valid
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()  # Raises HTTPError if the response was unsuccessful
+            return response.text
+        except (requests.RequestException, requests.HTTPError) as e:
+            print(f"Error fetching the URL: {e}")
 
 
 def parse_html(html_content: str, parser: str = "html.parser") -> BeautifulSoup:

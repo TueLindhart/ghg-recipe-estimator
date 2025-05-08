@@ -7,7 +7,7 @@ from flask import Blueprint, jsonify, request
 comparison_api = Blueprint("comparison_api", __name__)
 
 # Set up a logger for this module (if not already set by your Flask app)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("foodprint")
 logger.setLevel(logging.DEBUG)  # Ensure debug level logging
 
 

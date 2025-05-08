@@ -1,4 +1,0 @@
-# Exclude tests and sandbox in app
-sandbox/
-tests/
-data/
