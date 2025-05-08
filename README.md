@@ -65,6 +65,8 @@ Set the following environment variables according to template.env file:
 
 # Docker
 
+Use following commands to build and deploy app.
+
 ## Build backend
 
 1. Build image locally
