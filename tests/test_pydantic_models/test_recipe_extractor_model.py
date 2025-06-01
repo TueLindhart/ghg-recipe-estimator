@@ -8,10 +8,6 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
     ExtractedRecipe,
 )
-from food_co2_estimator.pydantic_models.search_co2_estimator import (
-    CO2SearchResult,
-    CO2SearchResults,
-)
 from food_co2_estimator.pydantic_models.weight_estimator import (
     WeightEstimate,
     WeightEstimates,
@@ -122,29 +118,6 @@ def test_update_with_co2_per_kg_db(recipe: EnrichedRecipe):
             assert ingredient.co2_per_kg_db is None
 
 
-def test_update_with_co2_per_kg_search(recipe: EnrichedRecipe):
-    search_results = CO2SearchResults(
-        search_results=[
-            CO2SearchResult(
-                explanation="This was the best match.",
-                ingredient="1 can of tomatoes",
-                result=2.0,
-            )
-        ]
-    )
-
-    recipe.update_with_co2_per_kg_search(search_results)
-
-    for ingredient, co2 in zip(recipe.ingredients, [2.0, None, 2.0]):
-        if co2:
-            assert (
-                ingredient.co2_per_kg_search is not None
-                and ingredient.co2_per_kg_search.result == co2
-            )
-        else:
-            assert ingredient.co2_per_kg_search is None
-
-
 def test_get_ingredients_lists(recipe: EnrichedRecipe):
     en_names = recipe.get_ingredients_en_name_list()
     orig_names = recipe.get_ingredients_orig_name_list()
@@ -156,6 +129,7 @@ def test_get_ingredients_lists(recipe: EnrichedRecipe):
 def test_from_extracted_recipe():
     ingredients = ["1 dåse tomater", "2 agurker", "1 dåse tomater"]
     extracted = ExtractedRecipe(
+        title="Dummy Recipe",
         ingredients=ingredients,
         persons=2,
         instructions="Mix ingredients",
