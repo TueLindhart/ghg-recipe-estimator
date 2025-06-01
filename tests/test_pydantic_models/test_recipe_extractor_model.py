@@ -21,6 +21,7 @@ from food_co2_estimator.pydantic_models.weight_estimator import (
 @pytest.fixture
 def recipe_before_translation():
     return EnrichedRecipe(
+        title="Dummy Recipe",
         url="http://example.com",
         ingredients=[
             EnrichedIngredient(
@@ -41,6 +42,7 @@ def recipe_before_translation():
 @pytest.fixture
 def recipe():
     return EnrichedRecipe(
+        title="Dummy Recipe",
         url="http://example.com",
         ingredients=[
             EnrichedIngredient(

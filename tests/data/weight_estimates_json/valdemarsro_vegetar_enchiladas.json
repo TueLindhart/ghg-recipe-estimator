@@ -32,7 +32,7 @@
         },
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
@@ -62,12 +62,12 @@
         },
         {
             "ingredient": "Black pepper",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
@@ -132,7 +132,7 @@
         },
         {
             "ingredient": "Black pepper",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {

@@ -11,38 +11,33 @@
             "weight_in_kg": 0.0525
         },
         {
-            "ingredient": "1 Cup Chicken Stock",
-            "weight_calculation": "1 cup = 240 g, 1 * 240 g = 240 g = 0.24 kg.",
+            "ingredient": "1 cup chicken stock, unsalted",
+            "weight_calculation": "1 cup chicken stock = 240 g, 1 * 240 g = 240 g = 0.24 kg.",
             "weight_in_kg": 0.24
         },
         {
-            "ingredient": "1 lb chicken thigh",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lb = 454 g, 1 * 454 g = 454 g = 0.454 kg.",
+            "ingredient": "1 lb Chicken Thigh, Boneless, Skinless, 1-inch Pieces",
+            "weight_calculation": "1 lb = 454 g, 1 * 454 g = 454 g = 0.454 kg.",
             "weight_in_kg": 0.454
         },
         {
-            "ingredient": "2 TBSP Palm Sugar",
+            "ingredient": "2 TBSP Palm Sugar, Finely Chopped",
             "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "1.5 TBSP FISH SAUCE",
-            "weight_calculation": "1 tbsp = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg.",
-            "weight_in_kg": 0.0225
-        },
-        {
-            "ingredient": "2 tbsp fish sauce",
-            "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
-            "weight_in_kg": 0.03
+            "ingredient": "1.75 tbsp fish sauce",
+            "weight_calculation": "1 tbsp = 15 g, 1.75 * 15 g = 26.25 g = 0.02625 kg.",
+            "weight_in_kg": 0.02625
         },
         {
             "ingredient": "4 Makrut Lime Leaves",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg.",
             "weight_in_kg": 0.004
         },
         {
-            "ingredient": "1 550-ML CAN BAMBOO SHOOTS",
-            "weight_calculation": "1 can = 400 g, 550 ml ~ 550 g, LLM estimate is: 550 g = 0.55 kg.",
+            "ingredient": "1 550-ML CAN BAMBOO Shoots Strips, Drained and Rinsed",
+            "weight_calculation": "1 can = 400 g, 1 * 550 g = 550 g = 0.55 kg.",
             "weight_in_kg": 0.55
         },
         {
@@ -51,12 +46,12 @@
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "0.25 Red Bell Pepper",
+            "ingredient": "0.25 Red Bell Pepper, Julienned",
             "weight_calculation": "1 bell pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg.",
             "weight_in_kg": 0.0375
         },
         {
-            "ingredient": "Jasmine Rice",
+            "ingredient": "Jasmine Rice for serving",
             "weight_calculation": "Amount of Jasmine Rice not specified. LLM estimate is: 1 serving = 0.125 kg, 4 * 0.125 kg = 0.5 kg.",
             "weight_in_kg": 0.5
         },
@@ -77,7 +72,7 @@
         },
         {
             "ingredient": "15 Green Thai Chilies",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili = 5 g, 15 * 5 g = 75 g = 0.075 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 green Thai chili = 5 g, 15 * 5 g = 75 g = 0.075 kg.",
             "weight_in_kg": 0.075
         },
         {
@@ -87,17 +82,17 @@
         },
         {
             "ingredient": "15 Thai Basil Leaves",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 leaf = 1 g, 15 * 1 g = 15 g = 0.015 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 basil leaf = 1 g, 15 * 1 g = 15 g = 0.015 kg.",
             "weight_in_kg": 0.015
         },
         {
-            "ingredient": "3 tbsp lemongrass",
-            "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
+            "ingredient": "3 TBSP THINLY SLICED LEMONGRASS",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp lemongrass = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
             "weight_in_kg": 0.045
         },
         {
-            "ingredient": "1 tbsp galangal",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg.",
+            "ingredient": "1 tbsp Finely chopped galangal",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp galangal = 15 g, 1 * 15 g = 15 g = 0.015 kg.",
             "weight_in_kg": 0.015
         },
         {
@@ -107,16 +102,16 @@
         },
         {
             "ingredient": "2 Cilantro Roots or 4 Big Cilantro Stems",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 2 cilantro roots or 4 big cilantro stems = 30 g = 0.03 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 2 cilantro roots = 30 g, 1 * 30 g = 30 g = 0.03 kg.",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "3 tbsp Shallots",
+            "ingredient": "3 TBSP FINY CHOPPED SHALLOTS",
             "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
             "weight_in_kg": 0.045
         },
         {
-            "ingredient": "2 tbsp Garlic",
+            "ingredient": "2 TBSP FINY CHOPPED GARLIC",
             "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
             "weight_in_kg": 0.03
         },

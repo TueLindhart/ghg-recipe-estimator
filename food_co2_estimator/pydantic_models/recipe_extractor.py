@@ -3,10 +3,6 @@ from typing import List
 from pydantic import BaseModel, Field
 
 from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions, CO2perKg
-from food_co2_estimator.pydantic_models.search_co2_estimator import (
-    CO2SearchResult,
-    CO2SearchResults,
-)
 from food_co2_estimator.pydantic_models.weight_estimator import (
     WeightEstimate,
     WeightEstimates,
@@ -37,7 +33,6 @@ class EnrichedIngredient(BaseModel):
     en_name: str | None = None
     weight_estimate: WeightEstimate | None = None
     co2_per_kg_db: CO2perKg | None = None
-    co2_per_kg_search: CO2SearchResult | None = None
 
     @classmethod
     def from_list(cls, ingredients: list[str]) -> List["EnrichedIngredient"]:
@@ -62,13 +57,6 @@ class EnrichedIngredient(BaseModel):
             and self.en_name.strip() == co2_per_kg.ingredient.strip()
         ):
             self.co2_per_kg_db = co2_per_kg
-
-    def set_co2_per_kg_search(self, co2_per_kg_search: CO2SearchResult):
-        if (
-            self.en_name is not None
-            and self.en_name.strip() == co2_per_kg_search.ingredient.strip()
-        ):
-            self.co2_per_kg_search = co2_per_kg_search
 
 
 class EnrichedRecipe(ExtractedRecipe):
@@ -96,7 +84,7 @@ class EnrichedRecipe(ExtractedRecipe):
         )
 
     def get_match_objects(
-        self, obj: WeightEstimate | CO2perKg | CO2SearchResult
+        self, obj: WeightEstimate | CO2perKg
     ) -> list[EnrichedIngredient]:
         matched_ingredients = []
         for ingredient in self.ingredients:
@@ -131,9 +119,3 @@ class EnrichedRecipe(ExtractedRecipe):
             ingredients = self.get_match_objects(co2_per_kg)
             for ingredient in ingredients:
                 ingredient.set_co2_per_kg_db(co2_per_kg)
-
-    def update_with_co2_per_kg_search(self, co2_emissions: CO2SearchResults):
-        for co2_per_kg in co2_emissions.search_results:
-            ingredients = self.get_match_objects(co2_per_kg)
-            for ingredient in ingredients:
-                ingredient.set_co2_per_kg_search(co2_per_kg)

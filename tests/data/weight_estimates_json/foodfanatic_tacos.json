@@ -16,7 +16,7 @@
             "weight_in_kg": 0.075
         },
         {
-            "ingredient": "oil",
+            "ingredient": "Oil for frying",
             "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg",
             "weight_in_kg": 0.04
         },
@@ -31,7 +31,7 @@
             "weight_in_kg": 0.0225
         },
         {
-            "ingredient": "chili powder",
+            "ingredient": "chili powder or flakes to taste",
             "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
@@ -46,7 +46,7 @@
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "2.5 dl beef fund",
+            "ingredient": "2.5 dl beef fund/broth",
             "weight_calculation": "1 dl = 0.1 kg, 2.5 * 0.1 kg = 0.25 kg",
             "weight_in_kg": 0.25
         },
@@ -62,7 +62,7 @@
         },
         {
             "ingredient": "1 Avocado",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: Avocado = 200 g, 1 * 200 g = 200 g = 0.2 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 200 g, 1 * 200 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
@@ -92,12 +92,12 @@
         },
         {
             "ingredient": "0.75 chili pepper",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: chili pepper = 100 g, 0.75 * 100 g = 75 g = 0.075 kg",
-            "weight_in_kg": 0.075
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg",
+            "weight_in_kg": 0.0375
         },
         {
             "ingredient": "0.5 Bdt coriander",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 bunch/bnch parsley = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
@@ -106,8 +106,8 @@
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "juice of 0.5 lime",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
+            "ingredient": "The juice of 0.5 lime",
+            "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
             "weight_in_kg": 0.0425
         },
         {

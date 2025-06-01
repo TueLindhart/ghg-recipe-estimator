@@ -11,6 +11,7 @@ WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
     title="Torskefisketerrine med dild og persille",
     ingredients=[
         "500 g torskefilet",
+        "2 dåser hakkede tomater",
         "1 tsk havsalt",
         "1 tsk peber",
         "2 stk æg",
@@ -60,6 +61,7 @@ Denne lækre torskefisketerrine er perfekt til en forret eller som en del af en 
 **Ingredienser**
 - 500 g torskefilet, i skiver
 - 1 tsk havsalt og 1 tsk peber
+- 2 ds hakkede tomater
 - 2 stk æg
 - 1 stk gulerod
 - ½ dl fløde 13%
@@ -165,6 +167,7 @@ Follow the detailed instructions below carefully. Any deviation from them will r
        - tablespoon → tbsp
        - gram → g
        - kilogram → kg
+       - ds → dåse
 
 4. Handle Ranges
    - For ranges (e.g., "1–2 cloves of garlic"), use the average.

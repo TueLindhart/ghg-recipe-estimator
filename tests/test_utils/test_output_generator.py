@@ -19,7 +19,7 @@ from food_co2_estimator.utils.output_generator import (
 @pytest.fixture
 def enriched_recipe_db_english():
     return EnrichedRecipe(
-        url="http://example.com",
+        title="Test Recipe",
         ingredients=[
             EnrichedIngredient(
                 original_name="2 tomatoes",
@@ -75,13 +75,14 @@ def enriched_recipe_db_english():
         ],
         persons=4,
         instructions="Mix ingredients",
+        url="http://example.com",
     )
 
 
 @pytest.fixture
 def enriched_recipe_search_english():
     return EnrichedRecipe(
-        url="http://example.com",
+        title="Test Recipe",
         ingredients=[
             EnrichedIngredient(
                 original_name="2 tomatoes",
@@ -131,125 +132,8 @@ def enriched_recipe_search_english():
         ],
         persons=4,
         instructions="Mix ingredients",
+        url="http://example.com",
     )
-
-
-# @pytest.fixture
-# def enriched_recipe_db_danish():
-#     return EnrichedRecipe(
-#         url="http://example.com",
-#         ingredients=[
-#             EnrichedIngredient(
-#                 original_name="2 tomater",
-#                 en_name="2 tomatoes",
-#                 weight_estimate=WeightEstimate(
-#                     ingredient="2 tomatoes",
-#                     weight_calculation="2 tomatoes = 200g",
-#                     weight_in_kg=0.2,
-#                 ),
-#                 co2_per_kg_db=CO2perKg(
-#                     ingredient="2 tomatoes",
-#                     ingredient_id="123",
-#                     co2_per_kg=2.5,
-#                     closest_match_explanation="Database entry",
-#                     closest_match_name="tomatoes, canned",
-#                     unit="kg CO2e / kg",
-#                 ),
-#             ),
-#             EnrichedIngredient(
-#                 original_name="1 liter mælk",
-#                 en_name="1 liter of milk",
-#                 weight_estimate=WeightEstimate(
-#                     ingredient="1 liter of milk",
-#                     weight_calculation="1 liter = 1kg",
-#                     weight_in_kg=1.0,
-#                 ),
-#                 co2_per_kg_db=CO2perKg(
-#                     ingredient="1 liter of milk",
-#                     ingredient_id="456",
-#                     co2_per_kg=1.0,
-#                     closest_match_explanation="Database entry",
-#                     closest_match_name="tomatoes, canned",
-#                     unit="kg CO2e / kg",
-#                 ),
-#             ),
-#             EnrichedIngredient(
-#                 original_name="3 store æg",
-#                 en_name="3 large eggs",
-#                 weight_estimate=WeightEstimate(
-#                     ingredient="3 large eggs",
-#                     weight_calculation="3 large eggs = 150g",
-#                     weight_in_kg=0.15,
-#                 ),
-#                 co2_per_kg_db=CO2perKg(
-#                     ingredient="3 large eggs",
-#                     ingredient_id="789",
-#                     co2_per_kg=3.0,
-#                     closest_match_explanation="Database entry",
-#                     closest_match_name="tomatoes, canned",
-#                     unit="kg CO2e / kg",
-#                 ),
-#             ),
-#         ],
-#         persons=4,
-#         instructions="Mix ingredients",
-#     )
-
-
-# @pytest.fixture
-# def enriched_recipe_search_danish():
-#     return EnrichedRecipe(
-#         url="http://example.com",
-#         ingredients=[
-#             EnrichedIngredient(
-#                 original_name="2 tomater",
-#                 en_name="2 tomatoes",
-#                 weight_estimate=WeightEstimate(
-#                     ingredient="2 tomatoes",
-#                     weight_calculation="2 tomatoes = 200g",
-#                     weight_in_kg=0.2,
-#                 ),
-#                 co2_per_kg_search=CO2SearchResult(
-#                     ingredient="2 tomatoes",
-#                     result=2.0,
-#                     explanation="Search result",
-#                     unit="kg CO2e / kg",
-#                 ),
-#             ),
-#             EnrichedIngredient(
-#                 original_name="1 liter mælk",
-#                 en_name="1 liter of milk",
-#                 weight_estimate=WeightEstimate(
-#                     ingredient="1 liter of milk",
-#                     weight_calculation="1 liter = 1kg",
-#                     weight_in_kg=1.0,
-#                 ),
-#                 co2_per_kg_search=CO2SearchResult(
-#                     ingredient="1 liter of milk",
-#                     result=1.0,
-#                     explanation="Search result",
-#                     unit="kg CO2e / kg",
-#                 ),
-#             ),
-#             EnrichedIngredient(
-#                 original_name="3 store æg",
-#                 en_name="3 large eggs",
-#                 weight_estimate=WeightEstimate(
-#                     ingredient="3 large eggs",
-#                     weight_calculation="3 large eggs = 150g",
-#                     weight_in_kg=0.15,
-#                 ),
-#                 co2_per_kg_search=CO2SearchResult(
-#                     ingredient="3 large eggs",
-#                     result=3.0,
-#                     explanation="Search result",
-#                     unit="kg CO2e / kg",
-#                 ),
-#             ),
-#         ],
-#         persons=4,
-#         instructions="Mix ingredients",
-#     )
 
 
 @pytest.mark.parametrize(
@@ -260,6 +144,8 @@ def enriched_recipe_search_english():
             # Languages.English,
             0.1,
             RecipeCO2Output(
+                title="Test Recipe",
+                url="http://example.com",
                 total_co2_kg=1.9,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
@@ -303,6 +189,8 @@ def enriched_recipe_search_english():
             # Languages.English,
             0.1,
             RecipeCO2Output(
+                title="Test Recipe",
+                url="http://example.com",
                 total_co2_kg=1.8,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,

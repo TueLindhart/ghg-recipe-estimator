@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Exact match found for minced beef with 'beef, mince, 5-10% fat, raw' which is the least processed and highest emission among minced beef options (Rule 4 and 5).",
+            "closest_match_explanation": "Exact match for minced beef found as 'beef, mince, 5-10% fat, raw' which is the least processed and highest emission option among minced beef variants (Rule 4 and 5).",
             "ingredient_id": "Ra00016",
             "closest_match_name": "beef, mince, 5-10% fat, raw",
             "ingredient": "1 kg of minced beef",
@@ -9,7 +9,7 @@
             "co2_per_kg": 50.6
         },
         {
-            "closest_match_explanation": "Exact match for onions as 'onion, raw' which is the least processed form (Rule 4).",
+            "closest_match_explanation": "Exact match for onions as 'onion, raw' chosen as least processed form (Rule 4).",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "3 large onions",
@@ -17,7 +17,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Exact match for carrots as 'carrot, raw' which is the least processed form (Rule 4).",
+            "closest_match_explanation": "Exact match for carrots as 'carrot, raw' chosen as least processed form (Rule 4).",
             "ingredient_id": "Ra00257",
             "closest_match_name": "carrot, raw",
             "ingredient": "3 carrots",
@@ -25,7 +25,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Exact match for celery as 'celery, raw' which is the least processed form (Rule 4).",
+            "closest_match_explanation": "Exact match for celery as 'celery, raw' chosen as least processed form (Rule 4).",
             "ingredient_id": "Ra00153",
             "closest_match_name": "celery, raw",
             "ingredient": "2.5 Stalk leaf celery",
@@ -33,7 +33,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Exact match for garlic as 'garlic, raw' which is the least processed form (Rule 4).",
+            "closest_match_explanation": "Exact match for garlic as 'garlic, raw' chosen as least processed form (Rule 4).",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "6 cloves of garlic",
@@ -41,7 +41,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Exact match for tomato concentrate as 'tomato paste, concentrated' reflecting the processing (Rule 4).",
+            "closest_match_explanation": "Exact match for tomato concentrate as 'tomato paste, concentrated' which reflects processing (Rule 4).",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "150 g tomato concentrate",
@@ -49,10 +49,10 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Best match for chopped tomatoes is 'tomato, peeled, canned' which is less processed than dried or paste (Rule 4).",
+            "closest_match_explanation": "Exact match for canned tomatoes as 'tomato, peeled, canned' reflecting canning processing (Rule 4).",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "3 DS chopped tomatoes or polpa",
+            "ingredient": "3 cans of chopped tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
@@ -65,15 +65,15 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Best match for generic oil is 'oil for frying' which is a common oil type and less processed than olive oil (Rule 4).",
-            "ingredient_id": "Ra00348",
-            "closest_match_name": "oil for frying",
+            "closest_match_explanation": "Multiple oil options available; 'olive oil' chosen as a common oil type with highest emission factor for conservative estimate (Rule 5).",
+            "ingredient_id": "Ra00349",
+            "closest_match_name": "olive oil",
             "ingredient": "oil",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.8
+            "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Best match for freshly ground pepper is 'pepper, black' which is the common pepper type (Rule 7).",
+            "closest_match_explanation": "Exact match for black pepper as 'pepper, black' chosen over chili pepper due to common usage and higher emission (Rule 5).",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "freshly ground pepper",
@@ -81,7 +81,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Exact match for fresh basil leaves as 'basil, fresh' (Rule 4).",
+            "closest_match_explanation": "Exact match for fresh basil leaves as 'basil, fresh' least processed form (Rule 4).",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "1 handful of fresh basil leaves",
@@ -89,7 +89,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Best match for pasta is 'pasta, raw' which is the least processed pasta option (Rule 4).",
+            "closest_match_explanation": "Exact match for pasta as 'pasta, raw' least processed form (Rule 4).",
             "ingredient_id": "Ra00234",
             "closest_match_name": "pasta, raw",
             "ingredient": "Pasta as desired",

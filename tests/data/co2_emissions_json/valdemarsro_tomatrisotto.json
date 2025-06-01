@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Exact match found for '1 onion' as 'onion, raw' with lowest processing and realistic emission factor (Rule 1, 4).",
+            "closest_match_explanation": "Exact match for '1 onion' is not available, but 'onion, raw' is a direct and least processed match for onion (Rule 4). It is more appropriate than 'red onion' or 'onions, chopped and deepfried' due to less processing and common sense (Rule 1).",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 onion",
@@ -9,7 +9,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Exact match found for '3 cloves of garlic' as 'garlic, raw' with no processing and realistic emission (Rule 1, 4).",
+            "closest_match_explanation": "Exact match 'garlic, raw' is available and least processed option, so chosen (Rule 4).",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "3 cloves of garlic",
@@ -17,15 +17,15 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Broader category 'rice' used for '400 g risotto rice' with least processed option 'rice, parboiled, raw' (Rule 2, 4).",
-            "ingredient_id": "Ra00300",
-            "closest_match_name": "rice, parboiled, raw",
+            "closest_match_explanation": "No exact match for 'risotto rice', but 'rice groats, raw' is a broader category of rice and least processed (Rule 2 and 4).",
+            "ingredient_id": "Ra00133",
+            "closest_match_name": "rice groats, raw",
             "ingredient": "400 g risotto rice",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.1
         },
         {
-            "closest_match_explanation": "Broader category 'wine, white, average values' used for '2 dl white wine' with no further processing (Rule 2, 4).",
+            "closest_match_explanation": "Exact match for white wine not available, but 'wine, white, average values' is a suitable match (Rule 1 and 4).",
             "ingredient_id": "Ra00375",
             "closest_match_name": "wine, white, average values",
             "ingredient": "2 dl white wine",
@@ -33,7 +33,7 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Broader category 'tomato, ripe, raw' used for '400 g of ripped tomatoes' as no exact 'ripped' but raw tomato best fit (Rule 2, 4).",
+            "closest_match_explanation": "No exact match for 'ripped tomatoes', but 'tomato, ripe, raw' is the least processed and closest match (Rule 2 and 4).",
             "ingredient_id": "Ra00002",
             "closest_match_name": "tomato, ripe, raw, origin unknown",
             "ingredient": "400 g of ripped tomatoes",
@@ -41,7 +41,7 @@
             "co2_per_kg": 0.5
         },
         {
-            "closest_match_explanation": "Exact match for '25 g concentrated tomato puree' as 'tomato paste, concentrated' with matching processing (Rule 1, 4).",
+            "closest_match_explanation": "Exact match 'tomato paste, concentrated' is available and matches concentrated tomato puree (Rule 4).",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "25 g concentrated tomato puree",
@@ -49,7 +49,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "No exact match for 'vegetable broth', broader category 'vegetable steaks' chosen as closest vegetable product (Rule 2).",
+            "closest_match_explanation": "No exact match for vegetable broth, but 'vegetable steaks' is the closest vegetable-based option available (Rule 2).",
             "ingredient_id": "Ra00430",
             "closest_match_name": "vegetable steaks",
             "ingredient": "9 dl vegetable broth",
@@ -57,7 +57,7 @@
             "co2_per_kg": 1.5
         },
         {
-            "closest_match_explanation": "Exact match for 'sun-dried tomatoes' chosen over 'garlic in oil' due to main ingredient and processing (Rule 1, 4).",
+            "closest_match_explanation": "Exact match 'sundried tomatoes' chosen as closest match; 'garlic in oil' is less relevant (Rule 4).",
             "ingredient_id": "Ra00447",
             "closest_match_name": "sundried tomatoes",
             "ingredient": "25 g sun -dried tomatoes in oil",
@@ -65,7 +65,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Exact match for '125 g parmesan' as 'cheese, hard, parmesan' with highest emission among similar options (Rule 1, 4, 5).",
+            "closest_match_explanation": "Exact match 'cheese, hard, parmesan, 32 % fidm.' chosen (Rule 4).",
             "ingredient_id": "Ra00079",
             "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
             "ingredient": "125 g parmesan",
@@ -73,15 +73,15 @@
             "co2_per_kg": 5.4
         },
         {
-            "closest_match_explanation": "Exact match for '0.5 ECO Lemon (finely grated shell)' as 'lemon, raw' (Rule 1, 4).",
+            "closest_match_explanation": "Exact match 'lemon, raw' chosen (Rule 4).",
             "ingredient_id": "Ra00328",
             "closest_match_name": "lemon, raw",
-            "ingredient": "0.5 ECO Lemon (finely grated shell)",
+            "ingredient": "0.5 ECO Lemon",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.7
         },
         {
-            "closest_match_explanation": "Exact match for '1 tablespoon olive oil' as 'olive oil' with highest emission among oil options (Rule 1, 4, 5).",
+            "closest_match_explanation": "Exact match 'olive oil' chosen (Rule 4).",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "1 tablespoon olive oil",
@@ -89,7 +89,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Exact match for 'Black pepper' as 'pepper, black' with highest emission among pepper options (Rule 1, 4, 5).",
+            "closest_match_explanation": "Exact match 'pepper, black' chosen (Rule 4).",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "Black pepper",
@@ -97,7 +97,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Broader category 'stuffed fresh pasta' chosen for '1 burrata' as closest match among cheese/dairy options (Rule 2, 4).",
+            "closest_match_explanation": "No exact match for burrata cheese, but 'stuffed fresh pasta' is closest dairy/cheese-related option available (Rule 2).",
             "ingredient_id": "Ra00420",
             "closest_match_name": "stuffed fresh pasta",
             "ingredient": "1 burrata",
@@ -105,7 +105,7 @@
             "co2_per_kg": 1.9
         },
         {
-            "closest_match_explanation": "Exact match for '25 g pesto' as 'pesto' with matching processing (Rule 1, 4).",
+            "closest_match_explanation": "Exact match 'pesto' chosen (Rule 4).",
             "ingredient_id": "Ra00381",
             "closest_match_name": "pesto",
             "ingredient": "25 g pesto",
@@ -113,7 +113,7 @@
             "co2_per_kg": 4.2
         },
         {
-            "closest_match_explanation": "Exact match for '25 g parmesan' as 'cheese, hard, parmesan' with highest emission among similar options (Rule 1, 4, 5).",
+            "closest_match_explanation": "Exact match 'cheese, hard, parmesan, 32 % fidm.' chosen (Rule 4).",
             "ingredient_id": "Ra00079",
             "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
             "ingredient": "25 g parmesan",
@@ -121,7 +121,7 @@
             "co2_per_kg": 5.4
         },
         {
-            "closest_match_explanation": "Exact match for '0.5 Handful of fresh basil' as 'basil, fresh' with lowest processing (Rule 1, 4).",
+            "closest_match_explanation": "Exact match 'basil, fresh' chosen as least processed form (Rule 4).",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "0.5 Handful of fresh basil",

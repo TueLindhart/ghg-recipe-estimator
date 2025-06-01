@@ -16,8 +16,8 @@
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "1 BDT Green Asparagus",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
+            "ingredient": "1 bundle of green asparagus",
+            "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg",
             "weight_in_kg": 0.5
         },
         {
@@ -27,17 +27,17 @@
         },
         {
             "ingredient": "1 large handful of fresh basil",
-            "weight_calculation": "Handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "2 dl cream",
-            "weight_calculation": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 dl water",
-            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -52,22 +52,22 @@
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
+            "weight_calculation": "Amount of mozzarella not specified. LLM estimate is: 1 handful = 0.05 kg, 1 * 0.05 kg = 0.05 kg",
             "weight_in_kg": 0.05
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "Oil",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg.",
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg",
             "weight_in_kg": 0.04
         }
     ]

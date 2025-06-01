@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Exact match found for '2 cloves of garlic' to 'garlic, raw' with the same raw state and minimal processing, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match found for '2 cloves of garlic' to 'garlic, raw' with the least processing and realistic emission value (Rule 1, 4, 8).",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -9,7 +9,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Exact match found for '1 tablespoon olive oil' to 'olive oil' with no additional processing, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match found for '1 tablespoon olive oil' to 'olive oil' with no processing difference and realistic emission (Rule 1, 4, 8).",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "1 tablespoon olive oil",
@@ -17,7 +17,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Exact match found for '1 onion' to 'onion, raw' as the least processed option, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match for '1 onion' to 'onion, raw' chosen as least processed option over 'red onion' (Rule 4).",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 onion",
@@ -25,7 +25,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Best match for '1 dl vegetable broth' is 'bouillon, chicken, prepared' as a prepared broth closest to vegetable broth, following rules 1, 2, 4, and 8.",
+            "closest_match_explanation": "No exact match for 'vegetable broth'; closest broader category is 'bouillon, chicken, prepared' as a broth type with low processing (Rule 2, 4).",
             "ingredient_id": "Ra00213",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "1 dl vegetable broth",
@@ -33,7 +33,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Exact match found for '1 can of chopped tomatoes' to 'tomato, peeled, canned' with matching processing (canned), following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match for canned tomatoes to 'tomato, peeled, canned' with appropriate processing (canned) (Rule 4).",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can of chopped tomatoes",
@@ -41,7 +41,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Exact match found for '1 tablespoon olive oil' to 'olive oil' with no additional processing, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Repeated ingredient matched same as before (Rule 6).",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "1 tablespoon olive oil",
@@ -49,7 +49,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "Exact match found for 'Black pepper' to 'pepper, black' as the correct spice type, following rules 1, 7, and 8.",
+            "closest_match_explanation": "Exact match for 'Black pepper' to 'pepper, black' (Rule 1, 8).",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "Black pepper",
@@ -57,7 +57,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Exact match found for '1 onion' to 'onion, raw' as the least processed option, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Repeated ingredient matched same as before (Rule 6).",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 onion",
@@ -65,7 +65,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Exact match found for '2 cloves of garlic' to 'garlic, raw' with the same raw state and minimal processing, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Repeated ingredient matched same as before (Rule 6).",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -73,7 +73,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Exact match found for '1 Squash' to 'squash, raw' as the raw vegetable, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match for '1 Squash' to 'squash, raw' with least processing (Rule 1, 4, 8).",
             "ingredient_id": "Ra00003",
             "closest_match_name": "squash, raw",
             "ingredient": "1 Squash",
@@ -81,7 +81,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "Exact match found for '1 can of chopped tomatoes' to 'tomato, peeled, canned' with matching processing (canned), following rules 1, 4, and 8.",
+            "closest_match_explanation": "Repeated ingredient matched same as before (Rule 6).",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 can of chopped tomatoes",
@@ -89,7 +89,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "Exact match found for '1 can of black beans' to 'black beans' canned, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match for '1 can of black beans' to 'black beans' canned (Rule 1, 8).",
             "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
             "ingredient": "1 can of black beans",
@@ -97,7 +97,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Exact match found for '1 can of kidney beans' to 'kidney beans' canned, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match for '1 can of kidney beans' to 'kidney beans' canned (Rule 1, 8).",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can of kidney beans",
@@ -105,7 +105,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Best match for '300 g of corn' is 'corn cob' as the closest raw form, following rules 1, 2, 4, and 8.",
+            "closest_match_explanation": "Best match for '300 g of corn' is 'corn cob' as raw corn closest to input (Rule 1, 4, 8).",
             "ingredient_id": "Ra00417",
             "closest_match_name": "corn cob",
             "ingredient": "300 g of corn",
@@ -113,7 +113,7 @@
             "co2_per_kg": 1.0
         },
         {
-            "closest_match_explanation": "Best match for '8 Tortilla's pancakes' is 'tortilla bread, wheat' as the closest match to tortillas, following rules 1, 2, 4, and 8.",
+            "closest_match_explanation": "Best match for '8 Tortilla's pancakes' is 'tortilla bread, wheat' as closest match (Rule 1, 8).",
             "ingredient_id": "Ra00401",
             "closest_match_name": "tortilla bread, wheat",
             "ingredient": "8 Tortilla's pancakes",
@@ -121,7 +121,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "No exact match for cheddar cheese; 'blue cheese' chosen as closest cheese with similar processing level and highest emission among cheese options, following rules 1, 2, 4, 5, and 8.",
+            "closest_match_explanation": "No exact cheddar cheese; 'blue cheese' chosen as closest cheese with highest emission factor among options (Rule 2, 5).",
             "ingredient_id": "Ra00494",
             "closest_match_name": "blue cheese",
             "ingredient": "150 g cheddar cheese",
@@ -129,7 +129,7 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "No exact match for coriander; 'parsley, raw' chosen as a similar fresh herb with low processing, following rules 1, 2, 4, 7, and 8.",
+            "closest_match_explanation": "No exact coriander; 'parsley, raw' chosen as closest fresh herb with low processing (Rule 2, 7).",
             "ingredient_id": "Ra00134",
             "closest_match_name": "parsley, raw",
             "ingredient": "1 handful of fresh coriander",
@@ -137,7 +137,7 @@
             "co2_per_kg": 0.5
         },
         {
-            "closest_match_explanation": "Exact match found for 'Black pepper' to 'pepper, black' as the correct spice type, following rules 1, 7, and 8.",
+            "closest_match_explanation": "Repeated ingredient matched same as before (Rule 6).",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "Black pepper",
@@ -145,7 +145,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Exact match found for '1 tablespoon butter' to 'butter, salt added' with matching processing, following rules 1, 4, and 8.",
+            "closest_match_explanation": "Exact match for '1 tablespoon butter' to 'butter, salt added' (Rule 1, 8).",
             "ingredient_id": "Ra00037",
             "closest_match_name": "butter, salt added",
             "ingredient": "1 tablespoon butter",

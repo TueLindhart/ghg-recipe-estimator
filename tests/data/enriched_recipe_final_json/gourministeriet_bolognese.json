@@ -10,14 +10,13 @@
                 "weight_in_kg": 1.0
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for minced beef with 'beef, mince, 5-10% fat, raw' which is the least processed and highest emission among minced beef options (Rule 4 and 5).",
+                "closest_match_explanation": "Exact match for minced beef found as 'beef, mince, 5-10% fat, raw' which is the least processed and highest emission option among minced beef variants (Rule 4 and 5).",
                 "ingredient_id": "Ra00016",
                 "closest_match_name": "beef, mince, 5-10% fat, raw",
                 "ingredient": "1 kg of minced beef",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 50.6
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "3 store løg",
@@ -28,14 +27,13 @@
                 "weight_in_kg": 0.51
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for onions as 'onion, raw' which is the least processed form (Rule 4).",
+                "closest_match_explanation": "Exact match for onions as 'onion, raw' chosen as least processed form (Rule 4).",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "3 large onions",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "3 gulerødder",
@@ -46,14 +44,13 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for carrots as 'carrot, raw' which is the least processed form (Rule 4).",
+                "closest_match_explanation": "Exact match for carrots as 'carrot, raw' chosen as least processed form (Rule 4).",
                 "ingredient_id": "Ra00257",
                 "closest_match_name": "carrot, raw",
                 "ingredient": "3 carrots",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "2.5 stilke bladselleri",
@@ -64,14 +61,13 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for celery as 'celery, raw' which is the least processed form (Rule 4).",
+                "closest_match_explanation": "Exact match for celery as 'celery, raw' chosen as least processed form (Rule 4).",
                 "ingredient_id": "Ra00153",
                 "closest_match_name": "celery, raw",
                 "ingredient": "2.5 Stalk leaf celery",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "6 fed hvidløg",
@@ -82,14 +78,13 @@
                 "weight_in_kg": 0.024
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for garlic as 'garlic, raw' which is the least processed form (Rule 4).",
+                "closest_match_explanation": "Exact match for garlic as 'garlic, raw' chosen as least processed form (Rule 4).",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "6 cloves of garlic",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "150 g tomatkoncentrat",
@@ -100,39 +95,37 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for tomato concentrate as 'tomato paste, concentrated' reflecting the processing (Rule 4).",
+                "closest_match_explanation": "Exact match for tomato concentrate as 'tomato paste, concentrated' which reflects processing (Rule 4).",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "150 g tomato concentrate",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 2.7
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
-            "original_name": "3 ds hakkede tomater eller polpa",
-            "en_name": "3 DS chopped tomatoes or polpa",
+            "original_name": "3 dåser hakkede tomater",
+            "en_name": "3 cans of chopped tomatoes",
             "weight_estimate": {
-                "ingredient": "3 DS chopped tomatoes or polpa",
-                "weight_calculation": "DS likely means 'deciliter', 1 dl = 100 g, 3 * 100 g = 300 g = 0.3 kg",
-                "weight_in_kg": 0.3
+                "ingredient": "3 cans of chopped tomatoes",
+                "weight_calculation": "1 can = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
+                "weight_in_kg": 1.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for chopped tomatoes is 'tomato, peeled, canned' which is less processed than dried or paste (Rule 4).",
+                "closest_match_explanation": "Exact match for canned tomatoes as 'tomato, peeled, canned' reflecting canning processing (Rule 4).",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "3 DS chopped tomatoes or polpa",
+                "ingredient": "3 cans of chopped tomatoes",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "2 dl rødvin",
             "en_name": "2 dl red wine",
             "weight_estimate": {
                 "ingredient": "2 dl red wine",
-                "weight_calculation": "2 dl = 200 g, 2 * 100 g = 200 g = 0.2 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
@@ -142,8 +135,7 @@
                 "ingredient": "2 dl red wine",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.6
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "0.5 tsk rosmarin",
@@ -153,8 +145,7 @@
                 "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
                 "weight_in_kg": 0.0025
             },
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "0.5 tsk timian",
@@ -164,8 +155,7 @@
                 "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
                 "weight_in_kg": 0.0025
             },
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk oregano",
@@ -175,8 +165,7 @@
                 "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk basilikum",
@@ -186,55 +175,51 @@
                 "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "olie",
             "en_name": "oil",
             "weight_estimate": {
                 "ingredient": "oil",
-                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg",
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg.",
                 "weight_in_kg": 0.16
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for generic oil is 'oil for frying' which is a common oil type and less processed than olive oil (Rule 4).",
-                "ingredient_id": "Ra00348",
-                "closest_match_name": "oil for frying",
+                "closest_match_explanation": "Multiple oil options available; 'olive oil' chosen as a common oil type with highest emission factor for conservative estimate (Rule 5).",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
                 "ingredient": "oil",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.8
-            },
-            "co2_per_kg_search": null
+                "co2_per_kg": 5.9
+            }
         },
         {
             "original_name": "salt",
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg.",
                 "weight_in_kg": 0.04
             },
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "friskkværnet peber",
             "en_name": "freshly ground pepper",
             "weight_estimate": {
                 "ingredient": "freshly ground pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg",
-                "weight_in_kg": 0.04
+                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.002 kg, 8 * 0.002 kg = 0.016 kg.",
+                "weight_in_kg": 0.016
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for freshly ground pepper is 'pepper, black' which is the common pepper type (Rule 7).",
+                "closest_match_explanation": "Exact match for black pepper as 'pepper, black' chosen over chili pepper due to common usage and higher emission (Rule 5).",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
                 "ingredient": "freshly ground pepper",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "1 håndfuld friske basilikumblade",
@@ -245,39 +230,37 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for fresh basil leaves as 'basil, fresh' (Rule 4).",
+                "closest_match_explanation": "Exact match for fresh basil leaves as 'basil, fresh' least processed form (Rule 4).",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 handful of fresh basil leaves",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "pasta efter ønske",
             "en_name": "Pasta as desired",
             "weight_estimate": {
                 "ingredient": "Pasta as desired",
-                "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg",
+                "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg.",
                 "weight_in_kg": 1.0
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for pasta is 'pasta, raw' which is the least processed pasta option (Rule 4).",
+                "closest_match_explanation": "Exact match for pasta as 'pasta, raw' least processed form (Rule 4).",
                 "ingredient_id": "Ra00234",
                 "closest_match_name": "pasta, raw",
                 "ingredient": "Pasta as desired",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 2.1
-            },
-            "co2_per_kg_search": null
+            }
         },
         {
             "original_name": "revet parmesan",
             "en_name": "Torn parmesan",
             "weight_estimate": {
                 "ingredient": "Torn parmesan",
-                "weight_calculation": "Amount of parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg",
+                "weight_calculation": "Amount of torn parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg.",
                 "weight_in_kg": 0.16
             },
             "co2_per_kg_db": {
@@ -287,11 +270,10 @@
                 "ingredient": "Torn parmesan",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.4
-            },
-            "co2_per_kg_search": null
+            }
         }
     ],
     "persons": 8,
-    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\". Heat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside. Meanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you. In the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way. Then pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute. Pour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way. Before serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
+    "instructions": " mas the meat well between the hands until it no longer has the classic 'minced beef strips'. Heat oil in a large saucepan and brown the meat well, preferably with roasting crust. Chop the meat with a saucepan during frying. Season with salt and freshly ground pepper. Put the meat aside. Blend onions, carrots, leaf celery and garlic finely or rough as desired. Heat oil in the pan and sweat the vegetables for approx. 10 minutes with stirring. Add the browned meat, tomato concentrate and sweat for one minute. Pour red wine over and let it cook for 5 minutes. Add chopped tomatoes and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours, and stir along the way. Turn fresh basil leaves in before serving and season with salt and freshly ground pepper.",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
 }

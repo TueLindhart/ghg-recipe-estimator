@@ -51,7 +51,7 @@
             "weight_in_kg": 0.125
         },
         {
-            "ingredient": "0.5 ECO Lemon (finely grated shell)",
+            "ingredient": "0.5 ECO Lemon",
             "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
             "weight_in_kg": 0.0425
         },
