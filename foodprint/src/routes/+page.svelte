@@ -39,7 +39,7 @@
       }
 
       const { uid } = (await r.json()) as { uid: string };
-      goto(`/recipe/${uid}/progress`);
+      goto(`/recipe/${uid}/status`);
     } catch (err) {
       console.error("Fetch error:", err);
       statusMessage = `Ups! Noget gik galt. Prøv igen senere.`;
