@@ -106,9 +106,14 @@ async def run_estimator(
             result=result,
         )
 
-        logger.info(
-            f"Completed CO2 estimation for UID={runparams.uid} URL={runparams.url}"
-        )
+        if success:
+            logger.info(
+                f"Completed CO2 estimation for UID={runparams.uid} URL={runparams.url}"
+            )
+        else:
+            logger.error(
+                f"CO2 estimation failed for UID={runparams.uid} URL={runparams.url}: {result}"
+            )
     except Exception as e:
         logger.exception("Background estimation failed.")
         await redis_client.update_job_status(
@@ -158,7 +163,11 @@ async def get_status(uid: str, access: Annotated[bool, Depends(verify_token)]):
     job = await redis_client.get(uid)
     if not job:
         raise HTTPException(status_code=404, detail="Job not found")
-    return JobResult.model_validate_json(job)
+
+    job_obj = JobResult.model_validate_json(job)
+    if job_obj.status == JobStatus.ERROR:
+        raise HTTPException(status_code=400, detail=job_obj.result)
+    return job_obj
 
 
 @app.delete("/status/{uid}")

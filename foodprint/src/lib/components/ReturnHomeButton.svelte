@@ -4,7 +4,7 @@
   import { ArrowLeftOutline } from "flowbite-svelte-icons";
 
   export let to: string = "/";
-  export let label: string = "Hjem";
+  export let label: string = "Tilbage";
 
   const navigate = (): void => goto(to);
 </script>
