@@ -1,4 +1,5 @@
 {
+    "title": "Nytårstorsk - bagt torsk med sennepssauce",
     "ingredients": [
         {
             "original_name": "25 g smør",
@@ -8,8 +9,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "400 g rødbeder",
-            "en_name": "400 g of beets",
+            "original_name": "4 rødbeder",
+            "en_name": "4 beets",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -43,8 +44,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "25 g smør (smeltet)",
-            "en_name": "25 g butter (melted)",
+            "original_name": "25 g smør",
+            "en_name": "25 g butter",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -78,15 +79,15 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "75 g finthakkede skalotteløg",
-            "en_name": "75 g of finely chopped shallots",
+            "original_name": "6 skalotteløg",
+            "en_name": "6 shallots",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "200 g koldt smør (i små stykker)",
-            "en_name": "200 g of cold butter (in small pieces)",
+            "original_name": "200 g smør",
+            "en_name": "200 g of butter",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -121,13 +122,13 @@
         },
         {
             "original_name": "4 blødkogte vagtelæg",
-            "en_name": "4 soft-boiled quail egg",
+            "en_name": "4 Soft-boiled quail egg",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         }
     ],
     "persons": 4,
-    "instructions": " ### marinated beets\nMelt the butter in a saucepan at strong heat, but without browning. Sweat the beets for approx. 2 min. Add the vinegar, sugar and salt and cook them under heavy heat and without lid for approx. 5 min. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours and taste.\n\n### cod\nDivide the cod into four equal pieces. Put the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 min. at 200 ° - Traditional oven. Lunch the beets on a rack at the bottom of the oven for the last 5 min. - Pour if necessary. A little of the moisture from the beets at the serving.\n\n### Mustard sauce\nWhip flour and some of the water together in a saucepan. Add the rest of the water, mustard seeds and onions. Cook the mixture under low heat and under lid for approx. 10 min. Take the pan off the heat and whisk the cold butter in little by little. Heat the sauce (it must not boil) and add salt and pepper. Taste to.\n\n### How to prepare New Year's cod\nServing first beets on four plates, came the cod on it, garnish with bacon, quail eggs, herbs and serve with sauce next door.",
+    "instructions": " Marinated beets: Melt the butter in a saucepan at heavy heat without browning it. Sweat the beets for approx. 2 minutes. Add the vinegar, sugar and salt, and cook under heavy heat without lid for approx. 5 minutes. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours. Taste to.\n\nCod: Divide the cod into four equal pieces. Put the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 minutes at 200 ° C.\n\nMustard sauce: Whisk flour and some of the water together in a saucepan. Add the rest of the water, mustard seeds and onions. Boil the mixture under low heat under lid for approx. 10 minutes. Take the pan off the heat and whisk the cold butter in little by little. Heat the sauce without boiling it. Add salt and pepper and season.\n\nDish: Arrange beets on four plates, come the cod on it, decorate with bacon, quail eggs and herbs. Serve the sauce next to it.",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
 }

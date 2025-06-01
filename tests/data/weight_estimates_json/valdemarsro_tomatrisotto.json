@@ -7,7 +7,7 @@
         },
         {
             "ingredient": "3 cloves of garlic",
-            "weight_calculation": "3 cloves garlic = 3 * 4 g = 12 g = 0.012 kg",
+            "weight_calculation": "1 clove garlic = 4 g, 3 * 4 g = 12 g = 0.012 kg",
             "weight_in_kg": 0.012
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "2 dl white wine",
-            "weight_calculation": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
@@ -26,18 +26,18 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "25 g tomato puree",
+            "ingredient": "25 g concentrated tomato puree",
             "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "9 dl vegetable broth",
-            "weight_calculation": "9 dl = 900 g, 1 * 900 g = 900 g = 0.9 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 9 * 0.1 kg = 0.9 kg",
             "weight_in_kg": 0.9
         },
         {
             "ingredient": "0.5 tsp dried thyme",
-            "weight_calculation": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
@@ -51,7 +51,7 @@
             "weight_in_kg": 0.125
         },
         {
-            "ingredient": "0.5 ECO Lemon",
+            "ingredient": "0.5 ECO Lemon (finely grated shell)",
             "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
             "weight_in_kg": 0.0425
         },
@@ -62,12 +62,12 @@
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "Black pepper",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
@@ -87,7 +87,7 @@
         },
         {
             "ingredient": "0.5 Handful of fresh basil",
-            "weight_calculation": "0.5 Handful of herbs = 0.0125 kg, 1 * 0.0125 kg = 0.0125 kg",
+            "weight_calculation": "1 handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "weight_in_kg": 0.0125
         }
     ]

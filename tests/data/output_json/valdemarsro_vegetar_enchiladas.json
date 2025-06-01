@@ -1,5 +1,7 @@
 {
-    "total_co2_kg": 3.5,
+    "title": "Vegetar Enchiladas",
+    "url": "https://www.valdemarsro.dk/vegetar-enchiladas/",
+    "total_co2_kg": 3.6,
     "number_of_persons": 4,
     "co2_per_person_kg": 0.9,
     "avg_meal_emission_per_person_range_kg": [
@@ -94,7 +96,17 @@
             "co2_per_kg": 5.2,
             "co2_kg": 0.1,
             "calculation_notes": "0.02 kg * 5.2 kg CO2e/kg (DB) = 0.1 kg CO2e",
-            "weight_estimation_notes": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_estimation_notes": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "co2_emission_notes": "Best match in CO2 database is: pepper, black"
+        },
+        {
+            "name": "sort peber",
+            "ingredient_id": "Ra00302",
+            "weight_kg": 0.02,
+            "co2_per_kg": 5.2,
+            "co2_kg": 0.1,
+            "calculation_notes": "0.02 kg * 5.2 kg CO2e/kg (DB) = 0.1 kg CO2e",
+            "weight_estimation_notes": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "co2_emission_notes": "Best match in CO2 database is: pepper, black"
         },
         {
@@ -104,7 +116,7 @@
             "co2_per_kg": 5.9,
             "co2_kg": 0.09,
             "calculation_notes": "0.01 kg * 5.9 kg CO2e/kg (DB) = 0.09 kg CO2e",
-            "weight_estimation_notes": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_estimation_notes": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
         },
         {
@@ -114,7 +126,7 @@
             "co2_per_kg": 5.9,
             "co2_kg": 0.09,
             "calculation_notes": "0.01 kg * 5.9 kg CO2e/kg (DB) = 0.09 kg CO2e",
-            "weight_estimation_notes": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_estimation_notes": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "co2_emission_notes": "Best match in CO2 database is: olive oil"
         },
         {
@@ -124,7 +136,7 @@
             "co2_per_kg": 0.3,
             "co2_kg": 0.05,
             "calculation_notes": "0.17 kg * 0.3 kg CO2e/kg (DB) = 0.05 kg CO2e",
-            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
@@ -134,7 +146,7 @@
             "co2_per_kg": 0.3,
             "co2_kg": 0.05,
             "calculation_notes": "0.17 kg * 0.3 kg CO2e/kg (DB) = 0.05 kg CO2e",
-            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
@@ -144,7 +156,7 @@
             "co2_per_kg": 3.3,
             "co2_kg": 0.05,
             "calculation_notes": "0.01 kg * 3.3 kg CO2e/kg (DB) = 0.05 kg CO2e",
-            "weight_estimation_notes": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_estimation_notes": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "co2_emission_notes": "Best match in CO2 database is: butter, salt added"
         },
         {
@@ -154,7 +166,7 @@
             "co2_per_kg": 0.4,
             "co2_kg": 0.04,
             "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg (DB) = 0.04 kg CO2e",
-            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "co2_emission_notes": "Best match in CO2 database is: bouillon, chicken, prepared"
         },
         {
@@ -194,7 +206,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -204,7 +216,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -214,7 +226,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -224,7 +236,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -234,7 +246,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -244,7 +256,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Ingredient is ignored in calculation",
-            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "co2_emission_notes": "Ingredient is ignored in calculation"
         },
         {
@@ -254,7 +266,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -264,8 +276,18 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
+        },
+        {
+            "name": "salt",
+            "ingredient_id": null,
+            "weight_kg": 0.02,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Ingredient is ignored in calculation",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "co2_emission_notes": "Ingredient is ignored in calculation"
         }
     ]
 }

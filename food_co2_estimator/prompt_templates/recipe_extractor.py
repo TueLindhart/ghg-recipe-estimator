@@ -8,6 +8,7 @@ from langchain.prompts import (
 from food_co2_estimator.pydantic_models.recipe_extractor import ExtractedRecipe
 
 WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
+    title="Torskefisketerrine med dild og persille",
     ingredients=[
         "500 g torskefilet",
         "1 tsk havsalt",
@@ -45,6 +46,7 @@ WEBSITE_RESPONSE = WEBSITE_RESPONSE_OBJ.model_dump_json()
 
 
 NO_RECIPE_RESPONSE_OBJ = ExtractedRecipe(
+    title=None,
     ingredients=[],
     persons=None,
     instructions=None,
@@ -52,6 +54,9 @@ NO_RECIPE_RESPONSE_OBJ = ExtractedRecipe(
 NO_RECIPE_RESPONSE = NO_RECIPE_RESPONSE_OBJ.model_dump_json()
 
 EXAMPLE_INPUT_1 = """
+# Torskefisketerrine med dild og persille
+Denne lækre torskefisketerrine er perfekt til en forret eller som en del af en buffet. Den er fyldt med smag og serveres med en cremet sauce, der fremhæver fiskens delikate smag.
+
 **Ingredienser**
 - 500 g torskefilet, i skiver
 - 1 tsk havsalt og 1 tsk peber
@@ -80,20 +85,64 @@ Tag fisketerrinen ud af ovnen og lad den køle af i formen i et par minutter. Sk
 
 
 EXAMPLE_INPUT_2 = """
-Det er dejligt vejr i dag. Jeg tror jeg vil gå en tur.
+# Klassisk Strikket Halstørklæde
+
+**Beskrivelse**
+Et blødt og varmt halstørklæde, perfekt til vinteren. Opskriften er velegnet til begyndere.
+
+## Materialer
+- 2 nøgler (á 50 g) uldgarn (worsted weight)
+- Strikkepinde størrelse 5 mm
+- Stoppenål til montering
+
+## Størrelse
+Passer til én voksen (ca. 20 x 150 cm)
+
+## Forkortelser
+- r: ret
+- vr: vrang
+
+## Fremgangsmåde
+
+1. Slå 40 masker op.
+2. Strik 2 rækker ret.
+3. Fortsæt i glatstrik (skiftevis 1 række ret, 1 række vrang) indtil arbejdet måler ca. 148 cm.
+4. Strik 2 rækker ret.
+5. Luk alle masker af.
+6. Hæft ender med stoppenålen.
+
+**Tip:**  
+Ønskes et bredere eller smallere tørklæde, kan du slå flere eller færre masker op.
+
+God fornøjelse med strikketøjet!
 """
 
 SYSTEM_PROMPT = """
-You are an expert in extracting recipe data from unstructured text in Danish or English. Your task is to identify and extract:
+You are an expert in extracting food recipe data from unstructured text in Danish or English. Your task is to identify and extract:
 
-1. Ingredients (with amounts in numeric format and standardized units)
-2. Number of persons (servings)
-3. Instructions (how to prepare the meal)
+1. Title of the recipe
+2. Ingredients (with amounts in numeric format and standardized units)
+3. Number of persons (servings)
+4. Instructions (how to prepare the meal)
 
 Follow the detailed instructions below carefully. Any deviation from them will result in an incorrect extraction.
 
+----------------------
+1. Extracting the Title
+----------------------
+1. Look for a Title at the Beginning
+   - Use the first prominent line or heading in the text as the title.
+   - It is usually before the ingredients or instructions.
+
+2. Strip Extra Details
+   - Remove irrelevant suffixes like “recipe,” “opskrift,” or author/source information.
+     Example: "Chocolate Cake Recipe by Anna" → "Chocolate Cake"
+
+3. Fallback Strategy
+   - If no explicit title is found, make a title that summarizes the recipe based on the ingredients and instructions.
+
 --------------------------------
-1. Extracting the Ingredients
+2. Extracting the Ingredients
 --------------------------------
 1. Numeric Amounts
    - Convert fractions or word-based quantities into decimal form.
@@ -106,7 +155,7 @@ Follow the detailed instructions below carefully. Any deviation from them will r
 2. Remove Irrelevant Details
    - Omit any text in parentheses or after commas that does not describe the ingredient itself.
      Example: "1 dl olive oil (for frying)" → "1 dl olive oil"
-     Example: "1 onion, chopped" → "1 onion"
+     Example: "1 onion, diced" → "1 onion" or "1 carrot, chopped" → "1 carrot", "1 diced potato" → "1 potato"
 
 3. Standardize Units
    - Convert measurement units to abbreviations.
@@ -133,8 +182,12 @@ Follow the detailed instructions below carefully. Any deviation from them will r
    - List ingredients in the exact order they appear in the text.
    - If the same ingredient appears multiple times, list it each time it appears.
 
+8. Do not perform any form of conversions. This will be handled later.
+   - Do not convert amounts to different units or perform any calculations on them.
+   - Do not convert anything to kg, g, oz, dl but keep the original units as they are.
+
 -------------------------------------
-2. Extracting the Number of Persons
+3. Extracting the Number of Persons
 -------------------------------------
 1. Look for Explicit Mentions
    - If the text explicitly states a number of persons or servings, extract that number.
@@ -143,7 +196,7 @@ Follow the detailed instructions below carefully. Any deviation from them will r
    - If the text does not explicitly mention a number of persons, estimate it based on the total amounts of ingredients provided.
 
 --------------------------------
-3. Extracting the Instructions
+4. Extracting the Instructions
 --------------------------------
 1. Identify Instruction Sections
    - Look for sections titled “Instructions,” “How to make,” “Preparation,” “Fremgangsmåde,” “Instruktioner,” or similar.
@@ -155,11 +208,11 @@ Follow the detailed instructions below carefully. Any deviation from them will r
    - If you cannot find instructions, return null for instructions.
 
 --------------------------------------
-4. If No Recipe Is Found in the Text
+6. If No FOOD Recipe Is Found in the Text
 --------------------------------------
-- If no recognizable recipe is found:
+- If no recognizable FOOD recipe is found:
   - Return an empty list for ingredients: []
-  - Return null for both the number of persons and the instructions
+  - Return null for the number of persons, the instructions, and the title
 
 Remember: You must follow these rules exactly to ensure accurate extraction.
 """

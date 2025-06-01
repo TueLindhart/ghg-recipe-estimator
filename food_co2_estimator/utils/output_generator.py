@@ -131,6 +131,8 @@ def generate_output_model(
 
     # Create the top-level output model.
     output_model = RecipeCO2Output(
+        title=enriched_recipe.title,
+        url=enriched_recipe.url,
         total_co2_kg=round(total_co2, 1),
         number_of_persons=number_of_persons,
         co2_per_person_kg=co2_per_person,

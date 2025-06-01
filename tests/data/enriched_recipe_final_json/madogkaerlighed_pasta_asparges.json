@@ -1,4 +1,5 @@
 {
+    "title": "Cremet pasta med asparges",
     "ingredients": [
         {
             "original_name": "250 g frisk pasta",
@@ -9,7 +10,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '250 g fresh pasta' to 'pasta, raw' as it is the least processed form of pasta available in the database.",
+                "closest_match_explanation": "Exact match for 'fresh pasta' is not available, but 'pasta, raw' is a valid broader category for fresh pasta (Rule 2). It is the least processed pasta option available and thus the best match (Rule 4).",
                 "ingredient_id": "Ra00234",
                 "closest_match_name": "pasta, raw",
                 "ingredient": "250 g fresh pasta",
@@ -23,11 +24,11 @@
             "en_name": "2 cloves of garlic",
             "weight_estimate": {
                 "ingredient": "2 cloves of garlic",
-                "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 cloves of garlic' to 'garlic, raw' as it is the least processed form of garlic available in the database.",
+                "closest_match_explanation": "Exact match 'garlic, raw' is available and chosen as it is the least processed form (Rule 4).",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -41,11 +42,11 @@
             "en_name": "1 onion",
             "weight_estimate": {
                 "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 onion' to 'onion, raw' as it is the least processed form of onion available in the database.",
+                "closest_match_explanation": "Exact match 'onion, raw' is available and chosen as it is the least processed form (Rule 4).",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -59,11 +60,11 @@
             "en_name": "1 BDT Green Asparagus",
             "weight_estimate": {
                 "ingredient": "1 BDT Green Asparagus",
-                "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 BDT Green Asparagus' to 'asparagus, green, raw' as it is the least processed form of asparagus available in the database.",
+                "closest_match_explanation": "Exact match 'asparagus, green, raw' is available and chosen as it is the least processed form (Rule 4).",
                 "ingredient_id": "Ra00163",
                 "closest_match_name": "asparagus, green, raw",
                 "ingredient": "1 BDT Green Asparagus",
@@ -77,11 +78,11 @@
             "en_name": "1 Squash",
             "weight_estimate": {
                 "ingredient": "1 Squash",
-                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Squash' to 'squash, raw' as it is the least processed form of squash available in the database.",
+                "closest_match_explanation": "Exact match 'squash, raw' is available and chosen as it is the least processed form (Rule 4).",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
                 "ingredient": "1 Squash",
@@ -91,18 +92,18 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 håndfuld frisk basilikum",
-            "en_name": "1 handful of fresh basil",
+            "original_name": "1 stor håndfuld frisk basilikum",
+            "en_name": "1 large handful of fresh basil",
             "weight_estimate": {
-                "ingredient": "1 handful of fresh basil",
-                "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "ingredient": "1 large handful of fresh basil",
+                "weight_calculation": "Handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 handful of fresh basil' to 'basil, fresh' as it is the least processed form of basil available in the database.",
+                "closest_match_explanation": "Exact match 'basil, fresh' is available and chosen as it is the least processed form (Rule 4).",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
-                "ingredient": "1 handful of fresh basil",
+                "ingredient": "1 large handful of fresh basil",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             },
@@ -113,11 +114,11 @@
             "en_name": "2 dl cream",
             "weight_estimate": {
                 "ingredient": "2 dl cream",
-                "weight_calculation": "2 dl = 0.2 kg, 2 * 0.1 kg = 0.2 kg",
+                "weight_calculation": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 dl cream' to 'cream, whipping, 38 % fat' as it is the least processed form of cream available in the database.",
+                "closest_match_explanation": "Multiple cream options available; 'cream, whipping, 38 % fat' chosen as it matches typical cream and is less processed than ice cream or cream pastry (Rule 4).",
                 "ingredient_id": "Ra00345",
                 "closest_match_name": "cream, whipping, 38 % fat",
                 "ingredient": "2 dl cream",
@@ -131,7 +132,7 @@
             "en_name": "1 dl water",
             "weight_estimate": {
                 "ingredient": "1 dl water",
-                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": null,
@@ -153,11 +154,11 @@
             "en_name": "6 tbsp grated parmesan",
             "weight_estimate": {
                 "ingredient": "6 tbsp grated parmesan",
-                "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+                "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.09 kg",
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '6 tbsp grated parmesan' to 'cheese, hard, parmesan, 32 % fidm.' as it is the most relevant option for grated parmesan cheese.",
+                "closest_match_explanation": "Exact match 'cheese, hard, parmesan' is available and chosen (Rule 4).",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "6 tbsp grated parmesan",
@@ -171,11 +172,11 @@
             "en_name": "1 handful of mozzarella",
             "weight_estimate": {
                 "ingredient": "1 handful of mozzarella",
-                "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
-                "weight_in_kg": 0.1
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
+                "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 handful of mozzarella' to 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most relevant option for mozzarella cheese.",
+                "closest_match_explanation": "Exact match 'cheese, semihard, mozzarella' is available and chosen (Rule 4).",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
                 "ingredient": "1 handful of mozzarella",
@@ -189,7 +190,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -200,7 +201,7 @@
             "en_name": "pepper",
             "weight_estimate": {
                 "ingredient": "pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null,
@@ -211,11 +212,11 @@
             "en_name": "Oil",
             "weight_estimate": {
                 "ingredient": "Oil",
-                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
-                "weight_in_kg": 0.02
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg.",
+                "weight_in_kg": 0.04
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Oil' to 'olive oil' as it is the most relevant option for oil in the database.",
+                "closest_match_explanation": "Multiple oil options available; 'olive oil' chosen as a common oil type and highest emission factor among oils (Rule 5).",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "Oil",
@@ -226,6 +227,6 @@
         }
     ],
     "persons": 2,
-    "instructions": " Put a saucepan over with water to the pasta. Cook it according to the instructions on the package and pour the water off. Crack the ends of the green asparagus and cut them for approx. 1 cm long pieces. Sweat onion and garlic in oil on a hot pan. Add squash and asparagus and sweat it for a few more minutes, sprinkle with salt and pepper. Put the water on the pan and crumble the broth cube in. Pour the cream on with grated parmesan and turn it all around well. Turn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste with extra grinded pepper.",
+    "instructions": " Put a saucepan over with water to the pasta. Cook the pasta as directed on the package and pour the water off. Crack the ends of the green asparagus and cut them for approx. 1 cm long pieces. Sweat onion and garlic in oil on a hot pan. Add squash and asparagus and sweat for a few more minutes, sprinkle with salt and pepper. Put the water on the pan and crumble the broth cube in to dissolve it. Pour the cream on with grated parmesan and turn it all around well. Turn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste with pepper. Serve immediately.",
     "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
 }

@@ -1,15 +1,16 @@
 {
+    "title": "Thai Green Curry Chicken",
     "ingredients": [
         {
             "original_name": "1.75 cups coconut milk",
             "en_name": "1.75 Cups Coconut Milk",
             "weight_estimate": {
                 "ingredient": "1.75 Cups Coconut Milk",
-                "weight_calculation": "1 cup = 240 g, 1.75 * 240 g = 420 g = 0.42 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup coconut milk = 240 g, 1.75 * 240 g = 420 g = 0.42 kg.",
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1.75 Cups Coconut Milk' to 'coconut milk' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Exact match found for 'coconut milk' in the emission database, matching the ingredient name and type exactly (Rule 8).",
                 "ingredient_id": "Ra00404",
                 "closest_match_name": "coconut milk",
                 "ingredient": "1.75 Cups Coconut Milk",
@@ -23,11 +24,11 @@
             "en_name": "3.5 TBSP Green Curry Paste",
             "weight_estimate": {
                 "ingredient": "3.5 TBSP Green Curry Paste",
-                "weight_calculation": "1 tbsp. = 15 g, 3.5 * 15 g = 52.5 g = 0.0525 kg",
+                "weight_calculation": "1 tbsp = 15 g, 3.5 * 15 g = 52.5 g = 0.0525 kg.",
                 "weight_in_kg": 0.0525
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '3.5 TBSP Green Curry Paste' to 'green curry paste' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Exact match found for 'green curry paste' in the emission database, matching the ingredient name and processing exactly (Rule 8).",
                 "ingredient_id": "Ra00469",
                 "closest_match_name": "green curry paste",
                 "ingredient": "3.5 TBSP Green Curry Paste",
@@ -41,11 +42,11 @@
             "en_name": "1 Cup Chicken Stock",
             "weight_estimate": {
                 "ingredient": "1 Cup Chicken Stock",
-                "weight_calculation": "1 cup = 240 g, 1 * 240 g = 240 g = 0.24 kg",
+                "weight_calculation": "1 cup = 240 g, 1 * 240 g = 240 g = 0.24 kg.",
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Chicken Stock' to 'bouillon, chicken, prepared' as it is the closest match for chicken stock in the database.",
+                "closest_match_explanation": "No exact match for 'chicken stock', but 'bouillon, chicken, prepared' is a valid broader category for chicken stock as both are prepared chicken flavor liquids with minimal processing (Rule 2 and 4).",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 Cup Chicken Stock",
@@ -59,11 +60,11 @@
             "en_name": "1 lb chicken thigh",
             "weight_estimate": {
                 "ingredient": "1 lb chicken thigh",
-                "weight_calculation": "1 lb = 454 g, 1 * 454 g = 454 g = 0.454 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lb = 454 g, 1 * 454 g = 454 g = 0.454 kg.",
                 "weight_in_kg": 0.454
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 lb chicken thigh' to 'chicken, leg, flesh and skin, raw' as it is the least processed option for chicken thighs in the database.",
+                "closest_match_explanation": "No exact match for 'chicken thigh', but 'chicken, leg, flesh and skin, raw' is the closest match with least processing and appropriate part of chicken (Rule 2 and 4).",
                 "ingredient_id": "Ra00053",
                 "closest_match_name": "chicken, leg, flesh and skin, raw",
                 "ingredient": "1 lb chicken thigh",
@@ -77,11 +78,11 @@
             "en_name": "2 TBSP Palm Sugar",
             "weight_estimate": {
                 "ingredient": "2 TBSP Palm Sugar",
-                "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '2 TBSP Palm Sugar' to 'sugar, brown' as it is the closest match for palm sugar in the database.",
+                "closest_match_explanation": "No exact match for 'palm sugar', but 'sugar, brown' is a valid broader category for palm sugar as both are types of brown sugar with similar processing (Rule 2).",
                 "ingredient_id": "Ra00319",
                 "closest_match_name": "sugar, brown",
                 "ingredient": "2 TBSP Palm Sugar",
@@ -91,18 +92,36 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1.5 - 2 tbsp fish sauce",
-            "en_name": "1.5 - 2 tbsp fish sauce",
+            "original_name": "1.5 tbsp fish sauce",
+            "en_name": "1.5 TBSP FISH SAUCE",
             "weight_estimate": {
-                "ingredient": "1.5 - 2 tbsp fish sauce",
-                "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+                "ingredient": "1.5 TBSP FISH SAUCE",
+                "weight_calculation": "1 tbsp = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg.",
+                "weight_in_kg": 0.0225
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for 'fish sauce', but 'soya sauce' is the closest available fermented sauce with similar processing level (Rule 2 and 4).",
+                "ingredient_id": "Ra00373",
+                "closest_match_name": "soya sauce",
+                "ingredient": "1.5 TBSP FISH SAUCE",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.9
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 tbsp fish sauce",
+            "en_name": "2 tbsp fish sauce",
+            "weight_estimate": {
+                "ingredient": "2 tbsp fish sauce",
+                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1.5 - 2 tbsp fish sauce' to 'soya sauce' as it is the closest match available in the database.",
+                "closest_match_explanation": "Same as above for '1.5 TBSP FISH SAUCE', 'soya sauce' is the closest match (Rule 2 and 4).",
                 "ingredient_id": "Ra00373",
                 "closest_match_name": "soya sauce",
-                "ingredient": "1.5 - 2 tbsp fish sauce",
+                "ingredient": "2 tbsp fish sauce",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.9
             },
@@ -113,25 +132,25 @@
             "en_name": "4 Makrut Lime Leaves",
             "weight_estimate": {
                 "ingredient": "4 Makrut Lime Leaves",
-                "weight_calculation": "Amount of Makrut Lime Leaves not specified. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg.",
                 "weight_in_kg": 0.004
             },
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
         },
         {
-            "original_name": "1 can bamboo shoots",
-            "en_name": "1 Can Bamboo Shoots",
+            "original_name": "1 550-ml can bamboo shoots",
+            "en_name": "1 550-ML CAN BAMBOO SHOOTS",
             "weight_estimate": {
-                "ingredient": "1 Can Bamboo Shoots",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-                "weight_in_kg": 0.4
+                "ingredient": "1 550-ML CAN BAMBOO SHOOTS",
+                "weight_calculation": "1 can = 400 g, 550 ml ~ 550 g, LLM estimate is: 550 g = 0.55 kg.",
+                "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Can Bamboo Shoots' to 'bamboo shoots, canned, nonsalted' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Exact match found for 'bamboo shoots, canned, nonsalted' matching the ingredient exactly including canning processing (Rule 8).",
                 "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
-                "ingredient": "1 Can Bamboo Shoots",
+                "ingredient": "1 550-ML CAN BAMBOO SHOOTS",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.4
             },
@@ -142,11 +161,11 @@
             "en_name": "1 Cup Thai Basil Leaves",
             "weight_estimate": {
                 "ingredient": "1 Cup Thai Basil Leaves",
-                "weight_calculation": "1 cup = 30 g, 1 * 30 g = 30 g = 0.030 kg",
-                "weight_in_kg": 0.03
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup Thai basil leaves = 25 g, 1 * 25 g = 25 g = 0.025 kg.",
+                "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '1 Cup Thai Basil Leaves' to 'basil, fresh' as it is the closest match for fresh basil in the database.",
+                "closest_match_explanation": "Exact match found for 'basil, fresh' matching the fresh leaves of Thai basil (Rule 8).",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 Cup Thai Basil Leaves",
@@ -160,11 +179,11 @@
             "en_name": "0.25 Red Bell Pepper",
             "weight_estimate": {
                 "ingredient": "0.25 Red Bell Pepper",
-                "weight_calculation": "1 red bell pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
+                "weight_calculation": "1 bell pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg.",
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched '0.25 Red Bell Pepper' to 'pepper, sweet, red, raw' as it is the exact ingredient in the database.",
+                "closest_match_explanation": "Exact match found for 'pepper, sweet, red, raw' matching red bell pepper (Rule 8).",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.25 Red Bell Pepper",
@@ -178,11 +197,11 @@
             "en_name": "Jasmine Rice",
             "weight_estimate": {
                 "ingredient": "Jasmine Rice",
-                "weight_calculation": "Amount of ingredient not specified. LLM estimate is: 1 serving = 0.125 kg, 4 servings * 0.125 kg = 0.5 kg",
+                "weight_calculation": "Amount of Jasmine Rice not specified. LLM estimate is: 1 serving = 0.125 kg, 4 * 0.125 kg = 0.5 kg.",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Matched 'Jasmine Rice' to 'rice, parboiled, raw' as it is the closest match for rice in the database.",
+                "closest_match_explanation": "No exact match for 'Jasmine Rice', but 'rice, parboiled, raw' is a valid broader category for rice and closest in processing (Rule 2 and 4).",
                 "ingredient_id": "Ra00300",
                 "closest_match_name": "rice, parboiled, raw",
                 "ingredient": "Jasmine Rice",
@@ -190,9 +209,215 @@
                 "co2_per_kg": 5.1
             },
             "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 tsp cumin seeds",
+            "en_name": "1 tsp cumin seeds",
+            "weight_estimate": {
+                "ingredient": "1 tsp cumin seeds",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg.",
+                "weight_in_kg": 0.005
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 tsp coriander seeds",
+            "en_name": "2 tsp coriander seeds",
+            "weight_estimate": {
+                "ingredient": "2 tsp coriander seeds",
+                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg.",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for coriander seeds, but 'curry powder' is a valid broader category for ground coriander seeds and has similar processing level (Rule 2 and 4).",
+                "ingredient_id": "Ra00304",
+                "closest_match_name": "curry powder",
+                "ingredient": "2 tsp coriander seeds",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 6.1
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "0.5 tsp white peppercorns",
+            "en_name": "0.5 TSP White PepperCorns",
+            "weight_estimate": {
+                "ingredient": "0.5 TSP White PepperCorns",
+                "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg.",
+                "weight_in_kg": 0.0025
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "15 green Thai chilies",
+            "en_name": "15 Green Thai Chilies",
+            "weight_estimate": {
+                "ingredient": "15 Green Thai Chilies",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili = 5 g, 15 * 5 g = 75 g = 0.075 kg.",
+                "weight_in_kg": 0.075
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for 'Green Thai Chilies', but 'pepper, hot chili, raw' is a valid broader category for fresh hot chilies (Rule 2).",
+                "ingredient_id": "Ra00009",
+                "closest_match_name": "pepper, hot chili, raw",
+                "ingredient": "15 Green Thai Chilies",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.1
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 tsp coarse salt",
+            "en_name": "1 TSP COARSE SALT",
+            "weight_estimate": {
+                "ingredient": "1 TSP COARSE SALT",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg.",
+                "weight_in_kg": 0.005
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "15 Thai basil leaves",
+            "en_name": "15 Thai Basil Leaves",
+            "weight_estimate": {
+                "ingredient": "15 Thai Basil Leaves",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 leaf = 1 g, 15 * 1 g = 15 g = 0.015 kg.",
+                "weight_in_kg": 0.015
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Exact match found for 'basil, fresh' matching fresh Thai basil leaves (Rule 8).",
+                "ingredient_id": "Ra00486",
+                "closest_match_name": "basil, fresh",
+                "ingredient": "15 Thai Basil Leaves",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "3 tbsp lemongrass",
+            "en_name": "3 tbsp lemongrass",
+            "weight_estimate": {
+                "ingredient": "3 tbsp lemongrass",
+                "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
+                "weight_in_kg": 0.045
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for lemongrass, but 'basil, fresh' is chosen as the closest fresh herb with low processing and similar emission level (Rule 2 and 4).",
+                "ingredient_id": "Ra00486",
+                "closest_match_name": "basil, fresh",
+                "ingredient": "3 tbsp lemongrass",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 tbsp galangal",
+            "en_name": "1 tbsp galangal",
+            "weight_estimate": {
+                "ingredient": "1 tbsp galangal",
+                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg.",
+                "weight_in_kg": 0.015
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for galangal, but 'ginger root, raw' is a valid broader category as both are rhizomes with similar processing (Rule 2).",
+                "ingredient_id": "Ra00261",
+                "closest_match_name": "ginger root, raw",
+                "ingredient": "1 tbsp galangal",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.3
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 tsp makrut lime zest",
+            "en_name": "2 tsp makrut lime zest",
+            "weight_estimate": {
+                "ingredient": "2 tsp makrut lime zest",
+                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg.",
+                "weight_in_kg": 0.01
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for makrut lime zest, but 'lime, raw' is a valid broader category for citrus zest with minimal processing (Rule 2 and 4).",
+                "ingredient_id": "Ra00332",
+                "closest_match_name": "lime, raw",
+                "ingredient": "2 tsp makrut lime zest",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.6
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 cilantro roots or 4 big cilantro stems",
+            "en_name": "2 Cilantro Roots or 4 Big Cilantro Stems",
+            "weight_estimate": {
+                "ingredient": "2 Cilantro Roots or 4 Big Cilantro Stems",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 2 cilantro roots or 4 big cilantro stems = 30 g = 0.03 kg.",
+                "weight_in_kg": 0.03
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for cilantro roots or stems, but 'parsley root, raw' is chosen as closest root herb with similar processing (Rule 2 and 7).",
+                "ingredient_id": "Ra00269",
+                "closest_match_name": "parsley root, raw",
+                "ingredient": "2 Cilantro Roots or 4 Big Cilantro Stems",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.9
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "3 tbsp shallots",
+            "en_name": "3 tbsp Shallots",
+            "weight_estimate": {
+                "ingredient": "3 tbsp Shallots",
+                "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
+                "weight_in_kg": 0.045
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "No exact match for shallots, but 'red onion' is a valid broader category for similar allium vegetables with minimal processing (Rule 2).",
+                "ingredient_id": "Ra00485",
+                "closest_match_name": "red onion",
+                "ingredient": "3 tbsp Shallots",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.8
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "2 tbsp garlic",
+            "en_name": "2 tbsp Garlic",
+            "weight_estimate": {
+                "ingredient": "2 tbsp Garlic",
+                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
+                "weight_in_kg": 0.03
+            },
+            "co2_per_kg_db": {
+                "closest_match_explanation": "Exact match found for 'garlic, raw' matching the raw garlic cloves (Rule 8).",
+                "ingredient_id": "Ra00136",
+                "closest_match_name": "garlic, raw",
+                "ingredient": "2 tbsp Garlic",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 1.2
+            },
+            "co2_per_kg_search": null
+        },
+        {
+            "original_name": "1 tsp fermented shrimp paste",
+            "en_name": "1 TSP FERMENTED SHRIMP PASTE",
+            "weight_estimate": {
+                "ingredient": "1 TSP FERMENTED SHRIMP PASTE",
+                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg.",
+                "weight_in_kg": 0.005
+            },
+            "co2_per_kg_db": null,
+            "co2_per_kg_search": null
         }
     ],
     "persons": 4,
-    "instructions": " Reduce ¾ Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate. Add the Curry Paste and Sauté for About 2 Minutes Until Aromatic. Add Chicken Thigh and Stir to Mix With The Paste. Add Chicken Stock, Remaining Coconut Milk, Palm Sugar, and Fish Sauce. Bruise and Tear the Makrut Lime Leaves and Add Them to the Pot. Sims for 10-15 Minutes Until The Chicken Is Fork Tender. Add Bamboo Shoots and Bring to a Boil. Taste and Adjust Seasoning. Stir in Thai Basil and Serve with Jasmine Rice.",
+    "instructions": " 1. Reduce 0.75 Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate.\n2. Add Curry Paste and Sauté for About 2 Minutes Until Aromatic.\n3rd Add Chicken Thigh and Stir to Mix.\n4. Add Chicken Stock, Remaining Coconut Milk, Palm Sugar, Fish Sauce, and Makrut Lime Leaves (Bruise and Tear Into Chunks, Discard Stems). Bring two Simmer and Cook 10-15 minutes UNTIL CHICKEN IS TENDER.\n5. Add Bamboo Shoots and Bring to Boil. Add Red Bell Pepper If Desired. Remove From Heat.\n6. Taste and Adjust Fish Sauce and Sugar as Needed. If Curry Is Weak, Sauté Additional Curry Paste In Oil and Add Back.\n7. Add Thai Basil and Stir Until Wilted. Serve with Jasmine Rice.\n\nFor Chicken Breast: After Sautéing Curry Paste, Add Makrut Lime Leaves, Coconut Milk, Chicken Stock, Palm Sugar, and Fish Sauce; Sims 5 minutes. ADD Marinated Chicken Breast and Cook 1-2 MINUTES UNTO 70% DONE. Add Bamboo Shoots and Bring to Boil. Add Peppers If Desired. Remove From Heat. Adjust Seasoning. Add Thai Basil and Serve with Jasmine Rice.\n\nFor Curry Paste: Toast Cumin and Coriander seeds. Grind with White PepperCorns. Prepare Chilies by Removing Seeds From Some. Pound Chilies and Salt Into Paste. Add Basil Leaves, Lemongrass, Galangal, Lime Zest, Cilantro Roots, Shallots, Garlic, and Shrimp Paste; Pound into fine paste.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

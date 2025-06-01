@@ -6,18 +6,18 @@
             "weight_in_kg": 0.015
         },
         {
-            "ingredient": "1 lb chicken breast",
+            "ingredient": "1 lb Skinless Boneless Chicken Breast",
             "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
             "weight_in_kg": 0.453592
         },
         {
             "ingredient": "2 Medium Carrots",
-            "weight_calculation": "1 medium carrot = 100 g, 2 * 100 g = 200 g = 0.2 kg",
+            "weight_calculation": "1 carrot = 100 g, 2 * 100 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "2 Stalks Celery",
-            "weight_calculation": "1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.08 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.08 kg.",
             "weight_in_kg": 0.08
         },
         {
@@ -27,16 +27,16 @@
         },
         {
             "ingredient": "1 Bunch Scallions",
-            "weight_calculation": "1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 can diced tomatoes with green chiles (15 ounces)",
+            "ingredient": "1 (15 oz) Can Diced Tomatoes with Green Chiles",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "2 Cans Black Beans (15 ounces)",
+            "ingredient": "2 (15 oz) Cans Black Beans",
             "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
             "weight_in_kg": 0.8
         },
@@ -67,18 +67,18 @@
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "Black Pepper",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
+            "ingredient": "Ground Black Pepper",
+            "weight_calculation": "Amount of Ground Black Pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
-            "weight_calculation": "1 package = 240 g, 1 * 240 g = 240 g = 0.24 kg",
-            "weight_in_kg": 0.24
+            "ingredient": "1 (8.5 oz) Package Dry Corn Muffin Mix",
+            "weight_calculation": "1 package = 241 g, 1 * 241 g = 241 g = 0.241 kg",
+            "weight_in_kg": 0.241
         },
         {
             "ingredient": "0.33 Cup Milk",
@@ -86,8 +86,8 @@
             "weight_in_kg": 0.0792
         },
         {
-            "ingredient": "1 Egg",
-            "weight_calculation": "1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg",
+            "ingredient": "1 egg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
             "weight_in_kg": 0.05
         }
     ]

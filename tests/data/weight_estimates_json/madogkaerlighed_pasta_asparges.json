@@ -7,37 +7,37 @@
         },
         {
             "ingredient": "2 cloves of garlic",
-            "weight_calculation": "2 cloves garlic = 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
             "ingredient": "1 BDT Green Asparagus",
-            "weight_calculation": "1 bunch/bnch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
             "weight_in_kg": 0.5
         },
         {
             "ingredient": "1 Squash",
-            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 handful of fresh basil",
-            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "ingredient": "1 large handful of fresh basil",
+            "weight_calculation": "Handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "2 dl cream",
-            "weight_calculation": "2 dl = 0.2 kg, 2 * 0.1 kg = 0.2 kg",
+            "weight_calculation": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 dl water",
-            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -47,28 +47,28 @@
         },
         {
             "ingredient": "6 tbsp grated parmesan",
-            "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+            "weight_calculation": "1 tbsp = 15 g, 6 * 15 g = 90 g = 0.09 kg",
             "weight_in_kg": 0.09
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "1 handful of mozzarella not specified. LLM estimate is: 1 serving = 100 g, 1 * 100 g = 100 g = 0.1 kg",
-            "weight_in_kg": 0.1
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
+            "weight_in_kg": 0.05
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 servings * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "Oil",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 2 servings * 0.01 kg = 0.02 kg",
-            "weight_in_kg": 0.02
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg.",
+            "weight_in_kg": 0.04
         }
     ]
 }

@@ -16,6 +16,9 @@ from food_co2_estimator.pydantic_models.weight_estimator import (
 class ExtractedRecipe(BaseModel):
     """Class containing recipe information"""
 
+    title: str | None = Field(
+        description="This field should contain the title of the recipe."
+    )
     ingredients: List[str] = Field(
         description="This field should contain a list of ingredients in the recipe"
     )
@@ -28,6 +31,8 @@ class ExtractedRecipe(BaseModel):
 
 
 class EnrichedIngredient(BaseModel):
+    """Class containing enriched ingredient information"""
+
     original_name: str
     en_name: str | None = None
     weight_estimate: WeightEstimate | None = None
@@ -83,6 +88,7 @@ class EnrichedRecipe(ExtractedRecipe):
         extracted_recipe: ExtractedRecipe,
     ) -> "EnrichedRecipe":
         return cls(
+            title=extracted_recipe.title,
             url=url,
             ingredients=EnrichedIngredient.from_list(extracted_recipe.ingredients),
             persons=extracted_recipe.persons,

@@ -1,4 +1,5 @@
 {
+    "title": "Tomatrisotto",
     "ingredients": [
         {
             "original_name": "1 løg",
@@ -36,8 +37,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "25 g tomatpuré",
-            "en_name": "25 g tomato puree",
+            "original_name": "25 g koncentreret tomatpuré",
+            "en_name": "25 g concentrated tomato puree",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -71,8 +72,8 @@
             "co2_per_kg_search": null
         },
         {
-            "original_name": "0.5 øko citron",
-            "en_name": "0.5 ECO Lemon",
+            "original_name": "0.5 øko citron (fintrevet skal)",
+            "en_name": "0.5 ECO Lemon (finely grated shell)",
             "weight_estimate": null,
             "co2_per_kg_db": null,
             "co2_per_kg_search": null
@@ -128,6 +129,6 @@
         }
     ],
     "persons": 4,
-    "instructions": " saute onion and garlic in a saucepan with oil until the onions are soft. Add risottoris and stir well for a minute. Pour white wine into the pan and stir until the rice has absorbed the wine. Turn down the heat. Blend peeled tomatoes, tomato puree, vegetable boullion and thyme together until it is completely uniform and add the moisture little by little to the rice as the rice absorbs the moisture, continue until the rice is a little button perfectly tender. Stir finely chopped sun -dried tomatoes and freshly written parmesan in the rice and season well with lemon zest, salt and pepper. The risotto should be light -flowing and delicious creamy. Serve with burrata, a drip of pesto, a little extra parmesan, and a sprinkle of fresh basil.",
+    "instructions": " saute onion and garlic in a saucepan with oil until the onions are soft. Add risottoris and stir well for a minute. Pour white wine into the pan and stir until the rice has absorbed the wine. Turn down the heat. Blend peeled tomatoes, tomato puree, vegetable broth and thyme together until it is completely uniform and add the moisture little by little to the rice as the rice absorbs the moisture, continue until the rice is a little button perfectly tender. Stir finely chopped sun -dried tomatoes and freshly written parmesan in the rice and season well with lemon zest, salt and pepper. The risotto should be light -flowing and delicious creamy. Serve with burrata, a drip of pesto, a little extra parmesan, and a sprinkle of fresh basil.",
     "url": "https://www.valdemarsro.dk/tomatrisotto/"
 }

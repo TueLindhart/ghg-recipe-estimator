@@ -35,7 +35,6 @@ steps:
       - --max-instances=1
       - --min-instances=1
       - --memory=512Mi
-      - --set-env-vars=GPT_MODEL=gpt-4o-mini-2024-07-18
       - --set-env-vars=USE_CACHE=true
       - --set-env-vars=STORE_IN_CACHE=true
       - --set-env-vars=ENV=prod

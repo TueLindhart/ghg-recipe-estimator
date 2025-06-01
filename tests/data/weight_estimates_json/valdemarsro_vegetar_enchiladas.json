@@ -2,22 +2,22 @@
     "weight_estimates": [
         {
             "ingredient": "1 tsp steady cumin",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 teaspoon of cinnamon",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 teaspoon smoked paprika",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp steady coriander",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -27,22 +27,22 @@
         },
         {
             "ingredient": "1 tablespoon olive oil",
-            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
             "ingredient": "1 tsp wheat flour",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 dl vegetable broth",
-            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -52,22 +52,22 @@
         },
         {
             "ingredient": "1 tablespoon olive oil",
-            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "Black pepper",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 servings * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
@@ -87,12 +87,12 @@
         },
         {
             "ingredient": "1 tsp steady cumin",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 tsp steady coriander",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -126,8 +126,18 @@
             "weight_in_kg": 0.025
         },
         {
+            "ingredient": "salt",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_in_kg": 0.02
+        },
+        {
+            "ingredient": "Black pepper",
+            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_in_kg": 0.02
+        },
+        {
             "ingredient": "1 tablespoon butter",
-            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         }
     ]

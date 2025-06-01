@@ -61,6 +61,10 @@ class IngredientOutput(BaseModel):
 
 
 class RecipeCO2Output(BaseModel):
+    """Class containing recipe CO2 output information"""
+
+    title: str | None
+    url: str
     total_co2_kg: float
     number_of_persons: int | None = None
     co2_per_person_kg: float | None = None
