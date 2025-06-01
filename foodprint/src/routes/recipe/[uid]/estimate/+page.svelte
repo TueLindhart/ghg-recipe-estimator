@@ -7,6 +7,17 @@
 
   export let data: { uid: string; result: any };
 
+  // Compute full URL and display domain from data.result.url if available
+  let domainFull = "";
+  let domainDisplay = "";
+  if (data.result.url) {
+    const parsedUrl = new URL(data.result.url);
+    domainFull = parsedUrl.href;
+    domainDisplay = parsedUrl.hostname
+      .replace(/^www\./, "")
+      .replace(/\.[^.]*$/, "");
+  }
+
   let showModal = false;
   let selectedNotes = "";
   let selectedIngredientName = "";
@@ -21,8 +32,19 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 </script>
 
 <div class="container mx-auto px-4">
-  <div class="mt-4">
+  <div class="mt-4 flex items-center gap-4">
     <ReturnHomeButton />
+    {#if data.result.url}
+      <!-- Modified URL display: Button without blue url styling -->
+      <Button on:click={() => window.open(data.result.url, "_blank")}>
+        {"Gå til opskrift"}
+      </Button>
+    {/if}
+    {#if data.result.title}
+      <h1 class="text-2xl">
+        <span class="font-bold">{data.result.title}</span> af {domainDisplay}
+      </h1>
+    {/if}
   </div>
 
   <h2 class="text-xl font-bold mb-4 mt-4">Oversigt</h2>
