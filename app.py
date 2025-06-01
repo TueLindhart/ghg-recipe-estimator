@@ -100,7 +100,6 @@ async def run_estimator(
             runparams=runparams, logparams=logparams, redis_client=redis_client
         )
         status = JobStatus.COMPLETED if success else JobStatus.ERROR
-        result = result if success else None
         await redis_client.update_job_status(
             runparams.uid,
             status=status,

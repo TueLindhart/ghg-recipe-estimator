@@ -214,8 +214,10 @@ Follow the detailed instructions below carefully. Any deviation from them will r
 6. If No FOOD Recipe Is Found in the Text
 --------------------------------------
 - If no recognizable FOOD recipe is found:
+  - Return None for the title
   - Return an empty list for ingredients: []
   - Return null for the number of persons, the instructions, and the title
+  - Example: A knitting pattern or a sewing guide is not a food recipe 
 
 Remember: You must follow these rules exactly to ensure accurate extraction.
 """

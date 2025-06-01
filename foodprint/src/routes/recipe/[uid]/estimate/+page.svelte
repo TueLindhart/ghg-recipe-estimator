@@ -1,4 +1,5 @@
 <script lang="ts">
+  import BaseButton from "$lib/components/BaseButton.svelte";
   import EmissionBarChart from "$lib/components/EmissionBarChart.svelte";
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import OverviewCard from "$lib/components/OverviewCard.svelte";
@@ -32,16 +33,22 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 </script>
 
 <div class="container mx-auto px-4">
-  <div class="mt-4 flex items-center gap-4">
+  <div class="mt-4 flex flex-wrap items-center gap-4">
     <ReturnHomeButton />
+
     {#if data.result.url}
-      <!-- Modified URL display: Button without blue url styling -->
-      <Button on:click={() => window.open(data.result.url, "_blank")}>
-        {"Gå til opskrift"}
-      </Button>
+      <BaseButton
+        ariaLabel="Gå til opskrift"
+        onClick={() => window.open(data.result.url, "_blank")}
+      >
+        Gå til opskrift
+      </BaseButton>
     {/if}
+
     {#if data.result.title}
-      <h1 class="text-2xl">
+      <!-- “basis-full” makes the h1 start on its own line below 640 px;
+         from the sm breakpoint up it behaves like normal inline content -->
+      <h1 class="text-2xl basis-full sm:basis-auto">
         <span class="font-bold">{data.result.title}</span> af {domainDisplay}
       </h1>
     {/if}
