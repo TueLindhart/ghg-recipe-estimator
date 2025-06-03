@@ -137,46 +137,46 @@ def cache_results(func):
         # Convert positional arguments to keyword arguments
         kwargs.update(dict(zip(arg_names, args)))
 
-        runparams: RunParams | None = kwargs.get("runparams")
-        if runparams is None:
+        run_params: RunParams | None = kwargs.get("runparams")
+        if run_params is None:
             raise ValueError("runparams argument is required")
 
         # Check if cache exists
-        if runparams.use_cache:
-            cache = fetch_matching_cache(runparams)
+        if run_params.use_cache:
+            cache = fetch_matching_cache(run_params)
             if cache is not None:
                 return cache
 
         # Call the original function and store the result in cache
         success, result = await func(**kwargs)
-        if success and runparams.store_in_cache:
-            cache_estimator_result(runparams, result)
+        if success and run_params.store_in_cache:
+            cache_estimator_result(run_params, result)
         return success, result
 
     return wrapper
 
 
-def cache_estimator_result(runparams: RunParams, result: str):
+def cache_estimator_result(run_params: RunParams, result: str):
     parsed_result = json.loads(result)
     data = {
-        "runparams": runparams.model_dump(),
+        "runparams": run_params.model_dump(),
         "result": parsed_result,
         "timestamp": get_now_isoformat(),
     }
-    blob_key = create_cache_key(runparams.url, version)
+    blob_key = create_cache_key(run_params.url, version)
     store_json_in_blob_storage(blob_key, data)
-    logger.info(f"URL={runparams.url}: Stored result in blob storage")
+    logger.info(f"URL={run_params.url}: Stored result in blob storage")
 
 
-def fetch_matching_cache(runparams: RunParams) -> tuple[bool, Any] | None:
-    prefix = create_cache_key_path(runparams.url, version)
+def fetch_matching_cache(run_params: RunParams) -> tuple[bool, Any] | None:
+    prefix = create_cache_key_path(run_params.url, version)
     cache = get_cache(prefix)
     cache_runparams = cache.get("runparams") if cache else None
     result = cache.get("result") if cache else None
     if cache_runparams:
         cache_runparams = RunParams(**cache_runparams)
-    if runparams == cache_runparams and result is not None:
-        logger.info(f"URL={runparams.url}: Using cache")
+    if run_params == cache_runparams and result is not None:
+        logger.info(f"URL={run_params.url}: Using cache")
         return True, json.dumps(result)
 
 

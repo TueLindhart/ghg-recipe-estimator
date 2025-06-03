@@ -39,7 +39,7 @@ def process_and_store_enriched_recipe(file_name: str, url: str):
 
     output_model = generate_output_model(
         enriched_recipe=enriched_recipe,
-        negligeble_threshold=NEGLIGIBLE_THRESHOLD,
+        negligible_threshold=NEGLIGIBLE_THRESHOLD,
         number_of_persons=enriched_recipe.persons,
     )
     # Store the final enriched recipe with translations as JSON

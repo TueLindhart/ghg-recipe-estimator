@@ -15,7 +15,7 @@ MAX_DINNER_EMISSION_PER_CAPITA = 2.2
 
 def generate_output_model(
     enriched_recipe: EnrichedRecipe,
-    negligeble_threshold: float,
+    negligible_threshold: float,
     number_of_persons: int | None,
 ) -> RecipeCO2Output:
     total_co2 = 0.0
@@ -48,12 +48,12 @@ def generate_output_model(
             continue
 
         # If the weight is negligible, mark it as such and set CO2 to 0.
-        if not should_include_ingredient(ingredient, negligeble_threshold):
+        if not should_include_ingredient(ingredient, negligible_threshold):
             weight_estimation_notes = weight_estimate.weight_calculation
             wt = round(weight_estimate.weight_in_kg, 3)
             calculation_notes = (
                 f"Weight on {wt} kg is negligible"
-                if not above_weight_threshold(ingredient, negligeble_threshold)
+                if not above_weight_threshold(ingredient, negligible_threshold)
                 else "Ingredient is ignored in calculation"
             )
             ingredients_list.append(

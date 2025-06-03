@@ -30,7 +30,7 @@ async def test_rag_co2_estimator_chain(
     rag_co2_emissions = await get_co2_emissions(
         verbose=False,
         recipe=enriched_recipe,
-        negligeble_threshold=NEGLIGIBLE_THRESHOLD,
+        negligible_threshold=NEGLIGIBLE_THRESHOLD,
     )
     enriched_recipe.update_with_co2_per_kg_db(rag_co2_emissions)
 

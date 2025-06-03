@@ -24,7 +24,7 @@ def env_store_in_cache():
 class RunParams(pydantic.BaseModel):
     url: str
     uid: str = pydantic.Field(default_factory=get_uuid)
-    negligeble_threshold: float = NEGLIGIBLE_THRESHOLD
+    negligible_threshold: float = NEGLIGIBLE_THRESHOLD
     use_cache: bool = pydantic.Field(default_factory=env_use_cache)
     store_in_cache: bool = pydantic.Field(default_factory=env_store_in_cache)
 
@@ -33,7 +33,7 @@ class RunParams(pydantic.BaseModel):
             return False
         if self.url != value.url:
             return False
-        if self.negligeble_threshold != value.negligeble_threshold:
+        if self.negligible_threshold != value.negligible_threshold:
             return False
         return True
 

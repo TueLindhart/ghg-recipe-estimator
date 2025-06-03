@@ -21,7 +21,7 @@ async def save_rag_co2_estimates(file_name: str, url: str) -> CO2Emissions:
     weight_estimates = get_expected_weight_estimates(file_name)
     enriched_recipe.update_with_weight_estimates(weight_estimates)
     rag_co2_estimates = await get_co2_emissions(
-        verbose=False, recipe=enriched_recipe, negligeble_threshold=NEGLIGIBLE_THRESHOLD
+        verbose=False, recipe=enriched_recipe, negligible_threshold=NEGLIGIBLE_THRESHOLD
     )
 
     enriched_recipe.update_with_co2_per_kg_db(rag_co2_estimates)
