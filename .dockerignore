@@ -13,6 +13,7 @@ Makefile
 Procfile
 README.md
 *.yaml
+!logging_config.yaml
 
 
 # Ensure these folders are kept
