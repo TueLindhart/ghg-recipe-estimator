@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "food-co2-estimator"
-version = "0.2.2"
+version = "0.2.3"
 description = "Repository for estimating CO2 emission from the ingredient list of recipies"
 authors = ["Tue Thomsen"]
 readme = "README.md"
