@@ -16,6 +16,7 @@ Estimate CO2 emissions from recipe ingredient lists using Large Language Models 
   - [Frontend](#frontend)
     - [Docker (Frontend)](#docker-frontend)
     - [Cloud Deployment (Frontend)](#cloud-deployment-frontend)
+  - [Codebase Overview](#codebase-overview)
 
 ---
 
@@ -106,10 +107,39 @@ gcloud builds submit --region=europe-west1 --config cloudbuild.yaml
 Build and deploy using Google Cloud Build:
 ```bash
 cd foodprint
-gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
+gcloud builds submit --region=europe-west1 --config cloudbuild.yaml
 ```
 
 ---
+
+## Codebase Overview
+
+This repository combines a Python backend with a SvelteKit frontend. The backend
+is a FastAPI application defined in `app.py` that exposes endpoints for starting
+an estimation job, checking status, and comparing CO₂ values. During startup,
+the app connects to Redis using a lifespan handler so that job progress can be
+tracked across requests.
+
+The main estimation workflow lives in `food_co2_estimator/main.py`. The
+`async_estimator` function retrieves a recipe page, extracts the recipe with an
+LLM prompt, translates the text when needed, predicts ingredient weights, and
+looks up emission values from a vector database. The results are serialized via
+Pydantic models and cached for future requests.
+
+Supporting modules in `food_co2_estimator/` provide chains for recipe
+extraction, weight estimation, translation, and retrieval, as well as utilities
+for language detection and storage. Data for emissions is stored in an SQLite
+database and a Chroma vector store under `food_co2_estimator/data`.
+
+The SvelteKit frontend, located in `foodprint/`, proxies API calls to the Python
+backend and renders the results. Tests live in the `tests/` directory and the
+Makefile contains targets for linting, formatting, type checking, and running
+Pytest.
+
+To explore further, review the prompt templates in
+`food_co2_estimator/prompt_templates`, inspect the vector store data, and check
+the frontend components under `foodprint/src`.
+
 
 
 
