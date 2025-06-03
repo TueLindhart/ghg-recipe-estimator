@@ -86,40 +86,42 @@ def verify_token(
 
 
 async def run_estimator(
-    runparams: RunParams,
+    run_params: RunParams,
     redis_client: RedisCache,
 ):
     """
     Background task that executes your async_estimator function.
     """
-    logger.info(f"Starting CO2 estimation for UID={runparams.uid} URL={runparams.url}")
+    logger.info(
+        f"Starting CO2 estimation for UID={run_params.uid} URL={run_params.url}"
+    )
     try:
         # You can configure LogParams as needed
-        logparams = LogParams(
+        log_params = LogParams(
             logging_level=logging.INFO
         )  # TODO: Remove LogParams - not used.
         success, result = await async_estimator(
-            runparams=runparams, logparams=logparams, redis_client=redis_client
+            run_params=run_params, log_params=log_params, redis_client=redis_client
         )
         status = JobStatus.COMPLETED if success else JobStatus.ERROR
         await redis_client.update_job_status(
-            runparams.uid,
+            run_params.uid,
             status=status,
             result=result,
         )
 
         if success:
             logger.info(
-                f"Completed CO2 estimation for UID={runparams.uid} URL={runparams.url}"
+                f"Completed CO2 estimation for UID={run_params.uid} URL={run_params.url}"
             )
         else:
             logger.error(
-                f"CO2 estimation failed for UID={runparams.uid} URL={runparams.url}: {result}"
+                f"CO2 estimation failed for UID={run_params.uid} URL={run_params.url}: {result}"
             )
     except Exception as e:
         logger.exception("Background estimation failed.")
         await redis_client.update_job_status(
-            runparams.uid,
+            run_params.uid,
             status=JobStatus.ERROR,
             result=str(e),
         )
@@ -140,17 +142,17 @@ async def start_estimation(
     if not access:
         raise HTTPException(status_code=401, detail="Unauthorized")
     # Create your RunParams from the request
-    runparams = RunParams(url=request.url)
+    run_params = RunParams(url=request.url)
     redis_client: RedisCache = app.state.redis
     await redis_client.update_job_status(
-        runparams.uid,
+        run_params.uid,
         JobStatus.PROCESSING,
     )
 
     # Kick off the background task
-    background_tasks.add_task(run_estimator, runparams, redis_client)
+    background_tasks.add_task(run_estimator, run_params, redis_client)
 
-    return StartEstimateResponse(uid=runparams.uid, status=JobStatus.PROCESSING)
+    return StartEstimateResponse(uid=run_params.uid, status=JobStatus.PROCESSING)
 
 
 @app.get("/status/{uid}")

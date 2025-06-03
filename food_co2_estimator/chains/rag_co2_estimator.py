@@ -33,20 +33,20 @@ def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
 
 
 def should_include_ingredient(
-    item: EnrichedIngredient, negligeble_threshold: float
+    item: EnrichedIngredient, negligible_threshold: float
 ) -> bool:
-    return above_weight_threshold(item, negligeble_threshold) and ingredient_to_ignore(
+    return above_weight_threshold(item, negligible_threshold) and ingredient_to_ignore(
         item
     )
 
 
 def above_weight_threshold(
-    item: EnrichedIngredient, negligeble_threshold: float
+    item: EnrichedIngredient, negligible_threshold: float
 ) -> bool:
     return (
         item.weight_estimate is not None
         and item.weight_estimate.weight_in_kg is not None
-        and negligeble_threshold < item.weight_estimate.weight_in_kg
+        and negligible_threshold < item.weight_estimate.weight_in_kg
     )
 
 
@@ -62,7 +62,7 @@ def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
 @log_with_url
 async def get_co2_emissions(
     verbose: bool,
-    negligeble_threshold: float,
+    negligible_threshold: float,
     recipe: EnrichedRecipe,
 ) -> CO2Emissions:
     emission_chain = rag_co2_emission_chain(verbose)
@@ -70,7 +70,7 @@ async def get_co2_emissions(
     ingredients_input = [
         item.en_name
         for item in recipe.ingredients
-        if should_include_ingredient(item, negligeble_threshold)
+        if should_include_ingredient(item, negligible_threshold)
     ]
 
     parsed_rag_emissions: CO2Emissions = await emission_chain.ainvoke(ingredients_input)

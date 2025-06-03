@@ -25,37 +25,37 @@ def log_exception_message(url: str, message: str):
 
 @cache_results
 async def async_estimator(
-    runparams: RunParams,
-    logparams: LogParams | None = None,
+    run_params: RunParams,
+    log_params: LogParams | None = None,
     redis_client: RedisCache | None = None,
     # Not ideal to pass redis client here, but for now
     # it is the only way to update status without major api changes
 ) -> tuple[bool, str]:
-    if logparams is None:
-        logparams = LogParams()
+    if log_params is None:
+        log_params = LogParams()
 
-    logging.basicConfig(level=logparams.logging_level)
-    await update_status(runparams.uid, redis_client, JobStatus.EXTRACTING_TEXT)
-    text = get_markdown_from_url(runparams.url)
+    logging.basicConfig(level=log_params.logging_level)
+    await update_status(run_params.uid, redis_client, JobStatus.EXTRACTING_TEXT)
+    text = get_markdown_from_url(run_params.url)
     if text is None:
         return False, "Kan ikke udtrække tekst fra URL"
 
     # Extract ingredients from text
-    await update_status(runparams.uid, redis_client, JobStatus.EXTRACTING_RECIPE)
+    await update_status(run_params.uid, redis_client, JobStatus.EXTRACTING_RECIPE)
     recipe = await extract_recipe(
-        text=text, url=runparams.url, verbose=logparams.verbose
+        text=text, url=run_params.url, verbose=log_params.verbose
     )
     if len(recipe.ingredients) == 0:
         no_recipe_message = "Kan ikke finde en opskrift for den angivne URL."
-        log_exception_message(runparams.url, no_recipe_message)
+        log_exception_message(run_params.url, no_recipe_message)
         return False, no_recipe_message
 
     # Detect language in ingredients
-    enriched_recipe = EnrichedRecipe.from_extracted_recipe(runparams.url, recipe)
+    enriched_recipe = EnrichedRecipe.from_extracted_recipe(run_params.url, recipe)
     language = detect_language(enriched_recipe)
     if language is None:
         language_exception = f"Sproget blev ikke genkendt som et af følgende: {', '.join([lang.value for lang in Languages])}"
-        log_exception_message(runparams.url, language_exception)
+        log_exception_message(run_params.url, language_exception)
         return False, language_exception
 
     translator = get_translation_chain()
@@ -65,42 +65,42 @@ async def async_estimator(
         )
     except Exception as e:
         translation_exception = "Noget gik galt under oversættelsen af opskriften."
-        log_exception_message(runparams.url, str(e))
-        log_exception_message(runparams.url, translation_exception)
+        log_exception_message(run_params.url, str(e))
+        log_exception_message(run_params.url, translation_exception)
         return False, translation_exception
 
-    await update_status(runparams.uid, redis_client, JobStatus.ESTIMATING_WEIGHTS)
+    await update_status(run_params.uid, redis_client, JobStatus.ESTIMATING_WEIGHTS)
     try:
         # Estimate weights using weight estimator
         parsed_weight_output = await get_weight_estimates(
-            logparams.verbose, enriched_recipe
+            log_params.verbose, enriched_recipe
         )
         enriched_recipe.update_with_weight_estimates(parsed_weight_output)
     except Exception as e:
         weight_est_exception = "Noget gik galt under estimering af ingrediensers vægt."
-        log_exception_message(runparams.url, str(e))
-        log_exception_message(runparams.url, weight_est_exception)
+        log_exception_message(run_params.url, str(e))
+        log_exception_message(run_params.url, weight_est_exception)
         return False, weight_est_exception
-    await update_status(runparams.uid, redis_client, JobStatus.ESTIMATING_CO2)
+    await update_status(run_params.uid, redis_client, JobStatus.ESTIMATING_CO2)
     try:
         # Estimate the kg CO2e per kg for each ingredient using RAG
         parsed_rag_emissions = await get_co2_emissions(
-            logparams.verbose, runparams.negligeble_threshold, enriched_recipe
+            log_params.verbose, run_params.negligible_threshold, enriched_recipe
         )
         enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
     except Exception as e:
         rag_emissions_exception = (
             "Noget gik galt under estimering af kg CO2e pr. kg for ingredienserne."
         )
-        log_exception_message(runparams.url, str(e))
-        log_exception_message(runparams.url, rag_emissions_exception)
+        log_exception_message(run_params.url, str(e))
+        log_exception_message(run_params.url, rag_emissions_exception)
         return False, rag_emissions_exception
 
     # Build a Pydantic model and return its JSON representation
-    await update_status(runparams.uid, redis_client, JobStatus.PREPARING_OUTPUT)
+    await update_status(run_params.uid, redis_client, JobStatus.PREPARING_OUTPUT)
     output_model = generate_output_model(
         enriched_recipe=enriched_recipe,
-        negligeble_threshold=runparams.negligeble_threshold,
+        negligible_threshold=run_params.negligible_threshold,
         number_of_persons=enriched_recipe.persons,
     )
     if (
@@ -134,10 +134,10 @@ if __name__ == "__main__":
     url = "https://www.louisesmadblog.dk/bloede-tacos/"
 
     start_time = time()
-    runparams = RunParams(url=url)
+    run_params = RunParams(url=url)
     success, result = asyncio.run(
         async_estimator(
-            runparams=runparams,
+            run_params=run_params,
         )
     )
     print(result)

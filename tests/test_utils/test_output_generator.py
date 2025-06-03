@@ -118,7 +118,7 @@ def enriched_recipe_search_english():
 
 
 @pytest.mark.parametrize(
-    "enriched_recipe, negligeble_threshold, expected_output",
+    "enriched_recipe, negligible_threshold, expected_output",
     [
         (
             "enriched_recipe_db_english",
@@ -282,13 +282,13 @@ def enriched_recipe_search_english():
 def test_generate_output(
     request: pytest.FixtureRequest,
     enriched_recipe: str,
-    negligeble_threshold: float,
+    negligible_threshold: float,
     expected_output: RecipeCO2Output,
 ) -> None:
     recipe = request.getfixturevalue(enriched_recipe)
     result = generate_output_model(
         enriched_recipe=recipe,
-        negligeble_threshold=negligeble_threshold,
+        negligible_threshold=negligible_threshold,
         number_of_persons=4,
     )
     assert result.model_dump() == expected_output.model_dump()

@@ -163,10 +163,10 @@ def test_url_to_key(url, expected):
 
 @pytest.mark.asyncio
 async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
-    async def mock_func(runparams):
+    async def mock_func(run_params):
         return True, "result"
 
-    runparams = RunParams(
+    run_params = RunParams(
         url="https://www.example.com", use_cache=True, store_in_cache=True
     )
     mock_cache_results = cache_results(mock_func)
@@ -177,13 +177,13 @@ async def test_cache_results(monkeypatch: pytest.MonkeyPatch):
     monkeypatch.setattr(
         "food_co2_estimator.blob_caching.cache_estimator_result", lambda x, y: None
     )
-    success, result = await mock_cache_results(runparams=runparams)
+    success, result = await mock_cache_results(run_params=run_params)
     assert success
     assert result == "result"
 
 
 def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
-    runparams = RunParams(
+    run_params = RunParams(
         url="https://www.example.com", use_cache=True, store_in_cache=True
     )
     result = '{"key": "value"}'
@@ -192,16 +192,16 @@ def test_cache_estimator_result(monkeypatch: pytest.MonkeyPatch):
         "food_co2_estimator.blob_caching.store_json_in_blob_storage"
     )
     with mock_store_json_in_blob_storage as mock_store:
-        cache_estimator_result(runparams, result)
+        cache_estimator_result(run_params, result)
         mock_store.assert_called_once()
 
 
 def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
-    runparams = RunParams(
+    run_params = RunParams(
         url="https://www.example.com", use_cache=True, store_in_cache=True
     )
     cache_data = {
-        "runparams": runparams.model_dump(),
+        "runparams": run_params.model_dump(),
         "result": {"key": "value"},
         "timestamp": get_now_isoformat(),
     }
@@ -210,5 +210,5 @@ def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
         "food_co2_estimator.blob_caching.get_cache", lambda x: cache_data
     )
 
-    result = fetch_matching_cache(runparams)
+    result = fetch_matching_cache(run_params)
     assert result == (True, json.dumps({"key": "value"}))
