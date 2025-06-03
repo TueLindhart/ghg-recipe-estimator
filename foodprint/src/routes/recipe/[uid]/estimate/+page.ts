@@ -19,9 +19,9 @@ export const load: PageLoad = async ({ params, fetch }) => {
 
 	const statusData: { status: string; result?: string } = await res.json();
 
-	// 2) If someone lands here too early, send them back to the progress page
+	// 2) If someone lands here too early, send them back to the status page
 	if (statusData.status !== 'Completed') {
-		throw redirect(307, `/recipe/${params.uid}/progress`);
+		throw redirect(307, `/recipe/${params.uid}/status`);
 	}
 
 	// 3) Parse the JSON‑string that the API stored in result
@@ -31,6 +31,12 @@ export const load: PageLoad = async ({ params, fetch }) => {
 
 	const result = JSON.parse(statusData.result);
 
+	const cmpRes = await fetch(
+		`/api/comparison?kgco2=${result.co2_per_person_kg}`
+	);
+	if (!cmpRes.ok) throw new Error("Comparison service failed");
+	const comparison = await cmpRes.json();
+
 	// 4) Hand the data to +page.svelte
-	return { uid: params.uid, result };
+	return { uid: params.uid, result, comparison };
 };
