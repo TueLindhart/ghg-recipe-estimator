@@ -19,7 +19,16 @@
     try {
       const r = await fetch(`/api/status/${uid}`);
       if (!r.ok) {
-        statusMessage = `Fejl ved statusopdatering: ${r.status} ${r.statusText}`;
+        let detail = `Fejl ved statusopdatering: ${r.status}`;
+        try {
+          const errorBody = await r.json();
+          if (errorBody?.error) {
+            detail = `Fejl ved statusopdatering: ${errorBody.error}`;
+          }
+        } catch {
+          // fallback to status if response is not JSON
+        }
+        statusMessage = detail;
         return;
       }
 
