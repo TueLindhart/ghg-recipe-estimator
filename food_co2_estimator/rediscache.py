@@ -11,9 +11,9 @@ class RedisCache:
         self.expiration = REDIS_EXPIRATION if expiration is None else expiration
 
     @classmethod
-    async def create(cls, experiration: int | None = None):
+    async def create(cls, expiration: int | None = None):
         redis_client = aioredis.Redis(host="localhost", port=6379, db=0)
-        return cls(redis_client, experiration)
+        return cls(redis_client, expiration)
 
     async def get(self, key: str):
         """
