@@ -212,3 +212,24 @@ def test_fetch_matching_cache(monkeypatch: pytest.MonkeyPatch):
 
     result = fetch_matching_cache(runparams)
     assert result == (True, json.dumps({"key": "value"}))
+
+
+@pytest.mark.asyncio
+async def test_cache_results_hit(monkeypatch: pytest.MonkeyPatch):
+    async def wrapped(runparams):
+        raise Exception("Should not be called")
+
+    runparams = RunParams(
+        url="https://www.example.com",
+        use_cache=True,
+        store_in_cache=True,
+    )
+    decorated = cache_results(wrapped)
+
+    monkeypatch.setattr(
+        "food_co2_estimator.blob_caching.fetch_matching_cache",
+        lambda x: (True, "cached"),
+    )
+
+    result = await decorated(runparams=runparams)
+    assert result == (True, "cached")
