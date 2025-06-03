@@ -11,6 +11,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from food_co2_estimator.logger_utils import logger
 from food_co2_estimator.main import async_estimator
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
+from co2_comparison.co2_comparison import compare_co2, ComparisonResponse
 from food_co2_estimator.pydantic_models.response_models import (
     EstimateRequest,
     JobResult,
@@ -170,6 +171,21 @@ async def clear_status(uid: str):
     redis_client: RedisCache = app.state.redis
     await redis_client.delete(uid)
     return {"status": "Cleared"}
+
+@app.get("/comparison", response_model=ComparisonResponse)
+async def comparison_endpoint(kgco2: float):
+    """
+    Compare <kgco2> to 100 % of a CPH→NYC flight.
+
+    Query params
+    ------------
+    kgco2 : float   Amount of CO₂ (kg) you wish to compare.
+    """
+    try:
+        return compare_co2(kgco2)
+    except ValueError as exc:
+        # Translate domain error → HTTP 422 for FastAPI clients
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 if __name__ == "__main__":
