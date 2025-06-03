@@ -11,6 +11,7 @@ def _create_enriched_recipe(
     ingredients: list[str], instructions: str | None, persons: int | None = 4
 ):
     return EnrichedRecipe(
+        title="Test Recipe",
         url="http://example.com",
         ingredients=EnrichedIngredient.from_list(ingredients),
         instructions=instructions,

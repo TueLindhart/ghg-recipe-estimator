@@ -1,161 +1,152 @@
 {
+    "title": "Tacos med oksekød, tomatsalsa og avocado",
     "ingredients": [
         {
             "original_name": "1 lille løg",
             "en_name": "1 small onion",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 fed hvidløg",
             "en_name": "2 cloves of garlic",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "0.5 rød peberfrugt",
             "en_name": "0.5 Red pepper",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "olie til stegning",
             "en_name": "Oil for frying",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "250 g oksekød",
             "en_name": "250 g of beef",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1.5 spsk fajitakrydderi",
             "en_name": "1.5 tablespoons fajita crawling",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "chilipulver eller flager efter smag",
             "en_name": "chili powder or flakes to taste",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 dåse kidneybønner",
             "en_name": "1 can of kidney beans",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 spsk tomatpuré",
             "en_name": "2 tablespoons tomato puree",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "2.5 dl oksefond",
-            "en_name": "2.5 dl beef fund",
+            "original_name": "2.5 dl oksefond/-bouillon",
+            "en_name": "2.5 dl beef fund/broth",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "10-12 små majstortillas",
             "en_name": "10-12 small cornstortillas",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 portion tomatsalsa",
             "en_name": "1 serving of tomato salsa",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 avocado",
             "en_name": "1 Avocado",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "salt",
             "en_name": "salt",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "peber",
             "en_name": "pepper",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "0.5 rødløg",
             "en_name": "0.5 Red onion",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 fed hvidløg",
             "en_name": "2 cloves of garlic",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "300 g tomater",
             "en_name": "300 g of tomatoes",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 - 1 chilipeber",
-            "en_name": "0.5 - 1 chili pepper",
+            "original_name": "0.75 chilipeber",
+            "en_name": "0.75 chili pepper",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "0.5 bdt koriander",
             "en_name": "0.5 Bdt coriander",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 spsk olivenolie",
             "en_name": "2 tablespoons olive oil",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "saften af 0.5 lime",
             "en_name": "The juice of 0.5 lime",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "salt",
+            "en_name": "salt",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "peber",
+            "en_name": "Pepper",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
         }
     ],
     "persons": 2,
-    "instructions": " arrow and chop the onion and garlic, and cut the peppers into cubes. Heat oil on a pan and saute the onion and garlic under even heat until the onions are clear. Brown the meat on the same pan. Add spices and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Taste with salt and pepper and possibly extra chili. Lunch tortillas in a 200 degree hot oven for approx. 10 minutes. Distribute the lightning chili on tacos, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce.",
+    "instructions": " Peel and chop the onion and garlic, and cut the peppers into cubes. Heat oil on a pan and saute the onion and garlic under even heat until the onions are clear. Turn up the heat and brown the meat on the same pan. Add fajita spice and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Season with salt, pepper and possibly extra chili. Lunch tortillas in the oven at 200 degrees for approx. 10 minutes. Distribute the lightning chili on tortillas, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce. For tomato salsa: Arrow and chop onion and garlic. Chop tomatoes and chili pepper nicely. Cut coriander. Mix with olive oil, lime juice, salt and pepper.",
     "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
 }

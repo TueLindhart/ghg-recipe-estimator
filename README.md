@@ -1,119 +1,115 @@
 # Food CO2 Estimator
 
-This repository contains code for estimating CO2 emissions from the ingredient lists of recipes using Large Language Models (LLMs). The project leverages various tools and libraries to fetch, parse, and analyze recipe data to provide CO2 emission estimates.
+Estimate CO2 emissions from recipe ingredient lists using Large Language Models (LLMs). This project fetches, parses, and analyzes recipe data to provide CO2 emission estimates.
 
 ## Table of Contents
 
 - [Food CO2 Estimator](#food-co2-estimator)
   - [Table of Contents](#table-of-contents)
+  - [Features](#features)
   - [Installation](#installation)
-  - [Running the Flask App](#running-the-flask-app)
-  - [Heroku](#heroku)
-  - [Using the CO2 Estimator](#using-the-co2-estimator)
   - [Environment Variables](#environment-variables)
-- [Docker](#docker)
-  - [Build backend](#build-backend)
-  - [Build frontend](#build-frontend)
-  
+  - [Backend](#backend)
+    - [Running Locally](#running-locally)
+    - [Docker (Backend)](#docker-backend)
+    - [Cloud Deployment (Backend)](#cloud-deployment-backend)
+  - [Frontend](#frontend)
+    - [Docker (Frontend)](#docker-frontend)
+    - [Cloud Deployment (Frontend)](#cloud-deployment-frontend)
+
+---
+
+## Features
+
+- Estimate CO2 emissions for recipes via web interface or API
+- Dockerized backend and frontend for easy deployment
+
+---
 
 ## Installation
 
-To install the necessary packages, use the following command:
+Install Python dependencies:
 
 ```bash
 poetry install
 ```
 
-This will install all the dependencies listed in the `pyproject.toml` file.
-
-## Running the Flask App
-
-To run the Flask app, follow these steps:
-
-1. Ensure you have all dependencies installed using `poetry install`.
-2. Run the Flask app using the following command:
-
-```bash
-poetry run flask run
-```
-
-The app will be available at `http://127.0.0.1:8000`.
-
-## Heroku
-The app is automatically deployed in heroku every time code is merged into main. To make sure the deployment does not fail, the pyproject.toml and poetry.lock file must be updated with all required packages.
-
-## Using the CO2 Estimator
-
-The CO2 estimator can be used to calculate the CO2 emissions of recipes. Here's how you can use it:
-
-1. **Calculate CO2 Emission**:
-   - Navigate to the home page of the Flask app.
-   - Enter the recipe URL or the ingredients manually in the provided textarea.
-   - Click on the "Calculate CO2e Emission" button.
-   - The result will be displayed after processing.
-
-2. **Monitor App Output**:
-   - You can monitor the app output using Heroku logs (if deployed on Heroku):
-
-```bash
-heroku logs --source app
-```
-
+---
 
 ## Environment Variables
-Set the following environment variables according to template.env file:
 
-# Docker
+Copy `template.env` to `.env` and fill in the required values. These variables are used for both local and Docker deployments.
 
-Use following commands to build and deploy app.
+---
 
-## Build backend
+## Backend
 
-1. Build image locally
-```bash
-docker build -t foodprint-backend:latest  .
-```
+### Running Locally
 
-2. Test image locally
-```bash
-docker run \
-  --env-file .env \
-  -p 8080:8080 \
-  -v "$(pwd)/.credentials:/var/secrets/credentials:ro" \
-  -e GOOGLE_APPLICATION_CREDENTIALS=/var/secrets/credentials/$GOOGLE_APPLICATION_CREDENTIALS_FILENAME \
-  -e ENV=prod \
-  -it foodprint-backend:latest
-```
+1. Install dependencies:
+    ```bash
+    poetry install
+    ```
+2. Start the Flask app:
+    ```bash
+    poetry run flask run
+    ```
+   The app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
-3. Build image in cloud and deploy
+### Docker (Backend)
+
+1. Build the backend image:
+    ```bash
+    docker build -t foodprint-backend:latest .
+    ```
+2. Run the backend container:
+    ```bash
+    docker run \
+      --env-file .env \
+      -p 8080:8080 \
+      -v "$(pwd)/.credentials:/var/secrets/credentials:ro" \
+      -e GOOGLE_APPLICATION_CREDENTIALS=/var/secrets/credentials/$GOOGLE_APPLICATION_CREDENTIALS_FILENAME \
+      -e ENV=prod \
+      -it foodprint-backend:latest
+    ```
+
+### Cloud Deployment (Backend)
+
+Build and deploy using Google Cloud Build:
 ```bash
 gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
 ```
 
-## Build frontend
+---
 
-1. Build image locally
-```bash
-cd foodprint
-docker build -t foodprint-frontend:latest  .
-```
+## Frontend
 
-2. Test image locally
-```bash
-docker run \
-  --env API_BASE="http://host.docker.internal:8000"  \
-  --env FOODPRINT_API_KEY=$FOODPRINT_API_KEY \
-  -p 3000:3000 \
-  -it foodprint-frontend:latest
-```
+### Docker (Frontend)
 
-Note, that http://host.docker.internal:8000 requires backend code is running locally 
+1. Build the frontend image:
+    ```bash
+    cd foodprint
+    docker build -t foodprint-frontend:latest .
+    ```
+2. Run the frontend container:
+    ```bash
+    docker run \
+      --env API_BASE="http://host.docker.internal:8000" \
+      --env FOODPRINT_API_KEY=$FOODPRINT_API_KEY \
+      -p 3000:3000 \
+      -it foodprint-frontend:latest
+    ```
+   > Note: `http://host.docker.internal:8000` requires the backend to be running locally.
 
-1. Build image in cloud and deploy
+### Cloud Deployment (Frontend)
+
+Build and deploy using Google Cloud Build:
 ```bash
 cd foodprint
 gcloud builds submit --region=europe-west1 --config cloudbuild.yaml 
 ```
+
+---
 
 
 

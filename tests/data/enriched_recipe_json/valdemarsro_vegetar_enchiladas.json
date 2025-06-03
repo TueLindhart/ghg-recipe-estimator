@@ -1,189 +1,176 @@
 {
+    "title": "Vegetar Enchiladas",
     "ingredients": [
         {
             "original_name": "1 tsk stødt spidskommen",
             "en_name": "1 tsp steady cumin",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk stødt kanel",
             "en_name": "1 teaspoon of cinnamon",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk røget paprika",
             "en_name": "1 teaspoon smoked paprika",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk stødt koriander",
             "en_name": "1 tsp steady coriander",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 fed hvidløg",
             "en_name": "2 cloves of garlic",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 spsk olivenolie",
             "en_name": "1 tablespoon olive oil",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 løg",
             "en_name": "1 onion",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk hvedemel",
             "en_name": "1 tsp wheat flour",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 dl grøntsagsbouillon",
             "en_name": "1 dl vegetable broth",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 dåse hakkede tomater",
             "en_name": "1 can of chopped tomatoes",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 spsk olivenolie",
             "en_name": "1 tablespoon olive oil",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "salt",
             "en_name": "salt",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "sort peber",
             "en_name": "Black pepper",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 løg",
             "en_name": "1 onion",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 fed hvidløg",
             "en_name": "2 cloves of garlic",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 squash",
             "en_name": "1 Squash",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 dåse hakkede tomater",
             "en_name": "1 can of chopped tomatoes",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk stødt spidskommen",
             "en_name": "1 tsp steady cumin",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tsk stødt koriander",
             "en_name": "1 tsp steady coriander",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 dåse sorte bønner",
             "en_name": "1 can of black beans",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 dåse kidneybønner",
             "en_name": "1 can of kidney beans",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "300 g majs",
             "en_name": "300 g of corn",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "8 tortillas pandekager",
             "en_name": "8 Tortilla's pancakes",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "150 g cheddar ost",
             "en_name": "150 g cheddar cheese",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 håndfuld frisk koriander",
             "en_name": "1 handful of fresh coriander",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "salt",
+            "en_name": "salt",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "sort peber",
+            "en_name": "Black pepper",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 spsk smør",
             "en_name": "1 tablespoon butter",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": " ** Enchilada's sauce ** Shake all the spices in a dry saucepan until they start to smell nice. Add oil, garlic and onion and saute until the onions are soft. Stir in flour into the filling and then add vegetable broth and chopped tomatoes. Stir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper. ** Fill ** Heat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through. Shake the corn kernels in a little butter on a pan until they get crispy and get a little color. ** Gather Enchiladas ** Grease each tortilla pancake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish. Distribute the last enchilada sauce over and sprinkle with more cheese. Distribute bean filling and corn kernels in the sides of the dish if there is anything left over. Bake them in a preheated oven at 175 degrees hot air for about 18 minutes. Sprinkle with coriander before serving.",
+    "instructions": " Shake all the spices in a dry saucepan until they start to smell. Add oil, garlic and onion and saute until the onions are soft. Stir flour into the filling and add vegetable broth and chopped tomatoes. Simmer for 15 minutes without a lid. Heat oil in a saucepan and saute the onion and garlic to soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid. Add black beans and kidney beans and warm through. Shake corn kernels in butter on a pan for crispy. Spread each tortilla cake with enchilada sauce, add bean filling, corn and cheddar cheese, roll together and place in a greased ovenproof dish. Spread the rest of the sauce over and sprinkle with cheese. Distribute bean filling and corn kernels in the sides. Bake at 175 degrees hot air for approx. 18 minutes. Sprinkle with coriander before serving.",
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
 }

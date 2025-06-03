@@ -25,7 +25,6 @@ def generate_output_model(
     for ingredient in enriched_recipe.ingredients:
         weight_estimate = ingredient.weight_estimate
         co2_data = ingredient.co2_per_kg_db
-        search_result = ingredient.co2_per_kg_search
 
         # If no weight estimate is available, add an ingredient with an error comment.
         if weight_estimate is None or weight_estimate.weight_in_kg is None:
@@ -71,22 +70,14 @@ def generate_output_model(
             )
             continue
 
-        co2_per_kg_db = co2_data.co2_per_kg if co2_data is not None else None
-        co2_per_kg_search = search_result.result if search_result else None
-        co2_per_kg = co2_per_kg_db if co2_per_kg_db is not None else co2_per_kg_search
-        co2_source = (
-            "DB"
-            if co2_per_kg_db is not None
-            else "Search"
-            if co2_per_kg_search is not None
-            else ""
-        )
+        co2_per_kg = co2_data.co2_per_kg if co2_data is not None else None
+
         computed_co2 = (
             round(co2_per_kg * weight_estimate.weight_in_kg, 2) if co2_per_kg else None
         )
         calculation_note = (
             f"{round(weight_estimate.weight_in_kg, 2)} kg * "
-            f"{round(co2_per_kg, 2)} kg CO2e/kg ({co2_source}) = {computed_co2} kg CO2e"
+            f"{round(co2_per_kg, 2)} kg CO2e/kg = {computed_co2} kg CO2e"
             if co2_per_kg
             else "Cannot calculate CO2 emission without CO2 per kg"
         )
@@ -94,8 +85,6 @@ def generate_output_model(
         co2_emission_notes = (
             f"Best match in CO2 database is: {co2_data.closest_match_name}"
             if co2_data is not None
-            else f"Found by search. Notes on finding search are; '{search_result.explanation}'"
-            if search_result
             else "Unable to find CO2 emission"
         )
         ingredient_id = (
@@ -131,6 +120,8 @@ def generate_output_model(
 
     # Create the top-level output model.
     output_model = RecipeCO2Output(
+        title=enriched_recipe.title,
+        url=enriched_recipe.url,
         total_co2_kg=round(total_co2, 1),
         number_of_persons=number_of_persons,
         co2_per_person_kg=co2_per_person,

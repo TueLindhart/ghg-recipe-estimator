@@ -38,7 +38,7 @@ async def async_estimator(
     await update_status(runparams.uid, redis_client, JobStatus.EXTRACTING_TEXT)
     text = get_markdown_from_url(runparams.url)
     if text is None:
-        return False, "Unable to extract text from provided URL"
+        return False, "Kan ikke udtrække tekst fra URL"
 
     # Extract ingredients from text
     await update_status(runparams.uid, redis_client, JobStatus.EXTRACTING_RECIPE)
@@ -46,7 +46,7 @@ async def async_estimator(
         text=text, url=runparams.url, verbose=logparams.verbose
     )
     if len(recipe.ingredients) == 0:
-        no_recipe_message = "I can't find a recipe in the provided URL."
+        no_recipe_message = "Kan ikke finde en opskrift for den angivne URL."
         log_exception_message(runparams.url, no_recipe_message)
         return False, no_recipe_message
 
@@ -54,7 +54,7 @@ async def async_estimator(
     enriched_recipe = EnrichedRecipe.from_extracted_recipe(runparams.url, recipe)
     language = detect_language(enriched_recipe)
     if language is None:
-        language_exception = f"Language is not recognized as {', '.join([lang.value for lang in Languages])}"
+        language_exception = f"Sproget blev ikke genkendt som et af følgende: {', '.join([lang.value for lang in Languages])}"
         log_exception_message(runparams.url, language_exception)
         return False, language_exception
 
@@ -64,7 +64,7 @@ async def async_estimator(
             {"recipe": enriched_recipe, "language": language}
         )
     except Exception as e:
-        translation_exception = "Something went wrong in translating recipes."
+        translation_exception = "Noget gik galt under oversættelsen af opskriften."
         log_exception_message(runparams.url, str(e))
         log_exception_message(runparams.url, translation_exception)
         return False, translation_exception
@@ -77,9 +77,7 @@ async def async_estimator(
         )
         enriched_recipe.update_with_weight_estimates(parsed_weight_output)
     except Exception as e:
-        weight_est_exception = (
-            "Something went wrong in estimating weights of ingredients."
-        )
+        weight_est_exception = "Noget gik galt under estimering af ingrediensers vægt."
         log_exception_message(runparams.url, str(e))
         log_exception_message(runparams.url, weight_est_exception)
         return False, weight_est_exception
@@ -92,7 +90,7 @@ async def async_estimator(
         enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
     except Exception as e:
         rag_emissions_exception = (
-            "Something went wrong in estimating kg CO2e per kg for the ingredients."
+            "Noget gik galt under estimering af kg CO2e pr. kg for ingredienserne."
         )
         log_exception_message(runparams.url, str(e))
         log_exception_message(runparams.url, rag_emissions_exception)
@@ -110,7 +108,7 @@ async def async_estimator(
         or output_model.co2_per_person_kg is None
         or output_model.co2_per_person_kg == 0
     ):
-        calculation_failed_expection = "Emission became zero which is incorrect."
+        calculation_failed_expection = "Udledningen blev nul, hvilket er forkert."
         return False, calculation_failed_expection
 
     return True, output_model.model_dump_json()

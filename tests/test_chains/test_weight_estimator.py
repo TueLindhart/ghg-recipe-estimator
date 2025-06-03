@@ -7,7 +7,6 @@ from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 
 ACCEPTABLE_WEIGHT_ERROR = 0.2  # kg (this range should be refined in the future)
-# TOTAL_ACCEPTABLE_ERROR = 0.25  # kg
 TOTAL_ACCEPTABLE_RATIO_ERROR = 0.05
 
 IN_KG_REGEX = r"= \d+(\.\d+)? (kg|kilogram)"
@@ -30,6 +29,10 @@ async def test_weight_estimator_chain(
     # Estimate weights using weight estimator
     weight_estimates = await get_weight_estimates(verbose=False, recipe=enriched_recipe)
 
+    # Variables to track maximum difference
+    max_weight_diff = 0
+    max_diff_ingredient = None
+
     # Compare the weight estimates with the expected output
     for ingredient, expected_ingredient in zip(
         weight_estimates.weight_estimates, expected_weight_estimates.weight_estimates
@@ -45,6 +48,12 @@ async def test_weight_estimator_chain(
             )
 
         if reference_weight is not None and estimated_weight is not None:
+            # Calculate absolute weight difference
+            abs_weight_diff = abs(estimated_weight - reference_weight)
+            if abs_weight_diff > max_weight_diff:
+                max_weight_diff = abs_weight_diff
+                max_diff_ingredient = ingredient.ingredient
+
             lower_bound = max(0, reference_weight - ACCEPTABLE_WEIGHT_ERROR)
             upper_bound = reference_weight + ACCEPTABLE_WEIGHT_ERROR
             assert (
@@ -81,5 +90,6 @@ async def test_weight_estimator_chain(
     )
     assert ratio_difference <= TOTAL_ACCEPTABLE_RATIO_ERROR, (
         f"Total weight estimate is out of the acceptable ratio range: "
-        f"{ratio_difference} < {TOTAL_ACCEPTABLE_RATIO_ERROR}"
+        f"ratio_difference={ratio_difference:.3f}, max_weight_diff={max_weight_diff:.3f}kg "
+        f"for ingredient '{max_diff_ingredient}' (threshold={TOTAL_ACCEPTABLE_RATIO_ERROR})"
     )
