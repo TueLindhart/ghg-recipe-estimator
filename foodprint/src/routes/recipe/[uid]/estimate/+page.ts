@@ -32,7 +32,7 @@ export const load: PageLoad = async ({ params, fetch }) => {
 	const result = JSON.parse(statusData.result);
 
 	const cmpRes = await fetch(
-		`/api/comparison?kgco2=${result.co2_per_person_kg}`
+		`/api/comparison?kgco2=${result.total_co2_kg}`
 	);
 	if (!cmpRes.ok) throw new Error("Comparison service failed");
 	const comparison = await cmpRes.json();

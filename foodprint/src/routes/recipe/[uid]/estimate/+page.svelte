@@ -72,7 +72,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     <OverviewCard class="flex-1" overviewData={data.result} />
 
     <EmissionComparison
-      kgco2={data.result.co2_per_person_kg}
+      kgco2={data.result.total_co2_kg}
       referenceKg={data.comparison.reference_kg}
       ratio={data.comparison.ratio}
       helperText={data.comparison.helperText}

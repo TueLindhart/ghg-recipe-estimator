@@ -8,16 +8,19 @@ Nothing in here is FastAPI-specific; it can be unit-tested in pure Python.
 from pydantic import BaseModel, Field
 
 # ---------------------------------------------------------------------------
-REFERENCE_SEGMENT_KG: float = 45  #   100 % 
+REFERENCE_SEGMENT_KG: float = 45  # 100 %
 # ---------------------------------------------------------------------------
 
 
 class ComparisonResponse(BaseModel):
     """Pydantic model returned by the FastAPI endpoint."""
+
     input_co2_kg: float = Field(..., gt=0, description="Compared CO₂ (kg)")
     reference_kg: float = Field(..., description="Reference segment (kg)")
     ratio: float = Field(..., description="input_co2_kg / reference_kg")
-    helperText: str = Field(..., description="Human-readable explanation of the comparison result",
+    helperText: str = Field(
+        ...,
+        description="Human-readable explanation of the comparison result",
     )
 
 
