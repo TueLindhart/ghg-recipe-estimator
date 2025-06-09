@@ -8,16 +8,16 @@
 
   import { onMount } from "svelte";
 
-  // uid arrives from load()
-  export let data: { uid: string };
-  const { uid } = data;
+  // jobId arrives from load()
+  export let data: { jobId: string };
+  const { jobId } = data;
 
   let status: string = "Processing";
   let statusMessage = "";
 
   async function poll(): Promise<void> {
     try {
-      const r = await fetch(`/api/status/${uid}`);
+      const r = await fetch(`/api/status/${jobId}`);
       if (!r.ok) {
         let detail = `Fejl ved statusopdatering: ${r.status}`;
         try {
@@ -36,7 +36,7 @@
       status = resp.status;
 
       if (status === "Completed") {
-        setTimeout(() => goto(`/recipe/${uid}/estimate`), 1_000);
+        setTimeout(() => goto(`/recipe/${jobId}/estimate`), 1_000);
       } else if (status === "Error") {
         statusMessage = `Fejl: ${resp.result}`;
       } else {

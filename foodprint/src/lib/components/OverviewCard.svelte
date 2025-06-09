@@ -2,12 +2,9 @@
 <script lang="ts">
   import { Card } from "flowbite-svelte";
 
-  export let overviewData: {
-    total_co2_kg: number;
-    co2_per_person_kg: number;
-    number_of_persons: number;
-    avg_meal_emission_per_person_range_kg: [number, number];
-  };
+  import type { RecipeCO2Output } from "$lib";
+
+  export let overviewData: RecipeCO2Output;
 
   type Stat = { label: string; value: string; unit?: string };
 

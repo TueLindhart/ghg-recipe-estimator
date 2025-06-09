@@ -2,8 +2,10 @@
   import { Card } from "flowbite-svelte";
   import { InfoCircleOutline } from "flowbite-svelte-icons";
 
-  export let ingredient;
-  export let onShowNotes: (ing: typeof ingredient) => void;
+  import type { IngredientOutput } from "$lib";
+
+  export let ingredient: IngredientOutput;
+  export let onShowNotes: (ing: IngredientOutput) => void;
 </script>
 
 <Card class="p-4 relative">

@@ -7,17 +7,10 @@
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
 
   import { Button, Modal, TabItem, Tabs } from "flowbite-svelte";
+  import type { PageData } from "./$types";
+  import type { IngredientOutput } from "$lib";
 
-  export let data: {
-    uid: string;
-    result: any;
-    comparison: {
-      input_co2_kg: number;
-      reference_kg: number;
-      ratio: number;
-      helperText: string;
-    };
-  };
+  export let data: PageData;
 
   // Compute full URL and display domain from data.result.url if available
   let domainFull = "";
@@ -34,7 +27,7 @@
   let selectedNotes = "";
   let selectedIngredientName = "";
 
-  function openNotes(ing: any) {
+  function openNotes(ing: IngredientOutput) {
     selectedIngredientName = ing.name;
     selectedNotes = `Beregning Noter: ${ing.calculation_notes}
 Vægt Estimering Noter: ${ing.weight_estimation_notes}
@@ -72,8 +65,6 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     <OverviewCard class="flex-1" overviewData={data.result} />
 
     <EmissionComparison
-      kgco2={data.result.total_co2_kg}
-      referenceKg={data.comparison.reference_kg}
       ratio={data.comparison.ratio}
       helperText={data.comparison.helperText}
     />
