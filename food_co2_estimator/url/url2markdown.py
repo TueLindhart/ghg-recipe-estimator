@@ -81,8 +81,8 @@ def convert_body_to_markdown(soup: BeautifulSoup) -> str | None:
 def get_markdown_from_url(url: str) -> str | None:
     """
     Given a URL, fetch its HTML, remove unwanted elements,
-    and return the content of <body> as Markdown. Returns an
-    empty string if there is no <body> content.
+    and return the content of <body> as Markdown. Returns
+    ``None`` if there is no <body> content.
     """
     # 1. Fetch the page content
     html_text = fetch_page_content(url, HEADERS)
