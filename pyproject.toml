@@ -58,7 +58,7 @@ target-version = "py313"
 lint.fixable = ["ALL"]
 
 [tool.pyright]
-exclude = ["**/__pycache__", ".venv"]
+exclude = ["**/__pycache__", ".venv", "**/.git/**"]
 typeCheckingMode = "basic"
 useLibraryCodeForTypes = true
 reportMissingTypeStubs = false
