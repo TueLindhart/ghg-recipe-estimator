@@ -38,8 +38,8 @@
         return;
       }
 
-      const { uid } = (await r.json()) as { uid: string };
-      goto(`/recipe/${uid}/status`);
+      const { uid: jobId } = (await r.json()) as { uid: string };
+      goto(`/recipe/${jobId}/status`);
     } catch (err) {
       console.error("Fetch error:", err);
       statusMessage = `Ups! Noget gik galt. Prøv igen senere.`;

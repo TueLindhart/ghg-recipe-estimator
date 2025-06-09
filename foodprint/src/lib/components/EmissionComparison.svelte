@@ -3,8 +3,6 @@
   import { onMount } from "svelte";
 
   /* ───────── Props ───────── */
-  export let kgco2: number;
-  export let referenceKg: number;
   export let ratio: number;         // 0 – ∞  (1 = 100 %)
   export let helperText: string;
 

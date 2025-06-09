@@ -1,15 +1,9 @@
 <script lang="ts">
   import { Chart } from "flowbite-svelte";
 
-  export interface Ingredient {
-    name: string;
-    co2_kg: number | null;
-    calculation_notes?: string | null;
-    weight_estimation_notes?: string | null;
-    co2_emission_notes?: string | null;
-  }
+  import type { IngredientOutput } from "$lib";
 
-  export let ingredients: Ingredient[] = [];
+  export let ingredients: IngredientOutput[] = [];
 
   // Only keep positive emissions
   $: filtered = ingredients.filter((i) => i.co2_kg != null && i.co2_kg > 0);
