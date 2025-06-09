@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "food-co2-estimator"
-version = "0.1.1"
+version = "0.2.4"
 description = "Repository for estimating CO2 emission from the ingredient list of recipies"
 authors = ["Tue Thomsen"]
 readme = "README.md"
@@ -15,7 +15,7 @@ bs4 = "^0.0.1"
 openai = "^1.52.0"
 gunicorn = "^21.2.0"
 langchain-community = "^0.3.3"
-langchain-openai = "^0.2.3"
+langchain-openai = "^0.2.4"
 pydantic = "^2.9.2"
 langchain-chroma = "^0.1.4"
 translate = "^3.6.1"
@@ -25,6 +25,7 @@ google-cloud-storage = "^3.0.0"
 uvicorn = "^0.34.1"
 fastapi = "^0.115.12"
 redis = "^5.2.1"
+punch-py = "^2.0.0"
 
 
 [tool.poetry.group.dev.dependencies]

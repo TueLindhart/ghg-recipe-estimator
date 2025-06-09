@@ -1,15 +1,10 @@
-import os
 from typing import Any
 
 from langchain_core.runnables import Runnable
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel
 
-DEFAULT_MODEL = "gpt-4o-mini-2024-07-18"
-
-
-def get_model_name_from_env() -> str:
-    return os.getenv("GPT_MODEL", DEFAULT_MODEL)
+LLM_MODEL = "gpt-4.1-mini-2025-04-14"
 
 
 def get_model(
@@ -18,7 +13,7 @@ def get_model(
     verbose: bool = False,
 ) -> ChatOpenAI | Runnable[Any, Any]:
     base_llm = ChatOpenAI(
-        model=get_model_name_from_env() if model_name is None else model_name,
+        model=LLM_MODEL if model_name is None else model_name,
         temperature=0,
         verbose=verbose,
     )

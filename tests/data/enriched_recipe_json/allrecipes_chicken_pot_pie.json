@@ -1,133 +1,116 @@
 {
+    "title": "Dutch Oven Southwestern Chicken Pot Pie",
     "ingredients": [
         {
             "original_name": "1 tbsp olive oil",
             "en_name": "1 tbsp olive oil",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 lb chicken breast",
-            "en_name": "1 lb chicken breast",
+            "original_name": "1 lb skinless boneless chicken breast",
+            "en_name": "1 lb Skinless Boneless Chicken Breast",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 medium carrots",
             "en_name": "2 Medium Carrots",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 stalks celery",
             "en_name": "2 Stalks Celery",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 red bell pepper",
             "en_name": "1 Red Bell Pepper",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 bunch scallions",
             "en_name": "1 Bunch Scallions",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 can diced tomatoes with green chiles (15 ounce)",
-            "en_name": "1 can diced tomatoes with green chiles (15 ounces)",
+            "original_name": "1 can (15 oz) diced tomatoes with green chiles",
+            "en_name": "1 can (15 oz) diced tomatoes with green chiles",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "2 cans black beans (15 ounce)",
-            "en_name": "2 Cans Black Beans (15 ounces)",
+            "original_name": "2 cans (15 oz) black beans",
+            "en_name": "2 Cans (15 oz) Black Beans",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "4 tbsp chili powder",
             "en_name": "4 tbsp chili powder",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 tbsp ground cumin",
             "en_name": "1 tbsp ground cumin",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 tsp granulated garlic",
             "en_name": "2 tsp granulated garlic",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "2 tsp onion powder",
             "en_name": "2 tsp onion powder",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "0.25 tsp hot smoked paprika",
             "en_name": "0.25 tsp hot smoked paprika",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "salt",
             "en_name": "salt",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "black pepper",
-            "en_name": "Black Pepper",
+            "original_name": "ground black pepper",
+            "en_name": "Ground Black Pepper",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 package dry corn muffin mix (8.5 ounce)",
-            "en_name": "1 Package Dry Corn Muffin Mix (8.5 ounces)",
+            "original_name": "1 package (8.5 oz) dry corn muffin mix",
+            "en_name": "1 Package (8.5 oz) Dry Corn Muffin Mix",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "0.33 cup milk",
             "en_name": "0.33 Cup Milk",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 egg",
-            "en_name": "1 Egg",
+            "en_name": "1 egg",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         }
     ],
     "persons": 6,
-    "instructions": " 1. PREHEAT THE OUTSIDE TO 400 Degrees F (200 Degrees C). 2nd Heat Oil in a Dutch above Medium Heat. Add Chicken. Cook, Stirring Occasionally, Until No Longer Pink Inside, 5 Two 7 Minutes. Add Carrots, Celery, Bell Pepper, and Scallions and Cook Until Tender, About 5 Minutes. Add Tomatoes, Black Beans, Chili Powder, Cumin, Garlic, Onion Powder, Paprika, Salt, and Black Pepper. Stir two Combine. Cook Until Heated Through, About 5 Minutes More. 3. 4th Remove Dutch above From Heat and Spread Cornbread Batter on Top of Chicken Mixture to Form The Crust. 5. Place dutch above in the preheated above and bake Until cornbread is golden and beginning to brown, 20 two 25 minutes.",
+    "instructions": " PreHeat above two 200 Degrees C (400 Degrees F). Heat Olive Oil in a Dutch above Medium Heat. Add Diced Chicken and Cook Until No Longer Pink, About 5-7 Minutes. Add Diced Carrots, Celery, Bell Pepper, and Scallions; Cook Until Tender, About 5 Minutes. Stir in Diced Tomatoes With Green Chiles, Black Beans, Chili Powder, Cumin, Granulated Garlic, Onion Powder, Smoked Paprika, Salt, and Black Pepper. Cook Until Heated Through, About 5 Minutes. Meanwhile, Combine Corn Muffin Mix with Milk and Egg In A Bowl. Remove Dutch above From Heat and Spread Cornbread Batter over Chicken Mixture. Bake in Preheated above 20-25 Minutes Until Cornbread Is Golden and Beginning to Brown.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }

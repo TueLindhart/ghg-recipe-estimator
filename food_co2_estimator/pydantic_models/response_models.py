@@ -35,3 +35,18 @@ class JobStatus(str, Enum):
 class JobResult(BaseModel):
     status: JobStatus
     result: str | None = None
+
+
+# ---------------------------------------------------------------------------
+
+
+class ComparisonResponse(BaseModel):
+    """Pydantic model returned by the FastAPI endpoint."""
+
+    input_co2_kg: float = Field(..., gt=0, description="Compared CO₂ (kg)")
+    reference_kg: float = Field(..., description="Reference segment (kg)")
+    ratio: float = Field(..., description="input_co2_kg / reference_kg")
+    helperText: str = Field(
+        ...,
+        description="Human-readable explanation of the comparison result",
+    )

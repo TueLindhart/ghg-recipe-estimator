@@ -1,13 +1,13 @@
 <script lang="ts">
-  /* ───────────────────────── Imports ───────────────────────── */
-  import EmissionBarChart  from "$lib/components/EmissionBarChart.svelte";
-  import IngredientGrid    from "$lib/components/IngredientGrid.svelte";
-  import OverviewCard      from "$lib/components/OverviewCard.svelte";
-  import EmissionComparison from "$lib/components/EmissionComparison.svelte";   // NEW
-  import ReturnHomeButton  from "$lib/components/ReturnHomeButton.svelte";
+  import BaseButton from "$lib/components/BaseButton.svelte";
+  import EmissionBarChart from "$lib/components/EmissionBarChart.svelte";
+  import EmissionComparison from "$lib/components/EmissionComparison.svelte";
+  import IngredientGrid from "$lib/components/IngredientGrid.svelte";
+  import OverviewCard from "$lib/components/OverviewCard.svelte";
+  import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
+
   import { Button, Modal, TabItem, Tabs } from "flowbite-svelte";
 
-  /* ───────────────────────── Props ─────────────────────────── */
   export let data: {
     uid: string;
     result: any;
@@ -19,9 +19,19 @@
     };
   };
 
-  /* ───────────────────────── Local state ───────────────────── */
-  let showModal            = false;
-  let selectedNotes        = "";
+  // Compute full URL and display domain from data.result.url if available
+  let domainFull = "";
+  let domainDisplay = "";
+  if (data.result.url) {
+    const parsedUrl = new URL(data.result.url);
+    domainFull = parsedUrl.href;
+    domainDisplay = parsedUrl.hostname
+      .replace(/^www\./, "")
+      .replace(/\.[^.]*$/, "");
+  }
+
+  let showModal = false;
+  let selectedNotes = "";
   let selectedIngredientName = "";
 
   function openNotes(ing: any) {
@@ -34,24 +44,38 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 </script>
 
 <div class="container mx-auto px-4">
-  <div class="mt-4">
+  <div class="mt-4 flex flex-wrap items-center gap-4">
     <ReturnHomeButton />
+
+    {#if data.result.url}
+      <BaseButton
+        ariaLabel="Gå til opskrift"
+        onClick={() => window.open(data.result.url, "_blank")}
+      >
+        Gå til opskrift
+      </BaseButton>
+    {/if}
+
+    {#if data.result.title}
+      <!-- “basis-full” makes the h1 start on its own line below 640 px;
+         from the sm breakpoint up it behaves like normal inline content -->
+      <h1 class="text-2xl basis-full sm:basis-auto">
+        <span class="font-bold">{data.result.title}</span> af {domainDisplay}
+      </h1>
+    {/if}
   </div>
 
   <h2 class="text-xl font-bold mb-4 mt-4">Oversigt</h2>
 
   <!-- ───── Overview + Comparison side-by-side ───── -->
   <div class="flex flex-col lg:flex-row gap-6 mb-8">
-    <OverviewCard
-      class="flex-1"
-      overviewData={data.result}
-    />
+    <OverviewCard class="flex-1" overviewData={data.result} />
 
     <EmissionComparison
-      kgco2       ={data.result.co2_per_person_kg}
-      referenceKg ={data.comparison.reference_kg}
-      ratio       ={data.comparison.ratio}
-      helperText  ={data.comparison.helperText}
+      kgco2={data.result.total_co2_kg}
+      referenceKg={data.comparison.reference_kg}
+      ratio={data.comparison.ratio}
+      helperText={data.comparison.helperText}
     />
   </div>
 
