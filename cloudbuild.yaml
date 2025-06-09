@@ -44,6 +44,7 @@ steps:
       - --update-secrets=CACHE_BUCKET=CacheBucketName:latest
       - --update-secrets=FOODPRINT_API_KEY=FoodPrintAPIKey:latest
       - --update-secrets=FRONTEND_URL=FoodPrintFrontendURL:latest
+      - --update-secrets=GOOGLE_API_KEY=GoogleAPIKey:latest
 
 images:
   - "$_IMAGE_NAME"
