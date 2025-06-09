@@ -2,8 +2,8 @@
     "weight_estimates": [
         {
             "ingredient": "1 small onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
-            "weight_in_kg": 0.17
+            "weight_calculation": "1 small onion = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_in_kg": 0.1
         },
         {
             "ingredient": "2 cloves of garlic",
@@ -16,9 +16,9 @@
             "weight_in_kg": 0.075
         },
         {
-            "ingredient": "Oil for frying",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg",
-            "weight_in_kg": 0.04
+            "ingredient": "oil",
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg",
+            "weight_in_kg": 0.03
         },
         {
             "ingredient": "250 g of beef",
@@ -31,8 +31,8 @@
             "weight_in_kg": 0.0225
         },
         {
-            "ingredient": "chili powder or flakes to taste",
-            "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "ingredient": "chili powder or flakes",
+            "weight_calculation": "Amount of chili powder or flakes not specified. LLM estimate is: chili powder or flakes per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
@@ -51,28 +51,28 @@
             "weight_in_kg": 0.25
         },
         {
-            "ingredient": "10-12 small cornstortillas",
-            "weight_calculation": "1 tortilla = 30 g, 11 (average) * 30 g = 330 g = 0.33 kg",
+            "ingredient": "11 small cornstortillas",
+            "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.33 kg",
             "weight_in_kg": 0.33
         },
         {
             "ingredient": "1 serving of tomato salsa",
-            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: tomato salsa per serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "1 Avocado",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 200 g, 1 * 200 g = 200 g = 0.2 kg",
-            "weight_in_kg": 0.2
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 150 g, 1 * 150 g = 150 g = 0.15 kg.",
+            "weight_in_kg": 0.15
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
@@ -92,12 +92,12 @@
         },
         {
             "ingredient": "0.75 chili pepper",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg.",
             "weight_in_kg": 0.0375
         },
         {
             "ingredient": "0.5 Bdt coriander",
-            "weight_calculation": "1 bunch/bnch parsley = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
@@ -107,17 +107,17 @@
         },
         {
             "ingredient": "The juice of 0.5 lime",
-            "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
-            "weight_in_kg": 0.0425
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime = 60 g, 0.5 * 60 g = 30 g = 0.03 kg.",
+            "weight_in_kg": 0.03
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "Pepper",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Amount of Pepper not specified. LLM estimate is: Pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         }
     ]

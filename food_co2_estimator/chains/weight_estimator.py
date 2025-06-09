@@ -6,13 +6,13 @@ from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.weight_estimator import WEIGHT_EST_PROMPT
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
-from food_co2_estimator.utils.openai_model import get_model
+from food_co2_estimator.utils.llm_model import LLMFactory
 
 
 def get_weight_estimator_chain(
     verbose: bool = False,
 ) -> RunnableSerializable[Any, Any]:
-    llm = get_model(pydantic_model=WeightEstimates, verbose=verbose)
+    llm = LLMFactory(output_model=WeightEstimates, verbose=verbose).get_model()
     chain = WEIGHT_EST_PROMPT | llm
     return chain
 

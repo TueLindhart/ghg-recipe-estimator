@@ -6,11 +6,11 @@
             "en_name": "1 small onion",
             "weight_estimate": {
                 "ingredient": "1 small onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
-                "weight_in_kg": 0.17
+                "weight_calculation": "1 small onion = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '1 small onion' as 'onion, raw' with least processing and realistic emission value (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '1 small onion' is best matched with 'onion, raw' because it is the least processed option available, aligning with rule 4. 'Red onion' and 'onions, spring, raw' are also raw but 'onion, raw' is a more general category. 'Onions, chopped and deepfried' is more processed.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 small onion",
@@ -27,7 +27,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Repeated ingredient '2 cloves of garlic' matched again to 'garlic, raw' (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed option available, aligning with rule 4. 'Garlic in oil' and 'garlic baguette, frozen' are more processed. 'Red onion' is not a garlic product.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -44,7 +44,7 @@
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '0.5 Red pepper' as 'pepper, sweet, red, raw' with least processing (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '0.5 Red pepper' is best matched with 'pepper, sweet, red, raw' because it is the least processed option available, aligning with rule 4. 'Pepper, hot chili, raw' is a different type of pepper. 'Pepper, hot chili, canned' is processed. 'Pepper, black' is a spice and not a fresh pepper.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.5 Red pepper",
@@ -53,20 +53,20 @@
             }
         },
         {
-            "original_name": "olie til stegning",
-            "en_name": "Oil for frying",
+            "original_name": "olie",
+            "en_name": "oil",
             "weight_estimate": {
-                "ingredient": "Oil for frying",
-                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 2 * 0.02 kg = 0.04 kg",
-                "weight_in_kg": 0.04
+                "ingredient": "oil",
+                "weight_calculation": "Amount of oil not specified. LLM estimate is: oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg",
+                "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for 'Oil for frying' as 'oil for frying' (Rule 1, 4).",
-                "ingredient_id": "Ra00348",
-                "closest_match_name": "oil for frying",
-                "ingredient": "Oil for frying",
+                "closest_match_explanation": "The ingredient 'oil' is a general term. Among the available options, 'sunflower oil' and 'oil for frying' have the same emission factor. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. However, in this case, 'olive oil' has a higher emission factor (5.9 kg CO2e/kg) and is a common type of oil, making it a suitable conservative choice.",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
+                "ingredient": "oil",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.8
+                "co2_per_kg": 5.9
             }
         },
         {
@@ -78,7 +78,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '250 g of beef' as 'average beef' representing typical beef emissions (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '250 g of beef' is best matched with 'average beef' as it is the most general and least processed option for beef, aligning with rule 2 and 4. Other options specify cuts or fat content, making 'average beef' the most appropriate broader category.",
                 "ingredient_id": "Ra00503",
                 "closest_match_name": "average beef",
                 "ingredient": "250 g of beef",
@@ -95,29 +95,29 @@
                 "weight_in_kg": 0.0225
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '1.5 tablespoons fajita crawling' is 'taco shells' as a similar corn-based processed product (Rule 1, 2).",
-                "ingredient_id": "Ra00467",
-                "closest_match_name": "taco shells",
+                "closest_match_explanation": "The ingredient '1.5 tablespoons fajita crawling' does not have a direct match in the emission database. The available options like 'taco shells', 'salsa, hot', 'crayfish, raw', and 'tortilla chips, cheese' are not suitable broader categories or synonyms for 'fajita crawling' (which likely refers to a spice mix or seasoning), violating rule 1 and 2. Therefore, no suitable match can be found.",
+                "ingredient_id": "No match",
+                "closest_match_name": "No match",
                 "ingredient": "1.5 tablespoons fajita crawling",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.4
+                "co2_per_kg": null
             }
         },
         {
-            "original_name": "chilipulver eller flager efter smag",
-            "en_name": "chili powder or flakes to taste",
+            "original_name": "chilipulver eller flager",
+            "en_name": "chili powder or flakes",
             "weight_estimate": {
-                "ingredient": "chili powder or flakes to taste",
-                "weight_calculation": "Amount of chili powder not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "ingredient": "chili powder or flakes",
+                "weight_calculation": "Amount of chili powder or flakes not specified. LLM estimate is: chili powder or flakes per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'chili powder or flakes to taste' is 'pepper, hot chili, raw' as a close raw chili spice (Rule 1, 4).",
-                "ingredient_id": "Ra00009",
-                "closest_match_name": "pepper, hot chili, raw",
-                "ingredient": "chili powder or flakes to taste",
+                "closest_match_explanation": "The ingredient 'chili powder or flakes' is best matched with 'curry powder' as a broader category for a spice blend, aligning with rule 2. While 'pepper, hot chili, raw' and 'pepper, hot chili, canned' are related to chili, they are not in powder or flake form. 'Chili sauce' is a processed product and not a powder/flake.",
+                "ingredient_id": "Ra00304",
+                "closest_match_name": "curry powder",
+                "ingredient": "chili powder or flakes",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1
+                "co2_per_kg": 6.1
             }
         },
         {
@@ -129,7 +129,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '1 can of kidney beans' as 'kidney beans' (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '1 can of kidney beans' is best matched with 'kidney beans' as it is an exact match for the primary ingredient and processing (canned is implied by 'can'), aligning with rule 4. 'Black beans' are a different type of bean. 'Beans, baked in tomato sauce, canned' is a more processed product. 'Beans, green, raw' is a different type of bean and is raw.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -146,7 +146,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '2 tablespoons tomato puree' is 'tomato paste, concentrated' due to similar processing (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '2 tablespoons tomato puree' is best matched with 'tomato paste, concentrated' as tomato puree is a concentrated form of tomato, similar to tomato paste, aligning with rule 4. 'Tomato, peeled, canned' and 'tomatojuice, canned' are less concentrated forms. 'Tomato, dried' is a different processing method.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "2 tablespoons tomato puree",
@@ -163,7 +163,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '2.5 dl beef fund/broth' is 'bouillon, beef, prepared' as a liquid beef broth (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '2.5 dl beef fund/broth' is best matched with 'bouillon, beef, prepared' as it represents a prepared liquid form of beef broth, aligning with rule 4. 'Bouillon, beef, concentrated, cube' is a more concentrated form. 'Beef, low fat' and 'beef, mince, 15-20% fat, raw' are raw meat products, not broth.",
                 "ingredient_id": "Ra00215",
                 "closest_match_name": "bouillon, beef, prepared",
                 "ingredient": "2.5 dl beef fund/broth",
@@ -172,20 +172,20 @@
             }
         },
         {
-            "original_name": "10-12 små majstortillas",
-            "en_name": "10-12 small cornstortillas",
+            "original_name": "11 små majstortillas",
+            "en_name": "11 small cornstortillas",
             "weight_estimate": {
-                "ingredient": "10-12 small cornstortillas",
-                "weight_calculation": "1 tortilla = 30 g, 11 (average) * 30 g = 330 g = 0.33 kg",
+                "ingredient": "11 small cornstortillas",
+                "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.33 kg",
                 "weight_in_kg": 0.33
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '10-12 small cornstortillas' is 'corn flour' as a broader category of corn-based product (Rule 1, 2).",
-                "ingredient_id": "Ra00107",
-                "closest_match_name": "corn flour",
-                "ingredient": "10-12 small cornstortillas",
+                "closest_match_explanation": "The ingredient '11 small cornstortillas' is best matched with 'tortilla bread, wheat' as a broader category for tortillas, aligning with rule 2. While 'taco shells' and 'tortilla chips, cheese' are related, 'tortilla bread, wheat' is a more general and less processed form of tortilla. 'Corn flour' is an ingredient, not a finished tortilla.",
+                "ingredient_id": "Ra00401",
+                "closest_match_name": "tortilla bread, wheat",
+                "ingredient": "11 small cornstortillas",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.6
+                "co2_per_kg": 1.2
             }
         },
         {
@@ -193,11 +193,11 @@
             "en_name": "1 serving of tomato salsa",
             "weight_estimate": {
                 "ingredient": "1 serving of tomato salsa",
-                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: tomato salsa per serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '1 serving of tomato salsa' as 'salsa, hot' (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '1 serving of tomato salsa' is best matched with 'salsa, hot' as it is a direct match for the ingredient, aligning with rule 4. 'Sundried tomatoes', 'tomato, dried', and 'tomato, peeled, canned' are ingredients of salsa, not the finished product.",
                 "ingredient_id": "Ra00400",
                 "closest_match_name": "salsa, hot",
                 "ingredient": "1 serving of tomato salsa",
@@ -210,11 +210,11 @@
             "en_name": "1 Avocado",
             "weight_estimate": {
                 "ingredient": "1 Avocado",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 200 g, 1 * 200 g = 200 g = 0.2 kg",
-                "weight_in_kg": 0.2
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 150 g, 1 * 150 g = 150 g = 0.15 kg.",
+                "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '1 Avocado' as 'avocado, raw' (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '1 Avocado' is best matched with 'avocado, raw' as it is an exact and least processed match, aligning with rule 4. 'Olive oil', 'mayonnaise', and 'aubergine, raw' are not suitable matches for avocado.",
                 "ingredient_id": "Ra00317",
                 "closest_match_name": "avocado, raw",
                 "ingredient": "1 Avocado",
@@ -227,7 +227,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
@@ -237,7 +237,7 @@
             "en_name": "pepper",
             "weight_estimate": {
                 "ingredient": "pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
@@ -251,7 +251,7 @@
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '0.5 Red onion' is 'red onion' with least processing (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '0.5 Red onion' is best matched with 'red onion' as it is an exact and least processed match, aligning with rule 4. 'Onion, raw' is a general category but 'red onion' is more specific. 'Onions, spring, raw' is a different type of onion. 'Onions, chopped and deepfried' is more processed.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "0.5 Red onion",
@@ -268,7 +268,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Repeated ingredient '2 cloves of garlic' matched again to 'garlic, raw' (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed option available, aligning with rule 4. 'Garlic in oil' and 'garlic baguette, frozen' are more processed. 'Red onion' is not a garlic product.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -285,7 +285,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '300 g of tomatoes' is 'tomato, peeled, canned' due to processing similarity (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '300 g of tomatoes' is best matched with 'tomato, peeled, canned' as it is a common processed form of tomatoes and has a lower emission factor than dried tomatoes, aligning with rule 4 and 5. 'Tomato, dried' and 'sundried tomatoes' are more processed. 'Tomatojuice, canned' is a different product.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "300 g of tomatoes",
@@ -298,11 +298,11 @@
             "en_name": "0.75 chili pepper",
             "weight_estimate": {
                 "ingredient": "0.75 chili pepper",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg.",
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '0.75 chili pepper' is 'pepper, hot chili, raw' with least processing (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '0.75 chili pepper' is best matched with 'pepper, hot chili, raw' as it is the least processed option available, aligning with rule 4. 'Pepper, hot chili, canned' is processed. 'Chili sauce' is a processed product. 'Pepper, black' is a different type of spice.",
                 "ingredient_id": "Ra00009",
                 "closest_match_name": "pepper, hot chili, raw",
                 "ingredient": "0.75 chili pepper",
@@ -315,16 +315,16 @@
             "en_name": "0.5 Bdt coriander",
             "weight_estimate": {
                 "ingredient": "0.5 Bdt coriander",
-                "weight_calculation": "1 bunch/bnch parsley = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "weight_calculation": "1 bunch coriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '0.5 Bdt coriander' is 'dill, raw' as a similar fresh herb (Rule 1, 2).",
-                "ingredient_id": "Ra00135",
-                "closest_match_name": "dill, raw",
+                "closest_match_explanation": "The ingredient '0.5 Bdt coriander' does not have a direct match in the emission database. 'Curry powder' is a spice blend but not specifically coriander. 'Basil, dried' and 'basil, fresh' are different herbs. 'Dill, raw' is also a different herb. Therefore, no suitable match can be found.",
+                "ingredient_id": "No match",
+                "closest_match_name": "No match",
                 "ingredient": "0.5 Bdt coriander",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.5
+                "co2_per_kg": null
             }
         },
         {
@@ -336,7 +336,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for '2 tablespoons olive oil' is 'olive oil' exact match (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient '2 tablespoons olive oil' is best matched with 'olive oil' as it is an exact match and the least processed option among the oil choices, aligning with rule 4. 'Olive tapenade' and 'garlic in oil' are processed products. 'Sunflower oil' is a different type of oil.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "2 tablespoons olive oil",
@@ -349,11 +349,11 @@
             "en_name": "The juice of 0.5 lime",
             "weight_estimate": {
                 "ingredient": "The juice of 0.5 lime",
-                "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
-                "weight_in_kg": 0.0425
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 lime = 60 g, 0.5 * 60 g = 30 g = 0.03 kg.",
+                "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'The juice of 0.5 lime' is 'lime, raw' as the least processed form (Rule 1, 4).",
+                "closest_match_explanation": "The ingredient 'The juice of 0.5 lime' is best matched with 'lime, raw' as it is the direct source of the juice and the least processed option, aligning with rule 4. 'Lemon, raw' is a different citrus fruit. 'Apple juice' and 'half pears in juice' are different fruit juices.",
                 "ingredient_id": "Ra00332",
                 "closest_match_name": "lime, raw",
                 "ingredient": "The juice of 0.5 lime",
@@ -366,7 +366,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
@@ -376,13 +376,13 @@
             "en_name": "Pepper",
             "weight_estimate": {
                 "ingredient": "Pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Amount of Pepper not specified. LLM estimate is: Pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         }
     ],
     "persons": 2,
-    "instructions": " Peel and chop the onion and garlic, and cut the peppers into cubes. Heat oil on a pan and saute the onion and garlic under even heat until the onions are clear. Turn up the heat and brown the meat on the same pan. Add fajita spice and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Season with salt, pepper and possibly extra chili. Lunch tortillas in the oven at 200 degrees for approx. 10 minutes. Distribute the lightning chili on tortillas, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce. For tomato salsa: Arrow and chop onion and garlic. Chop tomatoes and chili pepper nicely. Cut coriander. Mix with olive oil, lime juice, salt and pepper.",
+    "instructions": " Peel and chop the onion and garlic, and cut the peppers into cubes. Heat a scoop of oil on a pan and saute both in it in even heat until the onions are clear. Turn up the flame and now brown the meat on the same pan. Add spices and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Taste with salt and pepper and possibly extra chili.\nPut your tortillas in a pack of silver paper and whine them in a 200 degree hot oven for approx. 10 minutes.\nDistribute the lightning chili on your tacos, preferably at the table, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce (eg Tabasco or similar) to those who prefer it extra strongly.\nFresh tomato salsa with chili and coriander\nPeel and chop onion and garlic. Chop the tomatoes into coarse cubes and finely chop the chili pepper. Cut the coriander. Mix it all together with olive oil, lime juice, salt and pepper.",
     "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
 }

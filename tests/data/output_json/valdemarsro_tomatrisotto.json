@@ -1,9 +1,9 @@
 {
     "title": "Tomatrisotto",
     "url": "https://www.valdemarsro.dk/tomatrisotto/",
-    "total_co2_kg": 5.7,
+    "total_co2_kg": 3.9,
     "number_of_persons": 4,
-    "co2_per_person_kg": 1.4,
+    "co2_per_person_kg": 1.0,
     "avg_meal_emission_per_person_range_kg": [
         1.3,
         2.2
@@ -20,16 +20,6 @@
             "co2_emission_notes": "Best match in CO2 database is: rice groats, raw"
         },
         {
-            "name": "9 dl grøntsagsbouillon",
-            "ingredient_id": "Ra00430",
-            "weight_kg": 0.9,
-            "co2_per_kg": 1.5,
-            "co2_kg": 1.35,
-            "calculation_notes": "0.9 kg * 1.5 kg CO2e/kg = 1.35 kg CO2e",
-            "weight_estimation_notes": "1 dl = 0.1 kg, 9 * 0.1 kg = 0.9 kg",
-            "co2_emission_notes": "Best match in CO2 database is: vegetable steaks"
-        },
-        {
             "name": "125 g parmesan",
             "ingredient_id": "Ra00079",
             "weight_kg": 0.125,
@@ -38,16 +28,6 @@
             "calculation_notes": "0.12 kg * 5.4 kg CO2e/kg = 0.68 kg CO2e",
             "weight_estimation_notes": "125 g = 125 g = 0.125 kg",
             "co2_emission_notes": "Best match in CO2 database is: cheese, hard, parmesan, 32 % fidm."
-        },
-        {
-            "name": "1 burrata",
-            "ingredient_id": "Ra00420",
-            "weight_kg": 0.25,
-            "co2_per_kg": 1.9,
-            "co2_kg": 0.47,
-            "calculation_notes": "0.25 kg * 1.9 kg CO2e/kg = 0.47 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 burrata = 250 g, 1 * 250 g = 250 g = 0.25 kg",
-            "co2_emission_notes": "Best match in CO2 database is: stuffed fresh pasta"
         },
         {
             "name": "2 dl hvidvin",
@@ -96,7 +76,7 @@
             "co2_per_kg": 5.2,
             "co2_kg": 0.1,
             "calculation_notes": "0.02 kg * 5.2 kg CO2e/kg = 0.1 kg CO2e",
-            "weight_estimation_notes": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_estimation_notes": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "co2_emission_notes": "Best match in CO2 database is: pepper, black"
         },
         {
@@ -130,13 +110,13 @@
             "co2_emission_notes": "Best match in CO2 database is: sundried tomatoes"
         },
         {
-            "name": "1 løg",
+            "name": "1 stk løg",
             "ingredient_id": "Ra00266",
             "weight_kg": 0.17,
             "co2_per_kg": 0.3,
             "co2_kg": 0.05,
             "calculation_notes": "0.17 kg * 0.3 kg CO2e/kg = 0.05 kg CO2e",
-            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_estimation_notes": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
@@ -166,8 +146,18 @@
             "co2_per_kg": 0.4,
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 0.4 kg CO2e/kg = 0.01 kg CO2e",
-            "weight_estimation_notes": "1 handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
+            "weight_estimation_notes": "1 Handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "co2_emission_notes": "Best match in CO2 database is: basil, fresh"
+        },
+        {
+            "name": "9 dl grøntsagsbouillon",
+            "ingredient_id": "none",
+            "weight_kg": 0.9,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 9 * 0.1 kg = 0.9 kg",
+            "co2_emission_notes": "Best match in CO2 database is: No match"
         },
         {
             "name": "0.5 tsk tørret timian",
@@ -176,7 +166,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
-            "weight_estimation_notes": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_estimation_notes": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "co2_emission_notes": "Weight on 0.003 kg is negligible"
         },
         {
@@ -186,8 +176,18 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Ingredient is ignored in calculation",
-            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_estimation_notes": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "co2_emission_notes": "Ingredient is ignored in calculation"
+        },
+        {
+            "name": "1 stk burrata",
+            "ingredient_id": "none",
+            "weight_kg": 0.125,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Cannot calculate CO2 emission without CO2 per kg",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 piece burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
+            "co2_emission_notes": "Best match in CO2 database is: No match"
         }
     ]
 }
