@@ -9,8 +9,8 @@ from food_co2_estimator.pydantic_models.weight_estimator import (
     WeightEstimates,
 )
 
-ACCEPTABLE_WEIGHT_ERROR = 0.2  # kg
-TOTAL_ACCEPTABLE_RATIO_ERROR = 0.05
+ACCEPTABLE_WEIGHT_ERROR = 0.2  # +/- 0.2 kg
+TOTAL_ACCEPTABLE_RATIO_ERROR = 0.075  # +/- 7.5% of total weight
 IN_KG_REGEX = r"= \d+(\.\d+)? (kg|kilogram)"
 
 
