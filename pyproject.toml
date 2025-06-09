@@ -26,6 +26,7 @@ uvicorn = "^0.34.1"
 fastapi = "^0.115.12"
 redis = "^5.2.1"
 punch-py = "^2.0.0"
+langchain-google-genai = "^2.1.5"
 
 
 [tool.poetry.group.dev.dependencies]

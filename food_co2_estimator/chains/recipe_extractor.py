@@ -5,13 +5,13 @@ from langchain_core.runnables import RunnableSerializable
 from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.recipe_extractor import RECIPE_EXTRACTOR_PROMPT
 from food_co2_estimator.pydantic_models.recipe_extractor import ExtractedRecipe
-from food_co2_estimator.utils.openai_model import get_model
+from food_co2_estimator.utils.llm_model import LLMFactory
 
 NUMBER_PERSONS_REGEX = r".*\?antal=(\d+)"
 
 
 def get_recipe_extractor_chain(verbose: bool = False) -> RunnableSerializable:
-    llm = get_model(pydantic_model=ExtractedRecipe, verbose=verbose)
+    llm = LLMFactory(output_model=ExtractedRecipe, verbose=verbose).get_model()
 
     chain = RECIPE_EXTRACTOR_PROMPT | llm
     return chain
