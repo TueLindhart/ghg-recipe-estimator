@@ -2,7 +2,7 @@ install:
 	poetry install --with test --no-interaction
 
 lint:
-	poetry run ruff check --fix
+	poetry run ruff check --fix .
 
 format:
 	poetry run ruff format

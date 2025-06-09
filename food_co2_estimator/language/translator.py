@@ -112,7 +112,10 @@ def _translate_if_not_english(recipe: EnrichedRecipe, language: str):
     inputs_str = SPLIT_STRING.join(ingredients)
     if recipe.instructions is not None:
         inputs_str += INSTRUCTIONS_DELIMITER + recipe.instructions
+
     my_translator = MyTranslator.default()
+
+    translated_recipe = recipe
 
     # Retrieve the current index from the global cache
     index = _translation_cache.get("index", 0)
