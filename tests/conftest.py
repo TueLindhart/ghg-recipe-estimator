@@ -21,6 +21,7 @@ from tests.urls import TEST_URLS
 @pytest.fixture
 def dummy_recipe():
     return ExtractedRecipe(
+        title="Dummy Recipe",
         persons=2,
         ingredients=["ingredient1", "ingredient2"],
         instructions="instructions",

@@ -29,8 +29,9 @@ export async function GET({ params }) {
       },
     });
     if (!resp.ok) {
+      const errorBody = await resp.json();
       return json(
-        { error: `Error: ${resp.statusText}` },
+        { error: errorBody?.detail || `HTTP ${resp.status}` },
         { status: resp.status }
       );
     }

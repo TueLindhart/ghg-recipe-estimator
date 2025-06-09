@@ -2,7 +2,7 @@
     "weight_estimates": [
         {
             "ingredient": "1 kg of minced beef",
-            "weight_calculation": "1 kg of minced beef = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
+            "weight_calculation": "1 kg = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
             "weight_in_kg": 1.0
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "2.5 Stalk leaf celery",
-            "weight_calculation": "1 stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg.",
             "weight_in_kg": 0.1
         },
         {
@@ -31,23 +31,23 @@
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "3 DS chopped tomatoes",
+            "ingredient": "3 cans of chopped tomatoes",
             "weight_calculation": "1 can = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
             "weight_in_kg": 1.2
         },
         {
             "ingredient": "2 dl red wine",
-            "weight_calculation": "2 dl = 200 g, 1 * 200 g = 200 g = 0.2 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "0.5 tsp rosemary",
-            "weight_calculation": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "0.5 tsp thyme",
-            "weight_calculation": "0.5 tsp = 2.5 g, 1 * 2.5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
@@ -62,33 +62,33 @@
         },
         {
             "ingredient": "oil",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.01 kg, 8 servings * 0.01 kg = 0.08 kg",
-            "weight_in_kg": 0.08
+            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg.",
+            "weight_in_kg": 0.16
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 8 servings * 0.005 kg = 0.04 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg.",
             "weight_in_kg": 0.04
         },
         {
             "ingredient": "freshly ground pepper",
-            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 8 servings * 0.005 kg = 0.04 kg",
-            "weight_in_kg": 0.04
+            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.002 kg, 8 * 0.002 kg = 0.016 kg.",
+            "weight_in_kg": 0.016
         },
         {
             "ingredient": "1 handful of fresh basil leaves",
-            "weight_calculation": "1 handful of fresh basil leaves = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "Pasta as desired",
-            "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 8 servings * 0.125 kg = 1.0 kg",
+            "weight_calculation": "Amount of pasta not specified. LLM estimate is: 1 serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg.",
             "weight_in_kg": 1.0
         },
         {
             "ingredient": "Torn parmesan",
-            "weight_calculation": "Amount of torn parmesan not specified. LLM estimate is: 1 serving = 0.05 kg, 8 servings * 0.05 kg = 0.4 kg",
-            "weight_in_kg": 0.4
+            "weight_calculation": "Amount of torn parmesan not specified. LLM estimate is: 1 serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg.",
+            "weight_in_kg": 0.16
         }
     ]
 }

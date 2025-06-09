@@ -1,84 +1,152 @@
 {
+    "title": "Thai Green Curry Chicken",
     "ingredients": [
         {
             "original_name": "1.75 cups coconut milk",
             "en_name": "1.75 Cups Coconut Milk",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "3.5 tbsp green curry paste",
             "en_name": "3.5 TBSP Green Curry Paste",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 cup chicken stock",
-            "en_name": "1 Cup Chicken Stock",
+            "original_name": "1 cup chicken stock, unsalted",
+            "en_name": "1 cup chicken stock, unsalted",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 lb chicken thigh",
-            "en_name": "1 lb chicken thigh",
+            "original_name": "1 lb chicken thigh, boneless, skinless, 1-inch pieces",
+            "en_name": "1 lb Chicken Thigh, Boneless, Skinless, 1-inch Pieces",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "2 tbsp palm sugar",
-            "en_name": "2 TBSP Palm Sugar",
+            "original_name": "2 tbsp palm sugar, finely chopped",
+            "en_name": "2 TBSP Palm Sugar, Finely Chopped",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1.5 - 2 tbsp fish sauce",
-            "en_name": "1.5 - 2 tbsp fish sauce",
+            "original_name": "1.75 tbsp fish sauce",
+            "en_name": "1.75 tbsp fish sauce",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "4 makrut lime leaves",
             "en_name": "4 Makrut Lime Leaves",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 can bamboo shoots",
-            "en_name": "1 Can Bamboo Shoots",
+            "original_name": "1 550-ml can bamboo shoots strips, drained and rinsed",
+            "en_name": "1 550-ML CAN BAMBOO Shoots Strips, Drained and Rinsed",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
             "original_name": "1 cup Thai basil leaves",
             "en_name": "1 Cup Thai Basil Leaves",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "0.25 red bell pepper",
-            "en_name": "0.25 Red Bell Pepper",
+            "original_name": "0.25 red bell pepper, julienned",
+            "en_name": "0.25 Red Bell Pepper, Julienned",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "Jasmine rice",
-            "en_name": "Jasmine Rice",
+            "original_name": "Jasmine rice for serving",
+            "en_name": "Jasmine Rice for serving",
             "weight_estimate": null,
-            "co2_per_kg_db": null,
-            "co2_per_kg_search": null
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tsp cumin seeds",
+            "en_name": "1 tsp cumin seeds",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 tsp coriander seeds",
+            "en_name": "2 tsp coriander seeds",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "0.5 tsp white peppercorns",
+            "en_name": "0.5 TSP White PepperCorns",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "15 green Thai chilies",
+            "en_name": "15 Green Thai Chilies",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tsp coarse salt",
+            "en_name": "1 TSP COARSE SALT",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "15 Thai basil leaves",
+            "en_name": "15 Thai Basil Leaves",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "3 tbsp thinly sliced lemongrass",
+            "en_name": "3 TBSP THINLY SLICED LEMONGRASS",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tbsp finely chopped galangal",
+            "en_name": "1 tbsp Finely chopped galangal",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 tsp makrut lime zest",
+            "en_name": "2 tsp makrut lime zest",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 cilantro roots or 4 big cilantro stems",
+            "en_name": "2 Cilantro Roots or 4 Big Cilantro Stems",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "3 tbsp finely chopped shallots",
+            "en_name": "3 TBSP FINY CHOPPED SHALLOTS",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 tbsp finely chopped garlic",
+            "en_name": "2 TBSP FINY CHOPPED GARLIC",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tsp fermented shrimp paste",
+            "en_name": "1 TSP FERMENTED SHRIMP PASTE",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": " Reduce ¾ Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate. Add the Curry Paste and Sauté for About 2 Minutes Until Aromatic. Add Chicken Thigh and Stir to Mix With The Paste. Add Chicken Stock, Remaining Coconut Milk, Palm Sugar, and Fish Sauce. Bruise and Tear the Makrut Lime Leaves and Add Them to the Pot. Sims for 10-15 Minutes Until The Chicken Is Fork Tender. Add Bamboo Shoots and Bring to a Boil. Taste and Adjust Seasoning. Stir in Thai Basil and Serve with Jasmine Rice.",
+    "instructions": " 1. Reduce 0.75 Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate. 2. Add Curry Paste and Sauté Over Medium Heat for About 2 Minutes Until Aromatic. 3rd Add Chicken Thigh and Stir to Mix with Paste. 4. Add Chicken Stock, Remaining 1 Cup Coconut Milk, Palm Sugar, Fish Sauce, and Makrut Lime Leaves (Bruise and Tear Into Chunks, Discard Stems). Bring two Simmer and Cook 10-15 minutes UNTO CHICKEN IS FORK TENDER. 5. Add Bamboo Shoots and Bring to Boil. Add Red Bell Pepper If Desired and Remove From Heat. 6. Taste and Adjust Fish Sauce and Sugar as Needed. 7. Add Thai Basil and Stir Until Wilted. Serve with Jasmine Rice.\n\nFor Chicken Breast: After Sautéing Curry Paste, Add Makrut Lime Leaves, Coconut Milk, Chicken Stock, Palm Sugar, and Fish Sauce; Sims 5 minutes. ADD Marinated Chicken Breast and Cook 1-2 MINUTES UNTO 70% DONE. Add Bamboo Shoots and Bring to Boil. Add Peppers If Desired. Remove From Heat. Adjust Seasoning. Stir in Thai Basil and Serve with Jasmine Rice.\n\nFor Curry Paste: Toast Cumin and Coriander Seeds Until Aromatic. Grind with White PepperCorns. Prepare Chilies by Removing Seeds and Pith From Some. Pound Chilies and Salt Into Paste. Add Basil Leaves, Lemongrass, Galangal, Lime Zest, Cilantro Roots, Shallots, Garlic, and Shrimp Paste; Pound into fine paste.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }
