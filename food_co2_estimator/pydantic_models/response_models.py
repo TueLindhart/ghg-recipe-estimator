@@ -37,9 +37,6 @@ class JobResult(BaseModel):
     result: str | None = None
 
 
-# ---------------------------------------------------------------------------
-
-
 class ComparisonResponse(BaseModel):
     """Pydantic model returned by the FastAPI endpoint."""
 
