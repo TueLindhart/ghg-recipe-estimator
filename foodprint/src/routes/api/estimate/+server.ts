@@ -1,7 +1,7 @@
 import { env } from "$env/dynamic/private";
-import { json } from "@sveltejs/kit";
+import { json, type RequestHandler } from "@sveltejs/kit";
 
-export async function POST({ request }) {
+export const POST: RequestHandler = async ({ request }) => {
   const { url } = await request.json();
 
   // Check if API_BASE is defined
@@ -37,4 +37,4 @@ export async function POST({ request }) {
     console.error("Error fetching estimate:", err);
     return json({ error: `Error: ${err}` }, { status: 500 });
   }
-}
+};
