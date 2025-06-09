@@ -20,8 +20,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Olie til stegning",
-            "en_name": "Oil for frying",
+            "original_name": "olie",
+            "en_name": "oil",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -38,8 +38,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Chilipulver eller flager efter smag",
-            "en_name": "Chili powder or flakes to taste",
+            "original_name": "chilipulver eller flager",
+            "en_name": "chili powder or flakes",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -62,8 +62,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "10-12 små majstortillas",
-            "en_name": "10-12 small cornstortillas",
+            "original_name": "11 små majstortillas",
+            "en_name": "11 small cornstortillas",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -80,8 +80,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Salt",
-            "en_name": "Salt",
+            "original_name": "salt",
+            "en_name": "salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -128,14 +128,14 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Saften af 0.5 lime",
+            "original_name": "saften af 0.5 lime",
             "en_name": "The juice of 0.5 lime",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Salt",
-            "en_name": "Salt",
+            "original_name": "salt",
+            "en_name": "salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },

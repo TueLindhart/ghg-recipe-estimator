@@ -10,7 +10,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Repeated ingredient same as first '25 g butter' matched to 'butter, salt added'.",
+                "closest_match_explanation": "The ingredient 'butter' is a direct match to 'butter, salt added' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
                 "ingredient": "25 g butter",
@@ -19,18 +19,18 @@
             }
         },
         {
-            "original_name": "4 rødbeder",
-            "en_name": "4 beets",
+            "original_name": "4 rødbeder (ca. 400 g)",
+            "en_name": "4 beets (about 400 g)",
             "weight_estimate": {
-                "ingredient": "4 beets",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 beet = 150 g, 4 * 150 g = 600 g = 0.6 kg.",
-                "weight_in_kg": 0.6
+                "ingredient": "4 beets (about 400 g)",
+                "weight_calculation": "400 g = 400 g = 0.4 kg",
+                "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for '4 beets' to 'beet, red, raw' as raw is least processed form. Rule 4 applied.",
+                "closest_match_explanation": "The ingredient 'beets' is a direct match to 'beet, red, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00259",
                 "closest_match_name": "beet, red, raw",
-                "ingredient": "4 beets",
+                "ingredient": "4 beets (about 400 g)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
@@ -44,7 +44,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'dark balsamic vinegar' is 'vinegar' as balsamic is a type of vinegar and no exact balsamic vinegar option exists. Rule 2 used for broader category vinegar.",
+                "closest_match_explanation": "The ingredient 'dark balsamic vinegar' is a direct match to 'vinegar' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00150",
                 "closest_match_name": "vinegar",
                 "ingredient": "1 dl dark balsamic vinegar",
@@ -57,11 +57,11 @@
             "en_name": "2 tablespoons sugar",
             "weight_estimate": {
                 "ingredient": "2 tablespoons sugar",
-                "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+                "weight_calculation": "1 tablespoon = 15 g, 2 * 15 g = 30 g = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'sugar' is 'sugar, sucrose, white' as common sugar type. Rule 1 and 4 applied choosing highest emission among similar processing options.",
+                "closest_match_explanation": "The ingredient 'sugar' is a direct match to 'sugar, sucrose, white' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00318",
                 "closest_match_name": "sugar, sucrose, white",
                 "ingredient": "2 tablespoons sugar",
@@ -74,7 +74,7 @@
             "en_name": "1 teaspoon coarse salt",
             "weight_estimate": {
                 "ingredient": "1 teaspoon coarse salt",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -88,7 +88,7 @@
                 "weight_in_kg": 0.6
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'codeloin' is 'cod, fillet, raw' as codeloin is a fillet cut. Rule 1 and 4 applied choosing least processed raw fillet option.",
+                "closest_match_explanation": "The ingredient 'codeloin' is a direct match to 'cod, fillet, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00194",
                 "closest_match_name": "cod, fillet, raw",
                 "ingredient": "600 g of codeloin",
@@ -105,7 +105,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Repeated ingredient same as first '25 g butter' matched to 'butter, salt added'.",
+                "closest_match_explanation": "The ingredient 'butter' is a direct match to 'butter, salt added' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
                 "ingredient": "25 g butter",
@@ -118,7 +118,7 @@
             "en_name": "0.5 teaspoon coarse salt",
             "weight_estimate": {
                 "ingredient": "0.5 teaspoon coarse salt",
-                "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
                 "weight_in_kg": 0.0025
             },
             "co2_per_kg_db": null
@@ -128,11 +128,11 @@
             "en_name": "1.5 tsp wheat flour",
             "weight_estimate": {
                 "ingredient": "1.5 tsp wheat flour",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg.",
+                "weight_calculation": "1 tsp = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
                 "weight_in_kg": 0.0075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for 'wheat flour' to 'wheat, flour, wholemeal' as closest match. Rule 4 applied choosing least processed wholemeal flour.",
+                "closest_match_explanation": "The ingredient 'wheat flour' is a direct match to 'wheat, flour, wholemeal' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00103",
                 "closest_match_name": "wheat, flour, wholemeal",
                 "ingredient": "1.5 tsp wheat flour",
@@ -155,11 +155,11 @@
             "en_name": "3 tablespoons whole yellow mustard seeds",
             "weight_estimate": {
                 "ingredient": "3 tablespoons whole yellow mustard seeds",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
+                "weight_calculation": "1 tablespoon = 15 g, 3 * 15 g = 45 g = 0.045 kg",
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'whole yellow mustard seeds' is 'mustard, yellow, ready made' as closest available option. Rule 2 used broader category mustard.",
+                "closest_match_explanation": "The ingredient 'whole yellow mustard seeds' is a direct match to 'mustard, yellow, ready made' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00303",
                 "closest_match_name": "mustard, yellow, ready made",
                 "ingredient": "3 tablespoons whole yellow mustard seeds",
@@ -168,35 +168,35 @@
             }
         },
         {
-            "original_name": "6 skalotteløg",
-            "en_name": "6 shallots",
+            "original_name": "6 finthakkede skalotteløg (ca. 75 g)",
+            "en_name": "6 finely chopped shallots (about 75 g)",
             "weight_estimate": {
-                "ingredient": "6 shallots",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 shallot = 30 g, 6 * 30 g = 180 g = 0.18 kg.",
-                "weight_in_kg": 0.18
+                "ingredient": "6 finely chopped shallots (about 75 g)",
+                "weight_calculation": "75 g = 75 g = 0.075 kg",
+                "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'shallots' is 'onion, raw' as shallots are a type of onion and no exact shallot option exists. Rule 2 used broader category onion raw.",
+                "closest_match_explanation": "The ingredient 'shallots' is a direct match to 'onion, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
-                "ingredient": "6 shallots",
+                "ingredient": "6 finely chopped shallots (about 75 g)",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
         },
         {
-            "original_name": "200 g smør",
-            "en_name": "200 g of butter",
+            "original_name": "200 g koldt smør",
+            "en_name": "200 g of cold butter",
             "weight_estimate": {
-                "ingredient": "200 g of butter",
+                "ingredient": "200 g of cold butter",
                 "weight_calculation": "200 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for 'butter' to 'butter, salt added' same as previous butter matches.",
+                "closest_match_explanation": "The ingredient 'cold butter' is a direct match to 'butter, salt added' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
-                "ingredient": "200 g of butter",
+                "ingredient": "200 g of cold butter",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 3.3
             }
@@ -206,7 +206,7 @@
             "en_name": "0.75 teaspoon coarse salt",
             "weight_estimate": {
                 "ingredient": "0.75 teaspoon coarse salt",
-                "weight_calculation": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
                 "weight_in_kg": 0.00375
             },
             "co2_per_kg_db": null
@@ -216,11 +216,11 @@
             "en_name": "freshly ground pepper",
             "weight_estimate": {
                 "ingredient": "freshly ground pepper",
-                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: freshly ground pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'freshly ground pepper' is 'pepper, black' as black pepper is common ground pepper. Rule 1 applied.",
+                "closest_match_explanation": "The ingredient 'freshly ground pepper' is a direct match to 'pepper, black' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
                 "ingredient": "freshly ground pepper",
@@ -233,11 +233,11 @@
             "en_name": "fresh herbs",
             "weight_estimate": {
                 "ingredient": "fresh herbs",
-                "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg",
+                "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: fresh herbs per serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg.",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'fresh herbs' is 'basil, fresh' as a common fresh herb and least processed option. Rule 2 and 4 applied.",
+                "closest_match_explanation": "The ingredient 'fresh herbs' is a direct match to 'basil, fresh' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "fresh herbs",
@@ -254,7 +254,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'fried bacon' is 'bacon, frying, raw' as closest match with similar processing. Rule 4 applied.",
+                "closest_match_explanation": "The ingredient 'fried bacon' is a direct match to 'bacon, frying, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00044",
                 "closest_match_name": "bacon, frying, raw",
                 "ingredient": "100 g of fried bacon",
@@ -264,23 +264,23 @@
         },
         {
             "original_name": "4 blødkogte vagtelæg",
-            "en_name": "4 Soft-boiled quail egg",
+            "en_name": "4 soft-boiled quail egg",
             "weight_estimate": {
-                "ingredient": "4 Soft-boiled quail egg",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 15 g, 4 * 15 g = 60 g = 0.06 kg.",
-                "weight_in_kg": 0.06
+                "ingredient": "4 soft-boiled quail egg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 soft-boiled quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+                "weight_in_kg": 0.04
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for 'Soft-boiled quail egg' is 'eggs' as quail eggs are a type of egg and no quail egg option exists. Rule 2 used broader category eggs.",
+                "closest_match_explanation": "The ingredient 'quail egg' is a direct match to 'eggs' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00108",
                 "closest_match_name": "eggs",
-                "ingredient": "4 Soft-boiled quail egg",
+                "ingredient": "4 soft-boiled quail egg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.0
             }
         }
     ],
     "persons": 4,
-    "instructions": " Marinated beets: Melt the butter in a saucepan at heavy heat without browning it. Sweat the beets for approx. 2 minutes. Add balsamic vinegar, sugar and salt, and cook without lid for approx. 5 minutes. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours. Cod: Divide the cod into four equal pieces and place them in a greased ovenproof dish. Brush with melted butter and sprinkle with salt. Bake the fish in the middle of the oven at 200 ° C for approx. 12 minutes. Lunch the beets for the last 5 minutes in the oven. Mustard sauce: Whisk flour and a little water together in a saucepan. Add the rest of the water, mustard seeds and finely chopped shallots. Cook under low heat under lid for approx. 10 minutes. Take the pan off the heat and whisk cold butter in little by little. Heat the sauce without boiling, and add salt and pepper. Dish: Other beets on plates, place the cod on top, decorate with bacon, quail eggs and herbs. Serve the sauce next to it.",
+    "instructions": " melt the butter in a saucepan under heavy heat, but without browning. Sweat the beets for approx. 2 min.\nAdd the vinegar, sugar and salt and cook them under heavy heat and without lid for approx. 5 min.\nPut the beets in an ovenproof bowl and allow to soak for approx. 2 hours and taste.\nDivide the cod into four equal pieces. Put the pieces in a greased ovenproof dish.\nBrush the cod slices with butter and sprinkle with salt.\nBake the fish in the middle of the oven for approx. 12 min. at 200 ° - Traditional oven.\nLunch the beets on a rack at the bottom of the oven for the last 5 min. - Pour if necessary. A little of the moisture from the beets at the serving.\nWhip flour and some of the water together in a saucepan.\nAdd the rest of the water, mustard seeds and onions. Cook the mixture under low heat and under lid for approx. 10 min.\nTake the pan off the heat and whisk the cold butter in little by little.\nHeat the sauce (it must not boil) and add salt and pepper. Taste to.\nServing first beets on four plates, came the cod on it, garnish with bacon, quail eggs, herbs and serve with sauce next door.",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
 }

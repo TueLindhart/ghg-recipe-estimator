@@ -7,35 +7,6 @@ from langchain.prompts import (
 
 from food_co2_estimator.pydantic_models.recipe_extractor import ExtractedRecipe
 
-# ─── Example 1: web page input ──────────────────────────────────────────────
-EXAMPLE_INPUT_1 = """
-# Torskefisketerrine med dild og persille
-Denne lækre torskefisketerrine er perfekt til en forret eller som en del af en buffet.
-
-**Ingredienser**
-- 500 g torskefilet
-- 1 tsk havsalt og peber
-- 2 ds hakkede tomater
-- 2 stk æg
-- 1 stk gulerod
-- ½ dl fløde 13%
-- 1-2 fed hvidløg
-- ½ tsk revet muskatnød
-- 2 spsk olie (til stegning)
-- 4 dl creme fraiche 18%
-- fire stykker æggeblomme
-- 2 spsk frisk dild
-- 4 spiseskefulde frisk persille
-- 1 kop mælk
-- ¼ bundt koriander
-- 1 håndfuld frisk basilikum
-- 200 g smør (i små stykker)
-- 1 løg, hakket
-
-**Fremgangsmåde**
-Forvarm ovnen til 180 °C. …  (resten uændret)
-"""
-
 # ─── Example 1: expected extractor output ───────────────────────────────────
 WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
     title="Torskefisketerrine med dild og persille",
@@ -59,6 +30,8 @@ WEBSITE_RESPONSE_OBJ = ExtractedRecipe(
         "1 håndfuld basilikum",
         "200 g smør",
         "1 stk løg",  # comma detail removed
+        "14 skiver rugbrød",
+        "4 rødbeder (400 g)",
     ],
     persons=4,
     instructions=(
@@ -82,24 +55,26 @@ EXAMPLE_INPUT_1 = """
 Denne lækre torskefisketerrine er perfekt til en forret eller som en del af en buffet. Den er fyldt med smag og serveres med en cremet sauce, der fremhæver fiskens delikate smag.
 
 **Ingredienser**
-- 500 g torskefilet, i skiver
-- 1 tsk havsalt og 1 tsk peber
+- 500 g torskefilet
+- 1 tsk havsalt og peber
 - 2 ds hakkede tomater
 - 2 stk æg
 - 1 stk gulerod
 - ½ dl fløde 13%
-- to fede hvidløg
+- 1-2 fed hvidløg
 - ½ tsk revet muskatnød
-- to spsk olie (til stegning)
+- 2 spsk olie (til stegning)
 - 4 dl creme fraiche 18%
 - fire stykker æggeblomme
 - 2 spsk frisk dild
 - 4 spiseskefulde frisk persille
 - 1 kop mælk
-- to fede hvidløg
 - ¼ bundt koriander
 - 1 håndfuld frisk basilikum
 - 200 g smør (i små stykker)
+- 1 løg, hakket
+- 12-16 skiver rugbrød (til servering)
+- 4 rødbeder (400 g), kogte og skiver
 
 **Fremgangsmåde**
 Forbered fiskefarsen ved at skære torskefileten i mindre stykker og blend den sammen med havsalt i en foodprocessor til en fin konsistens. Tilsæt de to hele æg, fintrevet gulerod, fløde, muskatnød og peber. Blend igen, indtil ingredienserne er godt blandet og konsistensen er jævn. Smag til med salt og peber efter behov

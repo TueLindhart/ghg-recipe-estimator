@@ -64,10 +64,12 @@ typeCheckingMode = "basic"
 useLibraryCodeForTypes = true
 reportMissingTypeStubs = false
 reportUnknownVariableType = false
+extraPaths = [".", "tests"]
 
 [tool.pytest.ini_options]
 addopts = "-vv -n auto -x"
 testpaths = ["tests"]
+pythonpath = [".", "tests"]
 filterwarnings = [
     "ignore::DeprecationWarning:pydantic.*:",
     "ignore::DeprecationWarning:bs4.builder._lxml",

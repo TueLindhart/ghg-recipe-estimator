@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Exact match found for '25 g butter' to 'butter, salt added' with same processing level (salt added). Rule 4 applied to choose least processed matching option.",
+            "closest_match_explanation": "The ingredient 'butter' is a direct match to 'butter, salt added' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "butter, salt added",
             "ingredient": "25 g butter",
@@ -9,15 +9,15 @@
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Exact match for '4 beets' to 'beet, red, raw' as raw is least processed form. Rule 4 applied.",
+            "closest_match_explanation": "The ingredient 'beets' is a direct match to 'beet, red, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00259",
             "closest_match_name": "beet, red, raw",
-            "ingredient": "4 beets",
+            "ingredient": "4 beets (about 400 g)",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Best match for 'dark balsamic vinegar' is 'vinegar' as balsamic is a type of vinegar and no exact balsamic vinegar option exists. Rule 2 used for broader category vinegar.",
+            "closest_match_explanation": "The ingredient 'dark balsamic vinegar' is a direct match to 'vinegar' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00150",
             "closest_match_name": "vinegar",
             "ingredient": "1 dl dark balsamic vinegar",
@@ -25,7 +25,7 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "Best match for 'sugar' is 'sugar, sucrose, white' as common sugar type. Rule 1 and 4 applied choosing highest emission among similar processing options.",
+            "closest_match_explanation": "The ingredient 'sugar' is a direct match to 'sugar, sucrose, white' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00318",
             "closest_match_name": "sugar, sucrose, white",
             "ingredient": "2 tablespoons sugar",
@@ -33,7 +33,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "Best match for 'codeloin' is 'cod, fillet, raw' as codeloin is a fillet cut. Rule 1 and 4 applied choosing least processed raw fillet option.",
+            "closest_match_explanation": "The ingredient 'codeloin' is a direct match to 'cod, fillet, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00194",
             "closest_match_name": "cod, fillet, raw",
             "ingredient": "600 g of codeloin",
@@ -41,15 +41,7 @@
             "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "Repeated ingredient same as first '25 g butter' matched to 'butter, salt added'.",
-            "ingredient_id": "Ra00037",
-            "closest_match_name": "butter, salt added",
-            "ingredient": "25 g butter",
-            "unit": "kg CO2e per kg",
-            "co2_per_kg": 3.3
-        },
-        {
-            "closest_match_explanation": "Exact match for 'wheat flour' to 'wheat, flour, wholemeal' as closest match. Rule 4 applied choosing least processed wholemeal flour.",
+            "closest_match_explanation": "The ingredient 'wheat flour' is a direct match to 'wheat, flour, wholemeal' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00103",
             "closest_match_name": "wheat, flour, wholemeal",
             "ingredient": "1.5 tsp wheat flour",
@@ -57,7 +49,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "Best match for 'whole yellow mustard seeds' is 'mustard, yellow, ready made' as closest available option. Rule 2 used broader category mustard.",
+            "closest_match_explanation": "The ingredient 'whole yellow mustard seeds' is a direct match to 'mustard, yellow, ready made' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00303",
             "closest_match_name": "mustard, yellow, ready made",
             "ingredient": "3 tablespoons whole yellow mustard seeds",
@@ -65,23 +57,23 @@
             "co2_per_kg": 1.9
         },
         {
-            "closest_match_explanation": "Best match for 'shallots' is 'onion, raw' as shallots are a type of onion and no exact shallot option exists. Rule 2 used broader category onion raw.",
+            "closest_match_explanation": "The ingredient 'shallots' is a direct match to 'onion, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
-            "ingredient": "6 shallots",
+            "ingredient": "6 finely chopped shallots (about 75 g)",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "Exact match for 'butter' to 'butter, salt added' same as previous butter matches.",
+            "closest_match_explanation": "The ingredient 'cold butter' is a direct match to 'butter, salt added' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "butter, salt added",
-            "ingredient": "200 g of butter",
+            "ingredient": "200 g of cold butter",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 3.3
         },
         {
-            "closest_match_explanation": "Best match for 'freshly ground pepper' is 'pepper, black' as black pepper is common ground pepper. Rule 1 applied.",
+            "closest_match_explanation": "The ingredient 'freshly ground pepper' is a direct match to 'pepper, black' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "freshly ground pepper",
@@ -89,7 +81,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "Best match for 'fresh herbs' is 'basil, fresh' as a common fresh herb and least processed option. Rule 2 and 4 applied.",
+            "closest_match_explanation": "The ingredient 'fresh herbs' is a direct match to 'basil, fresh' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "fresh herbs",
@@ -97,7 +89,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "Best match for 'fried bacon' is 'bacon, frying, raw' as closest match with similar processing. Rule 4 applied.",
+            "closest_match_explanation": "The ingredient 'fried bacon' is a direct match to 'bacon, frying, raw' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00044",
             "closest_match_name": "bacon, frying, raw",
             "ingredient": "100 g of fried bacon",
@@ -105,10 +97,10 @@
             "co2_per_kg": 6.4
         },
         {
-            "closest_match_explanation": "Best match for 'Soft-boiled quail egg' is 'eggs' as quail eggs are a type of egg and no quail egg option exists. Rule 2 used broader category eggs.",
+            "closest_match_explanation": "The ingredient 'quail egg' is a direct match to 'eggs' in the database. This aligns with rule 4, which prioritizes direct matches and considers the least processed option when no processing is specified.",
             "ingredient_id": "Ra00108",
             "closest_match_name": "eggs",
-            "ingredient": "4 Soft-boiled quail egg",
+            "ingredient": "4 soft-boiled quail egg",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.0
         }
