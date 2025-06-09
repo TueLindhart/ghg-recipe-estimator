@@ -2,7 +2,7 @@
     "weight_estimates": [
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "ingredient": "0.5 tsp dried thyme",
-            "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
@@ -62,18 +62,18 @@
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "Black pepper",
-            "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "1 burrata",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 burrata = 250 g, 1 * 250 g = 250 g = 0.25 kg",
-            "weight_in_kg": 0.25
+            "ingredient": "1 piece burrata",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 piece burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
+            "weight_in_kg": 0.125
         },
         {
             "ingredient": "25 g pesto",
@@ -87,7 +87,7 @@
         },
         {
             "ingredient": "0.5 Handful of fresh basil",
-            "weight_calculation": "1 handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
+            "weight_calculation": "1 Handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "weight_in_kg": 0.0125
         }
     ]

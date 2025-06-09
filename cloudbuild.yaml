@@ -38,12 +38,13 @@ steps:
       - --set-env-vars=USE_CACHE=true
       - --set-env-vars=STORE_IN_CACHE=true
       - --set-env-vars=ENV=prod
+      - --set-env-vars=MODEL_VENDOR=google
       - --update-secrets=OPENAI_API_KEY=OpenAIAPIKey:latest
-      - --update-secrets=SERPER_API_KEY=SerperAPIKey:latest
       - --update-secrets=MY_MAIL=MyMail:latest
       - --update-secrets=CACHE_BUCKET=CacheBucketName:latest
       - --update-secrets=FOODPRINT_API_KEY=FoodPrintAPIKey:latest
       - --update-secrets=FRONTEND_URL=FoodPrintFrontendURL:latest
+      - --update-secrets=GOOGLE_API_KEY=GoogleAPIKey:latest
 
 images:
   - "$_IMAGE_NAME"

@@ -13,17 +13,17 @@ from food_co2_estimator.retrievers.vector_db_retriever import (
     batch_emission_retriever,
     clean_ingredient,
 )
-from food_co2_estimator.utils.openai_model import get_model
+from food_co2_estimator.utils.llm_model import LLMFactory
 
 NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
 INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
 
 
 def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
-    llm = get_model(
-        pydantic_model=CO2Emissions,
+    llm = LLMFactory(
+        output_model=CO2Emissions,
         verbose=verbose,
-    )
+    ).get_model()
 
     return (
         {"context": batch_emission_retriever, "ingredients": RunnablePassthrough()}

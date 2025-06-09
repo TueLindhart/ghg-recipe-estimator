@@ -1,7 +1,7 @@
 {
     "title": "Nytårstorsk - bagt torsk med sennepssauce",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/",
-    "total_co2_kg": 3.9,
+    "total_co2_kg": 3.8,
     "number_of_persons": 4,
     "co2_per_person_kg": 1.0,
     "avg_meal_emission_per_person_range_kg": [
@@ -20,7 +20,7 @@
             "co2_emission_notes": "Best match in CO2 database is: cod, fillet, raw"
         },
         {
-            "name": "200 g smør",
+            "name": "200 g koldt smør",
             "ingredient_id": "Ra00037",
             "weight_kg": 0.2,
             "co2_per_kg": 3.3,
@@ -40,16 +40,6 @@
             "co2_emission_notes": "Best match in CO2 database is: bacon, frying, raw"
         },
         {
-            "name": "4 rødbeder",
-            "ingredient_id": "Ra00259",
-            "weight_kg": 0.6,
-            "co2_per_kg": 0.3,
-            "co2_kg": 0.18,
-            "calculation_notes": "0.6 kg * 0.3 kg CO2e/kg = 0.18 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 beet = 150 g, 4 * 150 g = 600 g = 0.6 kg.",
-            "co2_emission_notes": "Best match in CO2 database is: beet, red, raw"
-        },
-        {
             "name": "1 dl mørk balsamicoeddike",
             "ingredient_id": "Ra00150",
             "weight_kg": 0.1,
@@ -60,13 +50,23 @@
             "co2_emission_notes": "Best match in CO2 database is: vinegar"
         },
         {
+            "name": "4 rødbeder (ca. 400 g)",
+            "ingredient_id": "Ra00259",
+            "weight_kg": 0.4,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.12,
+            "calculation_notes": "0.4 kg * 0.3 kg CO2e/kg = 0.12 kg CO2e",
+            "weight_estimation_notes": "400 g = 400 g = 0.4 kg",
+            "co2_emission_notes": "Best match in CO2 database is: beet, red, raw"
+        },
+        {
             "name": "friskkværnet peber",
             "ingredient_id": "Ra00302",
             "weight_kg": 0.02,
             "co2_per_kg": 5.2,
             "co2_kg": 0.1,
             "calculation_notes": "0.02 kg * 5.2 kg CO2e/kg = 0.1 kg CO2e",
-            "weight_estimation_notes": "Amount of freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_estimation_notes": "Amount of freshly ground pepper not specified. LLM estimate is: freshly ground pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "co2_emission_notes": "Best match in CO2 database is: pepper, black"
         },
         {
@@ -76,7 +76,7 @@
             "co2_per_kg": 1.9,
             "co2_kg": 0.09,
             "calculation_notes": "0.04 kg * 1.9 kg CO2e/kg = 0.09 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
+            "weight_estimation_notes": "1 tablespoon = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "co2_emission_notes": "Best match in CO2 database is: mustard, yellow, ready made"
         },
         {
@@ -96,7 +96,7 @@
             "co2_per_kg": 2.7,
             "co2_kg": 0.08,
             "calculation_notes": "0.03 kg * 2.7 kg CO2e/kg = 0.08 kg CO2e",
-            "weight_estimation_notes": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_estimation_notes": "1 tablespoon = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "co2_emission_notes": "Best match in CO2 database is: sugar, sucrose, white"
         },
         {
@@ -110,34 +110,34 @@
             "co2_emission_notes": "Best match in CO2 database is: butter, salt added"
         },
         {
-            "name": "4 blødkogte vagtelæg",
-            "ingredient_id": "Ra00108",
-            "weight_kg": 0.06,
-            "co2_per_kg": 1.0,
-            "co2_kg": 0.06,
-            "calculation_notes": "0.06 kg * 1.0 kg CO2e/kg = 0.06 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 15 g, 4 * 15 g = 60 g = 0.06 kg.",
-            "co2_emission_notes": "Best match in CO2 database is: eggs"
-        },
-        {
-            "name": "6 skalotteløg",
-            "ingredient_id": "Ra00266",
-            "weight_kg": 0.18,
-            "co2_per_kg": 0.3,
-            "co2_kg": 0.05,
-            "calculation_notes": "0.18 kg * 0.3 kg CO2e/kg = 0.05 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 shallot = 30 g, 6 * 30 g = 180 g = 0.18 kg.",
-            "co2_emission_notes": "Best match in CO2 database is: onion, raw"
-        },
-        {
             "name": "friske krydderurter",
             "ingredient_id": "Ra00486",
             "weight_kg": 0.1,
             "co2_per_kg": 0.4,
             "co2_kg": 0.04,
             "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg = 0.04 kg CO2e",
-            "weight_estimation_notes": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg",
+            "weight_estimation_notes": "Amount of fresh herbs not specified. LLM estimate is: fresh herbs per serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg.",
             "co2_emission_notes": "Best match in CO2 database is: basil, fresh"
+        },
+        {
+            "name": "4 blødkogte vagtelæg",
+            "ingredient_id": "Ra00108",
+            "weight_kg": 0.04,
+            "co2_per_kg": 1.0,
+            "co2_kg": 0.04,
+            "calculation_notes": "0.04 kg * 1.0 kg CO2e/kg = 0.04 kg CO2e",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 soft-boiled quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+            "co2_emission_notes": "Best match in CO2 database is: eggs"
+        },
+        {
+            "name": "6 finthakkede skalotteløg (ca. 75 g)",
+            "ingredient_id": "Ra00266",
+            "weight_kg": 0.075,
+            "co2_per_kg": 0.3,
+            "co2_kg": 0.02,
+            "calculation_notes": "0.07 kg * 0.3 kg CO2e/kg = 0.02 kg CO2e",
+            "weight_estimation_notes": "75 g = 75 g = 0.075 kg",
+            "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
             "name": "1.5 tsk hvedemel",
@@ -146,7 +146,7 @@
             "co2_per_kg": 1.2,
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 1.2 kg CO2e/kg = 0.01 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg.",
+            "weight_estimation_notes": "1 tsp = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
             "co2_emission_notes": "Best match in CO2 database is: wheat, flour, wholemeal"
         },
         {
@@ -156,7 +156,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -166,7 +166,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "co2_emission_notes": "Weight on 0.003 kg is negligible"
         },
         {
@@ -186,7 +186,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
-            "weight_estimation_notes": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "weight_estimation_notes": "1 teaspoon = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
             "co2_emission_notes": "Weight on 0.004 kg is negligible"
         }
     ]
