@@ -1,8 +1,7 @@
 import { env } from "$env/dynamic/private";
-import { json } from "@sveltejs/kit";
+import { json, type RequestHandler } from "@sveltejs/kit";
 
-/** @type {import('../$types').RequestHandler} */
-export async function GET({ params }) {
+export const GET: RequestHandler = async ({ params }) => {
   const { jobId } = params;
   // Check if jobId is provided
   if (!jobId) {
@@ -40,4 +39,4 @@ export async function GET({ params }) {
   } catch (err) {
     return json({ error: `Error: ${err.message}` }, { status: 500 });
   }
-}
+};

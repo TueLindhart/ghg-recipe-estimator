@@ -1,5 +1,5 @@
 import { env } from "$env/dynamic/private";
-import { json } from "@sveltejs/kit";
+import { json, type RequestHandler } from "@sveltejs/kit";
 
 /**
  * Proxy for GET /comparison?kgco2=<value> on the Python backend
@@ -8,7 +8,7 @@ import { json } from "@sveltejs/kit";
  *  – Preserves HTTP status codes from the backend
  *  – Returns plain JSON to the Svelte front-end
  */
-export async function GET({ url, fetch }) {
+export const GET: RequestHandler = async ({ url, fetch }) => {
   /* ───── 1. Extract and validate input ───── */
   const kgco2 = url.searchParams.get("kgco2");
   if (!kgco2) {
@@ -48,4 +48,4 @@ export async function GET({ url, fetch }) {
     console.error("Error fetching comparison:", err);
     return json({ error: `Error: ${err}` }, { status: 500 });
   }
-}
+};
