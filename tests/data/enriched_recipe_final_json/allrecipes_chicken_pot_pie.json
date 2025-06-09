@@ -10,7 +10,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match found for '1 tbsp olive oil' to 'olive oil' in the database. This is a direct match with no processing differences. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 tbsp olive oil' is directly matched to 'olive oil' as it is the most accurate and least processed option available. This aligns with rule 4, which prioritizes the least processed option when no processing information is provided for the ingredient.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "1 tbsp olive oil",
@@ -19,18 +19,18 @@
             }
         },
         {
-            "original_name": "1 lb skinless boneless chicken breast",
-            "en_name": "1 lb Skinless Boneless Chicken Breast",
+            "original_name": "1 lb skinless, boneless chicken breast",
+            "en_name": "1 lb Skinless, Boneless Chicken Breast",
             "weight_estimate": {
-                "ingredient": "1 lb Skinless Boneless Chicken Breast",
+                "ingredient": "1 lb Skinless, Boneless Chicken Breast",
                 "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
                 "weight_in_kg": 0.453592
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for chicken breast raw found. This matches the ingredient closely in terms of processing and type. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 lb Skinless, Boneless Chicken Breast' is best matched to 'chicken, breast, flesh and skin, raw'. This is the most appropriate match as it represents the raw, unprocessed form of chicken breast, aligning with rule 4 which favors the least processed option when no processing is specified.",
                 "ingredient_id": "Ra00055",
                 "closest_match_name": "chicken, breast, flesh and skin, raw",
-                "ingredient": "1 lb Skinless Boneless Chicken Breast",
+                "ingredient": "1 lb Skinless, Boneless Chicken Breast",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             }
@@ -44,7 +44,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for raw carrots found, which is the least processed form. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '2 Medium Carrots' is best matched to 'carrot, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
                 "ingredient_id": "Ra00257",
                 "closest_match_name": "carrot, raw",
                 "ingredient": "2 Medium Carrots",
@@ -61,7 +61,7 @@
                 "weight_in_kg": 0.08
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for raw celery found, matching the ingredient directly. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '2 Stalks Celery' is best matched to 'celery, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
                 "ingredient_id": "Ra00153",
                 "closest_match_name": "celery, raw",
                 "ingredient": "2 Stalks Celery",
@@ -78,7 +78,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for red bell pepper as 'pepper, sweet, red, raw' found. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 Red Bell Pepper' is best matched to 'pepper, sweet, red, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "1 Red Bell Pepper",
@@ -95,7 +95,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match for scallions is 'onions, spring, raw' as a direct synonym. (Rules 1, 7, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 Bunch Scallions' is best matched to 'onions, spring, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
                 "ingredient_id": "Ra00267",
                 "closest_match_name": "onions, spring, raw",
                 "ingredient": "1 Bunch Scallions",
@@ -104,35 +104,35 @@
             }
         },
         {
-            "original_name": "1 can (15 oz) diced tomatoes with green chiles",
-            "en_name": "1 can (15 oz) diced tomatoes with green chiles",
+            "original_name": "1 (15 ounce) can diced tomatoes with green chiles",
+            "en_name": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
             "weight_estimate": {
-                "ingredient": "1 can (15 oz) diced tomatoes with green chiles",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-                "weight_in_kg": 0.4
+                "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
+                "weight_calculation": "15 ounces = 425.243 g, 1 * 425.243 g = 425.243 g = 0.425243 kg",
+                "weight_in_kg": 0.425243
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match is 'tomato, peeled, canned' as diced canned tomatoes with green chiles are closest to peeled canned tomatoes in processing and type. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 (15 ounces) Can Diced Tomatoes with Green Chiles' is best matched to 'tomato, peeled, canned'. This aligns with rule 4, which prioritizes matching based on the amount of processing. Since the ingredient is 'canned', 'tomato, peeled, canned' is the most appropriate match.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 can (15 oz) diced tomatoes with green chiles",
+                "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             }
         },
         {
-            "original_name": "2 cans (15 oz) black beans",
-            "en_name": "2 Cans (15 oz) Black Beans",
+            "original_name": "2 (15 ounce) cans black beans",
+            "en_name": "2 (15 ounces) Cans Black Beans",
             "weight_estimate": {
-                "ingredient": "2 Cans (15 oz) Black Beans",
-                "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
-                "weight_in_kg": 0.8
+                "ingredient": "2 (15 ounces) Cans Black Beans",
+                "weight_calculation": "15 ounces = 425.243 g, 2 * 425.243 g = 850.486 g = 0.850486 kg",
+                "weight_in_kg": 0.850486
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for black beans canned found. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '2 (15 ounces) Cans Black Beans' is best matched to 'black beans'. This aligns with rule 4, which prioritizes matching based on the amount of processing. Since the ingredient is 'canned', 'black beans' is the most appropriate match.",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
-                "ingredient": "2 Cans (15 oz) Black Beans",
+                "ingredient": "2 (15 ounces) Cans Black Beans",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
@@ -146,12 +146,12 @@
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Chili powder best matches 'pepper, hot chili, raw' as it is the least processed form related to chili peppers. (Rules 1, 4, 8, 9)",
-                "ingredient_id": "Ra00009",
-                "closest_match_name": "pepper, hot chili, raw",
+                "closest_match_explanation": "The ingredient '4 tbsp chili powder' is best matched to 'curry powder'. While not an exact match, 'curry powder' is the closest broader category available for a powdered spice, aligning with rule 2. Rule 5 is then applied, choosing 'curry powder' due to its higher emission factor among similar processed spice options.",
+                "ingredient_id": "Ra00304",
+                "closest_match_name": "curry powder",
                 "ingredient": "4 tbsp chili powder",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1
+                "co2_per_kg": 6.1
             }
         },
         {
@@ -163,7 +163,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "No exact match for cumin; 'curry powder' chosen as a broader spice category with similar processing level and higher emissions for conservative estimate. (Rules 1, 2, 4, 5, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 tbsp ground cumin' is best matched to 'curry powder'. While not an exact match, 'curry powder' is the closest broader category available for a ground spice, aligning with rule 2. Rule 5 is then applied, choosing 'curry powder' due to its higher emission factor among similar processed spice options.",
                 "ingredient_id": "Ra00304",
                 "closest_match_name": "curry powder",
                 "ingredient": "1 tbsp ground cumin",
@@ -180,7 +180,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Best match is 'garlic, raw' as granulated garlic is minimally processed garlic powder, closer to raw garlic than garlic in oil. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '2 tsp granulated garlic' is best matched to 'garlic, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen. 'Granulated' refers to a form of processing, but 'garlic, raw' is the closest available option that represents the core ingredient.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 tsp granulated garlic",
@@ -197,7 +197,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Onion powder best matches 'onion, raw' as it is the least processed onion form available ignoring cooking instructions. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '2 tsp onion powder' is best matched to 'onion, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen. 'Powder' refers to a form of processing, but 'onion, raw' is the closest available option that represents the core ingredient.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "2 tsp onion powder",
@@ -220,7 +220,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": null
@@ -230,11 +230,11 @@
             "en_name": "Ground Black Pepper",
             "weight_estimate": {
                 "ingredient": "Ground Black Pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg",
+                "weight_calculation": "Amount of Ground Black Pepper not specified. LLM estimate is: Ground Black Pepper per serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for ground black pepper found. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient 'Ground Black Pepper' is best matched to 'pepper, black'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
                 "ingredient": "Ground Black Pepper",
@@ -243,18 +243,18 @@
             }
         },
         {
-            "original_name": "1 package (8.5 oz) dry corn muffin mix",
-            "en_name": "1 Package (8.5 oz) Dry Corn Muffin Mix",
+            "original_name": "1 (8.5 ounce) package dry corn muffin mix",
+            "en_name": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
             "weight_estimate": {
-                "ingredient": "1 Package (8.5 oz) Dry Corn Muffin Mix",
-                "weight_calculation": "8.5 oz = 240.98 g, 1 * 240.98 g = 240.98 g = 0.24098 kg",
-                "weight_in_kg": 0.24098
+                "ingredient": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
+                "weight_calculation": "8.5 ounces = 240.972 g, 1 * 240.972 g = 240.972 g = 0.240972 kg",
+                "weight_in_kg": 0.240972
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "No exact match for dry corn muffin mix; 'corn flour' chosen as a broader category related to corn-based flour with similar processing. (Rules 1, 2, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 (8.5 ounces) Package Dry Corn Muffin Mix' is best matched to 'corn flour'. This aligns with rule 2, which allows for matching to a broader category when an exact match is not available. 'Corn flour' is a primary component of corn muffin mix and represents the closest available option.",
                 "ingredient_id": "Ra00107",
                 "closest_match_name": "corn flour",
-                "ingredient": "1 Package (8.5 oz) Dry Corn Muffin Mix",
+                "ingredient": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.6
             }
@@ -264,11 +264,11 @@
             "en_name": "0.33 Cup Milk",
             "weight_estimate": {
                 "ingredient": "0.33 Cup Milk",
-                "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup milk = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg.",
                 "weight_in_kg": 0.0792
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for milk found. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '0.33 Cup Milk' is best matched to 'milk'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00342",
                 "closest_match_name": "milk",
                 "ingredient": "0.33 Cup Milk",
@@ -278,23 +278,23 @@
         },
         {
             "original_name": "1 egg",
-            "en_name": "1 egg",
+            "en_name": "1 Egg",
             "weight_estimate": {
-                "ingredient": "1 egg",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg",
+                "ingredient": "1 Egg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
                 "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Exact match for egg found as 'eggs'. (Rules 1, 4, 8, 9)",
+                "closest_match_explanation": "The ingredient '1 Egg' is best matched to 'eggs'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00108",
                 "closest_match_name": "eggs",
-                "ingredient": "1 egg",
+                "ingredient": "1 Egg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.0
             }
         }
     ],
     "persons": 6,
-    "instructions": " PreHeat above two 200 Degrees C (400 Degrees F). Heat Olive Oil in a Dutch above Medium Heat. Add Diced Chicken and Cook Until No Longer Pink, About 5-7 Minutes. Add Diced Carrots, Celery, Bell Pepper, and Scallions; Cook Until Tender, About 5 Minutes. Stir in Diced Tomatoes With Green Chiles, Black Beans, Chili Powder, Cumin, Granulated Garlic, Onion Powder, Smoked Paprika, Salt, and Black Pepper. Cook Until Heated Through, About 5 Minutes. Meanwhile, Combine Corn Muffin Mix with Milk and Egg In A Bowl. Remove Dutch above From Heat and Spread Cornbread Batter over Chicken Mixture. Bake in Preheated above 20-25 Minutes Until Cornbread Is Golden and Beginning to Brown.",
+    "instructions": " Preheat the Oven to 400 Degrees F (200 Degrees C).\nHeat Oil in a Dutch above Medium Heat. Add Chicken. Cook, Stirring Occasionally, Until No Longer Pink Inside, 5 Two 7 Minutes. Add Carrots, Celery, Bell Pepper, and Scallions and Cook Until Tender, About 5 Minutes. Add Tomatoes, Black Beans, Chili Powder, Cumin, Garlic, Onion Powder, Paprika, Salt, and Black Pepper. Stir two Combine. Cook Until Heated Through, About 5 Minutes More.\nWhile Mixture Simmers, Combine Cornbread Mix With Milk and Egg In A Bowl.\nRemove Dutch above From Heat and Spread Cornbread Batter on Top of Chicken Mixture to Form The Crust.\nPlace dutch above in the preheated above and bake Until cornbread is golden and beginning to brown, 20 two 25 minutes.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }
