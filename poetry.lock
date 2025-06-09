@@ -3729,6 +3729,21 @@ files = [
 webob = "*"
 
 [[package]]
+name = "punch-py"
+version = "2.0.0"
+description = "Update your version while having a drink"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "punch.py-2.0.0.tar.gz", hash = "sha256:851b9ae1616a5f3a13c88cd275bb7b066e3a7966570e936a355aa173c90b1a98"},
+]
+
+[package.dependencies]
+jinja2 = "*"
+six = "*"
+
+[[package]]
 name = "pure-eval"
 version = "0.2.3"
 description = "Safely evaluate AST nodes without side effects"
@@ -5832,4 +5847,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "da8d608d36c3a1694038808dedd5da000850875455a8672f363a7329fc7fc188"
+content-hash = "6d24b9f2f818666c0400e0b8b645022b5fd25bc8496171c76fa9072fed21205d"
