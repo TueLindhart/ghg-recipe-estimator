@@ -49,6 +49,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>MyFoodPrint</title>
+</svelte:head>
+
 <div class="flex justify-center items-start min-h-screen px-4 pt-[15vh]">
   <div class="w-full">
     <GradientHeading
