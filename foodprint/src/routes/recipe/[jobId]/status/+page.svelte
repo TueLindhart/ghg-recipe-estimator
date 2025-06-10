@@ -48,8 +48,12 @@
     }
   }
 
-  onMount(poll);
+onMount(poll);
 </script>
+
+<svelte:head>
+  <title>MyFoodPrint - calculating</title>
+</svelte:head>
 
 <div
   class="container mx-auto px-4 py-8 flex flex-col items-center justify-center min-h-screen"

@@ -36,6 +36,10 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   }
 </script>
 
+<svelte:head>
+  <title>{data.result.title || 'MyFoodPrint'}</title>
+</svelte:head>
+
 <div class="container mx-auto px-4">
   <div class="mt-4 flex flex-wrap items-center gap-4">
     <ReturnHomeButton />
