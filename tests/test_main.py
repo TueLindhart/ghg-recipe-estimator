@@ -39,17 +39,6 @@ async def test_async_estimator(
 
     monkeypatch.setattr("food_co2_estimator.main.extract_recipe", mock_extract_recipe)
 
-    # Mock get_translation_chain
-    mock_translation_chain = Mock()
-
-    async def mock_ainvoke(inputs):
-        return expected_enriched_recipe
-
-    mock_translation_chain.ainvoke = mock_ainvoke
-    monkeypatch.setattr(
-        "food_co2_estimator.main.get_translation_chain",
-        Mock(return_value=mock_translation_chain),
-    )
 
     # Call the function
     success, output = await async_estimator(

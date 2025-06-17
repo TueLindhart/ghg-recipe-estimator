@@ -13,6 +13,7 @@ from food_co2_estimator.retrievers.vector_db_retriever import (
     remove_quantities,
     remove_units,
 )
+from food_co2_estimator.language.detector import Languages
 
 
 def create_number_word_test_cases() -> List[Tuple[str, str]]:
@@ -251,7 +252,7 @@ async def test_batch_emission_retriever(monkeypatch: pytest.MonkeyPatch):
     )
 
     # Act
-    result = await batch_emission_retriever(ingredients)
+    result = await batch_emission_retriever(ingredients, Languages.English)
 
     # Assert
     expected = dict(zip(ingredients, mock_retriever_output.values()))

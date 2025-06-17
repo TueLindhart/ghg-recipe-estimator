@@ -9,6 +9,7 @@ from food_co2_estimator.pydantic_models.weight_estimator import (
     WeightEstimate,
     WeightEstimates,
 )
+from food_co2_estimator.language.detector import Languages
 
 # The general weight lookup table
 EN_WEIGHT_RECALCULATIONS = """
@@ -52,6 +53,25 @@ pepper
 1 bunch asparagus
 1 duck, ca. 2 kg
 served with rice
+"""
+
+# Danish equivalent of the input example used to demonstrate the expected format
+# when ingredients are provided in Danish.
+DA_INPUT_EXAMPLE = """
+1 dåse hakkede tomater
+200 g pasta
+500 ml vand
+250 g hakket kød
+0.5 blomkål
+1 tsk sukker
+1 økologisk citron
+3 tsk salt
+2 spsk krydderier
+peber
+2 store kartofler
+1 bundt asparges
+1 and, ca. 2 kg
+serveres med ris
 """
 
 # Constructing the example using Pydantic models
@@ -137,7 +157,7 @@ INGREDIENT_NOT_FOUND_TEMPLATE = f"Ingredient not found in general weights. LLM e
 AMOUNT_NOT_SPECIFIED_TEMPLATE = "Amount of <ingredient> not specified. LLM estimate is: <ingredient name> per serving = <weight in kg>, <number of servings> * <weight in kg> = <total weight in kg>."
 
 WEIGHT_EST_SYSTEM_PROMPT = """
-Given a list of ingredients, estimate the weights in kilogram for each ingredient.
+Given a list of ingredients in English or Danish, estimate the weights in kilogram for each ingredient.
 Explain your reasoning for the estimation of weights.
 
 The following general weights can be used for estimation:
@@ -169,23 +189,26 @@ Answer:"""
 
 WEIGHT_EST_EXAMPLE_AI_PROMPT = """{answer_example}"""
 
-# Final prompt combining system, human, and AI messages.
-WEIGHT_EST_PROMPT = ChatPromptTemplate(
-    messages=[
-        SystemMessagePromptTemplate.from_template(WEIGHT_EST_SYSTEM_PROMPT),
-        HumanMessagePromptTemplate.from_template(WEIGHT_EST_EXAMPLE_HUMAN_PROMPT),
-        AIMessagePromptTemplate.from_template(WEIGHT_EST_EXAMPLE_AI_PROMPT),
-        HumanMessagePromptTemplate.from_template(
-            "Ingredients:\n{input}. \nThe number of servings is {servings}"
-        ),
-    ],
-    input_variables=["input", "servings"],
-    partial_variables={
-        "recalculations": EN_WEIGHT_RECALCULATIONS,
-        "input_example": EN_INPUT_EXAMPLE,
-        "answer_example": ANSWER_EXAMPLE,
-        "weight_conversion_template": WEIGHT_CONVERSION_TEMPLATE_EXPLANATION,
-        "ingredient_not_found_template": INGREDIENT_NOT_FOUND_TEMPLATE,
-        "amount_not_specified_template": AMOUNT_NOT_SPECIFIED_TEMPLATE,
-    },
-)
+
+def get_weight_est_prompt(language: Languages) -> ChatPromptTemplate:
+    """Return weight estimation prompt with examples for the given language."""
+    input_example = EN_INPUT_EXAMPLE if language == Languages.English else DA_INPUT_EXAMPLE
+    return ChatPromptTemplate(
+        messages=[
+            SystemMessagePromptTemplate.from_template(WEIGHT_EST_SYSTEM_PROMPT),
+            HumanMessagePromptTemplate.from_template(WEIGHT_EST_EXAMPLE_HUMAN_PROMPT),
+            AIMessagePromptTemplate.from_template(WEIGHT_EST_EXAMPLE_AI_PROMPT),
+            HumanMessagePromptTemplate.from_template(
+                "Ingredients:\n{input}. \nThe number of servings is {servings}"
+            ),
+        ],
+        input_variables=["input", "servings"],
+        partial_variables={
+            "recalculations": EN_WEIGHT_RECALCULATIONS,
+            "input_example": input_example,
+            "answer_example": ANSWER_EXAMPLE,
+            "weight_conversion_template": WEIGHT_CONVERSION_TEMPLATE_EXPLANATION,
+            "ingredient_not_found_template": INGREDIENT_NOT_FOUND_TEMPLATE,
+            "amount_not_specified_template": AMOUNT_NOT_SPECIFIED_TEMPLATE,
+        },
+    )

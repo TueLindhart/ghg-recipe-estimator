@@ -6,7 +6,6 @@ from food_co2_estimator.chains.rag_co2_estimator import (
     get_co2_emissions,
 )
 from food_co2_estimator.chains.recipe_extractor import extract_recipe
-from food_co2_estimator.chains.translator import get_translation_chain
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.language.detector import Languages, detect_language
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
@@ -58,22 +57,20 @@ async def async_estimator(
         log_exception_message(runparams.url, language_exception)
         return False, language_exception
 
-    translator = get_translation_chain()
-    try:
-        enriched_recipe: EnrichedRecipe = await translator.ainvoke(
-            {"recipe": enriched_recipe, "language": language}
-        )
-    except Exception as e:
-        translation_exception = "Noget gik galt under oversættelsen af opskriften."
-        log_exception_message(runparams.url, str(e))
-        log_exception_message(runparams.url, translation_exception)
-        return False, translation_exception
+    # No external translation is performed. Instead we simply copy the original
+    # ingredient names so subsequent chains operate on the detected language.
+    enriched_recipe.update_with_translations(
+        translated_ingredients=enriched_recipe.get_ingredients_orig_name_list(),
+        instructions=enriched_recipe.instructions,
+    )
 
     await update_status(runparams.uid, redis_client, JobStatus.ESTIMATING_WEIGHTS)
     try:
         # Estimate weights using weight estimator
         parsed_weight_output = await get_weight_estimates(
-            logparams.verbose, enriched_recipe
+            verbose=logparams.verbose,
+            recipe=enriched_recipe,
+            language=language,
         )
         enriched_recipe.update_with_weight_estimates(parsed_weight_output)
     except Exception as e:
@@ -85,7 +82,10 @@ async def async_estimator(
     try:
         # Estimate the kg CO2e per kg for each ingredient using RAG
         parsed_rag_emissions = await get_co2_emissions(
-            logparams.verbose, runparams.negligeble_threshold, enriched_recipe
+            verbose=logparams.verbose,
+            negligeble_threshold=runparams.negligeble_threshold,
+            recipe=enriched_recipe,
+            language=language,
         )
         enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
     except Exception as e:
