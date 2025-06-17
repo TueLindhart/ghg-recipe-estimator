@@ -11,7 +11,7 @@ from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from food_co2_estimator.co2_comparison import compare_co2
 from food_co2_estimator.logger_utils import logger
 from food_co2_estimator.main import async_estimator
-from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
+from food_co2_estimator.pydantic_models.estimator import RunParams
 from food_co2_estimator.pydantic_models.response_models import (
     ComparisonResponse,
     EstimateRequest,
@@ -94,12 +94,8 @@ async def run_estimator(
     """
     logger.info(f"Starting CO2 estimation for UID={runparams.uid} URL={runparams.url}")
     try:
-        # You can configure LogParams as needed
-        logparams = LogParams(
-            logging_level=logging.INFO
-        )  # TODO: Remove LogParams - not used.
         success, result = await async_estimator(
-            runparams=runparams, logparams=logparams, redis_client=redis_client
+            runparams=runparams, redis_client=redis_client
         )
         status = JobStatus.COMPLETED if success else JobStatus.ERROR
         await redis_client.update_job_status(
