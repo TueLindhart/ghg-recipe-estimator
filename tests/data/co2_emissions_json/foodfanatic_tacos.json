@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 small onion' is best matched with 'onion, raw' because it is the least processed option available, aligning with rule 4. 'Red onion' and 'onions, spring, raw' are also raw but 'onion, raw' is a more general category. 'Onions, chopped and deepfried' is more processed.",
+            "closest_match_explanation": "The ingredient is '1 small onion'. The closest match in the database is 'onion, raw' with an emission factor of 0.3 kg CO2e / kg. This is chosen based on common sense as onions are a raw vegetable and 'onion, raw' is the most appropriate general category. Rule 2 is applied as 'onion, raw' is a broader category than a specific type of onion.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 small onion",
@@ -9,7 +9,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed option available, aligning with rule 4. 'Garlic in oil' and 'garlic baguette, frozen' are more processed. 'Red onion' is not a garlic product.",
+            "closest_match_explanation": "The ingredient is '2 cloves of garlic'. The closest match in the database is 'garlic, raw' with an emission factor of 1.2 kg CO2e / kg. This is chosen as garlic is a raw ingredient and 'garlic, raw' is the most specific and appropriate match. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -17,23 +17,23 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 Red pepper' is best matched with 'pepper, sweet, red, raw' because it is the least processed option available, aligning with rule 4. 'Pepper, hot chili, raw' is a different type of pepper. 'Pepper, hot chili, canned' is processed. 'Pepper, black' is a spice and not a fresh pepper.",
+            "closest_match_explanation": "The ingredient is '½ red pepper'. The closest match in the database is 'pepper, sweet, red, raw' with an emission factor of 1.1 kg CO2e / kg. This is chosen as it is a raw red pepper and the most specific match available. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
-            "ingredient": "0.5 Red pepper",
+            "ingredient": "½ red pepper",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient 'oil' is a general term. Among the available options, 'sunflower oil' and 'oil for frying' have the same emission factor. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. However, in this case, 'olive oil' has a higher emission factor (5.9 kg CO2e/kg) and is a common type of oil, making it a suitable conservative choice.",
-            "ingredient_id": "Ra00349",
-            "closest_match_name": "olive oil",
-            "ingredient": "oil",
+            "closest_match_explanation": "The ingredient is 'Oil for frying'. The closest match in the database is 'oil for frying' with an emission factor of 2.8 kg CO2e / kg. This is chosen as it is the most direct match for the described use of oil. Rule 8 is applied as this is a direct match from the database.",
+            "ingredient_id": "Ra00348",
+            "closest_match_name": "oil for frying",
+            "ingredient": "Oil for frying",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.9
+            "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "The ingredient '250 g of beef' is best matched with 'average beef' as it is the most general and least processed option for beef, aligning with rule 2 and 4. Other options specify cuts or fat content, making 'average beef' the most appropriate broader category.",
+            "closest_match_explanation": "The ingredient is '250 g of beef'. The closest match in the database is 'average beef' with an emission factor of 74.8 kg CO2e / kg. This is chosen as it is the most general category for beef when no specific cut is mentioned. Rule 2 is applied as 'average beef' is a broader category. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00503",
             "closest_match_name": "average beef",
             "ingredient": "250 g of beef",
@@ -41,23 +41,15 @@
             "co2_per_kg": 74.8
         },
         {
-            "closest_match_explanation": "The ingredient '1.5 tablespoons fajita crawling' does not have a direct match in the emission database. The available options like 'taco shells', 'salsa, hot', 'crayfish, raw', and 'tortilla chips, cheese' are not suitable broader categories or synonyms for 'fajita crawling' (which likely refers to a spice mix or seasoning), violating rule 1 and 2. Therefore, no suitable match can be found.",
-            "ingredient_id": "No match",
+            "closest_match_explanation": "The ingredient is '1.5 tbsp. Fajita Crossing'. There is no direct or suitable broader category match in the database for 'Fajita Crossing'. Therefore, the closest match is 'No match'. Rule 9 is applied.",
+            "ingredient_id": "none",
             "closest_match_name": "No match",
-            "ingredient": "1.5 tablespoons fajita crawling",
+            "ingredient": "1.5 tbsp. Fajita Crossing",
             "unit": "kg CO2e per kg",
             "co2_per_kg": null
         },
         {
-            "closest_match_explanation": "The ingredient 'chili powder or flakes' is best matched with 'curry powder' as a broader category for a spice blend, aligning with rule 2. While 'pepper, hot chili, raw' and 'pepper, hot chili, canned' are related to chili, they are not in powder or flake form. 'Chili sauce' is a processed product and not a powder/flake.",
-            "ingredient_id": "Ra00304",
-            "closest_match_name": "curry powder",
-            "ingredient": "chili powder or flakes",
-            "unit": "kg CO2e per kg",
-            "co2_per_kg": 6.1
-        },
-        {
-            "closest_match_explanation": "The ingredient '1 can of kidney beans' is best matched with 'kidney beans' as it is an exact match for the primary ingredient and processing (canned is implied by 'can'), aligning with rule 4. 'Black beans' are a different type of bean. 'Beans, baked in tomato sauce, canned' is a more processed product. 'Beans, green, raw' is a different type of bean and is raw.",
+            "closest_match_explanation": "The ingredient is '1 can of kidney beans'. The closest match in the database is 'kidney beans' with an emission factor of 1.2 kg CO2e / kg. This is chosen as it is the most specific and appropriate match for canned kidney beans. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can of kidney beans",
@@ -65,31 +57,31 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 tablespoons tomato puree' is best matched with 'tomato paste, concentrated' as tomato puree is a concentrated form of tomato, similar to tomato paste, aligning with rule 4. 'Tomato, peeled, canned' and 'tomatojuice, canned' are less concentrated forms. 'Tomato, dried' is a different processing method.",
+            "closest_match_explanation": "The ingredient is '2 tbsp. tomato puree'. The closest match in the database is 'tomato paste, concentrated' with an emission factor of 2.7 kg CO2e / kg. Tomato puree is a concentrated form of tomato, making 'tomato paste, concentrated' the most appropriate match considering processing. Rule 4 is applied as it considers the processing level. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
-            "ingredient": "2 tablespoons tomato puree",
+            "ingredient": "2 tbsp. tomato puree",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 dl beef fund/broth' is best matched with 'bouillon, beef, prepared' as it represents a prepared liquid form of beef broth, aligning with rule 4. 'Bouillon, beef, concentrated, cube' is a more concentrated form. 'Beef, low fat' and 'beef, mince, 15-20% fat, raw' are raw meat products, not broth.",
-            "ingredient_id": "Ra00215",
-            "closest_match_name": "bouillon, beef, prepared",
-            "ingredient": "2.5 dl beef fund/broth",
+            "closest_match_explanation": "The ingredient is '2.5 dl beef fund'. The closest match in the database is 'average beef' with an emission factor of 74.8 kg CO2e / kg. 'Beef fund' is interpreted as beef broth or stock, which is derived from beef. Therefore, 'average beef' is the most appropriate broader category. Rule 2 is applied as 'average beef' is a broader category. Rule 8 is applied as this is a direct match from the database.",
+            "ingredient_id": "Ra00503",
+            "closest_match_name": "average beef",
+            "ingredient": "2.5 dl beef fund",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.6
+            "co2_per_kg": 74.8
         },
         {
-            "closest_match_explanation": "The ingredient '11 small cornstortillas' is best matched with 'tortilla bread, wheat' as a broader category for tortillas, aligning with rule 2. While 'taco shells' and 'tortilla chips, cheese' are related, 'tortilla bread, wheat' is a more general and less processed form of tortilla. 'Corn flour' is an ingredient, not a finished tortilla.",
-            "ingredient_id": "Ra00401",
-            "closest_match_name": "tortilla bread, wheat",
+            "closest_match_explanation": "The ingredient is '11 small cornstortillas'. The closest match in the database is 'corn flour' with an emission factor of 1.6 kg CO2e / kg. Corn tortillas are made from corn flour, making 'corn flour' the most appropriate match as a primary ingredient. Rule 2 is applied as 'corn flour' is a broader category representing the main component. Rule 8 is applied as this is a direct match from the database.",
+            "ingredient_id": "Ra00107",
+            "closest_match_name": "corn flour",
             "ingredient": "11 small cornstortillas",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient '1 serving of tomato salsa' is best matched with 'salsa, hot' as it is a direct match for the ingredient, aligning with rule 4. 'Sundried tomatoes', 'tomato, dried', and 'tomato, peeled, canned' are ingredients of salsa, not the finished product.",
+            "closest_match_explanation": "The ingredient is '1 serving of tomato salsa'. The closest match in the database is 'salsa, hot' with an emission factor of 1.4 kg CO2e / kg. This is chosen as 'salsa, hot' is the most direct and appropriate match for tomato salsa. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00400",
             "closest_match_name": "salsa, hot",
             "ingredient": "1 serving of tomato salsa",
@@ -97,7 +89,7 @@
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 Avocado' is best matched with 'avocado, raw' as it is an exact and least processed match, aligning with rule 4. 'Olive oil', 'mayonnaise', and 'aubergine, raw' are not suitable matches for avocado.",
+            "closest_match_explanation": "The ingredient is '1 Avocado'. The closest match in the database is 'avocado, raw' with an emission factor of 1.2 kg CO2e / kg. This is chosen as it is the most specific and appropriate match for a raw avocado. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00317",
             "closest_match_name": "avocado, raw",
             "ingredient": "1 Avocado",
@@ -105,7 +97,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 Red onion' is best matched with 'red onion' as it is an exact and least processed match, aligning with rule 4. 'Onion, raw' is a general category but 'red onion' is more specific. 'Onions, spring, raw' is a different type of onion. 'Onions, chopped and deepfried' is more processed.",
+            "closest_match_explanation": "The ingredient is '0.5 Red onion'. The closest match in the database is 'red onion' with an emission factor of 0.8 kg CO2e / kg. This is chosen as it is the most specific and appropriate match for a red onion. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "red onion",
             "ingredient": "0.5 Red onion",
@@ -113,7 +105,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed option available, aligning with rule 4. 'Garlic in oil' and 'garlic baguette, frozen' are more processed. 'Red onion' is not a garlic product.",
+            "closest_match_explanation": "The ingredient is '2 cloves of garlic'. The closest match in the database is 'garlic, raw' with an emission factor of 1.2 kg CO2e / kg. This is chosen as garlic is a raw ingredient and 'garlic, raw' is the most specific and appropriate match. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -121,7 +113,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '300 g of tomatoes' is best matched with 'tomato, peeled, canned' as it is a common processed form of tomatoes and has a lower emission factor than dried tomatoes, aligning with rule 4 and 5. 'Tomato, dried' and 'sundried tomatoes' are more processed. 'Tomatojuice, canned' is a different product.",
+            "closest_match_explanation": "The ingredient is '300 g of tomatoes'. The closest match in the database is 'tomato, peeled, canned' with an emission factor of 1.1 kg CO2e / kg. Since the form of tomatoes is not specified, and canned tomatoes are a common form, this is chosen as a reasonable match. Rule 2 is applied as 'tomato, peeled, canned' is a common form of tomatoes. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "300 g of tomatoes",
@@ -129,7 +121,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient '0.75 chili pepper' is best matched with 'pepper, hot chili, raw' as it is the least processed option available, aligning with rule 4. 'Pepper, hot chili, canned' is processed. 'Chili sauce' is a processed product. 'Pepper, black' is a different type of spice.",
+            "closest_match_explanation": "The ingredient is '0.75 chili pepper'. The closest match in the database is 'pepper, hot chili, raw' with an emission factor of 1.1 kg CO2e / kg. This is chosen as it is the most specific and appropriate match for a raw chili pepper. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00009",
             "closest_match_name": "pepper, hot chili, raw",
             "ingredient": "0.75 chili pepper",
@@ -137,26 +129,26 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 Bdt coriander' does not have a direct match in the emission database. 'Curry powder' is a spice blend but not specifically coriander. 'Basil, dried' and 'basil, fresh' are different herbs. 'Dill, raw' is also a different herb. Therefore, no suitable match can be found.",
-            "ingredient_id": "No match",
+            "closest_match_explanation": "The ingredient is '0.5 bdt. Coriander'. There is no direct or suitable broader category match in the database for 'Coriander'. Therefore, the closest match is 'No match'. Rule 9 is applied.",
+            "ingredient_id": "none",
             "closest_match_name": "No match",
-            "ingredient": "0.5 Bdt coriander",
+            "ingredient": "0.5 bdt. Coriander",
             "unit": "kg CO2e per kg",
             "co2_per_kg": null
         },
         {
-            "closest_match_explanation": "The ingredient '2 tablespoons olive oil' is best matched with 'olive oil' as it is an exact match and the least processed option among the oil choices, aligning with rule 4. 'Olive tapenade' and 'garlic in oil' are processed products. 'Sunflower oil' is a different type of oil.",
+            "closest_match_explanation": "The ingredient is '2 tbsp. olive oil'. The closest match in the database is 'olive oil' with an emission factor of 5.9 kg CO2e / kg. This is chosen as it is the most specific and appropriate match for olive oil. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
-            "ingredient": "2 tablespoons olive oil",
+            "ingredient": "2 tbsp. olive oil",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "The ingredient 'The juice of 0.5 lime' is best matched with 'lime, raw' as it is the direct source of the juice and the least processed option, aligning with rule 4. 'Lemon, raw' is a different citrus fruit. 'Apple juice' and 'half pears in juice' are different fruit juices.",
+            "closest_match_explanation": "The ingredient is '0.5 Lime juice'. The closest match in the database is 'lime, raw' with an emission factor of 0.6 kg CO2e / kg. Lime juice is derived from raw limes, making 'lime, raw' the most appropriate match. Rule 2 is applied as 'lime, raw' is a broader category representing the source. Rule 8 is applied as this is a direct match from the database.",
             "ingredient_id": "Ra00332",
             "closest_match_name": "lime, raw",
-            "ingredient": "The juice of 0.5 lime",
+            "ingredient": "0.5 Lime juice",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 0.6
         }

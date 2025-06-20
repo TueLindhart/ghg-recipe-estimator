@@ -12,21 +12,21 @@
         },
         {
             "ingredient": "1 onion",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
             "ingredient": "1 BDT Green Asparagus",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
+            "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
             "weight_in_kg": 0.5
         },
         {
-            "ingredient": "1 Squash",
-            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "ingredient": "1 pcs squash",
+            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 large handful of fresh basil",
+            "ingredient": "1 handful of fresh basil",
             "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
@@ -41,33 +41,33 @@
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 vegetable broth cube",
+            "ingredient": "1 pcs Vegetable broth cube",
             "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
             "ingredient": "6 tbsp grated parmesan",
-            "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.09 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.090 kg",
             "weight_in_kg": 0.09
         },
         {
             "ingredient": "1 handful of mozzarella",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
-            "weight_in_kg": 0.1
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 50 g, 1 * 50 g = 50 g = 0.050 kg",
+            "weight_in_kg": 0.05
         },
         {
-            "ingredient": "A little salt",
-            "weight_calculation": "Amount of A little salt not specified. LLM estimate is: A little salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+            "ingredient": "salt",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
             "weight_in_kg": 0.01
         },
         {
-            "ingredient": "A little pepper",
-            "weight_calculation": "Amount of A little pepper not specified. LLM estimate is: A little pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+            "ingredient": "pepper",
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "Oil",
-            "weight_calculation": "Amount of Oil not specified. LLM estimate is: Oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg.",
+            "weight_calculation": "Amount of Oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.030 kg",
             "weight_in_kg": 0.03
         }
     ]

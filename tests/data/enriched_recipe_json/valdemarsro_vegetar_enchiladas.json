@@ -38,8 +38,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "original_name": "1 stk løg, finthakket",
+            "en_name": "1 onion, finely chopped",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -62,8 +62,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 spsk olivenolie",
-            "en_name": "1 tablespoon olive oil",
+            "original_name": "1 spsk olivenolie, til stegning",
+            "en_name": "1 tablespoon olive oil, for frying",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -74,26 +74,26 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "original_name": "sort peber, friskkværnet",
+            "en_name": "Black pepper, freshly ground",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "original_name": "1 stk løg, finthakket",
+            "en_name": "1 onion, finely chopped",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "original_name": "2 fed hvidløg, finthakkede",
+            "en_name": "2 cloves of garlic, finely chopped",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "original_name": "1 squash, groftrevet",
+            "en_name": "1 Squash, coarsely driven",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -140,14 +140,14 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "150 g cheddar ost",
-            "en_name": "150 g cheddar cheese",
+            "original_name": "150 g cheddar ost, friskrevet",
+            "en_name": "150 g cheddar cheese, freshly written",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 håndfuld frisk koriander",
-            "en_name": "1 handful of fresh coriander",
+            "original_name": "1 håndfuld frisk koriander, eller bredbladet persille",
+            "en_name": "1 handful of fresh coriander, or broad -leaved parsley",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -158,19 +158,19 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "original_name": "sort peber, friskkværnet",
+            "en_name": "Black pepper, freshly ground",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 spsk smør",
-            "en_name": "1 tablespoon butter",
+            "original_name": "1 spsk smør, til formen",
+            "en_name": "1 tablespoon butter, to the mold",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": " Enchilada's sauce\nShake all the spices in a dry saucepan until they start to smell nice.\nAdd oil, garlic and onion and saute until the onions are soft.\nStir flour into the filling and then add vegetable broth and chopped tomatoes.\nStir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper.\nFill\nHeat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through.\nShake the corn kernels in a little butter on a pan until they get crispy and get a little color.\nGather Enchiladas\nGrease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish.\nDistribute the last enchilada sauce over and sprinkle with more cheese.\nDistribute bean filling and corn kernels in the sides of the dish if there is anything left over.\nBake them in a preheated oven at 175 degrees hot air for about 18 minutes.\nSprinkle with coriander before serving.",
+    "instructions": " ** Enchilada's sauce **  \n\nShake all the spices in a dry saucepan until they start to smell nice.\n\nAdd oil, garlic and onion and saute until the onions are soft.\n\nStir flour into the filling and then add vegetable broth and chopped tomatoes.\n\nStir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper.\n\n** Fill **  \n\nHeat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through.\n\nShake the corn kernels in a little butter on a pan until they get crispy and get a little color.\n\n** Collect Enchiladas **  \n\nGrease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish.\n\nDistribute the last enchilada sauce over and sprinkle with more cheese.\n\nDistribute bean filling and corn kernels in the sides of the dish if there is anything left over.\n\nBake them in a preheated oven at 175 degrees hot air for about 18 minutes.\n\nSprinkle with coriander before serving.",
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
 }

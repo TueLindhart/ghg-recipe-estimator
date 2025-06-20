@@ -2,242 +2,232 @@
     "title": "Dutch Oven Southwestern Chicken Pot Pie",
     "ingredients": [
         {
-            "original_name": "1 tbsp olive oil",
-            "en_name": "1 tbsp olive oil",
+            "original_name": "1 tablespoon olive oil",
+            "en_name": "1 Tablespoon Olive Oil",
             "weight_estimate": {
-                "ingredient": "1 tbsp olive oil",
-                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "ingredient": "1 Tablespoon Olive Oil",
+                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tbsp olive oil' is directly matched to 'olive oil' as it is the most accurate and least processed option available. This aligns with rule 4, which prioritizes the least processed option when no processing information is provided for the ingredient.",
-                "ingredient_id": "Ra00349",
+                "closest_match_explanation": "The ingredient is olive oil, and the closest match in the database is 'olive oil' with an emission factor of 5.9 kg CO2e / kg. This is an exact match.",
+                "ingredient_id": "Ra00001",
                 "closest_match_name": "olive oil",
-                "ingredient": "1 tbsp olive oil",
+                "ingredient": "1 Tablespoon Olive Oil",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.9
             }
         },
         {
-            "original_name": "1 lb skinless, boneless chicken breast",
-            "en_name": "1 lb Skinless, Boneless Chicken Breast",
+            "original_name": "1 pound skinless, boneless chicken breast, diced",
+            "en_name": "1 Pound Skinless, Boneless Chicken Breast, Diced",
             "weight_estimate": {
-                "ingredient": "1 lb Skinless, Boneless Chicken Breast",
-                "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
+                "ingredient": "1 Pound Skinless, Boneless Chicken Breast, Diced",
+                "weight_calculation": "1 pound = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
                 "weight_in_kg": 0.453592
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 lb Skinless, Boneless Chicken Breast' is best matched to 'chicken, breast, flesh and skin, raw'. This is the most appropriate match as it represents the raw, unprocessed form of chicken breast, aligning with rule 4 which favors the least processed option when no processing is specified.",
-                "ingredient_id": "Ra00055",
-                "closest_match_name": "chicken, breast, flesh and skin, raw",
-                "ingredient": "1 lb Skinless, Boneless Chicken Breast",
+                "closest_match_explanation": "The ingredient is '1 Pound Skinless, Boneless Chicken Breast, Diced'. The closest match in the database is 'minced chicken' with an emission factor of 5.7 kg CO2e / kg. This is the closest match considering the processing (diced) and the type of meat (chicken breast).",
+                "ingredient_id": "Ra00386",
+                "closest_match_name": "minced chicken",
+                "ingredient": "1 Pound Skinless, Boneless Chicken Breast, Diced",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.2
+                "co2_per_kg": 5.7
             }
         },
         {
-            "original_name": "2 medium carrots",
-            "en_name": "2 Medium Carrots",
+            "original_name": "2 medium carrots, diced",
+            "en_name": "2 Medium Carrots, Diced",
             "weight_estimate": {
-                "ingredient": "2 Medium Carrots",
+                "ingredient": "2 Medium Carrots, Diced",
                 "weight_calculation": "1 carrot = 100 g, 2 * 100 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 Medium Carrots' is best matched to 'carrot, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+                "closest_match_explanation": "The ingredient is '2 Medium Carrots, Diced'. The closest match in the database is 'carrot, raw' with an emission factor of 0.3 kg CO2e / kg. This is the closest match as it is a raw carrot, and dicing is a preparation step that does not significantly alter the emissions.",
                 "ingredient_id": "Ra00257",
                 "closest_match_name": "carrot, raw",
-                "ingredient": "2 Medium Carrots",
+                "ingredient": "2 Medium Carrots, Diced",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
         },
         {
-            "original_name": "2 stalks celery",
-            "en_name": "2 Stalks Celery",
+            "original_name": "2 stalks celery, diced",
+            "en_name": "2 Stalks Celery, Diced",
             "weight_estimate": {
-                "ingredient": "2 Stalks Celery",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.08 kg.",
-                "weight_in_kg": 0.08
+                "ingredient": "2 Stalks Celery, Diced",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk celery = 50 g, 2 * 50 g = 100 g = 0.1 kg.",
+                "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 Stalks Celery' is best matched to 'celery, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+                "closest_match_explanation": "The ingredient is '2 Stalks Celery, Diced'. The closest match in the database is 'celery, raw' with an emission factor of 0.4 kg CO2e / kg. This is the closest match as it is a raw celery, and dicing is a preparation step that does not significantly alter the emissions.",
                 "ingredient_id": "Ra00153",
                 "closest_match_name": "celery, raw",
-                "ingredient": "2 Stalks Celery",
+                "ingredient": "2 Stalks Celery, Diced",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             }
         },
         {
-            "original_name": "1 red bell pepper",
-            "en_name": "1 Red Bell Pepper",
+            "original_name": "1 red bell pepper, diced",
+            "en_name": "1 Red Bell Pepper, Diced",
             "weight_estimate": {
-                "ingredient": "1 Red Bell Pepper",
-                "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
+                "ingredient": "1 Red Bell Pepper, Diced",
+                "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.150 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Red Bell Pepper' is best matched to 'pepper, sweet, red, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+                "closest_match_explanation": "The ingredient is '1 Red Bell Pepper, Diced'. The closest match in the database is 'pepper, sweet, red, raw' with an emission factor of 1.1 kg CO2e / kg. This is the closest match as it is a raw red bell pepper, and dicing is a preparation step that does not significantly alter the emissions.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
-                "ingredient": "1 Red Bell Pepper",
+                "ingredient": "1 Red Bell Pepper, Diced",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             }
         },
         {
-            "original_name": "1 bunch scallions",
-            "en_name": "1 Bunch Scallions",
+            "original_name": "1 bunch scallions, diced",
+            "en_name": "1 Bunch Scallions, Diced",
             "weight_estimate": {
-                "ingredient": "1 Bunch Scallions",
+                "ingredient": "1 Bunch Scallions, Diced",
                 "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Bunch Scallions' is best matched to 'onions, spring, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+                "closest_match_explanation": "The ingredient is '1 Bunch Scallions, Diced'. The closest match in the database is 'onions, spring, raw' with an emission factor of 0.8 kg CO2e / kg. Scallions are a type of spring onion, and dicing is a preparation step.",
                 "ingredient_id": "Ra00267",
                 "closest_match_name": "onions, spring, raw",
-                "ingredient": "1 Bunch Scallions",
+                "ingredient": "1 Bunch Scallions, Diced",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.8
             }
         },
         {
-            "original_name": "1 (15 ounce) can diced tomatoes with green chiles",
-            "en_name": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
+            "original_name": "1 (15 ounce) can diced tomatoes with green chiles, undrained",
+            "en_name": "1 (15 ounces) Can Diced Tomatoes with Green Chiles, Undrained",
             "weight_estimate": {
-                "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
-                "weight_calculation": "15 ounces = 425.243 g, 1 * 425.243 g = 425.243 g = 0.425243 kg",
-                "weight_in_kg": 0.425243
+                "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles, Undrained",
+                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 (15 ounces) Can Diced Tomatoes with Green Chiles' is best matched to 'tomato, peeled, canned'. This aligns with rule 4, which prioritizes matching based on the amount of processing. Since the ingredient is 'canned', 'tomato, peeled, canned' is the most appropriate match.",
+                "closest_match_explanation": "The ingredient is '1 (15 ounces) Can Diced Tomatoes with Green Chiles, Undrained'. The closest match in the database is 'tomato, peeled, canned' with an emission factor of 1.1 kg CO2e / kg. This is the closest match as it is a canned tomato product, and the addition of green chiles does not significantly alter the base emissions of canned tomatoes.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
+                "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles, Undrained",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             }
         },
         {
-            "original_name": "2 (15 ounce) cans black beans",
-            "en_name": "2 (15 ounces) Cans Black Beans",
+            "original_name": "2 (15 ounce) cans black beans, drained and rinsed",
+            "en_name": "2 (15 ounces) Cans Black Beans, Drained and Rinsed",
             "weight_estimate": {
-                "ingredient": "2 (15 ounces) Cans Black Beans",
-                "weight_calculation": "15 ounces = 425.243 g, 2 * 425.243 g = 850.486 g = 0.850486 kg",
-                "weight_in_kg": 0.850486
+                "ingredient": "2 (15 ounces) Cans Black Beans, Drained and Rinsed",
+                "weight_calculation": "1 can = 400 g, 2 * 400 g = 800 g = 0.8 kg",
+                "weight_in_kg": 0.8
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 (15 ounces) Cans Black Beans' is best matched to 'black beans'. This aligns with rule 4, which prioritizes matching based on the amount of processing. Since the ingredient is 'canned', 'black beans' is the most appropriate match.",
+                "closest_match_explanation": "The ingredient is '2 (15 ounces) Cans Black Beans, Drained and Rinsed'. The closest match in the database is 'black beans' with an emission factor of 1.2 kg CO2e / kg. This is an exact match for the type of bean.",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
-                "ingredient": "2 (15 ounces) Cans Black Beans",
+                "ingredient": "2 (15 ounces) Cans Black Beans, Drained and Rinsed",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "4 tbsp chili powder",
-            "en_name": "4 tbsp chili powder",
+            "original_name": "4 tablespoons chili powder",
+            "en_name": "4 Tablespoons Chili Powder",
             "weight_estimate": {
-                "ingredient": "4 tbsp chili powder",
-                "weight_calculation": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+                "ingredient": "4 Tablespoons Chili Powder",
+                "weight_calculation": "1 tablespoon = 15 g, 4 * 15 g = 60 g = 0.060 kg",
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '4 tbsp chili powder' is best matched to 'curry powder'. While not an exact match, 'curry powder' is the closest broader category available for a powdered spice, aligning with rule 2. Rule 5 is then applied, choosing 'curry powder' due to its higher emission factor among similar processed spice options.",
+                "closest_match_explanation": "The ingredient is '4 Tablespoons Chili Powder'. The closest match in the database is 'curry powder' with an emission factor of 6.1 kg CO2e / kg. While not an exact match, chili powder and curry powder are both spice blends with complex ingredients and processing, making 'curry powder' the most comparable option in the database.",
                 "ingredient_id": "Ra00304",
                 "closest_match_name": "curry powder",
-                "ingredient": "4 tbsp chili powder",
+                "ingredient": "4 Tablespoons Chili Powder",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 6.1
             }
         },
         {
-            "original_name": "1 tbsp ground cumin",
-            "en_name": "1 tbsp ground cumin",
+            "original_name": "1 tablespoon ground cumin",
+            "en_name": "1 Tablespoon Ground Cumin",
             "weight_estimate": {
-                "ingredient": "1 tbsp ground cumin",
-                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "ingredient": "1 Tablespoon Ground Cumin",
+                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tbsp ground cumin' is best matched to 'curry powder'. While not an exact match, 'curry powder' is the closest broader category available for a ground spice, aligning with rule 2. Rule 5 is then applied, choosing 'curry powder' due to its higher emission factor among similar processed spice options.",
+                "closest_match_explanation": "The ingredient is '1 Tablespoon Ground Cumin'. The closest match in the database is 'curry powder' with an emission factor of 6.1 kg CO2e / kg. Cumin is a spice, and 'curry powder' is the most comparable spice blend in the database.",
                 "ingredient_id": "Ra00304",
                 "closest_match_name": "curry powder",
-                "ingredient": "1 tbsp ground cumin",
+                "ingredient": "1 Tablespoon Ground Cumin",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 6.1
             }
         },
         {
-            "original_name": "2 tsp granulated garlic",
-            "en_name": "2 tsp granulated garlic",
+            "original_name": "2 teaspoons granulated garlic",
+            "en_name": "2 Teaspoons Granulated Garlic",
             "weight_estimate": {
-                "ingredient": "2 tsp granulated garlic",
-                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+                "ingredient": "2 Teaspoons Granulated Garlic",
+                "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 tsp granulated garlic' is best matched to 'garlic, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen. 'Granulated' refers to a form of processing, but 'garlic, raw' is the closest available option that represents the core ingredient.",
+                "closest_match_explanation": "The ingredient is '2 Teaspoons Granulated Garlic'. The closest match in the database is 'garlic, raw' with an emission factor of 1.2 kg CO2e / kg. Granulated garlic is a processed form of raw garlic, and 'garlic, raw' is the closest available option.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
-                "ingredient": "2 tsp granulated garlic",
+                "ingredient": "2 Teaspoons Granulated Garlic",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "2 tsp onion powder",
-            "en_name": "2 tsp onion powder",
+            "original_name": "2 teaspoons onion powder",
+            "en_name": "2 Teaspoon's Onion Powder",
             "weight_estimate": {
-                "ingredient": "2 tsp onion powder",
-                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+                "ingredient": "2 Teaspoon's Onion Powder",
+                "weight_calculation": "1 teaspoon = 5 g, 2 * 5 g = 10 g = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 tsp onion powder' is best matched to 'onion, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen. 'Powder' refers to a form of processing, but 'onion, raw' is the closest available option that represents the core ingredient.",
-                "ingredient_id": "Ra00266",
-                "closest_match_name": "onion, raw",
-                "ingredient": "2 tsp onion powder",
+                "closest_match_explanation": "The ingredient is '2 Teaspoon's Onion Powder'. The closest match in the database is 'red onion' with an emission factor of 0.8 kg CO2e / kg. Onion powder is a processed form of onion, and 'red onion' is the closest available option for a raw onion.",
+                "ingredient_id": "Ra00485",
+                "closest_match_name": "red onion",
+                "ingredient": "2 Teaspoon's Onion Powder",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.3
+                "co2_per_kg": 0.8
             }
         },
         {
-            "original_name": "0.25 tsp hot smoked paprika",
-            "en_name": "0.25 tsp hot smoked paprika",
+            "original_name": "1/4 teaspoon hot smoked paprika",
+            "en_name": "1/4 Teaspoon Hot Smoked Paprika",
             "weight_estimate": {
-                "ingredient": "0.25 tsp hot smoked paprika",
-                "weight_calculation": "1 tsp = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
+                "ingredient": "1/4 Teaspoon Hot Smoked Paprika",
+                "weight_calculation": "1 teaspoon = 5 g, 0.25 * 5 g = 1.25 g = 0.00125 kg",
                 "weight_in_kg": 0.00125
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "original_name": "salt and ground black pepper to taste",
+            "en_name": "Salt and Ground Black Pepper Two Taste",
             "weight_estimate": {
-                "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
-                "weight_in_kg": 0.03
-            },
-            "co2_per_kg_db": null
-        },
-        {
-            "original_name": "ground black pepper",
-            "en_name": "Ground Black Pepper",
-            "weight_estimate": {
-                "ingredient": "Ground Black Pepper",
-                "weight_calculation": "Amount of Ground Black Pepper not specified. LLM estimate is: Ground Black Pepper per serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
+                "ingredient": "Salt and Ground Black Pepper Two Taste",
+                "weight_calculation": "Amount of Salt and Ground Black Pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 servings * 0.005 kg = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Ground Black Pepper' is best matched to 'pepper, black'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+                "closest_match_explanation": "The ingredients are 'Salt and Ground Black Pepper Two Taste'. The closest matches in the database are 'pepper, black' with an emission factor of 5.2 kg CO2e / kg and 'salt, table' with an emission factor of 0.4 kg CO2e / kg. Since both are present, we will use the higher emission factor for black pepper.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
-                "ingredient": "Ground Black Pepper",
+                "ingredient": "Salt and Ground Black Pepper Two Taste",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             }
@@ -247,11 +237,11 @@
             "en_name": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
             "weight_estimate": {
                 "ingredient": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
-                "weight_calculation": "8.5 ounces = 240.972 g, 1 * 240.972 g = 240.972 g = 0.240972 kg",
-                "weight_in_kg": 0.240972
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 package = 240 g, 1 * 240 g = 240 g = 0.24 kg.",
+                "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 (8.5 ounces) Package Dry Corn Muffin Mix' is best matched to 'corn flour'. This aligns with rule 2, which allows for matching to a broader category when an exact match is not available. 'Corn flour' is a primary component of corn muffin mix and represents the closest available option.",
+                "closest_match_explanation": "The ingredient is '1 (8.5 ounces) Package Dry Corn Muffin Mix'. The closest match in the database is 'corn flour' with an emission factor of 1.6 kg CO2e / kg. Corn muffin mix is primarily composed of corn flour, and this is the most appropriate match.",
                 "ingredient_id": "Ra00107",
                 "closest_match_name": "corn flour",
                 "ingredient": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
@@ -260,18 +250,18 @@
             }
         },
         {
-            "original_name": "0.33 cup milk",
-            "en_name": "0.33 Cup Milk",
+            "original_name": "1/3 cup milk",
+            "en_name": "1/3 Cup Milk",
             "weight_estimate": {
-                "ingredient": "0.33 Cup Milk",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup milk = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg.",
-                "weight_in_kg": 0.0792
+                "ingredient": "1/3 Cup Milk",
+                "weight_calculation": "1 dl = 100 g, 1/3 cup = 80 ml = 80 g, 1 * 80 g = 80 g = 0.08 kg",
+                "weight_in_kg": 0.08
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.33 Cup Milk' is best matched to 'milk'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+                "closest_match_explanation": "The ingredient is '1/3 Cup Milk'. The closest match in the database is 'milk' with an emission factor of 0.4 kg CO2e / kg. This is an exact match.",
                 "ingredient_id": "Ra00342",
                 "closest_match_name": "milk",
-                "ingredient": "0.33 Cup Milk",
+                "ingredient": "1/3 Cup Milk",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             }
@@ -281,11 +271,11 @@
             "en_name": "1 Egg",
             "weight_estimate": {
                 "ingredient": "1 Egg",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
-                "weight_in_kg": 0.05
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 egg = 60 g, 1 * 60 g = 60 g = 0.06 kg.",
+                "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Egg' is best matched to 'eggs'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+                "closest_match_explanation": "The ingredient is '1 Egg'. The closest match in the database is 'eggs' with an emission factor of 1.0 kg CO2e / kg. This is the closest match as it refers to a single egg.",
                 "ingredient_id": "Ra00108",
                 "closest_match_name": "eggs",
                 "ingredient": "1 Egg",
@@ -295,6 +285,6 @@
         }
     ],
     "persons": 6,
-    "instructions": " Preheat the Oven to 400 Degrees F (200 Degrees C).\nHeat Oil in a Dutch above Medium Heat. Add Chicken. Cook, Stirring Occasionally, Until No Longer Pink Inside, 5 Two 7 Minutes. Add Carrots, Celery, Bell Pepper, and Scallions and Cook Until Tender, About 5 Minutes. Add Tomatoes, Black Beans, Chili Powder, Cumin, Garlic, Onion Powder, Paprika, Salt, and Black Pepper. Stir two Combine. Cook Until Heated Through, About 5 Minutes More.\nWhile Mixture Simmers, Combine Cornbread Mix With Milk and Egg In A Bowl.\nRemove Dutch above From Heat and Spread Cornbread Batter on Top of Chicken Mixture to Form The Crust.\nPlace dutch above in the preheated above and bake Until cornbread is golden and beginning to brown, 20 two 25 minutes.",
+    "instructions": " 1. PREHEAT THE OUTSIDE TO 400 Degrees F (200 Degrees C).\n2nd Heat Oil in a Dutch above Medium Heat. Add Chicken. Cook, Stirring Occasionally, Until No Longer Pink Inside, 5 Two 7 Minutes. Add Carrots, Celery, Bell Pepper, and Scallions and Cook Until Tender, About 5 Minutes. Add Tomatoes, Black Beans, Chili Powder, Cumin, Garlic, Onion Powder, Paprika, Salt, and Black Pepper. Stir two Combine. Cook Until Heated Through, About 5 Minutes More.\n3.\n4th Remove Dutch above From Heat and Spread Cornbread Batter on Top of Chicken Mixture to Form The Crust.\n5. Place dutch above in the preheated above and bake Until cornbread is golden and beginning to brown, 20 two 25 minutes.",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
 }

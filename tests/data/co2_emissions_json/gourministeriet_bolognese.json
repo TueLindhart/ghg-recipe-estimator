@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 kg of minced beef' is an exact match to 'beef, mince, 5-10% fat, raw' and 'beef, mince, 10-15% fat, raw'. According to rule 5, if multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. 'beef, mince, 5-10% fat, raw' has a higher emission factor (50.6 kg CO2e / kg) than 'beef, mince, 10-15% fat, raw' (48.0 kg CO2e / kg).",
+            "closest_match_explanation": "The ingredient is '1 kg of minced beef'. The closest match in the database is 'beef, mince, 5-10% fat, raw' as it is also minced beef. Rule 1 (Use Realistic Comparisons) is followed as both are beef. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00016",
             "closest_match_name": "beef, mince, 5-10% fat, raw",
             "ingredient": "1 kg of minced beef",
@@ -9,7 +9,7 @@
             "co2_per_kg": 50.6
         },
         {
-            "closest_match_explanation": "The ingredient '3 large onions' is a general term for onions. Among the options, 'onion, raw' is the least processed and most general form of onion, aligning with rule 4 which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient is '3 large onions'. The closest match in the database is 'onion, raw' as it is a raw onion. Rule 1 (Use Realistic Comparisons) is followed as both are onions. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'onion, raw' is a suitable general category for 'large onions'. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "3 large onions",
@@ -17,7 +17,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '3 carrots' is a general term for carrots. Among the options, 'carrot, raw' is the least processed form, aligning with rule 4 which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient is '3 carrots'. The closest match in the database is 'carrot, raw' as it is a raw carrot. Rule 1 (Use Realistic Comparisons) is followed as both are carrots. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'carrot, raw' is a suitable general category for 'carrots'. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00257",
             "closest_match_name": "carrot, raw",
             "ingredient": "3 carrots",
@@ -25,7 +25,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 Stalk leaf celery' is a general term for celery. Among the options, 'celery, raw' is the least processed form, aligning with rule 4 which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient is '2.5 Stalk leaf celery'. The closest match in the database is 'celery, raw' as it is raw celery. Rule 1 (Use Realistic Comparisons) is followed as both are celery. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00153",
             "closest_match_name": "celery, raw",
             "ingredient": "2.5 Stalk leaf celery",
@@ -33,7 +33,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient '6 cloves of garlic' is a general term for garlic. Among the options, 'garlic, raw' is the least processed form, aligning with rule 4 which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient is '6 cloves of garlic'. The closest match in the database is 'garlic, raw' as it is raw garlic. Rule 1 (Use Realistic Comparisons) is followed as both are garlic. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "6 cloves of garlic",
@@ -41,7 +41,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '150 g tomato concentrate' is an exact match to 'tomato paste, concentrated'. This option directly reflects the processing mentioned in the ingredient name, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is '150 g tomato concentrate'. The closest match in the database is 'tomato paste, concentrated' as it is a concentrated tomato product. Rule 1 (Use Realistic Comparisons) is followed as both are concentrated tomato products. Rule 4 (Consider the Amount of Processing Performed) is followed as both are concentrated. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "150 g tomato concentrate",
@@ -49,15 +49,15 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "The ingredient '3 can of chopped tomatoes or polpa' specifies 'canned' tomatoes. 'tomato, peeled, canned' is the most appropriate match as it directly reflects the canning process mentioned in the ingredient, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is '3 can of chopped tomatoes'. The closest match in the database is 'tomato, peeled, canned' as it is a canned tomato product. Rule 1 (Use Realistic Comparisons) is followed as both are canned tomatoes. Rule 4 (Consider the Amount of Processing Performed) is followed as both are canned. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
-            "ingredient": "3 can of chopped tomatoes or polpa",
+            "ingredient": "3 can of chopped tomatoes",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient '2 dl red wine' is an exact match to 'wine, red'. This option directly reflects the ingredient name.",
+            "closest_match_explanation": "The ingredient is '2 dl red wine'. The closest match in the database is 'wine, red' as it is red wine. Rule 1 (Use Realistic Comparisons) is followed as both are red wine. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed (fermented). Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00377",
             "closest_match_name": "wine, red",
             "ingredient": "2 dl red wine",
@@ -65,23 +65,23 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient 'Oil' is a general term. Among the options, 'olive oil' has the highest emission factor (5.9 kg CO2e / kg) compared to 'oil for frying' (2.8 kg CO2e / kg), 'sunflower oil' (2.8 kg CO2e / kg), and 'oil, rape seed (no eruca acid)' (3.3 kg CO2e / kg). According to rule 5, if multiple viable options have similar processing levels, the one with the highest emission factor should be chosen.",
-            "ingredient_id": "Ra00349",
-            "closest_match_name": "olive oil",
+            "closest_match_explanation": "The ingredient is 'Oil'. The closest match in the database is 'oil for frying' as it is a general term for cooking oil. Rule 1 (Use Realistic Comparisons) is followed as both are cooking oils. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'oil for frying' is a suitable general category for 'Oil'. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+            "ingredient_id": "Ra00348",
+            "closest_match_name": "oil for frying",
             "ingredient": "Oil",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.9
+            "co2_per_kg": 2.8
         },
         {
-            "closest_match_explanation": "The ingredient 'freshly ground pepper' is a general term for pepper. Among the options, 'pepper, black' is the most appropriate match as it represents a common form of ground pepper and has the highest emission factor (5.2 kg CO2e / kg) among the pepper options, aligning with rule 5.",
+            "closest_match_explanation": "The ingredient is 'Salt and freshly ground pepper'. The closest match in the database is 'pepper, black' as it is a spice. Rule 1 (Use Realistic Comparisons) is followed as both are seasonings. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'pepper, black' is a suitable general category for 'Salt and freshly ground pepper' when a specific match for salt and pepper together is not available. Rule 9 (Only Use Provided Emission Options) is followed as this is the closest available option. Rule 5 (If Multiple Viable Options Have Similar Processing Levels) is followed by choosing the option with a higher emission factor if multiple options were equally suitable.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
-            "ingredient": "freshly ground pepper",
+            "ingredient": "Salt and freshly ground pepper",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 handful of fresh basil leaves' specifies 'fresh' basil. 'basil, fresh' is an exact match and directly reflects the freshness of the ingredient, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is '1 handful of fresh basil leaves'. The closest match in the database is 'basil, fresh' as it is fresh basil. Rule 1 (Use Realistic Comparisons) is followed as both are fresh basil. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw/fresh. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "1 handful of fresh basil leaves",
@@ -89,7 +89,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient 'Pasta as desired' is a general term for pasta. Among the options, 'pasta, raw' is the least processed and most general form of pasta, aligning with rule 4 which prioritizes the least processed option when no specific processing is mentioned. 'pastasauce', 'fresh pasta, fettucine spinach', and 'stuffed fresh pasta' are more processed or specific forms.",
+            "closest_match_explanation": "The ingredient is 'Pasta as desired'. The closest match in the database is 'pasta, raw' as it is raw pasta. Rule 1 (Use Realistic Comparisons) is followed as both are pasta. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00234",
             "closest_match_name": "pasta, raw",
             "ingredient": "Pasta as desired",
@@ -97,7 +97,7 @@
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "The ingredient 'Torn parmesan' is an exact match to 'cheese, hard, parmesan, 32 % fidm.'. This option directly reflects the ingredient name.",
+            "closest_match_explanation": "The ingredient is 'Torn parmesan'. The closest match in the database is 'cheese, hard, parmesan, 32 % fidm.' as it is parmesan cheese. Rule 1 (Use Realistic Comparisons) is followed as both are parmesan cheese. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
             "ingredient": "Torn parmesan",

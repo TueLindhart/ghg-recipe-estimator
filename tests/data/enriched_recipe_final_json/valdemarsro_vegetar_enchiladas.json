@@ -6,7 +6,7 @@
             "en_name": "1 tsp steady cumin",
             "weight_estimate": {
                 "ingredient": "1 tsp steady cumin",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -36,7 +36,7 @@
             "en_name": "1 tsp steady coriander",
             "weight_estimate": {
                 "ingredient": "1 tsp steady coriander",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -50,7 +50,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is '2 cloves of garlic'. The closest match in the database is 'garlic, raw' as it is the most appropriate option for raw garlic cloves, and the quantity does not influence the match. The emission factor for 'garlic, raw' is 1.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -67,7 +67,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is an exact match for 'olive oil' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient is '1 tablespoon olive oil'. The closest match in the database is 'olive oil' as it is the most specific and relevant option. The emission factor for 'olive oil' is 5.9 kg CO2e / kg.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "1 tablespoon olive oil",
@@ -76,18 +76,18 @@
             }
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "original_name": "1 stk løg, finthakket",
+            "en_name": "1 onion, finely chopped",
             "weight_estimate": {
-                "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "ingredient": "1 onion, finely chopped",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is '1 onion, finely chopped'. The closest match in the database is 'onion, raw' as it represents the base ingredient before processing, and the quantity does not influence the match. The emission factor for 'onion, raw' is 0.3 kg CO2e / kg.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
-                "ingredient": "1 onion",
+                "ingredient": "1 onion, finely chopped",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
@@ -97,7 +97,7 @@
             "en_name": "1 tsp wheat flour",
             "weight_estimate": {
                 "ingredient": "1 tsp wheat flour",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -111,7 +111,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 dl vegetable broth' is best matched with 'bouillon, chicken, prepared' as it is the most appropriate broader category for a vegetable broth, given the available options. While not an exact match, it represents a prepared broth, which is the closest in processing and use. It is also the option with the highest emission factor among the prepared broths, following the tie-breaker rule.",
+                "closest_match_explanation": "The ingredient is '1 dl vegetable broth'. The closest match in the database is 'bouillon, chicken, prepared' as it is the most suitable option for a prepared broth, and the quantity does not influence the match. The emission factor for 'bouillon, chicken, prepared' is 0.4 kg CO2e / kg.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 dl vegetable broth",
@@ -128,7 +128,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is an exact match for 'tomato, peeled, canned' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient is '1 can of chopped tomatoes'. The closest match in the database is 'tomato, peeled, canned' as it accurately reflects the processed form of the ingredient. The emission factor for 'tomato, peeled, canned' is 1.1 kg CO2e / kg.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "1 can of chopped tomatoes",
@@ -137,18 +137,18 @@
             }
         },
         {
-            "original_name": "1 spsk olivenolie",
-            "en_name": "1 tablespoon olive oil",
+            "original_name": "1 spsk olivenolie, til stegning",
+            "en_name": "1 tablespoon olive oil, for frying",
             "weight_estimate": {
-                "ingredient": "1 tablespoon olive oil",
+                "ingredient": "1 tablespoon olive oil, for frying",
                 "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is an exact match for 'olive oil' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient is '1 tablespoon olive oil, for frying'. The closest match in the database is 'olive oil' as the processing description 'for frying' should be ignored, and 'olive oil' is the most appropriate base ingredient. The emission factor for 'olive oil' is 5.9 kg CO2e / kg.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
-                "ingredient": "1 tablespoon olive oil",
+                "ingredient": "1 tablespoon olive oil, for frying",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.9
             }
@@ -158,75 +158,75 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "original_name": "sort peber, friskkværnet",
+            "en_name": "Black pepper, freshly ground",
             "weight_estimate": {
-                "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
-                "weight_in_kg": 0.02
+                "ingredient": "Black pepper, freshly ground",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.01 kg",
+                "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is an exact match for 'pepper, black' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient is 'Black pepper, freshly ground'. The closest match in the database is 'pepper, black' as it represents the ingredient itself, and the processing description 'freshly ground' is considered preparation. The emission factor for 'pepper, black' is 5.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
-                "ingredient": "Black pepper",
+                "ingredient": "Black pepper, freshly ground",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             }
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "original_name": "1 stk løg, finthakket",
+            "en_name": "1 onion, finely chopped",
             "weight_estimate": {
-                "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "ingredient": "1 onion, finely chopped",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is '1 onion, finely chopped'. The closest match in the database is 'onion, raw' as it represents the base ingredient before processing, and the quantity does not influence the match. The emission factor for 'onion, raw' is 0.3 kg CO2e / kg.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
-                "ingredient": "1 onion",
+                "ingredient": "1 onion, finely chopped",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "original_name": "2 fed hvidløg, finthakkede",
+            "en_name": "2 cloves of garlic, finely chopped",
             "weight_estimate": {
-                "ingredient": "2 cloves of garlic",
+                "ingredient": "2 cloves of garlic, finely chopped",
                 "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is '2 cloves of garlic, finely chopped'. The closest match in the database is 'garlic, raw' as it is the most appropriate option for raw garlic cloves, and the quantity does not influence the match. The emission factor for 'garlic, raw' is 1.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
-                "ingredient": "2 cloves of garlic",
+                "ingredient": "2 cloves of garlic, finely chopped",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "original_name": "1 squash, groftrevet",
+            "en_name": "1 Squash, coarsely driven",
             "weight_estimate": {
-                "ingredient": "1 Squash",
+                "ingredient": "1 Squash, coarsely driven",
                 "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Squash' is an exact match for 'squash, raw' in the database. This aligns with the rule to prioritize exact matches and choose the least processed option when no processing is specified.",
+                "closest_match_explanation": "The ingredient is '1 Squash, coarsely driven'. The closest match in the database is 'squash, raw' as it is the most appropriate option for raw squash, and the processing description 'coarsely driven' is considered preparation. The emission factor for 'squash, raw' is 0.8 kg CO2e / kg.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
-                "ingredient": "1 Squash",
+                "ingredient": "1 Squash, coarsely driven",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.8
             }
@@ -240,7 +240,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is an exact match for 'tomato, peeled, canned' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient is '1 can of chopped tomatoes'. The closest match in the database is 'tomato, peeled, canned' as it accurately reflects the processed form of the ingredient. The emission factor for 'tomato, peeled, canned' is 1.1 kg CO2e / kg.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "1 can of chopped tomatoes",
@@ -253,7 +253,7 @@
             "en_name": "1 tsp steady cumin",
             "weight_estimate": {
                 "ingredient": "1 tsp steady cumin",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -263,7 +263,7 @@
             "en_name": "1 tsp steady coriander",
             "weight_estimate": {
                 "ingredient": "1 tsp steady coriander",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -277,7 +277,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of black beans' is an exact match for 'black beans' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient is '1 can of black beans'. The closest match in the database is 'black beans' as it is the most specific and relevant option for canned black beans. The emission factor for 'black beans' is 1.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
                 "ingredient": "1 can of black beans",
@@ -294,7 +294,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of kidney beans' is an exact match for 'kidney beans' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient is '1 can of kidney beans'. The closest match in the database is 'kidney beans' as it is the most specific and relevant option for canned kidney beans. The emission factor for 'kidney beans' is 1.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -311,12 +311,12 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '300 g of corn' is best matched with 'corn cob' as it represents the least processed form of corn available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
-                "ingredient_id": "Ra00417",
-                "closest_match_name": "corn cob",
+                "closest_match_explanation": "The ingredient is '300 g of corn'. The closest match in the database is 'sweetcorn, kernels, canned' as it is the most appropriate option for corn kernels, and the quantity does not influence the match. The emission factor for 'sweetcorn, kernels, canned' is 0.7 kg CO2e / kg.",
+                "ingredient_id": "Ra00299",
+                "closest_match_name": "sweetcorn, kernels, canned",
                 "ingredient": "300 g of corn",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.0
+                "co2_per_kg": 0.7
             }
         },
         {
@@ -328,7 +328,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '8 Tortilla's pancakes' is best matched with 'tortilla bread, wheat' as it is the closest available option for tortillas, which are a type of pancake/flatbread. This aligns with the rule to use a broader category if an exact match is not available.",
+                "closest_match_explanation": "The ingredient is '8 Tortilla's pancakes'. The closest match in the database is 'tortilla bread, wheat' as it is the most appropriate option for tortillas, and the quantity does not influence the match. The emission factor for 'tortilla bread, wheat' is 1.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00401",
                 "closest_match_name": "tortilla bread, wheat",
                 "ingredient": "8 Tortilla's pancakes",
@@ -337,35 +337,35 @@
             }
         },
         {
-            "original_name": "150 g cheddar ost",
-            "en_name": "150 g cheddar cheese",
+            "original_name": "150 g cheddar ost, friskrevet",
+            "en_name": "150 g cheddar cheese, freshly written",
             "weight_estimate": {
-                "ingredient": "150 g cheddar cheese",
+                "ingredient": "150 g cheddar cheese, freshly written",
                 "weight_calculation": "150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '150 g cheddar cheese' does not have an exact match in the database. Among the available options, 'blue cheese' is the most appropriate broader category for a type of cheese, and it has the highest emission factor among the cheese options, aligning with the tie-breaker rule.",
-                "ingredient_id": "Ra00494",
-                "closest_match_name": "blue cheese",
-                "ingredient": "150 g cheddar cheese",
+                "closest_match_explanation": "The ingredient is '150 g cheddar cheese, freshly written'. The closest match in the database is 'cheese, semihard, feta, 40 % fidm' as it is the closest option to cheddar cheese in terms of processing and type, and the quantity does not influence the match. The emission factor for 'cheese, semihard, feta, 40 % fidm' is 1.6 kg CO2e / kg.",
+                "ingredient_id": "Ra00270",
+                "closest_match_name": "cheese, semihard, feta, 40 % fidm",
+                "ingredient": "150 g cheddar cheese, freshly written",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.6
             }
         },
         {
-            "original_name": "1 håndfuld frisk koriander",
-            "en_name": "1 handful of fresh coriander",
+            "original_name": "1 håndfuld frisk koriander, eller bredbladet persille",
+            "en_name": "1 handful of fresh coriander, or broad -leaved parsley",
             "weight_estimate": {
-                "ingredient": "1 handful of fresh coriander",
-                "weight_calculation": "Handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "ingredient": "1 handful of fresh coriander, or broad -leaved parsley",
+                "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 handful of fresh coriander' does not have an exact match in the database. Among the available options, 'parsley, raw' and 'dill, raw' are both raw herbs with similar processing levels. Following the tie-breaker rule, both have the same emission factor, so 'parsley, raw' is chosen as a representative raw herb.",
+                "closest_match_explanation": "The ingredient is '1 handful of fresh coriander, or broad -leaved parsley'. The closest match in the database is 'parsley, raw' as it is a suitable option for fresh herbs, and 'coriander' is a synonym. The emission factor for 'parsley, raw' is 0.5 kg CO2e / kg.",
                 "ingredient_id": "Ra00134",
                 "closest_match_name": "parsley, raw",
-                "ingredient": "1 handful of fresh coriander",
+                "ingredient": "1 handful of fresh coriander, or broad -leaved parsley",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.5
             }
@@ -375,47 +375,47 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "original_name": "sort peber, friskkværnet",
+            "en_name": "Black pepper, freshly ground",
             "weight_estimate": {
-                "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
-                "weight_in_kg": 0.02
+                "ingredient": "Black pepper, freshly ground",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.01 kg",
+                "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is an exact match for 'pepper, black' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient is 'Black pepper, freshly ground'. The closest match in the database is 'pepper, black' as it represents the ingredient itself, and the processing description 'freshly ground' is considered preparation. The emission factor for 'pepper, black' is 5.2 kg CO2e / kg.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
-                "ingredient": "Black pepper",
+                "ingredient": "Black pepper, freshly ground",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             }
         },
         {
-            "original_name": "1 spsk smør",
-            "en_name": "1 tablespoon butter",
+            "original_name": "1 spsk smør, til formen",
+            "en_name": "1 tablespoon butter, to the mold",
             "weight_estimate": {
-                "ingredient": "1 tablespoon butter",
+                "ingredient": "1 tablespoon butter, to the mold",
                 "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon butter' is best matched with 'butter, salt added' as it is the most direct and least processed form of butter available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is '1 tablespoon butter, to the mold'. The closest match in the database is 'butter, salt added' as it is the most appropriate option for butter, and the processing description 'to the mold' is considered preparation. The emission factor for 'butter, salt added' is 3.3 kg CO2e / kg.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
-                "ingredient": "1 tablespoon butter",
+                "ingredient": "1 tablespoon butter, to the mold",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 3.3
             }
         }
     ],
     "persons": 4,
-    "instructions": " Enchilada's sauce\nShake all the spices in a dry saucepan until they start to smell nice.\nAdd oil, garlic and onion and saute until the onions are soft.\nStir flour into the filling and then add vegetable broth and chopped tomatoes.\nStir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper.\nFill\nHeat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through.\nShake the corn kernels in a little butter on a pan until they get crispy and get a little color.\nGather Enchiladas\nGrease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish.\nDistribute the last enchilada sauce over and sprinkle with more cheese.\nDistribute bean filling and corn kernels in the sides of the dish if there is anything left over.\nBake them in a preheated oven at 175 degrees hot air for about 18 minutes.\nSprinkle with coriander before serving.",
+    "instructions": " ** Enchilada's sauce **  \n\nShake all the spices in a dry saucepan until they start to smell nice.\n\nAdd oil, garlic and onion and saute until the onions are soft.\n\nStir flour into the filling and then add vegetable broth and chopped tomatoes.\n\nStir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper.\n\n** Fill **  \n\nHeat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through.\n\nShake the corn kernels in a little butter on a pan until they get crispy and get a little color.\n\n** Collect Enchiladas **  \n\nGrease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish.\n\nDistribute the last enchilada sauce over and sprinkle with more cheese.\n\nDistribute bean filling and corn kernels in the sides of the dish if there is anything left over.\n\nBake them in a preheated oven at 175 degrees hot air for about 18 minutes.\n\nSprinkle with coriander before serving.",
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
 }

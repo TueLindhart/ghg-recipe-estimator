@@ -38,8 +38,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "3 dåse hakkede tomater eller polpa",
-            "en_name": "3 can of chopped tomatoes or polpa",
+            "original_name": "3 dåse hakkede tomater",
+            "en_name": "3 can of chopped tomatoes",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -80,14 +80,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Salt",
-            "en_name": "Salt",
-            "weight_estimate": null,
-            "co2_per_kg_db": null
-        },
-        {
-            "original_name": "friskekværnet peber",
-            "en_name": "freshly ground pepper",
+            "original_name": "Salt og friskkværnet peber",
+            "en_name": "Salt and freshly ground pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -111,6 +105,6 @@
         }
     ],
     "persons": 8,
-    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\". Heat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside. Meanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you. In the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way. Then pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute. Pour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way. Before serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
+    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\".\nHeat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside.\nMeanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you.\nIn the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way.\nThen pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute.\nPour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way.\nBefore serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
 }

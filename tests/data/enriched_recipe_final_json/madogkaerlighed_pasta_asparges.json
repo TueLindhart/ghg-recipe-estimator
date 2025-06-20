@@ -10,7 +10,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'fresh pasta' is best matched with 'fresh pasta, fettucine spinach' because it is the most specific and least processed option available for fresh pasta. Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels) are applied here, as 'fresh pasta, fettucine spinach' is a direct match for fresh pasta and has a lower emission factor than 'stuffed fresh pasta', which implies more processing.",
+                "closest_match_explanation": "The ingredient is '250 g fresh pasta'. The closest match in the database is 'fresh pasta, fettucine spinach' as it is a type of fresh pasta. Rule 2: Use a broader category if an exact match is not available. Rule 4: Consider the amount of processing performed. Fresh pasta is less processed than stuffed fresh pasta.",
                 "ingredient_id": "Ra00388",
                 "closest_match_name": "fresh pasta, fettucine spinach",
                 "ingredient": "250 g fresh pasta",
@@ -27,7 +27,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available. Rule 4 (Consider the Amount of Processing Performed) is applied here, as 'garlic, raw' is less processed than 'garlic in oil' or 'garlic baguette, frozen'. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is also followed as garlic is a distinct ingredient and should not be matched with 'red onion'.",
+                "closest_match_explanation": "The ingredient is '2 cloves of garlic'. The closest match in the database is 'garlic, raw' as it is the most direct match for garlic. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -36,15 +36,15 @@
             }
         },
         {
-            "original_name": "1 løg",
+            "original_name": "1 stk løg",
             "en_name": "1 onion",
             "weight_estimate": {
                 "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'onion' is best matched with 'onion, raw' because it is the least processed form of onion available. Rule 4 (Consider the Amount of Processing Performed) is applied here, as 'onion, raw' is less processed than 'onions, chopped and deepfried'. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is also followed as 'red onion' and 'onions, spring, raw' are specific types of onions, and 'onion, raw' is a more general and appropriate match for 'onion'.",
+                "closest_match_explanation": "The ingredient is '1 onion'. The closest match in the database is 'onion, raw' as it is the most direct match for onion. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -57,11 +57,11 @@
             "en_name": "1 BDT Green Asparagus",
             "weight_estimate": {
                 "ingredient": "1 BDT Green Asparagus",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
+                "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Green Asparagus' is best matched with 'asparagus, green, raw' because it is the most direct and least processed option available. Rule 4 (Consider the Amount of Processing Performed) is applied here, as 'asparagus, green, raw' is less processed than 'asparagus slices'. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is also followed as 'peas, green, frozen' and 'beans, green, raw' are not asparagus.",
+                "closest_match_explanation": "The ingredient is '1 BDT Green Asparagus'. The closest match in the database is 'asparagus, green, raw' as it is the most direct match for green asparagus. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
                 "ingredient_id": "Ra00163",
                 "closest_match_name": "asparagus, green, raw",
                 "ingredient": "1 BDT Green Asparagus",
@@ -70,35 +70,35 @@
             }
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "original_name": "1 stk squash",
+            "en_name": "1 pcs squash",
             "weight_estimate": {
-                "ingredient": "1 Squash",
-                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "ingredient": "1 pcs squash",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Squash' is best matched with 'squash, raw' because it is the most direct and least processed option available. Rule 4 (Consider the Amount of Processing Performed) is applied here. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is also followed as 'squab (pigeon), raw', 'prune, dried plum', and 'gherkin, pickled' are not types of squash.",
+                "closest_match_explanation": "The ingredient is '1 pcs squash'. The closest match in the database is 'squash, raw' as it is the most direct match for squash. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
-                "ingredient": "1 Squash",
+                "ingredient": "1 pcs squash",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.8
             }
         },
         {
-            "original_name": "1 stor håndfuld frisk basilikum",
-            "en_name": "1 large handful of fresh basil",
+            "original_name": "1 håndfuld frisk basilikum",
+            "en_name": "1 handful of fresh basil",
             "weight_estimate": {
-                "ingredient": "1 large handful of fresh basil",
+                "ingredient": "1 handful of fresh basil",
                 "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'fresh basil' is best matched with 'basil, fresh' because it is the most direct and least processed option available. Rule 4 (Consider the Amount of Processing Performed) is applied here, as 'basil, fresh' is less processed than 'basil, dried' or 'pesto'. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is also followed as 'parsley, raw' is not basil.",
+                "closest_match_explanation": "The ingredient is '1 handful of fresh basil'. The closest match in the database is 'basil, fresh' as it is the most direct match for fresh basil. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
-                "ingredient": "1 large handful of fresh basil",
+                "ingredient": "1 handful of fresh basil",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             }
@@ -112,7 +112,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'cream' is best matched with 'cream, whipping, 38 % fat' because it is the most direct and least processed option available for cream. Rule 4 (Consider the Amount of Processing Performed) is applied here, as 'cream, whipping, 38 % fat' and 'cream, cultured, 18 % fat' are both types of cream, but 'cream, whipping, 38 % fat' has a higher emission factor, as per Rule 5 (If Multiple Viable Options Have Similar Processing Levels). 'Ice cream, dairy (cream based)' and 'cream pastry, layer cake' are final products and not suitable matches according to Rule 3 (Do Not Use Final Meals or Ready Meals as Best Matches).",
+                "closest_match_explanation": "The ingredient is '2 dl cream'. The closest match in the database is 'cream, whipping, 38 % fat' as it is a type of cream and has a specific fat percentage. Rule 4: Consider the amount of processing performed. This option is a specific type of cream.",
                 "ingredient_id": "Ra00345",
                 "closest_match_name": "cream, whipping, 38 % fat",
                 "ingredient": "2 dl cream",
@@ -131,10 +131,10 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 grøntsags bouillonterning",
-            "en_name": "1 vegetable broth cube",
+            "original_name": "1 stk grøntsags bouillonterning",
+            "en_name": "1 pcs Vegetable broth cube",
             "weight_estimate": {
-                "ingredient": "1 vegetable broth cube",
+                "ingredient": "1 pcs Vegetable broth cube",
                 "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
@@ -145,11 +145,11 @@
             "en_name": "6 tbsp grated parmesan",
             "weight_estimate": {
                 "ingredient": "6 tbsp grated parmesan",
-                "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.09 kg",
+                "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.090 kg",
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'grated parmesan' is best matched with 'cheese, hard, parmesan, 32 % fidm.' because it is the most direct and specific match for parmesan cheese. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is applied here, as 'vegan cheese, grated or sliced' and 'tortilla chips, cheese' are not parmesan cheese.",
+                "closest_match_explanation": "The ingredient is '6 tbsp grated parmesan'. The closest match in the database is 'cheese, hard, parmesan, 32 % fidm.' as it is the most specific match for parmesan cheese. Rule 4: Consider the amount of processing performed. Grated parmesan is a processed form of hard cheese.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "6 tbsp grated parmesan",
@@ -162,11 +162,11 @@
             "en_name": "1 handful of mozzarella",
             "weight_estimate": {
                 "ingredient": "1 handful of mozzarella",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
-                "weight_in_kg": 0.1
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 50 g, 1 * 50 g = 50 g = 0.050 kg",
+                "weight_in_kg": 0.05
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'mozzarella' is best matched with 'cheese, semihard, mozzarella, 30 % fidm.' because it is the most direct and specific match for mozzarella cheese. Rule 1 (Use Realistic CO2 Emission Comparisons Based on Common Sense) is applied here, as 'mozarella sticks' is a processed product and 'goat cheese' is not mozzarella.",
+                "closest_match_explanation": "The ingredient is '1 handful of mozzarella'. The closest match in the database is 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most specific match for mozzarella cheese. Rule 4: Consider the amount of processing performed. This is a specific type of cheese.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
                 "ingredient": "1 handful of mozzarella",
@@ -175,44 +175,44 @@
             }
         },
         {
-            "original_name": "Lidt salt",
-            "en_name": "A little salt",
+            "original_name": "salt",
+            "en_name": "salt",
             "weight_estimate": {
-                "ingredient": "A little salt",
-                "weight_calculation": "Amount of A little salt not specified. LLM estimate is: A little salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+                "ingredient": "salt",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Lidt peber",
-            "en_name": "A little pepper",
+            "original_name": "peber",
+            "en_name": "pepper",
             "weight_estimate": {
-                "ingredient": "A little pepper",
-                "weight_calculation": "Amount of A little pepper not specified. LLM estimate is: A little pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+                "ingredient": "pepper",
+                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Olie",
+            "original_name": "olie",
             "en_name": "Oil",
             "weight_estimate": {
                 "ingredient": "Oil",
-                "weight_calculation": "Amount of Oil not specified. LLM estimate is: Oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg.",
+                "weight_calculation": "Amount of Oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.030 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Oil' is best matched with 'olive oil' because it is a common and widely used type of oil, and among the available options, it has the highest emission factor, as per Rule 5 (If Multiple Viable Options Have Similar Processing Levels). All listed oil options are similarly processed, so the tie-breaker rule is applied.",
-                "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
+                "closest_match_explanation": "The ingredient is 'Oil'. The closest match in the database is 'sunflower oil' as it is a common type of oil and has a specific emission factor. Rule 1: Use realistic CO2 emission comparisons. Rule 4: Consider the amount of processing performed. 'oil for frying' and 'sunflower oil' have the same emission factor, but 'sunflower oil' is a more specific type of oil.",
+                "ingredient_id": "Ra00348",
+                "closest_match_name": "sunflower oil",
                 "ingredient": "Oil",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.9
+                "co2_per_kg": 2.8
             }
         }
     ],
     "persons": 2,
-    "instructions": " Put a saucepan over with water to the pasta. Cook it according to instructions on the package and pour the water off so that it is not cooked further.\nCrack the ends of the green asparagus (the ends cannot be eaten). Cut them into approx. 1 cm long pieces.\nSweat onion and garlic in oil on a hot pan. Add the squash and asparagus and sweat it for a few more minutes, sprinkle with a KNSP salt and a little pepper.\nThen get the water on the pan and crumble the broth cube on to dissolve faster. Pour the cream on with grated parmesan and turn it all around well.\nTurn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste if the dish may be able to bruuse a little extra grinded pepper. Welcome!",
+    "instructions": " Put a saucepan over with water to the pasta. Cook it according to instructions on the package and pour the water off so that it is not cooked further.\nCrack the ends of the green asparagus (the ends cannot be eaten). Cut them into approx. 1 cm long pieces.\nSweat onion and garlic in oil on a hot pan. Add the squash and asparagus and sweat it for a few more minutes, sprinkle with a KNSP salt and a little pepper.\nThen get the water on the pan and crumble the broth cube on to dissolve faster. Pour the cream on with grated parmesan and turn it all around well.\nTurn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste if the dish may be able to bruuge a little extra grinded pepper. Welcome!",
     "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
 }

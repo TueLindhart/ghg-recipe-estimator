@@ -6,23 +6,23 @@
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "4 beets (about 400 g)",
+            "ingredient": "4 beets in small cubes (about 400 g)",
             "weight_calculation": "400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
             "ingredient": "1 dl dark balsamic vinegar",
-            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "weight_calculation": "1 dl = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "2 tablespoons sugar",
-            "weight_calculation": "1 tablespoon = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.030 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "1 teaspoon coarse salt",
-            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -31,18 +31,18 @@
             "weight_in_kg": 0.6
         },
         {
-            "ingredient": "25 g butter",
+            "ingredient": "25 g butter - melted",
             "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "0.5 teaspoon coarse salt",
-            "weight_calculation": "1 teaspoon = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "1.5 tsp wheat flour",
-            "weight_calculation": "1 tsp = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
             "weight_in_kg": 0.0075
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "3 tablespoons whole yellow mustard seeds",
-            "weight_calculation": "1 tablespoon = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "weight_in_kg": 0.045
         },
         {
@@ -61,23 +61,23 @@
             "weight_in_kg": 0.075
         },
         {
-            "ingredient": "200 g of cold butter",
+            "ingredient": "200 g of cold butter in small pieces",
             "weight_calculation": "200 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "0.75 teaspoon coarse salt",
-            "weight_calculation": "1 teaspoon = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "weight_calculation": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
             "weight_in_kg": 0.00375
         },
         {
-            "ingredient": "freshly ground pepper",
-            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: freshly ground pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
+            "ingredient": "Freshly ground pepper",
+            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "fresh herbs",
-            "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: fresh herbs per serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg.",
+            "ingredient": "Fresh herbs",
+            "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: 1 serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
@@ -87,7 +87,7 @@
         },
         {
             "ingredient": "4 soft-boiled quail egg",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 soft-boiled quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
             "weight_in_kg": 0.04
         }
     ]

@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 from pydantic import BaseModel
 
 OPENAI_LLM_MODEL = "gpt-4.1-mini-2025-04-14"
-GEMINI_LLM_MODEL = "gemini-2.5-flash-preview-05-20"
+GEMINI_LLM_MODEL = "gemini-2.5-flash-lite-preview-06-17"
 
 
 class ModelVendor(Enum):

@@ -2,35 +2,35 @@
     "title": "Tomatrisotto",
     "ingredients": [
         {
-            "original_name": "1 stk løg",
-            "en_name": "1 onion",
+            "original_name": "1 løg, finthakket",
+            "en_name": "1 onion, finely chopped",
             "weight_estimate": {
-                "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "ingredient": "1 onion, finely chopped",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with rule 4 which prioritizes the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is 'onion, finely chopped'. The closest match in the database is 'onion, raw' as it represents the raw form of the ingredient and is the most suitable option available.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
-                "ingredient": "1 onion",
+                "ingredient": "1 onion, finely chopped",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
         },
         {
-            "original_name": "3 fed hvidløg",
-            "en_name": "3 cloves of garlic",
+            "original_name": "3 fed hvidløg, finthakket",
+            "en_name": "3 cloves of garlic, finely chopped",
             "weight_estimate": {
-                "ingredient": "3 cloves of garlic",
+                "ingredient": "3 cloves of garlic, finely chopped",
                 "weight_calculation": "1 clove garlic = 4 g, 3 * 4 g = 12 g = 0.012 kg",
                 "weight_in_kg": 0.012
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '3 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with rule 4 which prioritizes the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient is 'garlic, finely chopped'. The closest match in the database is 'garlic, raw' as it represents the raw form of the ingredient and is the most suitable option available.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
-                "ingredient": "3 cloves of garlic",
+                "ingredient": "3 cloves of garlic, finely chopped",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
@@ -44,7 +44,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '400 g risotto rice' is best matched with 'rice groats, raw' because 'risotto rice' is a type of rice, and 'rice groats, raw' is the most general and least processed form of rice available in the database, aligning with rule 2 (broader category) and rule 4 (least processed).",
+                "closest_match_explanation": "The ingredient is 'risotto rice'. The closest match in the database is 'rice groats, raw' as it is a type of rice and represents the least processed form available.",
                 "ingredient_id": "Ra00133",
                 "closest_match_name": "rice groats, raw",
                 "ingredient": "400 g risotto rice",
@@ -57,11 +57,11 @@
             "en_name": "2 dl white wine",
             "weight_estimate": {
                 "ingredient": "2 dl white wine",
-                "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
+                "weight_calculation": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 dl white wine' is best matched with 'wine, white, average values' as it is the most general and appropriate category for 'white wine' in the database, aligning with rule 2 (broader category).",
+                "closest_match_explanation": "The ingredient is 'white wine'. The closest match in the database is 'wine, white, average values' as it directly corresponds to the ingredient type.",
                 "ingredient_id": "Ra00375",
                 "closest_match_name": "wine, white, average values",
                 "ingredient": "2 dl white wine",
@@ -78,7 +78,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '400 g of ripped tomatoes' is best matched with 'tomato, ripe, raw, origin unknown' because 'ripped tomatoes' implies raw, unprocessed tomatoes, and this option is the least processed form of tomato available, aligning with rule 4 (least processed).",
+                "closest_match_explanation": "The ingredient is 'ripped tomatoes'. The closest match in the database is 'tomato, ripe, raw, origin unknown' as it represents the raw form of the ingredient and is the most suitable option available.",
                 "ingredient_id": "Ra00002",
                 "closest_match_name": "tomato, ripe, raw, origin unknown",
                 "ingredient": "400 g of ripped tomatoes",
@@ -91,11 +91,11 @@
             "en_name": "25 g concentrated tomato puree",
             "weight_estimate": {
                 "ingredient": "25 g concentrated tomato puree",
-                "weight_calculation": "25 g = 25 g = 0.025 kg",
+                "weight_calculation": "25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g concentrated tomato puree' is best matched with 'tomato paste, concentrated' because 'tomato puree' is a concentrated tomato product, and 'tomato paste, concentrated' is the most direct and similarly processed match available, aligning with rule 4 (processing level).",
+                "closest_match_explanation": "The ingredient is 'concentrated tomato puree'. The closest match in the database is 'tomato paste, concentrated' as it is the most specific and accurate match available.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "25 g concentrated tomato puree",
@@ -108,41 +108,41 @@
             "en_name": "9 dl vegetable broth",
             "weight_estimate": {
                 "ingredient": "9 dl vegetable broth",
-                "weight_calculation": "1 dl = 0.1 kg, 9 * 0.1 kg = 0.9 kg",
+                "weight_calculation": "1 dl = 100 g, 9 * 100 g = 900 g = 0.9 kg",
                 "weight_in_kg": 0.9
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '9 dl vegetable broth' has no direct match. 'Bouillon, chicken, prepared' and 'bouillon, beef, prepared' are not suitable as they are not vegetable-based. 'Vegetable steaks' is a final meal and not a broth. 'Bouillon, beef, concentrated, cube' is also not vegetable-based. Therefore, no suitable match is found, aligning with rule 9 (no match if unsuitable).",
-                "ingredient_id": "none",
-                "closest_match_name": "No match",
+                "closest_match_explanation": "The ingredient is 'vegetable broth'. The closest match in the database is 'bouillon, beef, concentrated, cube' as it is the closest option available, although not a perfect match. There is no direct match for vegetable broth.",
+                "ingredient_id": "Ra00220",
+                "closest_match_name": "bouillon, beef, concentrated, cube",
                 "ingredient": "9 dl vegetable broth",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": null
+                "co2_per_kg": 9.9
             }
         },
         {
-            "original_name": "0.5 tsk tørret timian",
-            "en_name": "0.5 tsp dried thyme",
+            "original_name": "0,50 tsk tørret timian",
+            "en_name": "0.50 teaspoon dried thyme",
             "weight_estimate": {
-                "ingredient": "0.5 tsp dried thyme",
-                "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+                "ingredient": "0.50 teaspoon dried thyme",
+                "weight_calculation": "1 teaspoon = 5 g, 0.50 * 5 g = 2.5 g = 0.0025 kg",
                 "weight_in_kg": 0.0025
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "25 g soltørrede tomater i olie",
-            "en_name": "25 g sun -dried tomatoes in oil",
+            "original_name": "25 g soltørrede tomater i olie, finthakkede",
+            "en_name": "25 g sun -dried tomatoes in oil, finely chopped",
             "weight_estimate": {
-                "ingredient": "25 g sun -dried tomatoes in oil",
-                "weight_calculation": "25 g = 25 g = 0.025 kg",
+                "ingredient": "25 g sun -dried tomatoes in oil, finely chopped",
+                "weight_calculation": "25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g sun -dried tomatoes in oil' is best matched with 'sundried tomatoes' because it directly specifies 'sun-dried tomatoes', and this option is the most direct match for the processed form, aligning with rule 4 (processing level). The 'in oil' part is a preparation detail that does not change the core ingredient's processing.",
+                "closest_match_explanation": "The ingredient is 'sun-dried tomatoes in oil, finely chopped'. The closest match in the database is 'sundried tomatoes' as it represents the processed form of tomatoes and is the most suitable option available.",
                 "ingredient_id": "Ra00447",
                 "closest_match_name": "sundried tomatoes",
-                "ingredient": "25 g sun -dried tomatoes in oil",
+                "ingredient": "25 g sun -dried tomatoes in oil, finely chopped",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 2.7
             }
@@ -152,11 +152,11 @@
             "en_name": "125 g parmesan",
             "weight_estimate": {
                 "ingredient": "125 g parmesan",
-                "weight_calculation": "125 g = 125 g = 0.125 kg",
+                "weight_calculation": "125 g = 0.125 kg",
                 "weight_in_kg": 0.125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '125 g parmesan' is best matched with 'cheese, hard, parmesan, 32 % fidm.' because it is an exact match for the ingredient, aligning with rule 8 (utilize provided emission options).",
+                "closest_match_explanation": "The ingredient is 'parmesan'. The closest match in the database is 'cheese, hard, parmesan, 32 % fidm.' as it is the most specific and accurate match available.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "125 g parmesan",
@@ -165,18 +165,18 @@
             }
         },
         {
-            "original_name": "0.5 øko citron",
-            "en_name": "0.5 ECO Lemon",
+            "original_name": "0,50 øko citron, fintrevet skal",
+            "en_name": "0.50 eco lemon, finely grated shell",
             "weight_estimate": {
-                "ingredient": "0.5 ECO Lemon",
-                "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
+                "ingredient": "0.50 eco lemon, finely grated shell",
+                "weight_calculation": "1 lemon = 85 g, 0.50 * 85 g = 42.5 g = 0.0425 kg",
                 "weight_in_kg": 0.0425
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 ECO Lemon' is best matched with 'lemon, raw' because it is the most direct and least processed form of lemon available, aligning with rule 4 (least processed). 'ECO' is a descriptor that does not change the fundamental nature of the ingredient for matching purposes.",
+                "closest_match_explanation": "The ingredient is 'lemon, finely grated shell'. The closest match in the database is 'lemon, raw' as it represents the raw form of the ingredient and is the most suitable option available.",
                 "ingredient_id": "Ra00328",
                 "closest_match_name": "lemon, raw",
-                "ingredient": "0.5 ECO Lemon",
+                "ingredient": "0.50 eco lemon, finely grated shell",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.7
             }
@@ -186,11 +186,11 @@
             "en_name": "1 tablespoon olive oil",
             "weight_estimate": {
                 "ingredient": "1 tablespoon olive oil",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is best matched with 'olive oil' because it is an exact match for the ingredient, aligning with rule 8 (utilize provided emission options).",
+                "closest_match_explanation": "The ingredient is 'olive oil'. The closest match in the database is 'olive oil' as it is an exact match.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "1 tablespoon olive oil",
@@ -203,43 +203,43 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "original_name": "sort peber, friskkværnet",
+            "en_name": "Black pepper, freshly ground",
             "weight_estimate": {
-                "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
-                "weight_in_kg": 0.02
+                "ingredient": "Black pepper, freshly ground",
+                "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.002 kg, 4 * 0.002 kg = 0.008 kg",
+                "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is best matched with 'pepper, black' because it is an exact match for the ingredient, aligning with rule 8 (utilize provided emission options).",
+                "closest_match_explanation": "The ingredient is 'Black pepper, freshly ground'. The closest match in the database is 'pepper, black' as it is the most suitable match available.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
-                "ingredient": "Black pepper",
+                "ingredient": "Black pepper, freshly ground",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             }
         },
         {
-            "original_name": "1 stk burrata",
-            "en_name": "1 piece burrata",
+            "original_name": "1 burrata",
+            "en_name": "1 burrata",
             "weight_estimate": {
-                "ingredient": "1 piece burrata",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 piece burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
+                "ingredient": "1 burrata",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
                 "weight_in_kg": 0.125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 piece burrata' has no direct match. 'Stuffed fresh pasta', 'goat cheese', 'mozarella sticks', and 'blue cheese' are not suitable as they are not burrata. Burrata is a fresh Italian cheese, but none of the provided options are a direct or suitable broader category match for burrata. Therefore, no suitable match is found, aligning with rule 9 (no match if unsuitable).",
-                "ingredient_id": "none",
-                "closest_match_name": "No match",
-                "ingredient": "1 piece burrata",
+                "closest_match_explanation": "The ingredient is 'burrata'. The closest match in the database is 'mozarella sticks' as it is the most similar type of fresh cheese available, and other options like goat cheese or blue cheese are less similar.",
+                "ingredient_id": "Ra00453",
+                "closest_match_name": "mozarella sticks",
+                "ingredient": "1 burrata",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": null
+                "co2_per_kg": 1.6
             }
         },
         {
@@ -247,11 +247,11 @@
             "en_name": "25 g pesto",
             "weight_estimate": {
                 "ingredient": "25 g pesto",
-                "weight_calculation": "25 g = 25 g = 0.025 kg",
+                "weight_calculation": "25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g pesto' is best matched with 'pesto' because it is an exact match for the ingredient, aligning with rule 8 (utilize provided emission options).",
+                "closest_match_explanation": "The ingredient is 'pesto'. The closest match in the database is 'pesto' as it is an exact match.",
                 "ingredient_id": "Ra00381",
                 "closest_match_name": "pesto",
                 "ingredient": "25 g pesto",
@@ -264,11 +264,11 @@
             "en_name": "25 g parmesan",
             "weight_estimate": {
                 "ingredient": "25 g parmesan",
-                "weight_calculation": "25 g = 25 g = 0.025 kg",
+                "weight_calculation": "25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g parmesan' is best matched with 'cheese, hard, parmesan, 32 % fidm.' because it is an exact match for the ingredient, aligning with rule 8 (utilize provided emission options).",
+                "closest_match_explanation": "The ingredient is 'parmesan'. The closest match in the database is 'cheese, hard, parmesan, 32 % fidm.' as it is the most specific and accurate match available.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "25 g parmesan",
@@ -277,24 +277,24 @@
             }
         },
         {
-            "original_name": "0.5 håndfuld frisk basilikum",
-            "en_name": "0.5 Handful of fresh basil",
+            "original_name": "0,50 håndfuld frisk basilikum",
+            "en_name": "0.50 handful of fresh basil",
             "weight_estimate": {
-                "ingredient": "0.5 Handful of fresh basil",
-                "weight_calculation": "1 Handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
+                "ingredient": "0.50 handful of fresh basil",
+                "weight_calculation": "1 handful of herbs = 25 g, 0.50 * 25 g = 12.5 g = 0.0125 kg",
                 "weight_in_kg": 0.0125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 Handful of fresh basil' is best matched with 'basil, fresh' because it directly specifies 'fresh basil', and this option is the most direct and least processed match available, aligning with rule 4 (least processed).",
+                "closest_match_explanation": "The ingredient is 'fresh basil'. The closest match in the database is 'basil, fresh' as it is an exact match.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
-                "ingredient": "0.5 Handful of fresh basil",
+                "ingredient": "0.50 handful of fresh basil",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             }
         }
     ],
     "persons": 4,
-    "instructions": " saute onion and garlic in a saucepan with oil until the onions are soft. Add risottoris and stir well for a minute.\nPour white wine into the pan and stir until the rice has absorbed the wine. Turn down the heat.\nBlend peeled tomatoes, tomato puree, vegetable boullion and thyme together until it is completely uniform and add the moisture little by little to the rice as the rice absorbs the moisture, continue until the rice is a little button perfectly tender.\nStir finely chopped sun -dried tomatoes and freshly written parmesan in the rice and season well with lemon zest, salt and pepper. The risotto should be light -flowing and delicious creamy.\nServe with burrata, a drip of pesto, a little extra parmesan, and a sprinkle of fresh basil.",
+    "instructions": " saute onion and garlic in a saucepan with oil until the onions are soft. Add risottoris and stir well for a minute.\n\nPour white wine into the pan and stir until the rice has absorbed the wine. Turn down the heat.\n\nBlend peeled tomatoes, tomato puree, vegetable boullion and thyme together until it is completely uniform and add the moisture little by little to the rice as the rice absorbs the moisture, continue until the rice is a little button perfectly tender.\n\nStir finely chopped sun -dried tomatoes and freshly written parmesan in the rice and season well with lemon zest, salt and pepper. The risotto should be light -flowing and delicious creamy.\n\nServe with burrata, a drip of pesto, a little extra parmesan, and a sprinkle of fresh basil.",
     "url": "https://www.valdemarsro.dk/tomatrisotto/"
 }
