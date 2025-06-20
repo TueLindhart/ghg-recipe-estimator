@@ -10,7 +10,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '250 g fresh pasta'. The closest match in the database is 'fresh pasta, fettucine spinach' as it is a type of fresh pasta. Rule 2: Use a broader category if an exact match is not available. Rule 4: Consider the amount of processing performed. Fresh pasta is less processed than stuffed fresh pasta.",
+                "closest_match_explanation": "The ingredient is 'fresh pasta'. Among the options, 'fresh pasta, fettucine spinach' is the most specific and closest match, as it explicitly mentions 'fresh pasta'. Although 'pasta, raw' is also a type of pasta, 'fresh pasta, fettucine spinach' is a more precise match for 'fresh pasta'. 'Stuffed fresh pasta' is too specific and processed. 'Pastasauce' is a final meal and not a raw ingredient.",
                 "ingredient_id": "Ra00388",
                 "closest_match_name": "fresh pasta, fettucine spinach",
                 "ingredient": "250 g fresh pasta",
@@ -27,7 +27,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '2 cloves of garlic'. The closest match in the database is 'garlic, raw' as it is the most direct match for garlic. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
+                "closest_match_explanation": "The ingredient is 'garlic'. Among the options, 'garlic, raw' is the most direct and least processed match for 'garlic'. 'Garlic in oil' is more processed, and 'garlic baguette, frozen' is a final meal. 'Red onion' is a different ingredient.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -36,15 +36,15 @@
             }
         },
         {
-            "original_name": "1 stk løg",
+            "original_name": "1 løg",
             "en_name": "1 onion",
             "weight_estimate": {
                 "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 onion'. The closest match in the database is 'onion, raw' as it is the most direct match for onion. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
+                "closest_match_explanation": "The ingredient is 'onion'. Among the options, 'onion, raw' is the most direct and least processed match for 'onion'. 'Red onion' and 'onions, spring, raw' are specific types of onions, and 'onions, chopped and deepfried' is a processed product.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -57,11 +57,11 @@
             "en_name": "1 BDT Green Asparagus",
             "weight_estimate": {
                 "ingredient": "1 BDT Green Asparagus",
-                "weight_calculation": "1 bunch asparagus = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 BDT Green Asparagus'. The closest match in the database is 'asparagus, green, raw' as it is the most direct match for green asparagus. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
+                "closest_match_explanation": "The ingredient is 'Green Asparagus'. Among the options, 'asparagus, green, raw' is the most direct and least processed match. 'Asparagus slices' is a processed form. 'Peas, green, frozen' and 'beans, green, raw' are different ingredients.",
                 "ingredient_id": "Ra00163",
                 "closest_match_name": "asparagus, green, raw",
                 "ingredient": "1 BDT Green Asparagus",
@@ -70,35 +70,35 @@
             }
         },
         {
-            "original_name": "1 stk squash",
-            "en_name": "1 pcs squash",
+            "original_name": "1 squash",
+            "en_name": "1 Squash",
             "weight_estimate": {
-                "ingredient": "1 pcs squash",
-                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
+                "ingredient": "1 Squash",
+                "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 pcs squash'. The closest match in the database is 'squash, raw' as it is the most direct match for squash. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
+                "closest_match_explanation": "The ingredient is 'Squash'. Among the options, 'squash, raw' is the most direct and least processed match. The other options are different ingredients or processed forms.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
-                "ingredient": "1 pcs squash",
+                "ingredient": "1 Squash",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.8
             }
         },
         {
-            "original_name": "1 håndfuld frisk basilikum",
-            "en_name": "1 handful of fresh basil",
+            "original_name": "1 stor håndfuld basilikum",
+            "en_name": "1 large handful of basil",
             "weight_estimate": {
-                "ingredient": "1 handful of fresh basil",
+                "ingredient": "1 large handful of basil",
                 "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 handful of fresh basil'. The closest match in the database is 'basil, fresh' as it is the most direct match for fresh basil. Rule 4: If no processing is provided for the ingredient, then choose the least processed or most raw option.",
+                "closest_match_explanation": "The ingredient is 'basil'. Among the options, 'basil, fresh' is the most direct and least processed match for 'fresh basil'. 'Basil, dried' is a processed form. 'Pesto' is a final product, and 'parsley, raw' is a different herb.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
-                "ingredient": "1 handful of fresh basil",
+                "ingredient": "1 large handful of basil",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.4
             }
@@ -112,7 +112,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '2 dl cream'. The closest match in the database is 'cream, whipping, 38 % fat' as it is a type of cream and has a specific fat percentage. Rule 4: Consider the amount of processing performed. This option is a specific type of cream.",
+                "closest_match_explanation": "The ingredient is 'cream'. Among the options, 'cream, whipping, 38 % fat' and 'cream, cultured, 18 % fat' are both types of cream. 'Cream, whipping, 38 % fat' has a higher emission factor, so it is chosen as per rule 5. 'Ice cream, dairy (cream based)' and 'cream pastry, layer cake' are final products.",
                 "ingredient_id": "Ra00345",
                 "closest_match_name": "cream, whipping, 38 % fat",
                 "ingredient": "2 dl cream",
@@ -131,10 +131,10 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 stk grøntsags bouillonterning",
-            "en_name": "1 pcs Vegetable broth cube",
+            "original_name": "1 grøntsags bouillonterning",
+            "en_name": "1 vegetable broth cube",
             "weight_estimate": {
-                "ingredient": "1 pcs Vegetable broth cube",
+                "ingredient": "1 vegetable broth cube",
                 "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
@@ -145,11 +145,11 @@
             "en_name": "6 tbsp grated parmesan",
             "weight_estimate": {
                 "ingredient": "6 tbsp grated parmesan",
-                "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.090 kg",
+                "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.09 kg",
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '6 tbsp grated parmesan'. The closest match in the database is 'cheese, hard, parmesan, 32 % fidm.' as it is the most specific match for parmesan cheese. Rule 4: Consider the amount of processing performed. Grated parmesan is a processed form of hard cheese.",
+                "closest_match_explanation": "The ingredient is 'grated parmesan'. Among the options, 'cheese, hard, parmesan, 32 % fidm.' is the most direct and specific match for parmesan cheese. 'Vegan cheese, grated or sliced' is a different type of cheese, and 'tortilla chips, cheese' is a final product.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "6 tbsp grated parmesan",
@@ -162,11 +162,11 @@
             "en_name": "1 handful of mozzarella",
             "weight_estimate": {
                 "ingredient": "1 handful of mozzarella",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 50 g, 1 * 50 g = 50 g = 0.050 kg",
-                "weight_in_kg": 0.05
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
+                "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 handful of mozzarella'. The closest match in the database is 'cheese, semihard, mozzarella, 30 % fidm.' as it is the most specific match for mozzarella cheese. Rule 4: Consider the amount of processing performed. This is a specific type of cheese.",
+                "closest_match_explanation": "The ingredient is 'mozzarella'. Among the options, 'cheese, semihard, mozzarella, 30 % fidm.' is the most direct and specific match for mozzarella cheese. 'Mozarella sticks' is a processed product, and 'goat cheese' is a different type of cheese.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
                 "ingredient": "1 handful of mozzarella",
@@ -175,40 +175,40 @@
             }
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "original_name": "Lidt salt",
+            "en_name": "A little salt",
             "weight_estimate": {
-                "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
+                "ingredient": "A little salt",
+                "weight_calculation": "Amount of A little salt not specified. LLM estimate is: A little salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "peber",
-            "en_name": "pepper",
+            "original_name": "Lidt peber",
+            "en_name": "A little pepper",
             "weight_estimate": {
-                "ingredient": "pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.010 kg",
+                "ingredient": "A little pepper",
+                "weight_calculation": "Amount of A little pepper not specified. LLM estimate is: A little pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "olie",
+            "original_name": "Olie",
             "en_name": "Oil",
             "weight_estimate": {
                 "ingredient": "Oil",
-                "weight_calculation": "Amount of Oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.030 kg",
+                "weight_calculation": "Amount of Oil not specified. LLM estimate is: Oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg.",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Oil'. The closest match in the database is 'sunflower oil' as it is a common type of oil and has a specific emission factor. Rule 1: Use realistic CO2 emission comparisons. Rule 4: Consider the amount of processing performed. 'oil for frying' and 'sunflower oil' have the same emission factor, but 'sunflower oil' is a more specific type of oil.",
-                "ingredient_id": "Ra00348",
-                "closest_match_name": "sunflower oil",
+                "closest_match_explanation": "The ingredient is 'Oil'. Among the options, 'olive oil', 'oil for frying', 'sunflower oil', and 'oil, rape seed (no eruca acid)' are all types of oil. 'Olive oil' has the highest emission factor, so it is chosen as per rule 5.",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
                 "ingredient": "Oil",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.8
+                "co2_per_kg": 5.9
             }
         }
     ],

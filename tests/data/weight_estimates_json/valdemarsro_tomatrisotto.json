@@ -1,12 +1,12 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "1 onion, finely chopped",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+            "ingredient": "1 onion",
+            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "3 cloves of garlic, finely chopped",
+            "ingredient": "3 cloves of garlic",
             "weight_calculation": "1 clove garlic = 4 g, 3 * 4 g = 12 g = 0.012 kg",
             "weight_in_kg": 0.012
         },
@@ -26,8 +26,8 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "25 g concentrated tomato puree",
-            "weight_calculation": "25 g = 0.025 kg",
+            "ingredient": "25 g tomato puree",
+            "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
@@ -36,39 +36,39 @@
             "weight_in_kg": 0.9
         },
         {
-            "ingredient": "0.50 teaspoon dried thyme",
-            "weight_calculation": "1 teaspoon = 5 g, 0.50 * 5 g = 2.5 g = 0.0025 kg",
+            "ingredient": "0.5 tsp thyme",
+            "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
-            "ingredient": "25 g sun -dried tomatoes in oil, finely chopped",
-            "weight_calculation": "25 g = 0.025 kg",
+            "ingredient": "25 g sun -dried tomatoes in oil",
+            "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "125 g parmesan",
-            "weight_calculation": "125 g = 0.125 kg",
+            "weight_calculation": "125 g = 125 g = 0.125 kg",
             "weight_in_kg": 0.125
         },
         {
-            "ingredient": "0.50 eco lemon, finely grated shell",
-            "weight_calculation": "1 lemon = 85 g, 0.50 * 85 g = 42.5 g = 0.0425 kg",
+            "ingredient": "0.5 ECO Lemon",
+            "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
             "weight_in_kg": 0.0425
         },
         {
             "ingredient": "1 tablespoon olive oil",
-            "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "Black pepper, freshly ground",
-            "weight_calculation": "Amount of black pepper not specified. LLM estimate is: 1 serving = 0.002 kg, 4 * 0.002 kg = 0.008 kg",
-            "weight_in_kg": 0.008
+            "ingredient": "Black pepper",
+            "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
+            "weight_in_kg": 0.02
         },
         {
             "ingredient": "1 burrata",
@@ -77,17 +77,17 @@
         },
         {
             "ingredient": "25 g pesto",
-            "weight_calculation": "25 g = 0.025 kg",
+            "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "25 g parmesan",
-            "weight_calculation": "25 g = 0.025 kg",
+            "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "0.50 handful of fresh basil",
-            "weight_calculation": "1 handful of herbs = 25 g, 0.50 * 25 g = 12.5 g = 0.0125 kg",
+            "ingredient": "0.5 Handful of basil",
+            "weight_calculation": "1 Handful of herbs (basil, oregano etc.) = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "weight_in_kg": 0.0125
         }
     ]

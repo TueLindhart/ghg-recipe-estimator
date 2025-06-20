@@ -1,15 +1,15 @@
 {
-    "title": "Thai green curry chicken",
+    "title": "Thai Green Curry Chicken",
     "ingredients": [
         {
-            "original_name": "1.75 cup coconut milk",
-            "en_name": "1.75 Cup Coconut Milk",
+            "original_name": "1.75 cups coconut milk",
+            "en_name": "1.75 Cups Coconut Milk",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "3.5 Tablespoon green curry paste",
-            "en_name": "3.5 Tablespoon Green Curry Paste",
+            "original_name": "3.5 tbsp green curry paste",
+            "en_name": "3.5 TBSP Green Curry Paste",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -20,20 +20,20 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 lb chicken thigh, boneless, skinless, 1-inch pieces",
-            "en_name": "1 lb Chicken Thigh, Boneless, Skinless, 1-inch Pieces",
+            "original_name": "1 lb chicken thigh",
+            "en_name": "1 lb chicken thigh",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 Tablespoon palm sugar",
-            "en_name": "2 Tablespoon Palm Sugar",
+            "original_name": "2 tbsp palm sugar",
+            "en_name": "2 TBSP Palm Sugar",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1.5 Tablespoon fish sauce",
-            "en_name": "1.5 Tablespoon Fish Sauce",
+            "original_name": "1.5 tbsp fish sauce",
+            "en_name": "1.5 TBSP FISH SAUCE",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -44,8 +44,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 can bamboo shoots strips, drained and rinsed",
-            "en_name": "1 Can Bamboo Shoots Strips, Drained and Rinsed",
+            "original_name": "1 550-ml can bamboo shoots strips",
+            "en_name": "1 550-ML CAN BAMBOO Shoots Strips",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -56,19 +56,97 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.25 red bell pepper, or another mild red pepper, julienned",
-            "en_name": "0.25 Red Bell Pepper, or another mild Red Pepper, julienned",
+            "original_name": "0.25 red bell pepper",
+            "en_name": "0.25 Red Bell Pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Jasmine rice for serving",
-            "en_name": "Jasmine Rice for Serving",
+            "original_name": "Jasmine rice",
+            "en_name": "Jasmine Rice",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tsp cumin seeds",
+            "en_name": "1 tsp cumin seeds",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 tsp coriander seeds",
+            "en_name": "2 tsp coriander seeds",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "0.5 tsp white peppercorns",
+            "en_name": "0.5 TSP White PepperCorns",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "15 green Thai chilies",
+            "en_name": "15 Green Thai Chilies",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tsp coarse salt",
+            "en_name": "1 TSP COARSE SALT",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "15 Thai basil leaves",
+            "en_name": "15 Thai Basil Leaves",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "3 tbsp lemongrass",
+            "en_name": "3 tbsp lemongrass",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tbsp galangal",
+            "en_name": "1 tbsp galangal",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 tsp makrut lime zest",
+            "en_name": "2 tsp makrut lime zest",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 cilantro roots or 4 big cilantro stems",
+            "en_name": "2 Cilantro Roots or 4 Big Cilantro Stems",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "3 tbsp shallots",
+            "en_name": "3 tbsp Shallots",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "2 tbsp garlic",
+            "en_name": "2 tbsp Garlic",
+            "weight_estimate": null,
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "1 tsp fermented shrimp paste (gapi)",
+            "en_name": "1 tsp fermented Shrimp paste (Gapi)",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": " Reduce 0.75 Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate From The Coconut Milk (IF The Oil Does Separate After It Has Reduced Until Very Thick, It's Okay, Just Proceed With The Recipe).\nAdd the Curry Paste and Sauté, Stirring Constantly over Medium Heat for About 2 Minutes Until Aromatic. If Paste Sticks to the Bottom of the Pan, You Can Deglaze With A Little Bit Of The Remaining Coconut Milk.\nAdd Chicken Thigh and Stir to Mix With The Paste. (Continue with Instructions Below IF Using Chicken Breast).\nAdd the Chicken Stock, Remaining 1 Cup of Coconut Milk, Palm Sugar and 1 Tablespoon of the Fish Sauce. Grab The Makrut Lime Leaves and Twist Them to Bruise and Release Aroma, Then Tear Them Into Chunks and Add Them to the Pot, Discarding the Center Stems. Bring to a simmer and light simmer gently for 10-15 minutes or until the chicken is fork tender.\nOnce the Curry is Done Simmering, Add Bamboo Shoots and Bring to a Boil. If you prefer your peppers to be more cooked, add them at this stage. Once Boiling, Remove From Heat.\nTaste and Add More Fish Sauce and or Sugar as Needed.\nAdd Thai Basil and Spur Chilies or Bell Peppers and Stir Just UNTIL THE BASIL IS WILTED. Serve with jasmine rice",
+    "instructions": " Reduce 0.75 Cup Coconut Milk Until Thick and Coconut Oil Starts To Separate From The Coconut Milk (IF The Oil Does Separate After It Has Reduced Until Very Thick, It's Okay, Just Proved With The Recip). Add the Curry Paste and Sauté, Stirring Constantly over Medium Heat for About 2 Minutes Until Aromatic. If Paste Sticks to the Bottom of the Pan, You Can Deglaze With A Little Bit Of The Remaining Coconut Milk. Add Chicken Thigh and Stir to Mix With The Paste. (Continue with Instructions Below IF Using Chicken Breast). Add the Chicken Stock, Remaining 1 Cup of Coconut Milk, Palm Sugar and 1 Tablespoon of the Fish Sauce. Grab The Makrut Lime Leaves and Twist Them to Bruise and Release Aroma, Then Tear Them Into Chunks and Add Them to the Pot, Discarding the Center Stems. Bring to a simmer and light simmer gently for 10-15 minutes or until the chicken is fork tender.*\\*The lime leaves are for infusion only and not mean to be eaten when left in large pieces. They are traditionally left in the curry, but be sour to inform your guests not to eat them.* Once the curry is done Simmering, Add Bamboo Shoots and Bring to a Boil. If you prefer your peppers to be more cooked, add them at this stage. Once Boiling, Remove From Heat. Taste and Add More Fish Sauce and or Sugar as Needed. *\\*If you feel that the curry is WEAK AND NEEDS MORE CURRY PASTE,*SAUTE THE ADDITIONAL CURRY PASTE IN SOME OIL IN A SMALL POT FOR A FEW MINUTES UNTIL AROMATIC, THEN ADD ABOUT A CUP OF THE CURRY SAUCE TO DISSOLVE THE PASTE AND LET IT SIMMER FOR A FEW MINUTES, THEN STIRS IT BACK INTO INTO THE CURRY THE CURRY THE CURRY. Add Thai Basil and Spur Chilies or Bell Peppers and Stir Just UNTIL THE BASIL IS WILTED. Serve with Jasmine Rice IF Using Chicken Breast: After Sautéing The Curry Paste, Add Makrut Lime Leaves, Coconut Milk, Chicken Stock, Palm Sugar and 1 Tablespoon Fish Sauce; Bring to a simmer and light simmer for about 5 minutes.*\\*the lime leaves are for infusion only and not mean to be eaten when left in large pieces. They are traditionally left in the curry, but be sour to inform your guests not to eat them.* Bring the curry sauce to a boil, then add the marinated chicken breast and cook until chicken is about 70% done, 1-2 minutes. Add the Bamboo Shoots and Bring to A Boil. If you prefer your peppers to be more cooked, add them at this stage. Once Boiling, Remove From Heat. Taste and Add More Fish Sauce and or Sugar as Needed. *\\*If you feel that the curry is WEAK AND NEEDS MORE CURRY PASTE,*SAUTE THE ADDITIONAL CURRY PASTE IN SOME OIL IN A SMALL POT FOR A FEW MINUTES UNTIL AROMATIC, THEN ADD ABOUT A CUP OF THE CURRY SAUCE TO DISSOLVE THE PASTE AND LET IT SIMMER FOR A FEW MINUTES, THEN STIRS IT BACK INTO INTO THE CURRY THE CURRY THE CURRY. Stir in Thai Basil and Spur Chilies or Bell Peppers. Serve with Jasmine Rice. For The Curry Paste: Toast Cumin Seeds by Adding Them to a Dry Sauté Pan and Stir Constantly Over Medium-High Heat Until The Seeds Are Aromatic and Slightly Darked, About 4 Minutes. Cool On a Plate. REPEAT WITH THE CORIANDER SEEDS. Using a Mortar and Pestle, Grind Toasted Coriander Seeds, Toasted Cumin Seeds, and White Peppercorns Into A Fine Powder. Remove from Mortar and Set Aside. Cut to Least 8 Green Thai Chilies in Half Horizontally and, with a Paring Knife, Scrape Off and Discard The Seeds and Pith, then Finely Chop Along with the Remaining Chilies tone it down even more. Add chopped chilies and salt to a heavy-duty mortar and pestle; Pound into a fine paste. If the Mixture Feels Too Wet at Any Point, Add Some of the Ground Spices To Absorb The Liquid. Add Basil Leaves; Pound into a fine paste. Add Lemongrass, Galangal, Makrut Lime Zest, and Cilantro Roots; Pound into a fine paste. Add Shallots, Garlic, and Any Remaining Ground Spices; Pound into a fine paste. Add Shrimp Paste and Pound to Mix.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/"
 }

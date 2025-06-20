@@ -6,11 +6,11 @@
             "en_name": "1 kg of minced beef",
             "weight_estimate": {
                 "ingredient": "1 kg of minced beef",
-                "weight_calculation": "1 kg = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
+                "weight_calculation": "1 kg = 1000 g = 1.0 kg",
                 "weight_in_kg": 1.0
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 kg of minced beef'. The closest match in the database is 'beef, mince, 5-10% fat, raw' as it is also minced beef. Rule 1 (Use Realistic Comparisons) is followed as both are beef. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '1 kg of minced beef' is directly matched to 'beef, mince, 5-10% fat, raw' as it is the most specific and least processed option available for minced beef, aligning with rule 4. Among the available minced beef options, 'beef, mince, 5-10% fat, raw' has the highest emission factor, aligning with rule 5.",
                 "ingredient_id": "Ra00016",
                 "closest_match_name": "beef, mince, 5-10% fat, raw",
                 "ingredient": "1 kg of minced beef",
@@ -23,11 +23,11 @@
             "en_name": "3 large onions",
             "weight_estimate": {
                 "ingredient": "3 large onions",
-                "weight_calculation": "1 onion = 170 g, 3 * 170 g = 510 g = 0.510 kg",
+                "weight_calculation": "1 onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
                 "weight_in_kg": 0.51
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '3 large onions'. The closest match in the database is 'onion, raw' as it is a raw onion. Rule 1 (Use Realistic Comparisons) is followed as both are onions. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'onion, raw' is a suitable general category for 'large onions'. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '3 large onions' is best matched to 'onion, raw'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient. 'Onion, raw' is the most natural and unprocessed form of onion available in the database.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "3 large onions",
@@ -40,11 +40,11 @@
             "en_name": "3 carrots",
             "weight_estimate": {
                 "ingredient": "3 carrots",
-                "weight_calculation": "1 carrot = 100 g, 3 * 100 g = 300 g = 0.300 kg",
+                "weight_calculation": "1 carrot = 100 g, 3 * 100 g = 300 g = 0.3 kg",
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '3 carrots'. The closest match in the database is 'carrot, raw' as it is a raw carrot. Rule 1 (Use Realistic Comparisons) is followed as both are carrots. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'carrot, raw' is a suitable general category for 'carrots'. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '3 carrots' is best matched to 'carrot, raw'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient. 'Carrot, raw' is the most natural and unprocessed form of carrot available in the database.",
                 "ingredient_id": "Ra00257",
                 "closest_match_name": "carrot, raw",
                 "ingredient": "3 carrots",
@@ -57,11 +57,11 @@
             "en_name": "2.5 Stalk leaf celery",
             "weight_estimate": {
                 "ingredient": "2.5 Stalk leaf celery",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk celery = 50 g, 2.5 * 50 g = 125 g = 0.125 kg.",
-                "weight_in_kg": 0.125
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg.",
+                "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '2.5 Stalk leaf celery'. The closest match in the database is 'celery, raw' as it is raw celery. Rule 1 (Use Realistic Comparisons) is followed as both are celery. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '2.5 Stalk leaf celery' is best matched to 'celery, raw'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient. 'Celery, raw' is the most natural and unprocessed form of celery available in the database.",
                 "ingredient_id": "Ra00153",
                 "closest_match_name": "celery, raw",
                 "ingredient": "2.5 Stalk leaf celery",
@@ -78,7 +78,7 @@
                 "weight_in_kg": 0.024
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '6 cloves of garlic'. The closest match in the database is 'garlic, raw' as it is raw garlic. Rule 1 (Use Realistic Comparisons) is followed as both are garlic. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '6 cloves of garlic' is best matched to 'garlic, raw'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient. 'Garlic, raw' is the most natural and unprocessed form of garlic available in the database.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "6 cloves of garlic",
@@ -91,11 +91,11 @@
             "en_name": "150 g tomato concentrate",
             "weight_estimate": {
                 "ingredient": "150 g tomato concentrate",
-                "weight_calculation": "150 g = 150 g = 0.150 kg",
+                "weight_calculation": "150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '150 g tomato concentrate'. The closest match in the database is 'tomato paste, concentrated' as it is a concentrated tomato product. Rule 1 (Use Realistic Comparisons) is followed as both are concentrated tomato products. Rule 4 (Consider the Amount of Processing Performed) is followed as both are concentrated. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '150 g tomato concentrate' is directly matched to 'tomato paste, concentrated'. This aligns with rule 4, as 'concentrate' directly implies a processed form, and 'tomato paste, concentrated' is the most accurate match for this processing level.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomato paste, concentrated",
                 "ingredient": "150 g tomato concentrate",
@@ -104,18 +104,18 @@
             }
         },
         {
-            "original_name": "3 dåse hakkede tomater",
-            "en_name": "3 can of chopped tomatoes",
+            "original_name": "3 dåse hakkede tomater eller polpa",
+            "en_name": "3 can of chopped tomatoes or polpa",
             "weight_estimate": {
-                "ingredient": "3 can of chopped tomatoes",
+                "ingredient": "3 can of chopped tomatoes or polpa",
                 "weight_calculation": "1 can = 400 g, 3 * 400 g = 1200 g = 1.2 kg",
                 "weight_in_kg": 1.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '3 can of chopped tomatoes'. The closest match in the database is 'tomato, peeled, canned' as it is a canned tomato product. Rule 1 (Use Realistic Comparisons) is followed as both are canned tomatoes. Rule 4 (Consider the Amount of Processing Performed) is followed as both are canned. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '3 can of chopped tomatoes or polpa' is best matched to 'tomato, peeled, canned'. This aligns with rule 4, as 'can of chopped tomatoes' directly implies a canned and processed form, and 'tomato, peeled, canned' is the most accurate match for this processing level.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "3 can of chopped tomatoes",
+                "ingredient": "3 can of chopped tomatoes or polpa",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             }
@@ -129,7 +129,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '2 dl red wine'. The closest match in the database is 'wine, red' as it is red wine. Rule 1 (Use Realistic Comparisons) is followed as both are red wine. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed (fermented). Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '2 dl red wine' is directly matched to 'wine, red'. This is an exact match for the ingredient, aligning with rule 8.",
                 "ingredient_id": "Ra00377",
                 "closest_match_name": "wine, red",
                 "ingredient": "2 dl red wine",
@@ -182,31 +182,41 @@
             "en_name": "Oil",
             "weight_estimate": {
                 "ingredient": "Oil",
-                "weight_calculation": "Amount of Oil not specified. LLM estimate is: 1 serving = 0.015 kg, 8 * 0.015 kg = 0.12 kg.",
+                "weight_calculation": "Amount of Oil not specified. LLM estimate is: Oil per serving = 0.015 kg, 8 * 0.015 kg = 0.12 kg.",
                 "weight_in_kg": 0.12
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Oil'. The closest match in the database is 'oil for frying' as it is a general term for cooking oil. Rule 1 (Use Realistic Comparisons) is followed as both are cooking oils. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'oil for frying' is a suitable general category for 'Oil'. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
-                "ingredient_id": "Ra00348",
-                "closest_match_name": "oil for frying",
+                "closest_match_explanation": "The ingredient 'Oil' is a general term. Among the available options, 'olive oil' has the highest emission factor (5.9 kg CO2e / kg) compared to 'oil for frying' (2.8 kg CO2e / kg), 'sunflower oil' (2.8 kg CO2e / kg), and 'oil, rape seed (no eruca acid)' (3.3 kg CO2e / kg). According to rule 5, if multiple viable options have similar processing levels, the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+                "ingredient_id": "Ra00349",
+                "closest_match_name": "olive oil",
                 "ingredient": "Oil",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.8
+                "co2_per_kg": 5.9
             }
         },
         {
-            "original_name": "Salt og friskkværnet peber",
-            "en_name": "Salt and freshly ground pepper",
+            "original_name": "Salt",
+            "en_name": "Salt",
             "weight_estimate": {
-                "ingredient": "Salt and freshly ground pepper",
-                "weight_calculation": "Amount of Salt and freshly ground pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg.",
+                "ingredient": "Salt",
+                "weight_calculation": "Amount of Salt not specified. LLM estimate is: Salt per serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg.",
+                "weight_in_kg": 0.04
+            },
+            "co2_per_kg_db": null
+        },
+        {
+            "original_name": "friskekværnet peber",
+            "en_name": "freshly ground pepper",
+            "weight_estimate": {
+                "ingredient": "freshly ground pepper",
+                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: freshly ground pepper per serving = 0.005 kg, 8 * 0.005 kg = 0.04 kg.",
                 "weight_in_kg": 0.04
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Salt and freshly ground pepper'. The closest match in the database is 'pepper, black' as it is a spice. Rule 1 (Use Realistic Comparisons) is followed as both are seasonings. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed. Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) is followed as 'pepper, black' is a suitable general category for 'Salt and freshly ground pepper' when a specific match for salt and pepper together is not available. Rule 9 (Only Use Provided Emission Options) is followed as this is the closest available option. Rule 5 (If Multiple Viable Options Have Similar Processing Levels) is followed by choosing the option with a higher emission factor if multiple options were equally suitable.",
+                "closest_match_explanation": "The ingredient 'freshly ground pepper' is best matched to 'pepper, black'. This aligns with rule 4, as 'freshly ground' implies a minimal processing level, and 'pepper, black' is the most appropriate raw form of pepper available. Among the options, 'pepper, black' also has the highest emission factor, aligning with rule 5.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
-                "ingredient": "Salt and freshly ground pepper",
+                "ingredient": "freshly ground pepper",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.2
             }
@@ -220,7 +230,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is '1 handful of fresh basil leaves'. The closest match in the database is 'basil, fresh' as it is fresh basil. Rule 1 (Use Realistic Comparisons) is followed as both are fresh basil. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw/fresh. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient '1 handful of fresh basil leaves' is best matched to 'basil, fresh'. This aligns with rule 4, which prioritizes the least processed option when 'fresh' is specified for the ingredient. 'Basil, fresh' is the most natural and unprocessed form of basil available in the database.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 handful of fresh basil leaves",
@@ -233,11 +243,11 @@
             "en_name": "Pasta as desired",
             "weight_estimate": {
                 "ingredient": "Pasta as desired",
-                "weight_calculation": "Amount of Pasta as desired not specified. LLM estimate is: 1 serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg.",
+                "weight_calculation": "Amount of Pasta as desired not specified. LLM estimate is: Pasta as desired per serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg.",
                 "weight_in_kg": 1.0
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Pasta as desired'. The closest match in the database is 'pasta, raw' as it is raw pasta. Rule 1 (Use Realistic Comparisons) is followed as both are pasta. Rule 4 (Consider the Amount of Processing Performed) is followed as both are raw. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient 'Pasta as desired' is best matched to 'pasta, raw'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient. 'Pasta, raw' is the most natural and unprocessed form of pasta available in the database. Other options like 'pastasauce' or 'stuffed fresh pasta' are considered final meals or more processed, violating rule 3 and rule 4.",
                 "ingredient_id": "Ra00234",
                 "closest_match_name": "pasta, raw",
                 "ingredient": "Pasta as desired",
@@ -250,11 +260,11 @@
             "en_name": "Torn parmesan",
             "weight_estimate": {
                 "ingredient": "Torn parmesan",
-                "weight_calculation": "Amount of Torn parmesan not specified. LLM estimate is: 1 serving = 0.025 kg, 8 * 0.025 kg = 0.2 kg.",
-                "weight_in_kg": 0.2
+                "weight_calculation": "Amount of Torn parmesan not specified. LLM estimate is: Torn parmesan per serving = 0.02 kg, 8 * 0.02 kg = 0.16 kg.",
+                "weight_in_kg": 0.16
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Torn parmesan'. The closest match in the database is 'cheese, hard, parmesan, 32 % fidm.' as it is parmesan cheese. Rule 1 (Use Realistic Comparisons) is followed as both are parmesan cheese. Rule 4 (Consider the Amount of Processing Performed) is followed as both are processed. Rule 8 (Utilize the Provided Ingredient Emission Options) is followed as this is the most specific match available.",
+                "closest_match_explanation": "The ingredient 'Torn parmesan' is best matched to 'cheese, hard, parmesan, 32 % fidm.'. This is an exact match for the ingredient, aligning with rule 8. The term 'torn' refers to a preparation method and does not change the nature or processing level of the parmesan itself, aligning with rule 4.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
                 "ingredient": "Torn parmesan",
@@ -264,6 +274,6 @@
         }
     ],
     "persons": 8,
-    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\".\nHeat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside.\nMeanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you.\nIn the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way.\nThen pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute.\nPour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way.\nBefore serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
+    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\". Heat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside. Meanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you. In the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way. Then pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute. Pour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way. Before serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
 }
