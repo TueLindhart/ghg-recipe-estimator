@@ -6,38 +6,38 @@
             "weight_in_kg": 0.015
         },
         {
-            "ingredient": "1 lb Skinless, Boneless Chicken Breast",
+            "ingredient": "1 lb skinless, boneless chicken breast",
             "weight_calculation": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
             "weight_in_kg": 0.453592
         },
         {
-            "ingredient": "2 Medium Carrots",
+            "ingredient": "2 medium carrots",
             "weight_calculation": "1 carrot = 100 g, 2 * 100 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
-            "ingredient": "2 Stalks Celery",
+            "ingredient": "2 stalks celery",
             "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk celery = 40 g, 2 * 40 g = 80 g = 0.08 kg.",
             "weight_in_kg": 0.08
         },
         {
-            "ingredient": "1 Red Bell Pepper",
+            "ingredient": "1 red bell pepper",
             "weight_calculation": "1 bell pepper = 150 g, 1 * 150 g = 150 g = 0.15 kg",
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "1 Bunch Scallions",
+            "ingredient": "1 bunch scallions",
             "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 bunch scallions = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
-            "weight_calculation": "15 ounces = 425.243 g, 1 * 425.243 g = 425.243 g = 0.425243 kg",
+            "ingredient": "1 (15 ounce) can diced tomatoes with green chiles",
+            "weight_calculation": "15 ounce = 425.243 g, 1 * 425.243 g = 425.243 g = 0.425243 kg",
             "weight_in_kg": 0.425243
         },
         {
-            "ingredient": "2 (15 ounces) Cans Black Beans",
-            "weight_calculation": "15 ounces = 425.243 g, 2 * 425.243 g = 850.486 g = 0.850486 kg",
+            "ingredient": "2 (15 ounce) cans black beans",
+            "weight_calculation": "15 ounce = 425.243 g, 2 * 425.243 g = 850.486 g = 0.850486 kg",
             "weight_in_kg": 0.850486
         },
         {
@@ -67,26 +67,26 @@
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
+            "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "Ground Black Pepper",
-            "weight_calculation": "Amount of Ground Black Pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
+            "ingredient": "ground black pepper",
+            "weight_calculation": "Amount of ground black pepper not specified. LLM estimate is: ground black pepper per serving = 0.005 kg, 6 * 0.005 kg = 0.03 kg.",
             "weight_in_kg": 0.03
         },
         {
-            "ingredient": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
-            "weight_calculation": "8.5 ounces = 240.972 g, 1 * 240.972 g = 240.972 g = 0.240972 kg",
+            "ingredient": "1 (8.5 ounce) package dry corn muffin mix",
+            "weight_calculation": "8.5 ounce = 240.972 g, 1 * 240.972 g = 240.972 g = 0.240972 kg",
             "weight_in_kg": 0.240972
         },
         {
-            "ingredient": "0.33 Cup Milk",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup milk = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg.",
+            "ingredient": "0.33 cup milk",
+            "weight_calculation": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
             "weight_in_kg": 0.0792
         },
         {
-            "ingredient": "1 Egg",
+            "ingredient": "1 egg",
             "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
             "weight_in_kg": 0.05
         }

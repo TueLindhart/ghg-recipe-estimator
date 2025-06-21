@@ -6,9 +6,8 @@ from food_co2_estimator.chains.rag_co2_estimator import (
     get_co2_emissions,
 )
 from food_co2_estimator.chains.recipe_extractor import extract_recipe
-from food_co2_estimator.chains.translator import get_translation_chain
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
-from food_co2_estimator.language.detector import Languages, detect_language
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.estimator import LogParams, RunParams
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.response_models import JobStatus
@@ -50,30 +49,18 @@ async def async_estimator(
         log_exception_message(runparams.url, no_recipe_message)
         return False, no_recipe_message
 
-    # Detect language in ingredients
     enriched_recipe = EnrichedRecipe.from_extracted_recipe(runparams.url, recipe)
-    language = detect_language(enriched_recipe)
-    if language is None:
+    if enriched_recipe.language == Languages.Unknown:
         language_exception = f"Sproget blev ikke genkendt som et af følgende: {', '.join([lang.value for lang in Languages])}"
         log_exception_message(runparams.url, language_exception)
         return False, language_exception
-
-    translator = get_translation_chain()
-    try:
-        enriched_recipe: EnrichedRecipe = await translator.ainvoke(
-            {"recipe": enriched_recipe, "language": language}
-        )
-    except Exception as e:
-        translation_exception = "Noget gik galt under oversættelsen af opskriften."
-        log_exception_message(runparams.url, str(e))
-        log_exception_message(runparams.url, translation_exception)
-        return False, translation_exception
 
     await update_status(runparams.uid, redis_client, JobStatus.ESTIMATING_WEIGHTS)
     try:
         # Estimate weights using weight estimator
         parsed_weight_output = await get_weight_estimates(
-            logparams.verbose, enriched_recipe
+            verbose=logparams.verbose,
+            recipe=enriched_recipe,
         )
         enriched_recipe.update_with_weight_estimates(parsed_weight_output)
     except Exception as e:
@@ -85,7 +72,9 @@ async def async_estimator(
     try:
         # Estimate the kg CO2e per kg for each ingredient using RAG
         parsed_rag_emissions = await get_co2_emissions(
-            logparams.verbose, runparams.negligeble_threshold, enriched_recipe
+            verbose=logparams.verbose,
+            negligeble_threshold=runparams.negligeble_threshold,
+            recipe=enriched_recipe,
         )
         enriched_recipe.update_with_co2_per_kg_db(parsed_rag_emissions)
     except Exception as e:
@@ -129,9 +118,9 @@ if __name__ == "__main__":
     # url = "https://gourministeriet.dk/vores-favorit-bolognese/"
     # url = "https://hot-thai-kitchen.com/green-curry-new-2/"
     # url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
-    # url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
     # url = "https://www.valdemarsro.dk/wok-med-kaal-og-friterede-spejlaeg/"
-    url = "https://www.louisesmadblog.dk/bloede-tacos/"
+    # url = "https://www.louisesmadblog.dk/bloede-tacos/"
 
     start_time = time()
     runparams = RunParams(url=url)

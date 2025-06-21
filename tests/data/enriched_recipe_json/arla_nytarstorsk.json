@@ -2,115 +2,98 @@
     "title": "Nytårstorsk - bagt torsk med sennepssauce",
     "ingredients": [
         {
-            "original_name": "25 g smør",
-            "en_name": "25 g butter",
+            "name": "25 g smør",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "4 rødbeder (ca. 400 g)",
-            "en_name": "4 beets (about 400 g)",
+            "name": "4 rødbeder (ca. 400 g)",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dl mørk balsamicoeddike",
-            "en_name": "1 dl dark balsamic vinegar",
+            "name": "1 dl mørk balsamicoeddike",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 spsk sukker",
-            "en_name": "2 tablespoons sugar",
+            "name": "2 spsk sukker",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk groft salt",
-            "en_name": "1 teaspoon coarse salt",
+            "name": "1 tsk groft salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "600 g torskeloin",
-            "en_name": "600 g of codeloin",
+            "name": "600 g torskeloin",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "25 g smør",
-            "en_name": "25 g butter",
+            "name": "25 g smør",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 tsk groft salt",
-            "en_name": "0.5 teaspoon coarse salt",
+            "name": "0.5 tsk groft salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1.5 tsk hvedemel",
-            "en_name": "1.5 tsp wheat flour",
+            "name": "1.5 tsk hvedemel",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2.5 dl vand",
-            "en_name": "2.5 dl water",
+            "name": "2.5 dl vand",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "3 spsk hele gule sennepsfrø",
-            "en_name": "3 tablespoons whole yellow mustard seeds",
+            "name": "3 spsk hele gule sennepsfrø",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "6 finthakkede skalotteløg (ca. 75 g)",
-            "en_name": "6 finely chopped shallots (about 75 g)",
+            "name": "6 finthakkede skalotteløg (ca. 75 g)",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "200 g koldt smør",
-            "en_name": "200 g of cold butter",
+            "name": "200 g koldt smør",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.75 tsk groft salt",
-            "en_name": "0.75 teaspoon coarse salt",
+            "name": "0.75 tsk groft salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "friskkværnet peber",
-            "en_name": "freshly ground pepper",
+            "name": "friskkværnet peber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "friske krydderurter",
-            "en_name": "fresh herbs",
+            "name": "friske krydderurter",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "100 g stegte bacontern",
-            "en_name": "100 g of fried bacon",
+            "name": "100 g stegte bacontern",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "4 blødkogte vagtelæg",
-            "en_name": "4 soft-boiled quail egg",
+            "name": "4 blødkogte vagtelæg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": " melt the butter in a saucepan under heavy heat, but without browning. Sweat the beets for approx. 2 min. Add the vinegar, sugar and salt and cook them under heavy heat and without lid for approx. 5 min. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours and taste. Divide the cod into four equal pieces. Put the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 min. at 200 ° - Traditional oven. Lunch the beets on a rack at the bottom of the oven for the last 5 min. - Pour if necessary. A little of the moisture from the beets at the serving. Whip flour and some of the water together in a saucepan. Add the rest of the water, mustard seeds and onions. Cook the mixture under low heat and under lid for approx. 10 min. Take the pan off the heat and whisk the cold butter in little by little. Heat the sauce (it must not boil) and add salt and pepper. Taste to. Serving first beets on four plates, came the cod on it, garnish with bacon, quail eggs, herbs and serve with sauce next door.",
-    "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
+    "instructions": "Marinerede rødbeder:\nSmelt smørret i en gryde ved kraftig varme, men uden at det bruner. Svits rødbederne i ca. 2 min.\nTilsæt eddike, sukker og salt og kog dem ved kraftig varme og uden låg i ca. 5 min.\nKom rødbederne i en ovnfast skål og lad dem trække i ca. 2 timer og smag til.\n\nTorsk:\nDel torsken i fire lige store stykker. Læg stykkerne i et smurt ovnfast fad.\nPensl torskeskiverne med smør og drys med salt.\nBag fisken midt i ovnen i ca. 12 min. ved 200° - traditionel ovn.\nLun rødbederne på en rist nederst i ovnen de sidste 5 min. – hæld evt. lidt af væden fra rødbederne ved serveringen.\n\nSennepssauce:\nPisk mel og lidt af vandet sammen i en gryde.\nTilsæt resten af vandet, sennepsfrø og løg. Kog blandingen ved svag varme og under låg i ca. 10 min.\nTag gryden af varmen og pisk det kolde smør i lidt efter lidt.\nVarm saucen op (den må ikke koge) og tilsæt salt og peber. Smag til.\n\nSådan anretter du Nytårstorsk:\nAnret først rødbeder på fire tallerkner, kom torsken herpå, pynt med bacon, vagtelæg, krydderurter og server med sauce ved siden af.",
+    "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/",
+    "language": "da"
 }

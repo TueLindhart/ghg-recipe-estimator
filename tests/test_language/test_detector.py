@@ -1,22 +1,6 @@
 import pytest
 
 from food_co2_estimator.language.detector import Languages, detect_language
-from food_co2_estimator.pydantic_models.recipe_extractor import (
-    EnrichedIngredient,
-    EnrichedRecipe,
-)
-
-
-def _create_enriched_recipe(
-    ingredients: list[str], instructions: str | None, persons: int | None = 4
-):
-    return EnrichedRecipe(
-        title="Test Recipe",
-        url="http://example.com",
-        ingredients=EnrichedIngredient.from_list(ingredients),
-        instructions=instructions,
-        persons=persons,
-    )
 
 
 @pytest.mark.parametrize(
@@ -35,20 +19,18 @@ def _create_enriched_recipe(
         (
             ["berenjena", "pepino"],
             "Precalienta el horno a 180 grados. Añade sal y pimienta.",
-            None,
+            Languages.Unknown,
         ),
     ],
     ids=["english", "danish", "spanish"],
 )
 def test_detect_language(ingredients, instructions, expected_language):
-    recipe = _create_enriched_recipe(ingredients, instructions)
-    assert detect_language(recipe) == expected_language
+    assert detect_language(instructions, ingredients) == expected_language
 
 
 def test_empty_recipe_raises_exception():
-    recipe = _create_enriched_recipe([], None, None)
     with pytest.raises(Exception):
-        detect_language(recipe)
+        detect_language(None, [])
 
 
 @pytest.mark.parametrize(
@@ -68,8 +50,7 @@ def test_empty_recipe_raises_exception():
     ids=["norwegian", "swedish"],
 )
 def test_norwegian_and_swedish_as_danish(ingredients, instructions, expected_language):
-    recipe = _create_enriched_recipe(ingredients, instructions)
-    assert detect_language(recipe) == expected_language
+    assert detect_language(instructions, ingredients) == expected_language
 
 
 @pytest.mark.parametrize(
@@ -115,16 +96,14 @@ def test_norwegian_and_swedish_as_danish(ingredients, instructions, expected_lan
                 "2 cucharadas de eneldo fresco, picado",
                 "4 cucharadas de perejil fresco, picado",
             ],
-            None,
+            Languages.Unknown,
         ),
     ],
     ids=["danish", "english", "spanish"],
 )
 def test_ingredients_no_instructions(ingredients, expected_language):
-    recipe = _create_enriched_recipe(ingredients, None)
-    assert detect_language(recipe) == expected_language
+    assert detect_language(None, ingredients) == expected_language
 
 
 def test_single_word_ingredients():
-    recipe = _create_enriched_recipe(["agurk", "gulerod", "ærter"], None)
-    assert detect_language(recipe) == Languages.Danish
+    assert detect_language(None, ["agurk", "gulerod", "ærter"]) == Languages.Danish

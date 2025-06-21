@@ -5,39 +5,56 @@ from langchain_core.documents import Document
 from langchain_core.vectorstores import VectorStoreRetriever
 
 from food_co2_estimator.data.vector_store.vector_store import get_vector_store
+from food_co2_estimator.language.detector import Languages
 
 # List of number words to recognize spelled-out quantities
 NUMBER_WORDS = [
+    # English number words
     "one",
+    "en",
     "two",
+    "to",
     "three",
+    "tre",
     "four",
+    "fire",
     "five",
+    "fem",
     "six",
+    "seks",
     "seven",
+    "syv",
     "eight",
+    "otte",
     "nine",
+    "ni",
     "ten",
+    "ti",
     "eleven",
+    "elleve",
     "twelve",
+    "tolv",
     "half",
+    "halv",
     "quarter",
+    "kvart",
 ]
 
 # List of units, sorted by length in decreasing order to match longer units first
 INGREDIENT_UNITS = sorted(
     [
         # Weight Units
-        "milligram",
-        "milligrams",
-        "gram",
-        "grams",
-        "kilogram",
-        "kilograms",
-        "ounce",
-        "ounces",
+        "milligram",  # en/da
+        "milligrams",  # en plural
+        "gram",  # en/da
+        "grams",  # en plural
+        "kilogram",  # en/da
+        "kilograms",  # en plural
+        "ounce",  # en/da (no common da translation)
+        "ounces",  # en plural
         "pound",
-        "pounds",
+        "pund",
+        "pounds",  # en plural
         "mg",
         "g",
         "kg",
@@ -45,61 +62,94 @@ INGREDIENT_UNITS = sorted(
         "lb",
         "lbs",
         # Volume Units
-        "milliliter",
-        "milliliters",
-        "deciliter",
-        "deciliters",
-        "liter",
-        "liters",
-        "litre",
-        "litres",
+        "milliliter",  # en/da
+        "milliliters",  # en plural
+        "deciliter",  # en/da
+        "deciliters",  # en plural
+        "liter",  # en/da
+        "liters",  # en plural
+        "litre",  # en alt
+        "litres",  # en alt plural
         "cup",
-        "cups",
+        "kop",
+        "cups",  # en plural
         "tablespoon",
-        "tablespoons",
+        "spiseske",
+        "tablespoons",  # en plural
         "teaspoon",
-        "teaspoons",
-        "pint",
-        "pints",
-        "quart",
-        "quarts",
-        "gallon",
-        "gallons",
+        "teske",
+        "teaspoons",  # en plural
+        "pint",  # en/da
+        "pints",  # en plural
+        "quart",  # en/da
+        "quarts",  # en plural
+        "gallon",  # en/da
+        "gallons",  # en plural
         "ml",
         "l",
         "dl",
         "tbsp",
+        "spsk",
         "tbsps",
         "tsp",
+        "tsk",
+        # Danish abbreviations
+        "stk",
+        "stks",
+        "ds",
+        "dåse",
+        "dåser",
         # Miscellaneous Units
         "package",
+        "pakke",
         "packages",
+        "pakker",
         "bunch",
+        "bundt",
         "bunches",
+        "bundter",
         "pinch",
-        "pinches",
+        "nip",
+        "pinches",  # en plural
         "clove",
-        "cloves",
+        "fed",
+        "cloves",  # en plural
         "slice",
+        "skive",
         "slices",
+        "skiver",
         "bottle",
+        "flaske",
         "bottles",
+        "flasker",
         "piece",
+        "stykke",
         "pieces",
+        "stykker",
         "stick",
+        "stang",
         "sticks",
+        "stænger",
         "pkg",
         "pkgs",
         "dozen",
+        "dusine",
         "jar",
-        "can",
-        "cm",
+        "glas",
+        "can",  # en/da
+        "cm",  # en/da
         "drop",
+        "dråbe",
         "drops",
+        "dråber",
         "large",
+        "stor",
         "small",
+        "lille",
         "medium",
+        "mellem",
         "soft-boiled",
+        "smilende",
         "portion",
         # Short Units
         "t",
@@ -107,54 +157,94 @@ INGREDIENT_UNITS = sorted(
     ],
     key=len,
     reverse=True,
-)  # Sort units by length in decreasing order
+)
 
 FILLER_WORDS = [
+    # English and Danish filler words, paired
     "a",
+    "en",
     "about",
+    "omkring",
     "additional",
+    "ekstra",
     "all",
+    "alle",
     "an",
     "and",
+    "og",
     "any",
+    "enhver",
     "approximately",
+    "ca",
     "around",
     "at",
+    "ved",
     "each",
+    "hver",
     "enough",
+    "nok",
     "extra",
     "few",
+    "få",
     "for",
     "fresh",
+    "frisk",
     "full",
+    "fuld",
     "handful",
+    "håndfuld",
     "just",
+    "bare",
     "large",
+    "stor",
     "little",
+    "lille",
     "medium",
+    "mellem",
     "more",
+    "mere",
     "nearly",
+    "næsten",
     "of",
+    "af",
     "or",
+    "eller",
     "other",
+    "anden",
     "per",
     "piece",
+    "stykke",
     "pinch",
+    "nip",
     "plus",
     "portion",
     "roughly",
+    "omtrent",
     "serving",
     "several",
+    "flere",
     "small",
     "some",
+    "nogle",
     "tablespoon",
+    "spiseske",
     "teaspoon",
+    "teske",
     "the",
+    "den",
     "to",
+    "til",
     "whole",
+    "hel",
     "with",
+    "med",
     "warm",
+    "varm",
     "hot",
+    # Danish-only words (if any)
+    "store",
+    "små",
+    "styk",
 ]
 
 
@@ -180,7 +270,7 @@ def get_clean_regex():
                 (?:
                     \d+(?:[\/\-]\d+)?             # Numbers with optional fraction or range
                     | \d*\.\d+                    # Decimal numbers
-                    | \b(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\b  # Number words
+                    | \b(?:one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|en|to|tre|fire|fem|seks|syv|otte|ni|ti|elleve|tolv)\b  # Number words (EN+DA)
                 )
                 \s*                               # Optional whitespace
                 (?:{units})?                      # Optional units
@@ -198,8 +288,10 @@ def get_clean_regex():
     return regex
 
 
-def get_emission_retriever(k: int = 10, **kwargs) -> VectorStoreRetriever:
-    vector_store = get_vector_store()
+def get_emission_retriever(
+    *, k: int = 10, language: Languages, **kwargs
+) -> VectorStoreRetriever:
+    vector_store = get_vector_store(language)
     return vector_store.as_retriever(k=k, **kwargs)
 
 
@@ -228,13 +320,15 @@ def parse_retriever_output(documents: List[Document]):
     return results
 
 
-def get_emission_retriever_chain(k: int = 5, **kwargs):
-    retriever = get_emission_retriever(k=k, **kwargs)
+def get_emission_retriever_chain(
+    k: int = 5, language: Languages = Languages.English, **kwargs
+):
+    retriever = get_emission_retriever(k=k, language=language, **kwargs)
     return retriever | parse_retriever_output
 
 
-async def batch_emission_retriever(inputs: List[str]):
-    retriever_chain = get_emission_retriever_chain()
+async def batch_emission_retriever(inputs: List[str], language: Languages):
+    retriever_chain = get_emission_retriever_chain(language=language)
     cleaned_inputs = clean_ingredient_list(inputs)
     outputs = await retriever_chain.abatch(cleaned_inputs)
     if len(outputs) != len(cleaned_inputs):

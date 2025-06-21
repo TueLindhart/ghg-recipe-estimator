@@ -1,7 +1,6 @@
-from copy import copy
-
 import pytest
 
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions, CO2perKg
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedIngredient,
@@ -15,38 +14,20 @@ from food_co2_estimator.pydantic_models.weight_estimator import (
 
 
 @pytest.fixture
-def recipe_before_translation():
-    return EnrichedRecipe(
-        title="Dummy Recipe",
-        url="http://example.com",
-        ingredients=[
-            EnrichedIngredient(
-                original_name="1 dåse tomater",
-            ),
-            EnrichedIngredient(
-                original_name="2 agurker",
-            ),
-            EnrichedIngredient(
-                original_name="1 dåse tomater",
-            ),
-        ],
-        persons=2,
-        instructions="Bland ingredienserne",
-    )
-
-
-@pytest.fixture
 def recipe():
     return EnrichedRecipe(
         title="Dummy Recipe",
+        language=Languages.English,
         url="http://example.com",
         ingredients=[
             EnrichedIngredient(
-                original_name="1 dåse tomater", en_name="1 can of tomatoes"
+                name="1 dåse tomater",
             ),
-            EnrichedIngredient(original_name="2 agurker", en_name="2 cucumbers"),
             EnrichedIngredient(
-                original_name="1 dåse tomater", en_name="1 can of tomatoes"
+                name="2 agurker",
+            ),
+            EnrichedIngredient(
+                name="1 dåse tomater",
             ),
         ],
         persons=2,
@@ -54,27 +35,11 @@ def recipe():
     )
 
 
-def test_update_with_translations(recipe_before_translation: EnrichedRecipe):
-    translated_ingredients = ["1 can of tomatoes", "2 agurker", "1 can of tomatoes"]
-    instructions = "Mix ingredients"
-
-    recipe_after_translation = copy(recipe_before_translation)
-    recipe_after_translation.update_with_translations(
-        translated_ingredients, instructions
-    )
-
-    assert recipe_after_translation.instructions == instructions
-    for idx, translated_ingredient in enumerate(translated_ingredients):
-        assert (
-            recipe_after_translation.ingredients[idx].en_name == translated_ingredient
-        )
-
-
 def test_update_with_weight_estimates(recipe: EnrichedRecipe):
     weight_estimates = WeightEstimates(
         weight_estimates=[
             WeightEstimate(
-                ingredient="1 can of tomatoes",
+                ingredient="1 dåse tomater",
                 weight_calculation="1 dåse tomater = 200g",
                 weight_in_kg=0.2,
             ),
@@ -98,7 +63,7 @@ def test_update_with_co2_per_kg_db(recipe: EnrichedRecipe):
             CO2perKg(
                 closest_match_explanation="Matches 'tomatoes, canned' best.",
                 closest_match_name="tomatoes, canned",
-                ingredient="1 can of tomatoes",
+                ingredient="1 dåse tomater",
                 ingredient_id="123",
                 co2_per_kg=2.5,
                 unit="kg",
@@ -119,11 +84,8 @@ def test_update_with_co2_per_kg_db(recipe: EnrichedRecipe):
 
 
 def test_get_ingredients_lists(recipe: EnrichedRecipe):
-    en_names = recipe.get_ingredients_en_name_list()
-    orig_names = recipe.get_ingredients_orig_name_list()
-
-    assert en_names == ["1 can of tomatoes", "2 cucumbers", "1 can of tomatoes"]
-    assert orig_names == ["1 dåse tomater", "2 agurker", "1 dåse tomater"]
+    names = recipe.get_ingredient_names()
+    assert names == ["1 dåse tomater", "2 agurker", "1 dåse tomater"]
 
 
 def test_from_extracted_recipe():
@@ -144,4 +106,4 @@ def test_from_extracted_recipe():
     assert enriched.persons == 2
     assert enriched.instructions == "Mix ingredients"
     for idx, expected in enumerate(ingredients):
-        assert enriched.ingredients[idx].original_name == expected
+        assert enriched.ingredients[idx].name == expected
