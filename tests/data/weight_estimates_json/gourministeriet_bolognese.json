@@ -2,12 +2,12 @@
     "weight_estimates": [
         {
             "ingredient": "1 kg of minced beef",
-            "weight_calculation": "1 kg = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
+            "weight_calculation": "1 kg = 1000 g = 1.0 kg",
             "weight_in_kg": 1.0
         },
         {
             "ingredient": "3 large onions",
-            "weight_calculation": "1 large onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
+            "weight_calculation": "1 onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
             "weight_in_kg": 0.51
         },
         {
@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "2.5 Stalk leaf celery",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg.",
             "weight_in_kg": 0.1
         },
         {
@@ -82,8 +82,8 @@
         },
         {
             "ingredient": "Pasta as desired",
-            "weight_calculation": "Amount of Pasta as desired not specified. LLM estimate is: Pasta as desired per serving = 0.1 kg, 8 * 0.1 kg = 0.8 kg.",
-            "weight_in_kg": 0.8
+            "weight_calculation": "Amount of Pasta as desired not specified. LLM estimate is: Pasta as desired per serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg.",
+            "weight_in_kg": 1.0
         },
         {
             "ingredient": "Torn parmesan",

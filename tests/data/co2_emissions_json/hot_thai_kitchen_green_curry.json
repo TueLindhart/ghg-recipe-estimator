@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient is 'Coconut Milk', and the closest match in the database is 'coconut milk'. This is an exact match.",
+            "closest_match_explanation": "The ingredient is 'Coconut Milk'. The best match is 'coconut milk' because it is an exact match.",
             "ingredient_id": "Ra00404",
             "closest_match_name": "coconut milk",
             "ingredient": "1.75 Cups Coconut Milk",
@@ -9,7 +9,7 @@
             "co2_per_kg": 6.3
         },
         {
-            "closest_match_explanation": "The ingredient is 'Green Curry Paste', and the closest match in the database is 'green curry paste'. This is an exact match.",
+            "closest_match_explanation": "The ingredient is 'Green Curry Paste'. The best match is 'green curry paste' because it is an exact match.",
             "ingredient_id": "Ra00469",
             "closest_match_name": "green curry paste",
             "ingredient": "3.5 TBSP Green Curry Paste",
@@ -17,7 +17,7 @@
             "co2_per_kg": 2.1
         },
         {
-            "closest_match_explanation": "The ingredient is 'Chicken Stock', and the closest match in the database is 'bouillon, chicken, prepared'. This is a good match as chicken stock is a type of chicken bouillon.",
+            "closest_match_explanation": "The ingredient is 'Chicken Stock'. The best match is 'bouillon, chicken, prepared' because it is the closest match for chicken stock.",
             "ingredient_id": "Ra00213",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "1 Cup Chicken Stock",
@@ -25,7 +25,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient is 'chicken thigh'. The closest match is 'chicken, leg, flesh and skin, raw' because chicken thigh is a part of the chicken leg and 'raw' indicates the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'chicken thigh'. The best match is 'chicken, leg, flesh and skin, raw' because it is the least processed and most similar to a chicken thigh.",
             "ingredient_id": "Ra00053",
             "closest_match_name": "chicken, leg, flesh and skin, raw",
             "ingredient": "1 lb chicken thigh",
@@ -33,31 +33,31 @@
             "co2_per_kg": 2.0
         },
         {
-            "closest_match_explanation": "The ingredient is 'Palm Sugar'. While not an exact match, 'sugar, sucrose, white' is the most appropriate broader category as palm sugar is a type of sugar. It is also the highest emission factor among the sugar options, aligning with rule 5.",
-            "ingredient_id": "Ra00318",
-            "closest_match_name": "sugar, sucrose, white",
+            "closest_match_explanation": "The ingredient is 'Palm Sugar'. The best match is 'sugar, brown' because it is a type of sugar and brown sugar is the closest match available.",
+            "ingredient_id": "Ra00319",
+            "closest_match_name": "sugar, brown",
             "ingredient": "2 TBSP Palm Sugar",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.7
+            "co2_per_kg": 2.4
         },
         {
-            "closest_match_explanation": "The ingredient is 'FISH SAUCE'. There is no direct match. 'fish balls, canned' is not a good match as fish sauce is a liquid condiment and fish balls are a solid food. 'soya sauce' and 'chili sauce' are also not good matches as they are not fish-based. Therefore, there is no suitable match.",
-            "ingredient_id": "None",
-            "closest_match_name": "No match",
+            "closest_match_explanation": "The ingredient is 'FISH SAUCE'. There is no direct match. 'soya sauce' is the closest match as it is a similar type of condiment, but it is not a perfect match. However, it is the most reasonable option among the choices.",
+            "ingredient_id": "Ra00373",
+            "closest_match_name": "soya sauce",
             "ingredient": "1.5 TBSP FISH SAUCE",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": null
+            "co2_per_kg": 1.9
         },
         {
-            "closest_match_explanation": "The ingredient is 'Bamboo Shoots Strips' and it is specified as 'canned'. The closest match in the database is 'bamboo shoots, canned, nonsalted', which is an exact match in terms of processing and ingredient.",
+            "closest_match_explanation": "The ingredient is 'BAMBOO Shoots Strips'. The best match is 'bamboo shoots, canned, nonsalted' because it is an exact match and specifies 'canned' which aligns with the 'CAN' in the ingredient name.",
             "ingredient_id": "Ra00365",
             "closest_match_name": "bamboo shoots, canned, nonsalted",
-            "ingredient": "1 CAN (550 ml) Bamboo Shoots Strips",
+            "ingredient": "1 550-ML CAN BAMBOO Shoots Strips",
             "unit": "kg CO2e per kg",
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "The ingredient is 'Thai Basil Leaves'. The closest match is 'basil, fresh' as 'Thai Basil Leaves' implies fresh basil, and 'fresh' is the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'Thai Basil Leaves'. The best match is 'basil, fresh' because it is the most direct and least processed form of basil available.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "1 Cup Thai Basil Leaves",
@@ -65,7 +65,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient is 'Red Bell Pepper'. The closest match is 'pepper, sweet, red, raw' as it is an exact match for the type and color of pepper, and 'raw' indicates the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'Red Bell Pepper'. The best match is 'pepper, sweet, red, raw' because it is an exact match for a raw red bell pepper.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "0.25 Red Bell Pepper",
@@ -73,7 +73,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient is 'Jasmine Rice'. The closest match is 'rice, parboiled, raw' as Jasmine rice is a type of rice, and 'raw' indicates the least processed option, aligning with rule 4. It also has the highest emission factor among the rice options, aligning with rule 5.",
+            "closest_match_explanation": "The ingredient is 'Jasmine Rice'. The best match is 'rice, parboiled, raw' because it is the most general and least processed form of rice available.",
             "ingredient_id": "Ra00300",
             "closest_match_name": "rice, parboiled, raw",
             "ingredient": "Jasmine Rice",
@@ -81,15 +81,15 @@
             "co2_per_kg": 5.1
         },
         {
-            "closest_match_explanation": "The ingredient is 'coriander seeds'. There is no direct match for coriander seeds. 'curry powder' is not a good match as it is a blend of spices, not just coriander. The other options are seeds but not coriander. Therefore, there is no suitable match.",
-            "ingredient_id": "None",
+            "closest_match_explanation": "The ingredient is 'coriander seeds'. There is no direct match for coriander seeds. The available options are not suitable as they are different types of seeds or spices. Therefore, no suitable match can be found.",
+            "ingredient_id": "",
             "closest_match_name": "No match",
             "ingredient": "2 tsp coriander seeds",
             "unit": "kg CO2e per kg",
             "co2_per_kg": null
         },
         {
-            "closest_match_explanation": "The ingredient is 'Green Thai Chilies'. The closest match is 'pepper, hot chili, raw' as green Thai chilies are a type of hot chili pepper, and 'raw' indicates the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'Green Thai Chilies'. The best match is 'pepper, hot chili, raw' because green Thai chilies are a type of raw hot chili pepper.",
             "ingredient_id": "Ra00009",
             "closest_match_name": "pepper, hot chili, raw",
             "ingredient": "15 Green Thai Chilies",
@@ -97,7 +97,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient is 'Thai Basil Leaves'. The closest match is 'basil, fresh' as 'Thai Basil Leaves' implies fresh basil, and 'fresh' is the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'Thai Basil Leaves'. The best match is 'basil, fresh' because it is the most direct and least processed form of basil available.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "15 Thai Basil Leaves",
@@ -105,15 +105,15 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient is 'lemongrass'. There is no direct match for lemongrass. 'lemon, raw' is not a good match as lemongrass is a herb and lemon is a fruit. The other options are herbs but not lemongrass. Therefore, there is no suitable match.",
-            "ingredient_id": "None",
-            "closest_match_name": "No match",
+            "closest_match_explanation": "The ingredient is 'lemongrass'. There is no direct match for lemongrass. 'lemon, raw' is the closest available option as it is a citrus fruit, but it is not a perfect match. However, it is the most reasonable option among the choices.",
+            "ingredient_id": "Ra00328",
+            "closest_match_name": "lemon, raw",
             "ingredient": "3 tbsp lemongrass",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": null
+            "co2_per_kg": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient is 'galangal'. The closest match is 'ginger root, raw' because galangal is a root similar to ginger, and 'raw' indicates the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'galangal'. The best match is 'ginger root, raw' because galangal is a root similar to ginger, and 'ginger root, raw' is the closest available option.",
             "ingredient_id": "Ra00261",
             "closest_match_name": "ginger root, raw",
             "ingredient": "1 tbsp galangal",
@@ -121,7 +121,7 @@
             "co2_per_kg": 1.3
         },
         {
-            "closest_match_explanation": "The ingredient is 'makrut lime zest'. The closest match is 'lime, raw' as makrut lime zest comes from a lime, and 'raw' indicates the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'makrut lime zest'. The best match is 'lime, raw' because makrut lime zest comes from a raw lime.",
             "ingredient_id": "Ra00332",
             "closest_match_name": "lime, raw",
             "ingredient": "2 tsp makrut lime zest",
@@ -129,7 +129,7 @@
             "co2_per_kg": 0.6
         },
         {
-            "closest_match_explanation": "The ingredient is 'Cilantro Roots or 4 Big Cilantro Stems'. The closest match is 'parsley, raw' as cilantro is a herb similar to parsley, and 'raw' indicates the least processed option, aligning with rule 4. 'parsley root, raw' and 'celeriac, celery root, raw' are not good matches as cilantro roots are not parsley roots or celery roots.",
+            "closest_match_explanation": "The ingredient is 'Cilantro Roots or 4 Big Cilantro Stems'. The best match is 'parsley, raw' because cilantro is a type of herb, and parsley is the closest available raw herb.",
             "ingredient_id": "Ra00134",
             "closest_match_name": "parsley, raw",
             "ingredient": "2 Cilantro Roots or 4 Big Cilantro Stems",
@@ -137,7 +137,7 @@
             "co2_per_kg": 0.5
         },
         {
-            "closest_match_explanation": "The ingredient is 'Shallots'. The closest match is 'red onion' as shallots are a type of onion, and 'red onion' is the most similar option available. It also has the highest emission factor among the raw onion options, aligning with rule 5.",
+            "closest_match_explanation": "The ingredient is 'Shallots'. The best match is 'red onion' because shallots are a type of onion, and red onion is the closest available option.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "red onion",
             "ingredient": "3 tbsp Shallots",
@@ -145,7 +145,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "The ingredient is 'Garlic'. The closest match is 'garlic, raw' as it is an exact match for the ingredient, and 'raw' indicates the least processed option, aligning with rule 4.",
+            "closest_match_explanation": "The ingredient is 'Garlic'. The best match is 'garlic, raw' because it is the least processed form of garlic available.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 tbsp Garlic",

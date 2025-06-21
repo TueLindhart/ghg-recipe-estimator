@@ -17,12 +17,12 @@
         },
         {
             "ingredient": "2 tablespoons sugar",
-            "weight_calculation": "1 tablespoon = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "1 teaspoon coarse salt",
-            "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -37,12 +37,12 @@
         },
         {
             "ingredient": "0.5 teaspoon coarse salt",
-            "weight_calculation": "1 teaspoon = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "1.5 tsp wheat flour",
-            "weight_calculation": "1 tsp = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
             "weight_in_kg": 0.0075
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "ingredient": "3 tablespoons whole yellow mustard seeds",
-            "weight_calculation": "1 tablespoon = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "weight_in_kg": 0.045
         },
         {
@@ -67,7 +67,7 @@
         },
         {
             "ingredient": "0.75 teaspoon coarse salt",
-            "weight_calculation": "1 teaspoon = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "weight_calculation": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
             "weight_in_kg": 0.00375
         },
         {
@@ -87,7 +87,7 @@
         },
         {
             "ingredient": "4 soft-boiled quail egg",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 soft-boiled quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
             "weight_in_kg": 0.04
         }
     ]

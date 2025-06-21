@@ -32,8 +32,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "25 g koncentreret tomatpuré",
-            "en_name": "25 g concentrated tomato puree",
+            "original_name": "25 g tomatpuré",
+            "en_name": "25 g tomato puree",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -44,8 +44,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 tsk tørret timian",
-            "en_name": "0.5 tsp dried thyme",
+            "original_name": "0.5 tsk timian",
+            "en_name": "0.5 tsp thyme",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -86,8 +86,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 stk burrata",
-            "en_name": "1 piece burrata",
+            "original_name": "1 burrata",
+            "en_name": "1 burrata",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
@@ -104,8 +104,8 @@
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 håndfuld frisk basilikum",
-            "en_name": "0.5 Handful of fresh basil",
+            "original_name": "0.5 håndfuld basilikum",
+            "en_name": "0.5 Handful of basil",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
