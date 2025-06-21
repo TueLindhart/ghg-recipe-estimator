@@ -50,7 +50,7 @@ def test_empty_recipe_raises_exception():
     ids=["norwegian", "swedish"],
 )
 def test_norwegian_and_swedish_as_danish(ingredients, instructions, expected_language):
-    assert detect_language(ingredients, instructions) == expected_language
+    assert detect_language(instructions, ingredients) == expected_language
 
 
 @pytest.mark.parametrize(
