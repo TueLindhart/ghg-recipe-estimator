@@ -26,7 +26,7 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 large handful of fresh basil",
+            "ingredient": "1 large handful of basil",
             "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },

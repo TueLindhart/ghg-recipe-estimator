@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 tbsp olive oil' is directly matched to 'olive oil' as it is the most accurate and least processed option available. This aligns with rule 4, which prioritizes the least processed option when no processing information is provided for the ingredient.",
+            "closest_match_explanation": "Rule 4: The ingredient '1 tbsp olive oil' is a type of oil. The closest match is 'olive oil' because it is the most direct and least processed form of olive oil available in the database. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "1 tbsp olive oil",
@@ -9,7 +9,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 lb Skinless, Boneless Chicken Breast' is best matched to 'chicken, breast, flesh and skin, raw'. This is the most appropriate match as it represents the raw, unprocessed form of chicken breast, aligning with rule 4 which favors the least processed option when no processing is specified.",
+            "closest_match_explanation": "Rule 4: The ingredient '1 lb Skinless, Boneless Chicken Breast' is a raw chicken product. The closest match is 'chicken, breast, flesh and skin, raw' because it is the least processed and most direct match for raw chicken breast. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00055",
             "closest_match_name": "chicken, breast, flesh and skin, raw",
             "ingredient": "1 lb Skinless, Boneless Chicken Breast",
@@ -17,7 +17,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 Medium Carrots' is best matched to 'carrot, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+            "closest_match_explanation": "Rule 4: The ingredient '2 Medium Carrots' is a raw vegetable. The closest match is 'carrot, raw' because it is the least processed form of carrot available in the database.",
             "ingredient_id": "Ra00257",
             "closest_match_name": "carrot, raw",
             "ingredient": "2 Medium Carrots",
@@ -25,7 +25,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '2 Stalks Celery' is best matched to 'celery, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+            "closest_match_explanation": "Rule 4: The ingredient '2 Stalks Celery' is a raw vegetable. The closest match is 'celery, raw' because it is the least processed form of celery available in the database.",
             "ingredient_id": "Ra00153",
             "closest_match_name": "celery, raw",
             "ingredient": "2 Stalks Celery",
@@ -33,7 +33,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 Red Bell Pepper' is best matched to 'pepper, sweet, red, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+            "closest_match_explanation": "Rule 4: The ingredient '1 Red Bell Pepper' is a raw vegetable. The closest match is 'pepper, sweet, red, raw' because it is the least processed and most direct match for a raw red bell pepper. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "1 Red Bell Pepper",
@@ -41,7 +41,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient '1 Bunch Scallions' is best matched to 'onions, spring, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen.",
+            "closest_match_explanation": "Rule 4: The ingredient '1 Bunch Scallions' is a raw vegetable. The closest match is 'onions, spring, raw' because scallions are a type of spring onion and this is the least processed option. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00267",
             "closest_match_name": "onions, spring, raw",
             "ingredient": "1 Bunch Scallions",
@@ -49,7 +49,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "The ingredient '1 (15 ounces) Can Diced Tomatoes with Green Chiles' is best matched to 'tomato, peeled, canned'. This aligns with rule 4, which prioritizes matching based on the amount of processing. Since the ingredient is 'canned', 'tomato, peeled, canned' is the most appropriate match.",
+            "closest_match_explanation": "Rule 4: The ingredient '1 (15 ounces) Can Diced Tomatoes with Green Chiles' is a canned tomato product. The closest match is 'tomato, peeled, canned' because it is a canned tomato product, which aligns with the processing of the ingredient. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
@@ -57,7 +57,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient '2 (15 ounces) Cans Black Beans' is best matched to 'black beans'. This aligns with rule 4, which prioritizes matching based on the amount of processing. Since the ingredient is 'canned', 'black beans' is the most appropriate match.",
+            "closest_match_explanation": "Rule 4: The ingredient '2 (15 ounces) Cans Black Beans' is a canned bean product. The closest match is 'black beans' because it is the most direct match for black beans. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
             "ingredient": "2 (15 ounces) Cans Black Beans",
@@ -65,7 +65,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '4 tbsp chili powder' is best matched to 'curry powder'. While not an exact match, 'curry powder' is the closest broader category available for a powdered spice, aligning with rule 2. Rule 5 is then applied, choosing 'curry powder' due to its higher emission factor among similar processed spice options.",
+            "closest_match_explanation": "Rule 2: The ingredient '4 tbsp chili powder' is a spice. The closest match is 'curry powder' because it is a broader category for a powdered spice, and there is no direct match for chili powder. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00304",
             "closest_match_name": "curry powder",
             "ingredient": "4 tbsp chili powder",
@@ -73,7 +73,7 @@
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_explanation": "The ingredient '1 tbsp ground cumin' is best matched to 'curry powder'. While not an exact match, 'curry powder' is the closest broader category available for a ground spice, aligning with rule 2. Rule 5 is then applied, choosing 'curry powder' due to its higher emission factor among similar processed spice options.",
+            "closest_match_explanation": "Rule 2: The ingredient '1 tbsp ground cumin' is a spice. The closest match is 'curry powder' because it is a broader category for a ground spice, and there is no direct match for ground cumin. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00304",
             "closest_match_name": "curry powder",
             "ingredient": "1 tbsp ground cumin",
@@ -81,23 +81,23 @@
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_explanation": "The ingredient '2 tsp granulated garlic' is best matched to 'garlic, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen. 'Granulated' refers to a form of processing, but 'garlic, raw' is the closest available option that represents the core ingredient.",
-            "ingredient_id": "Ra00136",
-            "closest_match_name": "garlic, raw",
+            "closest_match_explanation": "Rule 4: The ingredient '2 tsp granulated garlic' is a processed form of garlic. The closest match is 'garlic in oil' because it represents a processed form of garlic, similar to granulated garlic. Rule 5: It also has the highest emission factor among the viable options.",
+            "ingredient_id": "Ra00443",
+            "closest_match_name": "garlic in oil",
             "ingredient": "2 tsp granulated garlic",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 2.5
         },
         {
-            "closest_match_explanation": "The ingredient '2 tsp onion powder' is best matched to 'onion, raw'. This aligns with rule 4, which states that if no processing is provided for the ingredient, the least processed or most raw option should be chosen. 'Powder' refers to a form of processing, but 'onion, raw' is the closest available option that represents the core ingredient.",
-            "ingredient_id": "Ra00266",
-            "closest_match_name": "onion, raw",
+            "closest_match_explanation": "Rule 4: The ingredient '2 tsp onion powder' is a processed form of onion. The closest match is 'onions, chopped and deepfried' because it represents a processed form of onion, similar to onion powder. Rule 5: It also has the highest emission factor among the viable options.",
+            "ingredient_id": "Ra00351",
+            "closest_match_name": "onions, chopped and deepfried",
             "ingredient": "2 tsp onion powder",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 4.2
         },
         {
-            "closest_match_explanation": "The ingredient 'Ground Black Pepper' is best matched to 'pepper, black'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "Rule 4: The ingredient 'Ground Black Pepper' is a processed spice. The closest match is 'pepper, black' because it is the most direct match for ground black pepper. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "Ground Black Pepper",
@@ -105,7 +105,7 @@
             "co2_per_kg": 5.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 (8.5 ounces) Package Dry Corn Muffin Mix' is best matched to 'corn flour'. This aligns with rule 2, which allows for matching to a broader category when an exact match is not available. 'Corn flour' is a primary component of corn muffin mix and represents the closest available option.",
+            "closest_match_explanation": "Rule 2: The ingredient '1 (8.5 ounces) Package Dry Corn Muffin Mix' is a mix primarily made from corn flour. The closest match is 'corn flour' because it is the main component of the mix and represents a broader category for the ingredient. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00107",
             "closest_match_name": "corn flour",
             "ingredient": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
@@ -113,7 +113,7 @@
             "co2_per_kg": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient '0.33 Cup Milk' is best matched to 'milk'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "Rule 4: The ingredient '0.33 Cup Milk' is a dairy product. The closest match is 'milk' because it is the most direct and least processed form of milk available in the database. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00342",
             "closest_match_name": "milk",
             "ingredient": "0.33 Cup Milk",
@@ -121,7 +121,7 @@
             "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 Egg' is best matched to 'eggs'. This is the most direct and accurate match available, aligning with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "Rule 4: The ingredient '1 Egg' is a raw egg. The closest match is 'eggs' because it is the most direct and least processed form of egg available in the database. Rule 5: It also has the highest emission factor among the viable options.",
             "ingredient_id": "Ra00108",
             "closest_match_name": "eggs",
             "ingredient": "1 Egg",

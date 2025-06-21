@@ -6,7 +6,7 @@
             "en_name": "1 tsp steady cumin",
             "weight_estimate": {
                 "ingredient": "1 tsp steady cumin",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -16,7 +16,7 @@
             "en_name": "1 teaspoon of cinnamon",
             "weight_estimate": {
                 "ingredient": "1 teaspoon of cinnamon",
-                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -26,7 +26,7 @@
             "en_name": "1 teaspoon smoked paprika",
             "weight_estimate": {
                 "ingredient": "1 teaspoon smoked paprika",
-                "weight_calculation": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -36,7 +36,7 @@
             "en_name": "1 tsp steady coriander",
             "weight_estimate": {
                 "ingredient": "1 tsp steady coriander",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -50,7 +50,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -63,11 +63,11 @@
             "en_name": "1 tablespoon olive oil",
             "weight_estimate": {
                 "ingredient": "1 tablespoon olive oil",
-                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is an exact match for 'olive oil' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is best matched with 'olive oil' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "1 tablespoon olive oil",
@@ -80,11 +80,11 @@
             "en_name": "1 onion",
             "weight_estimate": {
                 "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -97,7 +97,7 @@
             "en_name": "1 tsp wheat flour",
             "weight_estimate": {
                 "ingredient": "1 tsp wheat flour",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -111,12 +111,12 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 dl vegetable broth' is best matched with 'bouillon, chicken, prepared' as it is the most appropriate broader category for a vegetable broth, given the available options. While not an exact match, it represents a prepared broth, which is the closest in processing and use. It is also the option with the highest emission factor among the prepared broths, following the tie-breaker rule.",
-                "ingredient_id": "Ra00213",
-                "closest_match_name": "bouillon, chicken, prepared",
+                "closest_match_explanation": "The ingredient '1 dl vegetable broth' is best matched with 'bouillon, beef, concentrated, cube' because it is the most processed option and has the highest emission factor among the available broth options, aligning with Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
+                "ingredient_id": "Ra00220",
+                "closest_match_name": "bouillon, beef, concentrated, cube",
                 "ingredient": "1 dl vegetable broth",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.4
+                "co2_per_kg": 9.9
             }
         },
         {
@@ -128,7 +128,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is an exact match for 'tomato, peeled, canned' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is best matched with 'tomato, peeled, canned' as it is an exact match for a canned and processed tomato product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "1 can of chopped tomatoes",
@@ -141,11 +141,11 @@
             "en_name": "1 tablespoon olive oil",
             "weight_estimate": {
                 "ingredient": "1 tablespoon olive oil",
-                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is an exact match for 'olive oil' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is best matched with 'olive oil' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olive oil",
                 "ingredient": "1 tablespoon olive oil",
@@ -158,7 +158,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": null
@@ -168,11 +168,11 @@
             "en_name": "Black pepper",
             "weight_estimate": {
                 "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is an exact match for 'pepper, black' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient 'Black pepper' is best matched with 'pepper, black' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
                 "ingredient": "Black pepper",
@@ -185,11 +185,11 @@
             "en_name": "1 onion",
             "weight_estimate": {
                 "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "onion, raw",
                 "ingredient": "1 onion",
@@ -206,7 +206,7 @@
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 cloves of garlic",
@@ -223,7 +223,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Squash' is an exact match for 'squash, raw' in the database. This aligns with the rule to prioritize exact matches and choose the least processed option when no processing is specified.",
+                "closest_match_explanation": "The ingredient '1 Squash' is best matched with 'squash, raw' because it is the least processed form of squash available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash, raw",
                 "ingredient": "1 Squash",
@@ -240,7 +240,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is an exact match for 'tomato, peeled, canned' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is best matched with 'tomato, peeled, canned' as it is an exact match for a canned and processed tomato product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomato, peeled, canned",
                 "ingredient": "1 can of chopped tomatoes",
@@ -253,7 +253,7 @@
             "en_name": "1 tsp steady cumin",
             "weight_estimate": {
                 "ingredient": "1 tsp steady cumin",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -263,7 +263,7 @@
             "en_name": "1 tsp steady coriander",
             "weight_estimate": {
                 "ingredient": "1 tsp steady coriander",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
@@ -277,7 +277,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of black beans' is an exact match for 'black beans' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient '1 can of black beans' is best matched with 'black beans' as it is an exact match for a canned bean product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00439",
                 "closest_match_name": "black beans",
                 "ingredient": "1 can of black beans",
@@ -294,7 +294,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of kidney beans' is an exact match for 'kidney beans' in the database. This aligns with the rule to prioritize exact matches and consider the processing level (canned).",
+                "closest_match_explanation": "The ingredient '1 can of kidney beans' is best matched with 'kidney beans' as it is an exact match for a canned bean product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney beans",
                 "ingredient": "1 can of kidney beans",
@@ -311,7 +311,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '300 g of corn' is best matched with 'corn cob' as it represents the least processed form of corn available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient '300 g of corn' is best matched with 'corn cob' because it is the least processed form of corn available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00417",
                 "closest_match_name": "corn cob",
                 "ingredient": "300 g of corn",
@@ -328,7 +328,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '8 Tortilla's pancakes' is best matched with 'tortilla bread, wheat' as it is the closest available option for tortillas, which are a type of pancake/flatbread. This aligns with the rule to use a broader category if an exact match is not available.",
+                "closest_match_explanation": "The ingredient '8 Tortilla's pancakes' is best matched with 'tortilla bread, wheat' as it is the closest and least processed option for tortillas, aligning with Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00401",
                 "closest_match_name": "tortilla bread, wheat",
                 "ingredient": "8 Tortilla's pancakes",
@@ -345,7 +345,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '150 g cheddar cheese' does not have an exact match in the database. Among the available options, 'blue cheese' is the most appropriate broader category for a type of cheese, and it has the highest emission factor among the cheese options, aligning with the tie-breaker rule.",
+                "closest_match_explanation": "The ingredient '150 g cheddar cheese' is best matched with 'blue cheese' because it is the closest available cheese option and has a higher emission factor, aligning with Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
                 "ingredient_id": "Ra00494",
                 "closest_match_name": "blue cheese",
                 "ingredient": "150 g cheddar cheese",
@@ -362,7 +362,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 handful of fresh coriander' does not have an exact match in the database. Among the available options, 'parsley, raw' and 'dill, raw' are both raw herbs with similar processing levels. Following the tie-breaker rule, both have the same emission factor, so 'parsley, raw' is chosen as a representative raw herb.",
+                "closest_match_explanation": "The ingredient '1 handful of fresh coriander' is best matched with 'parsley, raw' as it is the closest raw herb option available, aligning with Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) and Rule 4 (Consider the Amount of Processing Performed).",
                 "ingredient_id": "Ra00134",
                 "closest_match_name": "parsley, raw",
                 "ingredient": "1 handful of fresh coriander",
@@ -375,7 +375,7 @@
             "en_name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: salt per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": null
@@ -385,11 +385,11 @@
             "en_name": "Black pepper",
             "weight_estimate": {
                 "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
+                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
                 "weight_in_kg": 0.02
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is an exact match for 'pepper, black' in the database. This aligns with the rule to prioritize exact matches when available.",
+                "closest_match_explanation": "The ingredient 'Black pepper' is best matched with 'pepper, black' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "pepper, black",
                 "ingredient": "Black pepper",
@@ -402,11 +402,11 @@
             "en_name": "1 tablespoon butter",
             "weight_estimate": {
                 "ingredient": "1 tablespoon butter",
-                "weight_calculation": "1 tablespoon = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon butter' is best matched with 'butter, salt added' as it is the most direct and least processed form of butter available in the database, aligning with the rule to choose the least processed option when no processing is specified for the ingredient.",
+                "closest_match_explanation": "The ingredient '1 tablespoon butter' is best matched with 'butter, salt added' as it is an exact match for butter, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
                 "ingredient_id": "Ra00037",
                 "closest_match_name": "butter, salt added",
                 "ingredient": "1 tablespoon butter",

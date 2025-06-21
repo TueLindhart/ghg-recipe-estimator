@@ -76,7 +76,7 @@
             "co2_per_kg": 1.9,
             "co2_kg": 0.09,
             "calculation_notes": "0.04 kg * 1.9 kg CO2e/kg = 0.09 kg CO2e",
-            "weight_estimation_notes": "1 tablespoon = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "weight_estimation_notes": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "co2_emission_notes": "Best match in CO2 database is: mustard, yellow, ready made"
         },
         {
@@ -96,7 +96,7 @@
             "co2_per_kg": 2.7,
             "co2_kg": 0.08,
             "calculation_notes": "0.03 kg * 2.7 kg CO2e/kg = 0.08 kg CO2e",
-            "weight_estimation_notes": "1 tablespoon = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_estimation_notes": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "co2_emission_notes": "Best match in CO2 database is: sugar, sucrose, white"
         },
         {
@@ -126,7 +126,7 @@
             "co2_per_kg": 1.0,
             "co2_kg": 0.04,
             "calculation_notes": "0.04 kg * 1.0 kg CO2e/kg = 0.04 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 soft-boiled quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
             "co2_emission_notes": "Best match in CO2 database is: eggs"
         },
         {
@@ -146,7 +146,7 @@
             "co2_per_kg": 1.2,
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 1.2 kg CO2e/kg = 0.01 kg CO2e",
-            "weight_estimation_notes": "1 tsp = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+            "weight_estimation_notes": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
             "co2_emission_notes": "Best match in CO2 database is: wheat, flour, wholemeal"
         },
         {
@@ -156,7 +156,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
-            "weight_estimation_notes": "1 teaspoon = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_estimation_notes": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "co2_emission_notes": "Weight on 0.005 kg is negligible"
         },
         {
@@ -166,7 +166,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
-            "weight_estimation_notes": "1 teaspoon = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_estimation_notes": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "co2_emission_notes": "Weight on 0.003 kg is negligible"
         },
         {
@@ -186,7 +186,7 @@
             "co2_per_kg": null,
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
-            "weight_estimation_notes": "1 teaspoon = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "weight_estimation_notes": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
             "co2_emission_notes": "Weight on 0.004 kg is negligible"
         }
     ]

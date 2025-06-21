@@ -1,7 +1,7 @@
 {
     "title": "Vores favorit bolognese",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/",
-    "total_co2_kg": 56.4,
+    "total_co2_kg": 56.9,
     "number_of_persons": 8,
     "co2_per_person_kg": 7.1,
     "avg_meal_emission_per_person_range_kg": [
@@ -16,17 +16,17 @@
             "co2_per_kg": 50.6,
             "co2_kg": 50.6,
             "calculation_notes": "1.0 kg * 50.6 kg CO2e/kg = 50.6 kg CO2e",
-            "weight_estimation_notes": "1 kg = 1000 g, 1 * 1000 g = 1000 g = 1.0 kg",
+            "weight_estimation_notes": "1 kg = 1000 g = 1.0 kg",
             "co2_emission_notes": "Best match in CO2 database is: beef, mince, 5-10% fat, raw"
         },
         {
             "name": "Pasta efter ønske",
             "ingredient_id": "Ra00234",
-            "weight_kg": 0.8,
+            "weight_kg": 1.0,
             "co2_per_kg": 2.1,
-            "co2_kg": 1.68,
-            "calculation_notes": "0.8 kg * 2.1 kg CO2e/kg = 1.68 kg CO2e",
-            "weight_estimation_notes": "Amount of Pasta as desired not specified. LLM estimate is: Pasta as desired per serving = 0.1 kg, 8 * 0.1 kg = 0.8 kg.",
+            "co2_kg": 2.1,
+            "calculation_notes": "1.0 kg * 2.1 kg CO2e/kg = 2.1 kg CO2e",
+            "weight_estimation_notes": "Amount of Pasta as desired not specified. LLM estimate is: Pasta as desired per serving = 0.125 kg, 8 * 0.125 kg = 1.0 kg.",
             "co2_emission_notes": "Best match in CO2 database is: pasta, raw"
         },
         {
@@ -96,7 +96,7 @@
             "co2_per_kg": 0.3,
             "co2_kg": 0.15,
             "calculation_notes": "0.51 kg * 0.3 kg CO2e/kg = 0.15 kg CO2e",
-            "weight_estimation_notes": "1 large onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
+            "weight_estimation_notes": "1 onion = 170 g, 3 * 170 g = 510 g = 0.51 kg",
             "co2_emission_notes": "Best match in CO2 database is: onion, raw"
         },
         {
@@ -116,7 +116,7 @@
             "co2_per_kg": 0.4,
             "co2_kg": 0.04,
             "calculation_notes": "0.1 kg * 0.4 kg CO2e/kg = 0.04 kg CO2e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 Stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg.",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 stalk leaf celery = 40 g, 2.5 * 40 g = 100 g = 0.1 kg.",
             "co2_emission_notes": "Best match in CO2 database is: celery, raw"
         },
         {

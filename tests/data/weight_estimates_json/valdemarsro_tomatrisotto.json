@@ -17,7 +17,7 @@
         },
         {
             "ingredient": "2 dl white wine",
-            "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
+            "weight_calculation": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
@@ -26,17 +26,17 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "25 g concentrated tomato puree",
+            "ingredient": "25 g tomato puree",
             "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "9 dl vegetable broth",
-            "weight_calculation": "1 dl = 0.1 kg, 9 * 0.1 kg = 0.9 kg",
+            "weight_calculation": "1 dl = 100 g, 9 * 100 g = 900 g = 0.9 kg",
             "weight_in_kg": 0.9
         },
         {
-            "ingredient": "0.5 tsp dried thyme",
+            "ingredient": "0.5 tsp thyme",
             "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
@@ -71,8 +71,8 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "1 piece burrata",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 piece burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
+            "ingredient": "1 burrata",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
             "weight_in_kg": 0.125
         },
         {
@@ -86,8 +86,8 @@
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "0.5 Handful of fresh basil",
-            "weight_calculation": "1 Handful of herbs = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
+            "ingredient": "0.5 Handful of basil",
+            "weight_calculation": "1 Handful of herbs (basil, oregano etc.) = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "weight_in_kg": 0.0125
         }
     ]

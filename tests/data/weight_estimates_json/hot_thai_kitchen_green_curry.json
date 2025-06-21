@@ -2,17 +2,17 @@
     "weight_estimates": [
         {
             "ingredient": "1.75 Cups Coconut Milk",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup coconut milk = 240 g, 1.75 * 240 g = 420 g = 0.42 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup = 240 g, 1.75 * 240 g = 420 g = 0.42 kg.",
             "weight_in_kg": 0.42
         },
         {
             "ingredient": "3.5 TBSP Green Curry Paste",
-            "weight_calculation": "1 tbsp = 15 g, 3.5 * 15 g = 52.5 g = 0.0525 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 3.5 * 15 g = 52.5 g = 0.0525 kg",
             "weight_in_kg": 0.0525
         },
         {
             "ingredient": "1 Cup Chicken Stock",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup chicken stock = 240 g, 1 * 240 g = 240 g = 0.24 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup = 240 g, 1 * 240 g = 240 g = 0.24 kg.",
             "weight_in_kg": 0.24
         },
         {
@@ -22,27 +22,27 @@
         },
         {
             "ingredient": "2 TBSP Palm Sugar",
-            "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "1.5 TBSP FISH SAUCE",
-            "weight_calculation": "1 tbsp = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
             "weight_in_kg": 0.0225
         },
         {
             "ingredient": "4 Makrut Lime Leaves",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 makrut lime leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg.",
             "weight_in_kg": 0.004
         },
         {
-            "ingredient": "1 CAN (550 ml) Bamboo Shoots Strips",
-            "weight_calculation": "1 can = 550 ml = 550 g, 1 * 550 g = 550 g = 0.55 kg",
-            "weight_in_kg": 0.55
+            "ingredient": "1 550-ML CAN BAMBOO Shoots Strips",
+            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_in_kg": 0.4
         },
         {
             "ingredient": "1 Cup Thai Basil Leaves",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup thai basil leaves = 25 g, 1 * 25 g = 25 g = 0.025 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cup = 25 g, 1 * 25 g = 25 g = 0.025 kg.",
             "weight_in_kg": 0.025
         },
         {
@@ -57,67 +57,67 @@
         },
         {
             "ingredient": "1 tsp cumin seeds",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "2 tsp coriander seeds",
-            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "weight_calculation": "1 tsp. = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "0.5 TSP White PepperCorns",
-            "weight_calculation": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "15 Green Thai Chilies",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 green thai chili = 4 g, 15 * 4 g = 60 g = 0.06 kg.",
-            "weight_in_kg": 0.06
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili = 5 g, 15 * 5 g = 75 g = 0.075 kg.",
+            "weight_in_kg": 0.075
         },
         {
             "ingredient": "1 TSP COARSE SALT",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
             "ingredient": "15 Thai Basil Leaves",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 thai basil leaf = 1 g, 15 * 1 g = 15 g = 0.015 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 leaf = 1 g, 15 * 1 g = 15 g = 0.015 kg.",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "3 tbsp lemongrass",
-            "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "weight_in_kg": 0.045
         },
         {
             "ingredient": "1 tbsp galangal",
-            "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
             "ingredient": "2 tsp makrut lime zest",
-            "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
+            "weight_calculation": "1 tsp. = 5 g, 2 * 5 g = 10 g = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "2 Cilantro Roots or 4 Big Cilantro Stems",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 cilantro root = 10 g, 2 * 10 g = 20 g = 0.02 kg.",
+            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 root = 10 g, 2 * 10 g = 20 g = 0.02 kg.",
             "weight_in_kg": 0.02
         },
         {
             "ingredient": "3 tbsp Shallots",
-            "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "weight_in_kg": 0.045
         },
         {
             "ingredient": "2 tbsp Garlic",
-            "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "1 tsp fermented Shrimp paste (Gapi)",
-            "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         }
     ]

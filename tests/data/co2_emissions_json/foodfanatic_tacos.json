@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 small onion' is best matched with 'onion, raw' because it is the least processed option available, aligning with rule 4. 'Red onion' and 'onions, spring, raw' are also raw but 'onion, raw' is a more general category. 'Onions, chopped and deepfried' is more processed.",
+            "closest_match_explanation": "The ingredient '1 small onion' is best matched with 'onion, raw' because it is the most common and least processed form of onion available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "1 small onion",
@@ -9,7 +9,7 @@
             "co2_per_kg": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed option available, aligning with rule 4. 'Garlic in oil' and 'garlic baguette, frozen' are more processed. 'Red onion' is not a garlic product.",
+            "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' as it represents the most common and least processed form of garlic, aligning with rule 4.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -17,7 +17,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 Red pepper' is best matched with 'pepper, sweet, red, raw' because it is the least processed option available, aligning with rule 4. 'Pepper, hot chili, raw' is a different type of pepper. 'Pepper, hot chili, canned' is processed. 'Pepper, black' is a spice and not a fresh pepper.",
+            "closest_match_explanation": "The ingredient '0.5 Red pepper' is best matched with 'pepper, sweet, red, raw' because it is the most direct and least processed form of red pepper available, following rule 4.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "0.5 Red pepper",
@@ -25,7 +25,7 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient 'oil' is a general term. Among the available options, 'sunflower oil' and 'oil for frying' have the same emission factor. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. However, in this case, 'olive oil' has a higher emission factor (5.9 kg CO2e/kg) and is a common type of oil, making it a suitable conservative choice.",
+            "closest_match_explanation": "The ingredient 'oil' is a general term. Among the available options, 'olive oil' has the highest emission factor (5.9 kg CO2e / kg) and is a common type of oil, aligning with rule 5 to choose the option with the highest emission factor when multiple viable options have similar processing levels.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "oil",
@@ -33,7 +33,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "The ingredient '250 g of beef' is best matched with 'average beef' as it is the most general and least processed option for beef, aligning with rule 2 and 4. Other options specify cuts or fat content, making 'average beef' the most appropriate broader category.",
+            "closest_match_explanation": "The ingredient '250 g of beef' is a general term for beef. 'average beef' is the most appropriate match as it represents a general, unprocessed form of beef, aligning with rule 2 (broader category) and rule 4 (least processed).",
             "ingredient_id": "Ra00503",
             "closest_match_name": "average beef",
             "ingredient": "250 g of beef",
@@ -41,15 +41,15 @@
             "co2_per_kg": 74.8
         },
         {
-            "closest_match_explanation": "The ingredient '1.5 tablespoons fajita crawling' does not have a direct match in the emission database. The available options like 'taco shells', 'salsa, hot', 'crayfish, raw', and 'tortilla chips, cheese' are not suitable broader categories or synonyms for 'fajita crawling' (which likely refers to a spice mix or seasoning), violating rule 1 and 2. Therefore, no suitable match can be found.",
-            "ingredient_id": "No match",
+            "closest_match_explanation": "The ingredient '1.5 tablespoons fajita crawling' does not have a direct match in the database. None of the provided options (taco shells, salsa, crayfish, tortilla chips) are suitable broader categories or realistic comparisons for 'fajita crawling' (which seems to be a seasoning or spice blend), violating rule 1 and 2. Therefore, no match is found.",
+            "ingredient_id": "",
             "closest_match_name": "No match",
             "ingredient": "1.5 tablespoons fajita crawling",
             "unit": "kg CO2e per kg",
             "co2_per_kg": null
         },
         {
-            "closest_match_explanation": "The ingredient 'chili powder or flakes' is best matched with 'curry powder' as a broader category for a spice blend, aligning with rule 2. While 'pepper, hot chili, raw' and 'pepper, hot chili, canned' are related to chili, they are not in powder or flake form. 'Chili sauce' is a processed product and not a powder/flake.",
+            "closest_match_explanation": "The ingredient 'chili powder or flakes' is a processed form of chili. Among the available options, 'curry powder' is the most similar in terms of being a dried, powdered spice blend, and it has the highest emission factor, aligning with rule 5.",
             "ingredient_id": "Ra00304",
             "closest_match_name": "curry powder",
             "ingredient": "chili powder or flakes",
@@ -57,7 +57,7 @@
             "co2_per_kg": 6.1
         },
         {
-            "closest_match_explanation": "The ingredient '1 can of kidney beans' is best matched with 'kidney beans' as it is an exact match for the primary ingredient and processing (canned is implied by 'can'), aligning with rule 4. 'Black beans' are a different type of bean. 'Beans, baked in tomato sauce, canned' is a more processed product. 'Beans, green, raw' is a different type of bean and is raw.",
+            "closest_match_explanation": "The ingredient '1 can of kidney beans' directly matches 'kidney beans' in the database. This is the most specific and accurate match, aligning with rule 8.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney beans",
             "ingredient": "1 can of kidney beans",
@@ -65,7 +65,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 tablespoons tomato puree' is best matched with 'tomato paste, concentrated' as tomato puree is a concentrated form of tomato, similar to tomato paste, aligning with rule 4. 'Tomato, peeled, canned' and 'tomatojuice, canned' are less concentrated forms. 'Tomato, dried' is a different processing method.",
+            "closest_match_explanation": "The ingredient '2 tablespoons tomato puree' is best matched with 'tomato paste, concentrated' as tomato puree is a concentrated form of tomato, similar to tomato paste. This aligns with rule 4, considering the processing level.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomato paste, concentrated",
             "ingredient": "2 tablespoons tomato puree",
@@ -73,7 +73,7 @@
             "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 dl beef fund/broth' is best matched with 'bouillon, beef, prepared' as it represents a prepared liquid form of beef broth, aligning with rule 4. 'Bouillon, beef, concentrated, cube' is a more concentrated form. 'Beef, low fat' and 'beef, mince, 15-20% fat, raw' are raw meat products, not broth.",
+            "closest_match_explanation": "The ingredient '2.5 dl beef fund/broth' is best matched with 'bouillon, beef, prepared' as it represents a prepared liquid form of beef broth, which is the most direct and least concentrated option for a broth, aligning with rule 4.",
             "ingredient_id": "Ra00215",
             "closest_match_name": "bouillon, beef, prepared",
             "ingredient": "2.5 dl beef fund/broth",
@@ -81,7 +81,7 @@
             "co2_per_kg": 0.6
         },
         {
-            "closest_match_explanation": "The ingredient '11 small cornstortillas' is best matched with 'tortilla bread, wheat' as a broader category for tortillas, aligning with rule 2. While 'taco shells' and 'tortilla chips, cheese' are related, 'tortilla bread, wheat' is a more general and less processed form of tortilla. 'Corn flour' is an ingredient, not a finished tortilla.",
+            "closest_match_explanation": "The ingredient '11 small cornstortillas' is best matched with 'tortilla bread, wheat'. While the ingredient specifies 'cornstortillas', 'tortilla bread, wheat' is the closest available option for a tortilla-like product in the database. This is a broader category match that still maintains a realistic comparison, aligning with rule 2.",
             "ingredient_id": "Ra00401",
             "closest_match_name": "tortilla bread, wheat",
             "ingredient": "11 small cornstortillas",
@@ -89,7 +89,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 serving of tomato salsa' is best matched with 'salsa, hot' as it is a direct match for the ingredient, aligning with rule 4. 'Sundried tomatoes', 'tomato, dried', and 'tomato, peeled, canned' are ingredients of salsa, not the finished product.",
+            "closest_match_explanation": "The ingredient '1 serving of tomato salsa' is best matched with 'salsa, hot' as it is a direct and specific match for salsa in the database, aligning with rule 8.",
             "ingredient_id": "Ra00400",
             "closest_match_name": "salsa, hot",
             "ingredient": "1 serving of tomato salsa",
@@ -97,7 +97,7 @@
             "co2_per_kg": 1.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 Avocado' is best matched with 'avocado, raw' as it is an exact and least processed match, aligning with rule 4. 'Olive oil', 'mayonnaise', and 'aubergine, raw' are not suitable matches for avocado.",
+            "closest_match_explanation": "The ingredient '1 Avocado' is best matched with 'avocado, raw' as it is the most direct and least processed form of avocado available, aligning with rule 4.",
             "ingredient_id": "Ra00317",
             "closest_match_name": "avocado, raw",
             "ingredient": "1 Avocado",
@@ -105,7 +105,7 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 Red onion' is best matched with 'red onion' as it is an exact and least processed match, aligning with rule 4. 'Onion, raw' is a general category but 'red onion' is more specific. 'Onions, spring, raw' is a different type of onion. 'Onions, chopped and deepfried' is more processed.",
+            "closest_match_explanation": "The ingredient '0.5 Red onion' is best matched with 'red onion' as it is a direct and specific match for the ingredient, aligning with rule 8.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "red onion",
             "ingredient": "0.5 Red onion",
@@ -113,7 +113,7 @@
             "co2_per_kg": 0.8
         },
         {
-            "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed option available, aligning with rule 4. 'Garlic in oil' and 'garlic baguette, frozen' are more processed. 'Red onion' is not a garlic product.",
+            "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' as it represents the most common and least processed form of garlic, aligning with rule 4.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 cloves of garlic",
@@ -121,15 +121,15 @@
             "co2_per_kg": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '300 g of tomatoes' is best matched with 'tomato, peeled, canned' as it is a common processed form of tomatoes and has a lower emission factor than dried tomatoes, aligning with rule 4 and 5. 'Tomato, dried' and 'sundried tomatoes' are more processed. 'Tomatojuice, canned' is a different product.",
-            "ingredient_id": "Ra00361",
-            "closest_match_name": "tomato, peeled, canned",
+            "closest_match_explanation": "The ingredient '300 g of tomatoes' is a general term for tomatoes. Among the available options, 'tomato, dried' and 'sundried tomatoes' are more processed, and 'tomato, peeled, canned' and 'tomatojuice, canned' are also processed. Since no specific processing is mentioned for '300 g of tomatoes', the least processed option would be a raw tomato. However, since 'raw tomato' is not an option, and 'tomato, dried' and 'sundried tomatoes' have the highest emission factor among the processed options, 'tomato, dried' is chosen based on rule 5 (highest emission factor for similar processing levels) and rule 4 (considering processing).",
+            "ingredient_id": "Ra00005",
+            "closest_match_name": "tomato, dried",
             "ingredient": "300 g of tomatoes",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 2.7
         },
         {
-            "closest_match_explanation": "The ingredient '0.75 chili pepper' is best matched with 'pepper, hot chili, raw' as it is the least processed option available, aligning with rule 4. 'Pepper, hot chili, canned' is processed. 'Chili sauce' is a processed product. 'Pepper, black' is a different type of spice.",
+            "closest_match_explanation": "The ingredient '0.75 chili pepper' is best matched with 'pepper, hot chili, raw' as it is the most direct and least processed form of chili pepper available, aligning with rule 4.",
             "ingredient_id": "Ra00009",
             "closest_match_name": "pepper, hot chili, raw",
             "ingredient": "0.75 chili pepper",
@@ -137,15 +137,15 @@
             "co2_per_kg": 1.1
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 Bdt coriander' does not have a direct match in the emission database. 'Curry powder' is a spice blend but not specifically coriander. 'Basil, dried' and 'basil, fresh' are different herbs. 'Dill, raw' is also a different herb. Therefore, no suitable match can be found.",
-            "ingredient_id": "No match",
-            "closest_match_name": "No match",
+            "closest_match_explanation": "The ingredient '0.5 Bdt coriander' is a fresh herb. Among the available options, 'basil, fresh' is the closest in terms of being a fresh herb, and it has a lower emission factor than dried spices, aligning with rule 1 (realistic comparison) and rule 4 (least processed).",
+            "ingredient_id": "Ra00486",
+            "closest_match_name": "basil, fresh",
             "ingredient": "0.5 Bdt coriander",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": null
+            "co2_per_kg": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient '2 tablespoons olive oil' is best matched with 'olive oil' as it is an exact match and the least processed option among the oil choices, aligning with rule 4. 'Olive tapenade' and 'garlic in oil' are processed products. 'Sunflower oil' is a different type of oil.",
+            "closest_match_explanation": "The ingredient '2 tablespoons olive oil' directly matches 'olive oil' in the database. This is the most specific and accurate match, aligning with rule 8.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "2 tablespoons olive oil",
@@ -153,7 +153,7 @@
             "co2_per_kg": 5.9
         },
         {
-            "closest_match_explanation": "The ingredient 'The juice of 0.5 lime' is best matched with 'lime, raw' as it is the direct source of the juice and the least processed option, aligning with rule 4. 'Lemon, raw' is a different citrus fruit. 'Apple juice' and 'half pears in juice' are different fruit juices.",
+            "closest_match_explanation": "The ingredient 'The juice of 0.5 lime' is best matched with 'lime, raw' as it is the direct source of lime juice and represents the least processed form, aligning with rule 4.",
             "ingredient_id": "Ra00332",
             "closest_match_name": "lime, raw",
             "ingredient": "The juice of 0.5 lime",
