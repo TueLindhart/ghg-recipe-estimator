@@ -1,47 +1,47 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "1 onion",
+            "ingredient": "1 stk løg",
             "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "3 cloves of garlic",
+            "ingredient": "3 fed hvidløg",
             "weight_calculation": "1 clove garlic = 4 g, 3 * 4 g = 12 g = 0.012 kg",
             "weight_in_kg": 0.012
         },
         {
-            "ingredient": "400 g risotto rice",
+            "ingredient": "400 g risotto ris",
             "weight_calculation": "400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "2 dl white wine",
+            "ingredient": "2 dl hvidvin",
             "weight_calculation": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
-            "ingredient": "400 g of ripped tomatoes",
+            "ingredient": "400 g flåede tomater",
             "weight_calculation": "400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "25 g tomato puree",
+            "ingredient": "25 g tomatpuré",
             "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "9 dl vegetable broth",
+            "ingredient": "9 dl grøntsagsbouillon",
             "weight_calculation": "1 dl = 100 g, 9 * 100 g = 900 g = 0.9 kg",
             "weight_in_kg": 0.9
         },
         {
-            "ingredient": "0.5 tsp thyme",
+            "ingredient": "0.5 tsk timian",
             "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
-            "ingredient": "25 g sun -dried tomatoes in oil",
+            "ingredient": "25 g soltørrede tomater i olie",
             "weight_calculation": "25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
@@ -51,12 +51,12 @@
             "weight_in_kg": 0.125
         },
         {
-            "ingredient": "0.5 ECO Lemon",
+            "ingredient": "0.5 øko citron",
             "weight_calculation": "1 lemon = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
             "weight_in_kg": 0.0425
         },
         {
-            "ingredient": "1 tablespoon olive oil",
+            "ingredient": "1 spsk olivenolie",
             "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
@@ -66,7 +66,7 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "Black pepper",
+            "ingredient": "sort peber",
             "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: Black pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
             "weight_in_kg": 0.02
         },
@@ -86,7 +86,7 @@
             "weight_in_kg": 0.025
         },
         {
-            "ingredient": "0.5 Handful of basil",
+            "ingredient": "0.5 håndfuld basilikum",
             "weight_calculation": "1 Handful of herbs (basil, oregano etc.) = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "weight_in_kg": 0.0125
         }
