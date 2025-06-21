@@ -106,4 +106,4 @@ def test_ingredients_no_instructions(ingredients, expected_language):
 
 
 def test_single_word_ingredients():
-    assert detect_language(["agurk", "gulerod", "ærter"], None) == Languages.Danish
+    assert detect_language(None, ["agurk", "gulerod", "ærter"]) == Languages.Danish

@@ -8,14 +8,13 @@ class Languages(StrEnum):
     Danish = "da"
     Norwegian = "no"
     Swedish = "sv"
+    Unknown = "unknown"
 
 
 ALLOWED_LANGUAGE_MISTAKES = [Languages.Norwegian.value, Languages.Swedish.value]
 
 
-def detect_language(
-    instructions: str | None, ingredients: list[str]
-) -> Languages | None:
+def detect_language(instructions: str | None, ingredients: list[str]) -> Languages:
     language = (
         detect(instructions)
         if instructions is not None
@@ -26,3 +25,4 @@ def detect_language(
 
     if language in [lang.value for lang in Languages]:
         return Languages(language)
+    return Languages.Unknown

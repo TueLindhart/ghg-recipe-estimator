@@ -52,7 +52,7 @@ class EnrichedIngredient(BaseModel):
 
 class EnrichedRecipe(ExtractedRecipe):
     url: str
-    language: Languages | None
+    language: Languages
     ingredients: list[EnrichedIngredient]
 
     def get_ingredient_names(self) -> list[str]:

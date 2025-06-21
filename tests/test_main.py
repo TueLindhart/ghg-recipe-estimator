@@ -39,7 +39,6 @@ async def test_async_estimator(
 
     monkeypatch.setattr("food_co2_estimator.main.extract_recipe", mock_extract_recipe)
 
-
     # Call the function
     success, output = await async_estimator(
         runparams=RunParams(url="dummy_url", use_cache=False, store_in_cache=False),

@@ -50,7 +50,7 @@ async def async_estimator(
         return False, no_recipe_message
 
     enriched_recipe = EnrichedRecipe.from_extracted_recipe(runparams.url, recipe)
-    if enriched_recipe.language is None:
+    if enriched_recipe.language == Languages.Unknown:
         language_exception = f"Sproget blev ikke genkendt som et af følgende: {', '.join([lang.value for lang in Languages])}"
         log_exception_message(runparams.url, language_exception)
         return False, language_exception
