@@ -3,7 +3,6 @@ import json
 import os
 
 from food_co2_estimator.chains.recipe_extractor import extract_recipe
-from food_co2_estimator.language.detector import detect_language
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from tests.data_paths import ENRICHED_RECIPE_DIR, EXTRACTED_RECIPE_DIR, TEXT_INPUT_DIR
 from tests.urls import TEST_URLS
@@ -35,13 +34,7 @@ async def process_and_store_recipe(file_name: str, url: str) -> EnrichedRecipe:
 
     # Detect language in ingredients
     enriched_recipe = EnrichedRecipe.from_extracted_recipe(url, recipe)
-    language = detect_language(enriched_recipe)
 
-    # Copy ingredient names as detected language (no translation)
-    enriched_recipe.update_with_translations(
-        enriched_recipe.get_ingredient_names(),
-        enriched_recipe.instructions,
-    )
     # Store the enriched recipe with translations as JSON
     enriched_output_filepath = os.path.join(ENRICHED_RECIPE_DIR, file_name + ".json")
     with open(enriched_output_filepath, "w", encoding="utf-8") as file:

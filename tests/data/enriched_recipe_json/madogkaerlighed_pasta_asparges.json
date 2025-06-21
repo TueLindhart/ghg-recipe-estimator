@@ -2,91 +2,78 @@
     "title": "Cremet pasta med asparges",
     "ingredients": [
         {
-            "original_name": "250 g frisk pasta",
-            "en_name": "250 g fresh pasta",
+            "name": "250 g frisk pasta",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "name": "1 løg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 bdt grønne asparges",
-            "en_name": "1 BDT Green Asparagus",
+            "name": "1 bdt grønne asparges",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "name": "1 squash",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 stor håndfuld basilikum",
-            "en_name": "1 large handful of basil",
+            "name": "1 stor håndfuld frisk basilikum",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 dl fløde",
-            "en_name": "2 dl cream",
+            "name": "2 dl fløde",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dl vand",
-            "en_name": "1 dl water",
+            "name": "1 dl vand",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 grøntsags bouillonterning",
-            "en_name": "1 vegetable broth cube",
+            "name": "1 grøntsags bouillonterning",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "6 spsk revet parmesan",
-            "en_name": "6 tbsp grated parmesan",
+            "name": "6 spsk revet parmesan",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 håndfuld mozzarella",
-            "en_name": "1 handful of mozzarella",
+            "name": "1 håndfuld mozzarella",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Lidt salt",
-            "en_name": "A little salt",
+            "name": "Lidt salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Lidt peber",
-            "en_name": "A little pepper",
+            "name": "Lidt peber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Olie",
-            "en_name": "Oil",
+            "name": "Olie",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 2,
-    "instructions": " Put a saucepan over with water to the pasta. Cook it according to instructions on the package and pour the water off so that it is not cooked further.\nCrack the ends of the green asparagus (the ends cannot be eaten). Cut them into approx. 1 cm long pieces.\nSweat onion and garlic in oil on a hot pan. Add the squash and asparagus and sweat it for a few more minutes, sprinkle with a KNSP salt and a little pepper.\nThen get the water on the pan and crumble the broth cube on to dissolve faster. Pour the cream on with grated parmesan and turn it all around well.\nTurn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste if the dish may be able to bruuge a little extra grinded pepper. Welcome!",
-    "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
+    "instructions": "Sæt en gryde over med vand til pastaen. Kog det efter anvisning på pakken og hæld vandet fra så det ikke tilberedes yderligere.\nKnæk enderne af de grønne asparges (enderne kan ikke spises). Skær dem i ca. 1 cm lange stykker.\nSvits løg og hvidløg i olie på en varm pande. Tilsæt squash og asparges og svits det yderligere et par minutter, drys med en knsp salt og lidt peber.\nKom så vandet på panden og smuldrer bouillonterningen på så den hurtigere opløses. Hæld fløden på sammen med revet parmesan og vend det hele godt rundt.\nVend den friske pasta i blandingen og tilsidst mozzarella og frisk basilikum. Smag til om retten evt kan bruuge lidt ekstra kværnet peber. Velbekomme!",
+    "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/",
+    "language": "da"
 }

@@ -2,22 +2,22 @@
     "weight_estimates": [
         {
             "ingredient": "1 lille løg",
-            "weight_calculation": "1 small onion = 100 g, 1 * 100 g = 100 g = 0.1 kg",
-            "weight_in_kg": 0.1
+            "weight_calculation": "1 løg = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+            "weight_in_kg": 0.17
         },
         {
             "ingredient": "2 fed hvidløg",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
             "ingredient": "0.5 rød peberfrugt",
-            "weight_calculation": "1 bell pepper = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
+            "weight_calculation": "1 peberfrugt = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
             "weight_in_kg": 0.075
         },
         {
             "ingredient": "olie",
-            "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg",
+            "weight_calculation": "Mængden af olie er ikke angivet. LLM-estimat er: 1 portion = 0.015 kg, 2 * 0.015 kg = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
@@ -27,27 +27,27 @@
         },
         {
             "ingredient": "1.5 spsk fajitakrydderi",
-            "weight_calculation": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
+            "weight_calculation": "1 spsk = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
             "weight_in_kg": 0.0225
         },
         {
             "ingredient": "chilipulver eller flager",
-            "weight_calculation": "Amount of chili powder or flakes not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Mængden af chilipulver eller flager er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "1 dåse kidneybønner",
-            "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_calculation": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
             "ingredient": "2 spsk tomatpuré",
-            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 spsk = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "2.5 dl oksefond/-bouillon",
-            "weight_calculation": "1 dl = 0.1 kg, 2.5 * 0.1 kg = 0.25 kg",
+            "weight_calculation": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
             "weight_in_kg": 0.25
         },
         {
@@ -57,32 +57,32 @@
         },
         {
             "ingredient": "1 portion tomatsalsa",
-            "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
-            "weight_in_kg": 0.1
+            "weight_calculation": "Mængden af tomatsalsa er ikke angivet. LLM-estimat er: 1 portion = 0.15 kg, 1 * 0.15 kg = 0.15 kg",
+            "weight_in_kg": 0.15
         },
         {
             "ingredient": "1 avocado",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 170 g, 1 * 170 g = 170 g = 0.17 kg.",
-            "weight_in_kg": 0.17
+            "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 avocado = 150 g, 1 * 150 g = 150 g = 0.15 kg.",
+            "weight_in_kg": 0.15
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "peber",
-            "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Mængden af peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "0.5 rødløg",
-            "weight_calculation": "1 onion = 170 g, 0.5 * 170 g = 85 g = 0.085 kg",
+            "weight_calculation": "1 løg = 170 g, 0.5 * 170 g = 85 g = 0.085 kg",
             "weight_in_kg": 0.085
         },
         {
             "ingredient": "2 fed hvidløg",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -92,32 +92,32 @@
         },
         {
             "ingredient": "0.75 chilipeber",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg.",
-            "weight_in_kg": 0.0375
+            "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 chilipeber = 20 g, 0.75 * 20 g = 15 g = 0.015 kg.",
+            "weight_in_kg": 0.015
         },
         {
             "ingredient": "0.5 bdt koriander",
-            "weight_calculation": "1 bunch parsley = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "weight_calculation": "1 bundt koriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "2 spsk olivenolie",
-            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 spsk = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "saften af 0.5 lime",
-            "weight_calculation": "1 lime = 60 g, 0.5 * 60 g = 30 g = 0.03 kg",
-            "weight_in_kg": 0.03
+            "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
+            "weight_in_kg": 0.025
         },
         {
             "ingredient": "salt",
-            "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "peber",
-            "weight_calculation": "Amount of Pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+            "weight_calculation": "Mængden af peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         }
     ]

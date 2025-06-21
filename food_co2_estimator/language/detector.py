@@ -1,11 +1,9 @@
-from enum import Enum
+from enum import StrEnum
 
 from langdetect import detect
 
-from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 
-
-class Languages(Enum):
+class Languages(StrEnum):
     English = "en"
     Danish = "da"
     Norwegian = "no"
@@ -15,11 +13,13 @@ class Languages(Enum):
 ALLOWED_LANGUAGE_MISTAKES = [Languages.Norwegian.value, Languages.Swedish.value]
 
 
-def detect_language(recipe: EnrichedRecipe) -> Languages | None:
+def detect_language(
+    instructions: str | None, ingredients: list[str]
+) -> Languages | None:
     language = (
-        detect(recipe.instructions)
-        if recipe.instructions is not None
-        else detect(", ".join(recipe.get_ingredient_names()))
+        detect(instructions)
+        if instructions is not None
+        else detect(", ".join(ingredients))
     )
     if language in ALLOWED_LANGUAGE_MISTAKES:  # Swedish and Norwegian is easy mistakes
         return Languages.Danish

@@ -5,11 +5,11 @@ from langchain.prompts import (
     SystemMessagePromptTemplate,
 )
 
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.weight_estimator import (
     WeightEstimate,
     WeightEstimates,
 )
-from food_co2_estimator.language.detector import Languages
 
 # The general weight lookup table
 EN_WEIGHT_RECALCULATIONS = """
@@ -102,7 +102,7 @@ serveres med ris
 """
 
 # Constructing the example using Pydantic models
-ANSWER_EXAMPLE_OBJ = WeightEstimates(
+EN_ANSWER_EXAMPLE_OBJ = WeightEstimates(
     weight_estimates=[
         WeightEstimate(
             ingredient="1 can chopped tomatoes",
@@ -177,7 +177,7 @@ ANSWER_EXAMPLE_OBJ = WeightEstimates(
     ]
 )
 
-ANSWER_EXAMPLE = ANSWER_EXAMPLE_OBJ.model_dump_json(indent=2)
+EN_ANSWER_EXAMPLE = EN_ANSWER_EXAMPLE_OBJ.model_dump_json(indent=2)
 
 # Danish example answer constructed with Danish ingredient names
 DA_ANSWER_EXAMPLE_OBJ = WeightEstimates(
@@ -297,16 +297,26 @@ Answer:"""
 WEIGHT_EST_EXAMPLE_AI_PROMPT = """{answer_example}"""
 
 
+LANGUAGE_EXAMPLES = {
+    Languages.English: {
+        "input_example": EN_INPUT_EXAMPLE,
+        "answer_example": EN_ANSWER_EXAMPLE,
+        "recalculations": EN_WEIGHT_RECALCULATIONS,
+    },
+    Languages.Danish: {
+        "input_example": DA_INPUT_EXAMPLE,
+        "answer_example": DA_ANSWER_EXAMPLE,
+        "recalculations": DA_WEIGHT_RECALCULATIONS,
+    },
+}
+
+
 def get_weight_est_prompt(language: Languages) -> ChatPromptTemplate:
     """Return weight estimation prompt with examples for the given language."""
-    if language == Languages.English:
-        input_example = EN_INPUT_EXAMPLE
-        answer_example = ANSWER_EXAMPLE
-        recalculations = EN_WEIGHT_RECALCULATIONS
-    else:
-        input_example = DA_INPUT_EXAMPLE
-        answer_example = DA_ANSWER_EXAMPLE
-        recalculations = DA_WEIGHT_RECALCULATIONS
+    examples = LANGUAGE_EXAMPLES.get(language, LANGUAGE_EXAMPLES[Languages.Danish])
+    input_example = examples["input_example"]
+    answer_example = examples["answer_example"]
+    recalculations = examples["recalculations"]
     return ChatPromptTemplate(
         messages=[
             SystemMessagePromptTemplate.from_template(WEIGHT_EST_SYSTEM_PROMPT),

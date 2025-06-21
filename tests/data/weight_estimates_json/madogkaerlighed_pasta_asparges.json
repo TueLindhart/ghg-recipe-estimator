@@ -7,17 +7,17 @@
         },
         {
             "ingredient": "2 fed hvidløg",
-            "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
             "ingredient": "1 løg",
-            "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+            "weight_calculation": "1 løg = 170 g, 1 * 170 g = 170 g = 0.17 kg",
             "weight_in_kg": 0.17
         },
         {
             "ingredient": "1 bdt grønne asparges",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
+            "weight_calculation": "1 bundt asparges = 500 g, 1 * 500 g = 500 g = 0.5 kg",
             "weight_in_kg": 0.5
         },
         {
@@ -26,8 +26,8 @@
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 stor håndfuld basilikum",
-            "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "ingredient": "1 stor håndfuld frisk basilikum",
+            "weight_calculation": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
@@ -42,32 +42,32 @@
         },
         {
             "ingredient": "1 grøntsags bouillonterning",
-            "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
+            "weight_calculation": "1 bouillonterning = 4 g, 1 * 4 g = 4 g = 0.004 kg",
             "weight_in_kg": 0.004
         },
         {
             "ingredient": "6 spsk revet parmesan",
-            "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.09 kg",
+            "weight_calculation": "1 spsk = 15 g, 6 * 15 g = 90 g = 0.09 kg",
             "weight_in_kg": 0.09
         },
         {
             "ingredient": "1 håndfuld mozzarella",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
+            "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.05 kg, 2 portioner * 0.05 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "Lidt salt",
-            "weight_calculation": "Amount of A little salt not specified. LLM estimate is: A little salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+            "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.005 kg, 2 portioner * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "Lidt peber",
-            "weight_calculation": "Amount of A little pepper not specified. LLM estimate is: A little pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+            "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.005 kg, 2 portioner * 0.005 kg = 0.01 kg",
             "weight_in_kg": 0.01
         },
         {
             "ingredient": "Olie",
-            "weight_calculation": "Amount of Oil not specified. LLM estimate is: Oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg.",
+            "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.015 kg, 2 portioner * 0.015 kg = 0.03 kg",
             "weight_in_kg": 0.03
         }
     ]

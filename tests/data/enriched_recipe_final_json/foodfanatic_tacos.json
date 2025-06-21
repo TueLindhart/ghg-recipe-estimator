@@ -2,387 +2,378 @@
     "title": "Tacos med oksekød, tomatsalsa og avocado",
     "ingredients": [
         {
-            "original_name": "1 lille løg",
-            "en_name": "1 small onion",
+            "name": "1 lille løg",
             "weight_estimate": {
-                "ingredient": "1 small onion",
-                "weight_calculation": "1 small onion = 100 g, 1 * 100 g = 100 g = 0.1 kg",
-                "weight_in_kg": 0.1
+                "ingredient": "1 lille løg",
+                "weight_calculation": "1 løg = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 small onion' is best matched with 'onion, raw' because it is the most common and least processed form of onion available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
+                "closest_match_explanation": "The ingredient '1 lille løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
                 "ingredient_id": "Ra00266",
-                "closest_match_name": "onion, raw",
-                "ingredient": "1 small onion",
+                "closest_match_name": "løg",
+                "ingredient": "1 lille løg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.3
             }
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": {
-                "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "ingredient": "2 fed hvidløg",
+                "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' as it represents the most common and least processed form of garlic, aligning with rule 4.",
+                "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available. This follows rule 4, which favors the least processed option when no specific processing is indicated.",
                 "ingredient_id": "Ra00136",
-                "closest_match_name": "garlic, raw",
-                "ingredient": "2 cloves of garlic",
+                "closest_match_name": "hvidløg",
+                "ingredient": "2 fed hvidløg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "0.5 rød peberfrugt",
-            "en_name": "0.5 Red pepper",
+            "name": "0.5 rød peberfrugt",
             "weight_estimate": {
-                "ingredient": "0.5 Red pepper",
-                "weight_calculation": "1 bell pepper = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
+                "ingredient": "0.5 rød peberfrugt",
+                "weight_calculation": "1 peberfrugt = 150 g, 0.5 * 150 g = 75 g = 0.075 kg",
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 Red pepper' is best matched with 'pepper, sweet, red, raw' because it is the most direct and least processed form of red pepper available, following rule 4.",
+                "closest_match_explanation": "The ingredient '0.5 rød peberfrugt' is best matched with 'peberfrugt' because it is the most direct and least processed form of bell pepper available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
                 "ingredient_id": "Ra00001",
-                "closest_match_name": "pepper, sweet, red, raw",
-                "ingredient": "0.5 Red pepper",
+                "closest_match_name": "peberfrugt",
+                "ingredient": "0.5 rød peberfrugt",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             }
         },
         {
-            "original_name": "olie",
-            "en_name": "oil",
+            "name": "olie",
             "weight_estimate": {
-                "ingredient": "oil",
-                "weight_calculation": "Amount of oil not specified. LLM estimate is: 1 serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg",
+                "ingredient": "olie",
+                "weight_calculation": "Mængden af olie er ikke angivet. LLM-estimat er: 1 portion = 0.015 kg, 2 * 0.015 kg = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'oil' is a general term. Among the available options, 'olive oil' has the highest emission factor (5.9 kg CO2e / kg) and is a common type of oil, aligning with rule 5 to choose the option with the highest emission factor when multiple viable options have similar processing levels.",
+                "closest_match_explanation": "The ingredient 'olie' is a general term for oil. Among the available options, 'olivenolie' has the highest emission factor (5.9 kg CO2e / kg) and is a common type of oil. According to rule 5, when multiple viable options have similar processing levels (all are oils), the one with the highest emission factor should be chosen to ensure a conservative estimate.",
                 "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
-                "ingredient": "oil",
+                "closest_match_name": "olivenolie",
+                "ingredient": "olie",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.9
             }
         },
         {
-            "original_name": "250 g oksekød",
-            "en_name": "250 g of beef",
+            "name": "250 g oksekød",
             "weight_estimate": {
-                "ingredient": "250 g of beef",
+                "ingredient": "250 g oksekød",
                 "weight_calculation": "250 g = 250 g = 0.25 kg",
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '250 g of beef' is a general term for beef. 'average beef' is the most appropriate match as it represents a general, unprocessed form of beef, aligning with rule 2 (broader category) and rule 4 (least processed).",
-                "ingredient_id": "Ra00503",
-                "closest_match_name": "average beef",
-                "ingredient": "250 g of beef",
+                "closest_match_explanation": "The ingredient '250 g oksekød' is a general term for beef. Among the available options, 'oksekød, pulled beef' has the highest emission factor (56.3 kg CO2e / kg). According to rule 5, when multiple viable options have similar processing levels (all are beef products), the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+                "ingredient_id": "Ra00463",
+                "closest_match_name": "oksekød, pulled beef",
+                "ingredient": "250 g oksekød",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 74.8
+                "co2_per_kg": 56.3
             }
         },
         {
-            "original_name": "1.5 spsk fajitakrydderi",
-            "en_name": "1.5 tablespoons fajita crawling",
+            "name": "1.5 spsk fajitakrydderi",
             "weight_estimate": {
-                "ingredient": "1.5 tablespoons fajita crawling",
-                "weight_calculation": "1 tbsp. = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
+                "ingredient": "1.5 spsk fajitakrydderi",
+                "weight_calculation": "1 spsk = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
                 "weight_in_kg": 0.0225
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1.5 tablespoons fajita crawling' does not have a direct match in the database. None of the provided options (taco shells, salsa, crayfish, tortilla chips) are suitable broader categories or realistic comparisons for 'fajita crawling' (which seems to be a seasoning or spice blend), violating rule 1 and 2. Therefore, no match is found.",
-                "ingredient_id": "",
-                "closest_match_name": "No match",
-                "ingredient": "1.5 tablespoons fajita crawling",
+                "closest_match_explanation": "The ingredient '1.5 spsk fajitakrydderi' is a seasoning blend. 'peber, chili' is the most relevant and highest emission option among the choices, as chili is a common component of fajita seasoning. This aligns with rule 5, which states that if multiple viable options exist, the one with the highest emission factor should be chosen.",
+                "ingredient_id": "Ra00009",
+                "closest_match_name": "peber, chili",
+                "ingredient": "1.5 spsk fajitakrydderi",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": null
+                "co2_per_kg": 1.1
             }
         },
         {
-            "original_name": "chilipulver eller flager",
-            "en_name": "chili powder or flakes",
+            "name": "chilipulver eller flager",
             "weight_estimate": {
-                "ingredient": "chili powder or flakes",
-                "weight_calculation": "Amount of chili powder or flakes not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "ingredient": "chilipulver eller flager",
+                "weight_calculation": "Mængden af chilipulver eller flager er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'chili powder or flakes' is a processed form of chili. Among the available options, 'curry powder' is the most similar in terms of being a dried, powdered spice blend, and it has the highest emission factor, aligning with rule 5.",
-                "ingredient_id": "Ra00304",
-                "closest_match_name": "curry powder",
-                "ingredient": "chili powder or flakes",
+                "closest_match_explanation": "The ingredient 'chilipulver eller flager' is best matched with 'peber, chili, konserves' because it represents a processed form of chili, similar to how chili powder or flakes are processed. This aligns with rule 4, which considers the amount of processing. Among the chili options, 'peber, chili, konserves' has a higher emission factor (1.5 kg CO2e / kg) than 'peber, chili' (1.1 kg CO2e / kg), aligning with rule 5 to choose the higher emission factor when processing levels are similar.",
+                "ingredient_id": "Ra00359",
+                "closest_match_name": "peber, chili, konserves",
+                "ingredient": "chilipulver eller flager",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 6.1
+                "co2_per_kg": 1.5
             }
         },
         {
-            "original_name": "1 dåse kidneybønner",
-            "en_name": "1 can of kidney beans",
+            "name": "1 dåse kidneybønner",
             "weight_estimate": {
-                "ingredient": "1 can of kidney beans",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "ingredient": "1 dåse kidneybønner",
+                "weight_calculation": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of kidney beans' directly matches 'kidney beans' in the database. This is the most specific and accurate match, aligning with rule 8.",
+                "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' because it explicitly states 'dåse' (can), indicating a canned and thus processed form. This aligns with rule 4, which prioritizes matching based on the amount of processing.",
                 "ingredient_id": "Ra00422",
-                "closest_match_name": "kidney beans",
-                "ingredient": "1 can of kidney beans",
+                "closest_match_name": "kidney bønner, konserves",
+                "ingredient": "1 dåse kidneybønner",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "2 spsk tomatpuré",
-            "en_name": "2 tablespoons tomato puree",
+            "name": "2 spsk tomatpuré",
             "weight_estimate": {
-                "ingredient": "2 tablespoons tomato puree",
-                "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+                "ingredient": "2 spsk tomatpuré",
+                "weight_calculation": "1 spsk = 15 g, 2 * 15 g = 30 g = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 tablespoons tomato puree' is best matched with 'tomato paste, concentrated' as tomato puree is a concentrated form of tomato, similar to tomato paste. This aligns with rule 4, considering the processing level.",
+                "closest_match_explanation": "The ingredient '2 spsk tomatpuré' is best matched with 'tomatpure, koncentreret' because 'puré' implies a concentrated form of tomato, which aligns with the processing level of 'koncentreret'. This follows rule 4, which considers the amount of processing.",
                 "ingredient_id": "Ra00368",
-                "closest_match_name": "tomato paste, concentrated",
-                "ingredient": "2 tablespoons tomato puree",
+                "closest_match_name": "tomatpure, koncentreret",
+                "ingredient": "2 spsk tomatpuré",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 2.7
             }
         },
         {
-            "original_name": "2.5 dl oksefond/-bouillon",
-            "en_name": "2.5 dl beef fund/broth",
+            "name": "2.5 dl oksefond/-bouillon",
             "weight_estimate": {
-                "ingredient": "2.5 dl beef fund/broth",
-                "weight_calculation": "1 dl = 0.1 kg, 2.5 * 0.1 kg = 0.25 kg",
+                "ingredient": "2.5 dl oksefond/-bouillon",
+                "weight_calculation": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2.5 dl beef fund/broth' is best matched with 'bouillon, beef, prepared' as it represents a prepared liquid form of beef broth, which is the most direct and least concentrated option for a broth, aligning with rule 4.",
-                "ingredient_id": "Ra00215",
-                "closest_match_name": "bouillon, beef, prepared",
-                "ingredient": "2.5 dl beef fund/broth",
+                "closest_match_explanation": "The ingredient '2.5 dl oksefond/-bouillon' is best matched with 'bouillon, oksekød, koncentreret, terning' because 'fond/-bouillon' implies a concentrated form, and among the beef bouillon options, the concentrated cube has the highest emission factor. This aligns with rule 4 (processing) and rule 5 (highest emission factor for similar processing).",
+                "ingredient_id": "Ra00220",
+                "closest_match_name": "bouillon, oksekød, koncentreret, terning",
+                "ingredient": "2.5 dl oksefond/-bouillon",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.6
+                "co2_per_kg": 9.9
             }
         },
         {
-            "original_name": "11 små majstortillas",
-            "en_name": "11 small cornstortillas",
+            "name": "11 små majstortillas",
             "weight_estimate": {
-                "ingredient": "11 small cornstortillas",
+                "ingredient": "11 små majstortillas",
                 "weight_calculation": "1 tortilla = 30 g, 11 * 30 g = 330 g = 0.33 kg",
                 "weight_in_kg": 0.33
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '11 small cornstortillas' is best matched with 'tortilla bread, wheat'. While the ingredient specifies 'cornstortillas', 'tortilla bread, wheat' is the closest available option for a tortilla-like product in the database. This is a broader category match that still maintains a realistic comparison, aligning with rule 2.",
-                "ingredient_id": "Ra00401",
-                "closest_match_name": "tortilla bread, wheat",
-                "ingredient": "11 small cornstortillas",
+                "closest_match_explanation": "The ingredient '11 små majstortillas' is best matched with 'taco shells' because both are corn-based, crispy, and commonly used in Mexican cuisine. While 'tortillabrød, hvede' is also a tortilla, 'taco shells' are more specific to corn-based, crispy forms often associated with 'small' tortillas. Additionally, 'taco shells' has a higher emission factor (2.4 kg CO2e / kg) than 'tortillabrød, hvede' (1.2 kg CO2e / kg), aligning with rule 5.",
+                "ingredient_id": "Ra00467",
+                "closest_match_name": "taco shells",
+                "ingredient": "11 små majstortillas",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 2.4
             }
         },
         {
-            "original_name": "1 portion tomatsalsa",
-            "en_name": "1 serving of tomato salsa",
+            "name": "1 portion tomatsalsa",
             "weight_estimate": {
-                "ingredient": "1 serving of tomato salsa",
-                "weight_calculation": "Amount of tomato salsa not specified. LLM estimate is: 1 serving = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
-                "weight_in_kg": 0.1
+                "ingredient": "1 portion tomatsalsa",
+                "weight_calculation": "Mængden af tomatsalsa er ikke angivet. LLM-estimat er: 1 portion = 0.15 kg, 1 * 0.15 kg = 0.15 kg",
+                "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 serving of tomato salsa' is best matched with 'salsa, hot' as it is a direct and specific match for salsa in the database, aligning with rule 8.",
-                "ingredient_id": "Ra00400",
-                "closest_match_name": "salsa, hot",
-                "ingredient": "1 serving of tomato salsa",
+                "closest_match_explanation": "The ingredient '1 portion tomatsalsa' is best matched with 'tomat' as salsa is primarily made from fresh tomatoes. While other tomato products are available, 'tomat' represents the most direct and least processed form of the main ingredient in salsa, aligning with rule 4.",
+                "ingredient_id": "Ra00002",
+                "closest_match_name": "tomat",
+                "ingredient": "1 portion tomatsalsa",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.4
+                "co2_per_kg": 0.5
             }
         },
         {
-            "original_name": "1 avocado",
-            "en_name": "1 Avocado",
+            "name": "1 avocado",
             "weight_estimate": {
-                "ingredient": "1 Avocado",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 Avocado = 170 g, 1 * 170 g = 170 g = 0.17 kg.",
-                "weight_in_kg": 0.17
+                "ingredient": "1 avocado",
+                "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 avocado = 150 g, 1 * 150 g = 150 g = 0.15 kg.",
+                "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Avocado' is best matched with 'avocado, raw' as it is the most direct and least processed form of avocado available, aligning with rule 4.",
+                "closest_match_explanation": "The ingredient '1 avocado' is best matched with 'avocado' as it is a direct and exact match, aligning with the primary goal of finding the closest possible match.",
                 "ingredient_id": "Ra00317",
-                "closest_match_name": "avocado, raw",
-                "ingredient": "1 Avocado",
+                "closest_match_name": "avocado",
+                "ingredient": "1 avocado",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "peber",
-            "en_name": "pepper",
+            "name": "peber",
             "weight_estimate": {
-                "ingredient": "pepper",
-                "weight_calculation": "Amount of pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "ingredient": "peber",
+                "weight_calculation": "Mængden af peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
-            "co2_per_kg_db": null
+            "co2_per_kg_db": {
+                "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. Among the available options, 'peber, sort' has the highest emission factor (5.2 kg CO2e / kg) and is a common type of pepper. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+                "ingredient_id": "Ra00302",
+                "closest_match_name": "peber, sort",
+                "ingredient": "peber",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.2
+            }
         },
         {
-            "original_name": "0.5 rødløg",
-            "en_name": "0.5 Red onion",
+            "name": "0.5 rødløg",
             "weight_estimate": {
-                "ingredient": "0.5 Red onion",
-                "weight_calculation": "1 onion = 170 g, 0.5 * 170 g = 85 g = 0.085 kg",
+                "ingredient": "0.5 rødløg",
+                "weight_calculation": "1 løg = 170 g, 0.5 * 170 g = 85 g = 0.085 kg",
                 "weight_in_kg": 0.085
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 Red onion' is best matched with 'red onion' as it is a direct and specific match for the ingredient, aligning with rule 8.",
+                "closest_match_explanation": "The ingredient '0.5 rødløg' is best matched with 'rødløg' as it is a direct and exact match, aligning with the primary goal of finding the closest possible match.",
                 "ingredient_id": "Ra00485",
-                "closest_match_name": "red onion",
-                "ingredient": "0.5 Red onion",
+                "closest_match_name": "rødløg",
+                "ingredient": "0.5 rødløg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 0.8
             }
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": {
-                "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "ingredient": "2 fed hvidløg",
+                "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' as it represents the most common and least processed form of garlic, aligning with rule 4.",
+                "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available. This follows rule 4, which favors the least processed option when no specific processing is indicated.",
                 "ingredient_id": "Ra00136",
-                "closest_match_name": "garlic, raw",
-                "ingredient": "2 cloves of garlic",
+                "closest_match_name": "hvidløg",
+                "ingredient": "2 fed hvidløg",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.2
             }
         },
         {
-            "original_name": "300 g tomater",
-            "en_name": "300 g of tomatoes",
+            "name": "300 g tomater",
             "weight_estimate": {
-                "ingredient": "300 g of tomatoes",
+                "ingredient": "300 g tomater",
                 "weight_calculation": "300 g = 300 g = 0.3 kg",
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '300 g of tomatoes' is a general term for tomatoes. Among the available options, 'tomato, dried' and 'sundried tomatoes' are more processed, and 'tomato, peeled, canned' and 'tomatojuice, canned' are also processed. Since no specific processing is mentioned for '300 g of tomatoes', the least processed option would be a raw tomato. However, since 'raw tomato' is not an option, and 'tomato, dried' and 'sundried tomatoes' have the highest emission factor among the processed options, 'tomato, dried' is chosen based on rule 5 (highest emission factor for similar processing levels) and rule 4 (considering processing).",
-                "ingredient_id": "Ra00005",
-                "closest_match_name": "tomato, dried",
-                "ingredient": "300 g of tomatoes",
+                "closest_match_explanation": "The ingredient '300 g tomater' is best matched with 'tomat' as it is the most direct and least processed form of tomato available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
+                "ingredient_id": "Ra00002",
+                "closest_match_name": "tomat",
+                "ingredient": "300 g tomater",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.7
+                "co2_per_kg": 0.5
             }
         },
         {
-            "original_name": "0.75 chilipeber",
-            "en_name": "0.75 chili pepper",
+            "name": "0.75 chilipeber",
             "weight_estimate": {
-                "ingredient": "0.75 chili pepper",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 chili pepper = 50 g, 0.75 * 50 g = 37.5 g = 0.0375 kg.",
-                "weight_in_kg": 0.0375
+                "ingredient": "0.75 chilipeber",
+                "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 chilipeber = 20 g, 0.75 * 20 g = 15 g = 0.015 kg.",
+                "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.75 chili pepper' is best matched with 'pepper, hot chili, raw' as it is the most direct and least processed form of chili pepper available, aligning with rule 4.",
+                "closest_match_explanation": "The ingredient '0.75 chilipeber' is best matched with 'peber, chili' as it is the most direct and least processed form of chili pepper available. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
                 "ingredient_id": "Ra00009",
-                "closest_match_name": "pepper, hot chili, raw",
-                "ingredient": "0.75 chili pepper",
+                "closest_match_name": "peber, chili",
+                "ingredient": "0.75 chilipeber",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 1.1
             }
         },
         {
-            "original_name": "0.5 bdt koriander",
-            "en_name": "0.5 Bdt coriander",
+            "name": "0.5 bdt koriander",
             "weight_estimate": {
-                "ingredient": "0.5 Bdt coriander",
-                "weight_calculation": "1 bunch parsley = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+                "ingredient": "0.5 bdt koriander",
+                "weight_calculation": "1 bundt koriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 Bdt coriander' is a fresh herb. Among the available options, 'basil, fresh' is the closest in terms of being a fresh herb, and it has a lower emission factor than dried spices, aligning with rule 1 (realistic comparison) and rule 4 (least processed).",
-                "ingredient_id": "Ra00486",
-                "closest_match_name": "basil, fresh",
-                "ingredient": "0.5 Bdt coriander",
+                "closest_match_explanation": "The ingredient '0.5 bdt koriander' is a fresh herb. Among the available options, 'basilikum, tørret' has the highest emission factor (2.8 kg CO2e / kg) and represents a processed herb, which is a reasonable broader category for fresh herbs when an exact match is not available. This aligns with rule 2 (broader category) and rule 5 (highest emission factor).",
+                "ingredient_id": "Ra00487",
+                "closest_match_name": "basilikum, tørret",
+                "ingredient": "0.5 bdt koriander",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.4
+                "co2_per_kg": 2.8
             }
         },
         {
-            "original_name": "2 spsk olivenolie",
-            "en_name": "2 tablespoons olive oil",
+            "name": "2 spsk olivenolie",
             "weight_estimate": {
-                "ingredient": "2 tablespoons olive oil",
-                "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+                "ingredient": "2 spsk olivenolie",
+                "weight_calculation": "1 spsk = 15 g, 2 * 15 g = 30 g = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 tablespoons olive oil' directly matches 'olive oil' in the database. This is the most specific and accurate match, aligning with rule 8.",
+                "closest_match_explanation": "The ingredient '2 spsk olivenolie' is best matched with 'olivenolie' as it is a direct and exact match, aligning with the primary goal of finding the closest possible match.",
                 "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
-                "ingredient": "2 tablespoons olive oil",
+                "closest_match_name": "olivenolie",
+                "ingredient": "2 spsk olivenolie",
                 "unit": "kg CO2e per kg",
                 "co2_per_kg": 5.9
             }
         },
         {
-            "original_name": "saften af 0.5 lime",
-            "en_name": "The juice of 0.5 lime",
+            "name": "saften af 0.5 lime",
             "weight_estimate": {
-                "ingredient": "The juice of 0.5 lime",
-                "weight_calculation": "1 lime = 60 g, 0.5 * 60 g = 30 g = 0.03 kg",
-                "weight_in_kg": 0.03
+                "ingredient": "saften af 0.5 lime",
+                "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
+                "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'The juice of 0.5 lime' is best matched with 'lime, raw' as it is the direct source of lime juice and represents the least processed form, aligning with rule 4.",
-                "ingredient_id": "Ra00332",
-                "closest_match_name": "lime, raw",
-                "ingredient": "The juice of 0.5 lime",
+                "closest_match_explanation": "The ingredient 'saften af 0.5 lime' is a fruit juice. Among the available options, 'halve ferskner i juice' has the highest emission factor (1.6 kg CO2e / kg) and represents a fruit in juice, which is a reasonable broader category for fruit juice when an exact match is not available. This aligns with rule 2 (broader category) and rule 5 (highest emission factor).",
+                "ingredient_id": "Ra00440",
+                "closest_match_name": "halve ferskner i juice",
+                "ingredient": "saften af 0.5 lime",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.6
+                "co2_per_kg": 1.6
             }
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "peber",
-            "en_name": "Pepper",
+            "name": "peber",
             "weight_estimate": {
-                "ingredient": "Pepper",
-                "weight_calculation": "Amount of Pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
+                "ingredient": "peber",
+                "weight_calculation": "Mængden af peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
-            "co2_per_kg_db": null
+            "co2_per_kg_db": {
+                "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. Among the available options, 'peber, sort' has the highest emission factor (5.2 kg CO2e / kg) and is a common type of pepper. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+                "ingredient_id": "Ra00302",
+                "closest_match_name": "peber, sort",
+                "ingredient": "peber",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.2
+            }
         }
     ],
     "persons": 2,
-    "instructions": " Peel and chop the onion and garlic, and cut the peppers into cubes. Heat a scoop of oil on a pan and saute both in it in even heat until the onions are clear. Turn up the flame and now brown the meat on the same pan. Add spices and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Taste with salt and pepper and possibly extra chili.\nPut your tortillas in a pack of silver paper and whine them in a 200 degree hot oven for approx. 10 minutes.\nDistribute the lightning chili on your tacos, preferably at the table, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce (eg Tabasco or similar) to those who prefer it extra strongly.\nFresh tomato salsa with chili and coriander\nPeel and chop onion and garlic. Chop the tomatoes into coarse cubes and finely chop the chili pepper. Cut the coriander. Mix it all together with olive oil, lime juice, salt and pepper.",
-    "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
+    "instructions": "Pil og hak løg og hvidløg, og skær peberfrugten i tern. Varm en sjat olie på en pande, og sautér begge dele heri ved jævn varme, til løgternene er klare. Skru op for blusset, og brun nu kødet på samme pande. Tilsæt krydderier og peberfrugt, og steg videre i et par minutter. Kom tomatpuré, kidneybønner og oksefond ved, og lad det hele simre i 10-15 minutter, til væden næsten er fordampet. Smag til med salt og peber samt evt. ekstra chili.\nKom dine tortillas i en pakke af sølvpapir, og lun dem i en 200 grader varm ovn i ca. 10 minutter.\nFordel lyn-chilien på dine tacos, gerne ved bordet, og top med tomatsalsa og avocado. Servér evt. med ekstra lime og hot sauce (fx Tabasco eller lignende) til dem, der foretrækker det ekstra stærkt.\nFrisk tomatsalsa med chili og koriander\nPil og hak løg og hvidløg. Hak tomaterne i grove tern, og hak chilipeberen fint. Snit korianderen. Bland det hele sammen med olivenolie, limesaft, salt og peber.",
+    "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa",
+    "language": "da"
 }

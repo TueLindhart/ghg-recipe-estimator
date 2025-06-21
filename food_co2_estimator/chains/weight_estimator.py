@@ -25,10 +25,9 @@ async def get_weight_estimates(
     *,
     verbose: bool,
     recipe: EnrichedRecipe,
-    language: Languages,
 ) -> WeightEstimates:
     weight_estimator_chain = get_weight_estimator_chain(
-        verbose=verbose, language=language
+        verbose=verbose, language=recipe.language
     )
 
     servings = recipe.persons if recipe.persons is not None else "Estimate"

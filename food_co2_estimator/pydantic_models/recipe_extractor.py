@@ -2,6 +2,7 @@ from typing import List
 
 from pydantic import BaseModel, Field
 
+from food_co2_estimator.language.detector import Languages, detect_language
 from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions, CO2perKg
 from food_co2_estimator.pydantic_models.weight_estimator import (
     WeightEstimate,
@@ -51,6 +52,7 @@ class EnrichedIngredient(BaseModel):
 
 class EnrichedRecipe(ExtractedRecipe):
     url: str
+    language: Languages | None
     ingredients: list[EnrichedIngredient]
 
     def get_ingredient_names(self) -> list[str]:
@@ -62,9 +64,13 @@ class EnrichedRecipe(ExtractedRecipe):
         url,
         extracted_recipe: ExtractedRecipe,
     ) -> "EnrichedRecipe":
+        language = detect_language(
+            extracted_recipe.instructions, extracted_recipe.ingredients
+        )
         return cls(
             title=extracted_recipe.title,
             url=url,
+            language=language,
             ingredients=EnrichedIngredient.from_list(extracted_recipe.ingredients),
             persons=extracted_recipe.persons,
             instructions=extracted_recipe.instructions,

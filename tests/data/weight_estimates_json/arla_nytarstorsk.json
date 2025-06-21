@@ -12,17 +12,17 @@
         },
         {
             "ingredient": "1 dl mørk balsamicoeddike",
-            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
             "ingredient": "2 spsk sukker",
-            "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "weight_calculation": "1 spsk = 15 g, 2 * 15 g = 30 g = 0.03 kg",
             "weight_in_kg": 0.03
         },
         {
             "ingredient": "1 tsk groft salt",
-            "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            "weight_calculation": "1 tsk = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
@@ -37,22 +37,22 @@
         },
         {
             "ingredient": "0.5 tsk groft salt",
-            "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+            "weight_calculation": "1 tsk = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
             "weight_in_kg": 0.0025
         },
         {
             "ingredient": "1.5 tsk hvedemel",
-            "weight_calculation": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+            "weight_calculation": "1 tsk = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
             "weight_in_kg": 0.0075
         },
         {
             "ingredient": "2.5 dl vand",
-            "weight_calculation": "1 dl = 0.1 kg, 2.5 * 0.1 kg = 0.25 kg",
+            "weight_calculation": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
             "weight_in_kg": 0.25
         },
         {
             "ingredient": "3 spsk hele gule sennepsfrø",
-            "weight_calculation": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "weight_calculation": "1 spsk = 15 g, 3 * 15 g = 45 g = 0.045 kg",
             "weight_in_kg": 0.045
         },
         {
@@ -67,18 +67,18 @@
         },
         {
             "ingredient": "0.75 tsk groft salt",
-            "weight_calculation": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+            "weight_calculation": "1 tsk = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
             "weight_in_kg": 0.00375
         },
         {
             "ingredient": "friskkværnet peber",
-            "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: freshly ground pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
-            "weight_in_kg": 0.02
+            "weight_calculation": "Mængden af friskkværnet peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+            "weight_in_kg": 0.005
         },
         {
             "ingredient": "friske krydderurter",
-            "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: fresh herbs per serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg.",
-            "weight_in_kg": 0.1
+            "weight_calculation": "Mængden af friske krydderurter er ikke angivet. LLM-estimat er: 1 portion = 0.025 kg, 1 * 0.025 kg = 0.025 kg",
+            "weight_in_kg": 0.025
         },
         {
             "ingredient": "100 g stegte bacontern",
@@ -87,7 +87,7 @@
         },
         {
             "ingredient": "4 blødkogte vagtelæg",
-            "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+            "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 vagtelæg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
             "weight_in_kg": 0.04
         }
     ]
