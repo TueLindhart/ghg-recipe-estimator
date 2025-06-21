@@ -19,7 +19,7 @@ from food_co2_estimator.language.detector import Languages, detect_language
         (
             ["berenjena", "pepino"],
             "Precalienta el horno a 180 grados. Añade sal y pimienta.",
-            None,
+            Languages.Unknown,
         ),
     ],
     ids=["english", "danish", "spanish"],
@@ -96,7 +96,7 @@ def test_norwegian_and_swedish_as_danish(ingredients, instructions, expected_lan
                 "2 cucharadas de eneldo fresco, picado",
                 "4 cucharadas de perejil fresco, picado",
             ],
-            None,
+            Languages.Unknown,
         ),
     ],
     ids=["danish", "english", "spanish"],
