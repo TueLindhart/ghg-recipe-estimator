@@ -17,7 +17,11 @@
 <Navbar>
   <NavBrand {href}>
     <!-- Logo displayed to the left of the brand text -->
-    <img src={logoSrc} alt="MyFoodPrint logo" class="h-8 w-8 mr-2" />
+    <img
+      src={logoSrc}
+      alt="MyFoodprint logo"
+      class="h-8 w-auto mr-2 object-contain"
+    />
     <span
       class="self-center whitespace-nowrap text-2xl md:text-3xl font-semibold text-[#404040]"
     >
