@@ -1,4 +1,4 @@
-from langchain_core.runnables import RunnablePassthrough, RunnableSerializable
+from langchain_core.runnables import RunnableLambda, RunnablePassthrough, RunnableSerializable
 
 from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.rag_co2_estimator import (
@@ -13,20 +13,24 @@ from food_co2_estimator.retrievers.vector_db_retriever import (
     batch_emission_retriever,
     clean_ingredient,
 )
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.utils.llm_model import LLMFactory
 
 NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
 INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
 
 
-def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
+def rag_co2_emission_chain(verbose: bool, language: Languages) -> RunnableSerializable:
     llm = LLMFactory(
         output_model=CO2Emissions,
         verbose=verbose,
     ).get_model()
 
     return (
-        {"context": batch_emission_retriever, "ingredients": RunnablePassthrough()}
+        {
+            "context": RunnableLambda(lambda x: batch_emission_retriever(x, language)),
+            "ingredients": RunnablePassthrough(),
+        }
         | RAG_CO2_EMISSION_PROMPT
         | llm
     )
@@ -61,11 +65,13 @@ def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
 
 @log_with_url
 async def get_co2_emissions(
+    *,
     verbose: bool,
     negligeble_threshold: float,
     recipe: EnrichedRecipe,
+    language: Languages,
 ) -> CO2Emissions:
-    emission_chain = rag_co2_emission_chain(verbose)
+    emission_chain = rag_co2_emission_chain(verbose, language)
 
     ingredients_input = [
         item.en_name

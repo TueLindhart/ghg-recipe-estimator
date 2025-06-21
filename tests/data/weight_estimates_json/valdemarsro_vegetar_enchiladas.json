@@ -1,57 +1,57 @@
 {
     "weight_estimates": [
         {
-            "ingredient": "1 tsp steady cumin",
+            "ingredient": "1 tsk stødt spidskommen",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 teaspoon of cinnamon",
+            "ingredient": "1 tsk stødt kanel",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 teaspoon smoked paprika",
+            "ingredient": "1 tsk røget paprika",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 tsp steady coriander",
+            "ingredient": "1 tsk stødt koriander",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "2 cloves of garlic",
+            "ingredient": "2 fed hvidløg",
             "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "1 tablespoon olive oil",
+            "ingredient": "1 spsk olivenolie",
             "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
         {
-            "ingredient": "1 onion",
+            "ingredient": "1 løg",
             "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "1 tsp wheat flour",
+            "ingredient": "1 tsk hvedemel",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 dl vegetable broth",
+            "ingredient": "1 dl grøntsagsbouillon",
             "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {
-            "ingredient": "1 can of chopped tomatoes",
+            "ingredient": "1 dåse hakkede tomater",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 tablespoon olive oil",
+            "ingredient": "1 spsk olivenolie",
             "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         },
@@ -61,67 +61,67 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "Black pepper",
+            "ingredient": "sort peber",
             "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "1 onion",
+            "ingredient": "1 løg",
             "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
             "weight_in_kg": 0.17
         },
         {
-            "ingredient": "2 cloves of garlic",
+            "ingredient": "2 fed hvidløg",
             "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
-            "ingredient": "1 Squash",
+            "ingredient": "1 squash",
             "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 can of chopped tomatoes",
+            "ingredient": "1 dåse hakkede tomater",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 tsp steady cumin",
+            "ingredient": "1 tsk stødt spidskommen",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 tsp steady coriander",
+            "ingredient": "1 tsk stødt koriander",
             "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
             "weight_in_kg": 0.005
         },
         {
-            "ingredient": "1 can of black beans",
+            "ingredient": "1 dåse sorte bønner",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "1 can of kidney beans",
+            "ingredient": "1 dåse kidneybønner",
             "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
             "weight_in_kg": 0.4
         },
         {
-            "ingredient": "300 g of corn",
+            "ingredient": "300 g majs",
             "weight_calculation": "300 g = 300 g = 0.3 kg",
             "weight_in_kg": 0.3
         },
         {
-            "ingredient": "8 Tortilla's pancakes",
+            "ingredient": "8 tortillas pandekager",
             "weight_calculation": "1 tortilla = 30 g, 8 * 30 g = 240 g = 0.24 kg",
             "weight_in_kg": 0.24
         },
         {
-            "ingredient": "150 g cheddar cheese",
+            "ingredient": "150 g cheddar ost",
             "weight_calculation": "150 g = 150 g = 0.15 kg",
             "weight_in_kg": 0.15
         },
         {
-            "ingredient": "1 handful of fresh coriander",
+            "ingredient": "1 håndfuld frisk koriander",
             "weight_calculation": "Handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
         },
@@ -131,12 +131,12 @@
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "Black pepper",
+            "ingredient": "sort peber",
             "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
             "weight_in_kg": 0.02
         },
         {
-            "ingredient": "1 tablespoon butter",
+            "ingredient": "1 spsk smør",
             "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
             "weight_in_kg": 0.015
         }

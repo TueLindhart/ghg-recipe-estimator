@@ -867,26 +867,6 @@ files = [
     {file = "decorator-5.2.1.tar.gz", hash = "sha256:65f266143752f734b0a7cc83c46f4618af75b8c5911b00ccb61d0ac9b6da0360"},
 ]
 
-[[package]]
-name = "deep-translator"
-version = "1.11.4"
-description = "A flexible free and unlimited python tool to translate between different languages in a simple way using multiple translators"
-optional = false
-python-versions = ">=3.7,<4.0"
-groups = ["main"]
-files = [
-    {file = "deep_translator-1.11.4-py3-none-any.whl", hash = "sha256:d635df037e23fa35d12fd42dab72a0b55c9dd19e6292009ee7207e3f30b9e60a"},
-    {file = "deep_translator-1.11.4.tar.gz", hash = "sha256:801260c69231138707ea88a0955e484db7d40e210c9e0ae0f77372ffda5f4bf5"},
-]
-
-[package.dependencies]
-beautifulsoup4 = ">=4.9.1,<5.0.0"
-requests = ">=2.23.0,<3.0.0"
-
-[package.extras]
-ai = ["openai (>=0.27.6,<0.28.0) ; python_full_version >= \"3.7.1\" and python_full_version < \"4.0.0\""]
-docx = ["docx2txt (>=0.8,<0.9)"]
-pdf = ["pypdf (>=3.3.0,<4.0.0)"]
 
 [[package]]
 name = "deprecated"
@@ -2358,17 +2338,6 @@ zstandard = ">=0.23.0,<0.24.0"
 langsmith-pyo3 = ["langsmith-pyo3 (>=0.1.0rc2,<0.2.0)"]
 pytest = ["pytest (>=7.0.0)", "rich (>=13.9.4,<14.0.0)"]
 
-[[package]]
-name = "libretranslatepy"
-version = "2.1.1"
-description = "Python bindings for LibreTranslate API"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "libretranslatepy-2.1.1-py3-none-any.whl", hash = "sha256:bf9f8b0003c94f34e141553b7ec0a02876297c06955f5efea49afbc9f85303a9"},
-    {file = "libretranslatepy-2.1.1.tar.gz", hash = "sha256:3f28e1b990ba5f514ae215c08ace0c4e2327eeccaa356983aefbca3a25ecc568"},
-]
 
 [[package]]
 name = "lxml"
@@ -5113,23 +5082,6 @@ files = [
 docs = ["myst-parser", "pydata-sphinx-theme", "sphinx"]
 test = ["argcomplete (>=3.0.3)", "mypy (>=1.7.0)", "pre-commit", "pytest (>=7.0,<8.2)", "pytest-mock", "pytest-mypy-testing"]
 
-[[package]]
-name = "translate"
-version = "3.6.1"
-description = "This is a simple, yet powerful command line translator with google translate behind it. You can also use it as a Python module in your code."
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "translate-3.6.1-py2.py3-none-any.whl", hash = "sha256:cebfb004989d9a2ab0d24c0c5805783c7f4e07243ea4ed2a8f1809d072bf712b"},
-    {file = "translate-3.6.1.tar.gz", hash = "sha256:7e70ffa46f193cc744be7c88b8e1323f10f6b2bb90d24bb5d29fdf1e56618783"},
-]
-
-[package.dependencies]
-click = "*"
-libretranslatepy = "2.1.1"
-lxml = "*"
-requests = "*"
 
 [[package]]
 name = "typer"

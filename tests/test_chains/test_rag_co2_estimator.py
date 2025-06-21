@@ -41,14 +41,14 @@ async def test_rag_co2_estimator_chain(
         enriched_recipe.ingredients, expected_enriched_recipe.ingredients
     ):
         assert (
-            ingredient.original_name == expected_ingredient.original_name
-        ), f"Ingredient mismatch: {ingredient.original_name} != {expected_ingredient.original_name}"
+            ingredient.name == expected_ingredient.name
+        ), f"Ingredient mismatch: {ingredient.name} != {expected_ingredient.name}"
 
         co2_per_kg_db = ingredient.co2_per_kg_db
         reference_co2_per_kg_db = expected_ingredient.co2_per_kg_db
         if co2_per_kg_db is None and reference_co2_per_kg_db is not None:
             raise AssertionError(
-                f"Estimated CO2 for {ingredient.original_name} is None, but the reference CO2 is not None: {expected_ingredient.original_name}"
+                f"Estimated CO2 for {ingredient.name} is None, but the reference CO2 is not None: {expected_ingredient.name}"
             )
 
         if co2_per_kg_db is None or reference_co2_per_kg_db is None:
@@ -66,7 +66,7 @@ async def test_rag_co2_estimator_chain(
         reference_co2 = reference_co2_per_kg_db.co2_per_kg
         if estimated_co2 is not None and reference_co2 is None:
             raise AssertionError(
-                f"Reference CO2 for {expected_ingredient.original_name} is None, but the estimated CO2 is not None: {ingredient.original_name}"
+                f"Reference CO2 for {expected_ingredient.name} is None, but the estimated CO2 is not None: {ingredient.name}"
             )
 
         if reference_co2 is None or estimated_co2 is None:
@@ -110,7 +110,7 @@ def print_max_deviation_ingredient(
     estimated_co2: float = ingredient.co2_per_kg_db.co2_per_kg  # type: ignore
     reference_co2: float = expected_ingredient.co2_per_kg_db.co2_per_kg  # type: ignore
 
-    return f"""Ingredient with maximum deviation: {ingredient.original_name}\n
+    return f"""Ingredient with maximum deviation: {ingredient.name}\n
             Estimated CO2: {estimated_co2} kg CO2 / kg\n"
             Reference CO2: {reference_co2} kg CO2 / kg\n"
             Deviation: {max_deviation} kg CO2 / kg

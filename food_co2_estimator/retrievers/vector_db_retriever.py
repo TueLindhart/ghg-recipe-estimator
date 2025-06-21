@@ -5,6 +5,7 @@ from langchain_core.documents import Document
 from langchain_core.vectorstores import VectorStoreRetriever
 
 from food_co2_estimator.data.vector_store.vector_store import get_vector_store
+from food_co2_estimator.language.detector import Languages
 
 # List of number words to recognize spelled-out quantities
 NUMBER_WORDS = [
@@ -22,6 +23,19 @@ NUMBER_WORDS = [
     "twelve",
     "half",
     "quarter",
+    # Danish number words
+    "en",
+    "to",
+    "tre",
+    "fire",
+    "fem",
+    "seks",
+    "syv",
+    "otte",
+    "ni",
+    "ti",
+    "halv",
+    "kvart",
 ]
 
 # List of units, sorted by length in decreasing order to match longer units first
@@ -71,6 +85,14 @@ INGREDIENT_UNITS = sorted(
         "tbsp",
         "tbsps",
         "tsp",
+        # Danish abbreviations
+        "stk",
+        "stks",
+        "spsk",
+        "tsk",
+        "ds",
+        "d\xe5se",
+        "d\xe5ser",
         # Miscellaneous Units
         "package",
         "packages",
@@ -155,6 +177,12 @@ FILLER_WORDS = [
     "with",
     "warm",
     "hot",
+    # Danish filler words
+    "frisk",
+    "store",
+    "sm\u00e5",
+    "lille",
+    "styk",
 ]
 
 
@@ -198,8 +226,10 @@ def get_clean_regex():
     return regex
 
 
-def get_emission_retriever(k: int = 10, **kwargs) -> VectorStoreRetriever:
-    vector_store = get_vector_store()
+def get_emission_retriever(
+    *, k: int = 10, language: Languages, **kwargs
+) -> VectorStoreRetriever:
+    vector_store = get_vector_store(language)
     return vector_store.as_retriever(k=k, **kwargs)
 
 
@@ -228,13 +258,13 @@ def parse_retriever_output(documents: List[Document]):
     return results
 
 
-def get_emission_retriever_chain(k: int = 5, **kwargs):
-    retriever = get_emission_retriever(k=k, **kwargs)
+def get_emission_retriever_chain(k: int = 5, language: Languages = Languages.English, **kwargs):
+    retriever = get_emission_retriever(k=k, language=language, **kwargs)
     return retriever | parse_retriever_output
 
 
-async def batch_emission_retriever(inputs: List[str]):
-    retriever_chain = get_emission_retriever_chain()
+async def batch_emission_retriever(inputs: List[str], language: Languages):
+    retriever_chain = get_emission_retriever_chain(language=language)
     cleaned_inputs = clean_ingredient_list(inputs)
     outputs = await retriever_chain.abatch(cleaned_inputs)
     if len(outputs) != len(cleaned_inputs):

@@ -120,15 +120,16 @@ an estimation job, checking status, and comparing CO₂ values. During startup,
 the app connects to Redis using a lifespan handler so that job progress can be
 tracked across requests.
 
+
 The main estimation workflow lives in `food_co2_estimator/main.py`. The
 `async_estimator` function retrieves a recipe page, extracts the recipe with an
-LLM prompt, translates the text when needed, predicts ingredient weights, and
-looks up emission values from a vector database. The results are serialized via
-Pydantic models and cached for future requests.
+LLM prompt, copies ingredient names when needed, predicts ingredient weights,
+and looks up emission values from a vector database. The results are serialized
+via Pydantic models and cached for future requests.
 
 Supporting modules in `food_co2_estimator/` provide chains for recipe
-extraction, weight estimation, translation, and retrieval, as well as utilities
-for language detection and storage. Data for emissions is stored in an SQLite
+extraction, weight estimation, and retrieval, as well as utilities for language
+detection and storage. Data for emissions is stored in an SQLite
 database and a Chroma vector store under `food_co2_estimator/data`.
 
 The SvelteKit frontend, located in `foodprint/`, proxies API calls to the Python

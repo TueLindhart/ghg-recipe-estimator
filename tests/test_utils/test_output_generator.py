@@ -21,7 +21,7 @@ def enriched_recipe_db_english():
         title="Test Recipe",
         ingredients=[
             EnrichedIngredient(
-                original_name="2 tomatoes",
+                name="2 tomatoes",
                 en_name="2 tomatoes",
                 weight_estimate=WeightEstimate(
                     ingredient="2 tomatoes",
@@ -38,7 +38,7 @@ def enriched_recipe_db_english():
                 ),
             ),
             EnrichedIngredient(
-                original_name="1 liter of milk",
+                name="1 liter of milk",
                 en_name="1 liter of milk",
                 weight_estimate=WeightEstimate(
                     ingredient="1 liter of milk",
@@ -55,7 +55,7 @@ def enriched_recipe_db_english():
                 ),
             ),
             EnrichedIngredient(
-                original_name="3 large eggs",
+                name="3 large eggs",
                 en_name="3 large eggs",
                 weight_estimate=WeightEstimate(
                     ingredient="3 large eggs",
@@ -85,7 +85,7 @@ def enriched_recipe_search_english():
         url="http://example.com",
         ingredients=[
             EnrichedIngredient(
-                original_name="2 tomatoes",
+                name="2 tomatoes",
                 en_name="2 tomatoes",
                 weight_estimate=WeightEstimate(
                     ingredient="2 tomatoes",
@@ -94,7 +94,7 @@ def enriched_recipe_search_english():
                 ),
             ),
             EnrichedIngredient(
-                original_name="1 liter of milk",
+                name="1 liter of milk",
                 en_name="1 liter of milk",
                 weight_estimate=WeightEstimate(
                     ingredient="1 liter of milk",
@@ -103,7 +103,7 @@ def enriched_recipe_search_english():
                 ),
             ),
             EnrichedIngredient(
-                original_name="3 large eggs",
+                name="3 large eggs",
                 en_name="3 large eggs",
                 weight_estimate=WeightEstimate(
                     ingredient="3 large eggs",

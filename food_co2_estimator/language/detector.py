@@ -19,7 +19,7 @@ def detect_language(recipe: EnrichedRecipe) -> Languages | None:
     language = (
         detect(recipe.instructions)
         if recipe.instructions is not None
-        else detect(", ".join(recipe.get_ingredients_orig_name_list()))
+        else detect(", ".join(recipe.get_ingredient_names()))
     )
     if language in ALLOWED_LANGUAGE_MISTAKES:  # Swedish and Norwegian is easy mistakes
         return Languages.Danish

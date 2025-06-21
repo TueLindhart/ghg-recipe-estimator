@@ -21,13 +21,13 @@ def recipe_before_translation():
         url="http://example.com",
         ingredients=[
             EnrichedIngredient(
-                original_name="1 dåse tomater",
+                name="1 dåse tomater",
             ),
             EnrichedIngredient(
-                original_name="2 agurker",
+                name="2 agurker",
             ),
             EnrichedIngredient(
-                original_name="1 dåse tomater",
+                name="1 dåse tomater",
             ),
         ],
         persons=2,
@@ -41,13 +41,9 @@ def recipe():
         title="Dummy Recipe",
         url="http://example.com",
         ingredients=[
-            EnrichedIngredient(
-                original_name="1 dåse tomater", en_name="1 can of tomatoes"
-            ),
-            EnrichedIngredient(original_name="2 agurker", en_name="2 cucumbers"),
-            EnrichedIngredient(
-                original_name="1 dåse tomater", en_name="1 can of tomatoes"
-            ),
+            EnrichedIngredient(name="1 dåse tomater", en_name="1 can of tomatoes"),
+            EnrichedIngredient(name="2 agurker", en_name="2 cucumbers"),
+            EnrichedIngredient(name="1 dåse tomater", en_name="1 can of tomatoes"),
         ],
         persons=2,
         instructions="Mix ingredients",
@@ -120,7 +116,7 @@ def test_update_with_co2_per_kg_db(recipe: EnrichedRecipe):
 
 def test_get_ingredients_lists(recipe: EnrichedRecipe):
     en_names = recipe.get_ingredients_en_name_list()
-    orig_names = recipe.get_ingredients_orig_name_list()
+    orig_names = recipe.get_ingredient_names()
 
     assert en_names == ["1 can of tomatoes", "2 cucumbers", "1 can of tomatoes"]
     assert orig_names == ["1 dåse tomater", "2 agurker", "1 dåse tomater"]
@@ -144,4 +140,4 @@ def test_from_extracted_recipe():
     assert enriched.persons == 2
     assert enriched.instructions == "Mix ingredients"
     for idx, expected in enumerate(ingredients):
-        assert enriched.ingredients[idx].original_name == expected
+        assert enriched.ingredients[idx].name == expected
