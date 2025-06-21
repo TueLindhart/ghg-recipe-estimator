@@ -57,13 +57,6 @@ async def async_estimator(
         log_exception_message(runparams.url, language_exception)
         return False, language_exception
 
-    # No external translation is performed. Instead we simply copy the original
-    # ingredient names so subsequent chains operate on the detected language.
-    enriched_recipe.update_with_translations(
-        translated_ingredients=enriched_recipe.get_ingredients_orig_name_list(),
-        instructions=enriched_recipe.instructions,
-    )
-
     await update_status(runparams.uid, redis_client, JobStatus.ESTIMATING_WEIGHTS)
     try:
         # Estimate weights using weight estimator

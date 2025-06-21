@@ -35,7 +35,7 @@ def generate_output_model(
             )
             ingredients_list.append(
                 IngredientOutput(
-                    name=ingredient.original_name,
+                    name=ingredient.name,
                     ingredient_id=None,
                     weight_kg=None,
                     co2_kg=None,
@@ -58,7 +58,7 @@ def generate_output_model(
             )
             ingredients_list.append(
                 IngredientOutput(
-                    name=ingredient.original_name,
+                    name=ingredient.name,
                     ingredient_id=None,
                     weight_kg=wt,
                     co2_kg=None,
@@ -96,7 +96,7 @@ def generate_output_model(
 
         ingredients_list.append(
             IngredientOutput(
-                name=ingredient.original_name,
+                name=ingredient.name,
                 ingredient_id=ingredient_id,
                 weight_kg=round(weight_estimate.weight_in_kg, 3),
                 co2_per_kg=co2_per_kg,

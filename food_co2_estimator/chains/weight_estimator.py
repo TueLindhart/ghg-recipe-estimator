@@ -2,9 +2,9 @@ from typing import Any
 
 from langchain.schema.runnable import RunnableSerializable
 
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.weight_estimator import get_weight_est_prompt
-from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 from food_co2_estimator.utils.llm_model import LLMFactory
@@ -33,7 +33,7 @@ async def get_weight_estimates(
 
     servings = recipe.persons if recipe.persons is not None else "Estimate"
     weight_output: WeightEstimates = await weight_estimator_chain.ainvoke(
-        {"input": recipe.get_ingredients_en_name_list(), "servings": servings},
+        {"input": recipe.get_ingredient_names(), "servings": servings},
     )  # type: ignore
 
     return weight_output

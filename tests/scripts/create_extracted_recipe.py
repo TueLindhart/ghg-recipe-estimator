@@ -39,7 +39,7 @@ async def process_and_store_recipe(file_name: str, url: str) -> EnrichedRecipe:
 
     # Copy ingredient names as detected language (no translation)
     enriched_recipe.update_with_translations(
-        enriched_recipe.get_ingredients_orig_name_list(),
+        enriched_recipe.get_ingredient_names(),
         enriched_recipe.instructions,
     )
     # Store the enriched recipe with translations as JSON
