@@ -38,6 +38,33 @@ Examples of a bunch/bnch of an ingredient - use them as a guideline:
 The weights of bunches are estimated as the highest possible weight.
 """
 
+# Danish translation of the general weight lookup table
+DA_WEIGHT_RECALCULATIONS = """
+1 dåse = 400 g = 0.4 kg
+1 bouillonterning = 4 g = 0.004 kg
+1 løg = 170 g = 0.170 kg
+1 peberfrugt = 150 g = 0.150 kg
+1 dåse tomatpuré = 140 g = 0.140 kg
+1 spiseske/spsk = 15 g  = 0.015 kg
+1 teskefuld/tsk = 5 g = 0.005 kg
+1 kartoffel = 170 - 300 g = 0.170 - 0.300 kg
+1 gulerod = 100 g = 0.100 kg
+1 citron = 85 g = 0.085 kg
+1 tortilla = 30 g = 0.030 kg
+1 squash = 400 g = 0.400 kg
+1 fed hvidløg = 0.004 kg
+1 dl / deciliter = 0.1 kg
+ris til 1 person / portion = 125 g = 0.125 kg
+Håndfuld krydderurter (basilikum, oregano osv.) = 0.025 kg
+
+Eksempler på et bundt/bdt af en ingrediens - brug dem som rettesnor:
+1 bundt persille = 50 g = 0.050 kg
+1 bundt asparges = 500 g = 0.500 kg
+1 bundt gulerødder = 750 g = 0.750 kg
+1 bundt tomater = 500 g = 0.500 kg
+Vægten af bundter estimeres som den højest mulige vægt.
+"""
+
 EN_INPUT_EXAMPLE = """
 1 can chopped tomatoes
 200 g pasta
@@ -152,6 +179,84 @@ ANSWER_EXAMPLE_OBJ = WeightEstimates(
 
 ANSWER_EXAMPLE = ANSWER_EXAMPLE_OBJ.model_dump_json(indent=2)
 
+# Danish example answer constructed with Danish ingredient names
+DA_ANSWER_EXAMPLE_OBJ = WeightEstimates(
+    weight_estimates=[
+        WeightEstimate(
+            ingredient="1 dåse hakkede tomater",
+            weight_calculation="1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            weight_in_kg=0.4,
+        ),
+        WeightEstimate(
+            ingredient="200 g pasta",
+            weight_calculation="200 g = 200 g = 0.2 kg",
+            weight_in_kg=0.2,
+        ),
+        WeightEstimate(
+            ingredient="500 ml vand",
+            weight_calculation="500 ml = 500 g, 1 * 500 g = 500 g = 0.5 kg",
+            weight_in_kg=0.5,
+        ),
+        WeightEstimate(
+            ingredient="250 g hakket kød",
+            weight_calculation="250 g = 250 g = 0.25 kg",
+            weight_in_kg=0.25,
+        ),
+        WeightEstimate(
+            ingredient="0.5 blomkål",
+            weight_calculation="1 blomkål = 500 g, 0.5 * 500 g = 250 g = 0.25 kg",
+            weight_in_kg=0.25,
+        ),
+        WeightEstimate(
+            ingredient="1 tsk sukker",
+            weight_calculation="1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+            weight_in_kg=0.005,
+        ),
+        WeightEstimate(
+            ingredient="1 økologisk citron",
+            weight_calculation="1 citron = 85 g, 1 * 85 g = 85 g = 0.085 kg",
+            weight_in_kg=0.085,
+        ),
+        WeightEstimate(
+            ingredient="3 tsk salt",
+            weight_calculation="1 tsk = 5 g, 3 * 5 g = 15 g = 0.015 kg",
+            weight_in_kg=0.015,
+        ),
+        WeightEstimate(
+            ingredient="2 spsk krydderier",
+            weight_calculation="1 spsk = 15 g, 2 * 15 g = 30 g = 0.030 kg",
+            weight_in_kg=0.03,
+        ),
+        WeightEstimate(
+            ingredient="peber",
+            weight_calculation="Mængden af peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+            weight_in_kg=0.005,
+        ),
+        WeightEstimate(
+            ingredient="2 store kartofler",
+            weight_calculation="1 stor kartoffel = 300 g, 2 * 300 g = 600 g = 0.6 kg",
+            weight_in_kg=0.6,
+        ),
+        WeightEstimate(
+            ingredient="1 bundt asparges",
+            weight_calculation="1 bundt asparges = 500 g, 1 * 500 g = 500 g = 0.500 kg",
+            weight_in_kg=0.5,
+        ),
+        WeightEstimate(
+            ingredient="1 and, ca. 2 kg",
+            weight_calculation="1 and, ca. 2 kg = 2000 g, 1 * 2000 g = 2000 g = 2.0 kg",
+            weight_in_kg=2.0,
+        ),
+        WeightEstimate(
+            ingredient="serveres med ris",
+            weight_calculation="Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.125 kg, 4 portioner * 0.125 kg = 0.5 kg",
+            weight_in_kg=0.5,
+        ),
+    ]
+)
+
+DA_ANSWER_EXAMPLE = DA_ANSWER_EXAMPLE_OBJ.model_dump_json(indent=2)
+
 WEIGHT_CONVERSION_TEMPLATE_EXPLANATION = "<ingredient name> = <weight in grams>, <amount> * <weight in grams> = <total weight in grams> = <total weight in kg>"
 INGREDIENT_NOT_FOUND_TEMPLATE = f"Ingredient not found in general weights. LLM estimate is: {WEIGHT_CONVERSION_TEMPLATE_EXPLANATION}."
 AMOUNT_NOT_SPECIFIED_TEMPLATE = "Amount of <ingredient> not specified. LLM estimate is: <ingredient name> per serving = <weight in kg>, <number of servings> * <weight in kg> = <total weight in kg>."
@@ -159,6 +264,8 @@ AMOUNT_NOT_SPECIFIED_TEMPLATE = "Amount of <ingredient> not specified. LLM estim
 WEIGHT_EST_SYSTEM_PROMPT = """
 Given a list of ingredients in English or Danish, estimate the weights in kilogram for each ingredient.
 Explain your reasoning for the estimation of weights.
+
+Respond in the same language as the ingredients. Danish inputs require Danish output, and English inputs require English output.
 
 The following general weights can be used for estimation:
 {recalculations}
@@ -192,7 +299,14 @@ WEIGHT_EST_EXAMPLE_AI_PROMPT = """{answer_example}"""
 
 def get_weight_est_prompt(language: Languages) -> ChatPromptTemplate:
     """Return weight estimation prompt with examples for the given language."""
-    input_example = EN_INPUT_EXAMPLE if language == Languages.English else DA_INPUT_EXAMPLE
+    if language == Languages.English:
+        input_example = EN_INPUT_EXAMPLE
+        answer_example = ANSWER_EXAMPLE
+        recalculations = EN_WEIGHT_RECALCULATIONS
+    else:
+        input_example = DA_INPUT_EXAMPLE
+        answer_example = DA_ANSWER_EXAMPLE
+        recalculations = DA_WEIGHT_RECALCULATIONS
     return ChatPromptTemplate(
         messages=[
             SystemMessagePromptTemplate.from_template(WEIGHT_EST_SYSTEM_PROMPT),
@@ -204,9 +318,9 @@ def get_weight_est_prompt(language: Languages) -> ChatPromptTemplate:
         ],
         input_variables=["input", "servings"],
         partial_variables={
-            "recalculations": EN_WEIGHT_RECALCULATIONS,
+            "recalculations": recalculations,
             "input_example": input_example,
-            "answer_example": ANSWER_EXAMPLE,
+            "answer_example": answer_example,
             "weight_conversion_template": WEIGHT_CONVERSION_TEMPLATE_EXPLANATION,
             "ingredient_not_found_template": INGREDIENT_NOT_FOUND_TEMPLATE,
             "amount_not_specified_template": AMOUNT_NOT_SPECIFIED_TEMPLATE,
