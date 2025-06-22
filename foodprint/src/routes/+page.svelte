@@ -50,7 +50,7 @@
 </script>
 
 <svelte:head>
-  <title>MyFoodPrint</title>
+  <title>MyFoodprint</title>
 </svelte:head>
 
 <div class="flex justify-center items-start min-h-screen px-4 pt-[15vh]">
