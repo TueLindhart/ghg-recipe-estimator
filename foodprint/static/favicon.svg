@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 180 180">
+  <defs>
+    <clipPath id="clippath">
+      <path d="M52.92,19.74c8.54,0,15.47,6.93,15.47,15.47,0,8.54-6.93,15.47-15.47,15.47s-15.47-6.93-15.47-15.47c0-8.54,6.93-15.47,15.47-15.47ZM75.69,88.22c0-14.37-11.65-26.02-26.02-26.02-14.37,0-26.02,11.65-26.02,26.02,0,14.37,11.65,26.02,26.02,26.02,14.37,0,26.02-11.65,26.02-26.02ZM77.37,11.52c0,4.27,3.46,7.73,7.73,7.73s7.73-3.46,7.73-7.73c0-4.27-3.46-7.73-7.73-7.73s-7.73,3.46-7.73,7.73ZM126.13,89.82c-20.84-4.67-41.51,8.43-46.19,29.27-4.67,20.84,8.43,41.51,29.27,46.19,20.84,4.67,41.51-8.43,46.19-29.27,4.67-20.84-8.43-41.51-29.27-46.19Z" style="fill: none;"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="89.5" y1="172.65" x2="89.5" y2="-7.35" gradientUnits="userSpaceOnUse">
+      <stop offset=".03" stop-color="#6dc49e"/>
+      <stop offset=".11" stop-color="#71c49d"/>
+      <stop offset=".2" stop-color="#7dc69b"/>
+      <stop offset=".29" stop-color="#92c897"/>
+      <stop offset=".38" stop-color="#afcc92"/>
+      <stop offset=".47" stop-color="#d4d18c"/>
+      <stop offset=".53" stop-color="#f3d587"/>
+      <stop offset=".66" stop-color="#f3b183"/>
+      <stop offset=".8" stop-color="#f3927f"/>
+      <stop offset=".92" stop-color="#f37e7d"/>
+      <stop offset="1" stop-color="#f3787d"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g style="clip-path: url(#clippath);">
+        <rect x="-.5" y="-7.35" width="180" height="180" style="fill: url(#linear-gradient); stroke: #fff; stroke-miterlimit: 10;"/>
+      </g>
+      <rect width="180" height="180" style="fill: none;"/>
+    </g>
+  </g>
+</svg>

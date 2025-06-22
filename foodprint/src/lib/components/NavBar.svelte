@@ -5,7 +5,7 @@
    * Source path for the logo displayed next to the brand name.
    * Replace this with the path to your own logo if desired.
    */
-  export let logoSrc: string = "/favicon.png";
+  export let logoSrc: string = "/favicon.svg";
 
   /**
    * The root link of the brand text (override from parent if needed).
