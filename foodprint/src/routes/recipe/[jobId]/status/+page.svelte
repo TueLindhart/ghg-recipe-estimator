@@ -48,11 +48,11 @@
     }
   }
 
-onMount(poll);
+  onMount(poll);
 </script>
 
 <svelte:head>
-  <title>MyFoodPrint - calculating</title>
+  <title>MyFoodprint - calculating</title>
 </svelte:head>
 
 <div

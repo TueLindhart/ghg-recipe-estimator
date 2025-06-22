@@ -3,7 +3,7 @@ import os
 from typing import Any, Dict, List
 from uuid import uuid4
 
-import pandas as pd
+import pandas as pd  # pyright: ignore[reportMissingImports]
 from langchain_core.documents import Document
 
 from food_co2_estimator.data.vector_store.vector_store import get_vector_store
