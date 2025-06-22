@@ -2,115 +2,98 @@
     "title": "Dutch Oven Southwestern Chicken Pot Pie",
     "ingredients": [
         {
-            "original_name": "1 tbsp olive oil",
-            "en_name": "1 tbsp olive oil",
+            "name": "1 tbsp olive oil",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 lb skinless, boneless chicken breast",
-            "en_name": "1 lb Skinless, Boneless Chicken Breast",
+            "name": "1 lb skinless, boneless chicken breast",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 medium carrots",
-            "en_name": "2 Medium Carrots",
+            "name": "2 medium carrots",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 stalks celery",
-            "en_name": "2 Stalks Celery",
+            "name": "2 stalks celery",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 red bell pepper",
-            "en_name": "1 Red Bell Pepper",
+            "name": "1 red bell pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 bunch scallions",
-            "en_name": "1 Bunch Scallions",
+            "name": "1 bunch scallions",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 (15 ounce) can diced tomatoes with green chiles",
-            "en_name": "1 (15 ounces) Can Diced Tomatoes with Green Chiles",
+            "name": "1 (15 ounce) can diced tomatoes with green chiles",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 (15 ounce) cans black beans",
-            "en_name": "2 (15 ounces) Cans Black Beans",
+            "name": "2 (15 ounce) cans black beans",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "4 tbsp chili powder",
-            "en_name": "4 tbsp chili powder",
+            "name": "4 tbsp chili powder",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tbsp ground cumin",
-            "en_name": "1 tbsp ground cumin",
+            "name": "1 tbsp ground cumin",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 tsp granulated garlic",
-            "en_name": "2 tsp granulated garlic",
+            "name": "2 tsp granulated garlic",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 tsp onion powder",
-            "en_name": "2 tsp onion powder",
+            "name": "2 tsp onion powder",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.25 tsp hot smoked paprika",
-            "en_name": "0.25 tsp hot smoked paprika",
+            "name": "0.25 tsp hot smoked paprika",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "ground black pepper",
-            "en_name": "Ground Black Pepper",
+            "name": "ground black pepper",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 (8.5 ounce) package dry corn muffin mix",
-            "en_name": "1 (8.5 ounces) Package Dry Corn Muffin Mix",
+            "name": "1 (8.5 ounce) package dry corn muffin mix",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.33 cup milk",
-            "en_name": "0.33 Cup Milk",
+            "name": "0.33 cup milk",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 egg",
-            "en_name": "1 Egg",
+            "name": "1 egg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 6,
-    "instructions": " Preheat the Oven to 400 Degrees F (200 Degrees C).\nHeat Oil in a Dutch above Medium Heat. Add Chicken. Cook, Stirring Occasionally, Until No Longer Pink Inside, 5 Two 7 Minutes. Add Carrots, Celery, Bell Pepper, and Scallions and Cook Until Tender, About 5 Minutes. Add Tomatoes, Black Beans, Chili Powder, Cumin, Garlic, Onion Powder, Paprika, Salt, and Black Pepper. Stir two Combine. Cook Until Heated Through, About 5 Minutes More.\nWhile Mixture Simmers, Combine Cornbread Mix With Milk and Egg In A Bowl.\nRemove Dutch above From Heat and Spread Cornbread Batter on Top of Chicken Mixture to Form The Crust.\nPlace dutch above in the preheated above and bake Until cornbread is golden and beginning to brown, 20 two 25 minutes.",
-    "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
+    "instructions": "1. Preheat the oven to 400 degrees F (200 degrees C).\n2. Heat oil in a Dutch oven over medium heat. Add chicken. Cook, stirring occasionally, until no longer pink inside, 5 to 7 minutes. Add carrots, celery, bell pepper, and scallions and cook until tender, about 5 minutes. Add tomatoes, black beans, chili powder, cumin, garlic, onion powder, paprika, salt, and black pepper. Stir to combine. Cook until heated through, about 5 minutes more.\n3. While mixture simmers, combine cornbread mix with milk and egg in a bowl.\n4. Remove Dutch oven from heat and spread cornbread batter on top of chicken mixture to form the crust.\n5. Place Dutch oven in the preheated oven and bake until cornbread is golden and beginning to brown, 20 to 25 minutes.",
+    "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/",
+    "language": "en"
 }

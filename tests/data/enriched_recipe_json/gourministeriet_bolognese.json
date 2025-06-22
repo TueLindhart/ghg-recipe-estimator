@@ -2,115 +2,98 @@
     "title": "Vores favorit bolognese",
     "ingredients": [
         {
-            "original_name": "1 kg hakket oksekød",
-            "en_name": "1 kg of minced beef",
+            "name": "1 kg hakket oksekød",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "3 store løg",
-            "en_name": "3 large onions",
+            "name": "3 store løg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "3 gulerødder",
-            "en_name": "3 carrots",
+            "name": "3 gulerødder",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2.5 stilke bladselleri",
-            "en_name": "2.5 Stalk leaf celery",
+            "name": "2.5 stilke bladselleri",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "6 fed hvidløg",
-            "en_name": "6 cloves of garlic",
+            "name": "6 fed hvidløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "150 g tomatkoncentrat",
-            "en_name": "150 g tomato concentrate",
+            "name": "150 g tomatkoncentrat",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "3 dåse hakkede tomater eller polpa",
-            "en_name": "3 can of chopped tomatoes or polpa",
+            "name": "3 dåse hakkede tomater eller polpa",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 dl rødvin",
-            "en_name": "2 dl red wine",
+            "name": "2 dl rødvin",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 tsk rosmarin",
-            "en_name": "0.5 tsp rosemary",
+            "name": "0.5 tsk rosmarin",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 tsk timian",
-            "en_name": "0.5 tsp thyme",
+            "name": "0.5 tsk timian",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk oregano",
-            "en_name": "1 tsp oregano",
+            "name": "1 tsk oregano",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk basilikum",
-            "en_name": "1 tsp basil",
+            "name": "1 tsk basilikum",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Olie",
-            "en_name": "Oil",
+            "name": "Olie",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Salt",
-            "en_name": "Salt",
+            "name": "Salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "friskekværnet peber",
-            "en_name": "freshly ground pepper",
+            "name": "Friskekværnet peber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 håndfuld friske basilikumblade",
-            "en_name": "1 handful of fresh basil leaves",
+            "name": "1 håndfuld friske basilikumblade",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Pasta efter ønske",
-            "en_name": "Pasta as desired",
+            "name": "Pasta efter ønske",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "Revet parmesan",
-            "en_name": "Torn parmesan",
+            "name": "Revet parmesan",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 8,
-    "instructions": " mas the meat well between your hands, until it no longer has the classic \"minced beef strips\". Heat a good squat of oil in a large saucepan and brown the meat well. It may have a little roasting crust before chopping it well with a pot spoon. Continue until well browned and season with salt and freshly ground pepper. Put the meat aside. Meanwhile, blend onions, carrots, leaf celery and garlic finely. You can also choose to blend it roughly, or alternatively chop it nicely in your hand - it's up to you. In the same saucepan, heat another sip of oil, and the vegetables are sweated well for approx. 10 minutes. Stir along the way. Then pour the chopped beef back into the pan, add tomato concentrate and sweat with a minute. Pour the red wine over and let it cook for 5 minutes, then add the tomato and spices. Let the bolognese simmer for a minimum of 1 hour, preferably 2-3 hours if the time is for it - stir along the way. Before serving, turn the fresh basil leaves in and bolognese are added with salt and freshly ground pepper.",
-    "url": "https://gourministeriet.dk/vores-favorit-bolognese/"
+    "instructions": "Mas kødet godt mellem dine hænder, til det ikke længere har de klassiske \"hakket oksekød strimler\". Varm en god sjat olie i en stor gryde, og brun kødet godt af. Det må gerne få lidt stegeskorpe inden du hakker det godt med en grydeske. Fortsæt til det er godt brunet og krydr med salt og friskkværnet peber. Læg kødet til side. Blend imens løg, gulerødder, bladselleri og hvidløg fint. Du kan også vælge at blende det groft, eller alternativt hakke det fint i hånden - det er op til dig. I samme gryde varmes endnu en sjat olie, og grøntsagerne svitses godt af i ca. 10 minutter. Rør undervejs. Hæld derefter det hakkede oksekød tilbage i gryden, tilsæt tomatkoncentrat og svitse med et minuts tid. Hæld rødvinen over og lad det koge ind i 5 minutter, og tilsæt derefter tomat og krydderier. Lad bolognesen simre i minimum 1 time, gerne 2-3 timer hvis tiden er til det - rør undervejs. Inden servering vendes de friske basilikumblade i, og bolognese smages til med salt og friskkværnet peber.",
+    "url": "https://gourministeriet.dk/vores-favorit-bolognese/",
+    "language": "da"
 }

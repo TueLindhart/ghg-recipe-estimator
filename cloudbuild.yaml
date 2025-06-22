@@ -33,14 +33,13 @@ steps:
       - --platform=managed
       - --port=8080
       - --max-instances=1
-      - --min-instances=1
+      - --min-instances=0
       - --memory=512Mi
       - --set-env-vars=USE_CACHE=true
       - --set-env-vars=STORE_IN_CACHE=true
       - --set-env-vars=ENV=prod
       - --set-env-vars=MODEL_VENDOR=google
       - --update-secrets=OPENAI_API_KEY=OpenAIAPIKey:latest
-      - --update-secrets=MY_MAIL=MyMail:latest
       - --update-secrets=CACHE_BUCKET=CacheBucketName:latest
       - --update-secrets=FOODPRINT_API_KEY=FoodPrintAPIKey:latest
       - --update-secrets=FRONTEND_URL=FoodPrintFrontendURL:latest

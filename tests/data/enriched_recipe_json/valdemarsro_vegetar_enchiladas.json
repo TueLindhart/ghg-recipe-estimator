@@ -2,175 +2,138 @@
     "title": "Vegetar enchiladas",
     "ingredients": [
         {
-            "original_name": "1 tsk stødt spidskommen",
-            "en_name": "1 tsp steady cumin",
+            "name": "1 tsk stødt spidskommen",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt kanel",
-            "en_name": "1 teaspoon of cinnamon",
+            "name": "1 tsk stødt kanel",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk røget paprika",
-            "en_name": "1 teaspoon smoked paprika",
+            "name": "1 tsk røget paprika",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt koriander",
-            "en_name": "1 tsp steady coriander",
+            "name": "1 tsk stødt koriander",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 spsk olivenolie",
-            "en_name": "1 tablespoon olive oil",
+            "name": "1 spsk olivenolie",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "name": "1 løg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk hvedemel",
-            "en_name": "1 tsp wheat flour",
+            "name": "1 tsk hvedemel",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dl grøntsagsbouillon",
-            "en_name": "1 dl vegetable broth",
+            "name": "1 dl grøntsagsbouillon",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dåse hakkede tomater",
-            "en_name": "1 can of chopped tomatoes",
+            "name": "1 dåse hakkede tomater",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 spsk olivenolie",
-            "en_name": "1 tablespoon olive oil",
+            "name": "1 spsk olivenolie",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "name": "sort peber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "name": "1 løg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "name": "1 squash",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dåse hakkede tomater",
-            "en_name": "1 can of chopped tomatoes",
+            "name": "1 dåse hakkede tomater",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt spidskommen",
-            "en_name": "1 tsp steady cumin",
+            "name": "1 tsk stødt spidskommen",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt koriander",
-            "en_name": "1 tsp steady coriander",
+            "name": "1 tsk stødt koriander",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dåse sorte bønner",
-            "en_name": "1 can of black beans",
+            "name": "1 dåse sorte bønner",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dåse kidneybønner",
-            "en_name": "1 can of kidney beans",
+            "name": "1 dåse kidneybønner",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "300 g majs",
-            "en_name": "300 g of corn",
+            "name": "300 g majs",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "8 tortillas pandekager",
-            "en_name": "8 Tortilla's pancakes",
+            "name": "8 tortillas pandekager",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "150 g cheddar ost",
-            "en_name": "150 g cheddar cheese",
+            "name": "150 g cheddar ost",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 håndfuld frisk koriander",
-            "en_name": "1 handful of fresh coriander",
+            "name": "1 håndfuld frisk koriander",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
-            "weight_estimate": null,
-            "co2_per_kg_db": null
-        },
-        {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
-            "weight_estimate": null,
-            "co2_per_kg_db": null
-        },
-        {
-            "original_name": "1 spsk smør",
-            "en_name": "1 tablespoon butter",
+            "name": "1 spsk smør",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": " Enchilada's sauce\nShake all the spices in a dry saucepan until they start to smell nice.\nAdd oil, garlic and onion and saute until the onions are soft.\nStir flour into the filling and then add vegetable broth and chopped tomatoes.\nStir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper.\nFill\nHeat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through.\nShake the corn kernels in a little butter on a pan until they get crispy and get a little color.\nGather Enchiladas\nGrease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish.\nDistribute the last enchilada sauce over and sprinkle with more cheese.\nDistribute bean filling and corn kernels in the sides of the dish if there is anything left over.\nBake them in a preheated oven at 175 degrees hot air for about 18 minutes.\nSprinkle with coriander before serving.",
-    "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    "instructions": "Enchiladas sauce\nRist alle krydderierne i en tør gryde, til de begynder at dufte skønt.\nTilsæt olie, hvidløg og løg og sauter, til løgene er bløde.\nRør mel ud i fyldet og kom derefter grøntsagsbouillon og hakkede tomater i.\nRør det hele godt sammen og lad saucen simre i 15 minutter uden låg. Smag til med salt og friskkværnet peber.\nFyld\nVarm olie op i en gryde og sauter løg og hvidløg, til løgene er bløde. Tilsæt squash, hakkede tomater, spidskommen og koriander og lad det simre i 15 minutter uden låg, til det koger lidt ind. Tilsæt de sorte bønner og kidneybønner og varm godt igennem.\nRist majskernerne i lidt smør på en pande, til de bliver sprøde og får lidt farve.\nSaml Enchiladas\nSmør hver tortillapandekage med enchiladas sauce og kom derefter bønnefyld, majs og cheddarost ovenpå, rul sammen og placer dem i et smurt ovnfast fad.\nFordel den sidste enchiladas sauce over og drys med mere ost.\nFordel bønnefyld og majskerner i siderne af fadet, hvis der er noget til overs.\nBag dem i en forvarmet ovn ved 175 grader varmluft i cirka 18 minutter.\nDrys med koriander inden servering.",
+    "url": "https://www.valdemarsro.dk/vegetar-enchiladas/",
+    "language": "da"
 }

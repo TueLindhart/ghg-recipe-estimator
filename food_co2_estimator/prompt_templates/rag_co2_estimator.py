@@ -110,7 +110,7 @@ using dictionary formatting.
 It is very important to follow the above rules because they ensure trust worthy results. Otherwise, they cannot be used.
 
 IMPORTANT! You must carefully explain why you have chosen the best match with respect to how the matched ingredient follows the provided steps.
-IMPORTANT! The ingredient name must follow the exact spelling and format provided in the list of ingredients with quantities, units and everything intact.
+IMPORTANT! The ingredient name must follow the exact language, spelling and format provided in the list of ingredients with quantities, units and everything intact.
 IMPORTANT! The context output must directly "copy-pasted" from the best match in context.
 IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
 """

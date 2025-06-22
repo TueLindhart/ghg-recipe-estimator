@@ -1,5 +1,12 @@
-from langchain_core.runnables import RunnablePassthrough, RunnableSerializable
+from functools import partial
 
+from langchain_core.runnables import (
+    RunnableLambda,
+    RunnablePassthrough,
+    RunnableSerializable,
+)
+
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.rag_co2_estimator import (
     RAG_CO2_EMISSION_PROMPT,
@@ -19,14 +26,25 @@ NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
 INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
 
 
-def rag_co2_emission_chain(verbose: bool) -> RunnableSerializable:
+def rag_co2_emission_chain(verbose: bool, language: Languages) -> RunnableSerializable:
     llm = LLMFactory(
         output_model=CO2Emissions,
         verbose=verbose,
     ).get_model()
 
+    # ---- Context retriever --------------------------------------------------
+    # RunnableLambda takes the single chain input (the question) and expands
+    # it into the (question, language) call expected by `batch_emission_retriever`.
+    context_runnable = RunnableLambda(
+        partial(batch_emission_retriever, language=language)
+    )
+
+    # ---- Chain --------------------------------------------------------------
     return (
-        {"context": batch_emission_retriever, "ingredients": RunnablePassthrough()}
+        {
+            "context": context_runnable,  # <- uses (question, language)
+            "ingredients": RunnablePassthrough(),  # forwards the raw question
+        }
         | RAG_CO2_EMISSION_PROMPT
         | llm
     )
@@ -51,9 +69,9 @@ def above_weight_threshold(
 
 
 def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
-    if item.en_name is None:
+    if item.name is None:
         return True
-    ingredient = clean_ingredient(item.en_name)
+    ingredient = clean_ingredient(item.name)
     return not any(
         ignored_ingredient == ingredient for ignored_ingredient in INGREDIENTS_TO_IGNORE
     )
@@ -61,14 +79,15 @@ def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
 
 @log_with_url
 async def get_co2_emissions(
+    *,
     verbose: bool,
     negligeble_threshold: float,
     recipe: EnrichedRecipe,
 ) -> CO2Emissions:
-    emission_chain = rag_co2_emission_chain(verbose)
+    emission_chain = rag_co2_emission_chain(verbose, recipe.language)
 
     ingredients_input = [
-        item.en_name
+        item.name
         for item in recipe.ingredients
         if should_include_ingredient(item, negligeble_threshold)
     ]
