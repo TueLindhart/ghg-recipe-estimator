@@ -33,7 +33,7 @@ steps:
       - --platform=managed
       - --port=8080
       - --max-instances=1
-      - --min-instances=1
+      - --min-instances=0
       - --memory=512Mi
       - --set-env-vars=USE_CACHE=true
       - --set-env-vars=STORE_IN_CACHE=true
