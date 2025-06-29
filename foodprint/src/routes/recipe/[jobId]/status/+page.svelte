@@ -1,5 +1,7 @@
 <script lang="ts">
-  import { goto } from "$app/navigation";
+  import { goto, invalidate } from "$app/navigation";
+  import { page } from "$app/stores";
+  import { get } from "svelte/store";
   import GradientHeading from "$lib/components/GradientHeading.svelte";
   import ProgressTimeline from "$lib/components/ProgressTimeline.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
@@ -8,31 +10,21 @@
 
   import { onMount } from "svelte";
 
-  // jobId arrives from load()
-  export let data: { jobId: string };
+  // jobId and initial status arrive from load()
+  export let data: { jobId: string; status: string; result?: string };
   const { jobId } = data;
 
-  let status: string = "Processing";
+  let status: string = data.status;
   let statusMessage = "";
 
   async function poll(): Promise<void> {
     try {
-      const r = await fetch(`/api/status/${jobId}`);
-      if (!r.ok) {
-        let detail = `Fejl ved statusopdatering: ${r.status}`;
-        try {
-          const errorBody = await r.json();
-          if (errorBody?.error) {
-            detail = `Fejl ved statusopdatering: ${errorBody.error}`;
-          }
-        } catch {
-          // fallback to status if response is not JSON
-        }
-        statusMessage = detail;
-        return;
-      }
-
-      const resp = (await r.json()) as { status: string; result?: string };
+      await invalidate(`/recipe/${jobId}/status`);
+      const resp = get(page).data as {
+        jobId: string;
+        status: string;
+        result?: string;
+      };
       status = resp.status;
 
       if (status === "Completed") {
