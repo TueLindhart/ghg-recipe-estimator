@@ -58,6 +58,22 @@ class IngredientOutput(BaseModel):
         description="Comment on weight estimation"
     )
     co2_emission_notes: str | None = Field(description="Comment on CO2 emission")
+    energy_kj: float | None = Field(
+        description="Energy contribution in kJ for this ingredient",
+        default=None,
+    )
+    fat_g: float | None = Field(
+        description="Fat contribution in grams for this ingredient",
+        default=None,
+    )
+    carbohydrate_g: float | None = Field(
+        description="Carbohydrate contribution in grams for this ingredient",
+        default=None,
+    )
+    protein_g: float | None = Field(
+        description="Protein contribution in grams for this ingredient",
+        default=None,
+    )
 
 
 class RecipeCO2Output(BaseModel):
@@ -70,3 +86,19 @@ class RecipeCO2Output(BaseModel):
     co2_per_person_kg: float | None = None
     avg_meal_emission_per_person_range_kg: List[float]
     ingredients: List[IngredientOutput]
+    total_energy_kj: float | None = Field(
+        description="Total energy for the recipe in kJ",
+        default=None,
+    )
+    total_fat_g: float | None = Field(
+        description="Total fat for the recipe in grams",
+        default=None,
+    )
+    total_carbohydrate_g: float | None = Field(
+        description="Total carbohydrates for the recipe in grams",
+        default=None,
+    )
+    total_protein_g: float | None = Field(
+        description="Total protein for the recipe in grams",
+        default=None,
+    )

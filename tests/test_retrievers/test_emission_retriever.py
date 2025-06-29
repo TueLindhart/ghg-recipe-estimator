@@ -209,10 +209,26 @@ def test_parse_retriever_output():
     # Arrange
     mock_documents = [
         Document(
-            page_content="beef", metadata={"Total kg CO2e/kg": 60.0, "ID_Ra": "123"}
+            page_content="beef",
+            metadata={
+                "Total kg CO2e/kg": 60.0,
+                "ID_Ra": "123",
+                "Energi (KJ/100 g)": 200.0,
+                "Fedt (g/100 g)": 10.0,
+                "Kulhydrat (g/100 g)": 0.5,
+                "Protein (g/100 g)": 20.0,
+            },
         ),
         Document(
-            page_content="chicken", metadata={"Total kg CO2e/kg": 6.1, "ID_Ra": "456"}
+            page_content="chicken",
+            metadata={
+                "Total kg CO2e/kg": 6.1,
+                "ID_Ra": "456",
+                "Energi (KJ/100 g)": 150.0,
+                "Fedt (g/100 g)": 5.0,
+                "Kulhydrat (g/100 g)": 1.0,
+                "Protein (g/100 g)": 18.0,
+            },
         ),
         Document(page_content="no_emission", metadata={}),
     ]
@@ -222,8 +238,22 @@ def test_parse_retriever_output():
 
     # Assert
     expected = {
-        "beef": {"emission": "60.0 kg CO2e / kg", "id": "123"},
-        "chicken": {"emission": "6.1 kg CO2e / kg", "id": "456"},
+        "beef": {
+            "emission": "60.0 kg CO2e / kg",
+            "id": "123",
+            "energy_kj_100g": 200.0,
+            "fat_g_100g": 10.0,
+            "carb_g_100g": 0.5,
+            "protein_g_100g": 20.0,
+        },
+        "chicken": {
+            "emission": "6.1 kg CO2e / kg",
+            "id": "456",
+            "energy_kj_100g": 150.0,
+            "fat_g_100g": 5.0,
+            "carb_g_100g": 1.0,
+            "protein_g_100g": 18.0,
+        },
     }
     assert result == expected
 

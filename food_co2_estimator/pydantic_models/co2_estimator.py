@@ -24,6 +24,22 @@ class CO2perKg(BaseModel):
         description="'kg CO2 per kg' directly 'copy-pasted' from closest match. Set to 'none' if there is no good match.",
         default=None,
     )
+    energy_kj_100g: Optional[float] = Field(
+        description="Energy (kJ) per 100 g for the matched ingredient",
+        default=None,
+    )
+    fat_g_100g: Optional[float] = Field(
+        description="Fat in grams per 100 g for the matched ingredient",
+        default=None,
+    )
+    carbohydrate_g_100g: Optional[float] = Field(
+        description="Carbohydrates in grams per 100 g for the matched ingredient",
+        default=None,
+    )
+    protein_g_100g: Optional[float] = Field(
+        description="Protein in grams per 100 g for the matched ingredient",
+        default=None,
+    )
 
 
 class CO2Emissions(BaseModel):
