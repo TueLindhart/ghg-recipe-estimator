@@ -79,7 +79,7 @@ def enriched_recipe_db_english():
                     energy_kj_100g=600.0,
                     fat_g_100g=10.0,
                     carbohydrate_g_100g=1.0,
-                    protein_g_100g=12.0,
+                    protein_g_100g=13.0,
                 ),
             ),
         ],
@@ -106,9 +106,9 @@ def enriched_recipe_db_english():
                 budget_emission_per_person_per_meal=0.5,
                 budget_emission_per_person_per_day=2.0,
                 energy_per_person_kj=895.0,  # 3580.0 / 4
-                fat_per_person_g=11.4,  # 45.4 / 4
-                carbohydrate_per_person_g=14.4,  # 57.5 / 4
-                protein_per_person_g=12.5,  # 50.0 / 4
+                fat_per_person_g=11.0,  # 45.4 / 4
+                carbohydrate_per_person_g=14.0,  # 57.5 / 4
+                protein_per_person_g=13,  # 50.0 / 4
                 ingredients=[
                     IngredientOutput(
                         name="1 liter of milk",
@@ -150,7 +150,7 @@ def enriched_recipe_db_english():
                         energy_kj=900.0,
                         fat_g=15.0,
                         carbohydrate_g=1.5,
-                        protein_g=18.0,
+                        protein_g=19.5,
                     ),
                 ],
             ),
