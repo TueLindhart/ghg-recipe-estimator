@@ -249,10 +249,7 @@ def create_recipe_output(
         total_co2_kg=round(total_co2, 1),
         number_of_persons=persons,
         co2_per_person_kg=co2_per_person,
-        avg_meal_emission_per_person_range_kg=[
-            MIN_DINNER_EMISSION_PER_CAPITA,
-            MAX_DINNER_EMISSION_PER_CAPITA,
-        ],
+        avg_meal_emission_per_person=,
         ingredients=ingredients,
         total_energy_kj=round(total_energy, 2) if total_energy else None,
         total_fat_g=round(total_fat, 2) if total_fat else None,

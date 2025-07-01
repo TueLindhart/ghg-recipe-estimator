@@ -1,4 +1,3 @@
-import logging
 import os
 import uuid
 from typing import List
@@ -38,19 +37,14 @@ class RunParams(pydantic.BaseModel):
         return True
 
 
-class LogParams(pydantic.BaseModel):
-    logging_level: int = logging.INFO
-    verbose: bool = False
-
-
 class IngredientOutput(BaseModel):
     name: str = Field(description="Name of ingredient.")
     ingredient_id: str | None = Field(description="ingredient Id from vector DB")
     weight_kg: float | None = Field(
-        description="Weight",
+        description="Weight of ingredient in kg",
     )
     co2_per_kg: float | None = Field(
-        description="kg CO2e / kg",
+        description="Emission in kg CO2e / kg",
     )
     co2_kg: float | None = Field(description="CO2 Emission in kg")
     calculation_notes: str | None = Field(description="Comment")
@@ -79,12 +73,27 @@ class IngredientOutput(BaseModel):
 class RecipeCO2Output(BaseModel):
     """Class containing recipe CO2 output information"""
 
-    title: str | None
-    url: str
-    total_co2_kg: float
-    number_of_persons: int | None = None
-    co2_per_person_kg: float | None = None
-    avg_meal_emission_per_person_range_kg: List[float]
+    title: str | None = Field(
+        description="Title of the recipe",
+        default=None,
+    )
+    url: str = Field(
+        description="URL of the recipe",
+    )
+    total_co2_kg: float | None = Field(
+        description="Total CO2 emission for the recipe in kg", default=None
+    )
+    number_of_persons: int | None = Field(
+        description="Number of persons the recipe is intended for",
+        default=None,
+    )
+    co2_per_person_kg: float | None = Field(
+        description="CO2 emission per person in kg",
+        default=None,
+    )
+    avg_meal_emission_per_person: float = Field(
+        description="Average meal emission per person in kg",
+    )
     ingredients: List[IngredientOutput]
     total_energy_kj: float | None = Field(
         description="Total energy for the recipe in kJ",
