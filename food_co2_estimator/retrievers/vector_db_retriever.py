@@ -309,6 +309,8 @@ def parse_retriever_output(documents: List[Document]):
 
             def safe_float(key: str):
                 value = metadata.get(key)
+                if value is None:
+                    return None
                 try:
                     return float(value)
                 except (ValueError, TypeError):
