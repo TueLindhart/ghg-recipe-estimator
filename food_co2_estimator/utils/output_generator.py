@@ -15,9 +15,18 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
 )
 
+# https://concito.dk/files/media/document/Danmarks%20globale%20forbrugsudledninger.pdf
 # Average Danish dinner emissions (kg CO₂e / capita)
-MIN_DINNER_EMISSION_PER_CAPITA = 1.3
-MAX_DINNER_EMISSION_PER_CAPITA = 2.2
+# 13 [ton / year]  * 20 % / 365 [days] = 0.00712 ton CO₂e / day
+# 0.00721 ton CO₂e / day * 1000 = 7.12 kg CO₂e / day
+AVG_EMISSION_PER_CAPITA_PER_DAY = 7.1
+# Average Danish dinner emissions (kg CO₂e / meal)
+# 7.12 kg CO₂e / day / 4 meals per day = 1.78 kg CO₂e / meal
+AVG_EMISSION_PER_CAPITA_PER_MEAL = 1.8
+
+# https://concito.dk/en/concito-bloggen/her-faar-du-mest-ernaering-klimaaftrykket-0?utm_source=chatgpt.com
+BUDGET_EMISSION_PER_CAPITA_PER_DAY = 2.0
+BUDGET_EMISSION_PER_CAPITA_PER_MEAL = 0.5
 
 
 def generate_output_model(
@@ -29,13 +38,14 @@ def generate_output_model(
     (
         ingredients,
         total_co2,
-        total_energy,
-        total_fat,
-        total_carb,
-        total_protein,
+        energy_per_person,
+        fat_per_person,
+        carb_per_person,
+        protein_per_person,
     ) = build_ingredient_outputs(
         enriched_recipe.ingredients,
         negligeble_threshold,
+        number_of_persons,
     )
     co2_per_person = calculate_co2_per_person(total_co2, number_of_persons)
 
@@ -45,17 +55,25 @@ def generate_output_model(
         total_co2,
         number_of_persons,
         co2_per_person,
-        total_energy,
-        total_fat,
-        total_carb,
-        total_protein,
+        energy_per_person,
+        fat_per_person,
+        carb_per_person,
+        protein_per_person,
     )
 
 
 def build_ingredient_outputs(
     ingredients: Iterable[EnrichedIngredient],
     negligeble_threshold: float,
-) -> tuple[list[IngredientOutput], float, float, float, float, float]:
+    number_of_persons: int | None = None,
+) -> tuple[
+    list[IngredientOutput],
+    float,
+    float | None,
+    float | None,
+    float | None,
+    float | None,
+]:
     """Return ingredient outputs and total values for the recipe."""
     outputs: list[IngredientOutput] = []
     total_co2: float = 0.0
@@ -80,9 +98,34 @@ def build_ingredient_outputs(
         if protein is not None:
             total_protein += protein
 
+    # Calculate per-person values if number_of_persons is available
+    energy_per_person = (
+        total_energy / number_of_persons
+        if number_of_persons and total_energy > 0
+        else None
+    )
+    fat_per_person = (
+        total_fat / number_of_persons if number_of_persons and total_fat > 0 else None
+    )
+    carb_per_person = (
+        total_carb / number_of_persons if number_of_persons and total_carb > 0 else None
+    )
+    protein_per_person = (
+        total_protein / number_of_persons
+        if number_of_persons and total_protein > 0
+        else None
+    )
+
     # highest emitters first
     outputs.sort(key=lambda x: (x.co2_kg is not None, x.co2_kg), reverse=True)
-    return outputs, total_co2, total_energy, total_fat, total_carb, total_protein
+    return (
+        outputs,
+        total_co2,
+        energy_per_person,
+        fat_per_person,
+        carb_per_person,
+        protein_per_person,
+    )
 
 
 def evaluate_single_ingredient(
@@ -237,10 +280,10 @@ def create_recipe_output(
     total_co2: float,
     persons: int | None,
     co2_per_person: float | None,
-    total_energy: float,
-    total_fat: float,
-    total_carb: float,
-    total_protein: float,
+    energy_per_person: float | None,
+    fat_per_person: float | None,
+    carb_per_person: float | None,
+    protein_per_person: float | None,
 ) -> RecipeCO2Output:
     """Assemble the top-level :class:`RecipeCO2Output`."""
     return RecipeCO2Output(
@@ -249,10 +292,17 @@ def create_recipe_output(
         total_co2_kg=round(total_co2, 1),
         number_of_persons=persons,
         co2_per_person_kg=co2_per_person,
-        avg_meal_emission_per_person=,
+        avg_emission_per_person_per_meal=AVG_EMISSION_PER_CAPITA_PER_MEAL,
+        avg_emission_per_person_per_day=AVG_EMISSION_PER_CAPITA_PER_DAY,
+        budget_emission_per_person_per_meal=BUDGET_EMISSION_PER_CAPITA_PER_MEAL,
+        budget_emission_per_person_per_day=BUDGET_EMISSION_PER_CAPITA_PER_DAY,
         ingredients=ingredients,
-        total_energy_kj=round(total_energy, 2) if total_energy else None,
-        total_fat_g=round(total_fat, 2) if total_fat else None,
-        total_carbohydrate_g=round(total_carb, 2) if total_carb else None,
-        total_protein_g=round(total_protein, 2) if total_protein else None,
+        energy_per_person_kj=round(energy_per_person, 0) if energy_per_person else None,
+        fat_per_person_g=round(fat_per_person, 0) if fat_per_person else None,
+        carbohydrate_per_person_g=round(carb_per_person, 0)
+        if carb_per_person
+        else None,
+        protein_per_person_g=round(protein_per_person, 0)
+        if protein_per_person
+        else None,
     )

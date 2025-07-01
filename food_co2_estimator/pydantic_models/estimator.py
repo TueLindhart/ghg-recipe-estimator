@@ -87,27 +87,36 @@ class RecipeCO2Output(BaseModel):
         description="Number of persons the recipe is intended for",
         default=None,
     )
+    ingredients: List[IngredientOutput]
     co2_per_person_kg: float | None = Field(
         description="CO2 emission per person in kg",
         default=None,
     )
-    avg_meal_emission_per_person: float = Field(
+    avg_emission_per_person_per_meal: float = Field(
         description="Average meal emission per person in kg",
     )
-    ingredients: List[IngredientOutput]
-    total_energy_kj: float | None = Field(
-        description="Total energy for the recipe in kJ",
+    avg_emission_per_person_per_day: float = Field(
+        description="Average daily emission per person in kg",
+    )
+    budget_emission_per_person_per_meal: float = Field(
+        description="Budget for one meal's emission per person in kg",
+    )
+    budget_emission_per_person_per_day: float = Field(
+        description="Daily emission per person in kg",
+    )
+    energy_per_person_kj: float | None = Field(
+        description="Energy per person in kJ",
         default=None,
     )
-    total_fat_g: float | None = Field(
-        description="Total fat for the recipe in grams",
+    fat_per_person_g: float | None = Field(
+        description="Fat per person in grams",
         default=None,
     )
-    total_carbohydrate_g: float | None = Field(
-        description="Total carbohydrates for the recipe in grams",
+    carbohydrate_per_person_g: float | None = Field(
+        description="Carbohydrates per person in grams",
         default=None,
     )
-    total_protein_g: float | None = Field(
-        description="Total protein for the recipe in grams",
+    protein_per_person_g: float | None = Field(
+        description="Protein per person in grams",
         default=None,
     )
