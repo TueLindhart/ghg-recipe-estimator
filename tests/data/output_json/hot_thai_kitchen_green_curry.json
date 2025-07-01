@@ -1,13 +1,8 @@
 {
     "title": "Green Curry Chicken",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/",
-    "total_co2_kg": 7.5,
+    "total_co2_kg": 7.6,
     "number_of_persons": 4,
-    "co2_per_person_kg": 1.9,
-    "avg_meal_emission_per_person_range_kg": [
-        1.3,
-        2.2
-    ],
     "ingredients": [
         {
             "name": "1.75 cups coconut milk",
@@ -17,7 +12,11 @@
             "co2_kg": 2.65,
             "calculation_notes": "0.42 kg * 6.3 kg CO₂e/kg = 2.65 kg CO₂e",
             "weight_estimation_notes": "1 cup = 240 g, 1.75 * 240 g = 420 g = 0.42 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: coconut milk"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: coconut milk",
+            "energy_kj": 3208.8,
+            "fat_g": 79.8,
+            "carbohydrate_g": 8.4,
+            "protein_g": 6.72
         },
         {
             "name": "jasmine rice",
@@ -27,7 +26,11 @@
             "co2_kg": 2.55,
             "calculation_notes": "0.5 kg * 5.1 kg CO₂e/kg = 2.55 kg CO₂e",
             "weight_estimation_notes": "Amount of jasmine rice not specified. LLM estimate is: jasmine rice per serving = 0.125 kg, 4 * 0.125 kg = 0.5 kg.",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: rice, parboiled, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: rice, parboiled, raw",
+            "energy_kj": 7590.0,
+            "fat_g": 6.0,
+            "carbohydrate_g": 390.5,
+            "protein_g": 41.0
         },
         {
             "name": "1 lb chicken thigh",
@@ -37,7 +40,11 @@
             "co2_kg": 0.91,
             "calculation_notes": "0.45 kg * 2.0 kg CO₂e/kg = 0.91 kg CO₂e",
             "weight_estimation_notes": "1 lb = 453.592 g, 1 * 453.592 g = 453.592 g = 0.453592 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: chicken, leg, flesh and skin, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: chicken, leg, flesh and skin, raw",
+            "energy_kj": 2857.5,
+            "fat_g": 39.15,
+            "carbohydrate_g": 0.0,
+            "protein_g": 82.8
         },
         {
             "name": "1 550-ml can bamboo shoots strips",
@@ -47,7 +54,11 @@
             "co2_kg": 0.77,
             "calculation_notes": "0.55 kg * 1.4 kg CO₂e/kg = 0.77 kg CO₂e",
             "weight_estimation_notes": "1 can = 550 ml = 550 g, 1 * 550 g = 550 g = 0.55 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: bamboo shoots, canned, nonsalted"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: bamboo shoots, canned, nonsalted",
+            "energy_kj": 583.0,
+            "fat_g": 0.55,
+            "carbohydrate_g": 17.6,
+            "protein_g": 14.3
         },
         {
             "name": "3.5 tbsp green curry paste",
@@ -57,7 +68,11 @@
             "co2_kg": 0.11,
             "calculation_notes": "0.05 kg * 2.1 kg CO₂e/kg = 0.11 kg CO₂e",
             "weight_estimation_notes": "1 tbsp = 15 g, 3.5 * 15 g = 52.5 g = 0.0525 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: green curry paste"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: green curry paste",
+            "energy_kj": 331.0,
+            "fat_g": 6.0,
+            "carbohydrate_g": 4.35,
+            "protein_g": 0.8
         },
         {
             "name": "1 cup chicken stock",
@@ -67,7 +82,25 @@
             "co2_kg": 0.1,
             "calculation_notes": "0.24 kg * 0.4 kg CO₂e/kg = 0.1 kg CO₂e",
             "weight_estimation_notes": "1 cup = 240 g, 1 * 240 g = 240 g = 0.24 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, chicken, prepared"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, chicken, prepared",
+            "energy_kj": 43.2,
+            "fat_g": 0.48,
+            "carbohydrate_g": 0.72,
+            "protein_g": 0.72
+        },
+        {
+            "name": "2 tbsp palm sugar",
+            "ingredient_id": "Ra00318",
+            "weight_kg": 0.03,
+            "co2_per_kg": 2.7,
+            "co2_kg": 0.08,
+            "calculation_notes": "0.03 kg * 2.7 kg CO₂e/kg = 0.08 kg CO₂e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: sugar, sucrose, white",
+            "energy_kj": 509.4,
+            "fat_g": 0.0,
+            "carbohydrate_g": 29.97,
+            "protein_g": 0.0
         },
         {
             "name": "15 green Thai chilies",
@@ -77,27 +110,25 @@
             "co2_kg": 0.08,
             "calculation_notes": "0.07 kg * 1.1 kg CO₂e/kg = 0.08 kg CO₂e",
             "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 green Thai chili = 5 g, 15 * 5 g = 75 g = 0.075 kg.",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: pepper, hot chili, raw"
-        },
-        {
-            "name": "2 tbsp palm sugar",
-            "ingredient_id": "Ra00319",
-            "weight_kg": 0.03,
-            "co2_per_kg": 2.4,
-            "co2_kg": 0.07,
-            "calculation_notes": "0.03 kg * 2.4 kg CO₂e/kg = 0.07 kg CO₂e",
-            "weight_estimation_notes": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: sugar, brown"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: pepper, hot chili, raw",
+            "energy_kj": 130.9,
+            "fat_g": 0.14,
+            "carbohydrate_g": 5.39,
+            "protein_g": 1.4
         },
         {
             "name": "2 tsp coriander seeds",
-            "ingredient_id": "Ra00304",
+            "ingredient_id": "Ra00142",
             "weight_kg": 0.01,
-            "co2_per_kg": 6.1,
-            "co2_kg": 0.06,
-            "calculation_notes": "0.01 kg * 6.1 kg CO₂e/kg = 0.06 kg CO₂e",
+            "co2_per_kg": 7.3,
+            "co2_kg": 0.07,
+            "calculation_notes": "0.01 kg * 7.3 kg CO₂e/kg = 0.07 kg CO₂e",
             "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: curry powder"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: sesame seeds, decorticated",
+            "energy_kj": 265.7,
+            "fat_g": 5.74,
+            "carbohydrate_g": 0.18,
+            "protein_g": 2.68
         },
         {
             "name": "1.5 tbsp fish sauce",
@@ -107,7 +138,11 @@
             "co2_kg": 0.05,
             "calculation_notes": "0.02 kg * 2.2 kg CO₂e/kg = 0.05 kg CO₂e",
             "weight_estimation_notes": "1 tbsp = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: fish balls, canned"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: fish balls, canned",
+            "energy_kj": 52.2,
+            "fat_g": 0.2,
+            "carbohydrate_g": 0.98,
+            "protein_g": 1.66
         },
         {
             "name": "0.25 red bell pepper",
@@ -117,7 +152,11 @@
             "co2_kg": 0.04,
             "calculation_notes": "0.04 kg * 1.1 kg CO₂e/kg = 0.04 kg CO₂e",
             "weight_estimation_notes": "1 bell pepper = 150 g, 0.25 * 150 g = 37.5 g = 0.0375 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: pepper, sweet, red, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: pepper, sweet, red, raw",
+            "energy_kj": 53.2,
+            "fat_g": 0.04,
+            "carbohydrate_g": 2.08,
+            "protein_g": 0.36
         },
         {
             "name": "3 tbsp shallots",
@@ -127,7 +166,11 @@
             "co2_kg": 0.04,
             "calculation_notes": "0.04 kg * 0.8 kg CO₂e/kg = 0.04 kg CO₂e",
             "weight_estimation_notes": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: red onion"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: red onion",
+            "energy_kj": 83.6,
+            "fat_g": 0.12,
+            "carbohydrate_g": 4.0,
+            "protein_g": 0.64
         },
         {
             "name": "2 tbsp garlic",
@@ -137,17 +180,25 @@
             "co2_kg": 0.04,
             "calculation_notes": "0.03 kg * 1.2 kg CO₂e/kg = 0.04 kg CO₂e",
             "weight_estimation_notes": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: garlic, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: garlic, raw",
+            "energy_kj": 200.7,
+            "fat_g": 0.15,
+            "carbohydrate_g": 9.27,
+            "protein_g": 1.92
         },
         {
             "name": "3 tbsp lemongrass",
-            "ingredient_id": "Ra00486",
+            "ingredient_id": "Ra00328",
             "weight_kg": 0.04,
-            "co2_per_kg": 0.4,
-            "co2_kg": 0.02,
-            "calculation_notes": "0.04 kg * 0.4 kg CO₂e/kg = 0.02 kg CO₂e",
+            "co2_per_kg": 0.7,
+            "co2_kg": 0.03,
+            "calculation_notes": "0.04 kg * 0.7 kg CO₂e/kg = 0.03 kg CO₂e",
             "weight_estimation_notes": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: basil, fresh"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: lemon, raw",
+            "energy_kj": 74.8,
+            "fat_g": 0.44,
+            "carbohydrate_g": 1.24,
+            "protein_g": 0.2
         },
         {
             "name": "1 tbsp galangal",
@@ -157,7 +208,11 @@
             "co2_kg": 0.02,
             "calculation_notes": "0.01 kg * 1.3 kg CO₂e/kg = 0.02 kg CO₂e",
             "weight_estimation_notes": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: ginger root, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: ginger root, raw",
+            "energy_kj": 35.2,
+            "fat_g": 0.08,
+            "carbohydrate_g": 1.67,
+            "protein_g": 0.18
         },
         {
             "name": "1 cup Thai basil leaves",
@@ -167,7 +222,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.02 kg * 0.4 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 cup = 20 g, 1 * 20 g = 20 g = 0.02 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: basil, fresh"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: basil, fresh",
+            "energy_kj": 18.42,
+            "fat_g": 0.12,
+            "carbohydrate_g": 0.54,
+            "protein_g": 0.64
         },
         {
             "name": "15 Thai basil leaves",
@@ -177,7 +236,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 0.4 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 Thai basil leaf = 1 g, 15 * 1 g = 15 g = 0.015 kg.",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: basil, fresh"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: basil, fresh",
+            "energy_kj": 9.21,
+            "fat_g": 0.06,
+            "carbohydrate_g": 0.27,
+            "protein_g": 0.32
         },
         {
             "name": "2 tsp makrut lime zest",
@@ -187,17 +250,25 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 0.6 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: lime, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: lime, raw",
+            "energy_kj": 15.5,
+            "fat_g": 0.02,
+            "carbohydrate_g": 0.77,
+            "protein_g": 0.07
         },
         {
             "name": "2 cilantro roots or 4 big cilantro stems",
-            "ingredient_id": "Ra00134",
+            "ingredient_id": "Ra00269",
             "weight_kg": 0.01,
-            "co2_per_kg": 0.5,
+            "co2_per_kg": 0.9,
             "co2_kg": 0.01,
-            "calculation_notes": "0.01 kg * 0.5 kg CO₂e/kg = 0.01 kg CO₂e",
+            "calculation_notes": "0.01 kg * 0.9 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 cilantro root = 5 g, 2 * 5 g = 10 g = 0.01 kg.",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: parsley, raw"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: parsley root, raw",
+            "energy_kj": 23.2,
+            "fat_g": 0.06,
+            "carbohydrate_g": 0.8,
+            "protein_g": 0.23
         },
         {
             "name": "4 makrut lime leaves",
@@ -207,7 +278,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.004 kg is negligible",
             "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 makrut lime leaf = 1 g, 4 * 1 g = 4 g = 0.004 kg.",
-            "co2_emission_notes": "Weight on 0.004 kg is negligible"
+            "co2_emission_notes": "Weight on 0.004 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsp cumin seeds",
@@ -217,7 +292,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "0.5 tsp white peppercorns",
@@ -227,7 +306,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
-            "co2_emission_notes": "Weight on 0.003 kg is negligible"
+            "co2_emission_notes": "Weight on 0.003 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsp coarse salt",
@@ -237,7 +320,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsp fermented shrimp paste (gapi)",
@@ -247,7 +334,20 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         }
-    ]
+    ],
+    "co2_per_person_kg": 1.9,
+    "avg_emission_per_person_per_meal": 1.8,
+    "avg_emission_per_person_per_day": 7.1,
+    "budget_emission_per_person_per_meal": 0.5,
+    "budget_emission_per_person_per_day": 2.0,
+    "energy_per_person_kj": 4021.0,
+    "fat_per_person_g": 35.0,
+    "carbohydrate_per_person_g": 120.0,
+    "protein_per_person_g": 39.0
 }

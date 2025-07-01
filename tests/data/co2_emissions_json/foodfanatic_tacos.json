@@ -1,180 +1,268 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 lille løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '1 lille løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "1 lille løg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 0.3,
+            "energy_kj_100g": 183.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 5.4,
+            "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available. This follows rule 4, which favors the least processed option when no specific processing is indicated.",
+            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it represents the raw, unprocessed form of garlic, which is the most appropriate match given no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "2 fed hvidløg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 669.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 30.9,
+            "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 rød peberfrugt' is best matched with 'peberfrugt' because it is the most direct and least processed form of bell pepper available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '0.5 rød peberfrugt' is best matched with 'peberfrugt' as it is the most direct and least processed form of bell pepper available. This aligns with choosing the most raw option when no specific processing is mentioned.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "peberfrugt",
             "ingredient": "0.5 rød peberfrugt",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.1,
+            "energy_kj_100g": 133.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 5.2,
+            "protein_g_100g": 0.9
         },
         {
-            "closest_match_explanation": "The ingredient 'olie' is a general term for oil. Among the available options, 'olivenolie' has the highest emission factor (5.9 kg CO2e / kg) and is a common type of oil. According to rule 5, when multiple viable options have similar processing levels (all are oils), the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+            "closest_match_explanation": "The ingredient 'olie' is a general term for oil. Among the available options, 'olivenolie' has the highest emission factor and is a common type of cooking oil, making it a suitable conservative estimate when no specific oil type is mentioned.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "olie",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.9
+            "co2_per_kg": 5.9,
+            "energy_kj_100g": 3700.0,
+            "fat_g_100g": 100.0,
+            "carbohydrate_g_100g": 0.0,
+            "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '250 g oksekød' is a general term for beef. Among the available options, 'oksekød, pulled beef' has the highest emission factor (56.3 kg CO2e / kg). According to rule 5, when multiple viable options have similar processing levels (all are beef products), the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+            "closest_match_explanation": "The ingredient '250 g oksekød' is a general term for beef. Among the available options, 'oksekød, pulled beef' has the highest emission factor, providing a conservative estimate for general beef.",
             "ingredient_id": "Ra00463",
             "closest_match_name": "oksekød, pulled beef",
             "ingredient": "250 g oksekød",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 56.3
+            "co2_per_kg": 56.3,
+            "energy_kj_100g": 511.0,
+            "fat_g_100g": 3.6,
+            "carbohydrate_g_100g": 4.0,
+            "protein_g_100g": 18.0
         },
         {
-            "closest_match_explanation": "The ingredient '1.5 spsk fajitakrydderi' is a seasoning blend. 'peber, chili' is the most relevant and highest emission option among the choices, as chili is a common component of fajita seasoning. This aligns with rule 5, which states that if multiple viable options exist, the one with the highest emission factor should be chosen.",
-            "ingredient_id": "Ra00009",
-            "closest_match_name": "peber, chili",
+            "closest_match_explanation": "The ingredient '1.5 spsk fajitakrydderi' is a spice blend. 'peber, chili, konserves' is the closest match as it represents a processed form of chili, which is a common component in fajita seasoning, and has a higher emission factor than raw chili.",
+            "ingredient_id": "Ra00359",
+            "closest_match_name": "peber, chili, konserves",
             "ingredient": "1.5 spsk fajitakrydderi",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.5,
+            "energy_kj_100g": 112.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 4.9,
+            "protein_g_100g": 0.9
         },
         {
-            "closest_match_explanation": "The ingredient 'chilipulver eller flager' is best matched with 'peber, chili, konserves' because it represents a processed form of chili, similar to how chili powder or flakes are processed. This aligns with rule 4, which considers the amount of processing. Among the chili options, 'peber, chili, konserves' has a higher emission factor (1.5 kg CO2e / kg) than 'peber, chili' (1.1 kg CO2e / kg), aligning with rule 5 to choose the higher emission factor when processing levels are similar.",
+            "closest_match_explanation": "The ingredient 'chilipulver eller flager' is a processed form of chili. 'peber, chili, konserves' is the best match as it represents a processed chili product and has a higher emission factor than raw chili, providing a conservative estimate.",
             "ingredient_id": "Ra00359",
             "closest_match_name": "peber, chili, konserves",
             "ingredient": "chilipulver eller flager",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.5
+            "co2_per_kg": 1.5,
+            "energy_kj_100g": 112.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 4.9,
+            "protein_g_100g": 0.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' because it explicitly states 'dåse' (can), indicating a canned and thus processed form. This aligns with rule 4, which prioritizes matching based on the amount of processing.",
+            "closest_match_explanation": "The ingredient '1 dåse kidneybønner' explicitly states 'dåse', indicating a canned product. 'kidney bønner, konserves' is the exact match for canned kidney beans.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney bønner, konserves",
             "ingredient": "1 dåse kidneybønner",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 299.0,
+            "fat_g_100g": 1.0,
+            "carbohydrate_g_100g": 9.0,
+            "protein_g_100g": 5.0
         },
         {
-            "closest_match_explanation": "The ingredient '2 spsk tomatpuré' is best matched with 'tomatpure, koncentreret' because 'puré' implies a concentrated form of tomato, which aligns with the processing level of 'koncentreret'. This follows rule 4, which considers the amount of processing.",
+            "closest_match_explanation": "The ingredient '2 spsk tomatpuré' is a concentrated tomato product. 'tomatpure, koncentreret' is the most accurate match as it directly corresponds to the ingredient's description, reflecting its processed nature.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomatpure, koncentreret",
             "ingredient": "2 spsk tomatpuré",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.7
+            "co2_per_kg": 2.7,
+            "energy_kj_100g": 375.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 14.8,
+            "protein_g_100g": 4.3
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 dl oksefond/-bouillon' is best matched with 'bouillon, oksekød, koncentreret, terning' because 'fond/-bouillon' implies a concentrated form, and among the beef bouillon options, the concentrated cube has the highest emission factor. This aligns with rule 4 (processing) and rule 5 (highest emission factor for similar processing).",
+            "closest_match_explanation": "The ingredient '2.5 dl oksefond/-bouillon' refers to beef broth or bouillon. 'bouillon, oksekød, koncentreret, terning' is the best match as it represents a concentrated form of beef bouillon, which is commonly used to make fond or bouillon.",
             "ingredient_id": "Ra00220",
             "closest_match_name": "bouillon, oksekød, koncentreret, terning",
             "ingredient": "2.5 dl oksefond/-bouillon",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 9.9
+            "co2_per_kg": 9.9,
+            "energy_kj_100g": 676.0,
+            "fat_g_100g": 3.2,
+            "carbohydrate_g_100g": 12.0,
+            "protein_g_100g": 17.0
         },
         {
-            "closest_match_explanation": "The ingredient '11 små majstortillas' is best matched with 'taco shells' because both are corn-based, crispy, and commonly used in Mexican cuisine. While 'tortillabrød, hvede' is also a tortilla, 'taco shells' are more specific to corn-based, crispy forms often associated with 'small' tortillas. Additionally, 'taco shells' has a higher emission factor (2.4 kg CO2e / kg) than 'tortillabrød, hvede' (1.2 kg CO2e / kg), aligning with rule 5.",
+            "closest_match_explanation": "The ingredient '11 små majstortillas' refers to corn tortillas. 'taco shells' is the closest match as they are typically made from corn and are a similar type of corn-based product, and it has a higher emission factor than wheat tortillas.",
             "ingredient_id": "Ra00467",
             "closest_match_name": "taco shells",
             "ingredient": "11 små majstortillas",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.4
+            "co2_per_kg": 2.4,
+            "energy_kj_100g": 2000.0,
+            "fat_g_100g": 21.6,
+            "carbohydrate_g_100g": 63.8,
+            "protein_g_100g": 5.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 portion tomatsalsa' is best matched with 'tomat' as salsa is primarily made from fresh tomatoes. While other tomato products are available, 'tomat' represents the most direct and least processed form of the main ingredient in salsa, aligning with rule 4.",
-            "ingredient_id": "Ra00002",
-            "closest_match_name": "tomat",
+            "closest_match_explanation": "The ingredient '1 portion tomatsalsa' is a tomato-based sauce. 'tomatketchup' is the best match as it is a processed tomato product with a higher emission factor than raw tomatoes or tomato juice, providing a conservative estimate for a prepared tomato sauce.",
+            "ingredient_id": "Ra00369",
+            "closest_match_name": "tomatketchup",
             "ingredient": "1 portion tomatsalsa",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.5
+            "co2_per_kg": 2.1,
+            "energy_kj_100g": 479.0,
+            "fat_g_100g": 2.4,
+            "carbohydrate_g_100g": 18.4,
+            "protein_g_100g": 3.0
         },
         {
-            "closest_match_explanation": "The ingredient '1 avocado' is best matched with 'avocado' as it is a direct and exact match, aligning with the primary goal of finding the closest possible match.",
+            "closest_match_explanation": "The ingredient '1 avocado' is directly matched with 'avocado' as it is an exact match and represents the raw form of the fruit.",
             "ingredient_id": "Ra00317",
             "closest_match_name": "avocado",
             "ingredient": "1 avocado",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 711.0,
+            "fat_g_100g": 13.1,
+            "carbohydrate_g_100g": 0.5,
+            "protein_g_100g": 1.9
         },
         {
-            "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. Among the available options, 'peber, sort' has the highest emission factor (5.2 kg CO2e / kg) and is a common type of pepper. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+            "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. 'peber, sort' is the best match as it is a common type of pepper and has the highest emission factor among the available pepper options, providing a conservative estimate.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "peber, sort",
             "ingredient": "peber",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.2
+            "co2_per_kg": 5.2,
+            "energy_kj_100g": 1274.0,
+            "fat_g_100g": 3.3,
+            "carbohydrate_g_100g": 44.5,
+            "protein_g_100g": 10.9
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 rødløg' is best matched with 'rødløg' as it is a direct and exact match, aligning with the primary goal of finding the closest possible match.",
+            "closest_match_explanation": "The ingredient '0.5 rødløg' is best matched with 'rødløg' as it is the most direct and least processed form of red onion available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "rødløg",
             "ingredient": "0.5 rødløg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.8
+            "co2_per_kg": 0.8,
+            "energy_kj_100g": 209.0,
+            "fat_g_100g": 0.3,
+            "carbohydrate_g_100g": 10.0,
+            "protein_g_100g": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available. This follows rule 4, which favors the least processed option when no specific processing is indicated.",
+            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it represents the raw, unprocessed form of garlic, which is the most appropriate match given no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "2 fed hvidløg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 669.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 30.9,
+            "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '300 g tomater' is best matched with 'tomat' as it is the most direct and least processed form of tomato available in the database. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '300 g tomater' is best matched with 'tomat' as it is the most direct and least processed form of tomato available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00002",
             "closest_match_name": "tomat",
             "ingredient": "300 g tomater",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.5
+            "co2_per_kg": 0.5,
+            "energy_kj_100g": 87.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 3.2,
+            "protein_g_100g": 0.8
         },
         {
-            "closest_match_explanation": "The ingredient '0.75 chilipeber' is best matched with 'peber, chili' as it is the most direct and least processed form of chili pepper available. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '0.75 chilipeber' is best matched with 'peber, chili' as it is the most direct and least processed form of chili pepper available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00009",
             "closest_match_name": "peber, chili",
             "ingredient": "0.75 chilipeber",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.1,
+            "energy_kj_100g": 187.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 7.7,
+            "protein_g_100g": 2.0
         },
         {
-            "closest_match_explanation": "The ingredient '0.5 bdt koriander' is a fresh herb. Among the available options, 'basilikum, tørret' has the highest emission factor (2.8 kg CO2e / kg) and represents a processed herb, which is a reasonable broader category for fresh herbs when an exact match is not available. This aligns with rule 2 (broader category) and rule 5 (highest emission factor).",
-            "ingredient_id": "Ra00487",
-            "closest_match_name": "basilikum, tørret",
+            "closest_match_explanation": "The ingredient '0.5 bdt koriander' is a fresh herb. Among the available options, 'persille' is the closest match as it is also a fresh herb and has a similar emission factor to other fresh herbs, providing a reasonable estimate.",
+            "ingredient_id": "Ra00134",
+            "closest_match_name": "persille",
             "ingredient": "0.5 bdt koriander",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.8
+            "co2_per_kg": 0.5,
+            "energy_kj_100g": 201.0,
+            "fat_g_100g": 1.1,
+            "carbohydrate_g_100g": 1.2,
+            "protein_g_100g": 3.7
         },
         {
-            "closest_match_explanation": "The ingredient '2 spsk olivenolie' is best matched with 'olivenolie' as it is a direct and exact match, aligning with the primary goal of finding the closest possible match.",
+            "closest_match_explanation": "The ingredient '2 spsk olivenolie' is an exact match for 'olivenolie', which is a specific type of oil. This is the most direct and accurate match.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "2 spsk olivenolie",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.9
+            "co2_per_kg": 5.9,
+            "energy_kj_100g": 3700.0,
+            "fat_g_100g": 100.0,
+            "carbohydrate_g_100g": 0.0,
+            "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient 'saften af 0.5 lime' is a fruit juice. Among the available options, 'halve ferskner i juice' has the highest emission factor (1.6 kg CO2e / kg) and represents a fruit in juice, which is a reasonable broader category for fruit juice when an exact match is not available. This aligns with rule 2 (broader category) and rule 5 (highest emission factor).",
-            "ingredient_id": "Ra00440",
-            "closest_match_name": "halve ferskner i juice",
+            "closest_match_explanation": "The ingredient 'saften af 0.5 lime' refers to lime juice. There is no direct match for lime or lime juice. The available options are fruits in juice or milk, which are not suitable. Therefore, no match can be provided.",
+            "ingredient_id": "None",
+            "closest_match_name": "No match",
             "ingredient": "saften af 0.5 lime",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.6
+            "co2_per_kg": null,
+            "energy_kj_100g": null,
+            "fat_g_100g": null,
+            "carbohydrate_g_100g": null,
+            "protein_g_100g": null
         },
         {
-            "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. Among the available options, 'peber, sort' has the highest emission factor (5.2 kg CO2e / kg) and is a common type of pepper. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen to ensure a conservative estimate.",
+            "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. 'peber, sort' is the best match as it is a common type of pepper and has the highest emission factor among the available pepper options, providing a conservative estimate.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "peber, sort",
             "ingredient": "peber",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.2
+            "co2_per_kg": 5.2,
+            "energy_kj_100g": 1274.0,
+            "fat_g_100g": 3.3,
+            "carbohydrate_g_100g": 44.5,
+            "protein_g_100g": 10.9
         }
     ]
 }

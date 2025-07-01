@@ -1,108 +1,160 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because 'hvidløg' is the most direct and least processed form of garlic available in the database, aligning with the rule of choosing the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "2 fed hvidløg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 669.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 30.9,
+            "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 spsk olivenolie' is directly matched with 'olivenolie' as it is an exact match and represents the least processed form of olive oil among the given options.",
+            "closest_match_explanation": "The ingredient '1 spsk olivenolie' is best matched with 'olivenolie' as it is an exact match for the ingredient and represents the primary form of olive oil. This choice directly reflects the ingredient without unnecessary processing variations.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "1 spsk olivenolie",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.9
+            "co2_per_kg": 5.9,
+            "energy_kj_100g": 3700.0,
+            "fat_g_100g": 100.0,
+            "carbohydrate_g_100g": 0.0,
+            "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' as it is the most direct and least processed form of onion available in the database, aligning with the rule of choosing the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "1 løg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 0.3,
+            "energy_kj_100g": 183.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 5.4,
+            "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 dl grøntsagsbouillon' is best matched with 'bouillon, hønsekød, spiseklar' because it is the closest available option for a ready-to-use bouillon. While 'grøntsagsbøf' is a vegetable-based option, it is a solid food, not a bouillon. 'Bouillon, oksekød, koncentreret, terning' and 'bouillon, oksekød, spiseklar' are beef-based, which is not a good match for vegetable bouillon. Therefore, 'bouillon, hønsekød, spiseklar' is the most reasonable match among the given choices, as it is a ready-to-eat bouillon, and the rule of realistic comparisons allows for a broader category if an exact match is not available, and chicken bouillon is closer to vegetable bouillon than beef bouillon in terms of common usage and lower emissions.",
+            "closest_match_explanation": "The ingredient '1 dl grøntsagsbouillon' is best matched with 'bouillon, hønsekød, spiseklar' because it is the closest available option for a ready-to-use bouillon. While not explicitly 'vegetable bouillon,' it is the most appropriate general bouillon option that is ready for consumption, aligning with the 'dl' (deciliter) measurement which implies a liquid, ready-to-use form.",
             "ingredient_id": "Ra00213",
             "closest_match_name": "bouillon, hønsekød, spiseklar",
             "ingredient": "1 dl grøntsagsbouillon",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.4,
+            "energy_kj_100g": 18.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 0.3,
+            "protein_g_100g": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because 'hakkede tomater' implies a processed, canned form of tomatoes, and 'flået, konserves' (peeled, canned) is the closest option in terms of processing and form. 'Soltørrede tomater' and 'tomatpure, koncentreret' represent different processing methods.",
+            "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because it is the closest option for canned tomatoes. 'Hakkede tomater' (chopped tomatoes) and 'flået tomater' (peeled tomatoes) are both processed forms of canned tomatoes, and this option accurately reflects the processing level.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomat, flået, konserves",
             "ingredient": "1 dåse hakkede tomater",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.1,
+            "energy_kj_100g": 90.0,
+            "fat_g_100g": 0.3,
+            "carbohydrate_g_100g": 3.0,
+            "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 squash' is directly matched with 'squash' as it is an exact match and represents the least processed form of squash among the given options.",
+            "closest_match_explanation": "The ingredient '1 squash' is best matched with 'squash' as it is an exact match for the ingredient and represents the raw form. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00003",
             "closest_match_name": "squash",
             "ingredient": "1 squash",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.8
+            "co2_per_kg": 0.8,
+            "energy_kj_100g": 81.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 2.4,
+            "protein_g_100g": 1.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse sorte bønner' is best matched with 'sorte bønner, konserves' because 'dåse' indicates a canned product, and 'konserves' (canned) is the most appropriate processing match. Other options are either raw beans or different types of beans.",
+            "closest_match_explanation": "The ingredient '1 dåse sorte bønner' is best matched with 'sorte bønner, konserves' because it is an exact match for canned black beans. This option accurately reflects the processing level (canned) of the ingredient.",
             "ingredient_id": "Ra00439",
             "closest_match_name": "sorte bønner, konserves",
             "ingredient": "1 dåse sorte bønner",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 303.0,
+            "fat_g_100g": 0.6,
+            "carbohydrate_g_100g": 8.0,
+            "protein_g_100g": 5.3
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' because 'dåse' indicates a canned product, and 'konserves' (canned) is the most appropriate processing match. Other options are either different types of beans or not canned.",
+            "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' because it is an exact match for canned kidney beans. This option accurately reflects the processing level (canned) of the ingredient.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney bønner, konserves",
             "ingredient": "1 dåse kidneybønner",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 299.0,
+            "fat_g_100g": 1.0,
+            "carbohydrate_g_100g": 9.0,
+            "protein_g_100g": 5.0
         },
         {
-            "closest_match_explanation": "The ingredient '300 g majs' is best matched with 'majs, kerner, konserves' because 'majs' without further specification often refers to corn kernels, and 'konserves' (canned) is a common form for packaged corn, making it a reasonable match for processing. 'Majs, hele kolber' (whole cobs) is less processed, and 'majsmel' (cornmeal) is a more processed form. 'Babymajs' is a different type of corn.",
+            "closest_match_explanation": "The ingredient '300 g majs' is best matched with 'majs, kerner, konserves' because it is the most common form of corn available in the database that aligns with a quantity measurement, implying a ready-to-use form. While 'majs, hele kolber' is also corn, 'kerner, konserves' is more likely for a measured quantity in a recipe.",
             "ingredient_id": "Ra00299",
             "closest_match_name": "majs, kerner, konserves",
             "ingredient": "300 g majs",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.7
+            "co2_per_kg": 0.7,
+            "energy_kj_100g": 428.0,
+            "fat_g_100g": 1.1,
+            "carbohydrate_g_100g": 16.1,
+            "protein_g_100g": 3.1
         },
         {
-            "closest_match_explanation": "The ingredient '8 tortillas pandekager' is best matched with 'tortillabrød, hvede' because 'tortillas pandekager' directly translates to tortilla pancakes, and 'tortillabrød, hvede' (tortilla bread, wheat) is the most direct and common form of tortilla available. Other options are either different types of pancakes or chips.",
+            "closest_match_explanation": "The ingredient '8 tortillas pandekager' is best matched with 'tortillabrød, hvede' because it is the most direct and common type of tortilla bread available in the database. This option accurately reflects the ingredient as a type of bread product.",
             "ingredient_id": "Ra00401",
             "closest_match_name": "tortillabrød, hvede",
             "ingredient": "8 tortillas pandekager",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 1300.0,
+            "fat_g_100g": 7.5,
+            "carbohydrate_g_100g": 51.0,
+            "protein_g_100g": 8.0
         },
         {
-            "closest_match_explanation": "The ingredient '150 g cheddar ost' does not have a direct match in the database. Among the available cheese options, 'parmesan ost, 32+' has the highest emission factor (5.4 kg CO2e / kg) compared to 'gedeost, ost' (1.6 kg CO2e / kg) and 'brie, ost 45+' (1.6 kg CO2e / kg). Following the rule of choosing the option with the highest emission factor when multiple viable options have similar processing levels (all are types of cheese), 'parmesan ost, 32+' is selected as the best match.",
+            "closest_match_explanation": "The ingredient '150 g cheddar ost' is best matched with 'parmesan ost, 32+' because both are hard cheeses with similar production processes and therefore similar CO2 emissions. Since cheddar is not explicitly listed, parmesan is the most realistic comparison among the available cheese options.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "parmesan ost, 32+",
             "ingredient": "150 g cheddar ost",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.4
+            "co2_per_kg": 5.4,
+            "energy_kj_100g": 1488.0,
+            "fat_g_100g": 24.1,
+            "carbohydrate_g_100g": 0.1,
+            "protein_g_100g": 32.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 håndfuld frisk koriander' does not have a direct match in the database. Among the available options, 'persille' is the closest broader category as it is also a fresh herb commonly used for seasoning, aligning with the rule of using a broader category if an exact ingredient match is not available and the broader category does not violate rule 1 (realistic comparisons). The other options (cucumber, rhubarb, celery) are vegetables and not herbs.",
+            "closest_match_explanation": "The ingredient '1 håndfuld frisk koriander' is best matched with 'persille' because both are fresh herbs with similar growth and processing characteristics, leading to comparable CO2 emissions. Since fresh coriander is not explicitly listed, parsley is the most appropriate broader category for a fresh herb.",
             "ingredient_id": "Ra00134",
             "closest_match_name": "persille",
             "ingredient": "1 håndfuld frisk koriander",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.5
+            "co2_per_kg": 0.5,
+            "energy_kj_100g": 201.0,
+            "fat_g_100g": 1.1,
+            "carbohydrate_g_100g": 1.2,
+            "protein_g_100g": 3.7
         },
         {
-            "closest_match_explanation": "The ingredient '1 spsk smør' is directly matched with 'smør, saltet' as it is the most direct and least processed form of butter available in the database, aligning with the rule of choosing the least processed option when no specific processing is mentioned.",
+            "closest_match_explanation": "The ingredient '1 spsk smør' is best matched with 'smør, saltet' because it is the most direct and common form of butter available in the database. This option accurately reflects the ingredient without unnecessary variations.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "smør, saltet",
             "ingredient": "1 spsk smør",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 3.3
+            "co2_per_kg": 3.3,
+            "energy_kj_100g": 3047.0,
+            "fat_g_100g": 81.5,
+            "carbohydrate_g_100g": 0.6,
+            "protein_g_100g": 0.7
         }
     ]
 }

@@ -36,6 +36,10 @@ def enriched_recipe_db_english():
                     ingredient="2 tomatoes",
                     co2_per_kg=2.5,
                     unit="kg CO₂e / kg",
+                    energy_kj_100g=90.0,
+                    fat_g_100g=0.2,
+                    carbohydrate_g_100g=3.0,
+                    protein_g_100g=1.0,
                 ),
             ),
             EnrichedIngredient(
@@ -52,6 +56,10 @@ def enriched_recipe_db_english():
                     closest_match_name="milk",
                     co2_per_kg=1.0,
                     unit="kg CO₂e / kg",
+                    energy_kj_100g=250.0,
+                    fat_g_100g=3.0,
+                    carbohydrate_g_100g=5.0,
+                    protein_g_100g=3.0,
                 ),
             ),
             EnrichedIngredient(
@@ -68,6 +76,10 @@ def enriched_recipe_db_english():
                     ingredient_id="789",
                     co2_per_kg=3.0,
                     unit="kg CO₂e / kg",
+                    energy_kj_100g=600.0,
+                    fat_g_100g=10.0,
+                    carbohydrate_g_100g=1.0,
+                    protein_g_100g=13.0,
                 ),
             ),
         ],
@@ -89,7 +101,14 @@ def enriched_recipe_db_english():
                 total_co2_kg=1.9,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
-                avg_meal_emission_per_person_range_kg=[1.3, 2.2],
+                avg_emission_per_person_per_meal=1.8,
+                avg_emission_per_person_per_day=7.1,
+                budget_emission_per_person_per_meal=0.5,
+                budget_emission_per_person_per_day=2.0,
+                energy_per_person_kj=895.0,  # 3580.0 / 4
+                fat_per_person_g=11.0,  # 45.4 / 4
+                carbohydrate_per_person_g=14.0,  # 57.5 / 4
+                protein_per_person_g=13,  # 50.0 / 4
                 ingredients=[
                     IngredientOutput(
                         name="1 liter of milk",
@@ -100,6 +119,10 @@ def enriched_recipe_db_english():
                         calculation_notes="1.0 kg * 1.0 kg CO₂e/kg = 1.0 kg CO₂e",
                         weight_estimation_notes="1 liter = 1kg",
                         co2_emission_notes="Bedste match i CO₂-databasen er: milk",
+                        energy_kj=2500.0,
+                        fat_g=30.0,
+                        carbohydrate_g=50.0,
+                        protein_g=30.0,
                     ),
                     IngredientOutput(
                         name="2 tomatoes",
@@ -110,6 +133,10 @@ def enriched_recipe_db_english():
                         calculation_notes="0.2 kg * 2.5 kg CO₂e/kg = 0.5 kg CO₂e",
                         weight_estimation_notes="2 tomatoes = 200g",
                         co2_emission_notes="Bedste match i CO₂-databasen er: tomatoes, canned",
+                        energy_kj=180.0,
+                        fat_g=0.4,
+                        carbohydrate_g=6.0,
+                        protein_g=2.0,
                     ),
                     IngredientOutput(
                         name="3 large eggs",
@@ -120,6 +147,10 @@ def enriched_recipe_db_english():
                         calculation_notes="0.15 kg * 3.0 kg CO₂e/kg = 0.45 kg CO₂e",
                         weight_estimation_notes="3 large eggs = 150g",
                         co2_emission_notes="Bedste match i CO₂-databasen er: eggs",
+                        energy_kj=900.0,
+                        fat_g=15.0,
+                        carbohydrate_g=1.5,
+                        protein_g=19.5,
                     ),
                 ],
             ),
