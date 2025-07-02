@@ -307,6 +307,15 @@ def parse_retriever_output(documents: List[Document]):
             except (ValueError, TypeError):
                 emission_rounded = None
 
+            def safe_float(key: str):
+                value = metadata.get(key)
+                if value is None:
+                    return None
+                try:
+                    return float(value)
+                except (ValueError, TypeError):
+                    return None
+
             # Extract the database id if it exists.
             ID_Ra = metadata.get("ID_Ra", None)
 
@@ -316,6 +325,10 @@ def parse_retriever_output(documents: List[Document]):
                 if emission_rounded is not None
                 else "none",
                 "id": ID_Ra,
+                "energy_kj_100g": safe_float("Energi (KJ/100 g)"),
+                "fat_g_100g": safe_float("Fedt (g/100 g)"),
+                "carb_g_100g": safe_float("Kulhydrat (g/100 g)"),
+                "protein_g_100g": safe_float("Protein (g/100 g)"),
             }
     return results
 

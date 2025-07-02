@@ -1,108 +1,160 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 kg hakket oksekød' directly matches 'oksekød, hakket, 15-20% fedt' and 'oksekød, hakket, 5-10% fedt' and 'oksekød, hakket, 10-15% fedt'. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. 'oksekød, hakket, 5-10% fedt' has the highest emission factor of 50.6 kg CO2e / kg.",
-            "ingredient_id": "Ra00016",
-            "closest_match_name": "oksekød, hakket, 5-10% fedt",
+            "closest_match_explanation": "The ingredient '1 kg hakket oksekød' is minced beef. The best match is 'oksekød, hakket, 15-20% fedt' because it is the most common type of minced beef and directly matches the ingredient description. This choice aligns with using realistic CO2 emission comparisons, as minced beef is a specific form of beef, and the selected option accurately reflects its processing and fat content.",
+            "ingredient_id": "Ra00014",
+            "closest_match_name": "oksekød, hakket, 15-20% fedt",
             "ingredient": "1 kg hakket oksekød",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 50.6
+            "co2_per_kg": 45.5,
+            "energy_kj_100g": 903.0,
+            "fat_g_100g": 16.2,
+            "carbohydrate_g_100g": 0.0,
+            "protein_g_100g": 17.8
         },
         {
-            "closest_match_explanation": "The ingredient '3 store løg' is a direct match to 'løg'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "The ingredient '3 store løg' refers to raw onions. The best match is 'løg' because it represents the raw, unprocessed form of onion, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "3 store løg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 0.3,
+            "energy_kj_100g": 183.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 5.4,
+            "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '3 gulerødder' is a direct match to 'gulerod'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "The ingredient '3 gulerødder' refers to raw carrots. The best match is 'gulerod' because it represents the raw, unprocessed form of carrot, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00257",
             "closest_match_name": "gulerod",
             "ingredient": "3 gulerødder",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.3
+            "co2_per_kg": 0.3,
+            "energy_kj_100g": 152.0,
+            "fat_g_100g": 0.4,
+            "carbohydrate_g_100g": 6.2,
+            "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 stilke bladselleri' is a direct match to 'bladselleri'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "The ingredient '2.5 stilke bladselleri' refers to raw celery stalks. The best match is 'bladselleri' because it represents the raw, unprocessed form of celery, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00153",
             "closest_match_name": "bladselleri",
             "ingredient": "2.5 stilke bladselleri",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.4,
+            "energy_kj_100g": 98.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 1.9,
+            "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '6 fed hvidløg' is a direct match to 'hvidløg'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "The ingredient '6 fed hvidløg' refers to raw garlic cloves. The best match is 'hvidløg' because it represents the raw, unprocessed form of garlic, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "6 fed hvidløg",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 669.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 30.9,
+            "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '150 g tomatkoncentrat' is a direct match to 'tomatpure, koncentreret'. This aligns with rule 4, which prioritizes the option that matches the processing level of the ingredient.",
+            "closest_match_explanation": "The ingredient '150 g tomatkoncentrat' refers to tomato concentrate. The best match is 'tomatpure, koncentreret' because it directly matches the description of a concentrated tomato product. This choice aligns with considering the amount of processing performed, as 'koncentreret' (concentrated) indicates a processed form of tomato.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomatpure, koncentreret",
             "ingredient": "150 g tomatkoncentrat",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.7
+            "co2_per_kg": 2.7,
+            "energy_kj_100g": 375.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 14.8,
+            "protein_g_100g": 4.3
         },
         {
-            "closest_match_explanation": "The ingredient '3 dåse hakkede tomater eller polpa' is a direct match to 'tomat, flået, konserves'. This aligns with rule 4, which prioritizes the option that matches the processing level of the ingredient (canned).",
+            "closest_match_explanation": "The ingredient '3 dåse hakkede tomater eller polpa' refers to canned chopped tomatoes. The best match is 'tomat, flået, konserves' because it represents canned tomatoes, which is consistent with the ingredient description. This choice aligns with considering the amount of processing performed, as 'dåse' (canned) indicates a processed form of tomato.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomat, flået, konserves",
             "ingredient": "3 dåse hakkede tomater eller polpa",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.1,
+            "energy_kj_100g": 90.0,
+            "fat_g_100g": 0.3,
+            "carbohydrate_g_100g": 3.0,
+            "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 dl rødvin' is a direct match to 'rødvin'. This aligns with rule 4, which prioritizes the option that matches the processing level of the ingredient (fermented).",
+            "closest_match_explanation": "The ingredient '2 dl rødvin' refers to red wine. The best match is 'rødvin' because it directly matches the ingredient description. This choice aligns with using realistic CO2 emission comparisons, as red wine is a specific type of alcoholic beverage.",
             "ingredient_id": "Ra00377",
             "closest_match_name": "rødvin",
             "ingredient": "2 dl rødvin",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.6
+            "co2_per_kg": 1.6,
+            "energy_kj_100g": 321.0,
+            "fat_g_100g": 0.0,
+            "carbohydrate_g_100g": 0.3,
+            "protein_g_100g": 0.2
         },
         {
-            "closest_match_explanation": "The ingredient 'Olie' is a general term. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. 'olivenolie' has the highest emission factor of 5.9 kg CO2e / kg among the oil options.",
+            "closest_match_explanation": "The ingredient 'Olie' is a general term for oil. Among the available options, 'olivenolie' (olive oil) has the highest emission factor. This choice aligns with selecting the option with the highest emission factor when multiple viable options have similar processing levels, ensuring a conservative estimate.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "Olie",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.9
+            "co2_per_kg": 5.9,
+            "energy_kj_100g": 3700.0,
+            "fat_g_100g": 100.0,
+            "carbohydrate_g_100g": 0.0,
+            "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient 'Friskekværnet peber' is a direct match to 'peber, sort'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "The ingredient 'Friskekværnet peber' refers to freshly ground pepper, which is typically black pepper. The best match is 'peber, sort' because it represents black pepper, which is the most common type of pepper used for grinding. This choice aligns with using realistic CO2 emission comparisons for common spices.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "peber, sort",
             "ingredient": "Friskekværnet peber",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.2
+            "co2_per_kg": 5.2,
+            "energy_kj_100g": 1274.0,
+            "fat_g_100g": 3.3,
+            "carbohydrate_g_100g": 44.5,
+            "protein_g_100g": 10.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 håndfuld friske basilikumblade' is a direct match to 'basilikum, frisk'. This aligns with rule 4, which prioritizes the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "The ingredient '1 håndfuld friske basilikumblade' refers to fresh basil leaves. The best match is 'basilikum, frisk' because it directly matches the description of fresh basil. This choice aligns with considering the amount of processing performed, as 'frisk' (fresh) indicates the least processed form.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basilikum, frisk",
             "ingredient": "1 håndfuld friske basilikumblade",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.4,
+            "energy_kj_100g": 92.11,
+            "fat_g_100g": 0.6,
+            "carbohydrate_g_100g": 2.7,
+            "protein_g_100g": 3.2
         },
         {
-            "closest_match_explanation": "The ingredient 'Pasta efter ønske' is a general term for pasta. According to rule 5, when multiple viable options have similar processing levels, the one with the highest emission factor should be chosen. 'pasta' has the highest emission factor of 2.1 kg CO2e / kg among the pasta options.",
+            "closest_match_explanation": "The ingredient 'Pasta efter ønske' is a general term for pasta. The best match is 'pasta' because it represents the most general form of pasta, which is consistent with the ingredient description. This choice aligns with using a broader category when an exact specific type of pasta is not provided.",
             "ingredient_id": "Ra00234",
             "closest_match_name": "pasta",
             "ingredient": "Pasta efter ønske",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.1
+            "co2_per_kg": 2.1,
+            "energy_kj_100g": 1532.0,
+            "fat_g_100g": 1.8,
+            "carbohydrate_g_100g": 73.9,
+            "protein_g_100g": 13.5
         },
         {
-            "closest_match_explanation": "The ingredient 'Revet parmesan' is a direct match to 'parmesan ost, 32+'. This aligns with rule 4, which prioritizes the option that matches the processing level of the ingredient.",
+            "closest_match_explanation": "The ingredient 'Revet parmesan' refers to grated parmesan cheese. The best match is 'parmesan ost, 32+' because it directly matches the description of parmesan cheese. This choice aligns with using realistic CO2 emission comparisons, as parmesan is a specific type of cheese.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "parmesan ost, 32+",
             "ingredient": "Revet parmesan",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.4
+            "co2_per_kg": 5.4,
+            "energy_kj_100g": 1488.0,
+            "fat_g_100g": 24.1,
+            "carbohydrate_g_100g": 0.1,
+            "protein_g_100g": 32.9
         }
     ]
 }

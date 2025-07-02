@@ -3,11 +3,6 @@
     "url": "https://www.valdemarsro.dk/tomatrisotto/",
     "total_co2_kg": 5.1,
     "number_of_persons": 4,
-    "co2_per_person_kg": 1.3,
-    "avg_meal_emission_per_person_range_kg": [
-        1.3,
-        2.2
-    ],
     "ingredients": [
         {
             "name": "400 g risotto ris",
@@ -17,7 +12,11 @@
             "co2_kg": 2.04,
             "calculation_notes": "0.4 kg * 5.1 kg CO₂e/kg = 2.04 kg CO₂e",
             "weight_estimation_notes": "400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: ris, parboiled"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: ris, parboiled",
+            "energy_kj": 6072.0,
+            "fat_g": 4.8,
+            "carbohydrate_g": 312.4,
+            "protein_g": 32.8
         },
         {
             "name": "125 g parmesan",
@@ -27,7 +26,11 @@
             "co2_kg": 0.68,
             "calculation_notes": "0.12 kg * 5.4 kg CO₂e/kg = 0.68 kg CO₂e",
             "weight_estimation_notes": "125 g = 125 g = 0.125 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: parmesan ost, 32+"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: parmesan ost, 32+",
+            "energy_kj": 1785.6,
+            "fat_g": 28.92,
+            "carbohydrate_g": 0.12,
+            "protein_g": 39.48
         },
         {
             "name": "1 stk burrata",
@@ -37,7 +40,11 @@
             "co2_kg": 0.68,
             "calculation_notes": "0.12 kg * 5.4 kg CO₂e/kg = 0.68 kg CO₂e",
             "weight_estimation_notes": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 stk burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: mozzarella ost, 30+"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: mozzarella ost, 30+",
+            "energy_kj": 1395.6,
+            "fat_g": 21.24,
+            "carbohydrate_g": 0.12,
+            "protein_g": 33.96
         },
         {
             "name": "400 g flåede tomater",
@@ -47,7 +54,11 @@
             "co2_kg": 0.44,
             "calculation_notes": "0.4 kg * 1.1 kg CO₂e/kg = 0.44 kg CO₂e",
             "weight_estimation_notes": "400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomat, flået, konserves"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomat, flået, konserves",
+            "energy_kj": 360.0,
+            "fat_g": 1.2,
+            "carbohydrate_g": 12.0,
+            "protein_g": 4.8
         },
         {
             "name": "9 dl grøntsagsbouillon",
@@ -57,7 +68,11 @@
             "co2_kg": 0.36,
             "calculation_notes": "0.9 kg * 0.4 kg CO₂e/kg = 0.36 kg CO₂e",
             "weight_estimation_notes": "1 dl = 100 g, 9 * 100 g = 900 g = 0.9 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, hønsekød, spiseklar"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, hønsekød, spiseklar",
+            "energy_kj": 162.0,
+            "fat_g": 1.8,
+            "carbohydrate_g": 2.7,
+            "protein_g": 2.7
         },
         {
             "name": "2 dl hvidvin",
@@ -67,7 +82,11 @@
             "co2_kg": 0.32,
             "calculation_notes": "0.2 kg * 1.6 kg CO₂e/kg = 0.32 kg CO₂e",
             "weight_estimation_notes": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidvin"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidvin",
+            "energy_kj": 688.0,
+            "fat_g": 0.0,
+            "carbohydrate_g": 5.2,
+            "protein_g": 0.2
         },
         {
             "name": "25 g parmesan",
@@ -77,7 +96,11 @@
             "co2_kg": 0.14,
             "calculation_notes": "0.03 kg * 5.4 kg CO₂e/kg = 0.14 kg CO₂e",
             "weight_estimation_notes": "25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: parmesan ost, 32+"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: parmesan ost, 32+",
+            "energy_kj": 446.4,
+            "fat_g": 7.23,
+            "carbohydrate_g": 0.03,
+            "protein_g": 9.87
         },
         {
             "name": "25 g pesto",
@@ -87,7 +110,11 @@
             "co2_kg": 0.11,
             "calculation_notes": "0.03 kg * 4.2 kg CO₂e/kg = 0.11 kg CO₂e",
             "weight_estimation_notes": "25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: pesto"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: pesto",
+            "energy_kj": 464.1,
+            "fat_g": 10.5,
+            "carbohydrate_g": 3.0,
+            "protein_g": 1.41
         },
         {
             "name": "1 spsk olivenolie",
@@ -97,7 +124,11 @@
             "co2_kg": 0.09,
             "calculation_notes": "0.01 kg * 5.9 kg CO₂e/kg = 0.09 kg CO₂e",
             "weight_estimation_notes": "1 spsk = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: olivenolie"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: olivenolie",
+            "energy_kj": 370.0,
+            "fat_g": 10.0,
+            "carbohydrate_g": 0.0,
+            "protein_g": 0.0
         },
         {
             "name": "25 g tomatpuré",
@@ -107,7 +138,11 @@
             "co2_kg": 0.07,
             "calculation_notes": "0.03 kg * 2.7 kg CO₂e/kg = 0.07 kg CO₂e",
             "weight_estimation_notes": "25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomatpure, koncentreret"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomatpure, koncentreret",
+            "energy_kj": 112.5,
+            "fat_g": 0.15,
+            "carbohydrate_g": 4.44,
+            "protein_g": 1.29
         },
         {
             "name": "25 g soltørrede tomater i olie",
@@ -117,7 +152,11 @@
             "co2_kg": 0.07,
             "calculation_notes": "0.03 kg * 2.7 kg CO₂e/kg = 0.07 kg CO₂e",
             "weight_estimation_notes": "25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: soltørrede tomater"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: soltørrede tomater",
+            "energy_kj": 255.3,
+            "fat_g": 4.59,
+            "carbohydrate_g": 3.66,
+            "protein_g": 0.81
         },
         {
             "name": "1 stk løg",
@@ -127,7 +166,11 @@
             "co2_kg": 0.05,
             "calculation_notes": "0.17 kg * 0.3 kg CO₂e/kg = 0.05 kg CO₂e",
             "weight_estimation_notes": "1 løg = 170 g, 1 * 170 g = 170 g = 0.170 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg",
+            "energy_kj": 311.1,
+            "fat_g": 0.17,
+            "carbohydrate_g": 9.18,
+            "protein_g": 2.04
         },
         {
             "name": "0.5 øko citron",
@@ -137,7 +180,11 @@
             "co2_kg": 0.03,
             "calculation_notes": "0.04 kg * 0.7 kg CO₂e/kg = 0.03 kg CO₂e",
             "weight_estimation_notes": "1 citron = 85 g, 0.5 * 85 g = 42.5 g = 0.0425 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: citron"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: citron",
+            "energy_kj": 74.8,
+            "fat_g": 0.44,
+            "carbohydrate_g": 1.24,
+            "protein_g": 0.2
         },
         {
             "name": "3 fed hvidløg",
@@ -147,7 +194,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 1.2 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 fed hvidløg = 4 g, 3 * 4 g = 12 g = 0.012 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg",
+            "energy_kj": 66.9,
+            "fat_g": 0.05,
+            "carbohydrate_g": 3.09,
+            "protein_g": 0.64
         },
         {
             "name": "0.5 håndfuld basilikum",
@@ -157,7 +208,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 0.4 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 håndfuld krydderurter = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: basilikum, frisk"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: basilikum, frisk",
+            "energy_kj": 9.21,
+            "fat_g": 0.06,
+            "carbohydrate_g": 0.27,
+            "protein_g": 0.32
         },
         {
             "name": "0.5 tsk timian",
@@ -167,7 +222,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.003 kg is negligible",
             "weight_estimation_notes": "1 tsk = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
-            "co2_emission_notes": "Weight on 0.003 kg is negligible"
+            "co2_emission_notes": "Weight on 0.003 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "salt",
@@ -177,7 +236,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "sort peber",
@@ -187,7 +250,20 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "Mængden af sort peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         }
-    ]
+    ],
+    "co2_per_person_kg": 1.3,
+    "avg_emission_per_person_per_meal": 1.8,
+    "avg_emission_per_person_per_day": 7.1,
+    "budget_emission_per_person_per_meal": 0.5,
+    "budget_emission_per_person_per_day": 2.0,
+    "energy_per_person_kj": 3143.0,
+    "fat_per_person_g": 23.0,
+    "carbohydrate_per_person_g": 89.0,
+    "protein_per_person_g": 33.0
 }

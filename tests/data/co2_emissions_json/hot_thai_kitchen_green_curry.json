@@ -1,156 +1,232 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient is 'coconut milk', and the closest match in the database is also 'coconut milk'. This is an exact match.",
+            "closest_match_explanation": "The ingredient 'coconut milk' is a direct match to the emission option 'coconut milk'. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00404",
             "closest_match_name": "coconut milk",
             "ingredient": "1.75 cups coconut milk",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 6.3
+            "co2_per_kg": 6.3,
+            "energy_kj_100g": 764.0,
+            "fat_g_100g": 19.0,
+            "carbohydrate_g_100g": 2.0,
+            "protein_g_100g": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient is 'green curry paste', and the closest match in the database is also 'green curry paste'. This is an exact match.",
+            "closest_match_explanation": "The ingredient 'green curry paste' is a direct match to the emission option 'green curry paste'. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00469",
             "closest_match_name": "green curry paste",
             "ingredient": "3.5 tbsp green curry paste",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.1
+            "co2_per_kg": 2.1,
+            "energy_kj_100g": 662.0,
+            "fat_g_100g": 12.0,
+            "carbohydrate_g_100g": 8.7,
+            "protein_g_100g": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient is 'chicken stock', which is a prepared chicken product. The closest match in the database is 'bouillon, chicken, prepared', which is also a prepared chicken product and represents the least processed option among the chicken-related choices.",
+            "closest_match_explanation": "The ingredient 'chicken stock' is best matched to 'bouillon, chicken, prepared' because chicken stock is a liquid base, similar to bouillon, which is a prepared broth. This option is the most realistic comparison for CO2 emissions as it represents a processed chicken product used for flavoring, unlike raw or minced chicken which have significantly different production processes and emissions.",
             "ingredient_id": "Ra00213",
             "closest_match_name": "bouillon, chicken, prepared",
             "ingredient": "1 cup chicken stock",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.4,
+            "energy_kj_100g": 18.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 0.3,
+            "protein_g_100g": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient is 'chicken thigh', which is a raw cut of chicken. The closest match in the database is 'chicken, leg, flesh and skin, raw', as it is the least processed (raw) option and a specific cut of chicken, aligning with the ingredient's description.",
+            "closest_match_explanation": "The ingredient 'chicken thigh' is a specific cut of chicken. Among the available options, 'chicken, leg, flesh and skin, raw' is the most appropriate match because chicken thighs are part of the chicken leg. This option represents a raw, unprocessed cut of chicken, which aligns with the typical form of chicken thigh before cooking. The other options, 'minced chicken' and 'chicken, whole', are either more processed or represent the entire animal, making 'chicken, leg, flesh and skin, raw' the most realistic and least processed comparison for a chicken thigh.",
             "ingredient_id": "Ra00053",
             "closest_match_name": "chicken, leg, flesh and skin, raw",
             "ingredient": "1 lb chicken thigh",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.0
+            "co2_per_kg": 2.0,
+            "energy_kj_100g": 635.0,
+            "fat_g_100g": 8.7,
+            "carbohydrate_g_100g": 0.0,
+            "protein_g_100g": 18.4
         },
         {
-            "closest_match_explanation": "The ingredient is 'palm sugar', which is a type of sugar. The closest match in the database is 'sugar, brown', as it is a general category for sugar and represents a similar level of processing.",
-            "ingredient_id": "Ra00319",
-            "closest_match_name": "sugar, brown",
+            "closest_match_explanation": "The ingredient 'palm sugar' is a type of sugar. Among the available options, 'sugar, sucrose, white' is the most appropriate match because it is a general category for sugar and has a higher emission factor than 'sugar, brown'. While palm sugar has distinct characteristics, its primary function and composition are similar to other forms of sugar, making 'sugar, sucrose, white' a realistic comparison for CO2 emissions.",
+            "ingredient_id": "Ra00318",
+            "closest_match_name": "sugar, sucrose, white",
             "ingredient": "2 tbsp palm sugar",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.4
+            "co2_per_kg": 2.7,
+            "energy_kj_100g": 1698.0,
+            "fat_g_100g": 0.0,
+            "carbohydrate_g_100g": 99.9,
+            "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient is 'fish sauce', which is a sauce made from fish. The closest match in the database is 'fish balls, canned', as it is the only fish-based processed product available. While not an exact match, it is the most reasonable option given the limited choices and the processed nature of fish sauce.",
+            "closest_match_explanation": "The ingredient 'fish sauce' is a condiment made from fermented fish. Among the available options, 'fish balls, canned' is the most appropriate match because it is the only option that contains fish. While fish sauce is a liquid condiment and fish balls are a solid product, both are derived from fish and undergo processing. Given the limited options, 'fish balls, canned' provides the most realistic comparison for CO2 emissions related to a fish-based product.",
             "ingredient_id": "Ra00082",
             "closest_match_name": "fish balls, canned",
             "ingredient": "1.5 tbsp fish sauce",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.2
+            "co2_per_kg": 2.2,
+            "energy_kj_100g": 261.0,
+            "fat_g_100g": 1.0,
+            "carbohydrate_g_100g": 4.9,
+            "protein_g_100g": 8.3
         },
         {
-            "closest_match_explanation": "The ingredient is 'bamboo shoots strips, canned'. The closest match in the database is 'bamboo shoots, canned, nonsalted', which is an exact match for the processed form of bamboo shoots.",
+            "closest_match_explanation": "The ingredient 'bamboo shoots strips' in a 'can' is a direct match to the emission option 'bamboo shoots, canned, nonsalted'. This is the most accurate match as it precisely identifies the ingredient and its processing without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00365",
             "closest_match_name": "bamboo shoots, canned, nonsalted",
             "ingredient": "1 550-ml can bamboo shoots strips",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.4
+            "co2_per_kg": 1.4,
+            "energy_kj_100g": 106.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 3.2,
+            "protein_g_100g": 2.6
         },
         {
-            "closest_match_explanation": "The ingredient is 'Thai basil leaves', which are fresh basil leaves. The closest match in the database is 'basil, fresh', as it is an exact match for the fresh form of basil.",
+            "closest_match_explanation": "The ingredient 'Thai basil leaves' is a type of basil. The most appropriate match is 'basil, fresh' because it represents the raw, unprocessed form of basil leaves. While 'basil, dried' is also an option, 'fresh' is preferred as the ingredient specifies 'leaves' without any indication of drying or further processing. This ensures the most realistic comparison for CO2 emissions for fresh basil.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "1 cup Thai basil leaves",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.4,
+            "energy_kj_100g": 92.11,
+            "fat_g_100g": 0.6,
+            "carbohydrate_g_100g": 2.7,
+            "protein_g_100g": 3.2
         },
         {
-            "closest_match_explanation": "The ingredient is 'red bell pepper', which is a raw sweet pepper. The closest match in the database is 'pepper, sweet, red, raw', which is an exact match for the raw form of red bell pepper.",
+            "closest_match_explanation": "The ingredient 'red bell pepper' is a type of sweet pepper. The most appropriate match is 'pepper, sweet, red, raw' because it directly corresponds to the ingredient's description as a raw, red, sweet pepper. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "0.25 red bell pepper",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.1,
+            "energy_kj_100g": 133.0,
+            "fat_g_100g": 0.1,
+            "carbohydrate_g_100g": 5.2,
+            "protein_g_100g": 0.9
         },
         {
-            "closest_match_explanation": "The ingredient is 'jasmine rice', which is a type of rice. The closest match in the database is 'rice, parboiled, raw', as it is the most general and least processed form of rice available.",
+            "closest_match_explanation": "The ingredient 'jasmine rice' is a type of rice. The most appropriate match is 'rice, parboiled, raw' because it represents a raw form of rice. While other options like 'rice flour', 'rice pancakes', and 'rice noodles' are derived from rice, 'jasmine rice' itself is a grain, making 'rice, parboiled, raw' the most realistic comparison for CO2 emissions for uncooked rice.",
             "ingredient_id": "Ra00300",
             "closest_match_name": "rice, parboiled, raw",
             "ingredient": "jasmine rice",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 5.1
+            "co2_per_kg": 5.1,
+            "energy_kj_100g": 1518.0,
+            "fat_g_100g": 1.2,
+            "carbohydrate_g_100g": 78.1,
+            "protein_g_100g": 8.2
         },
         {
-            "closest_match_explanation": "The ingredient is 'coriander seeds', which are seeds used as a spice. The closest match in the database is 'curry powder', as it is a spice blend that often contains coriander and represents a similar category of processed spices. Among the seed options, 'curry powder' has the highest emission factor, aligning with rule 5.",
-            "ingredient_id": "Ra00304",
-            "closest_match_name": "curry powder",
+            "closest_match_explanation": "The ingredient 'coriander seeds' are a type of seed used as a spice. Among the available options, 'sesame seeds, decorticated' is the most appropriate match because it is the only option that is a seed. While coriander seeds have a distinct flavor, their form and use as a spice are similar to other seeds. Given the limited options, 'sesame seeds, decorticated' provides the most realistic comparison for CO2 emissions for a seed-based spice.",
+            "ingredient_id": "Ra00142",
+            "closest_match_name": "sesame seeds, decorticated",
             "ingredient": "2 tsp coriander seeds",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 6.1
+            "co2_per_kg": 7.3,
+            "energy_kj_100g": 2657.0,
+            "fat_g_100g": 57.4,
+            "carbohydrate_g_100g": 1.8,
+            "protein_g_100g": 26.8
         },
         {
-            "closest_match_explanation": "The ingredient is 'green Thai chilies', which are raw hot peppers. The closest match in the database is 'pepper, hot chili, raw', which is an exact match for the raw form of hot chili peppers.",
+            "closest_match_explanation": "The ingredient 'green Thai chilies' are a type of hot chili pepper. The most appropriate match is 'pepper, hot chili, raw' because it directly corresponds to the ingredient's description as a raw, hot chili pepper. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00009",
             "closest_match_name": "pepper, hot chili, raw",
             "ingredient": "15 green Thai chilies",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.1
+            "co2_per_kg": 1.1,
+            "energy_kj_100g": 187.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 7.7,
+            "protein_g_100g": 2.0
         },
         {
-            "closest_match_explanation": "The ingredient is 'Thai basil leaves', which are fresh basil leaves. The closest match in the database is 'basil, fresh', as it is an exact match for the fresh form of basil.",
+            "closest_match_explanation": "The ingredient 'Thai basil leaves' is a type of basil. The most appropriate match is 'basil, fresh' because it represents the raw, unprocessed form of basil leaves. While 'basil, dried' is also an option, 'fresh' is preferred as the ingredient specifies 'leaves' without any indication of drying or further processing. This ensures the most realistic comparison for CO2 emissions for fresh basil.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basil, fresh",
             "ingredient": "15 Thai basil leaves",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.4,
+            "energy_kj_100g": 92.11,
+            "fat_g_100g": 0.6,
+            "carbohydrate_g_100g": 2.7,
+            "protein_g_100g": 3.2
         },
         {
-            "closest_match_explanation": "The ingredient is 'lemongrass', which is an aromatic herb. The closest match in the database is 'basil, fresh', as it is a fresh herb and represents the most similar category among the available options. While not an exact match, it is the most reasonable broader category.",
-            "ingredient_id": "Ra00486",
-            "closest_match_name": "basil, fresh",
+            "closest_match_explanation": "The ingredient 'lemongrass' is an aromatic herb. Among the available options, 'lemon, raw' is the most appropriate match because both are aromatic plants used for flavoring, and 'lemon, raw' is the closest in terms of being a fresh, unprocessed aromatic. While 'basil, fresh' is also a fresh herb, lemongrass has a distinct citrusy aroma, making 'lemon, raw' a more realistic comparison for CO2 emissions.",
+            "ingredient_id": "Ra00328",
+            "closest_match_name": "lemon, raw",
             "ingredient": "3 tbsp lemongrass",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.4
+            "co2_per_kg": 0.7,
+            "energy_kj_100g": 187.0,
+            "fat_g_100g": 1.1,
+            "carbohydrate_g_100g": 3.1,
+            "protein_g_100g": 0.5
         },
         {
-            "closest_match_explanation": "The ingredient is 'galangal', which is a root similar to ginger. The closest match in the database is 'ginger root, raw', as it is a raw root vegetable with similar culinary uses and characteristics.",
+            "closest_match_explanation": "The ingredient 'galangal' is a root similar to ginger. The most appropriate match is 'ginger root, raw' because both are raw, aromatic roots used as spices. This is the most realistic comparison for CO2 emissions as they share similar botanical characteristics and culinary uses.",
             "ingredient_id": "Ra00261",
             "closest_match_name": "ginger root, raw",
             "ingredient": "1 tbsp galangal",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.3
+            "co2_per_kg": 1.3,
+            "energy_kj_100g": 352.0,
+            "fat_g_100g": 0.8,
+            "carbohydrate_g_100g": 16.7,
+            "protein_g_100g": 1.8
         },
         {
-            "closest_match_explanation": "The ingredient is 'makrut lime zest', which is the zest of a lime. The closest match in the database is 'lime, raw', as it represents the raw form of lime, from which the zest is derived.",
+            "closest_match_explanation": "The ingredient 'makrut lime zest' is the outer peel of a lime. The most appropriate match is 'lime, raw' because it represents the raw fruit from which the zest is derived. This is the most accurate match as it directly relates to the source of the ingredient without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00332",
             "closest_match_name": "lime, raw",
             "ingredient": "2 tsp makrut lime zest",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.6
+            "co2_per_kg": 0.6,
+            "energy_kj_100g": 155.0,
+            "fat_g_100g": 0.2,
+            "carbohydrate_g_100g": 7.7,
+            "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient is 'cilantro roots or big cilantro stems', which are parts of the cilantro plant. The closest match in the database is 'parsley, raw', as it is a raw herb and represents a similar category of fresh leafy greens/roots. Among the root options, 'parsley, raw' has the highest emission factor, aligning with rule 5.",
-            "ingredient_id": "Ra00134",
-            "closest_match_name": "parsley, raw",
+            "closest_match_explanation": "The ingredient 'cilantro roots or big cilantro stems' refers to parts of the cilantro plant. The most appropriate match is 'parsley root, raw' because both are roots or stems of aromatic herbs used in cooking. While 'basil, fresh' and 'parsley, raw' are also fresh herbs, 'parsley root, raw' is the only option that specifically refers to a root, making it the most realistic comparison for CO2 emissions for cilantro roots or stems.",
+            "ingredient_id": "Ra00269",
+            "closest_match_name": "parsley root, raw",
             "ingredient": "2 cilantro roots or 4 big cilantro stems",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.5
+            "co2_per_kg": 0.9,
+            "energy_kj_100g": 232.0,
+            "fat_g_100g": 0.6,
+            "carbohydrate_g_100g": 8.0,
+            "protein_g_100g": 2.3
         },
         {
-            "closest_match_explanation": "The ingredient is 'shallots', which are a type of onion. The closest match in the database is 'red onion', as it is a raw onion and represents a similar category of allium vegetables. Among the raw onion options, 'red onion' has the highest emission factor, aligning with rule 5.",
+            "closest_match_explanation": "The ingredient 'shallots' are a type of onion. The most appropriate match is 'red onion' because it is a closely related allium vegetable with similar culinary uses and growth characteristics. While 'onion, raw' is also an option, 'red onion' is a more specific and realistic comparison for shallots in terms of CO2 emissions.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "red onion",
             "ingredient": "3 tbsp shallots",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 0.8
+            "co2_per_kg": 0.8,
+            "energy_kj_100g": 209.0,
+            "fat_g_100g": 0.3,
+            "carbohydrate_g_100g": 10.0,
+            "protein_g_100g": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient is 'garlic', which is a raw bulb. The closest match in the database is 'garlic, raw', which is an exact match for the raw form of garlic.",
+            "closest_match_explanation": "The ingredient 'garlic' is a direct match to the emission option 'garlic, raw'. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 tbsp garlic",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 1.2
+            "co2_per_kg": 1.2,
+            "energy_kj_100g": 669.0,
+            "fat_g_100g": 0.5,
+            "carbohydrate_g_100g": 30.9,
+            "protein_g_100g": 6.4
         }
     ]
 }

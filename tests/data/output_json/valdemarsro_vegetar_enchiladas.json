@@ -3,11 +3,6 @@
     "url": "https://www.valdemarsro.dk/vegetar-enchiladas/",
     "total_co2_kg": 3.9,
     "number_of_persons": 4,
-    "co2_per_person_kg": 1.0,
-    "avg_meal_emission_per_person_range_kg": [
-        1.3,
-        2.2
-    ],
     "ingredients": [
         {
             "name": "150 g cheddar ost",
@@ -17,7 +12,11 @@
             "co2_kg": 0.81,
             "calculation_notes": "0.15 kg * 5.4 kg CO₂e/kg = 0.81 kg CO₂e",
             "weight_estimation_notes": "150 g = 150 g = 0.15 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: parmesan ost, 32+"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: parmesan ost, 32+",
+            "energy_kj": 2232.0,
+            "fat_g": 36.15,
+            "carbohydrate_g": 0.15,
+            "protein_g": 49.35
         },
         {
             "name": "1 dåse sorte bønner",
@@ -27,7 +26,11 @@
             "co2_kg": 0.48,
             "calculation_notes": "0.4 kg * 1.2 kg CO₂e/kg = 0.48 kg CO₂e",
             "weight_estimation_notes": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: sorte bønner, konserves"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: sorte bønner, konserves",
+            "energy_kj": 1212.0,
+            "fat_g": 2.4,
+            "carbohydrate_g": 32.0,
+            "protein_g": 21.2
         },
         {
             "name": "1 dåse kidneybønner",
@@ -37,7 +40,11 @@
             "co2_kg": 0.48,
             "calculation_notes": "0.4 kg * 1.2 kg CO₂e/kg = 0.48 kg CO₂e",
             "weight_estimation_notes": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: kidney bønner, konserves"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: kidney bønner, konserves",
+            "energy_kj": 1196.0,
+            "fat_g": 4.0,
+            "carbohydrate_g": 36.0,
+            "protein_g": 20.0
         },
         {
             "name": "1 dåse hakkede tomater",
@@ -47,7 +54,11 @@
             "co2_kg": 0.44,
             "calculation_notes": "0.4 kg * 1.1 kg CO₂e/kg = 0.44 kg CO₂e",
             "weight_estimation_notes": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomat, flået, konserves"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomat, flået, konserves",
+            "energy_kj": 360.0,
+            "fat_g": 1.2,
+            "carbohydrate_g": 12.0,
+            "protein_g": 4.8
         },
         {
             "name": "1 dåse hakkede tomater",
@@ -57,7 +68,11 @@
             "co2_kg": 0.44,
             "calculation_notes": "0.4 kg * 1.1 kg CO₂e/kg = 0.44 kg CO₂e",
             "weight_estimation_notes": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomat, flået, konserves"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: tomat, flået, konserves",
+            "energy_kj": 360.0,
+            "fat_g": 1.2,
+            "carbohydrate_g": 12.0,
+            "protein_g": 4.8
         },
         {
             "name": "1 squash",
@@ -67,7 +82,11 @@
             "co2_kg": 0.32,
             "calculation_notes": "0.4 kg * 0.8 kg CO₂e/kg = 0.32 kg CO₂e",
             "weight_estimation_notes": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: squash"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: squash",
+            "energy_kj": 324.0,
+            "fat_g": 0.8,
+            "carbohydrate_g": 9.6,
+            "protein_g": 5.6
         },
         {
             "name": "8 tortillas pandekager",
@@ -77,7 +96,11 @@
             "co2_kg": 0.29,
             "calculation_notes": "0.24 kg * 1.2 kg CO₂e/kg = 0.29 kg CO₂e",
             "weight_estimation_notes": "1 tortilla = 30 g, 8 * 30 g = 240 g = 0.24 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: tortillabrød, hvede"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: tortillabrød, hvede",
+            "energy_kj": 3120.0,
+            "fat_g": 18.0,
+            "carbohydrate_g": 122.4,
+            "protein_g": 19.2
         },
         {
             "name": "300 g majs",
@@ -87,7 +110,11 @@
             "co2_kg": 0.21,
             "calculation_notes": "0.3 kg * 0.7 kg CO₂e/kg = 0.21 kg CO₂e",
             "weight_estimation_notes": "300 g = 300 g = 0.3 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: majs, kerner, konserves"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: majs, kerner, konserves",
+            "energy_kj": 1284.0,
+            "fat_g": 3.3,
+            "carbohydrate_g": 48.3,
+            "protein_g": 9.3
         },
         {
             "name": "1 spsk olivenolie",
@@ -97,7 +124,11 @@
             "co2_kg": 0.09,
             "calculation_notes": "0.01 kg * 5.9 kg CO₂e/kg = 0.09 kg CO₂e",
             "weight_estimation_notes": "1 spiseske = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: olivenolie"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: olivenolie",
+            "energy_kj": 370.0,
+            "fat_g": 10.0,
+            "carbohydrate_g": 0.0,
+            "protein_g": 0.0
         },
         {
             "name": "1 spsk olivenolie",
@@ -107,7 +138,11 @@
             "co2_kg": 0.09,
             "calculation_notes": "0.01 kg * 5.9 kg CO₂e/kg = 0.09 kg CO₂e",
             "weight_estimation_notes": "1 spiseske = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: olivenolie"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: olivenolie",
+            "energy_kj": 370.0,
+            "fat_g": 10.0,
+            "carbohydrate_g": 0.0,
+            "protein_g": 0.0
         },
         {
             "name": "1 løg",
@@ -117,7 +152,11 @@
             "co2_kg": 0.05,
             "calculation_notes": "0.17 kg * 0.3 kg CO₂e/kg = 0.05 kg CO₂e",
             "weight_estimation_notes": "1 løg = 170 g, 1 * 170 g = 170 g = 0.170 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg",
+            "energy_kj": 311.1,
+            "fat_g": 0.17,
+            "carbohydrate_g": 9.18,
+            "protein_g": 2.04
         },
         {
             "name": "1 løg",
@@ -127,7 +166,11 @@
             "co2_kg": 0.05,
             "calculation_notes": "0.17 kg * 0.3 kg CO₂e/kg = 0.05 kg CO₂e",
             "weight_estimation_notes": "1 løg = 170 g, 1 * 170 g = 170 g = 0.170 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg",
+            "energy_kj": 311.1,
+            "fat_g": 0.17,
+            "carbohydrate_g": 9.18,
+            "protein_g": 2.04
         },
         {
             "name": "1 spsk smør",
@@ -137,7 +180,11 @@
             "co2_kg": 0.05,
             "calculation_notes": "0.01 kg * 3.3 kg CO₂e/kg = 0.05 kg CO₂e",
             "weight_estimation_notes": "1 spiseske = 15 g, 1 * 15 g = 15 g = 0.015 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: smør, saltet"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: smør, saltet",
+            "energy_kj": 304.7,
+            "fat_g": 8.15,
+            "carbohydrate_g": 0.06,
+            "protein_g": 0.07
         },
         {
             "name": "1 dl grøntsagsbouillon",
@@ -147,7 +194,11 @@
             "co2_kg": 0.04,
             "calculation_notes": "0.1 kg * 0.4 kg CO₂e/kg = 0.04 kg CO₂e",
             "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, hønsekød, spiseklar"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, hønsekød, spiseklar",
+            "energy_kj": 18.0,
+            "fat_g": 0.2,
+            "carbohydrate_g": 0.3,
+            "protein_g": 0.3
         },
         {
             "name": "2 fed hvidløg",
@@ -157,7 +208,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 1.2 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg",
+            "energy_kj": 66.9,
+            "fat_g": 0.05,
+            "carbohydrate_g": 3.09,
+            "protein_g": 0.64
         },
         {
             "name": "2 fed hvidløg",
@@ -167,7 +222,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 1.2 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg",
+            "energy_kj": 66.9,
+            "fat_g": 0.05,
+            "carbohydrate_g": 3.09,
+            "protein_g": 0.64
         },
         {
             "name": "1 håndfuld frisk koriander",
@@ -177,7 +236,11 @@
             "co2_kg": 0.01,
             "calculation_notes": "0.03 kg * 0.5 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: persille"
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: persille",
+            "energy_kj": 60.3,
+            "fat_g": 0.33,
+            "carbohydrate_g": 0.36,
+            "protein_g": 1.11
         },
         {
             "name": "1 tsk stødt spidskommen",
@@ -187,7 +250,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsk stødt kanel",
@@ -197,7 +264,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsk røget paprika",
@@ -207,7 +278,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsk stødt koriander",
@@ -217,7 +292,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsk hvedemel",
@@ -227,7 +306,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "salt",
@@ -237,7 +320,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "sort peber",
@@ -247,7 +334,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "Mængden af sort peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsk stødt spidskommen",
@@ -257,7 +348,11 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         },
         {
             "name": "1 tsk stødt koriander",
@@ -267,7 +362,20 @@
             "co2_kg": null,
             "calculation_notes": "Weight on 0.005 kg is negligible",
             "weight_estimation_notes": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
-            "co2_emission_notes": "Weight on 0.005 kg is negligible"
+            "co2_emission_notes": "Weight on 0.005 kg is negligible",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
         }
-    ]
+    ],
+    "co2_per_person_kg": 1.0,
+    "avg_emission_per_person_per_meal": 1.8,
+    "avg_emission_per_person_per_day": 7.1,
+    "budget_emission_per_person_per_meal": 0.5,
+    "budget_emission_per_person_per_day": 2.0,
+    "energy_per_person_kj": 2992.0,
+    "fat_per_person_g": 24.0,
+    "carbohydrate_per_person_g": 74.0,
+    "protein_per_person_g": 35.0
 }

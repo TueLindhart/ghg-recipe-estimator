@@ -56,6 +56,8 @@ async def test_async_estimator(
 
     n_persons = output_model.number_of_persons
     assert n_persons is not None
+    assert output_model.total_co2_kg is not None
+    assert expected_output.total_co2_kg is not None
     total_emission_per_person = output_model.total_co2_kg / n_persons
     expected_total_emission_per_person = expected_output.total_co2_kg / n_persons
     ratio_difference = (
