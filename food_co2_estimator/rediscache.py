@@ -1,3 +1,6 @@
+import time
+import uuid
+
 import redis.asyncio as aioredis
 
 from food_co2_estimator.pydantic_models.response_models import JobResult, JobStatus
@@ -57,3 +60,41 @@ class RedisCache:
         Clear the Redis cache.
         """
         await self.redis_client.flushdb()
+
+    async def check_rate_limit(
+        self,
+        ip: str,
+        max_requests: int,
+        window_seconds: int,
+        api_key: str | None = None,
+    ) -> tuple[bool, int]:
+        """
+        Check if the request should be rate limited, using a combination of api_key and IP address.
+        Returns (is_allowed, remaining_requests)
+        """
+        if api_key:
+            key = f"ratelimit:{api_key}:{ip}"
+        else:
+            key = f"ratelimit:{ip}"
+        now_ms = int(time.time() * 1000)  # Current time in ms
+        window_start = now_ms - (window_seconds * 1000)
+
+        # Remove old requests outside the window
+        await self.redis_client.zremrangebyscore(key, 0, window_start)
+
+        # Count current requests in window
+        current_requests = await self.redis_client.zcard(key)
+
+        if current_requests >= max_requests:
+            remaining = 0
+            is_allowed = False
+        else:
+            # Add current request timestamp with a unique value
+            unique_value = f"{now_ms}-{uuid.uuid4()}"
+            await self.redis_client.zadd(key, {unique_value: now_ms})
+            # Set expiration to ensure cleanup
+            await self.redis_client.expire(key, window_seconds)
+            remaining = max_requests - current_requests - 1
+            is_allowed = True
+
+        return is_allowed, remaining
