@@ -24,9 +24,12 @@
 
     isLoading = true;
     try {
-      const r = await fetch("/api/estimate", {
+      const r = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
         body: JSON.stringify({ url: recipeUrl }),
       });
 

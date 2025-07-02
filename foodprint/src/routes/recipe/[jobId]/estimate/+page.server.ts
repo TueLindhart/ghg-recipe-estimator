@@ -1,6 +1,7 @@
-// src/routes/recipe/[jobId]/estimate/+page.ts
+// src/routes/recipe/[jobId]/estimate/+page.server.ts
 import { error, redirect } from '@sveltejs/kit';
-import type { PageLoad } from './$types';
+import { env } from '$env/dynamic/private';
+import type { PageServerLoad } from './$types';
 import type { RecipeCO2Output, ComparisonResponse } from '$lib';
 
 /*
@@ -9,10 +10,20 @@ import type { RecipeCO2Output, ComparisonResponse } from '$lib';
  *
  * Whatever this function returns becomes `data` in the Svelte page.
  */
-export const load: PageLoad = async ({ params, fetch }) => {
+export const load: PageServerLoad = async ({ params, fetch }) => {
         const jobId = params.jobId;
+        const API_BASE = env.API_BASE;
+        const API_KEY = env.FOODPRINT_API_KEY;
+        if (!API_BASE || !API_KEY) {
+                throw error(500, 'Missing API configuration');
+        }
         // 1) Ask FastAPI for the job status and (if finished) the result
-        const res = await fetch(`/api/status/${jobId}`);
+        const res = await fetch(`${API_BASE}/status/${jobId}` , {
+                headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${API_KEY}`
+                }
+        });
 
 	if (!res.ok) {
 		// Tell SvelteKit to show its generic error page
@@ -33,10 +44,13 @@ export const load: PageLoad = async ({ params, fetch }) => {
 
         const result: RecipeCO2Output = JSON.parse(statusData.result);
 
-	const cmpRes = await fetch(
-		`/api/comparison?kgco2=${result.total_co2_kg}`
-	);
-	if (!cmpRes.ok) throw new Error("Comparison service failed");
+        const cmpRes = await fetch(
+                `${API_BASE}/comparison?kgco2=${result.total_co2_kg}`,
+                {
+                        headers: { Authorization: `Bearer ${API_KEY}` }
+                }
+        );
+        if (!cmpRes.ok) throw new Error('Comparison service failed');
         const comparison: ComparisonResponse = await cmpRes.json();
 
 	// 4) Hand the data to +page.svelte
