@@ -51,9 +51,9 @@ Copy `template.env` to `.env` and fill in the required values. These variables a
     ```bash
     poetry install
     ```
-2. Start the Flask app:
+2. Start the FastAPI app with Uvicorn:
     ```bash
-    poetry run flask run
+    poetry run uvicorn app:app --reload
     ```
    The app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
@@ -84,6 +84,19 @@ gcloud builds submit --region=europe-west1 --config cloudbuild.yaml
 ---
 
 ## Frontend
+
+### Running Locally
+
+1. Install dependencies:
+    ```bash
+    cd foodprint
+    npm install
+    ```
+2. Start the Svelte dev server:
+    ```bash
+    npm run dev -- --open
+    ```
+   By default the app runs on [http://127.0.0.1:5173](http://127.0.0.1:5173) and expects `API_BASE` and `FOODPRINT_API_KEY` set in a `.env` file.
 
 ### Docker (Frontend)
 
