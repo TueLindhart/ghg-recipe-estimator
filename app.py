@@ -105,7 +105,7 @@ app.add_middleware(
 )
 
 # Add rate limiting middleware
-app.add_middleware(RateLimitMiddleware)
+# app.add_middleware(RateLimitMiddleware)
 
 
 security = HTTPBearer()
