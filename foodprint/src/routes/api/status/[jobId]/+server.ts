@@ -1,7 +1,10 @@
 import { env } from "$env/dynamic/private";
 import { json, type RequestHandler } from "@sveltejs/kit";
+import { rejectNonBrowser } from "$lib/server/browserOnly";
 
-export const GET: RequestHandler = async ({ params }) => {
+export const GET: RequestHandler = async ({ params, request }) => {
+  const forbidden = rejectNonBrowser(request);
+  if (forbidden) return forbidden;
   const { jobId } = params;
   // Check if jobId is provided
   if (!jobId) {

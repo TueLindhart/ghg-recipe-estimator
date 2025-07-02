@@ -4,9 +4,10 @@ from contextlib import asynccontextmanager
 from typing import Annotated
 
 from dotenv import load_dotenv
-from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, status
+from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from starlette.middleware.base import BaseHTTPMiddleware
 
 from food_co2_estimator.co2_comparison import compare_co2
 from food_co2_estimator.logger_utils import logger
@@ -23,6 +24,48 @@ from food_co2_estimator.rediscache import RedisCache
 
 load_dotenv()
 
+# Rate limiting configuration
+RATE_LIMIT_MAX_REQUESTS = int(os.getenv("RATE_LIMIT_MAX_REQUESTS", "300"))  # requests
+RATE_LIMIT_WINDOW = int(os.getenv("RATE_LIMIT_WINDOW", "60"))  # seconds (1 minute)
+
+
+class RateLimitMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        # Get client IP address (support X-Forwarded-For for proxies)
+        x_forwarded_for = request.headers.get("x-forwarded-for")
+        if x_forwarded_for:
+            ip_address = x_forwarded_for.split(",")[0].strip()
+        else:
+            ip_address = request.client.host if request.client else "unknown"
+
+        # Extract API key from Authorization header if present
+        api_key = None
+        auth_header = request.headers.get("authorization")
+        if auth_header and auth_header.lower().startswith("bearer "):
+            api_key = auth_header[7:].strip()
+
+        redis_client: RedisCache = request.app.state.redis
+
+        # Check rate limit per (api_key, IP)
+        is_allowed, remaining = await redis_client.check_rate_limit(
+            ip_address, RATE_LIMIT_MAX_REQUESTS, RATE_LIMIT_WINDOW, api_key=api_key
+        )
+
+        if not is_allowed:
+            raise HTTPException(
+                status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                detail=f"Rate limit exceeded. Try again in {RATE_LIMIT_WINDOW} seconds.",
+            )
+
+        response = await call_next(request)
+
+        # Add rate limit headers to response
+        response.headers["X-RateLimit-Remaining"] = str(remaining)
+        response.headers["X-RateLimit-Limit"] = str(RATE_LIMIT_MAX_REQUESTS)
+        response.headers["X-RateLimit-Window"] = str(RATE_LIMIT_WINDOW)
+
+        return response
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -31,9 +74,11 @@ async def lifespan(app: FastAPI):
     """
     # Initialize Redis connection pool
     redis = await RedisCache.create()
+    await redis.clear()
     app.state.redis = redis
     yield
     # Cleanup on shutdown
+    await redis.clear()
     await redis.aclose()
 
 
@@ -50,6 +95,7 @@ origins = [
     # Add other allowed origins here
 ]
 
+# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -57,6 +103,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Add rate limiting middleware
+# app.add_middleware(RateLimitMiddleware)
 
 
 security = HTTPBearer()
