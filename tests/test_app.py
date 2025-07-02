@@ -26,7 +26,7 @@ async def test_rate_limit():
                     resp.status_code == 200
                 ), f"Request {i+1} failed with status code {resp.status_code}"
 
-            with pytest.raises(HTTPException) as exc_info:
+            with pytest.raises(HTTPException):
                 await ac.get("/comparison?kgco2=10")
 
             sleep(RATE_LIMIT_WINDOW + 1)
