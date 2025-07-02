@@ -2,217 +2,277 @@
     "title": "Cremet pasta med asparges",
     "ingredients": [
         {
-            "original_name": "250 g frisk pasta",
-            "en_name": "250 g fresh pasta",
+            "name": "250 g frisk pasta",
             "weight_estimate": {
-                "ingredient": "250 g fresh pasta",
+                "ingredient": "250 g frisk pasta",
                 "weight_calculation": "250 g = 250 g = 0.25 kg",
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'fresh pasta'. Among the options, 'fresh pasta, fettucine spinach' is the most specific and closest match, as it explicitly mentions 'fresh pasta'. Although 'pasta, raw' is also a type of pasta, 'fresh pasta, fettucine spinach' is a more precise match for 'fresh pasta'. 'Stuffed fresh pasta' is too specific and processed. 'Pastasauce' is a final meal and not a raw ingredient.",
+                "closest_match_explanation": "The ingredient 'frisk pasta' is a type of pasta, and 'pasta' is a suitable broader category. Among the pasta options, 'frisk pasta, fettucine spinat' is the most specific match for fresh pasta, and it is less processed than 'fyldt frisk pasta' (filled fresh pasta).",
                 "ingredient_id": "Ra00388",
-                "closest_match_name": "fresh pasta, fettucine spinach",
-                "ingredient": "250 g fresh pasta",
+                "closest_match_name": "frisk pasta, fettucine spinat",
+                "ingredient": "250 g frisk pasta",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.5
+                "co2_per_kg": 1.5,
+                "energy_kj_100g": 1120.0,
+                "fat_g_100g": 2.5,
+                "carbohydrate_g_100g": 48.0,
+                "protein_g_100g": 11.0
             }
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": {
-                "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "ingredient": "2 fed hvidløg",
+                "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'garlic'. Among the options, 'garlic, raw' is the most direct and least processed match for 'garlic'. 'Garlic in oil' is more processed, and 'garlic baguette, frozen' is a final meal. 'Red onion' is a different ingredient.",
+                "closest_match_explanation": "The ingredient is 'hvidløg' (garlic). The option 'hvidløg' is a direct and exact match, representing the raw form of garlic, which is the least processed option available.",
                 "ingredient_id": "Ra00136",
-                "closest_match_name": "garlic, raw",
-                "ingredient": "2 cloves of garlic",
+                "closest_match_name": "hvidløg",
+                "ingredient": "2 fed hvidløg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 669.0,
+                "fat_g_100g": 0.5,
+                "carbohydrate_g_100g": 30.9,
+                "protein_g_100g": 6.4
             }
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "name": "1 løg",
             "weight_estimate": {
-                "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.17 kg",
+                "ingredient": "1 løg",
+                "weight_calculation": "1 løg = 170 g, 1 * 170 g = 170 g = 0.17 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'onion'. Among the options, 'onion, raw' is the most direct and least processed match for 'onion'. 'Red onion' and 'onions, spring, raw' are specific types of onions, and 'onions, chopped and deepfried' is a processed product.",
+                "closest_match_explanation": "The ingredient is 'løg' (onion). The option 'løg' is a direct and exact match, representing the raw form of onion, which is the least processed option available.",
                 "ingredient_id": "Ra00266",
-                "closest_match_name": "onion, raw",
-                "ingredient": "1 onion",
+                "closest_match_name": "løg",
+                "ingredient": "1 løg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.3
+                "co2_per_kg": 0.3,
+                "energy_kj_100g": 183.0,
+                "fat_g_100g": 0.1,
+                "carbohydrate_g_100g": 5.4,
+                "protein_g_100g": 1.2
             }
         },
         {
-            "original_name": "1 bdt grønne asparges",
-            "en_name": "1 BDT Green Asparagus",
+            "name": "1 bdt grønne asparges",
             "weight_estimate": {
-                "ingredient": "1 BDT Green Asparagus",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 BDT Green Asparagus = 500 g, 1 * 500 g = 500 g = 0.5 kg.",
+                "ingredient": "1 bdt grønne asparges",
+                "weight_calculation": "1 bundt asparges = 500 g, 1 * 500 g = 500 g = 0.5 kg",
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Green Asparagus'. Among the options, 'asparagus, green, raw' is the most direct and least processed match. 'Asparagus slices' is a processed form. 'Peas, green, frozen' and 'beans, green, raw' are different ingredients.",
+                "closest_match_explanation": "The ingredient is 'grønne asparges' (green asparagus). The option 'asparges, grøn' is a direct and exact match, representing the raw form of green asparagus, which is the least processed option available.",
                 "ingredient_id": "Ra00163",
-                "closest_match_name": "asparagus, green, raw",
-                "ingredient": "1 BDT Green Asparagus",
+                "closest_match_name": "asparges, grøn",
+                "ingredient": "1 bdt grønne asparges",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1
+                "co2_per_kg": 1.1,
+                "energy_kj_100g": 109.0,
+                "fat_g_100g": 0.3,
+                "carbohydrate_g_100g": 3.1,
+                "protein_g_100g": 1.8
             }
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "name": "1 squash",
             "weight_estimate": {
-                "ingredient": "1 Squash",
+                "ingredient": "1 squash",
                 "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Squash'. Among the options, 'squash, raw' is the most direct and least processed match. The other options are different ingredients or processed forms.",
+                "closest_match_explanation": "The ingredient is 'squash'. The option 'squash' is a direct and exact match, representing the raw form of squash, which is the least processed option available.",
                 "ingredient_id": "Ra00003",
-                "closest_match_name": "squash, raw",
-                "ingredient": "1 Squash",
+                "closest_match_name": "squash",
+                "ingredient": "1 squash",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.8
+                "co2_per_kg": 0.8,
+                "energy_kj_100g": 81.0,
+                "fat_g_100g": 0.2,
+                "carbohydrate_g_100g": 2.4,
+                "protein_g_100g": 1.4
             }
         },
         {
-            "original_name": "1 stor håndfuld basilikum",
-            "en_name": "1 large handful of basil",
+            "name": "1 stor håndfuld frisk basilikum",
             "weight_estimate": {
-                "ingredient": "1 large handful of basil",
-                "weight_calculation": "1 handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "ingredient": "1 stor håndfuld frisk basilikum",
+                "weight_calculation": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'basil'. Among the options, 'basil, fresh' is the most direct and least processed match for 'fresh basil'. 'Basil, dried' is a processed form. 'Pesto' is a final product, and 'parsley, raw' is a different herb.",
+                "closest_match_explanation": "The ingredient is 'frisk basilikum' (fresh basil). The option 'basilikum, frisk' is a direct and exact match, representing the fresh form of basil, which is the least processed option available.",
                 "ingredient_id": "Ra00486",
-                "closest_match_name": "basil, fresh",
-                "ingredient": "1 large handful of basil",
+                "closest_match_name": "basilikum, frisk",
+                "ingredient": "1 stor håndfuld frisk basilikum",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.4
+                "co2_per_kg": 0.4,
+                "energy_kj_100g": 92.11,
+                "fat_g_100g": 0.6,
+                "carbohydrate_g_100g": 2.7,
+                "protein_g_100g": 3.2
             }
         },
         {
-            "original_name": "2 dl fløde",
-            "en_name": "2 dl cream",
+            "name": "2 dl fløde",
             "weight_estimate": {
-                "ingredient": "2 dl cream",
+                "ingredient": "2 dl fløde",
                 "weight_calculation": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'cream'. Among the options, 'cream, whipping, 38 % fat' and 'cream, cultured, 18 % fat' are both types of cream. 'Cream, whipping, 38 % fat' has a higher emission factor, so it is chosen as per rule 5. 'Ice cream, dairy (cream based)' and 'cream pastry, layer cake' are final products.",
+                "closest_match_explanation": "The ingredient is 'fløde' (cream). The option 'fløde 38 %, piskefløde' is the most specific and least processed match for cream, as it specifies the fat content and type (whipping cream), making it a more precise match than 'flødeis' (ice cream) or 'likør, kaffe med fløde' (coffee liqueur with cream), which are processed products.",
                 "ingredient_id": "Ra00345",
-                "closest_match_name": "cream, whipping, 38 % fat",
-                "ingredient": "2 dl cream",
+                "closest_match_name": "fløde 38 %, piskefløde",
+                "ingredient": "2 dl fløde",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.7
+                "co2_per_kg": 1.7,
+                "energy_kj_100g": 1484.0,
+                "fat_g_100g": 38.0,
+                "carbohydrate_g_100g": 3.0,
+                "protein_g_100g": 2.1
             }
         },
         {
-            "original_name": "1 dl vand",
-            "en_name": "1 dl water",
+            "name": "1 dl vand",
             "weight_estimate": {
-                "ingredient": "1 dl water",
+                "ingredient": "1 dl vand",
                 "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
-            "co2_per_kg_db": null
+            "co2_per_kg_db": {
+                "closest_match_explanation": "The ingredient is 'vand' (water). The option 'vand, postevand' (tap water) is the most direct and appropriate match for water, as it represents the most common and least processed form of water.",
+                "ingredient_id": "Ra00068",
+                "closest_match_name": "vand, postevand",
+                "ingredient": "1 dl vand",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.0,
+                "energy_kj_100g": 0.0,
+                "fat_g_100g": 0.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 0.0
+            }
         },
         {
-            "original_name": "1 grøntsags bouillonterning",
-            "en_name": "1 vegetable broth cube",
+            "name": "1 grøntsags bouillonterning",
             "weight_estimate": {
-                "ingredient": "1 vegetable broth cube",
-                "weight_calculation": "1 bouillon cube = 4 g, 1 * 4 g = 4 g = 0.004 kg",
+                "ingredient": "1 grøntsags bouillonterning",
+                "weight_calculation": "1 bouillonterning = 4 g, 1 * 4 g = 4 g = 0.004 kg",
                 "weight_in_kg": 0.004
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "6 spsk revet parmesan",
-            "en_name": "6 tbsp grated parmesan",
+            "name": "6 spsk revet parmesan",
             "weight_estimate": {
-                "ingredient": "6 tbsp grated parmesan",
-                "weight_calculation": "1 tbsp. = 15 g, 6 * 15 g = 90 g = 0.09 kg",
+                "ingredient": "6 spsk revet parmesan",
+                "weight_calculation": "1 spsk = 15 g, 6 * 15 g = 90 g = 0.09 kg",
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'grated parmesan'. Among the options, 'cheese, hard, parmesan, 32 % fidm.' is the most direct and specific match for parmesan cheese. 'Vegan cheese, grated or sliced' is a different type of cheese, and 'tortilla chips, cheese' is a final product.",
+                "closest_match_explanation": "The ingredient is 'revet parmesan' (grated parmesan). The option 'parmesan ost, 32+' is a direct and exact match for parmesan cheese. While 'fyldt frisk pasta' contains cheese, it is a final meal and not a suitable match. 'Vegansk ost' is not parmesan, and 'brie' is a different type of cheese.",
                 "ingredient_id": "Ra00079",
-                "closest_match_name": "cheese, hard, parmesan, 32 % fidm.",
-                "ingredient": "6 tbsp grated parmesan",
+                "closest_match_name": "parmesan ost, 32+",
+                "ingredient": "6 spsk revet parmesan",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.4
+                "co2_per_kg": 5.4,
+                "energy_kj_100g": 1488.0,
+                "fat_g_100g": 24.1,
+                "carbohydrate_g_100g": 0.1,
+                "protein_g_100g": 32.9
             }
         },
         {
-            "original_name": "1 håndfuld mozzarella",
-            "en_name": "1 handful of mozzarella",
+            "name": "1 håndfuld mozzarella",
             "weight_estimate": {
-                "ingredient": "1 handful of mozzarella",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 handful of mozzarella = 100 g, 1 * 100 g = 100 g = 0.1 kg.",
+                "ingredient": "1 håndfuld mozzarella",
+                "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.05 kg, 2 portioner * 0.05 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'mozzarella'. Among the options, 'cheese, semihard, mozzarella, 30 % fidm.' is the most direct and specific match for mozzarella cheese. 'Mozarella sticks' is a processed product, and 'goat cheese' is a different type of cheese.",
+                "closest_match_explanation": "The ingredient is 'mozzarella'. The option 'mozzarella ost, 30+' is a direct and exact match for mozzarella cheese. 'Mozzarella sticks' are a processed product, and 'parmesan ost' and 'pasta' are not mozzarella.",
                 "ingredient_id": "Ra00080",
-                "closest_match_name": "cheese, semihard, mozzarella, 30 % fidm.",
-                "ingredient": "1 handful of mozzarella",
+                "closest_match_name": "mozzarella ost, 30+",
+                "ingredient": "1 håndfuld mozzarella",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.4
+                "co2_per_kg": 5.4,
+                "energy_kj_100g": 1163.0,
+                "fat_g_100g": 17.7,
+                "carbohydrate_g_100g": 0.1,
+                "protein_g_100g": 28.3
             }
         },
         {
-            "original_name": "Lidt salt",
-            "en_name": "A little salt",
+            "name": "Lidt salt",
             "weight_estimate": {
-                "ingredient": "A little salt",
-                "weight_calculation": "Amount of A little salt not specified. LLM estimate is: A little salt per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+                "ingredient": "Lidt salt",
+                "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.005 kg, 2 portioner * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
-            "co2_per_kg_db": null
+            "co2_per_kg_db": {
+                "closest_match_explanation": "The ingredient is 'salt'. The option 'salt, bordsalt (jodberiget)' is a direct and exact match for common table salt, which is the least processed form of salt available.",
+                "ingredient_id": "Ra00151",
+                "closest_match_name": "salt, bordsalt (jodberiget)",
+                "ingredient": "Lidt salt",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.4,
+                "energy_kj_100g": 0.0,
+                "fat_g_100g": 0.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 0.0
+            }
         },
         {
-            "original_name": "Lidt peber",
-            "en_name": "A little pepper",
+            "name": "Lidt peber",
             "weight_estimate": {
-                "ingredient": "A little pepper",
-                "weight_calculation": "Amount of A little pepper not specified. LLM estimate is: A little pepper per serving = 0.005 kg, 2 * 0.005 kg = 0.01 kg.",
+                "ingredient": "Lidt peber",
+                "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.005 kg, 2 portioner * 0.005 kg = 0.01 kg",
                 "weight_in_kg": 0.01
             },
-            "co2_per_kg_db": null
+            "co2_per_kg_db": {
+                "closest_match_explanation": "The ingredient is 'peber' (pepper). The option 'peber, sort' (black pepper) is the most common and direct match for general 'pepper'. While 'peber, chili' and 'peberfrugt' are also types of pepper, 'sort peber' is the most appropriate match for an unspecified 'peber'.",
+                "ingredient_id": "Ra00302",
+                "closest_match_name": "peber, sort",
+                "ingredient": "Lidt peber",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 5.2,
+                "energy_kj_100g": 1274.0,
+                "fat_g_100g": 3.3,
+                "carbohydrate_g_100g": 44.5,
+                "protein_g_100g": 10.9
+            }
         },
         {
-            "original_name": "Olie",
-            "en_name": "Oil",
+            "name": "Olie",
             "weight_estimate": {
-                "ingredient": "Oil",
-                "weight_calculation": "Amount of Oil not specified. LLM estimate is: Oil per serving = 0.015 kg, 2 * 0.015 kg = 0.03 kg.",
+                "ingredient": "Olie",
+                "weight_calculation": "Mængden af ingrediens ikke angivet, LLM-estimat er: 1 portion = 0.015 kg, 2 portioner * 0.015 kg = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Oil'. Among the options, 'olive oil', 'oil for frying', 'sunflower oil', and 'oil, rape seed (no eruca acid)' are all types of oil. 'Olive oil' has the highest emission factor, so it is chosen as per rule 5.",
+                "closest_match_explanation": "The ingredient is 'Olie' (oil). Among the available options, 'olivenolie' (olive oil) has the highest emission factor and is a common type of cooking oil, making it a suitable conservative estimate when the specific type of oil is not mentioned.",
                 "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
-                "ingredient": "Oil",
+                "closest_match_name": "olivenolie",
+                "ingredient": "Olie",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.9
+                "co2_per_kg": 5.9,
+                "energy_kj_100g": 3700.0,
+                "fat_g_100g": 100.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 0.0
             }
         }
     ],
     "persons": 2,
-    "instructions": " Put a saucepan over with water to the pasta. Cook it according to instructions on the package and pour the water off so that it is not cooked further.\nCrack the ends of the green asparagus (the ends cannot be eaten). Cut them into approx. 1 cm long pieces.\nSweat onion and garlic in oil on a hot pan. Add the squash and asparagus and sweat it for a few more minutes, sprinkle with a KNSP salt and a little pepper.\nThen get the water on the pan and crumble the broth cube on to dissolve faster. Pour the cream on with grated parmesan and turn it all around well.\nTurn the fresh pasta into the mixture and finally mozzarella and fresh basil. Taste if the dish may be able to bruuge a little extra grinded pepper. Welcome!",
-    "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
+    "instructions": "Sæt en gryde over med vand til pastaen. Kog det efter anvisning på pakken og hæld vandet fra så det ikke tilberedes yderligere.\nKnæk enderne af de grønne asparges (enderne kan ikke spises). Skær dem i ca. 1 cm lange stykker.\nSvits løg og hvidløg i olie på en varm pande. Tilsæt squash og asparges og svits det yderligere et par minutter, drys med en knsp salt og lidt peber.\nKom så vandet på panden og smuldrer bouillonterningen på så den hurtigere opløses. Hæld fløden på sammen med revet parmesan og vend det hele godt rundt.\nVend den friske pasta i blandingen og tilsidst mozzarella og frisk basilikum. Smag til om retten evt kan bruuge lidt ekstra kværnet peber. Velbekomme!",
+    "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/",
+    "language": "da"
 }

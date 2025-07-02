@@ -120,6 +120,8 @@ God fornøjelse med strikketøjet!
 SYSTEM_PROMPT = """
 You are an expert in extracting food recipe data from unstructured text in Danish or English. Your task is to identify and extract:
 
+Return the extracted information in the same language as the input. If the recipe text is in Danish, respond in Danish. If it is in English, respond in English.
+
 1. Title of the recipe
 2. Ingredients (with amounts in numeric format and standardized units)
 3. Number of persons (servings)

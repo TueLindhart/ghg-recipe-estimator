@@ -2,420 +2,429 @@
     "title": "Vegetar enchiladas",
     "ingredients": [
         {
-            "original_name": "1 tsk stødt spidskommen",
-            "en_name": "1 tsp steady cumin",
+            "name": "1 tsk stødt spidskommen",
             "weight_estimate": {
-                "ingredient": "1 tsp steady cumin",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk stødt spidskommen",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt kanel",
-            "en_name": "1 teaspoon of cinnamon",
+            "name": "1 tsk stødt kanel",
             "weight_estimate": {
-                "ingredient": "1 teaspoon of cinnamon",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk stødt kanel",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk røget paprika",
-            "en_name": "1 teaspoon smoked paprika",
+            "name": "1 tsk røget paprika",
             "weight_estimate": {
-                "ingredient": "1 teaspoon smoked paprika",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk røget paprika",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt koriander",
-            "en_name": "1 tsp steady coriander",
+            "name": "1 tsk stødt koriander",
             "weight_estimate": {
-                "ingredient": "1 tsp steady coriander",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk stødt koriander",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": {
-                "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "ingredient": "2 fed hvidløg",
+                "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
+                "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00136",
-                "closest_match_name": "garlic, raw",
-                "ingredient": "2 cloves of garlic",
+                "closest_match_name": "hvidløg",
+                "ingredient": "2 fed hvidløg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 669.0,
+                "fat_g_100g": 0.5,
+                "carbohydrate_g_100g": 30.9,
+                "protein_g_100g": 6.4
             }
         },
         {
-            "original_name": "1 spsk olivenolie",
-            "en_name": "1 tablespoon olive oil",
+            "name": "1 spsk olivenolie",
             "weight_estimate": {
-                "ingredient": "1 tablespoon olive oil",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "ingredient": "1 spsk olivenolie",
+                "weight_calculation": "1 spiseske = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is best matched with 'olive oil' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
+                "closest_match_explanation": "The ingredient '1 spsk olivenolie' is best matched with 'olivenolie' as it is an exact match for the ingredient and represents the primary form of olive oil. This choice directly reflects the ingredient without unnecessary processing variations.",
                 "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
-                "ingredient": "1 tablespoon olive oil",
+                "closest_match_name": "olivenolie",
+                "ingredient": "1 spsk olivenolie",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.9
+                "co2_per_kg": 5.9,
+                "energy_kj_100g": 3700.0,
+                "fat_g_100g": 100.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 0.0
             }
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "name": "1 løg",
             "weight_estimate": {
-                "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+                "ingredient": "1 løg",
+                "weight_calculation": "1 løg = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00266",
-                "closest_match_name": "onion, raw",
-                "ingredient": "1 onion",
+                "closest_match_name": "løg",
+                "ingredient": "1 løg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.3
+                "co2_per_kg": 0.3,
+                "energy_kj_100g": 183.0,
+                "fat_g_100g": 0.1,
+                "carbohydrate_g_100g": 5.4,
+                "protein_g_100g": 1.2
             }
         },
         {
-            "original_name": "1 tsk hvedemel",
-            "en_name": "1 tsp wheat flour",
+            "name": "1 tsk hvedemel",
             "weight_estimate": {
-                "ingredient": "1 tsp wheat flour",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk hvedemel",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dl grøntsagsbouillon",
-            "en_name": "1 dl vegetable broth",
+            "name": "1 dl grøntsagsbouillon",
             "weight_estimate": {
-                "ingredient": "1 dl vegetable broth",
+                "ingredient": "1 dl grøntsagsbouillon",
                 "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 dl vegetable broth' is best matched with 'bouillon, beef, concentrated, cube' because it is the most processed option and has the highest emission factor among the available broth options, aligning with Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
-                "ingredient_id": "Ra00220",
-                "closest_match_name": "bouillon, beef, concentrated, cube",
-                "ingredient": "1 dl vegetable broth",
+                "closest_match_explanation": "The ingredient '1 dl grøntsagsbouillon' is best matched with 'bouillon, hønsekød, spiseklar' because it is the closest available option for a ready-to-use bouillon. While not explicitly 'vegetable bouillon,' it is the most appropriate general bouillon option that is ready for consumption, aligning with the 'dl' (deciliter) measurement which implies a liquid, ready-to-use form.",
+                "ingredient_id": "Ra00213",
+                "closest_match_name": "bouillon, hønsekød, spiseklar",
+                "ingredient": "1 dl grøntsagsbouillon",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 9.9
+                "co2_per_kg": 0.4,
+                "energy_kj_100g": 18.0,
+                "fat_g_100g": 0.2,
+                "carbohydrate_g_100g": 0.3,
+                "protein_g_100g": 0.3
             }
         },
         {
-            "original_name": "1 dåse hakkede tomater",
-            "en_name": "1 can of chopped tomatoes",
+            "name": "1 dåse hakkede tomater",
             "weight_estimate": {
-                "ingredient": "1 can of chopped tomatoes",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "ingredient": "1 dåse hakkede tomater",
+                "weight_calculation": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is best matched with 'tomato, peeled, canned' as it is an exact match for a canned and processed tomato product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because it is the closest option for canned tomatoes. 'Hakkede tomater' (chopped tomatoes) and 'flået tomater' (peeled tomatoes) are both processed forms of canned tomatoes, and this option accurately reflects the processing level.",
                 "ingredient_id": "Ra00361",
-                "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 can of chopped tomatoes",
+                "closest_match_name": "tomat, flået, konserves",
+                "ingredient": "1 dåse hakkede tomater",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1
+                "co2_per_kg": 1.1,
+                "energy_kj_100g": 90.0,
+                "fat_g_100g": 0.3,
+                "carbohydrate_g_100g": 3.0,
+                "protein_g_100g": 1.2
             }
         },
         {
-            "original_name": "1 spsk olivenolie",
-            "en_name": "1 tablespoon olive oil",
+            "name": "1 spsk olivenolie",
             "weight_estimate": {
-                "ingredient": "1 tablespoon olive oil",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "ingredient": "1 spsk olivenolie",
+                "weight_calculation": "1 spiseske = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon olive oil' is best matched with 'olive oil' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
+                "closest_match_explanation": "The ingredient '1 spsk olivenolie' is best matched with 'olivenolie' as it is an exact match for the ingredient and represents the primary form of olive oil. This choice directly reflects the ingredient without unnecessary processing variations.",
                 "ingredient_id": "Ra00349",
-                "closest_match_name": "olive oil",
-                "ingredient": "1 tablespoon olive oil",
+                "closest_match_name": "olivenolie",
+                "ingredient": "1 spsk olivenolie",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.9
+                "co2_per_kg": 5.9,
+                "energy_kj_100g": 3700.0,
+                "fat_g_100g": 100.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 0.0
             }
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": {
                 "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
-                "weight_in_kg": 0.02
+                "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+                "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
+            "name": "sort peber",
             "weight_estimate": {
-                "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
-                "weight_in_kg": 0.02
+                "ingredient": "sort peber",
+                "weight_calculation": "Mængden af sort peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+                "weight_in_kg": 0.005
             },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is best matched with 'pepper, black' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
-                "ingredient_id": "Ra00302",
-                "closest_match_name": "pepper, black",
-                "ingredient": "Black pepper",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.2
-            }
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "1 løg",
-            "en_name": "1 onion",
+            "name": "1 løg",
             "weight_estimate": {
-                "ingredient": "1 onion",
-                "weight_calculation": "1 onion = 170 g, 1 * 170 g = 170 g = 0.170 kg",
+                "ingredient": "1 løg",
+                "weight_calculation": "1 løg = 170 g, 1 * 170 g = 170 g = 0.170 kg",
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 onion' is best matched with 'onion, raw' because it is the least processed form of onion available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00266",
-                "closest_match_name": "onion, raw",
-                "ingredient": "1 onion",
+                "closest_match_name": "løg",
+                "ingredient": "1 løg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.3
+                "co2_per_kg": 0.3,
+                "energy_kj_100g": 183.0,
+                "fat_g_100g": 0.1,
+                "carbohydrate_g_100g": 5.4,
+                "protein_g_100g": 1.2
             }
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": {
-                "ingredient": "2 cloves of garlic",
-                "weight_calculation": "1 clove garlic = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "ingredient": "2 fed hvidløg",
+                "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 cloves of garlic' is best matched with 'garlic, raw' because it is the least processed form of garlic available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed) and Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
+                "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00136",
-                "closest_match_name": "garlic, raw",
-                "ingredient": "2 cloves of garlic",
+                "closest_match_name": "hvidløg",
+                "ingredient": "2 fed hvidløg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 669.0,
+                "fat_g_100g": 0.5,
+                "carbohydrate_g_100g": 30.9,
+                "protein_g_100g": 6.4
             }
         },
         {
-            "original_name": "1 squash",
-            "en_name": "1 Squash",
+            "name": "1 squash",
             "weight_estimate": {
-                "ingredient": "1 Squash",
+                "ingredient": "1 squash",
                 "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 Squash' is best matched with 'squash, raw' because it is the least processed form of squash available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 squash' is best matched with 'squash' as it is an exact match for the ingredient and represents the raw form. This aligns with selecting the most raw option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00003",
-                "closest_match_name": "squash, raw",
-                "ingredient": "1 Squash",
+                "closest_match_name": "squash",
+                "ingredient": "1 squash",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.8
+                "co2_per_kg": 0.8,
+                "energy_kj_100g": 81.0,
+                "fat_g_100g": 0.2,
+                "carbohydrate_g_100g": 2.4,
+                "protein_g_100g": 1.4
             }
         },
         {
-            "original_name": "1 dåse hakkede tomater",
-            "en_name": "1 can of chopped tomatoes",
+            "name": "1 dåse hakkede tomater",
             "weight_estimate": {
-                "ingredient": "1 can of chopped tomatoes",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "ingredient": "1 dåse hakkede tomater",
+                "weight_calculation": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of chopped tomatoes' is best matched with 'tomato, peeled, canned' as it is an exact match for a canned and processed tomato product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because it is the closest option for canned tomatoes. 'Hakkede tomater' (chopped tomatoes) and 'flået tomater' (peeled tomatoes) are both processed forms of canned tomatoes, and this option accurately reflects the processing level.",
                 "ingredient_id": "Ra00361",
-                "closest_match_name": "tomato, peeled, canned",
-                "ingredient": "1 can of chopped tomatoes",
+                "closest_match_name": "tomat, flået, konserves",
+                "ingredient": "1 dåse hakkede tomater",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1
+                "co2_per_kg": 1.1,
+                "energy_kj_100g": 90.0,
+                "fat_g_100g": 0.3,
+                "carbohydrate_g_100g": 3.0,
+                "protein_g_100g": 1.2
             }
         },
         {
-            "original_name": "1 tsk stødt spidskommen",
-            "en_name": "1 tsp steady cumin",
+            "name": "1 tsk stødt spidskommen",
             "weight_estimate": {
-                "ingredient": "1 tsp steady cumin",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk stødt spidskommen",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 tsk stødt koriander",
-            "en_name": "1 tsp steady coriander",
+            "name": "1 tsk stødt koriander",
             "weight_estimate": {
-                "ingredient": "1 tsp steady coriander",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk stødt koriander",
+                "weight_calculation": "1 teskefuld = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dåse sorte bønner",
-            "en_name": "1 can of black beans",
+            "name": "1 dåse sorte bønner",
             "weight_estimate": {
-                "ingredient": "1 can of black beans",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "ingredient": "1 dåse sorte bønner",
+                "weight_calculation": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of black beans' is best matched with 'black beans' as it is an exact match for a canned bean product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 dåse sorte bønner' is best matched with 'sorte bønner, konserves' because it is an exact match for canned black beans. This option accurately reflects the processing level (canned) of the ingredient.",
                 "ingredient_id": "Ra00439",
-                "closest_match_name": "black beans",
-                "ingredient": "1 can of black beans",
+                "closest_match_name": "sorte bønner, konserves",
+                "ingredient": "1 dåse sorte bønner",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 303.0,
+                "fat_g_100g": 0.6,
+                "carbohydrate_g_100g": 8.0,
+                "protein_g_100g": 5.3
             }
         },
         {
-            "original_name": "1 dåse kidneybønner",
-            "en_name": "1 can of kidney beans",
+            "name": "1 dåse kidneybønner",
             "weight_estimate": {
-                "ingredient": "1 can of kidney beans",
-                "weight_calculation": "1 can = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+                "ingredient": "1 dåse kidneybønner",
+                "weight_calculation": "1 dåse = 400 g, 1 * 400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 can of kidney beans' is best matched with 'kidney beans' as it is an exact match for a canned bean product, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' because it is an exact match for canned kidney beans. This option accurately reflects the processing level (canned) of the ingredient.",
                 "ingredient_id": "Ra00422",
-                "closest_match_name": "kidney beans",
-                "ingredient": "1 can of kidney beans",
+                "closest_match_name": "kidney bønner, konserves",
+                "ingredient": "1 dåse kidneybønner",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 299.0,
+                "fat_g_100g": 1.0,
+                "carbohydrate_g_100g": 9.0,
+                "protein_g_100g": 5.0
             }
         },
         {
-            "original_name": "300 g majs",
-            "en_name": "300 g of corn",
+            "name": "300 g majs",
             "weight_estimate": {
-                "ingredient": "300 g of corn",
+                "ingredient": "300 g majs",
                 "weight_calculation": "300 g = 300 g = 0.3 kg",
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '300 g of corn' is best matched with 'corn cob' because it is the least processed form of corn available in the database, aligning with Rule 4 (Consider the Amount of Processing Performed).",
-                "ingredient_id": "Ra00417",
-                "closest_match_name": "corn cob",
-                "ingredient": "300 g of corn",
+                "closest_match_explanation": "The ingredient '300 g majs' is best matched with 'majs, kerner, konserves' because it is the most common form of corn available in the database that aligns with a quantity measurement, implying a ready-to-use form. While 'majs, hele kolber' is also corn, 'kerner, konserves' is more likely for a measured quantity in a recipe.",
+                "ingredient_id": "Ra00299",
+                "closest_match_name": "majs, kerner, konserves",
+                "ingredient": "300 g majs",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.0
+                "co2_per_kg": 0.7,
+                "energy_kj_100g": 428.0,
+                "fat_g_100g": 1.1,
+                "carbohydrate_g_100g": 16.1,
+                "protein_g_100g": 3.1
             }
         },
         {
-            "original_name": "8 tortillas pandekager",
-            "en_name": "8 Tortilla's pancakes",
+            "name": "8 tortillas pandekager",
             "weight_estimate": {
-                "ingredient": "8 Tortilla's pancakes",
+                "ingredient": "8 tortillas pandekager",
                 "weight_calculation": "1 tortilla = 30 g, 8 * 30 g = 240 g = 0.24 kg",
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '8 Tortilla's pancakes' is best matched with 'tortilla bread, wheat' as it is the closest and least processed option for tortillas, aligning with Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '8 tortillas pandekager' is best matched with 'tortillabrød, hvede' because it is the most direct and common type of tortilla bread available in the database. This option accurately reflects the ingredient as a type of bread product.",
                 "ingredient_id": "Ra00401",
-                "closest_match_name": "tortilla bread, wheat",
-                "ingredient": "8 Tortilla's pancakes",
+                "closest_match_name": "tortillabrød, hvede",
+                "ingredient": "8 tortillas pandekager",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 1300.0,
+                "fat_g_100g": 7.5,
+                "carbohydrate_g_100g": 51.0,
+                "protein_g_100g": 8.0
             }
         },
         {
-            "original_name": "150 g cheddar ost",
-            "en_name": "150 g cheddar cheese",
+            "name": "150 g cheddar ost",
             "weight_estimate": {
-                "ingredient": "150 g cheddar cheese",
+                "ingredient": "150 g cheddar ost",
                 "weight_calculation": "150 g = 150 g = 0.15 kg",
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '150 g cheddar cheese' is best matched with 'blue cheese' because it is the closest available cheese option and has a higher emission factor, aligning with Rule 5 (If Multiple Viable Options Have Similar Processing Levels, choose the one with the highest emission factor).",
-                "ingredient_id": "Ra00494",
-                "closest_match_name": "blue cheese",
-                "ingredient": "150 g cheddar cheese",
+                "closest_match_explanation": "The ingredient '150 g cheddar ost' is best matched with 'parmesan ost, 32+' because both are hard cheeses with similar production processes and therefore similar CO2 emissions. Since cheddar is not explicitly listed, parmesan is the most realistic comparison among the available cheese options.",
+                "ingredient_id": "Ra00079",
+                "closest_match_name": "parmesan ost, 32+",
+                "ingredient": "150 g cheddar ost",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.6
+                "co2_per_kg": 5.4,
+                "energy_kj_100g": 1488.0,
+                "fat_g_100g": 24.1,
+                "carbohydrate_g_100g": 0.1,
+                "protein_g_100g": 32.9
             }
         },
         {
-            "original_name": "1 håndfuld frisk koriander",
-            "en_name": "1 handful of fresh coriander",
+            "name": "1 håndfuld frisk koriander",
             "weight_estimate": {
-                "ingredient": "1 handful of fresh coriander",
-                "weight_calculation": "Handful of herbs = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "ingredient": "1 håndfuld frisk koriander",
+                "weight_calculation": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 handful of fresh coriander' is best matched with 'parsley, raw' as it is the closest raw herb option available, aligning with Rule 2 (Use a Broader Category if Exact Ingredient Match is Not Available) and Rule 4 (Consider the Amount of Processing Performed).",
+                "closest_match_explanation": "The ingredient '1 håndfuld frisk koriander' is best matched with 'persille' because both are fresh herbs with similar growth and processing characteristics, leading to comparable CO2 emissions. Since fresh coriander is not explicitly listed, parsley is the most appropriate broader category for a fresh herb.",
                 "ingredient_id": "Ra00134",
-                "closest_match_name": "parsley, raw",
-                "ingredient": "1 handful of fresh coriander",
+                "closest_match_name": "persille",
+                "ingredient": "1 håndfuld frisk koriander",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.5
+                "co2_per_kg": 0.5,
+                "energy_kj_100g": 201.0,
+                "fat_g_100g": 1.1,
+                "carbohydrate_g_100g": 1.2,
+                "protein_g_100g": 3.7
             }
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "1 spsk smør",
             "weight_estimate": {
-                "ingredient": "salt",
-                "weight_calculation": "Amount of salt not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
-                "weight_in_kg": 0.02
-            },
-            "co2_per_kg_db": null
-        },
-        {
-            "original_name": "sort peber",
-            "en_name": "Black pepper",
-            "weight_estimate": {
-                "ingredient": "Black pepper",
-                "weight_calculation": "Amount of Black pepper not specified. LLM estimate is: 1 serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg",
-                "weight_in_kg": 0.02
-            },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Black pepper' is best matched with 'pepper, black' as it is an exact match, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
-                "ingredient_id": "Ra00302",
-                "closest_match_name": "pepper, black",
-                "ingredient": "Black pepper",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.2
-            }
-        },
-        {
-            "original_name": "1 spsk smør",
-            "en_name": "1 tablespoon butter",
-            "weight_estimate": {
-                "ingredient": "1 tablespoon butter",
-                "weight_calculation": "1 tbsp. = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "ingredient": "1 spsk smør",
+                "weight_calculation": "1 spiseske = 15 g, 1 * 15 g = 15 g = 0.015 kg",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 tablespoon butter' is best matched with 'butter, salt added' as it is an exact match for butter, aligning with Rule 4 (Consider the Amount of Processing Performed) by choosing the most direct and least processed form.",
+                "closest_match_explanation": "The ingredient '1 spsk smør' is best matched with 'smør, saltet' because it is the most direct and common form of butter available in the database. This option accurately reflects the ingredient without unnecessary variations.",
                 "ingredient_id": "Ra00037",
-                "closest_match_name": "butter, salt added",
-                "ingredient": "1 tablespoon butter",
+                "closest_match_name": "smør, saltet",
+                "ingredient": "1 spsk smør",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 3.3
+                "co2_per_kg": 3.3,
+                "energy_kj_100g": 3047.0,
+                "fat_g_100g": 81.5,
+                "carbohydrate_g_100g": 0.6,
+                "protein_g_100g": 0.7
             }
         }
     ],
     "persons": 4,
-    "instructions": " Enchilada's sauce\nShake all the spices in a dry saucepan until they start to smell nice.\nAdd oil, garlic and onion and saute until the onions are soft.\nStir flour into the filling and then add vegetable broth and chopped tomatoes.\nStir it well together and simmer for 15 minutes without a lid. Taste with salt and freshly ground pepper.\nFill\nHeat oil in a saucepan and saute the onion and garlic until the onions are soft. Add squash, chopped tomatoes, cumin and coriander and simmer for 15 minutes without a lid until it boils slightly. Add the black beans and kidney beans and warm well through.\nShake the corn kernels in a little butter on a pan until they get crispy and get a little color.\nGather Enchiladas\nGrease each tortilla cake with Enchilada's sauce and then add bean filling, corn and cheddar cheese on top, roll together and place them in a greased ovenproof dish.\nDistribute the last enchilada sauce over and sprinkle with more cheese.\nDistribute bean filling and corn kernels in the sides of the dish if there is anything left over.\nBake them in a preheated oven at 175 degrees hot air for about 18 minutes.\nSprinkle with coriander before serving.",
-    "url": "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    "instructions": "Enchiladas sauce\nRist alle krydderierne i en tør gryde, til de begynder at dufte skønt.\nTilsæt olie, hvidløg og løg og sauter, til løgene er bløde.\nRør mel ud i fyldet og kom derefter grøntsagsbouillon og hakkede tomater i.\nRør det hele godt sammen og lad saucen simre i 15 minutter uden låg. Smag til med salt og friskkværnet peber.\nFyld\nVarm olie op i en gryde og sauter løg og hvidløg, til løgene er bløde. Tilsæt squash, hakkede tomater, spidskommen og koriander og lad det simre i 15 minutter uden låg, til det koger lidt ind. Tilsæt de sorte bønner og kidneybønner og varm godt igennem.\nRist majskernerne i lidt smør på en pande, til de bliver sprøde og får lidt farve.\nSaml Enchiladas\nSmør hver tortillapandekage med enchiladas sauce og kom derefter bønnefyld, majs og cheddarost ovenpå, rul sammen og placer dem i et smurt ovnfast fad.\nFordel den sidste enchiladas sauce over og drys med mere ost.\nFordel bønnefyld og majskerner i siderne af fadet, hvis der er noget til overs.\nBag dem i en forvarmet ovn ved 175 grader varmluft i cirka 18 minutter.\nDrys med koriander inden servering.",
+    "url": "https://www.valdemarsro.dk/vegetar-enchiladas/",
+    "language": "da"
 }

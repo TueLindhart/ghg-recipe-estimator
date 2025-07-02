@@ -6,9 +6,9 @@
   import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
 
+  import type { IngredientOutput } from "$lib";
   import { Button, Modal, TabItem, Tabs } from "flowbite-svelte";
   import type { PageData } from "./$types";
-  import type { IngredientOutput } from "$lib";
 
   export let data: PageData;
 
@@ -37,7 +37,11 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 </script>
 
 <svelte:head>
-  <title>{data.result.title || 'MyFoodPrint'}</title>
+  <title
+    >{data.result.title
+      ? `${data.result.title} - MyFoodprint`
+      : "MyFoodprint"}</title
+  >
 </svelte:head>
 
 <div class="container mx-auto px-4">

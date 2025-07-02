@@ -2,285 +2,324 @@
     "title": "Nytårstorsk - bagt torsk med sennepssauce",
     "ingredients": [
         {
-            "original_name": "25 g smør",
-            "en_name": "25 g butter",
+            "name": "25 g smør",
             "weight_estimate": {
-                "ingredient": "25 g butter",
+                "ingredient": "25 g smør",
                 "weight_calculation": "25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'butter' is a direct match to 'butter, salt added' in the database. Rule 4 is applied as 'butter, salt added' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'smør' (butter) is best matched with 'smør, saltet' (salted butter) because it is the most direct and least processed form of butter available in the database. While 'jordnøddesmør' (peanut butter) and 'smørbart blandingsprodukt, 75% fedt' (75% fat spreadable blend product) are also spreads, they are not butter and have different compositions and production processes, making 'smør, saltet' the most realistic and appropriate match for CO2 emissions.",
                 "ingredient_id": "Ra00037",
-                "closest_match_name": "butter, salt added",
-                "ingredient": "25 g butter",
+                "closest_match_name": "smør, saltet",
+                "ingredient": "25 g smør",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 3.3
+                "co2_per_kg": 3.3,
+                "energy_kj_100g": 3047.0,
+                "fat_g_100g": 81.5,
+                "carbohydrate_g_100g": 0.6,
+                "protein_g_100g": 0.7
             }
         },
         {
-            "original_name": "4 rødbeder (ca. 400 g)",
-            "en_name": "4 beets (about 400 g)",
+            "name": "4 rødbeder (ca. 400 g)",
             "weight_estimate": {
-                "ingredient": "4 beets (about 400 g)",
+                "ingredient": "4 rødbeder (ca. 400 g)",
                 "weight_calculation": "400 g = 400 g = 0.4 kg",
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'beets' is a direct match to 'beet, red, raw' in the database. Rule 4 is applied as 'beet, red, raw' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'rødbeder' (beetroots) is best matched with 'rødbede' (beetroot) because it is the most direct and least processed form of beetroot available. 'Rødbede, konserves' (canned beetroot) is a processed version, and 'rødkål' (red cabbage) and 'rødløg' (red onion) are different vegetables entirely, making 'rødbede' the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00259",
-                "closest_match_name": "beet, red, raw",
-                "ingredient": "4 beets (about 400 g)",
+                "closest_match_name": "rødbede",
+                "ingredient": "4 rødbeder (ca. 400 g)",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.3
+                "co2_per_kg": 0.3,
+                "energy_kj_100g": 220.0,
+                "fat_g_100g": 0.3,
+                "carbohydrate_g_100g": 9.9,
+                "protein_g_100g": 1.7
             }
         },
         {
-            "original_name": "1 dl mørk balsamicoeddike",
-            "en_name": "1 dl dark balsamic vinegar",
+            "name": "1 dl mørk balsamicoeddike",
             "weight_estimate": {
-                "ingredient": "1 dl dark balsamic vinegar",
-                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
+                "ingredient": "1 dl mørk balsamicoeddike",
+                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'dark balsamic vinegar' is a direct match to 'vinegar' in the database. Rule 4 is applied as 'vinegar' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'mørk balsamicoeddike' (dark balsamic vinegar) is best matched with 'eddike' (vinegar). While 'rødvin' (red wine) is a base for some vinegars, 'eddike' is a direct and broader category that encompasses balsamic vinegar. 'Chokolade, mørk' (dark chocolate) and 'mørksej' (pollock) are entirely different food items and are not suitable matches. Therefore, 'eddike' is the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00150",
-                "closest_match_name": "vinegar",
-                "ingredient": "1 dl dark balsamic vinegar",
+                "closest_match_name": "eddike",
+                "ingredient": "1 dl mørk balsamicoeddike",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.6
+                "co2_per_kg": 1.6,
+                "energy_kj_100g": 84.0,
+                "fat_g_100g": 0.0,
+                "carbohydrate_g_100g": 5.4,
+                "protein_g_100g": 0.4
             }
         },
         {
-            "original_name": "2 spsk sukker",
-            "en_name": "2 tablespoons sugar",
+            "name": "2 spsk sukker",
             "weight_estimate": {
-                "ingredient": "2 tablespoons sugar",
-                "weight_calculation": "1 tbsp. = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+                "ingredient": "2 spsk sukker",
+                "weight_calculation": "1 spsk = 15 g, 2 * 15 g = 30 g = 0.03 kg",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'sugar' is a direct match to 'sugar, sucrose, white' in the database. Rule 4 is applied as 'sugar, sucrose, white' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'sukker' (sugar) is best matched with 'sukker, stødt melis (saccharose)' (granulated sugar (sucrose)). This is the most common and least processed form of sugar available in the database. 'Sukker, brun farin' (brown sugar) is a specific type of sugar, while 'sukkerært (mangetout)' (sugar snap pea) and 'honning' (honey) are entirely different food items, making 'sukker, stødt melis (saccharose)' the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00318",
-                "closest_match_name": "sugar, sucrose, white",
-                "ingredient": "2 tablespoons sugar",
+                "closest_match_name": "sukker, stødt melis (saccharose)",
+                "ingredient": "2 spsk sukker",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.7
+                "co2_per_kg": 2.7,
+                "energy_kj_100g": 1698.0,
+                "fat_g_100g": 0.0,
+                "carbohydrate_g_100g": 99.9,
+                "protein_g_100g": 0.0
             }
         },
         {
-            "original_name": "1 tsk groft salt",
-            "en_name": "1 teaspoon coarse salt",
+            "name": "1 tsk groft salt",
             "weight_estimate": {
-                "ingredient": "1 teaspoon coarse salt",
-                "weight_calculation": "1 tsp. = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "ingredient": "1 tsk groft salt",
+                "weight_calculation": "1 tsk = 5 g, 1 * 5 g = 5 g = 0.005 kg",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "600 g torskeloin",
-            "en_name": "600 g of codeloin",
+            "name": "600 g torskeloin",
             "weight_estimate": {
-                "ingredient": "600 g of codeloin",
+                "ingredient": "600 g torskeloin",
                 "weight_calculation": "600 g = 600 g = 0.6 kg",
                 "weight_in_kg": 0.6
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'codeloin' is a direct match to 'cod, fillet, raw' in the database. Rule 4 is applied as 'cod, fillet, raw' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'torskeloin' (cod loin) is best matched with 'torsk, filet' (cod fillet). Both refer to cuts of cod fish. 'Torskelever' (cod liver) and 'torskelever, røget' (smoked cod liver) are specific parts of the cod and a processed version, respectively. 'Hornfisk' (garfish) is a different type of fish. Therefore, 'torsk, filet' is the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00194",
-                "closest_match_name": "cod, fillet, raw",
-                "ingredient": "600 g of codeloin",
+                "closest_match_name": "torsk, filet",
+                "ingredient": "600 g torskeloin",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.8
+                "co2_per_kg": 2.8,
+                "energy_kj_100g": 320.0,
+                "fat_g_100g": 0.6,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 17.6
             }
         },
         {
-            "original_name": "25 g smør",
-            "en_name": "25 g butter",
+            "name": "25 g smør",
             "weight_estimate": {
-                "ingredient": "25 g butter",
+                "ingredient": "25 g smør",
                 "weight_calculation": "25 g = 25 g = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'butter' is a direct match to 'butter, salt added' in the database. Rule 4 is applied as 'butter, salt added' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'smør' (butter) is best matched with 'smør, saltet' (salted butter) because it is the most direct and least processed form of butter available in the database. While 'jordnøddesmør' (peanut butter) and 'smørbart blandingsprodukt, 75% fedt' (75% fat spreadable blend product) are also spreads, they are not butter and have different compositions and production processes, making 'smør, saltet' the most realistic and appropriate match for CO2 emissions.",
                 "ingredient_id": "Ra00037",
-                "closest_match_name": "butter, salt added",
-                "ingredient": "25 g butter",
+                "closest_match_name": "smør, saltet",
+                "ingredient": "25 g smør",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 3.3
+                "co2_per_kg": 3.3,
+                "energy_kj_100g": 3047.0,
+                "fat_g_100g": 81.5,
+                "carbohydrate_g_100g": 0.6,
+                "protein_g_100g": 0.7
             }
         },
         {
-            "original_name": "0.5 tsk groft salt",
-            "en_name": "0.5 teaspoon coarse salt",
+            "name": "0.5 tsk groft salt",
             "weight_estimate": {
-                "ingredient": "0.5 teaspoon coarse salt",
-                "weight_calculation": "1 tsp. = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
+                "ingredient": "0.5 tsk groft salt",
+                "weight_calculation": "1 tsk = 5 g, 0.5 * 5 g = 2.5 g = 0.0025 kg",
                 "weight_in_kg": 0.0025
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1.5 tsk hvedemel",
-            "en_name": "1.5 tsp wheat flour",
+            "name": "1.5 tsk hvedemel",
             "weight_estimate": {
-                "ingredient": "1.5 tsp wheat flour",
-                "weight_calculation": "1 tsp. = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
+                "ingredient": "1.5 tsk hvedemel",
+                "weight_calculation": "1 tsk = 5 g, 1.5 * 5 g = 7.5 g = 0.0075 kg",
                 "weight_in_kg": 0.0075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'wheat flour' is a direct match to 'wheat, flour, wholemeal' in the database. Rule 4 is applied as 'wheat, flour, wholemeal' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'hvedemel' (wheat flour) is best matched with 'hvedemel, grahamsmel, fuldkorn' (wheat flour, graham flour, whole grain). This is the most direct and common form of wheat flour available in the database. 'Majsmel' (corn flour) is a different type of flour, and 'hvedekerner, hele/knækkede' (whole/cracked wheat kernels) are not flour. 'Mandeldrik, ikke beriget' (unfortified almond drink) is entirely unrelated. Therefore, 'hvedemel, grahamsmel, fuldkorn' is the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00103",
-                "closest_match_name": "wheat, flour, wholemeal",
-                "ingredient": "1.5 tsp wheat flour",
+                "closest_match_name": "hvedemel, grahamsmel, fuldkorn",
+                "ingredient": "1.5 tsk hvedemel",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.2
+                "co2_per_kg": 1.2,
+                "energy_kj_100g": 1398.0,
+                "fat_g_100g": 2.4,
+                "carbohydrate_g_100g": 46.8,
+                "protein_g_100g": 11.4
             }
         },
         {
-            "original_name": "2.5 dl vand",
-            "en_name": "2.5 dl water",
+            "name": "2.5 dl vand",
             "weight_estimate": {
-                "ingredient": "2.5 dl water",
-                "weight_calculation": "1 dl = 0.1 kg, 2.5 * 0.1 kg = 0.25 kg",
+                "ingredient": "2.5 dl vand",
+                "weight_calculation": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
                 "weight_in_kg": 0.25
             },
-            "co2_per_kg_db": null
+            "co2_per_kg_db": {
+                "closest_match_explanation": "The ingredient 'vand' (water) is best matched with 'vand, postevand' (water, tap water). This is the most direct and common form of water. 'Vandmelon' (watermelon) is a fruit, and 'tun i vand, konserves' (canned tuna in water) and 'sild' (herring) are fish products, making 'vand, postevand' the only appropriate and realistic match for CO2 emissions.",
+                "ingredient_id": "Ra00068",
+                "closest_match_name": "vand, postevand",
+                "ingredient": "2.5 dl vand",
+                "unit": "kg CO2e per kg",
+                "co2_per_kg": 0.0,
+                "energy_kj_100g": 0.0,
+                "fat_g_100g": 0.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 0.0
+            }
         },
         {
-            "original_name": "3 spsk hele gule sennepsfrø",
-            "en_name": "3 tablespoons whole yellow mustard seeds",
+            "name": "3 spsk hele gule sennepsfrø",
             "weight_estimate": {
-                "ingredient": "3 tablespoons whole yellow mustard seeds",
-                "weight_calculation": "1 tbsp. = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+                "ingredient": "3 spsk hele gule sennepsfrø",
+                "weight_calculation": "1 spsk = 15 g, 3 * 15 g = 45 g = 0.045 kg",
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'whole yellow mustard seeds' is a direct match to 'mustard, yellow, ready made' in the database. Rule 4 is applied as 'mustard, yellow, ready made' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'hele gule sennepsfrø' (whole yellow mustard seeds) is best matched with 'sennep, gul, færdiglavet' (mustard, yellow, ready-made). While the ingredient specifies 'seeds', the closest available option is prepared yellow mustard, which is derived from mustard seeds. 'Solsikkefrø, afskallede, tørrede' (shelled, dried sunflower seeds) and 'sesamfrø, afskallede' (shelled sesame seeds) are different types of seeds. 'Solsikkeolie' (sunflower oil) is an oil, not a seed. Given the options, 'sennep, gul, færdiglavet' is the most realistic and appropriate match, as it represents the product derived from mustard seeds.",
                 "ingredient_id": "Ra00303",
-                "closest_match_name": "mustard, yellow, ready made",
-                "ingredient": "3 tablespoons whole yellow mustard seeds",
+                "closest_match_name": "sennep, gul, færdiglavet",
+                "ingredient": "3 spsk hele gule sennepsfrø",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.9
+                "co2_per_kg": 1.9,
+                "energy_kj_100g": 691.0,
+                "fat_g_100g": 6.4,
+                "carbohydrate_g_100g": 20.2,
+                "protein_g_100g": 5.7
             }
         },
         {
-            "original_name": "6 finthakkede skalotteløg (ca. 75 g)",
-            "en_name": "6 finely chopped shallots (about 75 g)",
+            "name": "6 finthakkede skalotteløg (ca. 75 g)",
             "weight_estimate": {
-                "ingredient": "6 finely chopped shallots (about 75 g)",
+                "ingredient": "6 finthakkede skalotteløg (ca. 75 g)",
                 "weight_calculation": "75 g = 75 g = 0.075 kg",
                 "weight_in_kg": 0.075
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'shallots' is a direct match to 'onion, raw' in the database. Rule 4 is applied as 'onion, raw' is the least processed option.",
-                "ingredient_id": "Ra00266",
-                "closest_match_name": "onion, raw",
-                "ingredient": "6 finely chopped shallots (about 75 g)",
+                "closest_match_explanation": "The ingredient 'finthakkede skalotteløg' (finely chopped shallots) is best matched with 'rødløg' (red onion). Shallots are a type of onion, and red onion is the closest available onion variety in the database. 'Løg, hakkede, dybfrost' (chopped onions, frozen) is a processed form of onion, and 'forårsløg' (spring onion) and 'spidskål' (pointed cabbage) are different vegetables. Given the options, 'rødløg' is the most appropriate and realistic match for CO2 emissions.",
+                "ingredient_id": "Ra00485",
+                "closest_match_name": "rødløg",
+                "ingredient": "6 finthakkede skalotteløg (ca. 75 g)",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.3
+                "co2_per_kg": 0.8,
+                "energy_kj_100g": 209.0,
+                "fat_g_100g": 0.3,
+                "carbohydrate_g_100g": 10.0,
+                "protein_g_100g": 1.6
             }
         },
         {
-            "original_name": "200 g koldt smør",
-            "en_name": "200 g of cold butter",
+            "name": "200 g koldt smør",
             "weight_estimate": {
-                "ingredient": "200 g of cold butter",
+                "ingredient": "200 g koldt smør",
                 "weight_calculation": "200 g = 200 g = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'cold butter' is a direct match to 'butter, salt added' in the database. Rule 4 is applied as 'butter, salt added' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'koldt smør' (cold butter) is best matched with 'smør, saltet' (salted butter) because it is the most direct and least processed form of butter available in the database. The term 'koldt' (cold) refers to a state, not a processing method. 'Smørbart blandingsprodukt, 75% fedt' (75% fat spreadable blend product) and 'jordnøddesmør' (peanut butter) are not butter, and 'koldskål' (buttermilk dessert) is a finished product. Therefore, 'smør, saltet' is the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00037",
-                "closest_match_name": "butter, salt added",
-                "ingredient": "200 g of cold butter",
+                "closest_match_name": "smør, saltet",
+                "ingredient": "200 g koldt smør",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 3.3
+                "co2_per_kg": 3.3,
+                "energy_kj_100g": 3047.0,
+                "fat_g_100g": 81.5,
+                "carbohydrate_g_100g": 0.6,
+                "protein_g_100g": 0.7
             }
         },
         {
-            "original_name": "0.75 tsk groft salt",
-            "en_name": "0.75 teaspoon coarse salt",
+            "name": "0.75 tsk groft salt",
             "weight_estimate": {
-                "ingredient": "0.75 teaspoon coarse salt",
-                "weight_calculation": "1 tsp. = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
+                "ingredient": "0.75 tsk groft salt",
+                "weight_calculation": "1 tsk = 5 g, 0.75 * 5 g = 3.75 g = 0.00375 kg",
                 "weight_in_kg": 0.00375
             },
             "co2_per_kg_db": null
         },
         {
-            "original_name": "friskkværnet peber",
-            "en_name": "freshly ground pepper",
+            "name": "friskkværnet peber",
             "weight_estimate": {
-                "ingredient": "freshly ground pepper",
-                "weight_calculation": "Amount of freshly ground pepper not specified. LLM estimate is: freshly ground pepper per serving = 0.005 kg, 4 * 0.005 kg = 0.02 kg.",
-                "weight_in_kg": 0.02
+                "ingredient": "friskkværnet peber",
+                "weight_calculation": "Mængden af friskkværnet peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+                "weight_in_kg": 0.005
             },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'freshly ground pepper' is a direct match to 'pepper, black' in the database. Rule 4 is applied as 'pepper, black' is the least processed option.",
-                "ingredient_id": "Ra00302",
-                "closest_match_name": "pepper, black",
-                "ingredient": "freshly ground pepper",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 5.2
-            }
+            "co2_per_kg_db": null
         },
         {
-            "original_name": "friske krydderurter",
-            "en_name": "fresh herbs",
+            "name": "friske krydderurter",
             "weight_estimate": {
-                "ingredient": "fresh herbs",
-                "weight_calculation": "Amount of fresh herbs not specified. LLM estimate is: fresh herbs per serving = 0.025 kg, 4 * 0.025 kg = 0.1 kg.",
-                "weight_in_kg": 0.1
+                "ingredient": "friske krydderurter",
+                "weight_calculation": "Mængden af friske krydderurter er ikke angivet. LLM-estimat er: 1 portion = 0.025 kg, 1 * 0.025 kg = 0.025 kg",
+                "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'fresh herbs' is a direct match to 'basil, fresh' in the database. Rule 4 is applied as 'basil, fresh' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'friske krydderurter' (fresh herbs) is best matched with 'basilikum, frisk' (basil, fresh). This is a direct match for a fresh herb. 'Basilikum, tørret' (dried basil) is a processed version. 'Fyldt frisk pasta' (fresh filled pasta) is a different food category entirely. 'Persille' (parsley) is also a fresh herb, but 'basilikum, frisk' has a slightly lower CO2 emission factor, and both are equally valid as a general 'fresh herb' category. Therefore, 'basilikum, frisk' is chosen as the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00486",
-                "closest_match_name": "basil, fresh",
-                "ingredient": "fresh herbs",
+                "closest_match_name": "basilikum, frisk",
+                "ingredient": "friske krydderurter",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.4
+                "co2_per_kg": 0.4,
+                "energy_kj_100g": 92.11,
+                "fat_g_100g": 0.6,
+                "carbohydrate_g_100g": 2.7,
+                "protein_g_100g": 3.2
             }
         },
         {
-            "original_name": "100 g stegte bacontern",
-            "en_name": "100 g of fried bacon",
+            "name": "100 g stegte bacontern",
             "weight_estimate": {
-                "ingredient": "100 g of fried bacon",
+                "ingredient": "100 g stegte bacontern",
                 "weight_calculation": "100 g = 100 g = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'fried bacon' is a direct match to 'bacon, frying, raw' in the database. Rule 4 is applied as 'bacon, frying, raw' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'stegte bacontern' (fried bacon cubes) is best matched with 'grisekød, bacon, stegestykke' (pork, bacon, fried piece). This is the most direct and realistic match for bacon, considering it is a pork product. 'Vegansk bacon' (vegan bacon) is a plant-based alternative and not a direct match. 'Grisekød, flæskesteg, nakkekam med svær' (pork, roast pork, neck with rind) is a different cut of pork, and 'oksekød, spegepølse' (beef, salami) is a different type of meat and processed product. Therefore, 'grisekød, bacon, stegestykke' is the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00044",
-                "closest_match_name": "bacon, frying, raw",
-                "ingredient": "100 g of fried bacon",
+                "closest_match_name": "grisekød, bacon, stegestykke",
+                "ingredient": "100 g stegte bacontern",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 6.4
+                "co2_per_kg": 6.4,
+                "energy_kj_100g": 1775.0,
+                "fat_g_100g": 42.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 13.0
             }
         },
         {
-            "original_name": "4 blødkogte vagtelæg",
-            "en_name": "4 soft-boiled quail egg",
+            "name": "4 blødkogte vagtelæg",
             "weight_estimate": {
-                "ingredient": "4 soft-boiled quail egg",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 quail egg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
+                "ingredient": "4 blødkogte vagtelæg",
+                "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 vagtelæg = 10 g, 4 * 10 g = 40 g = 0.04 kg.",
                 "weight_in_kg": 0.04
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'soft-boiled quail egg' is a direct match to 'eggs' in the database. Rule 4 is applied as 'eggs' is the least processed option.",
+                "closest_match_explanation": "The ingredient 'blødkogte vagtelæg' (soft-boiled quail eggs) is best matched with 'æg, skrabeæg' (eggs, free-range eggs). While 'vagtelæg' are specific, 'æg' (eggs) is the broader category that encompasses them. The term 'blødkogte' (soft-boiled) refers to a preparation method, not a processing method that changes the CO2 emissions. 'Æggesalat' (egg salad) is a prepared dish, 'nudler, æg' (noodles, egg) are a different food product, and 'kaviar, lodderogn' (caviar, capelin roe) is fish roe, not eggs. Therefore, 'æg, skrabeæg' is the most appropriate and realistic match for CO2 emissions.",
                 "ingredient_id": "Ra00108",
-                "closest_match_name": "eggs",
-                "ingredient": "4 soft-boiled quail egg",
+                "closest_match_name": "æg, skrabeæg",
+                "ingredient": "4 blødkogte vagtelæg",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.0
+                "co2_per_kg": 1.0,
+                "energy_kj_100g": 580.0,
+                "fat_g_100g": 9.5,
+                "carbohydrate_g_100g": 1.1,
+                "protein_g_100g": 12.3
             }
         }
     ],
     "persons": 4,
-    "instructions": " melt the butter in a saucepan under heavy heat, but without browning. Sweat the beets for approx. 2 min. Add the vinegar, sugar and salt and cook them under heavy heat and without lid for approx. 5 min. Put the beets in an ovenproof bowl and allow to soak for approx. 2 hours and taste. Divide the cod into four equal pieces. Put the pieces in a greased ovenproof dish. Brush the cod slices with butter and sprinkle with salt. Bake the fish in the middle of the oven for approx. 12 min. at 200 ° - Traditional oven. Lunch the beets on a rack at the bottom of the oven for the last 5 min. - Pour if necessary. A little of the moisture from the beets at the serving. Whip flour and some of the water together in a saucepan. Add the rest of the water, mustard seeds and onions. Cook the mixture under low heat and under lid for approx. 10 min. Take the pan off the heat and whisk the cold butter in little by little. Heat the sauce (it must not boil) and add salt and pepper. Taste to. Serving first beets on four plates, came the cod on it, garnish with bacon, quail eggs, herbs and serve with sauce next door.",
-    "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
+    "instructions": "Marinerede rødbeder:\nSmelt smørret i en gryde ved kraftig varme, men uden at det bruner. Svits rødbederne i ca. 2 min.\nTilsæt eddike, sukker og salt og kog dem ved kraftig varme og uden låg i ca. 5 min.\nKom rødbederne i en ovnfast skål og lad dem trække i ca. 2 timer og smag til.\n\nTorsk:\nDel torsken i fire lige store stykker. Læg stykkerne i et smurt ovnfast fad.\nPensl torskeskiverne med smør og drys med salt.\nBag fisken midt i ovnen i ca. 12 min. ved 200° - traditionel ovn.\nLun rødbederne på en rist nederst i ovnen de sidste 5 min. – hæld evt. lidt af væden fra rødbederne ved serveringen.\n\nSennepssauce:\nPisk mel og lidt af vandet sammen i en gryde.\nTilsæt resten af vandet, sennepsfrø og løg. Kog blandingen ved svag varme og under låg i ca. 10 min.\nTag gryden af varmen og pisk det kolde smør i lidt efter lidt.\nVarm saucen op (den må ikke koge) og tilsæt salt og peber. Smag til.\n\nSådan anretter du Nytårstorsk:\nAnret først rødbeder på fire tallerkner, kom torsken herpå, pynt med bacon, vagtelæg, krydderurter og server med sauce ved siden af.",
+    "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/",
+    "language": "da"
 }

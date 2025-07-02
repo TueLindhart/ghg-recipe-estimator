@@ -1,5 +1,6 @@
 import pytest
 
+from food_co2_estimator.language.detector import Languages
 from food_co2_estimator.pydantic_models.co2_estimator import CO2perKg
 from food_co2_estimator.pydantic_models.estimator import (
     IngredientOutput,
@@ -19,10 +20,10 @@ from food_co2_estimator.utils.output_generator import (
 def enriched_recipe_db_english():
     return EnrichedRecipe(
         title="Test Recipe",
+        language=Languages.English,
         ingredients=[
             EnrichedIngredient(
-                original_name="2 tomatoes",
-                en_name="2 tomatoes",
+                name="2 tomatoes",
                 weight_estimate=WeightEstimate(
                     ingredient="2 tomatoes",
                     weight_calculation="2 tomatoes = 200g",
@@ -34,12 +35,15 @@ def enriched_recipe_db_english():
                     ingredient_id="123",
                     ingredient="2 tomatoes",
                     co2_per_kg=2.5,
-                    unit="kg CO2e / kg",
+                    unit="kg CO₂e / kg",
+                    energy_kj_100g=90.0,
+                    fat_g_100g=0.2,
+                    carbohydrate_g_100g=3.0,
+                    protein_g_100g=1.0,
                 ),
             ),
             EnrichedIngredient(
-                original_name="1 liter of milk",
-                en_name="1 liter of milk",
+                name="1 liter of milk",
                 weight_estimate=WeightEstimate(
                     ingredient="1 liter of milk",
                     weight_calculation="1 liter = 1kg",
@@ -51,12 +55,15 @@ def enriched_recipe_db_english():
                     ingredient_id="456",
                     closest_match_name="milk",
                     co2_per_kg=1.0,
-                    unit="kg CO2e / kg",
+                    unit="kg CO₂e / kg",
+                    energy_kj_100g=250.0,
+                    fat_g_100g=3.0,
+                    carbohydrate_g_100g=5.0,
+                    protein_g_100g=3.0,
                 ),
             ),
             EnrichedIngredient(
-                original_name="3 large eggs",
-                en_name="3 large eggs",
+                name="3 large eggs",
                 weight_estimate=WeightEstimate(
                     ingredient="3 large eggs",
                     weight_calculation="3 large eggs = 150g",
@@ -68,52 +75,17 @@ def enriched_recipe_db_english():
                     ingredient="3 large eggs",
                     ingredient_id="789",
                     co2_per_kg=3.0,
-                    unit="kg CO2e / kg",
+                    unit="kg CO₂e / kg",
+                    energy_kj_100g=600.0,
+                    fat_g_100g=10.0,
+                    carbohydrate_g_100g=1.0,
+                    protein_g_100g=13.0,
                 ),
             ),
         ],
         persons=4,
         instructions="Mix ingredients",
         url="http://example.com",
-    )
-
-
-@pytest.fixture
-def enriched_recipe_search_english():
-    return EnrichedRecipe(
-        title="Test Recipe",
-        url="http://example.com",
-        ingredients=[
-            EnrichedIngredient(
-                original_name="2 tomatoes",
-                en_name="2 tomatoes",
-                weight_estimate=WeightEstimate(
-                    ingredient="2 tomatoes",
-                    weight_calculation="2 tomatoes = 200g",
-                    weight_in_kg=0.2,
-                ),
-            ),
-            EnrichedIngredient(
-                original_name="1 liter of milk",
-                en_name="1 liter of milk",
-                weight_estimate=WeightEstimate(
-                    ingredient="1 liter of milk",
-                    weight_calculation="1 liter = 1kg",
-                    weight_in_kg=1.0,
-                ),
-            ),
-            EnrichedIngredient(
-                original_name="3 large eggs",
-                en_name="3 large eggs",
-                weight_estimate=WeightEstimate(
-                    ingredient="3 large eggs",
-                    weight_calculation="3 large eggs = 150g",
-                    weight_in_kg=0.15,
-                ),
-            ),
-        ],
-        persons=4,
-        instructions="Mix ingredients",
     )
 
 
@@ -122,7 +94,6 @@ def enriched_recipe_search_english():
     [
         (
             "enriched_recipe_db_english",
-            # Languages.English,
             0.1,
             RecipeCO2Output(
                 title="Test Recipe",
@@ -130,7 +101,14 @@ def enriched_recipe_search_english():
                 total_co2_kg=1.9,
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
-                avg_meal_emission_per_person_range_kg=[1.3, 2.2],
+                avg_emission_per_person_per_meal=1.8,
+                avg_emission_per_person_per_day=7.1,
+                budget_emission_per_person_per_meal=0.5,
+                budget_emission_per_person_per_day=2.0,
+                energy_per_person_kj=895.0,  # 3580.0 / 4
+                fat_per_person_g=11.0,  # 45.4 / 4
+                carbohydrate_per_person_g=14.0,  # 57.5 / 4
+                protein_per_person_g=13,  # 50.0 / 4
                 ingredients=[
                     IngredientOutput(
                         name="1 liter of milk",
@@ -138,9 +116,13 @@ def enriched_recipe_search_english():
                         weight_kg=1.0,
                         co2_per_kg=1.0,
                         co2_kg=1.0,
-                        calculation_notes="1.0 kg * 1.0 kg CO2e/kg = 1.0 kg CO2e",
+                        calculation_notes="1.0 kg * 1.0 kg CO₂e/kg = 1.0 kg CO₂e",
                         weight_estimation_notes="1 liter = 1kg",
-                        co2_emission_notes="Best match in CO2 database is: milk",
+                        co2_emission_notes="Bedste match i CO₂-databasen er: milk",
+                        energy_kj=2500.0,
+                        fat_g=30.0,
+                        carbohydrate_g=50.0,
+                        protein_g=30.0,
                     ),
                     IngredientOutput(
                         name="2 tomatoes",
@@ -148,9 +130,13 @@ def enriched_recipe_search_english():
                         weight_kg=0.2,
                         co2_per_kg=2.5,
                         co2_kg=0.5,
-                        calculation_notes="0.2 kg * 2.5 kg CO2e/kg = 0.5 kg CO2e",
+                        calculation_notes="0.2 kg * 2.5 kg CO₂e/kg = 0.5 kg CO₂e",
                         weight_estimation_notes="2 tomatoes = 200g",
-                        co2_emission_notes="Best match in CO2 database is: tomatoes, canned",
+                        co2_emission_notes="Bedste match i CO₂-databasen er: tomatoes, canned",
+                        energy_kj=180.0,
+                        fat_g=0.4,
+                        carbohydrate_g=6.0,
+                        protein_g=2.0,
                     ),
                     IngredientOutput(
                         name="3 large eggs",
@@ -158,125 +144,20 @@ def enriched_recipe_search_english():
                         weight_kg=0.15,
                         co2_per_kg=3.0,
                         co2_kg=0.45,
-                        calculation_notes="0.15 kg * 3.0 kg CO2e/kg = 0.45 kg CO2e",
+                        calculation_notes="0.15 kg * 3.0 kg CO₂e/kg = 0.45 kg CO₂e",
                         weight_estimation_notes="3 large eggs = 150g",
-                        co2_emission_notes="Best match in CO2 database is: eggs",
+                        co2_emission_notes="Bedste match i CO₂-databasen er: eggs",
+                        energy_kj=900.0,
+                        fat_g=15.0,
+                        carbohydrate_g=1.5,
+                        protein_g=19.5,
                     ),
                 ],
             ),
         ),
-        # (
-        #     "enriched_recipe_search_english",
-        #     # Languages.English,
-        #     0.1,
-        #     RecipeCO2Output(
-        #         title="Test Recipe",
-        #         url="http://example.com",
-        #         total_co2_kg=1.8,
-        #         number_of_persons=4,
-        #         co2_per_person_kg=0.5,
-        #         avg_meal_emission_per_person_range_kg=[1.3, 2.2],
-        #         ingredients=[
-        #             IngredientOutput(
-        #                 name="1 liter of milk",
-        #                 ingredient_id=None,
-        #                 weight_kg=1.0,
-        #                 co2_per_kg=1.0,
-        #                 co2_kg=1.0,
-        #                 calculation_notes="1.0 kg * 1.0 kg CO2e/kg (Search) = 1.0 kg CO2e",
-        #                 weight_estimation_notes="1 liter = 1kg",
-        #                 co2_emission_notes="Found by search. Notes on finding search are; 'Search result'",
-        #             ),
-        #             IngredientOutput(
-        #                 name="3 large eggs",
-        #                 ingredient_id=None,
-        #                 weight_kg=0.15,
-        #                 co2_per_kg=3.0,
-        #                 co2_kg=0.45,
-        #                 calculation_notes="0.15 kg * 3.0 kg CO2e/kg (Search) = 0.45 kg CO2e",
-        #                 weight_estimation_notes="3 large eggs = 150g",
-        #                 co2_emission_notes="Found by search. Notes on finding search are; 'Search result'",
-        #             ),
-        #             IngredientOutput(
-        #                 name="2 tomatoes",
-        #                 ingredient_id=None,
-        #                 weight_kg=0.2,
-        #                 co2_per_kg=2.0,
-        #                 co2_kg=0.4,
-        #                 calculation_notes="0.2 kg * 2.0 kg CO2e/kg (Search) = 0.4 kg CO2e",
-        #                 weight_estimation_notes="2 tomatoes = 200g",
-        #                 co2_emission_notes="Found by search. Notes on finding search are; 'Search result'",
-        #             ),
-        #         ],
-        #     ),
-        # ),
-        # (
-        #     "enriched_recipe_db_danish",
-        #     Languages.Danish,
-        #     0.1,
-        #     (
-        #         "----------------------------------------"
-        #         "\nSamlet CO2-udslip: 1.9 kg CO2e"
-        #         "\nEstimeret antal personer: 4"
-        #         "\nEmission pr. person: 0.5 kg CO2e / pr. person"
-        #         "\nGennemsnitligt aftensmad udledning pr. person: 1.3 - 2.2 kg CO2e / pr. person"
-        #         "\n----------------------------------------"
-        #         "\nBeregningsmetoden pr. ingrediens er: X kg * Y kg CO2e / kg = Z kg CO2e"
-        #         "\n2 tomater: 0.2 kg * 2.5 kg CO2e / kg = 0.5 kg CO2e"
-        #         "\n1 liter mælk: 1.0 kg * 1.0 kg CO2e / kg = 1.0 kg CO2e"
-        #         "\n3 store æg: 0.15 kg * 3.0 kg CO2e / kg = 0.45 kg CO2e"
-        #         "\n----------------------------------------"
-        #         "\n\nForklaring:"
-        #         "\n- Data fra SQL Database (https://denstoreklimadatabase.dk)"
-        #         "\n(Søgning) - Data opnået fra søgning"
-        #         "\n\nKommentarer:"
-        #         "\nFor 2 tomater:"
-        #         "\n- Vægt: 2 tomatoes = 200g"
-        #         "\n- DB: Database entry"
-        #         "\nFor 1 liter mælk:"
-        #         "\n- Vægt: 1 liter = 1kg"
-        #         "\n- DB: Database entry"
-        #         "\nFor 3 store æg:"
-        #         "\n- Vægt: 3 large eggs = 150g"
-        #         "\n- DB: Database entry"
-        #     ),
-        # ),
-        # (
-        #     "enriched_recipe_search_danish",
-        #     Languages.Danish,
-        #     0.1,
-        #     (
-        #         "----------------------------------------"
-        #         "\nSamlet CO2-udslip: 1.8 kg CO2e"
-        #         "\nEstimeret antal personer: 4"
-        #         "\nEmission pr. person: 0.5 kg CO2e / pr. person"
-        #         "\nGennemsnitligt aftensmad udledning pr. person: 1.3 - 2.2 kg CO2e / pr. person"
-        #         "\n----------------------------------------"
-        #         "\nBeregningsmetoden pr. ingrediens er: X kg * Y kg CO2e / kg = Z kg CO2e"
-        #         "\n2 tomater: 0.2 kg * 2.0 kg CO2e / kg (Search) = 0.4 kg CO2e"
-        #         "\n1 liter mælk: 1.0 kg * 1.0 kg CO2e / kg (Search) = 1.0 kg CO2e"
-        #         "\n3 store æg: 0.15 kg * 3.0 kg CO2e / kg (Search) = 0.45 kg CO2e"
-        #         "\n----------------------------------------"
-        #         "\n\nForklaring:"
-        #         "\n- Data fra SQL Database (https://denstoreklimadatabase.dk)"
-        #         "\n(Søgning) - Data opnået fra søgning"
-        #         "\n\nKommentarer:"
-        #         "\nFor 2 tomater:"
-        #         "\n- Vægt: 2 tomatoes = 200g"
-        #         "\n- Søgning: Search result"
-        #         "\nFor 1 liter mælk:"
-        #         "\n- Vægt: 1 liter = 1kg"
-        #         "\n- Søgning: Search result"
-        #         "\nFor 3 store æg:"
-        #         "\n- Vægt: 3 large eggs = 150g"
-        #         "\n- Søgning: Search result"
-        #     ),
-        # ),
     ],
     ids=[
         "test_db_english",
-        # "test_db_danish",
-        # "test_search_danish",
     ],
 )
 def test_generate_output(

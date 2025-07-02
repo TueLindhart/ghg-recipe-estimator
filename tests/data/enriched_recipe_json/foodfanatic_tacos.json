@@ -2,151 +2,128 @@
     "title": "Tacos med oksekød, tomatsalsa og avocado",
     "ingredients": [
         {
-            "original_name": "1 lille løg",
-            "en_name": "1 small onion",
+            "name": "1 lille løg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 rød peberfrugt",
-            "en_name": "0.5 Red pepper",
+            "name": "0.5 rød peberfrugt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "olie",
-            "en_name": "oil",
+            "name": "olie",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "250 g oksekød",
-            "en_name": "250 g of beef",
+            "name": "250 g oksekød",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1.5 spsk fajitakrydderi",
-            "en_name": "1.5 tablespoons fajita crawling",
+            "name": "1.5 spsk fajitakrydderi",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "chilipulver eller flager",
-            "en_name": "chili powder or flakes",
+            "name": "chilipulver eller flager",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 dåse kidneybønner",
-            "en_name": "1 can of kidney beans",
+            "name": "1 dåse kidneybønner",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 spsk tomatpuré",
-            "en_name": "2 tablespoons tomato puree",
+            "name": "2 spsk tomatpuré",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2.5 dl oksefond/-bouillon",
-            "en_name": "2.5 dl beef fund/broth",
+            "name": "2.5 dl oksefond/-bouillon",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "11 små majstortillas",
-            "en_name": "11 small cornstortillas",
+            "name": "11 små majstortillas",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 portion tomatsalsa",
-            "en_name": "1 serving of tomato salsa",
+            "name": "1 portion tomatsalsa",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "1 avocado",
-            "en_name": "1 Avocado",
+            "name": "1 avocado",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "peber",
-            "en_name": "pepper",
+            "name": "peber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 rødløg",
-            "en_name": "0.5 Red onion",
+            "name": "0.5 rødløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 fed hvidløg",
-            "en_name": "2 cloves of garlic",
+            "name": "2 fed hvidløg",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "300 g tomater",
-            "en_name": "300 g of tomatoes",
+            "name": "300 g tomater",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.75 chilipeber",
-            "en_name": "0.75 chili pepper",
+            "name": "0.75 chilipeber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "0.5 bdt koriander",
-            "en_name": "0.5 Bdt coriander",
+            "name": "0.5 bdt koriander",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "2 spsk olivenolie",
-            "en_name": "2 tablespoons olive oil",
+            "name": "2 spsk olivenolie",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "saften af 0.5 lime",
-            "en_name": "The juice of 0.5 lime",
+            "name": "saften af 0.5 lime",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "salt",
-            "en_name": "salt",
+            "name": "salt",
             "weight_estimate": null,
             "co2_per_kg_db": null
         },
         {
-            "original_name": "peber",
-            "en_name": "Pepper",
+            "name": "peber",
             "weight_estimate": null,
             "co2_per_kg_db": null
         }
     ],
     "persons": 2,
-    "instructions": " Peel and chop the onion and garlic, and cut the peppers into cubes. Heat a scoop of oil on a pan and saute both in it in even heat until the onions are clear. Turn up the flame and now brown the meat on the same pan. Add spices and pepper, and fry for a few minutes. Come on tomato puree, kidney beans and beef fund and simmer for 10-15 minutes until the moisture is almost evaporated. Taste with salt and pepper and possibly extra chili.\nPut your tortillas in a pack of silver paper and whine them in a 200 degree hot oven for approx. 10 minutes.\nDistribute the lightning chili on your tacos, preferably at the table, and top with tomato salsa and avocado. Serve if necessary. With extra lime and hot sauce (eg Tabasco or similar) to those who prefer it extra strongly.\nFresh tomato salsa with chili and coriander\nPeel and chop onion and garlic. Chop the tomatoes into coarse cubes and finely chop the chili pepper. Cut the coriander. Mix it all together with olive oil, lime juice, salt and pepper.",
-    "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
+    "instructions": "Pil og hak løg og hvidløg, og skær peberfrugten i tern. Varm en sjat olie på en pande, og sautér begge dele heri ved jævn varme, til løgternene er klare. Skru op for blusset, og brun nu kødet på samme pande. Tilsæt krydderier og peberfrugt, og steg videre i et par minutter. Kom tomatpuré, kidneybønner og oksefond ved, og lad det hele simre i 10-15 minutter, til væden næsten er fordampet. Smag til med salt og peber samt evt. ekstra chili.\nKom dine tortillas i en pakke af sølvpapir, og lun dem i en 200 grader varm ovn i ca. 10 minutter.\nFordel lyn-chilien på dine tacos, gerne ved bordet, og top med tomatsalsa og avocado. Servér evt. med ekstra lime og hot sauce (fx Tabasco eller lignende) til dem, der foretrækker det ekstra stærkt.\nFrisk tomatsalsa med chili og koriander\nPil og hak løg og hvidløg. Hak tomaterne i grove tern, og hak chilipeberen fint. Snit korianderen. Bland det hele sammen med olivenolie, limesaft, salt og peber.",
+    "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa",
+    "language": "da"
 }

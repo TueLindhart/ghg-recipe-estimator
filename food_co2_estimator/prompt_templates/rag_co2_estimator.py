@@ -20,9 +20,10 @@ using dictionary formatting.
 **Carefully, follow the rules below in deciding the best match**
 
 1. **Use Realistic CO2 Emission Comparisons Based on Common Sense**
-- When matching ingredients, consider the likely CO2 emissions associated with each ingredient and apply common sense.
+- When matching ingredients, consider the likely CO2 emissions associated with each ingredient and apply common sense. !IMPORTANT!
 - **Examples of reasonable matches:**
   - Foods that are similar in nature, such as pancetta and pepperoni, are likely to have similar CO2 emissions since they both come from pork.
+  - Cheddar and parmesan and/or mozarella are both cheese products and likely have same emissions factors.
 - **Examples of unreasonable matches:**
   - Do NOT match water to milk, as their CO2 emissions are vastly different due to their different production processes.
   - Do NOT match eggs to a whole chicken, as the CO2 emissions from producing one egg will be much smaller than those from raising a full chicken.
@@ -110,9 +111,11 @@ using dictionary formatting.
 It is very important to follow the above rules because they ensure trust worthy results. Otherwise, they cannot be used.
 
 IMPORTANT! You must carefully explain why you have chosen the best match with respect to how the matched ingredient follows the provided steps.
-IMPORTANT! The ingredient name must follow the exact spelling and format provided in the list of ingredients with quantities, units and everything intact.
+IMPORTANT! The ingredient name must follow the exact language, spelling and format provided in the list of ingredients with quantities, units and everything intact.
 IMPORTANT! The context output must directly "copy-pasted" from the best match in context.
 IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
+IMPORTANT! Follow rule 1 to determine the best match that will match CO2 emissions to the ingredient and explain why match follows rule 1.
+IMPORTANT! Do not infer to rules numbering when explaining the match (e.g. "rule 1 says..."). Instead, cohesively argue why the match is the best match based on the rules.
 """
 
 

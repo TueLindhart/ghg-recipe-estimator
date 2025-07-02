@@ -21,8 +21,8 @@
     },
     { label: "Personer", value: overviewData.number_of_persons.toString() },
     {
-      label: "Gennemsnit",
-      value: `${overviewData.avg_meal_emission_per_person_range_kg[0]}–${overviewData.avg_meal_emission_per_person_range_kg[1]}`,
+      label: "Gennemsnit pr. måltid",
+      value: `${overviewData.avg_emission_per_person_per_meal.toString()}`,
       unit: "kg",
     },
   ];

@@ -39,18 +39,6 @@ async def test_async_estimator(
 
     monkeypatch.setattr("food_co2_estimator.main.extract_recipe", mock_extract_recipe)
 
-    # Mock get_translation_chain
-    mock_translation_chain = Mock()
-
-    async def mock_ainvoke(inputs):
-        return expected_enriched_recipe
-
-    mock_translation_chain.ainvoke = mock_ainvoke
-    monkeypatch.setattr(
-        "food_co2_estimator.main.get_translation_chain",
-        Mock(return_value=mock_translation_chain),
-    )
-
     # Call the function
     success, output = await async_estimator(
         runparams=RunParams(url="dummy_url", use_cache=False, store_in_cache=False),
@@ -68,6 +56,8 @@ async def test_async_estimator(
 
     n_persons = output_model.number_of_persons
     assert n_persons is not None
+    assert output_model.total_co2_kg is not None
+    assert expected_output.total_co2_kg is not None
     total_emission_per_person = output_model.total_co2_kg / n_persons
     expected_total_emission_per_person = expected_output.total_co2_kg / n_persons
     ratio_difference = (
