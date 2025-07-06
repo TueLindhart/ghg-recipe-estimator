@@ -241,18 +241,10 @@ def test_parse_retriever_output():
         "beef": {
             "emission": "60.0 kg CO2e / kg",
             "id": "123",
-            "energy_kj_100g": 200.0,
-            "fat_g_100g": 10.0,
-            "carb_g_100g": 0.5,
-            "protein_g_100g": 20.0,
         },
         "chicken": {
             "emission": "6.1 kg CO2e / kg",
             "id": "456",
-            "energy_kj_100g": 150.0,
-            "fat_g_100g": 5.0,
-            "carb_g_100g": 1.0,
-            "protein_g_100g": 18.0,
         },
     }
     assert result == expected
