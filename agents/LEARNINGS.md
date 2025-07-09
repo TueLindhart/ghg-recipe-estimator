@@ -8,3 +8,12 @@ This file collects observations about how the repository is organised and coding
 - **Caching strategy** – Results can be cached in Google Cloud Storage and re-used by providing the `USE_CACHE` and `STORE_IN_CACHE` flags.
 
 Further insights should be appended here as the code evolves.
+
+## Emission Spreadsheet
+
+The `data/DBv2.xlsx` file contains CO₂ emission information in two sheets: `DK`
+and `GB`.  The `DK` sheet is used for enrichment.  Column headers include
+`ID_Ra`, `Navn`, `DSK Kategori`, `Produkt`, `Kategori`, `Total kg CO2e/kg`,
+`Landbrug`, `ILUC`, `Forarbejdning`, `Emballage`, `Transport`, `Detail`,
+`Energi (KJ/100 g)`, `Fedt (g/100 g)`, `Kulhydrat (g/100 g)`, `Protein (g/100 g)`,
+`ID_food`, `ID_pack`, and `ID_retail`.

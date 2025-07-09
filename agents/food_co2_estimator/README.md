@@ -17,6 +17,8 @@ This package contains all logic for estimating the CO₂ footprint of a recipe. 
 
 4. **`co2_comparison.py`** – Utility to compare a CO₂ value against a reference trip, returned via a Pydantic model.
 
+5. **`scripts/create_vector_store.py`** – Builds both Danish and English vector stores from the `DBv2.xlsx` spreadsheet using pandas.
+
 ## Sub‑packages
 - **`chains/`** – LangChain runnable chains for recipe extraction, weight estimation and emission retrieval.
 - **`retrievers/`** – Helpers for vector database retrieval (`vector_db_retriever.py`) and web search retrieval (`search_retriever.py`).

@@ -1,5 +1,7 @@
-from functools import partial
+from functools import lru_cache, partial
+from pathlib import Path
 
+import pandas as pd  # pyright: ignore[reportMissingImports]
 from langchain_core.runnables import (
     RunnableLambda,
     RunnablePassthrough,
@@ -11,7 +13,11 @@ from food_co2_estimator.logger_utils import log_with_url
 from food_co2_estimator.prompt_templates.rag_co2_estimator import (
     RAG_CO2_EMISSION_PROMPT,
 )
-from food_co2_estimator.pydantic_models.co2_estimator import CO2Emissions
+from food_co2_estimator.pydantic_models.co2_estimator import (
+    CO2Emissions,
+    CO2Matches,
+    CO2perKg,
+)
 from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedIngredient,
     EnrichedRecipe,
@@ -26,20 +32,62 @@ NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
 INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
 
 
+@lru_cache(maxsize=1)
+def _load_emission_data() -> dict[str, dict[str, str]]:
+    """Load emission metadata from the DBv2.xlsx DK sheet using pandas."""
+    path = Path(__file__).resolve().parents[2] / "data" / "DBv2.xlsx"
+    df = pd.read_excel(path, sheet_name="DK")
+    data: dict[str, dict[str, str]] = {}
+    for record in df.to_dict(orient="records"):
+        key = record.get("ID_Ra")
+        if key is not None and key != "":
+            data[str(key)] = record
+    return data
+
+
+def _enrich_matches(matches: CO2Matches) -> CO2Emissions:
+    data = _load_emission_data()
+    enriched: list[CO2perKg] = []
+
+    def safe_float(row: dict[str, str], key: str) -> float | None:
+        value = row.get(key)
+        if value in (None, ""):
+            return None
+        try:
+            return float(value)
+        except ValueError:
+            return None
+
+    for match in matches.emissions:
+        row = data.get(match.ingredient_id, {})
+        enriched.append(
+            CO2perKg(
+                closest_match_explanation=match.closest_match_explanation,
+                ingredient_id=match.ingredient_id,
+                closest_match_name=match.closest_match_name,
+                ingredient=match.ingredient,
+                unit=match.unit,
+                co2_per_kg=match.co2_per_kg,
+                energy_kj_100g=safe_float(row, "Energi (KJ/100 g)"),
+                fat_g_100g=safe_float(row, "Fedt (g/100 g)"),
+                carbohydrate_g_100g=safe_float(row, "Kulhydrat (g/100 g)"),
+                protein_g_100g=safe_float(row, "Protein (g/100 g)"),
+            )
+        )
+
+    return CO2Emissions(emissions=enriched)
+
+
 def rag_co2_emission_chain(verbose: bool, language: Languages) -> RunnableSerializable:
     llm = LLMFactory(
-        output_model=CO2Emissions,
+        output_model=CO2Matches,
         verbose=verbose,
     ).get_model()
 
-    # ---- Context retriever --------------------------------------------------
-    # RunnableLambda takes the single chain input (the question) and expands
-    # it into the (question, language) call expected by `batch_emission_retriever`.
     context_runnable = RunnableLambda(
         partial(batch_emission_retriever, language=language)
     )
 
-    # ---- Chain --------------------------------------------------------------
     return (
         {
             "context": context_runnable,  # <- uses (question, language)
@@ -79,7 +127,6 @@ def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
 
 @log_with_url
 async def get_co2_emissions(
-    *,
     verbose: bool,
     negligeble_threshold: float,
     recipe: EnrichedRecipe,
@@ -92,6 +139,6 @@ async def get_co2_emissions(
         if should_include_ingredient(item, negligeble_threshold)
     ]
 
-    parsed_rag_emissions: CO2Emissions = await emission_chain.ainvoke(ingredients_input)
+    parsed_rag_emissions: CO2Matches = await emission_chain.ainvoke(ingredients_input)
 
-    return parsed_rag_emissions
+    return _enrich_matches(parsed_rag_emissions)
