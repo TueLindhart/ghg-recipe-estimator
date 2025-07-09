@@ -26,6 +26,7 @@ aiohttp = "^3.12.13"
 lxml = "^5.4.0"
 python-dotenv = "^1.1.1"
 pandas = "^2.0.3"
+openpyxl = "^3.1.2"
 
 
 [tool.poetry.group.dev]
@@ -35,7 +36,6 @@ punch-py = "^2.0.0"
 make = "^0.1.6.post2"
 ipykernel = "^6.29.5"
 ruff = "^0.8.5"
-openpyxl = "^3.1.2"
 tqdm = "^4.67.0"
 
 [tool.poetry.group.test]
