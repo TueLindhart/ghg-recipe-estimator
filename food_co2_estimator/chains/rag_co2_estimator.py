@@ -1,5 +1,7 @@
-from functools import partial
+from functools import lru_cache, partial
+from pathlib import Path
 
+import pandas as pd  # pyright: ignore[reportMissingImports]
 from langchain_core.runnables import (
     RunnableLambda,
     RunnablePassthrough,
@@ -25,9 +27,6 @@ from food_co2_estimator.retrievers.vector_db_retriever import (
     clean_ingredient,
 )
 from food_co2_estimator.utils.llm_model import LLMFactory
-from functools import lru_cache
-from pathlib import Path
-import pandas as pd  # pyright: ignore[reportMissingImports]
 
 NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
 INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
@@ -85,14 +84,10 @@ def rag_co2_emission_chain(verbose: bool, language: Languages) -> RunnableSerial
         verbose=verbose,
     ).get_model()
 
-    # ---- Context retriever --------------------------------------------------
-    # RunnableLambda takes the single chain input (the question) and expands
-    # it into the (question, language) call expected by `batch_emission_retriever`.
     context_runnable = RunnableLambda(
         partial(batch_emission_retriever, language=language)
     )
 
-    # ---- Chain --------------------------------------------------------------
     return (
         {
             "context": context_runnable,  # <- uses (question, language)
@@ -132,7 +127,6 @@ def ingredient_to_ignore(item: EnrichedIngredient) -> bool:
 
 @log_with_url
 async def get_co2_emissions(
-    *,
     verbose: bool,
     negligeble_threshold: float,
     recipe: EnrichedRecipe,
