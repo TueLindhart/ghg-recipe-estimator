@@ -7,6 +7,10 @@ export interface IngredientOutput {
   calculation_notes?: string | null;
   weight_estimation_notes?: string | null;
   co2_emission_notes?: string | null;
+  energy_kj?: number | null;
+  fat_g?: number | null;
+  carbohydrate_g?: number | null;
+  protein_g?: number | null;
 }
 
 export interface RecipeCO2Output {
@@ -16,6 +20,14 @@ export interface RecipeCO2Output {
   number_of_persons?: number | null;
   co2_per_person_kg?: number | null;
   avg_meal_emission_per_person_range_kg: number[];
+  avg_emission_per_person_per_meal: number;
+  avg_emission_per_person_per_day: number;
+  budget_emission_per_person_per_meal: number;
+  budget_emission_per_person_per_day: number;
+  energy_per_person_kj?: number | null;
+  fat_per_person_g?: number | null;
+  carbohydrate_per_person_g?: number | null;
+  protein_per_person_g?: number | null;
   ingredients: IngredientOutput[];
 }
 
