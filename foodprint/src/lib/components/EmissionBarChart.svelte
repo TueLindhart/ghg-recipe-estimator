@@ -4,15 +4,54 @@
   import type { IngredientOutput } from "$lib";
 
   export let ingredients: IngredientOutput[] = [];
+  export let metric: "co2" | "energy" | "protein" | "carbohydrate" | "fat" = "co2";
 
-  // Only keep positive emissions
-  $: filtered = ingredients.filter((i) => i.co2_kg != null && i.co2_kg > 0);
+  // Filter out entries without the chosen metric
+  $: filtered = ingredients.filter((i) => {
+    switch (metric) {
+      case "energy":
+        return i.energy_kj != null && i.energy_kj > 0;
+      case "protein":
+        return i.protein_g != null && i.protein_g > 0;
+      case "carbohydrate":
+        return i.carbohydrate_g != null && i.carbohydrate_g > 0;
+      case "fat":
+        return i.fat_g != null && i.fat_g > 0;
+      default:
+        return i.co2_kg != null && i.co2_kg > 0;
+    }
+  });
 
   // Build the single series for the chart
+  $: yField = metric === "energy"
+      ? "energy_kj"
+      : metric === "protein"
+      ? "protein_g"
+      : metric === "carbohydrate"
+      ? "carbohydrate_g"
+      : metric === "fat"
+      ? "fat_g"
+      : "co2_kg";
+
+  $: unitLabel = metric === "energy"
+      ? "kJ"
+      : metric === "protein" || metric === "carbohydrate" || metric === "fat"
+      ? "g"
+      : "kg";
+
   $: series = [
     {
-      name: "CO₂e udledning (kg)",
-      data: filtered.map((i) => i.co2_kg as number),
+      name:
+        metric === "energy"
+          ? "Energi"
+          : metric === "protein"
+          ? "Protein"
+          : metric === "carbohydrate"
+          ? "Kulhydrat"
+          : metric === "fat"
+          ? "Fedt"
+          : "CO₂e udledning",
+      data: filtered.map((i) => (i[yField] as number)),
       color: "#404040",
     },
   ];
@@ -41,7 +80,7 @@
     series, // reactive series
     xaxis: {
       categories,
-      title: { text: "CO₂ udledning (kg)" },
+      title: { text: `${series[0].name} (${unitLabel})` },
       labels: {
         style: { fontFamily: "Inter, sans-serif" },
       },

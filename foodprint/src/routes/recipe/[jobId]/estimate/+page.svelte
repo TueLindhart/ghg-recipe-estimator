@@ -1,7 +1,9 @@
 <script lang="ts">
   import BaseButton from "$lib/components/BaseButton.svelte";
   import EmissionBarChart from "$lib/components/EmissionBarChart.svelte";
-  import EmissionComparison from "$lib/components/EmissionComparison.svelte";
+  import BudgetComparison from "$lib/components/BudgetComparison.svelte";
+  import EquivalentComparison from "$lib/components/EquivalentComparison.svelte";
+  import NutritionChart from "$lib/components/NutritionChart.svelte";
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
   import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
@@ -34,6 +36,8 @@ Vægt Estimering Noter: ${ing.weight_estimation_notes}
 CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     showModal = true;
   }
+
+  let chartMetric: "co2" | "energy" | "protein" | "carbohydrate" | "fat" = "co2";
 </script>
 
 <svelte:head>
@@ -68,14 +72,35 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 
   <h2 class="text-xl font-bold mb-4 mt-4">Oversigt</h2>
 
-  <!-- ───── Overview + Comparison side-by-side ───── -->
+  <!-- ───── Overview with info tabs ───── -->
   <div class="flex flex-col lg:flex-row gap-6 mb-8">
     <OverviewCard class="flex-1" overviewData={data.result} />
 
-    <EmissionComparison
-      ratio={data.comparison.ratio}
-      helperText={data.comparison.helperText}
-    />
+    <Tabs class="flex-1" tabStyle="pill">
+      <TabItem title="Sammenlign" open>
+        <BudgetComparison
+          co2PerPerson={data.result.co2_per_person_kg ?? 0}
+          mealBudget={data.result.budget_emission_per_person_per_meal}
+          dayBudget={data.result.budget_emission_per_person_per_day}
+          avgMeal={data.result.avg_emission_per_person_per_meal}
+        />
+      </TabItem>
+      <TabItem title="Svare til">
+        <EquivalentComparison co2PerPerson={data.result.co2_per_person_kg ?? 0} />
+      </TabItem>
+      <TabItem title="Næringsindhold">
+        <div class="flex items-center gap-4">
+          <span class="text-3xl font-bold">
+            {data.result.energy_per_person_kj ?? 0} kJ
+          </span>
+          <NutritionChart
+            fat={data.result.fat_per_person_g ?? 0}
+            carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
+            protein={data.result.protein_per_person_g ?? 0}
+          />
+        </div>
+      </TabItem>
+    </Tabs>
   </div>
 
   <!-- ───── Tabs (unchanged) ───── -->
@@ -90,8 +115,18 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     </TabItem>
 
     <TabItem title="Graf">
-      <div class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto">
-        <EmissionBarChart ingredients={data.result.ingredients} />
+      <div class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto space-y-2">
+        <select bind:value={chartMetric} class="border rounded p-1">
+          <option value="co2">CO2e kg</option>
+          <option value="energy">Energi kJ</option>
+          <option value="protein">Protein g</option>
+          <option value="carbohydrate">Kulhydrat g</option>
+          <option value="fat">Fedt g</option>
+        </select>
+        <EmissionBarChart
+          ingredients={data.result.ingredients}
+          metric={chartMetric}
+        />
       </div>
     </TabItem>
   </Tabs>

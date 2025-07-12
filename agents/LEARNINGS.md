@@ -17,3 +17,8 @@ and `GB`.  The `DK` sheet is used for enrichment.  Column headers include
 `Landbrug`, `ILUC`, `Forarbejdning`, `Emballage`, `Transport`, `Detail`,
 `Energi (KJ/100 g)`, `Fedt (g/100 g)`, `Kulhydrat (g/100 g)`, `Protein (g/100 g)`,
 `ID_food`, `ID_pack`, and `ID_retail`.
+
+## Frontend design notes
+- The estimate page now uses multiple custom Svelte components to show comparisons and nutrition information. New files include `BudgetComparison.svelte`, `EquivalentComparison.svelte` and `NutritionChart.svelte`.
+- `EmissionBarChart.svelte` accepts a `metric` prop so the graph can display CO₂, energy or macronutrients.
+- All custom components rely on `flowbite-svelte` primitives such as `Card` and `Chart` for consistent styling.
