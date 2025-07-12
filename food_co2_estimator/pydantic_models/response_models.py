@@ -47,3 +47,15 @@ class ComparisonResponse(BaseModel):
         ...,
         description="Human-readable explanation of the comparison result",
     )
+    avg_emission_per_person_per_meal: float = Field(
+        description="Average meal emission per person in kg",
+    )
+    avg_emission_per_person_per_day: float = Field(
+        description="Average daily emission per person in kg",
+    )
+    budget_emission_per_person_per_meal: float = Field(
+        description="Budget for one meal's emission per person in kg",
+    )
+    budget_emission_per_person_per_day: float = Field(
+        description="Daily emission budget per person in kg",
+    )

@@ -70,7 +70,11 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 
   <!-- ───── Overview + Comparison side-by-side ───── -->
   <div class="flex flex-col lg:flex-row gap-6 mb-8">
-    <OverviewCard class="flex-1" overviewData={data.result} />
+    <OverviewCard
+      class="flex-1"
+      overviewData={data.result}
+      avgMeal={data.comparison.avg_emission_per_person_per_meal}
+    />
 
     <EmissionComparison
       ratio={data.comparison.ratio}
