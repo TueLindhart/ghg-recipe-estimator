@@ -24,4 +24,8 @@ export interface ComparisonResponse {
   reference_kg: number;
   ratio: number;
   helperText: string;
+  avg_emission_per_person_per_meal: number;
+  avg_emission_per_person_per_day: number;
+  budget_emission_per_person_per_meal: number;
+  budget_emission_per_person_per_day: number;
 }

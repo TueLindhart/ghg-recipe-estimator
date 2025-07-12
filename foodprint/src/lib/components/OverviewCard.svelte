@@ -5,6 +5,7 @@
   import type { RecipeCO2Output } from "$lib";
 
   export let overviewData: RecipeCO2Output;
+  export let avgMeal: number;
 
   type Stat = { label: string; value: string; unit?: string };
 
@@ -22,7 +23,7 @@
     { label: "Personer", value: overviewData.number_of_persons.toString() },
     {
       label: "Gennemsnit pr. måltid",
-      value: `${overviewData.avg_emission_per_person_per_meal.toString()}`,
+      value: `${avgMeal.toString()}`,
       unit: "kg",
     },
   ];
