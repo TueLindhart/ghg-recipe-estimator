@@ -1,10 +1,8 @@
 import { env } from "$env/dynamic/private";
 import { json, type RequestHandler } from "@sveltejs/kit";
-import { rejectNonBrowser } from "$lib/server/browserOnly";
 
 export const POST: RequestHandler = async ({ request }) => {
-  const forbidden = rejectNonBrowser(request);
-  if (forbidden) return forbidden;
+  
 
   const { url } = await request.json();
 

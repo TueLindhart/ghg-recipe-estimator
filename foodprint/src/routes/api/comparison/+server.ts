@@ -1,6 +1,5 @@
 import { env } from "$env/dynamic/private";
 import { json, type RequestHandler } from "@sveltejs/kit";
-import { rejectNonBrowser } from "$lib/server/browserOnly";
 
 /**
  * Proxy for GET /comparison?kgco2=<value> on the Python backend
@@ -10,8 +9,7 @@ import { rejectNonBrowser } from "$lib/server/browserOnly";
  *  – Returns plain JSON to the Svelte front-end
  */
 export const GET: RequestHandler = async ({ url, fetch, request }) => {
-  const forbidden = rejectNonBrowser(request);
-  if (forbidden) return forbidden;
+  
   /* ───── 1. Extract and validate input ───── */
   const kgco2 = url.searchParams.get("kgco2");
   if (!kgco2) {
