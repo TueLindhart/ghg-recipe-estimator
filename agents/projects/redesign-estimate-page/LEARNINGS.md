@@ -1,5 +1,3 @@
-
-
 # Learnings About the User's Preferences and Feedback
 
 ## General UI Preferences (User)
@@ -25,4 +23,56 @@
 
 ---
 
-Add further learnings here as the redesign progresses.
+## Learnings About Flowbite Svelte Tabs Component
+
+### Basic Usage
+- Import with:  
+  `import { Tabs, TabItem } from "flowbite-svelte";`
+- Wrap tab content in `<Tabs>`, each tab in `<TabItem>`.
+- Use `title="..."` for simple tab labels, or use the `titleSlot` for custom tab headers (e.g. icons, custom markup).
+- Example:
+  ```svelte
+  <Tabs>
+    <TabItem open title="Profile">
+      <p>Profile content here</p>
+    </TabItem>
+    <TabItem title="Settings">
+      <p>Settings content here</p>
+    </TabItem>
+  </Tabs>
+  ```
+
+### Styling Tabs
+- Use `tabStyle` prop on `<Tabs>` for built-in styles:
+  - `"underline"`: Underline active tab.
+  - `"pill"`: Pill-shaped tabs.
+  - `"full"`: Tabs stretch to full width of parent.
+- You can further customize tab appearance with `activeClass` and `inactiveClass` props on `<TabItem>`.
+- Example:
+  ```svelte
+  <Tabs tabStyle="underline">
+    <TabItem title="Profile">...</TabItem>
+  </Tabs>
+  ```
+
+### Styling Tab Content
+- Style tab content using Tailwind CSS classes directly inside each `<TabItem>`.
+- Example:
+  ```svelte
+  <TabItem title="Profile">
+    <div class="text-3xl font-bold text-center my-4">Big Number</div>
+    <div class="text-base text-gray-500 mt-2">Supporting text</div>
+  </TabItem>
+  ```
+- You can add any Svelte component or markup inside `<TabItem>`.
+
+### Advanced Features
+- Tabs can be disabled with the `disabled` prop.
+- Use icons in tab headers via the `titleSlot`.
+- You can add other Flowbite components (e.g. Timeline, Button) inside tab content.
+
+### Props Reference
+- `<Tabs>` props: `tabStyle`, `ulClass`, `contentClass`, `divider`.
+- `<TabItem>` props: `title`, `open`, `activeClass`, `inactiveClass`, `class`, `disabled`.
+
+###
