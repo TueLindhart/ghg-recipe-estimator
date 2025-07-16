@@ -202,10 +202,6 @@
         }
     ],
     "co2_per_person_kg": 1.5,
-    "avg_emission_per_person_per_meal": 1.8,
-    "avg_emission_per_person_per_day": 7.1,
-    "budget_emission_per_person_per_meal": 0.5,
-    "budget_emission_per_person_per_day": 2.0,
     "energy_per_person_kj": 5391.0,
     "fat_per_person_g": 77.0,
     "carbohydrate_per_person_g": 84.0,

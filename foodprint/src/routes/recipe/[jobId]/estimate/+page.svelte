@@ -76,7 +76,11 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 
   <!-- ───── Overview with info tabs ───── -->
   <div class="flex flex-col lg:flex-row gap-6 mb-8">
-    <OverviewCard class="flex-1" overviewData={data.result} />
+    <OverviewCard
+      class="flex-1"
+      overviewData={data.result}
+      avgMeal={data.comparison.avg_emission_per_person_per_meal}
+    />
 
     <Tabs class="flex-1" tabStyle="pill">
       <TabItem title="Sammenlign" open>

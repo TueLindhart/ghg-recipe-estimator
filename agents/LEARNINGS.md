@@ -9,6 +9,10 @@ This file collects observations about how the repository is organised and coding
 
 Further insights should be appended here as the code evolves.
 
+## API updates
+The comparison endpoint exposes constants for climate budgets and average
+emissions. These values are no longer included in the recipe result.
+
 ## Emission Spreadsheet
 
 The `data/DBv2.xlsx` file contains CO₂ emission information in two sheets: `DK`
