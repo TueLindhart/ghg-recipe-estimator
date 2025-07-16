@@ -76,7 +76,10 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 
   <!-- ───── Overview with info tabs (Tabs left, content right) ───── -->
   <div class="mb-8 flex flex-col lg:flex-row gap-6">
-    <OverviewCard overviewData={data.result} />
+    <OverviewCard
+      overviewData={data.result}
+      cardClass="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between h-64"
+    />
     <div class="flex flex-col justify-between">
       <Tabs tabStyle="pill">
         <TabItem title="Sammenlign" open>
@@ -85,11 +88,13 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
             mealBudget={data.comparison.budget_emission_per_person_per_meal}
             dayBudget={data.comparison.budget_emission_per_person_per_day}
             avgMeal={data.comparison.avg_emission_per_person_per_meal}
+            cardClass="max-w-full p-4 space-y-2"
           />
         </TabItem>
         <TabItem title="Svare til">
           <EquivalentComparison
             co2PerPerson={data.result.co2_per_person_kg ?? 0}
+            cardClass="max-w-full p-4 space-y-2"
           />
         </TabItem>
         <TabItem title="Næringsindhold">

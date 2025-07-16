@@ -4,11 +4,11 @@
   import { Card } from "flowbite-svelte";
 
   export let overviewData: RecipeCO2Output;
+  export let cardClass =
+    "!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between h-64";
 </script>
 
-<Card
-  class="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between h-64"
->
+<Card class={cardClass}>
   <div class="flex flex-col items-center justify-center flex-1">
     <span
       class="text-6xl md:text-[6rem] font-extrabold tracking-tight text-[#404040]"

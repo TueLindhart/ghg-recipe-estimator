@@ -5,13 +5,14 @@
   export let mealBudget: number;
   export let dayBudget: number;
   export let avgMeal: number;
+  export let cardClass = "max-w-full p-4 space-y-2";
 
   $: pctMeal = (co2PerPerson / mealBudget) * 100;
   $: pctDay = (co2PerPerson / dayBudget) * 100;
   $: pctAvg = (co2PerPerson / avgMeal) * 100;
 </script>
 
-<Card class="max-w-full p-4 space-y-2">
+<Card class={cardClass}>
   <div>
     <span class="text-2xl font-bold">{pctMeal.toFixed(0)}%</span>
     <span class="text-sm">
