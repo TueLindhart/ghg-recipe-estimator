@@ -2,7 +2,8 @@
   import { Card } from "flowbite-svelte";
 
   export let co2PerPerson: number;
-  export let cardClass = "max-w-full p-4 space-y-2";
+  export let cardClass =
+    "max-w-full p-6 py-8 space-y-2 min-h-64 flex flex-col justify-center";
 
   const CAR_KG_PER_KM = 0.19;
   const FLIGHT_KG_CPH_LON = 150;

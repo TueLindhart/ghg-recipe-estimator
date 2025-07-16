@@ -17,13 +17,15 @@
 
 ### Card Components
 ```svelte
-<Card class="p-4 relative">
+<Card class="p-6 relative min-h-80">
   <!-- Content -->
 </Card>
 ```
 - Use Flowbite's Card component as base
-- Consistent padding with `p-4`
-- Use `relative` positioning for parent containers
+- Standard padding: `p-6` for main content cards
+- Use `relative` positioning for parent containers with info icons
+- Tab components: `min-h-80` with `py-12` for adequate content space
+- **Critical**: Pass styling through `cardClass` prop, never hardcode in components
 
 ### Layout Spacing
 - Vertical rhythm:
@@ -78,3 +80,6 @@
 3. Use semantic HTML elements with appropriate ARIA attributes
 4. Follow mobile-first responsive design patterns
 5. Keep text styles consistent using the defined size and weight system
+6. **Pass styling through component props** - use `cardClass` for height/padding customization
+7. **Never hardcode styling** in components - maintain flexibility through props
+8. **Follow documentation patterns** - consistency is critical for maintainability

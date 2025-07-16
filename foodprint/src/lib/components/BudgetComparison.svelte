@@ -6,16 +6,16 @@
   export let mealBudget: number;
   export let dayBudget: number;
   export let avgMeal: number;
-  export let cardClass = "max-w-full";
+  export let cardClass =
+    "max-w-full p-6 py-8 space-y-2 min-h-64 flex flex-col justify-center";
 
   $: pctMeal = (co2PerPerson / mealBudget) * 100;
   $: pctDay = (co2PerPerson / dayBudget) * 100;
-  $: pctAvg = (co2PerPerson / avgMeal) * 100;
 
   let showModal = false;
 </script>
 
-<Card class="p-4 relative {cardClass}">
+<Card class={cardClass}>
   <!-- Info icon in the top-right corner -->
   <button
     class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 focus:outline-none"
@@ -25,22 +25,31 @@
     <InfoCircleOutline class="w-5 h-5" />
   </button>
 
-  <!-- Budget comparisons in horizontal layout -->
-  <div class="flex justify-center items-center gap-12 mb-4">
-    <div class="flex flex-col items-center">
-      <span class="text-2xl font-bold">{pctMeal.toFixed(0)}%</span>
-      <span class="text-sm mt-1">måltid budget</span>
-    </div>
-    <div class="flex flex-col items-center">
-      <span class="text-2xl font-bold">{pctDay.toFixed(0)}%</span>
-      <span class="text-sm mt-1">dagligt budget</span>
+  <!-- Centered container for budget comparisons -->
+  <div class="flex-grow flex items-center justify-center">
+    <div class="flex justify-center items-center gap-12">
+      <div class="flex flex-col items-center justify-center">
+        <span class="text-3xl font-bold text-[#404040]"
+          >{pctMeal.toFixed(0)}%</span
+        >
+        <span class="text-sm mt-1 text-[#404040]">af dit budget per måltid</span
+        >
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="text-3xl font-bold text-[#404040]"
+          >{pctDay.toFixed(0)}%</span
+        >
+        <span class="text-sm mt-1 text-[#404040]">af dit daglige budget</span>
+      </div>
     </div>
   </div>
 
   <!-- Average person comparison -->
-  <p class="text-xs text-gray-600">
-    Gennemsnitsdansker udleder {avgMeal} CO2e per måltid
-  </p>
+  <div class="flex flex-col items-center">
+    <p class="text-s text-center">
+      Gennemsnitsdansker udleder {avgMeal} CO2e per måltid
+    </p>
+  </div>
 </Card>
 
 <!-- Modal with budget details -->
@@ -50,12 +59,25 @@
   </div>
   <div class="p-6 space-y-4">
     <p>
+      CO2e budgetter er baseret på Concito's rapport der estimere hvad en
+      klima-venligt måltid udleder
+      <a
+        href="https://concito.dk/en/concito-bloggen/her-faar-du-mest-ernaering-klimaaftrykket-0?utm_source=chatgpt.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-600 hover:text-blue-800 underline"
+      >
+        (læs mere her)
+      </a>
+    </p>
+    <p>
       <span class="font-semibold">Måltid budget:</span>
-      {mealBudget} kg CO2
+      Budget på hvad der er et miljøvenligt måltid målt på CO2e på {mealBudget}
+      kg CO2
     </p>
     <p>
       <span class="font-semibold">Dagligt budget:</span>
-      {dayBudget} kg CO2
+      Budget på hvad man må udlede på en dag fra fødevare på {dayBudget} kg CO2
     </p>
   </div>
   <div slot="footer" class="flex justify-end">

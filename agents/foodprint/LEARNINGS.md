@@ -31,3 +31,10 @@
 - **Vertical Stacking**: Use `flex flex-col` for main layout, not `lg:flex-row`
 - **Responsive Design**: Cards should be compact on large screens, not full-width
 - **Content Alignment**: Center alignment for metrics, left for descriptions
+- **Height Consistency**: All tab components use `min-h-80` with `py-12` padding for visual balance
+- **Component Flexibility**: Always use `cardClass` prop for height/padding customization - never hardcode in components
+
+## Critical Implementation Pattern
+- **Styling Props**: All visual customization (height, padding, spacing) must be passed through component props
+- **Documentation Compliance**: Follow established patterns in documentation - deviating causes inconsistency
+- **Parent-Child Styling**: Parent components (`+page.svelte`) control child component appearance via props

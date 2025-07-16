@@ -78,35 +78,42 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   <div class="mb-8 flex flex-col lg:flex-row gap-6">
     <OverviewCard
       overviewData={data.result}
-      cardClass="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between h-64"
+      cardClass="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between"
     />
-    <div class="flex flex-col justify-between">
-      <Tabs tabStyle="pill">
+    <div class="flex-1 flex flex-col justify-center">
+      <Tabs tabStyle="pill" class="h-full">
         <TabItem title="Sammenlign" open>
           <BudgetComparison
             co2PerPerson={data.result.co2_per_person_kg ?? 0}
             mealBudget={data.comparison.budget_emission_per_person_per_meal}
             dayBudget={data.comparison.budget_emission_per_person_per_day}
             avgMeal={data.comparison.avg_emission_per_person_per_meal}
-            cardClass="max-w-full p-4 space-y-2"
+            cardClass="max-w-full p-6 py-12 relative lg:min-h-60 flex flex-col justify-center"
           />
         </TabItem>
         <TabItem title="Svare til">
           <EquivalentComparison
             co2PerPerson={data.result.co2_per_person_kg ?? 0}
-            cardClass="max-w-full p-4 space-y-2"
+            cardClass="max-w-full p-6 py-12 relative lg:min-h-60 flex flex-col justify-center"
           />
         </TabItem>
         <TabItem title="Næringsindhold">
-          <div class="flex items-center gap-4">
-            <span class="text-3xl font-bold">
-              {data.result.energy_per_person_kj ?? 0} kJ
-            </span>
-            <NutritionChart
-              fat={data.result.fat_per_person_g ?? 0}
-              carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
-              protein={data.result.protein_per_person_g ?? 0}
-            />
+          <div
+            class="bg-white border border-gray-200 rounded-lg shadow p-6 py-12 lg:min-h-60 flex items-center justify-center gap-6"
+          >
+            <div class="text-center">
+              <span class="text-3xl font-bold text-[#404040]">
+                {data.result.energy_per_person_kj ?? 0} kJ
+              </span>
+              <div class="text-sm text-gray-600 mt-1">Energi pr. person</div>
+            </div>
+            <div class="flex-1">
+              <NutritionChart
+                fat={data.result.fat_per_person_g ?? 0}
+                carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
+                protein={data.result.protein_per_person_g ?? 0}
+              />
+            </div>
           </div>
         </TabItem>
       </Tabs>

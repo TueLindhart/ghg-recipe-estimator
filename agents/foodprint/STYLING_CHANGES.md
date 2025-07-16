@@ -17,11 +17,25 @@ We modified several components to improve their flexibility and reusability by m
    - Simple cardClass prop: `max-w-full`
    - Info button uses standard position classes: `absolute top-2 right-2`
    - Vertical stacking for percentage and label with `flex flex-col items-center`
+   - **UPDATED**: Changed default `cardClass` to maintain basic styling while allowing height/padding customization from parent
 
 3. `EquivalentComparison.svelte`
    - Added `cardClass` prop with default styling
    - Default: `max-w-full p-4 space-y-2`
    - Made Card component's class customizable via prop
+   - **UPDATED**: Changed default `cardClass` to maintain basic styling while allowing height/padding customization from parent
+
+### Height and Padding Improvements (Latest Changes)
+4. **Component Height Standardization**
+   - All tab components now use consistent height: `min-h-80` (instead of previous `min-h-64`)
+   - Increased vertical padding: `py-12` (instead of previous `py-8`)
+   - Maintains `OverviewCard` height at `h-64` to flex with the tabs container
+   - **Key Learning**: Styling must be passed through `cardClass` prop, not hardcoded in components
+
+5. **Nutrition Tab Consistency**
+   - Updated nutrition tab container to match other tabs with `min-h-80` and `py-12`
+   - Maintained horizontal layout with energy value and chart side by side
+   - Applied same Card styling pattern as other tabs
 
 ### Parent Component Changes
 Updated `+page.svelte` to explicitly pass class props to child components, demonstrating how to customize component styling from the parent level.
@@ -32,17 +46,24 @@ Updated `+page.svelte` to explicitly pass class props to child components, demon
 - **Separation of Concerns**: Keep styling separate from logic
 - **Customizability with Defaults**: Components should work out of the box with sensible defaults but allow customization
 - **Consistency**: Follow a consistent pattern across all similar components
+- **Height Flexibility**: Use `cardClass` prop for height and padding adjustments, never hardcode in components
 
 ### Implementation Guidelines
 1. **Class Props Pattern**
    - Use consistent naming (e.g., `cardClass`)
    - Provide comprehensive default values
    - Pass style classes via props instead of hardcoding
+   - **CRITICAL**: All height and padding customization must come from parent via `cardClass`
 
 2. **Default Styling**
    - Components should have sensible default styles as prop defaults
    - Parent components can override defaults when needed
    - Maintains flexibility while keeping components reusable
+
+3. **Height and Padding Standards**
+   - Tab components: `min-h-80` with `py-12` for adequate content space
+   - Card components: Use relative positioning for info icons with `p-6` base padding
+   - Container components: Maintain flex relationships with appropriate heights
 
 ## Implementation Example
 ```svelte
