@@ -12,7 +12,7 @@
   $: washingHours = co2PerPerson / WASH_KG_PER_HOUR;
 </script>
 
-<Card class="space-y-2 p-4">
+<Card class="max-w-full">
   <div>
     <span class="text-2xl font-bold">{km.toFixed(0)} km</span>
     <span class="text-sm"> i en benzinbil</span>

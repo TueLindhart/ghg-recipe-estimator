@@ -74,41 +74,41 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   <!-- Maintain spacing where "Oversigt" was removed -->
   <div class="mb-4 mt-8"></div>
 
-  <!-- ───── Overview with info tabs ───── -->
-  <div class="flex flex-col lg:flex-row gap-6 mb-8">
+  <!-- ───── Overview with info tabs (Tabs left, content right) ───── -->
+  <div class="mb-8 flex flex-col lg:flex-row gap-6">
     <OverviewCard
-      class="flex-1"
       overviewData={data.result}
       avgMeal={data.comparison.avg_emission_per_person_per_meal}
     />
-
-    <Tabs class="flex-1" tabStyle="pill">
-      <TabItem title="Sammenlign" open>
-        <BudgetComparison
-          co2PerPerson={data.result.co2_per_person_kg ?? 0}
-          mealBudget={data.result.budget_emission_per_person_per_meal}
-          dayBudget={data.result.budget_emission_per_person_per_day}
-          avgMeal={data.result.avg_emission_per_person_per_meal}
-        />
-      </TabItem>
-      <TabItem title="Svare til">
-        <EquivalentComparison
-          co2PerPerson={data.result.co2_per_person_kg ?? 0}
-        />
-      </TabItem>
-      <TabItem title="Næringsindhold">
-        <div class="flex items-center gap-4">
-          <span class="text-3xl font-bold">
-            {data.result.energy_per_person_kj ?? 0} kJ
-          </span>
-          <NutritionChart
-            fat={data.result.fat_per_person_g ?? 0}
-            carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
-            protein={data.result.protein_per_person_g ?? 0}
+    <div class="flex flex-col justify-between">
+      <Tabs tabStyle="pill">
+        <TabItem title="Sammenlign" open>
+          <BudgetComparison
+            co2PerPerson={data.result.co2_per_person_kg ?? 0}
+            mealBudget={data.result.budget_emission_per_person_per_meal}
+            dayBudget={data.result.budget_emission_per_person_per_day}
+            avgMeal={data.result.avg_emission_per_person_per_meal}
           />
-        </div>
-      </TabItem>
-    </Tabs>
+        </TabItem>
+        <TabItem title="Svare til">
+          <EquivalentComparison
+            co2PerPerson={data.result.co2_per_person_kg ?? 0}
+          />
+        </TabItem>
+        <TabItem title="Næringsindhold">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl font-bold">
+              {data.result.energy_per_person_kj ?? 0} kJ
+            </span>
+            <NutritionChart
+              fat={data.result.fat_per_person_g ?? 0}
+              carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
+              protein={data.result.protein_per_person_g ?? 0}
+            />
+          </div>
+        </TabItem>
+      </Tabs>
+    </div>
   </div>
 
   <!-- ───── Tabs (unchanged) ───── -->

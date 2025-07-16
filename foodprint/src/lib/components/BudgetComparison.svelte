@@ -11,10 +11,12 @@
   $: pctAvg = (co2PerPerson / avgMeal) * 100;
 </script>
 
-<Card class="space-y-2 p-4">
+<Card class="max-w-full">
   <div>
     <span class="text-2xl font-bold">{pctMeal.toFixed(0)}%</span>
-    <span class="text-sm"> af dit budget per måltid på {mealBudget} kg CO2</span>
+    <span class="text-sm">
+      af dit budget per måltid på {mealBudget} kg CO2</span
+    >
   </div>
   <div>
     <span class="text-2xl font-bold">{pctDay.toFixed(0)}%</span>
@@ -22,6 +24,8 @@
   </div>
   <div>
     <span class="text-2xl font-bold">{pctAvg.toFixed(0)}%</span>
-    <span class="text-sm"> af en gennemsnitsdanskers måltid på {avgMeal} kg CO2</span>
+    <span class="text-sm">
+      af en gennemsnitsdanskers måltid på {avgMeal} kg CO2</span
+    >
   </div>
 </Card>
