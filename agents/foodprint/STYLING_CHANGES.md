@@ -12,9 +12,11 @@ We modified several components to improve their flexibility and reusability by m
    - Moved Card styling from hardcoded to configurable prop
 
 2. `BudgetComparison.svelte`
-   - Added `cardClass` prop with default styling
-   - Default: `max-w-full p-4 space-y-2`
-   - Made Card component's class customizable via prop
+   - Refactored to match IngredientCard pattern for info icon
+   - Core positioning classes moved to component: `p-4 relative`
+   - Simple cardClass prop: `max-w-full`
+   - Info button uses standard position classes: `absolute top-2 right-2`
+   - Vertical stacking for percentage and label with `flex flex-col items-center`
 
 3. `EquivalentComparison.svelte`
    - Added `cardClass` prop with default styling
@@ -24,27 +26,23 @@ We modified several components to improve their flexibility and reusability by m
 ### Parent Component Changes
 Updated `+page.svelte` to explicitly pass class props to child components, demonstrating how to customize component styling from the parent level.
 
-## Best Practices Learned
+## Best Practices & Patterns
 
-1. **Default Styling**
-   - Components should have sensible default styles
-   - Default styles should be provided as prop defaults
-   - Makes components work out of the box without configuration
+### Core Principles
+- **Separation of Concerns**: Keep styling separate from logic
+- **Customizability with Defaults**: Components should work out of the box with sensible defaults but allow customization
+- **Consistency**: Follow a consistent pattern across all similar components
 
-2. **Style Customization**
-   - Parent components should be able to override default styles
-   - Use props to pass style classes instead of hardcoding
-   - Maintains flexibility while keeping components reusable
-
-3. **Class Props Pattern**
-   - Name class props consistently (e.g., `cardClass`)
+### Implementation Guidelines
+1. **Class Props Pattern**
+   - Use consistent naming (e.g., `cardClass`)
    - Provide comprehensive default values
-   - Document the expected format and available options
+   - Pass style classes via props instead of hardcoding
 
-4. **Component Architecture**
-   - Keep styling separate from logic
-   - Make components customizable but with good defaults
-   - Follow a consistent pattern across all similar components
+2. **Default Styling**
+   - Components should have sensible default styles as prop defaults
+   - Parent components can override defaults when needed
+   - Maintains flexibility while keeping components reusable
 
 ## Implementation Example
 ```svelte
@@ -68,3 +66,19 @@ Updated `+page.svelte` to explicitly pass class props to child components, demon
 2. Document default styles in component documentation
 3. Create a style guide for consistent class prop naming
 4. Consider implementing theme support for global style changes
+
+## Consolidation Note
+
+**This document has been consolidated with other styling guidelines**:
+- Detailed component patterns: `/agents/projects/redesign-estimate-page/COMPONENT_PATTERNS.md`
+- Frontend architecture: `/agents/foodprint/LEARNINGS.md`
+- Overall project learnings: `/agents/LEARNINGS.md`
+
+The patterns described here are now part of a comprehensive component design system that ensures consistency across the entire project.
+
+## Related Documentation
+- **Component Patterns**: Complete styling and layout patterns
+- **Project Learnings**: Frontend-specific architectural decisions
+- **Design Process**: User preferences and design iteration approach
+
+This consolidation eliminates duplicate information and provides clear, non-conflicting guidance for component development.

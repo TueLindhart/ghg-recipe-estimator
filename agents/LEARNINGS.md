@@ -23,6 +23,15 @@ and `GB`.  The `DK` sheet is used for enrichment.  Column headers include
 `ID_food`, `ID_pack`, and `ID_retail`.
 
 ## Frontend design notes
-- The estimate page now uses multiple custom Svelte components to show comparisons and nutrition information. New files include `BudgetComparison.svelte`, `EquivalentComparison.svelte` and `NutritionChart.svelte`.
-- `EmissionBarChart.svelte` accepts a `metric` prop so the graph can display CO₂, energy or macronutrients.
-- All custom components rely on `flowbite-svelte` primitives such as `Card` and `Chart` for consistent styling.
+- The estimate page uses multiple custom Svelte components: `BudgetComparison.svelte`, `EquivalentComparison.svelte`, `NutritionChart.svelte`, and `OverviewCard.svelte`
+- `EmissionBarChart.svelte` accepts a `metric` prop for displaying CO₂, energy or macronutrients
+- All custom components rely on `flowbite-svelte` primitives (`Card`, `Chart`, `Tabs`, `TabItem`) for consistent styling
+- **Component Architecture Pattern**: 
+  - Components with info icons follow consistent pattern: Card has `relative` positioning and `p-4` padding
+  - Info button is absolutely positioned (`absolute top-2 right-2`) as direct child of Card
+  - Props focus on layout control (`cardClass="max-w-full"`), core styling stays in component
+  - Text hierarchy: `text-2xl font-bold` for primary numbers, `text-sm mt-1` for labels
+- **Layout Requirements**: 
+  - Tabs should be positioned above content (vertical stack), not beside it
+  - Use `flex flex-col` for main layout instead of `lg:flex-row` for tab positioning
+  - Overview card should display `co2_per_person_kg` prominently with larger font size
