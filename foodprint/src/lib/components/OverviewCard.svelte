@@ -11,16 +11,14 @@
 >
   <div class="flex flex-col items-center justify-center flex-1">
     <span
-      class="text-6xl md:text-[6rem] font-extrabold tracking-tight text-gray-900"
+      class="text-6xl md:text-[6rem] font-extrabold tracking-tight text-[#404040]"
     >
       {overviewData.co2_per_person_kg?.toLocaleString()}
     </span>
-    <span class="text-2xl font-bold text-gray-900 -mt-2"
-      >kg CO2e pr. person</span
-    >
+    <span class="text-xl font-bold text-[#404040]">kg CO2e pr. person</span>
   </div>
   <div class="flex items-center justify-center">
-    <span class="text-xl text-gray-900 mb-2">
+    <span class="text-l mb-2">
       {overviewData.total_co2_kg} kg co2e for {overviewData.number_of_persons} personer
     </span>
   </div>

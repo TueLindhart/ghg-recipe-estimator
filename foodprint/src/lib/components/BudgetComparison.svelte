@@ -11,7 +11,7 @@
   $: pctAvg = (co2PerPerson / avgMeal) * 100;
 </script>
 
-<Card class="max-w-full">
+<Card class="max-w-full p-4 space-y-2">
   <div>
     <span class="text-2xl font-bold">{pctMeal.toFixed(0)}%</span>
     <span class="text-sm">
