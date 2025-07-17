@@ -31,13 +31,26 @@ export interface RecipeCO2Output {
   ingredients: IngredientOutput[];
 }
 
-export interface ComparisonResponse {
+export interface Comparison {
+  label: string;
   input_co2_kg: number;
-  reference_kg: number;
-  ratio: number;
-  helperText: string;
-  avg_emission_per_person_per_meal: number;
-  avg_emission_per_person_per_day: number;
-  budget_emission_per_person_per_meal: number;
-  budget_emission_per_person_per_day: number;
+  reference_co2_kg: number;
+  comparison: number;
+  help_text: string;
+}
+
+export interface AvgEmissionPerPerson {
+  meal: number;
+  day: number;
+}
+
+export interface BudgetEmissionPerPerson {
+  meal: number;
+  day: number;
+}
+
+export interface ComparisonResponse {
+  comparisons: Comparison[];
+  avg_emission_per_person: AvgEmissionPerPerson;
+  budget_emission_per_person: BudgetEmissionPerPerson;
 }

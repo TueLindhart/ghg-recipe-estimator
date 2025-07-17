@@ -85,21 +85,21 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
         <TabItem title="Sammenlign" open>
           <BudgetComparison
             co2PerPerson={data.result.co2_per_person_kg ?? 0}
-            mealBudget={data.comparison.budget_emission_per_person_per_meal}
-            dayBudget={data.comparison.budget_emission_per_person_per_day}
-            avgMeal={data.comparison.avg_emission_per_person_per_meal}
-            cardClass="max-w-full p-6 py-12 relative lg:min-h-60 flex flex-col justify-center"
+            mealBudget={data.comparison.budget_emission_per_person.meal}
+            dayBudget={data.comparison.budget_emission_per_person.day}
+            avgMeal={data.comparison.avg_emission_per_person.meal}
+            cardClass="max-w-full lg:p-6 lg:py-12  relative lg:min-h-60 flex flex-col justify-center"
           />
         </TabItem>
         <TabItem title="Svare til">
           <EquivalentComparison
-            co2PerPerson={data.result.co2_per_person_kg ?? 0}
-            cardClass="max-w-full p-6 py-12 relative lg:min-h-60 flex flex-col justify-center"
+            comparisons={data.comparison.comparisons}
+            cardClass="max-w-full lg:p-6 lg:py-12  relative lg:min-h-60  flex flex-col justify-center"
           />
         </TabItem>
         <TabItem title="Næringsindhold">
           <div
-            class="bg-white border border-gray-200 rounded-lg shadow p-6 py-12 lg:min-h-60 flex items-center justify-center gap-6"
+            class="bg-white border border-gray-200 rounded-lg shadow lg:p-6 lg:py-12 lg:min-h-60 flex items-center justify-center gap-6"
           >
             <div class="text-center">
               <span class="text-3xl font-bold text-[#404040]">

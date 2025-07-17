@@ -15,19 +15,6 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
 )
 
-# https://concito.dk/files/media/document/Danmarks%20globale%20forbrugsudledninger.pdf
-# Average Danish dinner emissions (kg CO₂e / capita)
-# 13 [ton / year]  * 20 % / 365 [days] = 0.00712 ton CO₂e / day
-# 0.00721 ton CO₂e / day * 1000 = 7.12 kg CO₂e / day
-AVG_EMISSION_PER_CAPITA_PER_DAY = 7.1
-# Average Danish dinner emissions (kg CO₂e / meal)
-# 7.12 kg CO₂e / day / 4 meals per day = 1.78 kg CO₂e / meal
-AVG_EMISSION_PER_CAPITA_PER_MEAL = 1.8
-
-# https://concito.dk/en/concito-bloggen/her-faar-du-mest-ernaering-klimaaftrykket-0?utm_source=chatgpt.com
-BUDGET_EMISSION_PER_CAPITA_PER_DAY = 2.0
-BUDGET_EMISSION_PER_CAPITA_PER_MEAL = 0.5
-
 
 def generate_output_model(
     enriched_recipe: EnrichedRecipe,

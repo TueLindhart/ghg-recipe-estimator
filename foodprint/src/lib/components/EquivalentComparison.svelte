@@ -1,30 +1,45 @@
 <script lang="ts">
+  import type { Comparison } from "$lib/types";
   import { Card } from "flowbite-svelte";
+  import { Car, Plane, WashingMachine } from "lucide-svelte";
 
-  export let co2PerPerson: number;
-  export let cardClass =
-    "max-w-full p-6 py-8 space-y-2 min-h-64 flex flex-col justify-center";
+  export let comparisons: Comparison[];
+  export let cardClass = "";
 
-  const CAR_KG_PER_KM = 0.19;
-  const FLIGHT_KG_CPH_LON = 150;
-  const WASH_KG_PER_HOUR = 0.6;
-
-  $: km = co2PerPerson / CAR_KG_PER_KM;
-  $: mealsForFlight = FLIGHT_KG_CPH_LON / co2PerPerson;
-  $: washingHours = co2PerPerson / WASH_KG_PER_HOUR;
+  // Function to get the appropriate icon based on the comparison label
+  function getIcon(label: string) {
+    if (label.includes("Dieselbil")) {
+      return Car;
+    } else if (label.includes("Flyrejse")) {
+      return Plane;
+    } else if (label.includes("Vaskemaskine")) {
+      return WashingMachine;
+    }
+    return Car; // Default fallback
+  }
 </script>
 
 <Card class={cardClass}>
-  <div>
-    <span class="text-2xl font-bold">{km.toFixed(0)} km</span>
-    <span class="text-sm"> i en benzinbil</span>
-  </div>
-  <div>
-    <span class="text-2xl font-bold">{mealsForFlight.toFixed(0)}×</span>
-    <span class="text-sm"> så mange måltider for en flyrejse KBH-London</span>
-  </div>
-  <div>
-    <span class="text-2xl font-bold">{washingHours.toFixed(0)} timer</span>
-    <span class="text-sm"> vaskemaskine</span>
+  <!-- Centered container for equivalent comparisons -->
+  <div class="flex-grow flex items-start lg:items-center justify-center">
+    <div class="flex justify-center items-start lg:items-center gap-12">
+      {#each comparisons as comparison}
+        <div class="flex flex-col items-center">
+          <!-- Icon -->
+          <svelte:component
+            this={getIcon(comparison.label)}
+            class="w-8 h-8 text-[#404040] mb-3"
+          />
+          <!-- Number -->
+          <span class="text-3xl font-bold text-[#404040]"
+            >{comparison.comparison.toFixed(0)}</span
+          >
+          <!-- Description -->
+          <span class="text-sm mt-1 text-[#404040] text-center"
+            >{comparison.help_text}</span
+          >
+        </div>
+      {/each}
+    </div>
   </div>
 </Card>
