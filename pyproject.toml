@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "food-co2-estimator"
-version = "0.3.5"
+version = "0.3.8"
 description = "Repository for estimating CO2 emission from the ingredient list of recipies"
 authors = ["Tue Thomsen"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-langchain = "^0.3.5"
+langchain = "^0.3.26"
 langdetect = "^1.0.9"
 validators = "^0.21.2"
 bs4 = "^0.0.1"
@@ -80,3 +80,10 @@ filterwarnings = [
     "ignore:As the c extension couldn't be imported, `google-crc32c` is using a pure python implementation that is significantly slower:RuntimeWarning",
 ]
 asyncio_default_fixture_loop_scope = "function"
+
+[tool.punch]
+version = "0.3.8"
+[[tool.punch.files]]
+path = "pyproject.toml"
+search = 'version = "{version}"'
+replace = 'version = "{new_version}"'

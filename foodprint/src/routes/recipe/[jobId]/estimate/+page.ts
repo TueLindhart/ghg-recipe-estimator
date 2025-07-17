@@ -1,7 +1,7 @@
 // src/routes/recipe/[jobId]/estimate/+page.ts
+import type { ComparisonResponse, RecipeCO2Output } from '$lib';
 import { error, redirect } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
-import type { RecipeCO2Output, ComparisonResponse } from '$lib';
 
 /*
  * The loader runs first (both on the server and in the browser).
@@ -34,7 +34,7 @@ export const load: PageLoad = async ({ params, fetch }) => {
         const result: RecipeCO2Output = JSON.parse(statusData.result);
 
 	const cmpRes = await fetch(
-		`/api/comparison?kgco2=${result.total_co2_kg}`
+		`/api/comparison?kgco2=${result.co2_per_person_kg}`
 	);
 	if (!cmpRes.ok) throw new Error("Comparison service failed");
         const comparison: ComparisonResponse = await cmpRes.json();
