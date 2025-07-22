@@ -230,11 +230,8 @@ async def clear_status(uid: str):
 @app.get("/comparison", response_model=ComparisonResponse)
 async def comparison_endpoint(kgco2: float):
     """
-    Compare <kgco2> to 100 % of a CPH→NYC flight.
-
-    Query params
-    ------------
-    kgco2 : float   Amount of CO₂ (kg) you wish to compare.
+    Endpoint to compare CO2 emissions against various benchmarks.
+    Accepts a float representing CO2 emissions in kg and returns a comparison response.
     """
     try:
         return compare_co2(kgco2)

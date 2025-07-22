@@ -39,4 +39,21 @@
       ? `${ingredient.co2_per_kg} kg CO2e/kg`
       : "-"}
   </p>
+
+  <p class="text-sm">
+    <span class="font-semibold">Energi:</span>
+    {ingredient.energy_kj != null ? `${ingredient.energy_kj} kJ` : "-"}
+  </p>
+  <p class="text-sm">
+    <span class="font-semibold">Fedt:</span>
+    {ingredient.fat_g != null ? `${ingredient.fat_g} g` : "-"}
+  </p>
+  <p class="text-sm">
+    <span class="font-semibold">Kulhydrat:</span>
+    {ingredient.carbohydrate_g != null ? `${ingredient.carbohydrate_g} g` : "-"}
+  </p>
+  <p class="text-sm">
+    <span class="font-semibold">Protein:</span>
+    {ingredient.protein_g != null ? `${ingredient.protein_g} g` : "-"}
+  </p>
 </Card>

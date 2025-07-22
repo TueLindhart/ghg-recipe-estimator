@@ -92,20 +92,12 @@ class RecipeCO2Output(BaseModel):
         description="CO2 emission per person in kg",
         default=None,
     )
-    avg_emission_per_person_per_meal: float = Field(
-        description="Average meal emission per person in kg",
-    )
-    avg_emission_per_person_per_day: float = Field(
-        description="Average daily emission per person in kg",
-    )
-    budget_emission_per_person_per_meal: float = Field(
-        description="Budget for one meal's emission per person in kg",
-    )
-    budget_emission_per_person_per_day: float = Field(
-        description="Daily emission per person in kg",
-    )
     energy_per_person_kj: float | None = Field(
         description="Energy per person in kJ",
+        default=None,
+    )
+    calories_per_person_kcal: float | None = Field(
+        description="Calories per person in kcal",
         default=None,
     )
     fat_per_person_g: float | None = Field(
