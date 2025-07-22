@@ -25,6 +25,7 @@ export interface RecipeCO2Output {
   budget_emission_per_person_per_meal: number;
   budget_emission_per_person_per_day: number;
   energy_per_person_kj?: number | null;
+  calories_per_person_kcal?: number | null;
   fat_per_person_g?: number | null;
   carbohydrate_per_person_g?: number | null;
   protein_per_person_g?: number | null;

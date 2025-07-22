@@ -15,6 +15,8 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
 )
 
+KJ_TO_KCAL_CONVERSION_FACTOR = 4.184
+
 
 def generate_output_model(
     enriched_recipe: EnrichedRecipe,
@@ -36,6 +38,11 @@ def generate_output_model(
     )
     co2_per_person = calculate_co2_per_person(total_co2, number_of_persons)
 
+    # Convert kJ to kcal (1 kcal = 4.184 kJ)
+    calories_per_person = None
+    if energy_per_person is not None and energy_per_person > 0:
+        calories_per_person = energy_per_person / KJ_TO_KCAL_CONVERSION_FACTOR
+
     return create_recipe_output(
         enriched_recipe,
         ingredients,
@@ -43,6 +50,7 @@ def generate_output_model(
         number_of_persons,
         co2_per_person,
         energy_per_person,
+        calories_per_person,
         fat_per_person,
         carb_per_person,
         protein_per_person,
@@ -268,6 +276,7 @@ def create_recipe_output(
     persons: int | None,
     co2_per_person: float | None,
     energy_per_person: float | None,
+    calories_per_person: float | None,
     fat_per_person: float | None,
     carb_per_person: float | None,
     protein_per_person: float | None,
@@ -281,6 +290,9 @@ def create_recipe_output(
         co2_per_person_kg=co2_per_person,
         ingredients=ingredients,
         energy_per_person_kj=round(energy_per_person, 0) if energy_per_person else None,
+        calories_per_person_kcal=int(round(calories_per_person, 0))
+        if calories_per_person
+        else None,
         fat_per_person_g=round(fat_per_person, 0) if fat_per_person else None,
         carbohydrate_per_person_g=round(carb_per_person, 0)
         if carb_per_person

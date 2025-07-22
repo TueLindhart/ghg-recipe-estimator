@@ -96,6 +96,10 @@ class RecipeCO2Output(BaseModel):
         description="Energy per person in kJ",
         default=None,
     )
+    calories_per_person_kcal: float | None = Field(
+        description="Calories per person in kcal",
+        default=None,
+    )
     fat_per_person_g: float | None = Field(
         description="Fat per person in grams",
         default=None,

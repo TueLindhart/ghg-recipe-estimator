@@ -9,7 +9,7 @@
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
 
   import type { IngredientOutput } from "$lib";
-  import { Button, Modal, TabItem, Tabs } from "flowbite-svelte";
+  import { Button, Card, Modal, TabItem, Tabs } from "flowbite-svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -98,23 +98,39 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
           />
         </TabItem>
         <TabItem title="Næringsindhold">
-          <div
-            class="bg-white border border-gray-200 rounded-lg shadow lg:p-6 lg:py-12 lg:min-h-60 flex items-center justify-center gap-6"
+          <Card
+            class="max-w-full !lg:p-6 !lg:py-12 relative lg:min-h-60 flex flex-col justify-center"
           >
-            <div class="text-center">
-              <span class="text-3xl font-bold text-[#404040]">
-                {data.result.energy_per_person_kj ?? 0} kJ
-              </span>
-              <div class="text-sm text-gray-600 mt-1">Energi pr. person</div>
+            <div
+              class="flex flex-col lg:flex-row items-center justify-center gap-6"
+            >
+              <div class="text-center space-y-3 lg:space-y-4">
+                <div>
+                  <span class="text-3xl font-bold text-[#404040]">
+                    {data.result.energy_per_person_kj ?? 0} kJ
+                  </span>
+                  <div class="text-sm text-gray-600 mt-1">
+                    Energi pr. person
+                  </div>
+                </div>
+                <div>
+                  <span class="text-2xl font-bold text-[#404040]">
+                    {data.result.calories_per_person_kcal ?? 0} kcal
+                  </span>
+                  <div class="text-sm text-gray-600 mt-1">
+                    Kalorier pr. person
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 w-full lg:w-auto">
+                <NutritionChart
+                  fat={data.result.fat_per_person_g ?? 0}
+                  carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
+                  protein={data.result.protein_per_person_g ?? 0}
+                />
+              </div>
             </div>
-            <div class="flex-1">
-              <NutritionChart
-                fat={data.result.fat_per_person_g ?? 0}
-                carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
-                protein={data.result.protein_per_person_g ?? 0}
-              />
-            </div>
-          </div>
+          </Card>
         </TabItem>
       </Tabs>
     </div>
