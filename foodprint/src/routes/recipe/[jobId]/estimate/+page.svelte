@@ -81,7 +81,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
       cardClass="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between"
     />
     <div class="flex-1 flex flex-col justify-center">
-      <Tabs tabStyle="pill" class="h-full">
+      <Tabs class="h-full">
         <TabItem title="Sammenlign" open>
           <BudgetComparison
             co2PerPerson={data.result.co2_per_person_kg ?? 0}
@@ -137,7 +137,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   </div>
 
   <!-- ───── Tabs (unchanged) ───── -->
-  <Tabs class="mt-8" tabStyle="pill">
+  <Tabs class="mt-8">
     <TabItem title="Ingredienser" open>
       <div class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto">
         <IngredientGrid
