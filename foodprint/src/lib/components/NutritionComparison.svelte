@@ -19,15 +19,15 @@
         <div class="text-center space-y-3 lg:space-y-4">
           <div>
             <span class="text-3xl font-bold text-[#404040]">
-              {energyPerPersonKj} kJ
-            </span>
-            <div class="text-sm text-gray-600 mt-1">Energi pr. person</div>
-          </div>
-          <div>
-            <span class="text-2xl font-bold text-[#404040]">
-              {caloriesPerPersonKcal} kcal
+              {caloriesPerPersonKcal}
             </span>
             <div class="text-sm text-gray-600 mt-1">Kalorier pr. person</div>
+          </div>
+          <div>
+            <span class="text-3xl font-bold text-[#404040]">
+              {energyPerPersonKj}
+            </span>
+            <div class="text-sm text-gray-600 mt-1">Kilojoule pr. person</div>
           </div>
         </div>
         <div class="flex-1 w-full lg:w-auto">

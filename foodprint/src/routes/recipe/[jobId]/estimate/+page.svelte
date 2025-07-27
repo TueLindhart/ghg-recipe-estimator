@@ -39,6 +39,18 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
 
   let chartMetric: "co2" | "energy" | "protein" | "carbohydrate" | "fat" =
     "co2";
+
+  // Track scroll position for dynamic header border
+  let scrollY = 0;
+  let isScrolled = false;
+  let headerElement: HTMLDivElement;
+  let headerOffsetTop = 0;
+
+  $: if (headerElement) {
+    headerOffsetTop = headerElement.offsetTop;
+  }
+
+  $: isScrolled = scrollY > headerOffsetTop;
 </script>
 
 <svelte:head>
@@ -49,28 +61,40 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   >
 </svelte:head>
 
-<div class="container mx-auto px-4">
-  <div class="mt-4 flex flex-wrap items-center gap-4">
-    <ReturnHomeButton />
+<svelte:window bind:scrollY />
 
-    {#if data.result.url}
-      <BaseButton
-        ariaLabel="Gå til opskrift"
-        onClick={() => window.open(data.result.url, "_blank")}
-      >
-        Gå til opskrift
-      </BaseButton>
-    {/if}
+<!-- Sticky header -->
+<div
+  bind:this={headerElement}
+  class="sticky top-0 z-50 bg-white {isScrolled
+    ? 'border-b border-gray-200'
+    : ''}"
+>
+  <div class="container mx-auto px-4">
+    <div class="py-4 flex flex-wrap items-center gap-4">
+      <ReturnHomeButton />
 
-    {#if data.result.title}
-      <!-- “basis-full” makes the h1 start on its own line below 640 px;
-         from the sm breakpoint up it behaves like normal inline content -->
-      <h1 class="text-2xl basis-full sm:basis-auto">
-        <span class="font-bold">{data.result.title}</span> af {domainDisplay}
-      </h1>
-    {/if}
+      {#if data.result.url}
+        <BaseButton
+          ariaLabel="Gå til opskrift"
+          onClick={() => window.open(data.result.url, "_blank")}
+        >
+          Gå til opskrift
+        </BaseButton>
+      {/if}
+
+      {#if data.result.title}
+        <!-- "basis-full" makes the h1 start on its own line below 640 px;
+           from the sm breakpoint up it behaves like normal inline content -->
+        <h1 class="text-2xl basis-full sm:basis-auto">
+          <span class="font-bold">{data.result.title}</span> af {domainDisplay}
+        </h1>
+      {/if}
+    </div>
   </div>
+</div>
 
+<div class="container mx-auto px-4">
   <!-- Maintain spacing where "Oversigt" was removed -->
   <div class="mb-4 mt-8"></div>
 
@@ -81,7 +105,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
       cardClass="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between"
     />
     <div class="flex-1 flex flex-col justify-center">
-      <Tabs class="h-full">
+      <Tabs class="">
         <TabItem title="Sammenlign" open>
           <BudgetComparison
             co2PerPerson={data.result.co2_per_person_kg ?? 0}
@@ -126,7 +150,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
       <div
         class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto space-y-2"
       >
-        <select bind:value={chartMetric} class="border rounded p-1">
+        <select bind:value={chartMetric} class="border rounded p-1 w-30">
           <option value="co2">CO2e kg</option>
           <option value="energy">Energi kJ</option>
           <option value="protein">Protein g</option>

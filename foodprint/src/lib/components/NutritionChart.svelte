@@ -56,7 +56,7 @@
       enabled: true,
       formatter: function (val: number, opts: any) {
         const seriesName = opts.w.config.series[opts.seriesIndex].name;
-        return val > 0 ? `${seriesName}\n${val}g` : "";
+        return val > 0 ? `${seriesName}\n ${val}g` : "";
       },
       style: {
         fontSize: "10px",
