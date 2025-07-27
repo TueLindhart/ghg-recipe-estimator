@@ -4,12 +4,12 @@
   import EmissionBarChart from "$lib/components/EmissionBarChart.svelte";
   import EquivalentComparison from "$lib/components/EquivalentComparison.svelte";
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
-  import NutritionChart from "$lib/components/NutritionChart.svelte";
+  import NutritionComparison from "$lib/components/NutritionComparison.svelte";
   import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
 
   import type { IngredientOutput } from "$lib";
-  import { Button, Card, Modal, TabItem, Tabs } from "flowbite-svelte";
+  import { Button, Modal, TabItem, Tabs } from "flowbite-svelte";
   import type { PageData } from "./$types";
 
   export let data: PageData;
@@ -98,39 +98,14 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
           />
         </TabItem>
         <TabItem title="Næringsindhold">
-          <Card
-            class="max-w-full !lg:p-6 !lg:py-12 relative lg:min-h-60 flex flex-col justify-center"
-          >
-            <div
-              class="flex flex-col lg:flex-row items-center justify-center gap-6"
-            >
-              <div class="text-center space-y-3 lg:space-y-4">
-                <div>
-                  <span class="text-3xl font-bold text-[#404040]">
-                    {data.result.energy_per_person_kj ?? 0} kJ
-                  </span>
-                  <div class="text-sm text-gray-600 mt-1">
-                    Energi pr. person
-                  </div>
-                </div>
-                <div>
-                  <span class="text-2xl font-bold text-[#404040]">
-                    {data.result.calories_per_person_kcal ?? 0} kcal
-                  </span>
-                  <div class="text-sm text-gray-600 mt-1">
-                    Kalorier pr. person
-                  </div>
-                </div>
-              </div>
-              <div class="flex-1 w-full lg:w-auto">
-                <NutritionChart
-                  fat={data.result.fat_per_person_g ?? 0}
-                  carbohydrate={data.result.carbohydrate_per_person_g ?? 0}
-                  protein={data.result.protein_per_person_g ?? 0}
-                />
-              </div>
-            </div>
-          </Card>
+          <NutritionComparison
+            energyPerPersonKj={data.result.energy_per_person_kj ?? 0}
+            caloriesPerPersonKcal={data.result.calories_per_person_kcal ?? 0}
+            fatPerPersonG={data.result.fat_per_person_g ?? 0}
+            carbohydratePerPersonG={data.result.carbohydrate_per_person_g ?? 0}
+            proteinPerPersonG={data.result.protein_per_person_g ?? 0}
+            cardClass="max-w-full lg:p-6 lg:py-12 relative lg:min-h-60 flex flex-col justify-center"
+          />
         </TabItem>
       </Tabs>
     </div>

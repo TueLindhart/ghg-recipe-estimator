@@ -41,6 +41,9 @@
         left: 0,
       },
       stacked: true,
+      animations: {
+        enabled: false,
+      },
     },
     plotOptions: {
       bar: {

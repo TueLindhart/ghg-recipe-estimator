@@ -24,30 +24,34 @@
     <InfoCircleOutline class="w-5 h-5" />
   </button>
 
-  <!-- Centered container for budget comparisons -->
-  <div class="flex-grow flex items-center justify-center">
-    <div class="flex justify-center items-center gap-12">
-      <div class="flex flex-col items-center justify-center">
-        <span class="text-3xl font-bold text-[#404040]"
-          >{pctMeal.toFixed(0)}%</span
-        >
-        <span class="text-sm mt-2 text-[#404040]">af dit budget per måltid</span
-        >
-      </div>
-      <div class="flex flex-col items-center">
-        <span class="text-3xl font-bold text-[#404040]"
-          >{pctDay.toFixed(0)}%</span
-        >
-        <span class="text-sm mt-2 text-[#404040]">af dit daglige budget</span>
+  <!-- Main content container with consistent height -->
+  <div class="flex flex-col h-full min-h-0 lg:min-h-52">
+    <!-- Centered container for budget comparisons -->
+    <div class="flex-grow flex items-center justify-center">
+      <div class="flex justify-center items-center gap-12">
+        <div class="flex flex-col items-center justify-center">
+          <span class="text-3xl font-bold text-[#404040]"
+            >{pctMeal.toFixed(0)}%</span
+          >
+          <span class="text-sm mt-2 text-[#404040]"
+            >af dit budget per måltid</span
+          >
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-3xl font-bold text-[#404040]"
+            >{pctDay.toFixed(0)}%</span
+          >
+          <span class="text-sm mt-2 text-[#404040]">af dit daglige budget</span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Average person comparison -->
-  <div class="flex flex-col items-center mt-8">
-    <p class="text-sm text-center">
-      Gennemsnitsdansker udleder {avgMeal} CO2e per måltid
-    </p>
+    <!-- Average person comparison -->
+    <div class="flex flex-col items-center mt-8">
+      <p class="text-sm text-center">
+        Gennemsnitsdansker udleder {avgMeal} CO2e per måltid
+      </p>
+    </div>
   </div>
 </Card>
 
