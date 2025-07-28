@@ -34,14 +34,16 @@
             >{pctMeal.toFixed(0)}%</span
           >
           <span class="text-sm mt-2 text-[#404040]"
-            >af dit budget per måltid</span
+            >af dit CO2e-budget per måltid</span
           >
         </div>
         <div class="flex flex-col items-center">
           <span class="text-3xl font-bold text-[#404040]"
             >{pctDay.toFixed(0)}%</span
           >
-          <span class="text-sm mt-2 text-[#404040]">af dit daglige budget</span>
+          <span class="text-sm mt-2 text-[#404040]"
+            >af dit daglige måltids CO2e-budget</span
+          >
         </div>
       </div>
     </div>
