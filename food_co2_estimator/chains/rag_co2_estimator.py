@@ -30,18 +30,22 @@ from food_co2_estimator.utils.llm_model import LLMFactory
 
 NEGLIGIBLE_THRESHOLD = 0.005  # Remove threshold?
 INGREDIENTS_TO_IGNORE = ["salt", "water", "pepper"]
+FOODDATABASE_PATH = (
+    Path(__file__).resolve().parent.parent / "data" / "fooddatabase.xlsx"
+)
 
 
 @lru_cache(maxsize=1)
 def _load_emission_data() -> dict[str, dict[str, str]]:
     """Load emission metadata from the DBv2.xlsx DK sheet using pandas."""
-    path = Path(__file__).resolve().parents[2] / "data" / "DBv2.xlsx"
-    df = pd.read_excel(path, sheet_name="DK")
+    df = pd.read_excel(FOODDATABASE_PATH, sheet_name="DK")
     data: dict[str, dict[str, str]] = {}
     for record in df.to_dict(orient="records"):
         key = record.get("ID_Ra")
         if key is not None and key != "":
-            data[str(key)] = record
+            data[str(key)] = {
+                str(k): str(v) if v is not None else "" for k, v in record.items()
+            }
     return data
 
 

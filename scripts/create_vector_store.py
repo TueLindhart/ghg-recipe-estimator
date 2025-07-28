@@ -9,7 +9,7 @@ from langchain_core.documents import Document
 from food_co2_estimator.data.vector_store.vector_store import get_vector_store
 from food_co2_estimator.language.detector import Languages
 
-EXCEL_FILE_DIR = f"{os.getcwd()}/data/DBv2.xlsx"
+EXCEL_FILE_DIR = f"{os.getcwd()}/food_co2_estimator/data/fooddatabase.xlsx"
 
 # Read Excel files
 
