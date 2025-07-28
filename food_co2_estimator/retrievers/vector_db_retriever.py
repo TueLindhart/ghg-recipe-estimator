@@ -9,6 +9,9 @@ from food_co2_estimator.language.detector import Languages
 
 MANUAL_MATCHING_EXCEPTIONS = {
     "oksekød": "oksekød, gennemsnitligt",  # Beef must match to average unless specified
+    "beef": "beef, average",  # Beef must match to average unless specified
+    "kylling": "kylling, bryst",  # Chicken must match to breast unless specified
+    "chicken": "chicken, breast",  # Chicken must match to breast unless specified
 }
 
 # List of number words to recognize spelled-out quantities
