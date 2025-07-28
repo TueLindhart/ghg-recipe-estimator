@@ -7,7 +7,7 @@
         },
         {
             "ingredient": "2 fed hvidløg",
-            "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_calculation": "1 fed hvidløg = 0.004 kg, 2 * 0.004 kg = 0.008 kg",
             "weight_in_kg": 0.008
         },
         {
@@ -27,17 +27,17 @@
         },
         {
             "ingredient": "1 stor håndfuld frisk basilikum",
-            "weight_calculation": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_calculation": "Håndfuld krydderurter (basilikum, oregano osv.) = 0.025 kg, 1 * 0.025 kg = 0.025 kg",
             "weight_in_kg": 0.025
         },
         {
             "ingredient": "2 dl fløde",
-            "weight_calculation": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
             "weight_in_kg": 0.2
         },
         {
             "ingredient": "1 dl vand",
-            "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "weight_in_kg": 0.1
         },
         {

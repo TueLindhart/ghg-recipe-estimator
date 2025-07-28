@@ -71,9 +71,14 @@ using dictionary formatting.
      - "chicken, leg, flesh and skin, raw" is a better match than "minced chicken" to "chicken thigh" or "chicken breast" because
        because "chicken, leg, flesh and skin, raw" is the least processed (raw) option and "minced chicken" is more processed.
 
-5. **If Multiple Viable Options Have Similar Processing Levels:**
+5. **If Multiple Viable Options Have Similar Processing Level choose the one with highest emissions:**
    - Choose the one with the highest emission factor.
    - This ensures a conservative estimate for CO2 emissions.
+   - ONLY choose the highest emissions option if it does not violates rules above (specifically rule 1) and the two options truly are viable.
+   - **Clarification Example:**
+      - If you can match "chili powder" to "chili sauce", "curry powder" and "chili pebber" then choose "chili pebber" as it is the least processed and therefore this rule does not apply.
+      - If you can match "sennepsfrø" to "sennnep" and "sesamfrø", then choose "sesamfrø" is it is the least processed and does not contain many other ingredients as "sennep" does.
+      - If you can match "Oksekød, hakket" to "Oksekød, 5-10% fedt" and "Oksekød, 10-15% fedt", then choose "Oksekød, 10-15% fedt" as it has the highest emissions factor and they are the same amount of proceesed
 
 6. **Do Not Use Quantity Information in Deciding the Best Match:**
    - Focus solely on the ingredient's identity and characteristics, ensuring the emission estimation remains unbiased by quantity.
@@ -93,9 +98,12 @@ using dictionary formatting.
    - You must only select matches from the provided emission options.
    - If none of the provided options are suitable, leave the CO2 per kg result as 'none'.
    - **Example:**
-      - Many forms of seasoning or spices do not have emission data. Here it is better to return 'none'. 
+      - Many forms of seasoning or spices do not have emission data. Here it is better to return 'none'.
    - Do not invent or guess values; this ensures the output remains grounded in the provided data.
    - Expection: If it is water, then provide the value 0.
+
+10. **Duplicate ingredients**:
+   - If the same ingredient appears multiple times in the list, provide estimate for both ingredients and return duplicate ingredient names as they are.
 
 **Summary of Decision Rules:**
 1. **Use Realistic Comparisons:** Match ingredients to emission factors that make sense based on common sense (e.g., pork-based meats to pork).
@@ -107,6 +115,7 @@ using dictionary formatting.
 7. **Account for Synonyms:** Recognize alternative names or regional variants (e.g., “eggplant” vs. “aubergine”).
 8. **Use Provided Emission Options:** Rely on the supplied list to find the best match.
 9. **No Match If Unsuitable:** If none of the provided options fit or rule 1 is violated, output “none.”
+10. **Handle Duplicates:** If the same ingredient appears multiple times, provide estimates for each instance without altering the ingredient names.
 
 It is very important to follow the above rules because they ensure trust worthy results. Otherwise, they cannot be used.
 
@@ -116,6 +125,10 @@ IMPORTANT! The context output must directly "copy-pasted" from the best match in
 IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
 IMPORTANT! Follow rule 1 to determine the best match that will match CO2 emissions to the ingredient and explain why match follows rule 1.
 IMPORTANT! Do not infer to rules numbering when explaining the match (e.g. "rule 1 says..."). Instead, cohesively argue why the match is the best match based on the rules.
+IMPORTANT! Before you send your final response, check that you follow all the rules above and you have remembered all ingredients.
+
+If you do not follow the rules, then the results will be wrong and cannot be used.
+
 """
 
 

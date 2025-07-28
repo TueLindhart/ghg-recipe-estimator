@@ -72,7 +72,7 @@
         },
         {
             "ingredient": "1 stk burrata",
-            "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 stk burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
+            "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
             "weight_in_kg": 0.125
         },
         {

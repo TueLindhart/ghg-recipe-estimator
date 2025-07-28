@@ -2,6 +2,8 @@ import asyncio
 import json
 import os
 
+from dotenv import load_dotenv
+
 from food_co2_estimator.chains.recipe_extractor import extract_recipe
 from food_co2_estimator.pydantic_models.recipe_extractor import EnrichedRecipe
 from tests.data_paths import ENRICHED_RECIPE_DIR, EXTRACTED_RECIPE_DIR, TEXT_INPUT_DIR
@@ -10,6 +12,9 @@ from tests.urls import TEST_URLS
 # Directory to store the results
 os.makedirs(EXTRACTED_RECIPE_DIR, exist_ok=True)
 os.makedirs(ENRICHED_RECIPE_DIR, exist_ok=True)
+
+# Load environment variables from the project root
+load_dotenv()
 
 
 def load_file(file_name: str, file_type: str) -> str:

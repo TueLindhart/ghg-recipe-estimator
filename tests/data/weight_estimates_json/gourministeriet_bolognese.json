@@ -62,17 +62,17 @@
         },
         {
             "ingredient": "Olie",
-            "weight_calculation": "Mængden af olie er ikke angivet. LLM-estimat er: 1 portion = 0.015 kg, 8 * 0.015 kg = 0.12 kg",
+            "weight_calculation": "Mængden af olie er ikke angivet. LLM-estimat er: 1 portion = 0.015 kg, 8 portioner * 0.015 kg = 0.12 kg",
             "weight_in_kg": 0.12
         },
         {
             "ingredient": "Salt",
-            "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 8 * 0.005 kg = 0.04 kg",
+            "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 8 portioner * 0.005 kg = 0.04 kg",
             "weight_in_kg": 0.04
         },
         {
             "ingredient": "Friskekværnet peber",
-            "weight_calculation": "Mængden af friskekværnet peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 8 * 0.005 kg = 0.04 kg",
+            "weight_calculation": "Mængden af friskekværnet peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 8 portioner * 0.005 kg = 0.04 kg",
             "weight_in_kg": 0.04
         },
         {
@@ -82,12 +82,12 @@
         },
         {
             "ingredient": "Pasta efter ønske",
-            "weight_calculation": "Mængden af pasta efter ønske er ikke angivet. LLM-estimat er: 1 portion = 0.1 kg, 8 * 0.1 kg = 0.8 kg",
-            "weight_in_kg": 0.8
+            "weight_calculation": "Mængden af pasta efter ønske er ikke angivet. LLM-estimat er: 1 portion = 0.125 kg, 8 portioner * 0.125 kg = 1.0 kg",
+            "weight_in_kg": 1.0
         },
         {
             "ingredient": "Revet parmesan",
-            "weight_calculation": "Mængden af revet parmesan er ikke angivet. LLM-estimat er: 1 portion = 0.02 kg, 8 * 0.02 kg = 0.16 kg",
+            "weight_calculation": "Mængden af revet parmesan er ikke angivet. LLM-estimat er: 1 portion = 0.02 kg, 8 portioner * 0.02 kg = 0.16 kg",
             "weight_in_kg": 0.16
         }
     ]

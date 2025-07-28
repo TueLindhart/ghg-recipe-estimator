@@ -1,7 +1,7 @@
 {
     "title": "Dutch Oven Southwestern Chicken Pot Pie",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/",
-    "total_co2_kg": 5.4,
+    "total_co2_kg": 5.1,
     "number_of_persons": 6,
     "ingredients": [
         {
@@ -53,26 +53,12 @@
             "co2_per_kg": 1.6,
             "co2_kg": 0.39,
             "calculation_notes": "0.24 kg * 1.6 kg CO₂e/kg = 0.39 kg CO₂e",
-            "weight_estimation_notes": "8.5 ounce = 240.972 g, 1 * 240.972 g = 240.972 g = 0.240972 kg",
+            "weight_estimation_notes": "8.5 ounce = 240.97 g, 1 * 240.97 g = 240.97 g = 0.24097 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: corn flour",
             "energy_kj": 3667.2,
             "fat_g": 6.72,
             "carbohydrate_g": 211.92,
             "protein_g": 16.32
-        },
-        {
-            "name": "4 tbsp chili powder",
-            "ingredient_id": "Ra00304",
-            "weight_kg": 0.06,
-            "co2_per_kg": 6.1,
-            "co2_kg": 0.37,
-            "calculation_notes": "0.06 kg * 6.1 kg CO₂e/kg = 0.37 kg CO₂e",
-            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: curry powder",
-            "energy_kj": 852.6,
-            "fat_g": 8.28,
-            "carbohydrate_g": 15.12,
-            "protein_g": 7.62
         },
         {
             "name": "1 red bell pepper",
@@ -145,6 +131,20 @@
             "protein_g": 1.8
         },
         {
+            "name": "4 tbsp chili powder",
+            "ingredient_id": "Ra00009",
+            "weight_kg": 0.06,
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.07,
+            "calculation_notes": "0.06 kg * 1.1 kg CO₂e/kg = 0.07 kg CO₂e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: pepper, hot chili, raw",
+            "energy_kj": 112.2,
+            "fat_g": 0.12,
+            "carbohydrate_g": 4.62,
+            "protein_g": 1.2
+        },
+        {
             "name": "2 medium carrots",
             "ingredient_id": "Ra00257",
             "weight_kg": 0.2,
@@ -161,16 +161,16 @@
         {
             "name": "1 egg",
             "ingredient_id": "Ra00108",
-            "weight_kg": 0.05,
+            "weight_kg": 0.06,
             "co2_per_kg": 1.0,
-            "co2_kg": 0.05,
-            "calculation_notes": "0.05 kg * 1.0 kg CO₂e/kg = 0.05 kg CO₂e",
-            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 egg = 50 g, 1 * 50 g = 50 g = 0.05 kg.",
+            "co2_kg": 0.06,
+            "calculation_notes": "0.06 kg * 1.0 kg CO₂e/kg = 0.06 kg CO₂e",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 egg = 60 g, 1 * 60 g = 60 g = 0.06 kg.",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: eggs",
-            "energy_kj": 290.0,
-            "fat_g": 4.75,
-            "carbohydrate_g": 0.55,
-            "protein_g": 6.15
+            "energy_kj": 348.0,
+            "fat_g": 5.7,
+            "carbohydrate_g": 0.66,
+            "protein_g": 7.38
         },
         {
             "name": "2 stalks celery",
@@ -193,7 +193,7 @@
             "co2_per_kg": 0.4,
             "co2_kg": 0.03,
             "calculation_notes": "0.08 kg * 0.4 kg CO₂e/kg = 0.03 kg CO₂e",
-            "weight_estimation_notes": "1 cup = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg",
+            "weight_estimation_notes": "Ingredient not found in general weights. LLM estimate is: 1 cup milk = 240 g, 0.33 * 240 g = 79.2 g = 0.0792 kg.",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: milk",
             "energy_kj": 160.0,
             "fat_g": 1.28,
@@ -257,9 +257,10 @@
             "protein_g": null
         }
     ],
-    "co2_per_person_kg": 0.9,
-    "energy_per_person_kj": 2073.0,
-    "fat_per_person_g": 12.0,
-    "carbohydrate_per_person_g": 60.0,
-    "protein_per_person_g": 32.0
+    "co2_per_person_kg": 0.8,
+    "energy_per_person_kj": 1959.0,
+    "calories_per_person_kcal": 468.0,
+    "fat_per_person_g": 11.0,
+    "carbohydrate_per_person_g": 58.0,
+    "protein_per_person_g": 31.0
 }

@@ -1,7 +1,7 @@
 {
     "title": "Nytårstorsk - bagt torsk med sennepssauce",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/",
-    "total_co2_kg": 3.7,
+    "total_co2_kg": 3.9,
     "number_of_persons": 4,
     "ingredients": [
         {
@@ -47,13 +47,27 @@
             "protein_g": 13.0
         },
         {
+            "name": "3 spsk hele gule sennepsfrø",
+            "ingredient_id": "Ra00142",
+            "weight_kg": 0.04,
+            "co2_per_kg": 7.3,
+            "co2_kg": 0.33,
+            "calculation_notes": "0.04 kg * 7.3 kg CO₂e/kg = 0.33 kg CO₂e",
+            "weight_estimation_notes": "1 spsk = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: sesamfrø, afskallede",
+            "energy_kj": 1062.8,
+            "fat_g": 22.96,
+            "carbohydrate_g": 0.72,
+            "protein_g": 10.72
+        },
+        {
             "name": "1 dl mørk balsamicoeddike",
             "ingredient_id": "Ra00150",
             "weight_kg": 0.1,
             "co2_per_kg": 1.6,
             "co2_kg": 0.16,
             "calculation_notes": "0.1 kg * 1.6 kg CO₂e/kg = 0.16 kg CO₂e",
-            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: eddike",
             "energy_kj": 84.0,
             "fat_g": 0.0,
@@ -61,7 +75,7 @@
             "protein_g": 0.4
         },
         {
-            "name": "4 rødbeder (ca. 400 g)",
+            "name": "4 rødbeder (400 g)",
             "ingredient_id": "Ra00259",
             "weight_kg": 0.4,
             "co2_per_kg": 0.3,
@@ -73,20 +87,6 @@
             "fat_g": 1.2,
             "carbohydrate_g": 39.6,
             "protein_g": 6.8
-        },
-        {
-            "name": "3 spsk hele gule sennepsfrø",
-            "ingredient_id": "Ra00303",
-            "weight_kg": 0.04,
-            "co2_per_kg": 1.9,
-            "co2_kg": 0.09,
-            "calculation_notes": "0.04 kg * 1.9 kg CO₂e/kg = 0.09 kg CO₂e",
-            "weight_estimation_notes": "1 spsk = 15 g, 3 * 15 g = 45 g = 0.045 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: sennep, gul, færdiglavet",
-            "energy_kj": 276.4,
-            "fat_g": 2.56,
-            "carbohydrate_g": 8.08,
-            "protein_g": 2.28
         },
         {
             "name": "25 g smør",
@@ -131,20 +131,6 @@
             "protein_g": 0.21
         },
         {
-            "name": "6 finthakkede skalotteløg (ca. 75 g)",
-            "ingredient_id": "Ra00485",
-            "weight_kg": 0.07,
-            "co2_per_kg": 0.8,
-            "co2_kg": 0.06,
-            "calculation_notes": "0.07 kg * 0.8 kg CO₂e/kg = 0.06 kg CO₂e",
-            "weight_estimation_notes": "75 g = 75 g = 0.075 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: rødløg",
-            "energy_kj": 146.3,
-            "fat_g": 0.21,
-            "carbohydrate_g": 7.0,
-            "protein_g": 1.12
-        },
-        {
             "name": "4 blødkogte vagtelæg",
             "ingredient_id": "Ra00108",
             "weight_kg": 0.04,
@@ -157,6 +143,20 @@
             "fat_g": 3.8,
             "carbohydrate_g": 0.44,
             "protein_g": 4.92
+        },
+        {
+            "name": "6 finthakkede skalotteløg (75 g)",
+            "ingredient_id": "Ra00264",
+            "weight_kg": 0.07,
+            "co2_per_kg": 0.4,
+            "co2_kg": 0.03,
+            "calculation_notes": "0.07 kg * 0.4 kg CO₂e/kg = 0.03 kg CO₂e",
+            "weight_estimation_notes": "75 g = 75 g = 0.075 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg, hakkede, dybfrost",
+            "energy_kj": 81.9,
+            "fat_g": 0.07,
+            "carbohydrate_g": 3.5,
+            "protein_g": 0.56
         },
         {
             "name": "1.5 tsk hvedemel",
@@ -174,17 +174,17 @@
         },
         {
             "name": "friske krydderurter",
-            "ingredient_id": "Ra00486",
+            "ingredient_id": "Ra00134",
             "weight_kg": 0.03,
-            "co2_per_kg": 0.4,
+            "co2_per_kg": 0.5,
             "co2_kg": 0.01,
-            "calculation_notes": "0.03 kg * 0.4 kg CO₂e/kg = 0.01 kg CO₂e",
+            "calculation_notes": "0.03 kg * 0.5 kg CO₂e/kg = 0.01 kg CO₂e",
             "weight_estimation_notes": "Mængden af friske krydderurter er ikke angivet. LLM-estimat er: 1 portion = 0.025 kg, 1 * 0.025 kg = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: basilikum, frisk",
-            "energy_kj": 27.63,
-            "fat_g": 0.18,
-            "carbohydrate_g": 0.81,
-            "protein_g": 0.96
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: persille",
+            "energy_kj": 60.3,
+            "fat_g": 0.33,
+            "carbohydrate_g": 0.36,
+            "protein_g": 1.11
         },
         {
             "name": "2.5 dl vand",
@@ -193,7 +193,7 @@
             "co2_per_kg": 0.0,
             "co2_kg": 0.0,
             "calculation_notes": "0.25 kg * 0.0 kg CO₂e/kg = 0.0 kg CO₂e",
-            "weight_estimation_notes": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 2.5 * 0.1 kg = 0.25 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: vand, postevand",
             "energy_kj": 0.0,
             "fat_g": 0.0,
@@ -257,9 +257,10 @@
             "protein_g": null
         }
     ],
-    "co2_per_person_kg": 0.9,
-    "energy_per_person_kj": 3478.0,
-    "fat_per_person_g": 66.0,
-    "carbohydrate_per_person_g": 24.0,
-    "protein_per_person_g": 35.0
+    "co2_per_person_kg": 1.0,
+    "energy_per_person_kj": 3667.0,
+    "calories_per_person_kcal": 876.0,
+    "fat_per_person_g": 72.0,
+    "carbohydrate_per_person_g": 22.0,
+    "protein_per_person_g": 37.0
 }

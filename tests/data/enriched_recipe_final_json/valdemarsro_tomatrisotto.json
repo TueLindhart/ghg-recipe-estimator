@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'løg' is a direct match for '1 stk løg'. This is the most accurate match as it represents the raw, unprocessed form of the ingredient.",
+                "closest_match_explanation": "The ingredient '1 stk løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "løg",
                 "ingredient": "1 stk løg",
@@ -29,7 +29,7 @@
                 "weight_in_kg": 0.012
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'hvidløg' is a direct match for '3 fed hvidløg'. This is the most accurate match as it represents the raw, unprocessed form of the ingredient.",
+                "closest_match_explanation": "The ingredient '3 fed hvidløg' is best matched with 'hvidløg' as it represents the raw, unprocessed form of garlic, which is the most appropriate match given no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "hvidløg",
                 "ingredient": "3 fed hvidløg",
@@ -49,7 +49,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'risotto ris' is a type of rice. 'ris, parboiled' is the most appropriate match as it is a general category for processed rice, which risotto rice falls under. It is also the highest emission factor among the rice options.",
+                "closest_match_explanation": "The ingredient '400 g risotto ris' is a type of rice. 'ris, parboiled' is the most suitable match as it is a general category of rice and the closest available option in the database.",
                 "ingredient_id": "Ra00300",
                 "closest_match_name": "ris, parboiled",
                 "ingredient": "400 g risotto ris",
@@ -69,7 +69,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'hvidvin' is a direct match for '2 dl hvidvin'. This is the most accurate match as it represents the ingredient itself.",
+                "closest_match_explanation": "The ingredient '2 dl hvidvin' is directly matched with 'hvidvin' as it is an exact match in the database and represents the same product.",
                 "ingredient_id": "Ra00375",
                 "closest_match_name": "hvidvin",
                 "ingredient": "2 dl hvidvin",
@@ -89,7 +89,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'flåede tomater' directly translates to 'peeled tomatoes' and 'tomat, flået, konserves' is the closest match as it specifies peeled and canned tomatoes, which aligns with the processing of 'flåede tomater'.",
+                "closest_match_explanation": "The ingredient '400 g flåede tomater' is best matched with 'tomat, flået, konserves' because 'flåede tomater' implies a processed form of tomato, and 'konserves' (canned) aligns with this processing level.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomat, flået, konserves",
                 "ingredient": "400 g flåede tomater",
@@ -109,7 +109,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'tomatpuré' is a direct match for 'tomatpure, koncentreret'. This is the most accurate match as it represents the concentrated form of tomato paste.",
+                "closest_match_explanation": "The ingredient '25 g tomatpuré' is directly matched with 'tomatpure, koncentreret' as it is an exact match in the database and represents the same product.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomatpure, koncentreret",
                 "ingredient": "25 g tomatpuré",
@@ -129,7 +129,7 @@
                 "weight_in_kg": 0.9
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'grøntsagsbouillon' is a type of bouillon. While there isn't a direct 'vegetable bouillon' option, 'bouillon, hønsekød, spiseklar' is the closest general bouillon option available. Although it specifies chicken, it is a ready-to-eat bouillon, which is similar in processing to a vegetable bouillon. It is also the highest emission factor among the ready-to-eat bouillon options.",
+                "closest_match_explanation": "The ingredient '9 dl grøntsagsbouillon' is a type of bouillon. While there isn't an exact match for 'grøntsagsbouillon', 'bouillon, hønsekød, spiseklar' is the most appropriate broader category as it represents a ready-to-eat bouillon, which is similar in processing to a vegetable bouillon.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, hønsekød, spiseklar",
                 "ingredient": "9 dl grøntsagsbouillon",
@@ -158,7 +158,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'soltørrede tomater i olie' is a processed form of sun-dried tomatoes. 'soltørrede tomater' is the most appropriate match as it represents the core ingredient, and the 'i olie' (in oil) part indicates a level of processing that aligns with the available options for sun-dried tomatoes.",
+                "closest_match_explanation": "The ingredient '25 g soltørrede tomater i olie' is best matched with 'soltørrede tomater' because it captures the primary ingredient and its processing (sun-dried). The 'i olie' (in oil) is a preparation method that does not significantly change the core ingredient's emissions compared to the sun-drying process itself.",
                 "ingredient_id": "Ra00447",
                 "closest_match_name": "soltørrede tomater",
                 "ingredient": "25 g soltørrede tomater i olie",
@@ -178,7 +178,7 @@
                 "weight_in_kg": 0.125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'parmesan' is a type of cheese. 'parmesan ost, 32+' is a direct and accurate match for parmesan cheese, representing the specific type of cheese.",
+                "closest_match_explanation": "The ingredient '125 g parmesan' is directly matched with 'parmesan ost, 32+' as it is an exact match in the database and represents the same product.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "parmesan ost, 32+",
                 "ingredient": "125 g parmesan",
@@ -198,7 +198,7 @@
                 "weight_in_kg": 0.0425
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'øko citron' is a type of lemon. 'citron' is a direct and accurate match for lemon, representing the raw fruit.",
+                "closest_match_explanation": "The ingredient '0.5 øko citron' is directly matched with 'citron' as it is an exact match in the database and represents the same product. The 'øko' (organic) descriptor does not change the fundamental nature of the ingredient for emission matching purposes.",
                 "ingredient_id": "Ra00328",
                 "closest_match_name": "citron",
                 "ingredient": "0.5 øko citron",
@@ -218,7 +218,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'olivenolie' is a direct match for '1 spsk olivenolie'. This is the most accurate match as it represents the ingredient itself.",
+                "closest_match_explanation": "The ingredient '1 spsk olivenolie' is directly matched with 'olivenolie' as it is an exact match in the database and represents the same product.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olivenolie",
                 "ingredient": "1 spsk olivenolie",
@@ -252,11 +252,11 @@
             "name": "1 stk burrata",
             "weight_estimate": {
                 "ingredient": "1 stk burrata",
-                "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 stk burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
+                "weight_calculation": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 burrata = 125 g, 1 * 125 g = 125 g = 0.125 kg.",
                 "weight_in_kg": 0.125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Burrata is a type of fresh Italian cheese, similar to mozzarella. Therefore, 'mozzarella ost, 30+' is the most appropriate match as it is a similar cheese product with a comparable production process and emission profile.",
+                "closest_match_explanation": "The ingredient '1 stk burrata' is a type of fresh Italian cheese, similar to mozzarella. Therefore, 'mozzarella ost, 30+' is the most appropriate broader category match as it represents a similar cheese product with comparable emissions.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "mozzarella ost, 30+",
                 "ingredient": "1 stk burrata",
@@ -276,7 +276,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'pesto' is a direct match for '25 g pesto'. This is the most accurate match as it represents the ingredient itself.",
+                "closest_match_explanation": "The ingredient '25 g pesto' is directly matched with 'pesto' as it is an exact match in the database and represents the same product.",
                 "ingredient_id": "Ra00381",
                 "closest_match_name": "pesto",
                 "ingredient": "25 g pesto",
@@ -296,7 +296,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'parmesan' is a type of cheese. 'parmesan ost, 32+' is a direct and accurate match for parmesan cheese, representing the specific type of cheese.",
+                "closest_match_explanation": "The ingredient '25 g parmesan' is directly matched with 'parmesan ost, 32+' as it is an exact match in the database and represents the same product.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "parmesan ost, 32+",
                 "ingredient": "25 g parmesan",
@@ -316,7 +316,7 @@
                 "weight_in_kg": 0.0125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'basilikum' is a fresh herb. 'basilikum, frisk' is the most appropriate match as it specifies fresh basil, aligning with the raw form of the ingredient.",
+                "closest_match_explanation": "The ingredient '0.5 håndfuld basilikum' is best matched with 'basilikum, frisk' because it is the most direct and least processed form of basil available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basilikum, frisk",
                 "ingredient": "0.5 håndfuld basilikum",
@@ -330,7 +330,7 @@
         }
     ],
     "persons": 4,
-    "instructions": "Sauter løg og hvidløg i en gryde med olie, til løgene er bløde. Tilsæt risottoris og rør godt igennem i et minuts tid.\n\nHæld hvidvin i gryden og rør til risene har absorberet vinen. Skrue ned for varmen.\n\nBlend flåede tomater, tomatpuré, grøntsagsboullion og timian sammen til det er helt ensartet og tilføj væden lidt efter lidt til risene efterhånden som risen absorberer væden, fortsæt til risene er lidt knap perfekt møre.\n\nRør finthakkede soltørrede tomater og friskrevet parmesan i risen og smag godt til med citronskal, salt og peber. Risottoen skal være letflydende og lækker cremet.\n\nServer med burrata, et dryp pesto, lidt ekstra parmesan, og et drys frisk basilikum.",
+    "instructions": "Sauter løg og hvidløg i en gryde med olie, til løgene er bløde. Tilsæt risottoris og rør godt igennem i et minuts tid.\nHæld hvidvin i gryden og rør til risene har absorberet vinen. Skrue ned for varmen.\nBlend flåede tomater, tomatpuré, grøntsagsboullion og timian sammen til det er helt ensartet og tilføj væden lidt efter lidt til risene efterhånden som risen absorberer væden, fortsæt til risene er lidt knap perfekt møre.\nRør finthakkede soltørrede tomater og friskrevet parmesan i risen og smag godt til med citronskal, salt og peber. Risottoen skal være letflydende og lækker cremet.\nServer med burrata, et dryp pesto, lidt ekstra parmesan, og et drys frisk basilikum.",
     "url": "https://www.valdemarsro.dk/tomatrisotto/",
     "language": "da"
 }

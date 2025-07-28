@@ -1,7 +1,7 @@
 {
     "title": "Cremet pasta med asparges",
     "url": "https://madogkaerlighed.dk/cremet-pasta-med-asparges/",
-    "total_co2_kg": 2.9,
+    "total_co2_kg": 3.1,
     "number_of_persons": 2,
     "ingredients": [
         {
@@ -33,6 +33,20 @@
             "protein_g": 28.3
         },
         {
+            "name": "250 g frisk pasta",
+            "ingredient_id": "Ra00234",
+            "weight_kg": 0.25,
+            "co2_per_kg": 2.1,
+            "co2_kg": 0.53,
+            "calculation_notes": "0.25 kg * 2.1 kg CO₂e/kg = 0.53 kg CO₂e",
+            "weight_estimation_notes": "250 g = 250 g = 0.25 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: pasta",
+            "energy_kj": 3830.0,
+            "fat_g": 4.5,
+            "carbohydrate_g": 184.75,
+            "protein_g": 33.75
+        },
+        {
             "name": "6 spsk revet parmesan",
             "ingredient_id": "Ra00079",
             "weight_kg": 0.09,
@@ -47,27 +61,13 @@
             "protein_g": 29.61
         },
         {
-            "name": "250 g frisk pasta",
-            "ingredient_id": "Ra00388",
-            "weight_kg": 0.25,
-            "co2_per_kg": 1.5,
-            "co2_kg": 0.38,
-            "calculation_notes": "0.25 kg * 1.5 kg CO₂e/kg = 0.38 kg CO₂e",
-            "weight_estimation_notes": "250 g = 250 g = 0.25 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: frisk pasta, fettucine spinat",
-            "energy_kj": 2800.0,
-            "fat_g": 6.25,
-            "carbohydrate_g": 120.0,
-            "protein_g": 27.5
-        },
-        {
             "name": "2 dl fløde",
             "ingredient_id": "Ra00345",
             "weight_kg": 0.2,
             "co2_per_kg": 1.7,
             "co2_kg": 0.34,
             "calculation_notes": "0.2 kg * 1.7 kg CO₂e/kg = 0.34 kg CO₂e",
-            "weight_estimation_notes": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: fløde 38 %, piskefløde",
             "energy_kj": 2968.0,
             "fat_g": 76.0,
@@ -137,7 +137,7 @@
             "co2_per_kg": 1.2,
             "co2_kg": 0.01,
             "calculation_notes": "0.01 kg * 1.2 kg CO₂e/kg = 0.01 kg CO₂e",
-            "weight_estimation_notes": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+            "weight_estimation_notes": "1 fed hvidløg = 0.004 kg, 2 * 0.004 kg = 0.008 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: hvidløg",
             "energy_kj": 66.9,
             "fat_g": 0.05,
@@ -151,7 +151,7 @@
             "co2_per_kg": 0.4,
             "co2_kg": 0.01,
             "calculation_notes": "0.03 kg * 0.4 kg CO₂e/kg = 0.01 kg CO₂e",
-            "weight_estimation_notes": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "weight_estimation_notes": "Håndfuld krydderurter (basilikum, oregano osv.) = 0.025 kg, 1 * 0.025 kg = 0.025 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: basilikum, frisk",
             "energy_kj": 27.63,
             "fat_g": 0.18,
@@ -165,7 +165,7 @@
             "co2_per_kg": 0.0,
             "co2_kg": 0.0,
             "calculation_notes": "0.1 kg * 0.0 kg CO₂e/kg = 0.0 kg CO₂e",
-            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "weight_estimation_notes": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: vand, postevand",
             "energy_kj": 0.0,
             "fat_g": 0.0,
@@ -202,8 +202,9 @@
         }
     ],
     "co2_per_person_kg": 1.5,
-    "energy_per_person_kj": 5391.0,
-    "fat_per_person_g": 77.0,
-    "carbohydrate_per_person_g": 84.0,
-    "protein_per_person_g": 54.0
+    "energy_per_person_kj": 5906.0,
+    "calories_per_person_kcal": 1412.0,
+    "fat_per_person_g": 76.0,
+    "carbohydrate_per_person_g": 117.0,
+    "protein_per_person_g": 58.0
 }

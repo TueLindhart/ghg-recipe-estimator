@@ -216,17 +216,17 @@
         },
         {
             "name": "1.5 spsk fajitakrydderi",
-            "ingredient_id": "Ra00359",
+            "ingredient_id": "Ra00009",
             "weight_kg": 0.02,
-            "co2_per_kg": 1.5,
-            "co2_kg": 0.03,
-            "calculation_notes": "0.02 kg * 1.5 kg CO₂e/kg = 0.03 kg CO₂e",
+            "co2_per_kg": 1.1,
+            "co2_kg": 0.02,
+            "calculation_notes": "0.02 kg * 1.1 kg CO₂e/kg = 0.02 kg CO₂e",
             "weight_estimation_notes": "1 spsk = 15 g, 1.5 * 15 g = 22.5 g = 0.0225 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: peber, chili, konserves",
-            "energy_kj": 22.4,
-            "fat_g": 0.02,
-            "carbohydrate_g": 0.98,
-            "protein_g": 0.18
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: peber, chili",
+            "energy_kj": 37.4,
+            "fat_g": 0.04,
+            "carbohydrate_g": 1.54,
+            "protein_g": 0.4
         },
         {
             "name": "0.75 chilipeber",
@@ -287,16 +287,16 @@
         {
             "name": "0.5 bdt koriander",
             "ingredient_id": "Ra00134",
-            "weight_kg": 0.03,
+            "weight_kg": 0.01,
             "co2_per_kg": 0.5,
             "co2_kg": 0.01,
-            "calculation_notes": "0.03 kg * 0.5 kg CO₂e/kg = 0.01 kg CO₂e",
-            "weight_estimation_notes": "1 bundt koriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
+            "calculation_notes": "0.01 kg * 0.5 kg CO₂e/kg = 0.01 kg CO₂e",
+            "weight_estimation_notes": "1 bundt koriander = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
             "co2_emission_notes": "Bedste match i CO₂-databasen er: persille",
-            "energy_kj": 60.3,
-            "fat_g": 0.33,
-            "carbohydrate_g": 0.36,
-            "protein_g": 1.11
+            "energy_kj": 20.1,
+            "fat_g": 0.11,
+            "carbohydrate_g": 0.12,
+            "protein_g": 0.37
         },
         {
             "name": "salt",
@@ -341,9 +341,10 @@
             "protein_g": null
         }
     ],
-    "co2_per_person_kg": 9.7,
-    "energy_per_person_kj": 8118.0,
+    "co2_per_person_kg": 9.6,
+    "energy_per_person_kj": 8105.0,
+    "calories_per_person_kcal": 1937.0,
     "fat_per_person_g": 89.0,
     "carbohydrate_per_person_g": 184.0,
-    "protein_per_person_g": 74.0
+    "protein_per_person_g": 73.0
 }
