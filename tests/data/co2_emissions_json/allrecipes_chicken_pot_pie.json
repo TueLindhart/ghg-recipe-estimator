@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "Olive oil is a direct match for '1 tbsp olive oil' as it is the most relevant and least processed option available. The emission factor for olive oil is 5.9 kg CO2e/kg.",
+            "closest_match_explanation": "The ingredient '1 tbsp olive oil' is best matched with 'olive oil' because it is the most direct and least processed form of olive oil available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olive oil",
             "ingredient": "1 tbsp olive oil",
@@ -13,7 +13,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '1 lb skinless, boneless chicken breast' is best matched with 'chicken, breast, flesh and skin, raw' because it is the most direct and least processed form of chicken breast available in the database. This option accurately reflects the raw nature of the ingredient before any cooking or further processing.",
+            "closest_match_explanation": "The ingredient '1 lb skinless, boneless chicken breast' is best matched with 'chicken, breast, flesh and skin, raw'. This is the most appropriate match because it represents the raw, unprocessed form of chicken breast, aligning with the rule of selecting the least processed option when no specific processing is indicated for the ingredient. While 'chicken, breast, boiled, sliced' is also chicken breast, it is a more processed form (boiled and sliced) and therefore not the best match.",
             "ingredient_id": "Ra00055",
             "closest_match_name": "chicken, breast, flesh and skin, raw",
             "ingredient": "1 lb skinless, boneless chicken breast",
@@ -25,7 +25,7 @@
             "protein_g_100g": 21.5
         },
         {
-            "closest_match_explanation": "The ingredient '2 medium carrots' is best matched with 'carrot, raw' as it represents the least processed form of carrot available. This aligns with the common understanding of 'medium carrots' as fresh and unprocessed.",
+            "closest_match_explanation": "The ingredient '2 medium carrots' is best matched with 'carrot, raw'. This is the most appropriate match because it represents the raw, unprocessed form of carrots, aligning with the rule of selecting the least processed option when no specific processing is indicated for the ingredient. 'Carrot, frozen' is a processed form and therefore not the best match.",
             "ingredient_id": "Ra00257",
             "closest_match_name": "carrot, raw",
             "ingredient": "2 medium carrots",
@@ -37,7 +37,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '2 stalks celery' is best matched with 'celery, raw' as it is the most direct and least processed form of celery available in the database. This option accurately reflects the raw nature of the ingredient.",
+            "closest_match_explanation": "The ingredient '2 stalks celery' is best matched with 'celery, raw'. This is the most appropriate match because it represents the raw, unprocessed form of celery, aligning with the rule of selecting the least processed option when no specific processing is indicated for the ingredient.",
             "ingredient_id": "Ra00153",
             "closest_match_name": "celery, raw",
             "ingredient": "2 stalks celery",
@@ -49,7 +49,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '1 red bell pepper' is best matched with 'pepper, sweet, red, raw' as it is the most direct and least processed form of red bell pepper available in the database. This option accurately reflects the raw nature of the ingredient.",
+            "closest_match_explanation": "The ingredient '1 red bell pepper' is best matched with 'pepper, sweet, red, raw'. This is the most appropriate match because it represents the raw, unprocessed form of a red bell pepper, aligning with the rule of selecting the least processed option when no specific processing is indicated for the ingredient. Other pepper options are either hot chili peppers or canned, which are not the best match for a raw red bell pepper.",
             "ingredient_id": "Ra00001",
             "closest_match_name": "pepper, sweet, red, raw",
             "ingredient": "1 red bell pepper",
@@ -61,7 +61,7 @@
             "protein_g_100g": 0.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 bunch scallions' is best matched with 'onions, spring, raw' because scallions are a type of spring onion, and this option represents the raw, unprocessed form. This is the most accurate and least processed match available.",
+            "closest_match_explanation": "The ingredient '1 bunch scallions' is best matched with 'onions, spring, raw'. Scallions are also known as spring onions, and this option represents the raw, unprocessed form, aligning with the rule of selecting the least processed option when no specific processing is indicated for the ingredient.",
             "ingredient_id": "Ra00267",
             "closest_match_name": "onions, spring, raw",
             "ingredient": "1 bunch scallions",
@@ -73,7 +73,7 @@
             "protein_g_100g": 1.8
         },
         {
-            "closest_match_explanation": "The ingredient '1 (15 ounce) can diced tomatoes with green chiles' is best matched with 'tomato, peeled, canned' because it is a canned tomato product, which aligns with the processing mentioned in the ingredient. While 'green chiles' are also present, the primary ingredient is diced tomatoes, making the canned tomato option the most appropriate and highest emission match among the relevant choices.",
+            "closest_match_explanation": "The ingredient '1 (15 ounce) can diced tomatoes with green chiles' is best matched with 'tomato, peeled, canned'. This option is the most appropriate because it is a canned tomato product, similar in processing to diced tomatoes. While 'tomatojuice, canned' is also canned, 'tomato, peeled, canned' is a better match for diced tomatoes.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomato, peeled, canned",
             "ingredient": "1 (15 ounce) can diced tomatoes with green chiles",
@@ -85,7 +85,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 (15 ounce) cans black beans' is best matched with 'black beans' as it is a direct and accurate match for the ingredient. This option represents the specific type of bean mentioned and is the most appropriate choice.",
+            "closest_match_explanation": "The ingredient '2 (15 ounce) cans black beans' is best matched with 'black beans'. This is the most direct and accurate match for the ingredient, as it specifically refers to black beans.",
             "ingredient_id": "Ra00439",
             "closest_match_name": "black beans",
             "ingredient": "2 (15 ounce) cans black beans",
@@ -97,7 +97,7 @@
             "protein_g_100g": 5.3
         },
         {
-            "closest_match_explanation": "The ingredient '4 tbsp chili powder' is best matched with 'curry powder' because both are spice blends in powder form, making them similar in processing and usage. Among the available options, 'curry powder' has the highest emission factor, providing a conservative estimate for a general spice powder.",
+            "closest_match_explanation": "The ingredient '4 tbsp chili powder' is best matched with 'curry powder'. While not an exact match, both are powdered spices. Among the available options, 'curry powder' is the most similar in form and processing to chili powder, as both are dried and ground spice blends. This aligns with the rule of choosing a broader category or similar processed form when an exact match is not available.",
             "ingredient_id": "Ra00304",
             "closest_match_name": "curry powder",
             "ingredient": "4 tbsp chili powder",
@@ -109,7 +109,7 @@
             "protein_g_100g": 12.7
         },
         {
-            "closest_match_explanation": "The ingredient '1 tbsp ground cumin' is best matched with 'curry powder' because both are ground spices, making them similar in form and processing. Among the available options, 'curry powder' has the highest emission factor, providing a conservative estimate for a general ground spice.",
+            "closest_match_explanation": "The ingredient '1 tbsp ground cumin' is best matched with 'curry powder'. While not an exact match, both are ground spices. Among the available options, 'curry powder' is the most similar in form and processing to ground cumin, as both are dried and ground spice blends. This aligns with the rule of choosing a broader category or similar processed form when an exact match is not available.",
             "ingredient_id": "Ra00304",
             "closest_match_name": "curry powder",
             "ingredient": "1 tbsp ground cumin",
@@ -121,7 +121,7 @@
             "protein_g_100g": 12.7
         },
         {
-            "closest_match_explanation": "The ingredient '2 tsp granulated garlic' is best matched with 'garlic, raw' as it is the closest representation of garlic in its unprocessed form. Granulated garlic is simply dried and ground raw garlic, so the raw form is the most appropriate base for emission estimation.",
+            "closest_match_explanation": "The ingredient '2 tsp granulated garlic' is best matched with 'garlic, raw'. Granulated garlic is a dried and ground form of garlic. While 'garlic in oil' is also a garlic product, 'garlic, raw' is the closest to the unprocessed form from which granulated garlic is derived, and it is a more direct match than garlic in oil which has additional processing.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "garlic, raw",
             "ingredient": "2 tsp granulated garlic",
@@ -133,7 +133,7 @@
             "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '2 tsp onion powder' is best matched with 'onion, raw' as it is the closest representation of onion in its unprocessed form. Onion powder is simply dried and ground raw onion, so the raw form is the most appropriate base for emission estimation.",
+            "closest_match_explanation": "The ingredient '2 tsp onion powder' is best matched with 'onion, raw'. Onion powder is a dried and ground form of onion. 'Onion, raw' is the closest to the unprocessed form from which onion powder is derived, and it is a more direct match than other processed onion forms like 'onions, chopped, frozen' or 'onions, chopped and deepfried'.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "onion, raw",
             "ingredient": "2 tsp onion powder",
@@ -145,7 +145,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient 'ground black pepper' is best matched with 'pepper, black' as it is a direct and accurate match for the ingredient. This option represents the specific type of pepper mentioned and is the most appropriate choice.",
+            "closest_match_explanation": "The ingredient 'ground black pepper' is best matched with 'pepper, black'. This is the most direct and accurate match for the ingredient, as it specifically refers to black pepper.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "pepper, black",
             "ingredient": "ground black pepper",
@@ -157,7 +157,7 @@
             "protein_g_100g": 10.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 (8.5 ounce) package dry corn muffin mix' is best matched with 'corn flour' because corn muffin mix is primarily composed of corn flour. This option represents the main ingredient and is the most relevant match available, as it is a processed form of corn.",
+            "closest_match_explanation": "The ingredient '1 (8.5 ounce) package dry corn muffin mix' is best matched with 'corn flour'. Corn muffin mix is primarily made from corn flour, and 'corn flour' is the most appropriate and least processed base ingredient available in the database that aligns with the primary component of the mix. Other options like 'potatoes, mashed, instant powder with dry milk' or 'sweetcorn, kernels, canned' are not suitable as they are different ingredients or forms.",
             "ingredient_id": "Ra00107",
             "closest_match_name": "corn flour",
             "ingredient": "1 (8.5 ounce) package dry corn muffin mix",
@@ -169,7 +169,7 @@
             "protein_g_100g": 6.8
         },
         {
-            "closest_match_explanation": "The ingredient '0.33 cup milk' is best matched with 'milk' as it is a direct and accurate match for the ingredient. This option represents the specific type of liquid mentioned and is the most appropriate choice.",
+            "closest_match_explanation": "The ingredient '0.33 cup milk' is best matched with 'milk'. This is the most direct and accurate match for the ingredient, as it specifically refers to milk. Other options like 'chocolate, milk', 'goat milk', or 'coconut milk' are either processed products or different types of milk.",
             "ingredient_id": "Ra00342",
             "closest_match_name": "milk",
             "ingredient": "0.33 cup milk",
@@ -181,7 +181,7 @@
             "protein_g_100g": 3.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 egg' is best matched with 'eggs' as it is a direct and accurate match for the ingredient. This option represents the specific item mentioned and is the most appropriate choice.",
+            "closest_match_explanation": "The ingredient '1 egg' is best matched with 'eggs'. This is the most direct and accurate match for the ingredient. While 'eggs, chicken, free-range hens (indoor), raw' is also an egg, 'eggs' is a more general and direct match for a single egg without specific farming details. 'Egg salad' and 'noodles, eggs' are processed products and not suitable matches for a raw egg.",
             "ingredient_id": "Ra00108",
             "closest_match_name": "eggs",
             "ingredient": "1 egg",

@@ -1,5 +1,5 @@
 {
-    "title": "Green Curry Chicken",
+    "title": "Thai Green Curry Chicken",
     "ingredients": [
         {
             "name": "1.75 cups coconut milk",
@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'coconut milk' is a direct match to the emission option 'coconut milk'. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
+                "closest_match_explanation": "The ingredient '1.75 cups coconut milk' is directly matched to 'coconut milk' as it is an exact and specific match. This choice aligns with the principle of using the most direct and accurate emission factor available for the ingredient.",
                 "ingredient_id": "Ra00404",
                 "closest_match_name": "coconut milk",
                 "ingredient": "1.75 cups coconut milk",
@@ -29,7 +29,7 @@
                 "weight_in_kg": 0.0525
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'green curry paste' is a direct match to the emission option 'green curry paste'. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
+                "closest_match_explanation": "The ingredient '3.5 tbsp green curry paste' is directly matched to 'green curry paste' as it is an exact and specific match. This choice aligns with the principle of using the most direct and accurate emission factor available for the ingredient.",
                 "ingredient_id": "Ra00469",
                 "closest_match_name": "green curry paste",
                 "ingredient": "3.5 tbsp green curry paste",
@@ -49,7 +49,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'chicken stock' is best matched to 'bouillon, chicken, prepared' because chicken stock is a liquid base, similar to bouillon, which is a prepared broth. This option is the most realistic comparison for CO2 emissions as it represents a processed chicken product used for flavoring, unlike raw or minced chicken which have significantly different production processes and emissions.",
+                "closest_match_explanation": "The ingredient '1 cup chicken stock' is best matched to 'bouillon, chicken, prepared'. This is because 'chicken stock' is a liquid, ready-to-use product, similar to 'bouillon, chicken, prepared', which implies a ready-to-eat liquid form. This aligns with the principle of matching based on the processing level and common sense, as a concentrated bouillon cube would not be measured in 'cups' for direct use.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 cup chicken stock",
@@ -69,7 +69,7 @@
                 "weight_in_kg": 0.453592
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'chicken thigh' is a specific cut of chicken. Among the available options, 'chicken, leg, flesh and skin, raw' is the most appropriate match because chicken thighs are part of the chicken leg. This option represents a raw, unprocessed cut of chicken, which aligns with the typical form of chicken thigh before cooking. The other options, 'minced chicken' and 'chicken, whole', are either more processed or represent the entire animal, making 'chicken, leg, flesh and skin, raw' the most realistic and least processed comparison for a chicken thigh.",
+                "closest_match_explanation": "The ingredient '1 lb chicken thigh' is best matched to 'chicken, leg, flesh and skin, raw'. This is because chicken thigh is a specific cut of chicken, and 'chicken, leg, flesh and skin, raw' represents a raw, unprocessed form of a similar part of the chicken. This aligns with the principle of choosing the least processed option when no exact match for the specific cut is available, and it is a realistic comparison.",
                 "ingredient_id": "Ra00053",
                 "closest_match_name": "chicken, leg, flesh and skin, raw",
                 "ingredient": "1 lb chicken thigh",
@@ -89,7 +89,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'palm sugar' is a type of sugar. Among the available options, 'sugar, sucrose, white' is the most appropriate match because it is a general category for sugar and has a higher emission factor than 'sugar, brown'. While palm sugar has distinct characteristics, its primary function and composition are similar to other forms of sugar, making 'sugar, sucrose, white' a realistic comparison for CO2 emissions.",
+                "closest_match_explanation": "The ingredient '2 tbsp palm sugar' is best matched to 'sugar, sucrose, white'. While 'palm sugar' is a specific type of sugar, 'sugar, sucrose, white' is the most appropriate broader category available that represents a refined sugar product. This choice is made because both are forms of sugar and are likely to have similar CO2 emissions compared to other options like 'coconut milk', which is not a sugar.",
                 "ingredient_id": "Ra00318",
                 "closest_match_name": "sugar, sucrose, white",
                 "ingredient": "2 tbsp palm sugar",
@@ -109,16 +109,16 @@
                 "weight_in_kg": 0.0225
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'fish sauce' is a condiment made from fermented fish. Among the available options, 'fish balls, canned' is the most appropriate match because it is the only option that contains fish. While fish sauce is a liquid condiment and fish balls are a solid product, both are derived from fish and undergo processing. Given the limited options, 'fish balls, canned' provides the most realistic comparison for CO2 emissions related to a fish-based product.",
-                "ingredient_id": "Ra00082",
-                "closest_match_name": "fish balls, canned",
+                "closest_match_explanation": "The ingredient '1.5 tbsp fish sauce' is best matched to 'chili sauce'. While not an exact match, 'chili sauce' is a processed condiment, similar in nature to 'fish sauce' as both are liquid flavorings. 'Soya sauce' is also a processed condiment, but 'chili sauce' has a slightly higher emission factor, and both are viable options, so the one with the higher emission factor is chosen as per the rule for tie-breaking. 'Fish balls, canned' is not a suitable match as it is a solid food product.",
+                "ingredient_id": "Ra00484",
+                "closest_match_name": "chili sauce",
                 "ingredient": "1.5 tbsp fish sauce",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.2,
-                "energy_kj_100g": 261.0,
-                "fat_g_100g": 1.0,
-                "carbohydrate_g_100g": 4.9,
-                "protein_g_100g": 8.3
+                "co2_per_kg": 2.1,
+                "energy_kj_100g": 975.0,
+                "fat_g_100g": 0.7,
+                "carbohydrate_g_100g": 55.1,
+                "protein_g_100g": 0.6
             }
         },
         {
@@ -138,7 +138,7 @@
                 "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'bamboo shoots strips' in a 'can' is a direct match to the emission option 'bamboo shoots, canned, nonsalted'. This is the most accurate match as it precisely identifies the ingredient and its processing without needing to broaden the category or consider alternative processing.",
+                "closest_match_explanation": "The ingredient '1 550-ml can bamboo shoots strips' is directly matched to 'bamboo shoots, canned, nonsalted'. This is an exact match, considering both the ingredient and its processed form (canned). This aligns with the principle of using the most direct and accurate emission factor available.",
                 "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
                 "ingredient": "1 550-ml can bamboo shoots strips",
@@ -154,11 +154,11 @@
             "name": "1 cup Thai basil leaves",
             "weight_estimate": {
                 "ingredient": "1 cup Thai basil leaves",
-                "weight_calculation": "1 cup = 20 g, 1 * 20 g = 20 g = 0.02 kg",
-                "weight_in_kg": 0.02
+                "weight_calculation": "1 cup = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Thai basil leaves' is a type of basil. The most appropriate match is 'basil, fresh' because it represents the raw, unprocessed form of basil leaves. While 'basil, dried' is also an option, 'fresh' is preferred as the ingredient specifies 'leaves' without any indication of drying or further processing. This ensures the most realistic comparison for CO2 emissions for fresh basil.",
+                "closest_match_explanation": "The ingredient '1 cup Thai basil leaves' is best matched to 'basil, fresh'. This is because 'Thai basil leaves' are fresh leaves, and 'basil, fresh' is the most direct and least processed option available for basil. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 cup Thai basil leaves",
@@ -178,7 +178,7 @@
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'red bell pepper' is a type of sweet pepper. The most appropriate match is 'pepper, sweet, red, raw' because it directly corresponds to the ingredient's description as a raw, red, sweet pepper. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
+                "closest_match_explanation": "The ingredient '0.25 red bell pepper' is best matched to 'pepper, sweet, red, raw'. This is an exact match for a raw red bell pepper, aligning with the principle of using the most direct and accurate emission factor available for the ingredient.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.25 red bell pepper",
@@ -198,7 +198,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'jasmine rice' is a type of rice. The most appropriate match is 'rice, parboiled, raw' because it represents a raw form of rice. While other options like 'rice flour', 'rice pancakes', and 'rice noodles' are derived from rice, 'jasmine rice' itself is a grain, making 'rice, parboiled, raw' the most realistic comparison for CO2 emissions for uncooked rice.",
+                "closest_match_explanation": "The ingredient 'jasmine rice' is best matched to 'rice, parboiled, raw'. While 'jasmine rice' is a specific variety, 'rice, parboiled, raw' is the most appropriate broader category that represents raw rice. This aligns with the principle of using a broader category when an exact match is not available, and it is a realistic comparison for a staple grain.",
                 "ingredient_id": "Ra00300",
                 "closest_match_name": "rice, parboiled, raw",
                 "ingredient": "jasmine rice",
@@ -227,7 +227,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'coriander seeds' are a type of seed used as a spice. Among the available options, 'sesame seeds, decorticated' is the most appropriate match because it is the only option that is a seed. While coriander seeds have a distinct flavor, their form and use as a spice are similar to other seeds. Given the limited options, 'sesame seeds, decorticated' provides the most realistic comparison for CO2 emissions for a seed-based spice.",
+                "closest_match_explanation": "The ingredient '2 tsp coriander seeds' is best matched to 'sesame seeds, decorticated'. While not an exact match, both are seeds used as spices. 'Sesame seeds, decorticated' is chosen over 'curry powder' because it is a less processed form (a seed) compared to a powder, and it is a more realistic comparison in terms of CO2 emissions for a whole seed.",
                 "ingredient_id": "Ra00142",
                 "closest_match_name": "sesame seeds, decorticated",
                 "ingredient": "2 tsp coriander seeds",
@@ -252,11 +252,11 @@
             "name": "15 green Thai chilies",
             "weight_estimate": {
                 "ingredient": "15 green Thai chilies",
-                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 green Thai chili = 5 g, 15 * 5 g = 75 g = 0.075 kg.",
-                "weight_in_kg": 0.075
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 green Thai chili = 4 g, 15 * 4 g = 60 g = 0.06 kg.",
+                "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'green Thai chilies' are a type of hot chili pepper. The most appropriate match is 'pepper, hot chili, raw' because it directly corresponds to the ingredient's description as a raw, hot chili pepper. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
+                "closest_match_explanation": "The ingredient '15 green Thai chilies' is best matched to 'pepper, hot chili, raw'. This is because 'green Thai chilies' are a type of raw hot pepper, and 'pepper, hot chili, raw' is the most direct and least processed option available. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00009",
                 "closest_match_name": "pepper, hot chili, raw",
                 "ingredient": "15 green Thai chilies",
@@ -285,7 +285,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'Thai basil leaves' is a type of basil. The most appropriate match is 'basil, fresh' because it represents the raw, unprocessed form of basil leaves. While 'basil, dried' is also an option, 'fresh' is preferred as the ingredient specifies 'leaves' without any indication of drying or further processing. This ensures the most realistic comparison for CO2 emissions for fresh basil.",
+                "closest_match_explanation": "The ingredient '15 Thai basil leaves' is best matched to 'basil, fresh'. This is because 'Thai basil leaves' are fresh leaves, and 'basil, fresh' is the most direct and least processed option available for basil. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "15 Thai basil leaves",
@@ -301,11 +301,11 @@
             "name": "3 tbsp lemongrass",
             "weight_estimate": {
                 "ingredient": "3 tbsp lemongrass",
-                "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp lemongrass = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'lemongrass' is an aromatic herb. Among the available options, 'lemon, raw' is the most appropriate match because both are aromatic plants used for flavoring, and 'lemon, raw' is the closest in terms of being a fresh, unprocessed aromatic. While 'basil, fresh' is also a fresh herb, lemongrass has a distinct citrusy aroma, making 'lemon, raw' a more realistic comparison for CO2 emissions.",
+                "closest_match_explanation": "The ingredient '3 tbsp lemongrass' is best matched to 'lemon, raw'. While not an exact match, both are aromatic plants used for flavoring. 'Lemon, raw' is the most appropriate broader category available that represents a fresh, raw aromatic ingredient. This aligns with the principle of using a broader category when an exact match is not available and maintaining a realistic comparison in terms of CO2 emissions for fresh produce.",
                 "ingredient_id": "Ra00328",
                 "closest_match_name": "lemon, raw",
                 "ingredient": "3 tbsp lemongrass",
@@ -321,11 +321,11 @@
             "name": "1 tbsp galangal",
             "weight_estimate": {
                 "ingredient": "1 tbsp galangal",
-                "weight_calculation": "1 tbsp = 15 g, 1 * 15 g = 15 g = 0.015 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp galangal = 15 g, 1 * 15 g = 15 g = 0.015 kg.",
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'galangal' is a root similar to ginger. The most appropriate match is 'ginger root, raw' because both are raw, aromatic roots used as spices. This is the most realistic comparison for CO2 emissions as they share similar botanical characteristics and culinary uses.",
+                "closest_match_explanation": "The ingredient '1 tbsp galangal' is best matched to 'ginger root, raw'. Galangal is a root similar to ginger, both used as spices. 'Ginger root, raw' is the most appropriate broader category available that represents a fresh, raw root spice. This aligns with the principle of using a broader category when an exact match is not available and maintaining a realistic comparison in terms of CO2 emissions for fresh root vegetables.",
                 "ingredient_id": "Ra00261",
                 "closest_match_name": "ginger root, raw",
                 "ingredient": "1 tbsp galangal",
@@ -341,21 +341,10 @@
             "name": "2 tsp makrut lime zest",
             "weight_estimate": {
                 "ingredient": "2 tsp makrut lime zest",
-                "weight_calculation": "1 tsp = 5 g, 2 * 5 g = 10 g = 0.01 kg",
-                "weight_in_kg": 0.01
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tsp makrut lime zest = 2 g, 2 * 2 g = 4 g = 0.004 kg.",
+                "weight_in_kg": 0.004
             },
-            "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'makrut lime zest' is the outer peel of a lime. The most appropriate match is 'lime, raw' because it represents the raw fruit from which the zest is derived. This is the most accurate match as it directly relates to the source of the ingredient without needing to broaden the category or consider alternative processing.",
-                "ingredient_id": "Ra00332",
-                "closest_match_name": "lime, raw",
-                "ingredient": "2 tsp makrut lime zest",
-                "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.6,
-                "energy_kj_100g": 155.0,
-                "fat_g_100g": 0.2,
-                "carbohydrate_g_100g": 7.7,
-                "protein_g_100g": 0.7
-            }
+            "co2_per_kg_db": null
         },
         {
             "name": "2 cilantro roots or 4 big cilantro stems",
@@ -365,27 +354,27 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'cilantro roots or big cilantro stems' refers to parts of the cilantro plant. The most appropriate match is 'parsley root, raw' because both are roots or stems of aromatic herbs used in cooking. While 'basil, fresh' and 'parsley, raw' are also fresh herbs, 'parsley root, raw' is the only option that specifically refers to a root, making it the most realistic comparison for CO2 emissions for cilantro roots or stems.",
-                "ingredient_id": "Ra00269",
-                "closest_match_name": "parsley root, raw",
+                "closest_match_explanation": "The ingredient '2 cilantro roots or 4 big cilantro stems' is best matched to 'parsley, raw'. While 'cilantro roots' are specific, 'parsley, raw' is the most appropriate broader category available that represents a fresh, raw herb. This aligns with the principle of using a broader category when an exact match is not available and maintaining a realistic comparison in terms of CO2 emissions for fresh herbs.",
+                "ingredient_id": "Ra00134",
+                "closest_match_name": "parsley, raw",
                 "ingredient": "2 cilantro roots or 4 big cilantro stems",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 0.9,
-                "energy_kj_100g": 232.0,
-                "fat_g_100g": 0.6,
-                "carbohydrate_g_100g": 8.0,
-                "protein_g_100g": 2.3
+                "co2_per_kg": 0.5,
+                "energy_kj_100g": 201.0,
+                "fat_g_100g": 1.1,
+                "carbohydrate_g_100g": 1.2,
+                "protein_g_100g": 3.7
             }
         },
         {
             "name": "3 tbsp shallots",
             "weight_estimate": {
                 "ingredient": "3 tbsp shallots",
-                "weight_calculation": "1 tbsp = 15 g, 3 * 15 g = 45 g = 0.045 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp shallots = 15 g, 3 * 15 g = 45 g = 0.045 kg.",
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'shallots' are a type of onion. The most appropriate match is 'red onion' because it is a closely related allium vegetable with similar culinary uses and growth characteristics. While 'onion, raw' is also an option, 'red onion' is a more specific and realistic comparison for shallots in terms of CO2 emissions.",
+                "closest_match_explanation": "The ingredient '3 tbsp shallots' is best matched to 'red onion'. Shallots are a type of onion, and 'red onion' is the most appropriate broader category available that represents a raw, unprocessed onion. This aligns with the principle of using a broader category when an exact match is not available and maintaining a realistic comparison in terms of CO2 emissions for fresh vegetables.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "3 tbsp shallots",
@@ -401,11 +390,11 @@
             "name": "2 tbsp garlic",
             "weight_estimate": {
                 "ingredient": "2 tbsp garlic",
-                "weight_calculation": "1 tbsp = 15 g, 2 * 15 g = 30 g = 0.03 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tbsp garlic = 15 g, 2 * 15 g = 30 g = 0.03 kg.",
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'garlic' is a direct match to the emission option 'garlic, raw'. This is the most accurate match as it precisely identifies the ingredient without needing to broaden the category or consider alternative processing.",
+                "closest_match_explanation": "The ingredient '2 tbsp garlic' is best matched to 'garlic, raw'. This is an exact match for raw garlic, aligning with the principle of using the most direct and accurate emission factor available for the ingredient.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 tbsp garlic",
@@ -421,14 +410,14 @@
             "name": "1 tsp fermented shrimp paste (gapi)",
             "weight_estimate": {
                 "ingredient": "1 tsp fermented shrimp paste (gapi)",
-                "weight_calculation": "1 tsp = 5 g, 1 * 5 g = 5 g = 0.005 kg",
+                "weight_calculation": "Ingredient not found in general weights. LLM estimate is: 1 tsp fermented shrimp paste (gapi) = 5 g, 1 * 5 g = 5 g = 0.005 kg.",
                 "weight_in_kg": 0.005
             },
             "co2_per_kg_db": null
         }
     ],
     "persons": 4,
-    "instructions": "Reduce 0.75 cup coconut milk until thick and coconut oil starts to separate from the coconut milk (if the oil doesn’t separate after it has reduced until very thick, it's okay, just proceed with the recipe).\nAdd the curry paste and sauté, stirring constantly over medium heat for about 2 minutes until aromatic. If paste sticks to the bottom of the pan, you can deglaze with a little bit of the remaining coconut milk.\nAdd chicken thigh and stir to mix with the paste. (Continue with instructions below if using chicken breast).\nAdd the chicken stock, remaining 1 cup of coconut milk, palm sugar and 1 Tablespoon of the fish sauce. Grab the makrut lime leaves and twist them to bruise and release aroma, then tear them into chunks and add them to the pot, discarding the center stems. Bring to a simmer and let simmer gently for 10-15 minutes or until the chicken is fork tender.*The lime leaves are for infusion only and not meant to be eaten when left in large pieces. They are traditionally left in the curry, but be sure to inform your guests not to eat them.\nOnce the curry is done simmering, add bamboo shoots and bring to a boil. If you prefer your peppers to be more cooked, add them at this stage. Once boiling, remove from heat.\nTaste and add more fish sauce and/or sugar as needed. *If you feel that the curry is weak and needs more curry paste, saute the additional curry paste in some oil in a small pot for a few minutes until aromatic, then add about a cup of the curry sauce to dissolve the paste and let it simmer for a few minutes, then stir it back into the curry.\nAdd Thai basil and spur chilies or bell peppers and stir just until the basil is wilted. Serve with jasmine rice\nIf using chicken breast:\nAfter sautéing the curry paste, add makrut lime leaves, coconut milk, chicken stock, palm sugar and 1 tablespoon fish sauce; bring to a simmer and let simmer for about 5 minutes.*The lime leaves are for infusion only and not meant to be eaten when left in large pieces. They are traditionally left in the curry, but be sure to inform your guests not to eat them.\nBring the curry sauce to a boil, then add the marinated chicken breast and cook until chicken is about 70% done, 1-2 minutes. Add the bamboo shoots and bring to a boil. If you prefer your peppers to be more cooked, add them at this stage. Once boiling, remove from heat.\nTaste and add more fish sauce and/or sugar as needed. *If you feel that the curry is weak and needs more curry paste, saute the additional curry paste in some oil in a small pot for a few minutes until aromatic, then add about a cup of the curry sauce to dissolve the paste and let it simmer for a few minutes, then stir it back into the curry.\nStir in Thai basil and spur chilies or bell peppers. Serve with jasmine rice.\nFor the Curry Paste\nToast cumin seeds by adding them to a dry sauté pan and stir constantly over medium-high heat until the seeds are aromatic and slightly darkened, about 4 minutes. Cool on a plate. Repeat with the coriander seeds.\nUsing a mortar and pestle, grind toasted coriander seeds, toasted cumin seeds, and white peppercorns into a fine powder. Remove from mortar and set aside.\nCut at least 8 green Thai chilies in half horizontally and, with a paring knife, scrape off and discard the seeds and pith, then finely chop along with the remaining chilies.Note: The seeds and pith are removed from some of the chilies to tone down the heat, you can remove seeds from all of the green chilies if you wish to tone it down even more\nAdd chopped chilies and salt to a heavy-duty mortar and pestle; pound into a fine paste. If the mixture feels too wet at any point, add some of the ground spices to absorb the liquid.\nAdd basil leaves; pound into a fine paste.\nAdd lemongrass, galangal, makrut lime zest, and cilantro roots; pound into a fine paste.\nAdd shallots, garlic, and any remaining ground spices; pound into a fine paste.\nAdd shrimp paste and pound to mix.",
+    "instructions": "Reduce 0.75 cup coconut milk until thick and coconut oil starts to separate from the coconut milk (if the oil doesn’t separate after it has reduced until very thick, it's okay, just proceed with the recipe). Add the curry paste and sauté, stirring constantly over medium heat for about 2 minutes until aromatic. If paste sticks to the bottom of the pan, you can deglaze with a little bit of the remaining coconut milk. Add chicken thigh and stir to mix with the paste. (Continue with instructions below if using chicken breast). Add the chicken stock, remaining 1 cup of coconut milk, palm sugar and 1 Tablespoon of the fish sauce. Grab the makrut lime leaves and twist them to bruise and release aroma, then tear them into chunks and add them to the pot, discarding the center stems. Bring to a simmer and let simmer gently for 10-15 minutes or until the chicken is fork tender. *The lime leaves are for infusion only and not meant to be eaten when left in large pieces. They are traditionally left in the curry, but be sure to inform your guests not to eat them.* Once the curry is done simmering, add bamboo shoots and bring to a boil. If you prefer your peppers to be more cooked, add them at this stage. Once boiling, remove from heat. Taste and add more fish sauce and/or sugar as needed. *If you feel that the curry is weak and needs more curry paste,* saute the additional curry paste in some oil in a small pot for a few minutes until aromatic, then add about a cup of the curry sauce to dissolve the paste and let it simmer for a few minutes, then stir it back into the curry. Add Thai basil and spur chilies or bell peppers and stir just until the basil is wilted. Serve with jasmine rice. If using chicken breast: After sautéing the curry paste, add makrut lime leaves, coconut milk, chicken stock, palm sugar and 1 tablespoon fish sauce; bring to a simmer and let simmer for about 5 minutes. *The lime leaves are for infusion only and not meant to be eaten when left in large pieces. They are traditionally left in the curry, but be sure to inform your guests not to eat them.* Bring the curry sauce to a boil, then add the marinated chicken breast and cook until chicken is about 70% done, 1-2 minutes. Add the bamboo shoots and bring to a boil. If you prefer your peppers to be more cooked, add them at this stage. Once boiling, remove from heat. Taste and add more fish sauce and/or sugar as needed. *If you feel that the curry is weak and needs more curry paste,* saute the additional curry paste in some oil in a small pot for a few minutes until aromatic, then add about a cup of the curry sauce to dissolve the paste and let it simmer for a few minutes, then stir it back into the curry. Stir in Thai basil and spur chilies or bell peppers. Serve with jasmine rice. For the Curry Paste: Toast cumin seeds by adding them to a dry sauté pan and stir constantly over medium-high heat until the seeds are aromatic and slightly darkened, about 4 minutes. Cool on a plate. Repeat with the coriander seeds. Using a mortar and pestle, grind toasted coriander seeds, toasted cumin seeds, and white peppercorns into a fine powder. Remove from mortar and set aside. Cut at least 8 green Thai chilies in half horizontally and, with a paring knife, scrape off and discard the seeds and pith, then finely chop along with the remaining chilies. Note: The seeds and pith are removed from some of the chilies to tone down the heat, you can remove seeds from all of the green chilies if you wish to tone it down even more. Add chopped chilies and salt to a heavy-duty mortar and pestle; pound into a fine paste. If the mixture feels too wet at any point, add some of the ground spices to absorb the liquid. Add basil leaves; pound into a fine paste. Add lemongrass, galangal, makrut lime zest, and cilantro roots; pound into a fine paste. Add shallots, garlic, and any remaining ground spices; pound into a fine paste. Add shrimp paste and pound to mix.",
     "url": "https://hot-thai-kitchen.com/green-curry-new-2/",
     "language": "en"
 }

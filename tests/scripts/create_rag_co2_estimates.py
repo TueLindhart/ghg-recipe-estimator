@@ -2,6 +2,8 @@ import asyncio
 import json
 import os
 
+from dotenv import load_dotenv
+
 from food_co2_estimator.chains.rag_co2_estimator import (
     NEGLIGIBLE_THRESHOLD,
     get_co2_emissions,
@@ -14,6 +16,9 @@ from tests.urls import TEST_URLS
 
 # Directory to store the results
 os.makedirs(CO2_EMISSIONS_DIR, exist_ok=True)
+
+# Load environment variables from the project root
+load_dotenv()
 
 
 async def save_rag_co2_estimates(file_name: str, url: str) -> CO2Emissions:

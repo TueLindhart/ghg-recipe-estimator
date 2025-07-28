@@ -15,7 +15,7 @@ using dictionary formatting.
 - Examples:
    - "Noodles, eggs": The ingredient is Noodles made from eggs.
    - "Tomatoes, canned": The ingredient is canned tomatoes.
-   - "Pebber, raw, red": Is simply a raw.
+   - "Pebber, raw, red": Is simply a raw red pepper.
 
 **Carefully, follow the rules below in deciding the best match**
 
@@ -24,6 +24,8 @@ using dictionary formatting.
 - **Examples of reasonable matches:**
   - Foods that are similar in nature, such as pancetta and pepperoni, are likely to have similar CO2 emissions since they both come from pork.
   - Cheddar and parmesan and/or mozarella are both cheese products and likely have same emissions factors.
+  - "1 dl oksekøds boillion" should be matched to "bouillon, oksekød, spiseklar" and NOT "bouillon, oksekød, koncentreret, terning" because
+    it is common sense that 1 dl is liquid and therefore it is spiseklar (ready to eat) and not concentrated.
 - **Examples of unreasonable matches:**
   - Do NOT match water to milk, as their CO2 emissions are vastly different due to their different production processes.
   - Do NOT match eggs to a whole chicken, as the CO2 emissions from producing one egg will be much smaller than those from raising a full chicken.
@@ -46,7 +48,7 @@ using dictionary formatting.
      - Brown rice is a type of rice; "rice" is a valid broader category.
      - Soy milk is derived from soybeans, not cows; it is not a sub-category of cow's milk.
      - "Noodles, eggs" is NOT a good match for eggs as noodles are not eggs!
-     - "beef" should be matched to "Average beef" unless the ingredient exactly specifies the cut or that it is minced.
+     - !IMPOTRANT!"Beef" ("Oksekød") MUST be matched to "Average beef" ("Oksekød, gennemsnitligt") unless the ingredient exactly specifies the cut or that it is minced.
 
 3. **Do Not Use Final Meals or Ready Meals as Best Matches:**
    - We match at the ingredient level, not at the meal level.
@@ -58,7 +60,7 @@ using dictionary formatting.
 
 4. **Consider the Amount of Processing Performed:**
    - If multiple viable options exist, choose the one closest concerning the amount of processing the ingredient has undergone.
-   - Processing includes any transformation such as drying, canning, fermenting, etc.
+   - Processing includes any transformation such as drying, canning, fermenting, etc but can also include making tomato to tomato sauce for instance.
    - Retain descriptions of processing steps such as "smoked," "canned," or "fermented."
    - Preparation steps for ingredients related to cooking should be ignored in determining best match.
    - Ignore preparation descriptions such as "for grilling" or "for frying."
@@ -70,10 +72,16 @@ using dictionary formatting.
      - Ingredient named 'Butter, for frying' would mean 'for frying' should be ignored in determining best match.
      - "chicken, leg, flesh and skin, raw" is a better match than "minced chicken" to "chicken thigh" or "chicken breast" because
        because "chicken, leg, flesh and skin, raw" is the least processed (raw) option and "minced chicken" is more processed.
+      - "Tomato ketcup" is a better match to "tomato salsa" than "tomato, raw" because tomato ketchup is more processed and therefore a better match.
+      - If you can match "sennepsfrø" to "sennnep" and "sesamfrø", then choose "sesamfrø" is it is the least processed and does not contain many other ingredients as "sennep" does.
+      - If there is no direct match for a spice in powder form, then match to another spice in powder form (e.g. "chili, powder" to "carry, powder")
 
-5. **If Multiple Viable Options Have Similar Processing Levels:**
+5. **If Multiple Viable Options Have Similar Processing Level choose the one with highest emissions:**
    - Choose the one with the highest emission factor.
    - This ensures a conservative estimate for CO2 emissions.
+   - ONLY choose the highest emissions option if it does not violates rules above (specifically rule 1) and the two options truly are viable.
+   - **Clarification Example:**
+      - If you can match "Oksekød, hakket" to "Oksekød, 5-10% fedt" and "Oksekød, 10-15% fedt", then choose "Oksekød, 10-15% fedt" as it has the highest emissions factor and they are the same amount of proceesed
 
 6. **Do Not Use Quantity Information in Deciding the Best Match:**
    - Focus solely on the ingredient's identity and characteristics, ensuring the emission estimation remains unbiased by quantity.
@@ -93,9 +101,12 @@ using dictionary formatting.
    - You must only select matches from the provided emission options.
    - If none of the provided options are suitable, leave the CO2 per kg result as 'none'.
    - **Example:**
-      - Many forms of seasoning or spices do not have emission data. Here it is better to return 'none'. 
+      - Many forms of seasoning or spices do not have emission data. Here it is better to return 'none'.
    - Do not invent or guess values; this ensures the output remains grounded in the provided data.
    - Expection: If it is water, then provide the value 0.
+
+10. **Duplicate ingredients**:
+   - If the same ingredient appears multiple times in the list, provide estimate for both ingredients and return duplicate ingredient names as they are.
 
 **Summary of Decision Rules:**
 1. **Use Realistic Comparisons:** Match ingredients to emission factors that make sense based on common sense (e.g., pork-based meats to pork).
@@ -107,6 +118,7 @@ using dictionary formatting.
 7. **Account for Synonyms:** Recognize alternative names or regional variants (e.g., “eggplant” vs. “aubergine”).
 8. **Use Provided Emission Options:** Rely on the supplied list to find the best match.
 9. **No Match If Unsuitable:** If none of the provided options fit or rule 1 is violated, output “none.”
+10. **Handle Duplicates:** If the same ingredient appears multiple times, provide estimates for each instance without altering the ingredient names.
 
 It is very important to follow the above rules because they ensure trust worthy results. Otherwise, they cannot be used.
 
@@ -116,6 +128,10 @@ IMPORTANT! The context output must directly "copy-pasted" from the best match in
 IMPORTANT! The CO2 emission result must be provided in the unit 'kg CO2 per kg'.
 IMPORTANT! Follow rule 1 to determine the best match that will match CO2 emissions to the ingredient and explain why match follows rule 1.
 IMPORTANT! Do not infer to rules numbering when explaining the match (e.g. "rule 1 says..."). Instead, cohesively argue why the match is the best match based on the rules.
+IMPORTANT! Before you send your final response, check that you follow all the rules and examples above and you have remembered all ingredients.
+
+If you do not follow the rules, then the results will be wrong and cannot be used.
+
 """
 
 

@@ -77,7 +77,7 @@
         },
         {
             "ingredient": "1 squash",
-            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.4 kg",
+            "weight_calculation": "1 squash = 400 g, 1 * 400 g = 400 g = 0.400 kg",
             "weight_in_kg": 0.4
         },
         {
@@ -112,7 +112,7 @@
         },
         {
             "ingredient": "8 tortillas pandekager",
-            "weight_calculation": "1 tortilla = 30 g, 8 * 30 g = 240 g = 0.24 kg",
+            "weight_calculation": "1 tortilla = 30 g, 8 * 30 g = 240 g = 0.240 kg",
             "weight_in_kg": 0.24
         },
         {
@@ -124,6 +124,16 @@
             "ingredient": "1 håndfuld frisk koriander",
             "weight_calculation": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
             "weight_in_kg": 0.025
+        },
+        {
+            "ingredient": "salt",
+            "weight_calculation": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+            "weight_in_kg": 0.005
+        },
+        {
+            "ingredient": "sort peber",
+            "weight_calculation": "Mængden af sort peber er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 1 * 0.005 kg = 0.005 kg",
+            "weight_in_kg": 0.005
         },
         {
             "ingredient": "1 spsk smør",

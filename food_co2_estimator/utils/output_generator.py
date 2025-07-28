@@ -15,18 +15,7 @@ from food_co2_estimator.pydantic_models.recipe_extractor import (
     EnrichedRecipe,
 )
 
-# https://concito.dk/files/media/document/Danmarks%20globale%20forbrugsudledninger.pdf
-# Average Danish dinner emissions (kg CO₂e / capita)
-# 13 [ton / year]  * 20 % / 365 [days] = 0.00712 ton CO₂e / day
-# 0.00721 ton CO₂e / day * 1000 = 7.12 kg CO₂e / day
-AVG_EMISSION_PER_CAPITA_PER_DAY = 7.1
-# Average Danish dinner emissions (kg CO₂e / meal)
-# 7.12 kg CO₂e / day / 4 meals per day = 1.78 kg CO₂e / meal
-AVG_EMISSION_PER_CAPITA_PER_MEAL = 1.8
-
-# https://concito.dk/en/concito-bloggen/her-faar-du-mest-ernaering-klimaaftrykket-0?utm_source=chatgpt.com
-BUDGET_EMISSION_PER_CAPITA_PER_DAY = 2.0
-BUDGET_EMISSION_PER_CAPITA_PER_MEAL = 0.5
+KJ_TO_KCAL_CONVERSION_FACTOR = 4.184
 
 
 def generate_output_model(
@@ -49,6 +38,11 @@ def generate_output_model(
     )
     co2_per_person = calculate_co2_per_person(total_co2, number_of_persons)
 
+    # Convert kJ to kcal (1 kcal = 4.184 kJ)
+    calories_per_person = None
+    if energy_per_person is not None and energy_per_person > 0:
+        calories_per_person = energy_per_person / KJ_TO_KCAL_CONVERSION_FACTOR
+
     return create_recipe_output(
         enriched_recipe,
         ingredients,
@@ -56,6 +50,7 @@ def generate_output_model(
         number_of_persons,
         co2_per_person,
         energy_per_person,
+        calories_per_person,
         fat_per_person,
         carb_per_person,
         protein_per_person,
@@ -281,6 +276,7 @@ def create_recipe_output(
     persons: int | None,
     co2_per_person: float | None,
     energy_per_person: float | None,
+    calories_per_person: float | None,
     fat_per_person: float | None,
     carb_per_person: float | None,
     protein_per_person: float | None,
@@ -292,12 +288,11 @@ def create_recipe_output(
         total_co2_kg=round(total_co2, 1),
         number_of_persons=persons,
         co2_per_person_kg=co2_per_person,
-        avg_emission_per_person_per_meal=AVG_EMISSION_PER_CAPITA_PER_MEAL,
-        avg_emission_per_person_per_day=AVG_EMISSION_PER_CAPITA_PER_DAY,
-        budget_emission_per_person_per_meal=BUDGET_EMISSION_PER_CAPITA_PER_MEAL,
-        budget_emission_per_person_per_day=BUDGET_EMISSION_PER_CAPITA_PER_DAY,
         ingredients=ingredients,
         energy_per_person_kj=round(energy_per_person, 0) if energy_per_person else None,
+        calories_per_person_kcal=int(round(calories_per_person, 0))
+        if calories_per_person
+        else None,
         fat_per_person_g=round(fat_per_person, 0) if fat_per_person else None,
         carbohydrate_per_person_g=round(carb_per_person, 0)
         if carb_per_person

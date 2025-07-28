@@ -97,8 +97,8 @@
         },
         {
             "ingredient": "0.5 bdt koriander",
-            "weight_calculation": "1 bundt koriander = 50 g, 0.5 * 50 g = 25 g = 0.025 kg",
-            "weight_in_kg": 0.025
+            "weight_calculation": "1 bundt koriander = 25 g, 0.5 * 25 g = 12.5 g = 0.0125 kg",
+            "weight_in_kg": 0.0125
         },
         {
             "ingredient": "2 spsk olivenolie",

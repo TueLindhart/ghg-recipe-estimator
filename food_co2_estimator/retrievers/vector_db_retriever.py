@@ -7,6 +7,10 @@ from langchain_core.vectorstores import VectorStoreRetriever
 from food_co2_estimator.data.vector_store.vector_store import get_vector_store
 from food_co2_estimator.language.detector import Languages
 
+MANUAL_MATCHING_EXCEPTIONS = {
+    "oksekød": "oksekød, gennemsnitligt",  # Beef must match to average unless specified
+}
+
 # List of number words to recognize spelled-out quantities
 NUMBER_WORDS = [
     # English number words
@@ -241,6 +245,19 @@ FILLER_WORDS = [
     "warm",
     "varm",
     "hot",
+    "juice",
+    "saften",
+    "saft",
+    "saften af",
+    "juice of",
+    "finthakkede",
+    "finthakket",
+    "finely chopped",
+    "finely-chopped",
+    "håndfuld",
+    "håndfulde",
+    "handfuls",
+    "håndfulde af",
     # Danish-only words (if any)
     "store",
     "små",
@@ -330,11 +347,19 @@ def get_emission_retriever_chain(
 async def batch_emission_retriever(inputs: List[str], language: Languages):
     retriever_chain = get_emission_retriever_chain(language=language)
     cleaned_inputs = clean_ingredient_list(inputs)
+    cleaned_inputs = transform_input_ingredients(cleaned_inputs)
     outputs = await retriever_chain.abatch(cleaned_inputs)
     if len(outputs) != len(cleaned_inputs):
         raise ValueError
     retriever_matches = dict(zip(inputs, outputs))
     return retriever_matches
+
+
+def transform_input_ingredients(cleaned_inputs: list[str]) -> list[str]:
+    return [
+        MANUAL_MATCHING_EXCEPTIONS.get(ingredient, ingredient)
+        for ingredient in cleaned_inputs
+    ]
 
 
 def remove_quantities(ingredient: str) -> str:

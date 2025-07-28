@@ -12,7 +12,8 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "cwd": "${workspaceFolder}",
-            "env": {"PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"},  
+            "env": {"PYTHONPATH": "${workspaceFolder/tests}:{workspaceFolder}:${env:PYTHONPATH}"}, 
+            
         },
         {
             "name": "Run app",

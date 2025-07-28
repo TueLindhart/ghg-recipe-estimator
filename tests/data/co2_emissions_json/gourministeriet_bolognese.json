@@ -1,19 +1,19 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '1 kg hakket oksekød' is minced beef. The best match is 'oksekød, hakket, 15-20% fedt' because it is the most common type of minced beef and directly matches the ingredient description. This choice aligns with using realistic CO2 emission comparisons, as minced beef is a specific form of beef, and the selected option accurately reflects its processing and fat content.",
-            "ingredient_id": "Ra00014",
-            "closest_match_name": "oksekød, hakket, 15-20% fedt",
+            "closest_match_explanation": "For '1 kg hakket oksekød', the most appropriate match is 'oksekød, hakket, 10-15% fedt'. This is because the ingredient specifies 'hakket oksekød' (minced beef), and among the minced beef options, 'oksekød, hakket, 10-15% fedt' represents a common fat percentage for minced beef. It is also chosen over 'oksekød, hakket, 5-10% fedt' and 'oksekød, hakket, 15-20% fedt' because it has the highest emission factor among the viable options, providing a conservative estimate.",
+            "ingredient_id": "Ra00012",
+            "closest_match_name": "oksekød, hakket, 10-15% fedt",
             "ingredient": "1 kg hakket oksekød",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 45.5,
-            "energy_kj_100g": 903.0,
-            "fat_g_100g": 16.2,
+            "co2_per_kg": 48.0,
+            "energy_kj_100g": 687.0,
+            "fat_g_100g": 9.7,
             "carbohydrate_g_100g": 0.0,
-            "protein_g_100g": 17.8
+            "protein_g_100g": 19.4
         },
         {
-            "closest_match_explanation": "The ingredient '3 store løg' refers to raw onions. The best match is 'løg' because it represents the raw, unprocessed form of onion, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "For '3 store løg', the best match is 'løg'. This is the most direct and least processed form of onion available in the database, aligning with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient. 'Løg, ristede' and 'løg, hakkede, dybfrost' are more processed, and 'rødløg' is a different type of onion.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "3 store løg",
@@ -25,7 +25,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '3 gulerødder' refers to raw carrots. The best match is 'gulerod' because it represents the raw, unprocessed form of carrot, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "For '3 gulerødder', the best match is 'gulerod'. This is the most direct and least processed form of carrot available. 'Gulerod, dybfrost' is a processed version, and 'grønkål' and 'rødkål' are different vegetables entirely.",
             "ingredient_id": "Ra00257",
             "closest_match_name": "gulerod",
             "ingredient": "3 gulerødder",
@@ -37,7 +37,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 stilke bladselleri' refers to raw celery stalks. The best match is 'bladselleri' because it represents the raw, unprocessed form of celery, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "For '2.5 stilke bladselleri', the best match is 'bladselleri'. This is an exact match for the ingredient and represents the raw, unprocessed form, which is appropriate as no processing is specified for the ingredient. The other options are either different types of celery or entirely different vegetables.",
             "ingredient_id": "Ra00153",
             "closest_match_name": "bladselleri",
             "ingredient": "2.5 stilke bladselleri",
@@ -49,7 +49,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '6 fed hvidløg' refers to raw garlic cloves. The best match is 'hvidløg' because it represents the raw, unprocessed form of garlic, which is consistent with the ingredient description. This choice aligns with selecting the least processed option when no specific processing is mentioned for the ingredient.",
+            "closest_match_explanation": "For '6 fed hvidløg', the best match is 'hvidløg'. This is the most direct and least processed form of garlic available in the database. 'Hvidløg i olie' and 'hvidløgsbaguette, frost' are processed products, and 'rødløg' is a different ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "6 fed hvidløg",
@@ -61,7 +61,7 @@
             "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '150 g tomatkoncentrat' refers to tomato concentrate. The best match is 'tomatpure, koncentreret' because it directly matches the description of a concentrated tomato product. This choice aligns with considering the amount of processing performed, as 'koncentreret' (concentrated) indicates a processed form of tomato.",
+            "closest_match_explanation": "For '150 g tomatkoncentrat', the best match is 'tomatpure, koncentreret'. This is an exact match for the ingredient, as 'tomatkoncentrat' is synonymous with 'tomatpure, koncentreret'. This option accurately reflects the processed nature of the ingredient.",
             "ingredient_id": "Ra00368",
             "closest_match_name": "tomatpure, koncentreret",
             "ingredient": "150 g tomatkoncentrat",
@@ -73,7 +73,7 @@
             "protein_g_100g": 4.3
         },
         {
-            "closest_match_explanation": "The ingredient '3 dåse hakkede tomater eller polpa' refers to canned chopped tomatoes. The best match is 'tomat, flået, konserves' because it represents canned tomatoes, which is consistent with the ingredient description. This choice aligns with considering the amount of processing performed, as 'dåse' (canned) indicates a processed form of tomato.",
+            "closest_match_explanation": "For '3 dåse hakkede tomater eller polpa', the best match is 'tomat, flået, konserves'. This option accurately reflects the canned and processed nature of 'hakkede tomater' (chopped tomatoes) or 'polpa'. 'Tomatpure, koncentreret' and 'tomat, soltørret' are different forms of processed tomatoes, and 'tun i tomat, konserves' is a final meal.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomat, flået, konserves",
             "ingredient": "3 dåse hakkede tomater eller polpa",
@@ -85,7 +85,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 dl rødvin' refers to red wine. The best match is 'rødvin' because it directly matches the ingredient description. This choice aligns with using realistic CO2 emission comparisons, as red wine is a specific type of alcoholic beverage.",
+            "closest_match_explanation": "For '2 dl rødvin', the best match is 'rødvin'. This is an exact match for the ingredient. 'Rosévin' is a different type of wine, and 'rødkål' and 'rødløg' are entirely different ingredients.",
             "ingredient_id": "Ra00377",
             "closest_match_name": "rødvin",
             "ingredient": "2 dl rødvin",
@@ -97,7 +97,7 @@
             "protein_g_100g": 0.2
         },
         {
-            "closest_match_explanation": "The ingredient 'Olie' is a general term for oil. Among the available options, 'olivenolie' (olive oil) has the highest emission factor. This choice aligns with selecting the option with the highest emission factor when multiple viable options have similar processing levels, ensuring a conservative estimate.",
+            "closest_match_explanation": "For 'Olie', the best match is 'olivenolie'. When a generic ingredient like 'Olie' is provided, and multiple oil options are available, choosing the one with the highest emission factor among viable options is appropriate to provide a conservative estimate. All the oil options are viable, and 'olivenolie' has the highest emission factor.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "Olie",
@@ -109,7 +109,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient 'Friskekværnet peber' refers to freshly ground pepper, which is typically black pepper. The best match is 'peber, sort' because it represents black pepper, which is the most common type of pepper used for grinding. This choice aligns with using realistic CO2 emission comparisons for common spices.",
+            "closest_match_explanation": "For 'Friskekværnet peber', the best match is 'peber, sort'. This is the most common type of pepper used for grinding and is the least processed option among the pepper varieties. 'Peber, chili' is a different type of pepper, and 'peberfrugt' and 'marinerede grillede peberfrugter' are different ingredients.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "peber, sort",
             "ingredient": "Friskekværnet peber",
@@ -121,7 +121,7 @@
             "protein_g_100g": 10.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 håndfuld friske basilikumblade' refers to fresh basil leaves. The best match is 'basilikum, frisk' because it directly matches the description of fresh basil. This choice aligns with considering the amount of processing performed, as 'frisk' (fresh) indicates the least processed form.",
+            "closest_match_explanation": "For '1 håndfuld friske basilikumblade', the best match is 'basilikum, frisk'. This is an exact match for the ingredient, specifying 'friske' (fresh) basil leaves. 'Basilikum, tørret' is a processed form, and the other options are unrelated.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basilikum, frisk",
             "ingredient": "1 håndfuld friske basilikumblade",
@@ -133,7 +133,7 @@
             "protein_g_100g": 3.2
         },
         {
-            "closest_match_explanation": "The ingredient 'Pasta efter ønske' is a general term for pasta. The best match is 'pasta' because it represents the most general form of pasta, which is consistent with the ingredient description. This choice aligns with using a broader category when an exact specific type of pasta is not provided.",
+            "closest_match_explanation": "For 'Pasta efter ønske', the best match is 'pasta'. This is the most general and direct match for the ingredient. 'Fyldt frisk pasta' and 'frisk pasta, fettucine spinat' are more specific types of pasta, and 'pastasovs' is a sauce, not pasta itself.",
             "ingredient_id": "Ra00234",
             "closest_match_name": "pasta",
             "ingredient": "Pasta efter ønske",
@@ -145,7 +145,7 @@
             "protein_g_100g": 13.5
         },
         {
-            "closest_match_explanation": "The ingredient 'Revet parmesan' refers to grated parmesan cheese. The best match is 'parmesan ost, 32+' because it directly matches the description of parmesan cheese. This choice aligns with using realistic CO2 emission comparisons, as parmesan is a specific type of cheese.",
+            "closest_match_explanation": "For 'Revet parmesan', the best match is 'parmesan ost, 32+'. This is an exact match for the ingredient, as 'Revet parmesan' refers to grated parmesan cheese. 'Vegansk ost, revet eller skiver' is a different product, and the other options are unrelated.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "parmesan ost, 32+",
             "ingredient": "Revet parmesan",

@@ -9,27 +9,27 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'frisk pasta' is a type of pasta, and 'pasta' is a suitable broader category. Among the pasta options, 'frisk pasta, fettucine spinat' is the most specific match for fresh pasta, and it is less processed than 'fyldt frisk pasta' (filled fresh pasta).",
-                "ingredient_id": "Ra00388",
-                "closest_match_name": "frisk pasta, fettucine spinat",
+                "closest_match_explanation": "The ingredient '250 g frisk pasta' is best matched with 'pasta' because 'frisk pasta, fettucine spinat' and 'fyldt frisk pasta' are more specific types of fresh pasta, and 'pastasovs' is a sauce, not pasta itself. 'pasta' is a broader category that accurately represents fresh pasta without being overly specific or a final meal.",
+                "ingredient_id": "Ra00234",
+                "closest_match_name": "pasta",
                 "ingredient": "250 g frisk pasta",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.5,
-                "energy_kj_100g": 1120.0,
-                "fat_g_100g": 2.5,
-                "carbohydrate_g_100g": 48.0,
-                "protein_g_100g": 11.0
+                "co2_per_kg": 2.1,
+                "energy_kj_100g": 1532.0,
+                "fat_g_100g": 1.8,
+                "carbohydrate_g_100g": 73.9,
+                "protein_g_100g": 13.5
             }
         },
         {
             "name": "2 fed hvidløg",
             "weight_estimate": {
                 "ingredient": "2 fed hvidløg",
-                "weight_calculation": "1 fed hvidløg = 4 g, 2 * 4 g = 8 g = 0.008 kg",
+                "weight_calculation": "1 fed hvidløg = 0.004 kg, 2 * 0.004 kg = 0.008 kg",
                 "weight_in_kg": 0.008
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'hvidløg' (garlic). The option 'hvidløg' is a direct and exact match, representing the raw form of garlic, which is the least processed option available.",
+                "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available in the options. 'hvidløg i olie' is more processed, and 'rødløg' and 'hvidløgsbaguette, frost' are different ingredients or final products.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "hvidløg",
                 "ingredient": "2 fed hvidløg",
@@ -49,7 +49,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'løg' (onion). The option 'løg' is a direct and exact match, representing the raw form of onion, which is the least processed option available.",
+                "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' as it is the most direct and least processed form of onion available. 'løg, ristede' and 'løg, hakkede, dybfrost' are processed forms, and 'rødløg' is a different type of onion.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "løg",
                 "ingredient": "1 løg",
@@ -69,7 +69,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'grønne asparges' (green asparagus). The option 'asparges, grøn' is a direct and exact match, representing the raw form of green asparagus, which is the least processed option available.",
+                "closest_match_explanation": "The ingredient '1 bdt grønne asparges' is best matched with 'asparges, grøn' as it is the most direct and least processed form of green asparagus. The other options are different types of vegetables or processed forms.",
                 "ingredient_id": "Ra00163",
                 "closest_match_name": "asparges, grøn",
                 "ingredient": "1 bdt grønne asparges",
@@ -89,7 +89,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'squash'. The option 'squash' is a direct and exact match, representing the raw form of squash, which is the least processed option available.",
+                "closest_match_explanation": "The ingredient '1 squash' is best matched with 'squash' as it is the most direct and least processed form. 'avocado', 'rasp', and 'aubergine' are different ingredients.",
                 "ingredient_id": "Ra00003",
                 "closest_match_name": "squash",
                 "ingredient": "1 squash",
@@ -105,11 +105,11 @@
             "name": "1 stor håndfuld frisk basilikum",
             "weight_estimate": {
                 "ingredient": "1 stor håndfuld frisk basilikum",
-                "weight_calculation": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+                "weight_calculation": "Håndfuld krydderurter (basilikum, oregano osv.) = 0.025 kg, 1 * 0.025 kg = 0.025 kg",
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'frisk basilikum' (fresh basil). The option 'basilikum, frisk' is a direct and exact match, representing the fresh form of basil, which is the least processed option available.",
+                "closest_match_explanation": "The ingredient '1 stor håndfuld frisk basilikum' is best matched with 'basilikum, frisk' as it directly specifies 'frisk' basilikum. 'basilikum, tørret' is a processed form, and 'persille' and 'pesto' are different ingredients or products.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basilikum, frisk",
                 "ingredient": "1 stor håndfuld frisk basilikum",
@@ -125,11 +125,11 @@
             "name": "2 dl fløde",
             "weight_estimate": {
                 "ingredient": "2 dl fløde",
-                "weight_calculation": "1 dl = 100 g, 2 * 100 g = 200 g = 0.2 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 2 * 0.1 kg = 0.2 kg",
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'fløde' (cream). The option 'fløde 38 %, piskefløde' is the most specific and least processed match for cream, as it specifies the fat content and type (whipping cream), making it a more precise match than 'flødeis' (ice cream) or 'likør, kaffe med fløde' (coffee liqueur with cream), which are processed products.",
+                "closest_match_explanation": "The ingredient '2 dl fløde' is best matched with 'fløde 38 %, piskefløde' as it is the most direct and common form of cream for cooking. 'flødeis' and 'likør, kaffe med fløde' are final products, and 'flødeost, ost 60+' is a different dairy product.",
                 "ingredient_id": "Ra00345",
                 "closest_match_name": "fløde 38 %, piskefløde",
                 "ingredient": "2 dl fløde",
@@ -145,11 +145,11 @@
             "name": "1 dl vand",
             "weight_estimate": {
                 "ingredient": "1 dl vand",
-                "weight_calculation": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+                "weight_calculation": "1 dl = 0.1 kg, 1 * 0.1 kg = 0.1 kg",
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'vand' (water). The option 'vand, postevand' (tap water) is the most direct and appropriate match for water, as it represents the most common and least processed form of water.",
+                "closest_match_explanation": "The ingredient '1 dl vand' is best matched with 'vand, postevand' as it is the most direct and least processed form of water. The other options are different ingredients or products.",
                 "ingredient_id": "Ra00068",
                 "closest_match_name": "vand, postevand",
                 "ingredient": "1 dl vand",
@@ -178,7 +178,7 @@
                 "weight_in_kg": 0.09
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'revet parmesan' (grated parmesan). The option 'parmesan ost, 32+' is a direct and exact match for parmesan cheese. While 'fyldt frisk pasta' contains cheese, it is a final meal and not a suitable match. 'Vegansk ost' is not parmesan, and 'brie' is a different type of cheese.",
+                "closest_match_explanation": "The ingredient '6 spsk revet parmesan' is best matched with 'parmesan ost, 32+' as it is the most direct and common form of parmesan cheese. 'vegansk ost, revet eller skiver' is a different type of cheese, and 'fyldt frisk pasta' and 'brie, ost 45+' are different ingredients or products.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "parmesan ost, 32+",
                 "ingredient": "6 spsk revet parmesan",
@@ -198,7 +198,7 @@
                 "weight_in_kg": 0.1
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'mozzarella'. The option 'mozzarella ost, 30+' is a direct and exact match for mozzarella cheese. 'Mozzarella sticks' are a processed product, and 'parmesan ost' and 'pasta' are not mozzarella.",
+                "closest_match_explanation": "The ingredient '1 håndfuld mozzarella' is best matched with 'mozzarella ost, 30+' as it is the most direct and common form of mozzarella cheese. 'mozarella sticks' is a processed product, and 'parmesan ost, 32+' and 'pasta' are different ingredients.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "mozzarella ost, 30+",
                 "ingredient": "1 håndfuld mozzarella",
@@ -218,7 +218,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'salt'. The option 'salt, bordsalt (jodberiget)' is a direct and exact match for common table salt, which is the least processed form of salt available.",
+                "closest_match_explanation": "The ingredient 'Lidt salt' is best matched with 'salt, bordsalt (jodberiget)' as it is the most direct and common form of salt. The other options are different ingredients or products.",
                 "ingredient_id": "Ra00151",
                 "closest_match_name": "salt, bordsalt (jodberiget)",
                 "ingredient": "Lidt salt",
@@ -238,7 +238,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'peber' (pepper). The option 'peber, sort' (black pepper) is the most common and direct match for general 'pepper'. While 'peber, chili' and 'peberfrugt' are also types of pepper, 'sort peber' is the most appropriate match for an unspecified 'peber'.",
+                "closest_match_explanation": "The ingredient 'Lidt peber' is best matched with 'peber, sort' as it is the most common and general form of pepper. 'peber, chili' and 'peber, chili, konserves' are specific types of chili pepper, and 'peberfrugt' is a bell pepper, which is a different vegetable.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "peber, sort",
                 "ingredient": "Lidt peber",
@@ -258,7 +258,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient is 'Olie' (oil). Among the available options, 'olivenolie' (olive oil) has the highest emission factor and is a common type of cooking oil, making it a suitable conservative estimate when the specific type of oil is not mentioned.",
+                "closest_match_explanation": "The ingredient 'Olie' is best matched with 'olivenolie' as it has the highest emission factor among the available oil options and is a common type of cooking oil. All the oil options are similar in processing level, so the one with the highest emission factor is chosen.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olivenolie",
                 "ingredient": "Olie",

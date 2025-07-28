@@ -2,6 +2,8 @@ import asyncio
 import json
 import os
 
+from dotenv import load_dotenv
+
 from food_co2_estimator.chains.weight_estimator import get_weight_estimates
 from food_co2_estimator.pydantic_models.weight_estimator import WeightEstimates
 from tests.conftest import get_expected_enriched_recipe
@@ -10,6 +12,9 @@ from tests.urls import TEST_URLS
 
 # Directory to store the results
 os.makedirs(WEIGHT_EST_DIR, exist_ok=True)
+
+# Load environment variables from the project root
+load_dotenv()
 
 
 async def save_weight_estimates(file_name: str, url: str) -> WeightEstimates:

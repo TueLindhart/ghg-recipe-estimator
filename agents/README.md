@@ -8,6 +8,7 @@ The following sub‑folders contain detailed explanations for each part of the c
 
 - **food_co2_estimator/** – Library implementing the estimation logic
 - **app/** – FastAPI application and supporting files
-- **foodprint/** – SvelteKit user interface
+- **foodprint/** – SvelteKit user interface and frontend architecture
+- **projects/** – Project-specific documentation and learnings
 
-Additional files include a `CHANGELOG.md` describing repository updates and a `LEARNINGS.md` file where insights about the code base and coding style are collected.
+Additional files include a `CHANGELOG.md` describing repository updates and a `LEARNINGS.md` file where insights about the code base and coding style are collected. The documentation has been consolidated to eliminate conflicts and provide clear, unified guidance.

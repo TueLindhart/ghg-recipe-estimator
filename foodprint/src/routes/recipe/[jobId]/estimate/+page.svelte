@@ -1,8 +1,10 @@
 <script lang="ts">
   import BaseButton from "$lib/components/BaseButton.svelte";
+  import BudgetComparison from "$lib/components/BudgetComparison.svelte";
   import EmissionBarChart from "$lib/components/EmissionBarChart.svelte";
-  import EmissionComparison from "$lib/components/EmissionComparison.svelte";
+  import EquivalentComparison from "$lib/components/EquivalentComparison.svelte";
   import IngredientGrid from "$lib/components/IngredientGrid.svelte";
+  import NutritionComparison from "$lib/components/NutritionComparison.svelte";
   import OverviewCard from "$lib/components/OverviewCard.svelte";
   import ReturnHomeButton from "$lib/components/ReturnHomeButton.svelte";
 
@@ -34,6 +36,21 @@ Vægt Estimering Noter: ${ing.weight_estimation_notes}
 CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     showModal = true;
   }
+
+  let chartMetric: "co2" | "energy" | "protein" | "carbohydrate" | "fat" =
+    "co2";
+
+  // Track scroll position for dynamic header border
+  let scrollY = 0;
+  let isScrolled = false;
+  let headerElement: HTMLDivElement;
+  let headerOffsetTop = 0;
+
+  $: if (headerElement) {
+    headerOffsetTop = headerElement.offsetTop;
+  }
+
+  $: isScrolled = scrollY > headerOffsetTop;
 </script>
 
 <svelte:head>
@@ -44,42 +61,82 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
   >
 </svelte:head>
 
-<div class="container mx-auto px-4">
-  <div class="mt-4 flex flex-wrap items-center gap-4">
-    <ReturnHomeButton />
+<svelte:window bind:scrollY />
 
-    {#if data.result.url}
-      <BaseButton
-        ariaLabel="Gå til opskrift"
-        onClick={() => window.open(data.result.url, "_blank")}
-      >
-        Gå til opskrift
-      </BaseButton>
-    {/if}
+<!-- Sticky header -->
+<div
+  bind:this={headerElement}
+  class="sticky top-0 z-50 bg-white {isScrolled
+    ? 'border-b border-gray-200'
+    : ''}"
+>
+  <div class="container mx-auto px-4">
+    <div class="py-4 flex flex-wrap items-center gap-4">
+      <ReturnHomeButton />
 
-    {#if data.result.title}
-      <!-- “basis-full” makes the h1 start on its own line below 640 px;
-         from the sm breakpoint up it behaves like normal inline content -->
-      <h1 class="text-2xl basis-full sm:basis-auto">
-        <span class="font-bold">{data.result.title}</span> af {domainDisplay}
-      </h1>
-    {/if}
+      {#if data.result.url}
+        <BaseButton
+          ariaLabel="Gå til opskrift"
+          onClick={() => window.open(data.result.url, "_blank")}
+        >
+          Gå til opskrift
+        </BaseButton>
+      {/if}
+
+      {#if data.result.title}
+        <!-- "basis-full" makes the h1 start on its own line below 640 px;
+           from the sm breakpoint up it behaves like normal inline content -->
+        <h1 class="text-2xl basis-full sm:basis-auto">
+          <span class="font-bold">{data.result.title}</span> af {domainDisplay}
+        </h1>
+      {/if}
+    </div>
   </div>
+</div>
 
-  <h2 class="text-xl font-bold mb-4 mt-4">Oversigt</h2>
+<div class="container mx-auto px-4">
+  <!-- Maintain spacing where "Oversigt" was removed -->
+  <div class="mb-4 mt-8"></div>
 
-  <!-- ───── Overview + Comparison side-by-side ───── -->
-  <div class="flex flex-col lg:flex-row gap-6 mb-8">
-    <OverviewCard class="flex-1" overviewData={data.result} />
-
-    <EmissionComparison
-      ratio={data.comparison.ratio}
-      helperText={data.comparison.helperText}
+  <!-- ───── Overview with info tabs (Tabs left, content right) ───── -->
+  <div class="mb-8 flex flex-col lg:flex-row gap-6">
+    <OverviewCard
+      overviewData={data.result}
+      cardClass="!max-w-none w-full md:w-1/2 lg:w-1/3 bg-white border border-gray-200 rounded-lg shadow p-6 flex flex-col justify-between"
     />
+    <div class="flex-1 flex flex-col justify-center">
+      <Tabs class="">
+        <TabItem title="Sammenlign" open>
+          <BudgetComparison
+            co2PerPerson={data.result.co2_per_person_kg ?? 0}
+            mealBudget={data.comparison.budget_emission_per_person.meal}
+            dayBudget={data.comparison.budget_emission_per_person.day}
+            avgMeal={data.comparison.avg_emission_per_person.meal}
+            cardClass="max-w-full lg:p-6 lg:py-12  relative lg:min-h-60 flex flex-col justify-center"
+          />
+        </TabItem>
+        <TabItem title="Svare til">
+          <EquivalentComparison
+            comparisons={data.comparison.comparisons}
+            cardClass="max-w-full lg:p-6 lg:py-12  relative lg:min-h-60  flex flex-col justify-center"
+          />
+        </TabItem>
+        <TabItem title="Næringsindhold">
+          <NutritionComparison
+            energyPerPersonKj={data.result.energy_per_person_kj ?? 0}
+            caloriesPerPersonKcal={data.result.calories_per_person_kcal ?? 0}
+            fatPerPersonG={data.result.fat_per_person_g ?? 0}
+            carbohydratePerPersonG={data.result.carbohydrate_per_person_g ?? 0}
+            proteinPerPersonG={data.result.protein_per_person_g ?? 0}
+            cardClass="max-w-full lg:p-6 lg:py-12 relative lg:min-h-60 flex flex-col justify-center"
+          />
+        </TabItem>
+      </Tabs>
+    </div>
   </div>
 
   <!-- ───── Tabs (unchanged) ───── -->
-  <Tabs class="mt-8" tabStyle="pill">
+  <Tabs class="mt-8">
     <TabItem title="Ingredienser" open>
       <div class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto">
         <IngredientGrid
@@ -90,8 +147,20 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
     </TabItem>
 
     <TabItem title="Graf">
-      <div class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto">
-        <EmissionBarChart ingredients={data.result.ingredients} />
+      <div
+        class="min-h-[300px] max-h-[400px] md:max-h-[400px] overflow-y-auto space-y-2"
+      >
+        <select bind:value={chartMetric} class="border rounded p-1 w-30">
+          <option value="co2">CO2e kg</option>
+          <option value="energy">Energi kJ</option>
+          <option value="protein">Protein g</option>
+          <option value="carbohydrate">Kulhydrat g</option>
+          <option value="fat">Fedt g</option>
+        </select>
+        <EmissionBarChart
+          ingredients={data.result.ingredients}
+          metric={chartMetric}
+        />
       </div>
     </TabItem>
   </Tabs>
