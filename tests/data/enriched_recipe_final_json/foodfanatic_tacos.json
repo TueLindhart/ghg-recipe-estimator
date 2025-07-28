@@ -89,16 +89,16 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '250 g oksekød' refers to beef. Among the available beef options, 'oksekød, pulled beef' has the highest emission factor and represents a processed form of beef, which is a reasonable conservative match for a general beef ingredient.",
-                "ingredient_id": "Ra00463",
-                "closest_match_name": "oksekød, pulled beef",
+                "closest_match_explanation": "The ingredient '250 g oksekød' is a general term for beef. The best match is 'oksekød, gennemsnitligt' (average beef) as it is the most appropriate general category for beef when no specific cut or processing is mentioned.",
+                "ingredient_id": "Ra00503",
+                "closest_match_name": "oksekød, gennemsnitligt",
                 "ingredient": "250 g oksekød",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 56.3,
-                "energy_kj_100g": 511.0,
-                "fat_g_100g": 3.6,
-                "carbohydrate_g_100g": 4.0,
-                "protein_g_100g": 18.0
+                "co2_per_kg": 74.8,
+                "energy_kj_100g": 1060.0,
+                "fat_g_100g": 15.0,
+                "carbohydrate_g_100g": 0.0,
+                "protein_g_100g": 20.0
             }
         },
         {
@@ -109,7 +109,7 @@
                 "weight_in_kg": 0.0225
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1.5 spsk fajitakrydderi' is a spice blend. There is no direct match for 'fajitakrydderi'. 'peber, chili' is the closest match as it is a common component of fajita seasoning and represents a spice in powder form.",
+                "closest_match_explanation": "The ingredient '1.5 spsk fajitakrydderi' is a spice blend. Since there is no direct match for 'fajitakrydderi', 'peber, chili' is chosen as a broader category because chili is a common component in fajita seasoning and it is a spice in powder form.",
                 "ingredient_id": "Ra00009",
                 "closest_match_name": "peber, chili",
                 "ingredient": "1.5 spsk fajitakrydderi",
@@ -129,7 +129,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'chilipulver eller flager' refers to processed chili. 'peber, chili, konserves' is a more processed form of chili compared to 'peber, chili', making it a better match for 'chilipulver eller flager' due to the processing involved.",
+                "closest_match_explanation": "The ingredient 'chilipulver eller flager' refers to chili in a dried, powdered, or flaked form. 'peber, chili, konserves' is a more processed option than 'peber, chili', and since both are viable, the one with the highest emission factor is chosen.",
                 "ingredient_id": "Ra00359",
                 "closest_match_name": "peber, chili, konserves",
                 "ingredient": "chilipulver eller flager",
@@ -149,7 +149,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is canned kidney beans. The best match is 'kidney bønner, konserves' as it directly specifies canned kidney beans, aligning with the processing level.",
+                "closest_match_explanation": "The ingredient '1 dåse kidneybønner' specifies canned kidney beans. The best match is 'kidney bønner, konserves' as it directly corresponds to the canned form of kidney beans.",
                 "ingredient_id": "Ra00422",
                 "closest_match_name": "kidney bønner, konserves",
                 "ingredient": "1 dåse kidneybønner",
@@ -169,7 +169,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 spsk tomatpuré' is concentrated tomato paste. The best match is 'tomatpure, koncentreret' as it directly specifies concentrated tomato puree, aligning with the processing level.",
+                "closest_match_explanation": "The ingredient '2 spsk tomatpuré' is concentrated tomato paste. The best match is 'tomatpure, koncentreret' as it directly corresponds to the concentrated form of tomato puree.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomatpure, koncentreret",
                 "ingredient": "2 spsk tomatpuré",
@@ -189,7 +189,7 @@
                 "weight_in_kg": 0.25
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2.5 dl oksefond/-bouillon' is a liquid beef broth. The best match is 'bouillon, oksekød, spiseklar' because 2.5 dl indicates a ready-to-eat liquid form, not a concentrated cube.",
+                "closest_match_explanation": "The ingredient '2.5 dl oksefond/-bouillon' is a liquid beef broth/bouillon. The best match is 'bouillon, oksekød, spiseklar' (ready-to-eat beef bouillon) because 2.5 dl indicates a liquid form, not a concentrated cube.",
                 "ingredient_id": "Ra00215",
                 "closest_match_name": "bouillon, oksekød, spiseklar",
                 "ingredient": "2.5 dl oksefond/-bouillon",
@@ -209,7 +209,7 @@
                 "weight_in_kg": 0.33
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '11 små majstortillas' are corn tortillas. 'taco shells' are a type of corn-based product, and among the available options, it has the highest emission factor, making it a suitable conservative match.",
+                "closest_match_explanation": "The ingredient '11 små majstortillas' refers to corn tortillas. The best match is 'taco shells' as they are a common form of corn-based tortilla product, and among the available options, it is the most similar in nature and processing.",
                 "ingredient_id": "Ra00467",
                 "closest_match_name": "taco shells",
                 "ingredient": "11 små majstortillas",
@@ -229,7 +229,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 portion tomatsalsa' is a processed tomato product. 'tomatketchup' is a processed tomato product, similar in nature to salsa, and has a higher emission factor than raw tomato or tomato juice, making it a suitable match.",
+                "closest_match_explanation": "The ingredient '1 portion tomatsalsa' is a processed tomato product. 'tomatketchup' is chosen as the best match because it is a processed tomato product, similar to salsa, and has a higher emission factor than raw tomatoes or tomato juice.",
                 "ingredient_id": "Ra00369",
                 "closest_match_name": "tomatketchup",
                 "ingredient": "1 portion tomatsalsa",
@@ -249,7 +249,7 @@
                 "weight_in_kg": 0.15
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 avocado' is a raw avocado. The best match is 'avocado' as it directly represents the raw fruit.",
+                "closest_match_explanation": "The ingredient '1 avocado' is a raw avocado. The best match is 'avocado' as it is the direct and least processed option available.",
                 "ingredient_id": "Ra00317",
                 "closest_match_name": "avocado",
                 "ingredient": "1 avocado",
@@ -278,7 +278,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. 'peber, sort' has the highest emission factor among the pepper options and is a common type of pepper, making it a suitable conservative estimate.",
+                "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. 'peber, sort' is chosen as the best match because it is a common type of pepper used as a spice and has the highest emission factor among the viable options.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "peber, sort",
                 "ingredient": "peber",
@@ -338,7 +338,7 @@
                 "weight_in_kg": 0.3
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '300 g tomater' refers to raw tomatoes. The best match is 'tomat' as it represents raw, unprocessed tomatoes, aligning with the least processed option available.",
+                "closest_match_explanation": "The ingredient '300 g tomater' refers to raw tomatoes. The best match is 'tomat' as it is the direct and least processed option available for tomatoes.",
                 "ingredient_id": "Ra00002",
                 "closest_match_name": "tomat",
                 "ingredient": "300 g tomater",
@@ -358,16 +358,16 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.75 chilipeber' refers to raw chili pepper. The best match is 'peber, chili' as it represents raw chili, which is the least processed option available.",
-                "ingredient_id": "Ra00009",
-                "closest_match_name": "peber, chili",
+                "closest_match_explanation": "The ingredient '0.75 chilipeber' is a raw chili pepper. 'peber, chili, konserves' is a more processed option than 'peber, chili', and since both are viable, the one with the highest emission factor is chosen.",
+                "ingredient_id": "Ra00359",
+                "closest_match_name": "peber, chili, konserves",
                 "ingredient": "0.75 chilipeber",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 1.1,
-                "energy_kj_100g": 187.0,
-                "fat_g_100g": 0.2,
-                "carbohydrate_g_100g": 7.7,
-                "protein_g_100g": 2.0
+                "co2_per_kg": 1.5,
+                "energy_kj_100g": 112.0,
+                "fat_g_100g": 0.1,
+                "carbohydrate_g_100g": 4.9,
+                "protein_g_100g": 0.9
             }
         },
         {
@@ -378,7 +378,7 @@
                 "weight_in_kg": 0.0125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 bdt koriander' refers to fresh coriander. The best match is 'persille' as it is a fresh herb, similar to coriander, and represents the least processed option among the available herbs.",
+                "closest_match_explanation": "The ingredient '0.5 bdt koriander' is fresh coriander. There is no direct match for coriander. 'persille' is chosen as a broader category because it is a fresh herb, similar to coriander, and is the most appropriate match among the available options.",
                 "ingredient_id": "Ra00134",
                 "closest_match_name": "persille",
                 "ingredient": "0.5 bdt koriander",
@@ -398,7 +398,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 spsk olivenolie' is olive oil. The best match is 'olivenolie' as it directly specifies olive oil.",
+                "closest_match_explanation": "The ingredient '2 spsk olivenolie' is olive oil. The best match is 'olivenolie' as it is the direct and most appropriate match for the ingredient.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olivenolie",
                 "ingredient": "2 spsk olivenolie",
@@ -418,7 +418,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'saften af 0.5 lime' refers to lime juice. The best match is 'lime' as it represents the raw fruit from which the juice is extracted, aligning with the least processed option.",
+                "closest_match_explanation": "The ingredient 'saften af 0.5 lime' refers to lime juice. The best match is 'lime' as it represents the raw fruit from which the juice is extracted, and it is the most direct match available.",
                 "ingredient_id": "Ra00332",
                 "closest_match_name": "lime",
                 "ingredient": "saften af 0.5 lime",
@@ -447,7 +447,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. 'peber, sort' has the highest emission factor among the pepper options and is a common type of pepper, making it a suitable conservative estimate.",
+                "closest_match_explanation": "The ingredient 'peber' is a general term for pepper. 'peber, sort' is chosen as the best match because it is a common type of pepper used as a spice and has the highest emission factor among the viable options.",
                 "ingredient_id": "Ra00302",
                 "closest_match_name": "peber, sort",
                 "ingredient": "peber",

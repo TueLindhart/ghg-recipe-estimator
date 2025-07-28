@@ -108,13 +108,13 @@ if __name__ == "__main__":
     from time import time
 
     # Example URLs (uncomment the one you want to test)
-    # url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
+    url = "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa"
     # url = "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/"
     # url = "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/"
     # url = "https://gourministeriet.dk/vores-favorit-bolognese/"
     # url = "https://hot-thai-kitchen.com/green-curry-new-2/"
     # url = "https://madogkaerlighed.dk/cremet-pasta-med-asparges/"
-    url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
+    # url = "https://www.valdemarsro.dk/vegetar-enchiladas/"
     # url = "https://www.valdemarsro.dk/wok-med-kaal-og-friterede-spejlaeg/"
     # url = "https://www.louisesmadblog.dk/bloede-tacos/"
 

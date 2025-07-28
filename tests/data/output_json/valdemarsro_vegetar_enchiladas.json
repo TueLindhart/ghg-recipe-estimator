@@ -145,6 +145,20 @@
             "protein_g": 0.0
         },
         {
+            "name": "1 dl grøntsagsbouillon",
+            "ingredient_id": "Ra00215",
+            "weight_kg": 0.1,
+            "co2_per_kg": 0.6,
+            "co2_kg": 0.06,
+            "calculation_notes": "0.1 kg * 0.6 kg CO₂e/kg = 0.06 kg CO₂e",
+            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, oksekød, spiseklar",
+            "energy_kj": 30.0,
+            "fat_g": 0.2,
+            "carbohydrate_g": 0.1,
+            "protein_g": 1.1
+        },
+        {
             "name": "1 løg",
             "ingredient_id": "Ra00266",
             "weight_kg": 0.17,
@@ -187,20 +201,6 @@
             "protein_g": 0.07
         },
         {
-            "name": "1 dl grøntsagsbouillon",
-            "ingredient_id": "Ra00213",
-            "weight_kg": 0.1,
-            "co2_per_kg": 0.4,
-            "co2_kg": 0.04,
-            "calculation_notes": "0.1 kg * 0.4 kg CO₂e/kg = 0.04 kg CO₂e",
-            "weight_estimation_notes": "1 dl = 100 g, 1 * 100 g = 100 g = 0.1 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, hønsekød, spiseklar",
-            "energy_kj": 18.0,
-            "fat_g": 0.2,
-            "carbohydrate_g": 0.3,
-            "protein_g": 0.3
-        },
-        {
             "name": "2 fed hvidløg",
             "ingredient_id": "Ra00136",
             "weight_kg": 0.01,
@@ -227,20 +227,6 @@
             "fat_g": 0.05,
             "carbohydrate_g": 3.09,
             "protein_g": 0.64
-        },
-        {
-            "name": "1 håndfuld frisk koriander",
-            "ingredient_id": "Ra00134",
-            "weight_kg": 0.03,
-            "co2_per_kg": 0.5,
-            "co2_kg": 0.01,
-            "calculation_notes": "0.03 kg * 0.5 kg CO₂e/kg = 0.01 kg CO₂e",
-            "weight_estimation_notes": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: persille",
-            "energy_kj": 60.3,
-            "fat_g": 0.33,
-            "carbohydrate_g": 0.36,
-            "protein_g": 1.11
         },
         {
             "name": "1 tsk stødt spidskommen",
@@ -369,6 +355,20 @@
             "protein_g": null
         },
         {
+            "name": "1 håndfuld frisk koriander",
+            "ingredient_id": "No match",
+            "weight_kg": 0.03,
+            "co2_per_kg": null,
+            "co2_kg": null,
+            "calculation_notes": "Kan ikke beregne CO₂-udledning uden CO₂ pr. kg",
+            "weight_estimation_notes": "1 håndfuld krydderurter = 25 g, 1 * 25 g = 25 g = 0.025 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: No match",
+            "energy_kj": null,
+            "fat_g": null,
+            "carbohydrate_g": null,
+            "protein_g": null
+        },
+        {
             "name": "salt",
             "ingredient_id": null,
             "weight_kg": 0.005,
@@ -398,8 +398,8 @@
         }
     ],
     "co2_per_person_kg": 1.0,
-    "energy_per_person_kj": 2992.0,
-    "calories_per_person_kcal": 715.0,
+    "energy_per_person_kj": 2980.0,
+    "calories_per_person_kcal": 712.0,
     "fat_per_person_g": 24.0,
     "carbohydrate_per_person_g": 74.0,
     "protein_per_person_g": 35.0

@@ -1,22 +1,22 @@
 {
     "title": "Vores favorit bolognese",
     "url": "https://gourministeriet.dk/vores-favorit-bolognese/",
-    "total_co2_kg": 56.9,
+    "total_co2_kg": 54.2,
     "number_of_persons": 8,
     "ingredients": [
         {
             "name": "1 kg hakket oksekød",
-            "ingredient_id": "Ra00016",
+            "ingredient_id": "Ra00012",
             "weight_kg": 1.0,
-            "co2_per_kg": 50.6,
-            "co2_kg": 50.6,
-            "calculation_notes": "1.0 kg * 50.6 kg CO₂e/kg = 50.6 kg CO₂e",
+            "co2_per_kg": 48.0,
+            "co2_kg": 48.0,
+            "calculation_notes": "1.0 kg * 48.0 kg CO₂e/kg = 48.0 kg CO₂e",
             "weight_estimation_notes": "1 kg = 1000 g = 1.0 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: oksekød, hakket, 5-10% fedt",
-            "energy_kj": 6830.0,
-            "fat_g": 95.0,
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: oksekød, hakket, 10-15% fedt",
+            "energy_kj": 6870.0,
+            "fat_g": 97.0,
             "carbohydrate_g": 0.0,
-            "protein_g": 195.0
+            "protein_g": 194.0
         },
         {
             "name": "Pasta efter ønske",
@@ -257,9 +257,9 @@
             "protein_g": null
         }
     ],
-    "co2_per_person_kg": 7.1,
-    "energy_per_person_kj": 4177.0,
-    "calories_per_person_kcal": 998.0,
+    "co2_per_person_kg": 6.8,
+    "energy_per_person_kj": 4182.0,
+    "calories_per_person_kcal": 999.0,
     "fat_per_person_g": 35.0,
     "carbohydrate_per_person_g": 109.0,
     "protein_per_person_g": 52.0

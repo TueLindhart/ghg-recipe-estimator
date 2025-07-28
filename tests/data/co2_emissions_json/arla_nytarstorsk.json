@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '25 g smør' is butter. The best match is 'smør, saltet' because it is the most direct and least processed form of butter available in the database, aligning with the principle of choosing the least processed option when no specific processing is mentioned. It also has a higher emission factor than 'smørbart blandingsprodukt, 75% fedt', which is preferred when options have similar processing levels.",
+            "closest_match_explanation": "The ingredient '25 g smør' is a type of butter. Among the available options, 'smør, saltet' (salted butter) and 'smørbart blandingsprodukt, 75% fedt' (75% fat spreadable blend) are the most appropriate matches. Both are processed forms of butter. 'Smør, saltet' has a slightly higher emission factor (3.3 kg CO2e / kg) compared to 'smørbart blandingsprodukt, 75% fedt' (3.2 kg CO2e / kg). Therefore, 'smør, saltet' is chosen to provide a conservative estimate.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "smør, saltet",
             "ingredient": "25 g smør",
@@ -13,7 +13,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '4 rødbeder (400 g)' is fresh beetroot. The best match is 'rødbede' because it represents the raw, unprocessed form of beetroot, which is consistent with the ingredient description. 'Rødbede, konserves' is more processed and therefore not the best match.",
+            "closest_match_explanation": "The ingredient '4 rødbeder (400 g)' refers to raw beetroot. Among the options, 'rødbede' (beetroot) is the most direct and least processed match. 'Rødbede, konserves' (canned beetroot) is more processed and therefore not the best match for raw beetroot. 'Rødkål' (red cabbage) and 'rødkål, konserves, uden tilsat sukker' (canned red cabbage, unsweetened) are different vegetables and thus not suitable matches.",
             "ingredient_id": "Ra00259",
             "closest_match_name": "rødbede",
             "ingredient": "4 rødbeder (400 g)",
@@ -25,7 +25,7 @@
             "protein_g_100g": 1.7
         },
         {
-            "closest_match_explanation": "The ingredient '1 dl mørk balsamicoeddike' is a type of vinegar. The best match is 'eddike' because it is the most direct and general category for vinegar in the database. While 'rødvin' is related, 'eddike' is a more appropriate match for balsamic vinegar.",
+            "closest_match_explanation": "The ingredient '1 dl mørk balsamicoeddike' is a type of vinegar. 'Eddike' (vinegar) is the most appropriate and direct match among the given options. 'Rødvin' (red wine) is a different product, although vinegar can be made from wine, it is not the most direct match. 'Chokolade, mørk' (dark chocolate) and 'mørksej' (pollock) are completely unrelated ingredients.",
             "ingredient_id": "Ra00150",
             "closest_match_name": "eddike",
             "ingredient": "1 dl mørk balsamicoeddike",
@@ -37,7 +37,7 @@
             "protein_g_100g": 0.4
         },
         {
-            "closest_match_explanation": "The ingredient '2 spsk sukker' is sugar. The best match is 'sukker, stødt melis (saccharose)' because it is a common form of sugar and has a slightly higher emission factor than 'sukker, brun farin', which is preferred when options have similar processing levels.",
+            "closest_match_explanation": "The ingredient '2 spsk sukker' refers to sugar. Among the options, 'sukker, stødt melis (saccharose)' (granulated sugar (sucrose)) and 'sukker, brun farin' (brown sugar) are both types of sugar. 'Sukker, stødt melis (saccharose)' has a slightly higher emission factor (2.7 kg CO2e / kg) compared to 'sukker, brun farin' (2.4 kg CO2e / kg). Therefore, 'sukker, stødt melis (saccharose)' is chosen to provide a conservative estimate. 'Sukkerært (mangetout)' (snow pea) and 'honning' (honey) are not types of sugar.",
             "ingredient_id": "Ra00318",
             "closest_match_name": "sukker, stødt melis (saccharose)",
             "ingredient": "2 spsk sukker",
@@ -49,7 +49,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '600 g torskeloin' is a cut of cod. The best match is 'torsk, filet' because it is the most direct and least processed form of cod available in the database, aligning with the principle of choosing the least processed option when no specific processing is mentioned. 'Torskelever' and 'torskelever, røget' are different parts of the fish or processed differently.",
+            "closest_match_explanation": "The ingredient '600 g torskeloin' refers to a cut of cod. 'Torsk, filet' (cod, fillet) is the most appropriate and direct match as it represents a similar processed form of cod. 'Torskelever' (cod liver) and 'torskelever, røget' (smoked cod liver) are different parts of the fish and have undergone different processing. 'Hornfisk' (garfish) is a different type of fish.",
             "ingredient_id": "Ra00194",
             "closest_match_name": "torsk, filet",
             "ingredient": "600 g torskeloin",
@@ -61,7 +61,7 @@
             "protein_g_100g": 17.6
         },
         {
-            "closest_match_explanation": "The ingredient '25 g smør' is butter. The best match is 'smør, saltet' because it is the most direct and least processed form of butter available in the database, aligning with the principle of choosing the least processed option when no specific processing is mentioned. It also has a higher emission factor than 'smørbart blandingsprodukt, 75% fedt', which is preferred when options have similar processing levels.",
+            "closest_match_explanation": "The ingredient '25 g smør' is a type of butter. Among the available options, 'smør, saltet' (salted butter) and 'smørbart blandingsprodukt, 75% fedt' (75% fat spreadable blend) are the most appropriate matches. Both are processed forms of butter. 'Smør, saltet' has a slightly higher emission factor (3.3 kg CO2e / kg) compared to 'smørbart blandingsprodukt, 75% fedt' (3.2 kg CO2e / kg). Therefore, 'smør, saltet' is chosen to provide a conservative estimate.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "smør, saltet",
             "ingredient": "25 g smør",
@@ -73,7 +73,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient '1.5 tsk hvedemel' is wheat flour. The best match is 'hvedemel, grahamsmel, fuldkorn' because it is a direct match for wheat flour. While 'majsmel' is also a type of flour, 'hvedemel' is a more specific and accurate match.",
+            "closest_match_explanation": "The ingredient '1.5 tsk hvedemel' refers to wheat flour. 'Hvedemel, grahamsmel, fuldkorn' (wheat flour, wholemeal) is the most appropriate match as it is a type of wheat flour. 'Majsmel' (corn flour) is a different type of flour. 'Hvedekerner, hele/knækkede' (whole/cracked wheat kernels) are less processed than flour. 'Mandeldrik, ikke beriget' (almond drink, unenriched) is completely unrelated.",
             "ingredient_id": "Ra00103",
             "closest_match_name": "hvedemel, grahamsmel, fuldkorn",
             "ingredient": "1.5 tsk hvedemel",
@@ -85,7 +85,7 @@
             "protein_g_100g": 11.4
         },
         {
-            "closest_match_explanation": "The ingredient '2.5 dl vand' is water. The best match is 'vand, postevand' as it is the most direct and accurate representation of water.",
+            "closest_match_explanation": "The ingredient '2.5 dl vand' refers to water. 'Vand, postevand' (water, tap water) is the most direct and appropriate match. The other options, 'vandmelon' (watermelon), 'tun i vand, konserves' (tuna in water, canned), and 'sild' (herring), are not simply water.",
             "ingredient_id": "Ra00068",
             "closest_match_name": "vand, postevand",
             "ingredient": "2.5 dl vand",
@@ -97,7 +97,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '3 spsk hele gule sennepsfrø' refers to mustard seeds. The best match is 'sesamfrø, afskallede' because it is the least processed option among the seeds and has the highest emission factor, which is preferred when options have similar processing levels and are viable matches. 'Sennep, gul, færdiglavet' is a processed product, not raw seeds.",
+            "closest_match_explanation": "The ingredient '3 spsk hele gule sennepsfrø' refers to whole mustard seeds. 'Solsikkefrø, afskallede, tørrede' (sunflower seeds, shelled, dried) and 'sesamfrø, afskallede' (sesame seeds, shelled) are both types of seeds and are less processed than 'sennep, gul, færdiglavet' (yellow mustard, ready-made). Between sunflower seeds and sesame seeds, sesame seeds have a higher emission factor (7.3 kg CO2e / kg) and are therefore chosen to provide a conservative estimate. 'Solsikkeolie' (sunflower oil) is a processed product and not a seed.",
             "ingredient_id": "Ra00142",
             "closest_match_name": "sesamfrø, afskallede",
             "ingredient": "3 spsk hele gule sennepsfrø",
@@ -109,7 +109,7 @@
             "protein_g_100g": 26.8
         },
         {
-            "closest_match_explanation": "The ingredient '6 finthakkede skalotteløg (75 g)' is shallots, a type of onion. The best match is 'rødløg' because it is a type of onion and has a higher emission factor than 'forårsløg' and 'løg, hakkede, dybfrost', which is preferred when options have similar processing levels and are viable matches. 'Spidskål' is a different vegetable.",
+            "closest_match_explanation": "The ingredient '6 finthakkede skalotteløg (75 g)' refers to shallots, which are a type of onion. 'Rødløg' (red onion) and 'forårsløg' (spring onion) are both types of onions and are raw, similar to the ingredient. 'Løg, hakkede, dybfrost' (onions, chopped, frozen) is a processed form. Between 'rødløg' and 'forårsløg', both have the same emission factor (0.8 kg CO2e / kg). 'Rødløg' is chosen as a general onion type. 'Spidskål' (pointed cabbage) is a different vegetable.",
             "ingredient_id": "Ra00485",
             "closest_match_name": "rødløg",
             "ingredient": "6 finthakkede skalotteløg (75 g)",
@@ -121,7 +121,7 @@
             "protein_g_100g": 1.6
         },
         {
-            "closest_match_explanation": "The ingredient '200 g koldt smør' is butter. The best match is 'smør, saltet' because it is the most direct and least processed form of butter available in the database, aligning with the principle of choosing the least processed option when no specific processing is mentioned. It also has a higher emission factor than 'smørbart blandingsprodukt, 75% fedt', which is preferred when options have similar processing levels.",
+            "closest_match_explanation": "The ingredient '200 g koldt smør' is a type of butter. Among the available options, 'smør, saltet' (salted butter) and 'smørbart blandingsprodukt, 75% fedt' (75% fat spreadable blend) are the most appropriate matches. Both are processed forms of butter. 'Smør, saltet' has a slightly higher emission factor (3.3 kg CO2e / kg) compared to 'smørbart blandingsprodukt, 75% fedt' (3.2 kg CO2e / kg). Therefore, 'smør, saltet' is chosen to provide a conservative estimate.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "smør, saltet",
             "ingredient": "200 g koldt smør",
@@ -133,7 +133,7 @@
             "protein_g_100g": 0.7
         },
         {
-            "closest_match_explanation": "The ingredient 'friske krydderurter' refers to fresh herbs. The best match is 'persille' because it is a common fresh herb and has a higher emission factor than 'basilikum, frisk', which is preferred when options have similar processing levels and are viable matches. 'Basilikum, tørret' is a processed form, and 'fyldt frisk pasta' is not an herb.",
+            "closest_match_explanation": "The ingredient 'friske krydderurter' refers to fresh herbs. 'Basilikum, frisk' (basil, fresh) and 'persille' (parsley) are both fresh herbs. 'Basilikum, tørret' (basil, dried) is a processed form. Between 'basilikum, frisk' and 'persille', 'persille' has a slightly higher emission factor (0.5 kg CO2e / kg) compared to 'basilikum, frisk' (0.4 kg CO2e / kg). Therefore, 'persille' is chosen to provide a conservative estimate. 'Fyldt frisk pasta' (fresh filled pasta) is not a herb.",
             "ingredient_id": "Ra00134",
             "closest_match_name": "persille",
             "ingredient": "friske krydderurter",
@@ -145,7 +145,7 @@
             "protein_g_100g": 3.7
         },
         {
-            "closest_match_explanation": "The ingredient '100 g stegte bacontern' is fried bacon. The best match is 'grisekød, bacon, stegestykke' because it is a direct match for bacon and represents a processed form (fried). 'Vegansk bacon' is a different product, and 'grisekød, flæskesteg, nakkekam med svær' is a different cut of pork. 'Oksekød, spegepølse' is a different type of meat product.",
+            "closest_match_explanation": "The ingredient '100 g stegte bacontern' refers to fried bacon cubes. 'Grisekød, bacon, stegestykke' (pork, bacon, frying piece) is the most appropriate match as it is a form of bacon. 'Vegansk bacon' (vegan bacon) is a different product. 'Grisekød, flæskesteg, nakkekam med svær' (pork, roast pork, neck with rind) is a different cut of pork. 'Oksekød, spegepølse' (beef, salami) is a different type of meat and highly processed.",
             "ingredient_id": "Ra00044",
             "closest_match_name": "grisekød, bacon, stegestykke",
             "ingredient": "100 g stegte bacontern",
@@ -157,7 +157,7 @@
             "protein_g_100g": 13.0
         },
         {
-            "closest_match_explanation": "The ingredient '4 blødkogte vagtelæg' refers to quail eggs. The best match is 'æg, skrabeæg' because it is the most general category for eggs and represents a similar product. 'Æggesalat' and 'nudler, æg' are processed products, and 'kaviar, lodderogn' is a different type of food.",
+            "closest_match_explanation": "The ingredient '4 blødkogte vagtelæg' refers to soft-boiled quail eggs. 'Æg, skrabeæg' (eggs, free-range eggs) is the most appropriate match as it represents a general category for eggs. 'Æggesalat' (egg salad) and 'nudler, æg' (noodles, egg) are processed products where eggs are only one component. 'Kaviar, lodderogn' (caviar, capelin roe) is a different product entirely.",
             "ingredient_id": "Ra00108",
             "closest_match_name": "æg, skrabeæg",
             "ingredient": "4 blødkogte vagtelæg",

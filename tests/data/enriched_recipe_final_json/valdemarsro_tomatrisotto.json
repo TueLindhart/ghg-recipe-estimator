@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.17
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 stk løg' is a raw onion. The best match is 'løg' because it represents the raw, unprocessed form of onion, aligning with the principle of choosing the least processed option when no specific processing is mentioned. This is a realistic comparison as both are onions.",
+                "closest_match_explanation": "The ingredient '1 stk løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00266",
                 "closest_match_name": "løg",
                 "ingredient": "1 stk løg",
@@ -29,7 +29,7 @@
                 "weight_in_kg": 0.012
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '3 fed hvidløg' is raw garlic. The best match is 'hvidløg' because it represents the raw, unprocessed form of garlic, aligning with the principle of choosing the least processed option when no specific processing is mentioned. This is a realistic comparison as both are garlic.",
+                "closest_match_explanation": "The ingredient '3 fed hvidløg' is best matched with 'hvidløg' as it represents the raw, unprocessed form of garlic, which is the most appropriate match given no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "hvidløg",
                 "ingredient": "3 fed hvidløg",
@@ -49,7 +49,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '400 g risotto ris' is a type of rice. The best match is 'ris, parboiled' because it is a general category for rice and represents a common form of rice. This is a realistic comparison as both are rice.",
+                "closest_match_explanation": "The ingredient '400 g risotto ris' is a type of rice. Among the available options, 'ris, parboiled' is the most suitable match as it is a general category for processed rice, which risotto rice falls under. This choice aligns with using a broader category when an exact match is not available.",
                 "ingredient_id": "Ra00300",
                 "closest_match_name": "ris, parboiled",
                 "ingredient": "400 g risotto ris",
@@ -69,7 +69,7 @@
                 "weight_in_kg": 0.2
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '2 dl hvidvin' is white wine. The best match is 'hvidvin' because it is an exact match for the ingredient. This is a realistic comparison as both are white wine.",
+                "closest_match_explanation": "The ingredient '2 dl hvidvin' is directly matched to 'hvidvin' as it is an exact match and represents the least processed form of white wine among the given options.",
                 "ingredient_id": "Ra00375",
                 "closest_match_name": "hvidvin",
                 "ingredient": "2 dl hvidvin",
@@ -89,7 +89,7 @@
                 "weight_in_kg": 0.4
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '400 g flåede tomater' refers to peeled tomatoes, which are typically canned. The best match is 'tomat, flået, konserves' because it accurately reflects the processing (peeled and canned) of the ingredient. This is a realistic comparison as both are peeled and canned tomatoes.",
+                "closest_match_explanation": "The ingredient '400 g flåede tomater' is best matched with 'tomat, flået, konserves' because 'flåede tomater' implies a processed, canned form of tomatoes, which directly corresponds to the 'konserves' (canned) description.",
                 "ingredient_id": "Ra00361",
                 "closest_match_name": "tomat, flået, konserves",
                 "ingredient": "400 g flåede tomater",
@@ -109,7 +109,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g tomatpuré' is tomato paste. The best match is 'tomatpure, koncentreret' because it is an exact match for the ingredient, reflecting its concentrated form. This is a realistic comparison as both are tomato paste.",
+                "closest_match_explanation": "The ingredient '25 g tomatpuré' is best matched with 'tomatpure, koncentreret' as it is an exact match and reflects the concentrated nature of tomato paste.",
                 "ingredient_id": "Ra00368",
                 "closest_match_name": "tomatpure, koncentreret",
                 "ingredient": "25 g tomatpuré",
@@ -129,7 +129,7 @@
                 "weight_in_kg": 0.9
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '9 dl grøntsagsbouillon' is vegetable broth in liquid form. The best match is 'bouillon, oksekød, spiseklar' because it represents a ready-to-eat (liquid) bouillon, which is a more realistic comparison than concentrated bouillon, even though it is beef bouillon. There is no vegetable bouillon option, so a ready-to-eat bouillon is the closest realistic match.",
+                "closest_match_explanation": "The ingredient '9 dl grøntsagsbouillon' is a liquid, ready-to-use vegetable broth. While there isn't an exact match for 'grøntsagsbouillon, spiseklar', 'bouillon, hønsekød, spiseklar' and 'bouillon, oksekød, spiseklar' are both 'ready-to-eat' (spiseklar) broths. Since 'grøntsagsbouillon' is a vegetable-based broth, and there is no direct vegetable broth option, it is most reasonable to match it to a 'ready-to-eat' broth. Between the two 'spiseklar' options, 'bouillon, oksekød, spiseklar' has a higher emission factor (0.6 kg CO2e / kg) compared to 'bouillon, hønsekød, spiseklar' (0.4 kg CO2e / kg). Therefore, 'bouillon, oksekød, spiseklar' is chosen to provide a conservative estimate, as it is a ready-to-eat broth and has the highest emissions among the viable 'ready-to-eat' options.",
                 "ingredient_id": "Ra00215",
                 "closest_match_name": "bouillon, oksekød, spiseklar",
                 "ingredient": "9 dl grøntsagsbouillon",
@@ -158,7 +158,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g soltørrede tomater i olie' refers to sun-dried tomatoes. The best match is 'soltørrede tomater' because it directly matches the primary ingredient, sun-dried tomatoes, and is the least processed option among the sun-dried tomato choices. This is a realistic comparison as both are sun-dried tomatoes.",
+                "closest_match_explanation": "The ingredient '25 g soltørrede tomater i olie' is best matched with 'soltørrede tomater' or 'tomat, soltørret'. Both options represent dried tomatoes, which is the primary characteristic of the ingredient. Since both have the same emission factor, either is a suitable match. 'soltørrede tomater' is chosen as it is a direct and concise match.",
                 "ingredient_id": "Ra00447",
                 "closest_match_name": "soltørrede tomater",
                 "ingredient": "25 g soltørrede tomater i olie",
@@ -178,7 +178,7 @@
                 "weight_in_kg": 0.125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '125 g parmesan' is parmesan cheese. The best match is 'parmesan ost, 32+' because it is an exact match for the ingredient. This is a realistic comparison as both are parmesan cheese.",
+                "closest_match_explanation": "The ingredient '125 g parmesan' is best matched with 'parmesan ost, 32+' as it is an exact match for parmesan cheese.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "parmesan ost, 32+",
                 "ingredient": "125 g parmesan",
@@ -198,7 +198,7 @@
                 "weight_in_kg": 0.0425
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 øko citron' is a lemon. The best match is 'citron' because it is an exact match for the ingredient. This is a realistic comparison as both are lemons.",
+                "closest_match_explanation": "The ingredient '0.5 øko citron' is best matched with 'citron' as it is a direct and unprocessed form of the ingredient.",
                 "ingredient_id": "Ra00328",
                 "closest_match_name": "citron",
                 "ingredient": "0.5 øko citron",
@@ -218,7 +218,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 spsk olivenolie' is olive oil. The best match is 'olivenolie' because it is an exact match for the ingredient. This is a realistic comparison as both are olive oil.",
+                "closest_match_explanation": "The ingredient '1 spsk olivenolie' is best matched with 'olivenolie' as it is an exact and direct match for the ingredient.",
                 "ingredient_id": "Ra00349",
                 "closest_match_name": "olivenolie",
                 "ingredient": "1 spsk olivenolie",
@@ -256,7 +256,7 @@
                 "weight_in_kg": 0.125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '1 stk burrata' is a type of cheese similar to mozzarella. The best match is 'mozzarella ost, 30+' because it is the closest cheese option available and shares similar characteristics and production processes with burrata, making it a realistic comparison.",
+                "closest_match_explanation": "The ingredient '1 stk burrata' is a type of fresh Italian cheese, similar to mozzarella. Therefore, 'mozzarella ost, 30+' is the most appropriate broader category match, as it is a similar type of cheese with a comparable production process and CO2 emissions.",
                 "ingredient_id": "Ra00080",
                 "closest_match_name": "mozzarella ost, 30+",
                 "ingredient": "1 stk burrata",
@@ -276,7 +276,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g pesto' is pesto. The best match is 'pesto' because it is an exact match for the ingredient. This is a realistic comparison as both are pesto.",
+                "closest_match_explanation": "The ingredient '25 g pesto' is best matched with 'pesto' as it is an exact and direct match for the ingredient.",
                 "ingredient_id": "Ra00381",
                 "closest_match_name": "pesto",
                 "ingredient": "25 g pesto",
@@ -296,7 +296,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '25 g parmesan' is parmesan cheese. The best match is 'parmesan ost, 32+' because it is an exact match for the ingredient. This is a realistic comparison as both are parmesan cheese.",
+                "closest_match_explanation": "The ingredient '25 g parmesan' is best matched with 'parmesan ost, 32+' as it is an exact match for parmesan cheese.",
                 "ingredient_id": "Ra00079",
                 "closest_match_name": "parmesan ost, 32+",
                 "ingredient": "25 g parmesan",
@@ -316,7 +316,7 @@
                 "weight_in_kg": 0.0125
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "The ingredient '0.5 håndfuld basilikum' is fresh basil. The best match is 'basilikum, frisk' because it is an exact match for the ingredient, representing the fresh form. This is a realistic comparison as both are fresh basil.",
+                "closest_match_explanation": "The ingredient '0.5 håndfuld basilikum' is best matched with 'basilikum, frisk' as it represents the fresh, unprocessed form of basil, which is the most appropriate match given no specific processing is mentioned for the ingredient.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basilikum, frisk",
                 "ingredient": "0.5 håndfuld basilikum",
