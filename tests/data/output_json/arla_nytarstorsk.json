@@ -1,7 +1,7 @@
 {
     "title": "Nytårstorsk - bagt torsk med sennepssauce",
     "url": "https://www.arla.dk/opskrifter/nytarstorsk-bagt-torsk-med-sennepssauce/",
-    "total_co2_kg": 3.9,
+    "total_co2_kg": 4.0,
     "number_of_persons": 4,
     "ingredients": [
         {
@@ -131,6 +131,20 @@
             "protein_g": 0.21
         },
         {
+            "name": "6 finthakkede skalotteløg (75 g)",
+            "ingredient_id": "Ra00485",
+            "weight_kg": 0.07,
+            "co2_per_kg": 0.8,
+            "co2_kg": 0.06,
+            "calculation_notes": "0.07 kg * 0.8 kg CO₂e/kg = 0.06 kg CO₂e",
+            "weight_estimation_notes": "75 g = 75 g = 0.075 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: rødløg",
+            "energy_kj": 146.3,
+            "fat_g": 0.21,
+            "carbohydrate_g": 7.0,
+            "protein_g": 1.12
+        },
+        {
             "name": "4 blødkogte vagtelæg",
             "ingredient_id": "Ra00108",
             "weight_kg": 0.04,
@@ -143,20 +157,6 @@
             "fat_g": 3.8,
             "carbohydrate_g": 0.44,
             "protein_g": 4.92
-        },
-        {
-            "name": "6 finthakkede skalotteløg (75 g)",
-            "ingredient_id": "Ra00264",
-            "weight_kg": 0.07,
-            "co2_per_kg": 0.4,
-            "co2_kg": 0.03,
-            "calculation_notes": "0.07 kg * 0.4 kg CO₂e/kg = 0.03 kg CO₂e",
-            "weight_estimation_notes": "75 g = 75 g = 0.075 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: løg, hakkede, dybfrost",
-            "energy_kj": 81.9,
-            "fat_g": 0.07,
-            "carbohydrate_g": 3.5,
-            "protein_g": 0.56
         },
         {
             "name": "1.5 tsk hvedemel",
@@ -258,8 +258,8 @@
         }
     ],
     "co2_per_person_kg": 1.0,
-    "energy_per_person_kj": 3667.0,
-    "calories_per_person_kcal": 876.0,
+    "energy_per_person_kj": 3683.0,
+    "calories_per_person_kcal": 880.0,
     "fat_per_person_g": 72.0,
     "carbohydrate_per_person_g": 22.0,
     "protein_per_person_g": 37.0

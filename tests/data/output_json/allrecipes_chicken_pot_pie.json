@@ -1,7 +1,7 @@
 {
     "title": "Dutch Oven Southwestern Chicken Pot Pie",
     "url": "https://www.allrecipes.com/recipe/267703/dutch-oven-southwestern-chicken-pot-pie/",
-    "total_co2_kg": 5.1,
+    "total_co2_kg": 5.4,
     "number_of_persons": 6,
     "ingredients": [
         {
@@ -59,6 +59,20 @@
             "fat_g": 6.72,
             "carbohydrate_g": 211.92,
             "protein_g": 16.32
+        },
+        {
+            "name": "4 tbsp chili powder",
+            "ingredient_id": "Ra00304",
+            "weight_kg": 0.06,
+            "co2_per_kg": 6.1,
+            "co2_kg": 0.37,
+            "calculation_notes": "0.06 kg * 6.1 kg CO₂e/kg = 0.37 kg CO₂e",
+            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: curry powder",
+            "energy_kj": 852.6,
+            "fat_g": 8.28,
+            "carbohydrate_g": 15.12,
+            "protein_g": 7.62
         },
         {
             "name": "1 red bell pepper",
@@ -129,20 +143,6 @@
             "fat_g": 0.2,
             "carbohydrate_g": 4.7,
             "protein_g": 1.8
-        },
-        {
-            "name": "4 tbsp chili powder",
-            "ingredient_id": "Ra00009",
-            "weight_kg": 0.06,
-            "co2_per_kg": 1.1,
-            "co2_kg": 0.07,
-            "calculation_notes": "0.06 kg * 1.1 kg CO₂e/kg = 0.07 kg CO₂e",
-            "weight_estimation_notes": "1 tbsp = 15 g, 4 * 15 g = 60 g = 0.06 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: pepper, hot chili, raw",
-            "energy_kj": 112.2,
-            "fat_g": 0.12,
-            "carbohydrate_g": 4.62,
-            "protein_g": 1.2
         },
         {
             "name": "2 medium carrots",
@@ -257,10 +257,10 @@
             "protein_g": null
         }
     ],
-    "co2_per_person_kg": 0.8,
-    "energy_per_person_kj": 1959.0,
-    "calories_per_person_kcal": 468.0,
-    "fat_per_person_g": 11.0,
-    "carbohydrate_per_person_g": 58.0,
-    "protein_per_person_g": 31.0
+    "co2_per_person_kg": 0.9,
+    "energy_per_person_kj": 2082.0,
+    "calories_per_person_kcal": 498.0,
+    "fat_per_person_g": 12.0,
+    "carbohydrate_per_person_g": 60.0,
+    "protein_per_person_g": 32.0
 }

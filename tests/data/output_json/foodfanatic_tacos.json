@@ -1,7 +1,7 @@
 {
     "title": "Tacos med oksekød, tomatsalsa og avocado",
     "url": "https://www.foodfanatic.dk/tacos-med-lynchili-og-salsa",
-    "total_co2_kg": 19.3,
+    "total_co2_kg": 17.0,
     "number_of_persons": 2,
     "ingredients": [
         {
@@ -17,20 +17,6 @@
             "fat_g": 9.0,
             "carbohydrate_g": 10.0,
             "protein_g": 45.0
-        },
-        {
-            "name": "2.5 dl oksefond/-bouillon",
-            "ingredient_id": "Ra00220",
-            "weight_kg": 0.25,
-            "co2_per_kg": 9.9,
-            "co2_kg": 2.48,
-            "calculation_notes": "0.25 kg * 9.9 kg CO₂e/kg = 2.48 kg CO₂e",
-            "weight_estimation_notes": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, oksekød, koncentreret, terning",
-            "energy_kj": 1690.0,
-            "fat_g": 8.0,
-            "carbohydrate_g": 30.0,
-            "protein_g": 42.5
         },
         {
             "name": "11 små majstortillas",
@@ -115,6 +101,20 @@
             "fat_g": 30.0,
             "carbohydrate_g": 0.0,
             "protein_g": 0.0
+        },
+        {
+            "name": "2.5 dl oksefond/-bouillon",
+            "ingredient_id": "Ra00215",
+            "weight_kg": 0.25,
+            "co2_per_kg": 0.6,
+            "co2_kg": 0.15,
+            "calculation_notes": "0.25 kg * 0.6 kg CO₂e/kg = 0.15 kg CO₂e",
+            "weight_estimation_notes": "1 dl = 100 g, 2.5 * 100 g = 250 g = 0.25 kg",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: bouillon, oksekød, spiseklar",
+            "energy_kj": 75.0,
+            "fat_g": 0.5,
+            "carbohydrate_g": 0.25,
+            "protein_g": 2.75
         },
         {
             "name": "300 g tomater",
@@ -299,6 +299,20 @@
             "protein_g": 0.37
         },
         {
+            "name": "saften af 0.5 lime",
+            "ingredient_id": "Ra00332",
+            "weight_kg": 0.03,
+            "co2_per_kg": 0.6,
+            "co2_kg": 0.01,
+            "calculation_notes": "0.03 kg * 0.6 kg CO₂e/kg = 0.01 kg CO₂e",
+            "weight_estimation_notes": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
+            "co2_emission_notes": "Bedste match i CO₂-databasen er: lime",
+            "energy_kj": 46.5,
+            "fat_g": 0.06,
+            "carbohydrate_g": 2.31,
+            "protein_g": 0.21
+        },
+        {
             "name": "salt",
             "ingredient_id": null,
             "weight_kg": 0.01,
@@ -307,20 +321,6 @@
             "calculation_notes": "Ingredient is ignored in calculation",
             "weight_estimation_notes": "Mængden af salt er ikke angivet. LLM-estimat er: 1 portion = 0.005 kg, 2 * 0.005 kg = 0.01 kg",
             "co2_emission_notes": "Ingredient is ignored in calculation",
-            "energy_kj": null,
-            "fat_g": null,
-            "carbohydrate_g": null,
-            "protein_g": null
-        },
-        {
-            "name": "saften af 0.5 lime",
-            "ingredient_id": "None",
-            "weight_kg": 0.03,
-            "co2_per_kg": null,
-            "co2_kg": null,
-            "calculation_notes": "Kan ikke beregne CO₂-udledning uden CO₂ pr. kg",
-            "weight_estimation_notes": "Ingrediens ikke fundet i generelle vægte. LLM-estimat er: 1 lime = 50 g, 0.5 * 50 g = 25 g = 0.025 kg.",
-            "co2_emission_notes": "Bedste match i CO₂-databasen er: No match",
             "energy_kj": null,
             "fat_g": null,
             "carbohydrate_g": null,
@@ -341,10 +341,10 @@
             "protein_g": null
         }
     ],
-    "co2_per_person_kg": 9.6,
-    "energy_per_person_kj": 8105.0,
-    "calories_per_person_kcal": 1937.0,
-    "fat_per_person_g": 89.0,
-    "carbohydrate_per_person_g": 184.0,
-    "protein_per_person_g": 73.0
+    "co2_per_person_kg": 8.5,
+    "energy_per_person_kj": 7321.0,
+    "calories_per_person_kcal": 1750.0,
+    "fat_per_person_g": 85.0,
+    "carbohydrate_per_person_g": 171.0,
+    "protein_per_person_g": 54.0
 }

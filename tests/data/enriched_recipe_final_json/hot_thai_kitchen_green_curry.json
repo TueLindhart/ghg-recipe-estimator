@@ -9,7 +9,7 @@
                 "weight_in_kg": 0.42
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Coconut milk is a direct match for '1.75 cups coconut milk'. This is the most realistic comparison as it directly corresponds to the ingredient. It is also the least processed option.",
+                "closest_match_explanation": "Coconut milk is a direct match for '1.75 cups coconut milk'. This is the most accurate match as it directly corresponds to the ingredient without any processing changes or broader categorizations.",
                 "ingredient_id": "Ra00404",
                 "closest_match_name": "coconut milk",
                 "ingredient": "1.75 cups coconut milk",
@@ -29,7 +29,7 @@
                 "weight_in_kg": 0.0525
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Green curry paste is a direct match for '3.5 tbsp green curry paste'. This is the most realistic comparison as it directly corresponds to the ingredient. It is also the least processed option.",
+                "closest_match_explanation": "Green curry paste is a direct match for '3.5 tbsp green curry paste'. This is the most accurate match as it directly corresponds to the ingredient without any processing changes or broader categorizations.",
                 "ingredient_id": "Ra00469",
                 "closest_match_name": "green curry paste",
                 "ingredient": "3.5 tbsp green curry paste",
@@ -49,7 +49,7 @@
                 "weight_in_kg": 0.24
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Chicken stock is a liquid base, and 'bouillon, chicken, prepared' is the closest match as it represents a prepared chicken broth, which is similar in nature and processing to chicken stock. Other options like 'minced chicken' or 'average chicken' are not suitable as they are solid forms of chicken and not a liquid stock.",
+                "closest_match_explanation": "Chicken stock is a liquid, ready-to-use product, making 'bouillon, chicken, prepared' the most appropriate match. This aligns with the common sense rule as 'prepared' indicates a ready-to-use liquid form, unlike 'minced chicken' or 'average chicken' which are solid forms of chicken.",
                 "ingredient_id": "Ra00213",
                 "closest_match_name": "bouillon, chicken, prepared",
                 "ingredient": "1 cup chicken stock",
@@ -69,7 +69,7 @@
                 "weight_in_kg": 0.453592
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "For '1 lb chicken thigh', 'chicken, leg, flesh and skin, raw' is the most appropriate match. Chicken thigh is a specific cut of chicken leg, and this option represents a raw, unprocessed form of chicken leg, making it the most realistic comparison. 'Minced chicken' is more processed, and 'average chicken' or 'chicken, whole' are broader categories that do not specifically represent a thigh.",
+                "closest_match_explanation": "For '1 lb chicken thigh', 'chicken, leg, flesh and skin, raw' is the best match. This option represents a raw, unprocessed cut of chicken, which is more specific and less processed than 'average chicken' or 'chicken, whole'. It also aligns with the common sense rule as chicken thigh is a specific part of the chicken leg.",
                 "ingredient_id": "Ra00053",
                 "closest_match_name": "chicken, leg, flesh and skin, raw",
                 "ingredient": "1 lb chicken thigh",
@@ -89,7 +89,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Palm sugar is a type of sugar. 'Sugar, sucrose, white' is the most appropriate match as it is a general category for sugar and is the most similar in nature and processing to palm sugar. 'Coconut milk' is not a sugar, and 'sugar, brown' is a less processed form of sugar, but 'sugar, sucrose, white' has a higher emission factor and is still a realistic comparison.",
+                "closest_match_explanation": "Palm sugar is a type of sugar. 'Sugar, sucrose, white' is a more general category of sugar and has a higher emission factor than 'sugar, brown', making it the best match according to the rule of choosing the highest emission factor when multiple viable options have similar processing levels.",
                 "ingredient_id": "Ra00318",
                 "closest_match_name": "sugar, sucrose, white",
                 "ingredient": "2 tbsp palm sugar",
@@ -109,16 +109,16 @@
                 "weight_in_kg": 0.0225
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Fish sauce is a fermented condiment made from fish. 'Fish balls, canned' is the most appropriate match as it is a fish product that has undergone processing (canning) and is a more realistic comparison than 'soya sauce' or 'chili sauce', which are not fish-based.",
-                "ingredient_id": "Ra00082",
-                "closest_match_name": "fish balls, canned",
+                "closest_match_explanation": "Fish sauce is a fermented condiment. While 'soya sauce' and 'chili sauce' are also condiments, 'fish balls, canned' is not a suitable match as it is a solid food product. Between 'soya sauce' and 'chili sauce', 'chili sauce' has a higher emission factor and is a more processed condiment, making it the best match.",
+                "ingredient_id": "Ra00484",
+                "closest_match_name": "chili sauce",
                 "ingredient": "1.5 tbsp fish sauce",
                 "unit": "kg CO2e per kg",
-                "co2_per_kg": 2.2,
-                "energy_kj_100g": 261.0,
-                "fat_g_100g": 1.0,
-                "carbohydrate_g_100g": 4.9,
-                "protein_g_100g": 8.3
+                "co2_per_kg": 2.1,
+                "energy_kj_100g": 975.0,
+                "fat_g_100g": 0.7,
+                "carbohydrate_g_100g": 55.1,
+                "protein_g_100g": 0.6
             }
         },
         {
@@ -138,7 +138,7 @@
                 "weight_in_kg": 0.55
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Bamboo shoots strips, canned, is a direct match for '1 550-ml can bamboo shoots strips'. This is the most realistic comparison as it directly corresponds to the ingredient and its processing.",
+                "closest_match_explanation": "Bamboo shoots strips in a can directly match 'bamboo shoots, canned, nonsalted'. This is the most accurate match as it directly corresponds to the ingredient and its processing (canned) without any broader categorizations.",
                 "ingredient_id": "Ra00365",
                 "closest_match_name": "bamboo shoots, canned, nonsalted",
                 "ingredient": "1 550-ml can bamboo shoots strips",
@@ -158,7 +158,7 @@
                 "weight_in_kg": 0.025
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Thai basil leaves are fresh basil leaves. 'Basil, fresh' is the most appropriate match as it directly corresponds to the ingredient and its state (fresh). 'Basil, dried' is a processed form, and 'green curry paste' or 'tea, leaves' are not suitable matches.",
+                "closest_match_explanation": "Thai basil leaves are fresh leaves. 'Basil, fresh' is the most appropriate match as it directly corresponds to the ingredient's form (fresh) and is less processed than 'basil, dried' or 'green curry paste'.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "1 cup Thai basil leaves",
@@ -178,7 +178,7 @@
                 "weight_in_kg": 0.0375
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Red bell pepper is a type of sweet pepper. 'Pepper, sweet, red, raw' is the most appropriate match as it directly corresponds to the ingredient and its state (raw). Other pepper options are either hot chilies or canned, which are not as suitable.",
+                "closest_match_explanation": "A red bell pepper is a type of sweet pepper. 'Pepper, sweet, red, raw' is the most accurate match as it directly corresponds to the ingredient's type and raw form, and it is less processed than 'pepper, hot chili, canned'.",
                 "ingredient_id": "Ra00001",
                 "closest_match_name": "pepper, sweet, red, raw",
                 "ingredient": "0.25 red bell pepper",
@@ -198,7 +198,7 @@
                 "weight_in_kg": 0.5
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Jasmine rice is a type of rice. 'Rice, parboiled, raw' is the most appropriate match as it is a raw form of rice, which is the least processed option among the rice-related choices. Other options like 'rice flour', 'rice pancakes', or 'rice noodles' are more processed forms of rice.",
+                "closest_match_explanation": "Jasmine rice is a type of rice. 'Rice, parboiled, raw' is the best match as it is a raw form of rice, and it has the highest emission factor among the rice options, aligning with the rule of choosing the highest emission factor when multiple viable options have similar processing levels.",
                 "ingredient_id": "Ra00300",
                 "closest_match_name": "rice, parboiled, raw",
                 "ingredient": "jasmine rice",
@@ -227,7 +227,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Coriander seeds are seeds used as a spice. 'Sesame seeds, decorticated' is the most appropriate match as it is another type of seed used as a spice, making it a realistic comparison. 'Curry powder' is a blend of spices, and 'pumpkin seeds, dried' or 'dill, raw' are less similar in common usage as a spice.",
+                "closest_match_explanation": "Coriander seeds are a type of seed used as a spice. 'Sesame seeds, decorticated' is the best match as it is also a seed and has the highest emission factor among the seed options, aligning with the rule of choosing the highest emission factor when multiple viable options have similar processing levels. 'Curry powder' is a processed mixture of spices and not a direct match for seeds.",
                 "ingredient_id": "Ra00142",
                 "closest_match_name": "sesame seeds, decorticated",
                 "ingredient": "2 tsp coriander seeds",
@@ -256,7 +256,7 @@
                 "weight_in_kg": 0.06
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Green Thai chilies are a type of hot chili pepper. 'Pepper, hot chili, raw' is the most appropriate match as it directly corresponds to the ingredient and its state (raw). 'Chili sauce' or 'green curry paste' are processed forms, and 'jalapenos' are a different type of chili.",
+                "closest_match_explanation": "Green Thai chilies are a type of hot chili pepper. 'Pepper, hot chili, raw' is the most accurate match as it directly corresponds to the ingredient's type and raw form, and it is less processed than 'green curry paste' or 'chili sauce'.",
                 "ingredient_id": "Ra00009",
                 "closest_match_name": "pepper, hot chili, raw",
                 "ingredient": "15 green Thai chilies",
@@ -285,7 +285,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Thai basil leaves are fresh basil leaves. 'Basil, fresh' is the most appropriate match as it directly corresponds to the ingredient and its state (fresh). 'Basil, dried' is a processed form, and 'green curry paste' or 'tea, leaves' are not suitable matches.",
+                "closest_match_explanation": "Thai basil leaves are fresh leaves. 'Basil, fresh' is the most appropriate match as it directly corresponds to the ingredient's form (fresh) and is less processed than 'basil, dried' or 'green curry paste'.",
                 "ingredient_id": "Ra00486",
                 "closest_match_name": "basil, fresh",
                 "ingredient": "15 Thai basil leaves",
@@ -305,7 +305,7 @@
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Lemongrass is an aromatic herb. 'Lemon, raw' is the most appropriate match as it is a fresh, aromatic ingredient with a similar culinary use in terms of adding a fresh, citrusy note. Other options like 'basil, fresh' or 'green curry paste' are less similar in flavor profile or form.",
+                "closest_match_explanation": "Lemongrass is an aromatic herb. 'Lemon, raw' is the closest match as it is also an aromatic plant used in cooking, and it is less processed than 'green curry paste' or 'basil, dried'.",
                 "ingredient_id": "Ra00328",
                 "closest_match_name": "lemon, raw",
                 "ingredient": "3 tbsp lemongrass",
@@ -325,7 +325,7 @@
                 "weight_in_kg": 0.015
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Galangal is a root similar to ginger. 'Ginger root, raw' is the most appropriate match as it is a raw root with similar culinary uses and characteristics. Other options like 'green curry paste' or 'curry powder' are processed mixtures, and 'coconut milk' is not a root.",
+                "closest_match_explanation": "Galangal is a root similar to ginger. 'Ginger root, raw' is the best match as it is also a raw root used as a spice, and it is less processed than 'green curry paste' or 'curry powder'.",
                 "ingredient_id": "Ra00261",
                 "closest_match_name": "ginger root, raw",
                 "ingredient": "1 tbsp galangal",
@@ -354,7 +354,7 @@
                 "weight_in_kg": 0.01
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Cilantro roots or stems are parts of the cilantro plant. 'Parsley, raw' is the most appropriate match as it is a fresh herb with similar culinary uses and is often used in similar contexts to cilantro. 'Parsley root, raw' or 'celeriac, celery root, raw' are roots but less commonly used as a direct substitute for cilantro roots/stems in the same way as parsley.",
+                "closest_match_explanation": "Cilantro roots or stems are parts of the cilantro plant. 'Parsley, raw' is the best match as it is also a fresh herb, and it has a higher emission factor than 'celeriac, celery root, raw' or 'basil, fresh', aligning with the rule of choosing the highest emission factor when multiple viable options have similar processing levels.",
                 "ingredient_id": "Ra00134",
                 "closest_match_name": "parsley, raw",
                 "ingredient": "2 cilantro roots or 4 big cilantro stems",
@@ -374,7 +374,7 @@
                 "weight_in_kg": 0.045
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Shallots are a type of onion. 'Red onion' is the most appropriate match as it is a raw onion, similar in nature and culinary use to shallots. 'Onions, spring, raw' and 'onion, raw' are also suitable, but 'red onion' has a higher emission factor and is still a realistic comparison. 'Onions, chopped and deepfried' is a processed form.",
+                "closest_match_explanation": "Shallots are a type of onion. 'Red onion' is the best match as it is also a type of onion and has a higher emission factor than 'onion, raw' or 'onions, spring, raw', aligning with the rule of choosing the highest emission factor when multiple viable options have similar processing levels. 'Onions, chopped and deepfried' is a more processed form.",
                 "ingredient_id": "Ra00485",
                 "closest_match_name": "red onion",
                 "ingredient": "3 tbsp shallots",
@@ -394,7 +394,7 @@
                 "weight_in_kg": 0.03
             },
             "co2_per_kg_db": {
-                "closest_match_explanation": "Garlic is a raw ingredient. 'Garlic, raw' is the most appropriate match as it directly corresponds to the ingredient and its state (raw). 'Garlic in oil' is a processed form, and 'garlic baguette, frozen' is a final meal item.",
+                "closest_match_explanation": "Garlic is a common ingredient. 'Garlic, raw' is the most appropriate match as it directly corresponds to the ingredient's raw form and is less processed than 'garlic in oil' or 'garlic baguette, frozen'.",
                 "ingredient_id": "Ra00136",
                 "closest_match_name": "garlic, raw",
                 "ingredient": "2 tbsp garlic",
