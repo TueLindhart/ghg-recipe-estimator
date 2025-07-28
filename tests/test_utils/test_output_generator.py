@@ -102,6 +102,7 @@ def enriched_recipe_db_english():
                 number_of_persons=4,
                 co2_per_person_kg=0.5,
                 energy_per_person_kj=895.0,  # 3580.0 / 4
+                calories_per_person_kcal=214,  # 895.0 / 4.184
                 fat_per_person_g=11.0,  # 45.4 / 4
                 carbohydrate_per_person_g=14.0,  # 57.5 / 4
                 protein_per_person_g=13,  # 50.0 / 4
