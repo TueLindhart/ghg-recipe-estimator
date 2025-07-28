@@ -1,19 +1,19 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '250 g frisk pasta' is a type of pasta. Among the available options, 'pasta' is the most appropriate broader category as it directly represents the core ingredient. 'frisk pasta, fettucine spinat' and 'fyldt frisk pasta' are more specific types of fresh pasta, but 'pasta' is a general category that encompasses all types of pasta. 'pastasovs' is a final meal and is not a suitable match. Therefore, 'pasta' is the best match.",
-            "ingredient_id": "Ra00234",
-            "closest_match_name": "pasta",
+            "closest_match_explanation": "The ingredient '250 g frisk pasta' is best matched with 'frisk pasta, fettucine spinat' because it is the most specific and least processed option available for fresh pasta. While 'pasta' is a broader category, 'frisk pasta, fettucine spinat' is a more precise match for 'frisk pasta' and has a lower emission factor than 'fyldt frisk pasta', making it a more realistic and conservative estimate.",
+            "ingredient_id": "Ra00388",
+            "closest_match_name": "frisk pasta, fettucine spinat",
             "ingredient": "250 g frisk pasta",
             "unit": "kg CO2e per kg",
-            "co2_per_kg": 2.1,
-            "energy_kj_100g": 1532.0,
-            "fat_g_100g": 1.8,
-            "carbohydrate_g_100g": 73.9,
-            "protein_g_100g": 13.5
+            "co2_per_kg": 1.5,
+            "energy_kj_100g": 1120.0,
+            "fat_g_100g": 2.5,
+            "carbohydrate_g_100g": 48.0,
+            "protein_g_100g": 11.0
         },
         {
-            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available in the database. 'hvidløg i olie' is more processed, and 'rødløg' is a different type of onion. 'hvidløgsbaguette, frost' is a final meal and not a suitable match.",
+            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' as it is the most direct and least processed form of garlic available. Other options like 'hvidløg i olie' or 'hvidløgsbaguette, frost' involve additional processing or are part of a prepared dish, which would not accurately reflect the emissions of raw garlic.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "2 fed hvidløg",
@@ -25,7 +25,7 @@
             "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' as it is the most direct and least processed form of onion available in the database. 'løg, ristede' and 'løg, hakkede, dybfrost' are more processed forms of onion, and 'rødløg' is a different type of onion.",
+            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' as it is the most direct and least processed form of onion available. Options like 'løg, ristede' or 'løg, hakkede, dybfrost' involve additional processing, and 'rødløg' is a specific type of onion, making 'løg' the most appropriate general match for a single onion.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "1 løg",
@@ -37,7 +37,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 bdt grønne asparges' is best matched with 'asparges, grøn' as it is the most direct and least processed form of green asparagus available in the database. 'grønne bønner, haricot verts' and 'grønne ærter' are different vegetables. 'grønne bønner, haricots verts, frost' is a more processed form of green beans.",
+            "closest_match_explanation": "The ingredient '1 bdt grønne asparges' is best matched with 'asparges, grøn' as it is the most direct and least processed form of green asparagus available. Other options like 'grønne bønner' or 'grønne ærter' are different vegetables, and 'grønne bønner, haricots verts, frost' is a processed form of a different vegetable.",
             "ingredient_id": "Ra00163",
             "closest_match_name": "asparges, grøn",
             "ingredient": "1 bdt grønne asparges",
@@ -49,7 +49,7 @@
             "protein_g_100g": 1.8
         },
         {
-            "closest_match_explanation": "The ingredient '1 squash' is best matched with 'squash' as it is the most direct and least processed form of squash available in the database. 'avocado' and 'aubergine' are different vegetables. 'rasp' is a different ingredient entirely.",
+            "closest_match_explanation": "The ingredient '1 squash' is best matched with 'squash' as it is the most direct and least processed form of squash available. Other options like 'avocado' or 'aubergine' are different vegetables, and 'rasp' is a processed food item.",
             "ingredient_id": "Ra00003",
             "closest_match_name": "squash",
             "ingredient": "1 squash",
@@ -61,7 +61,7 @@
             "protein_g_100g": 1.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 stor håndfuld frisk basilikum' is best matched with 'basilikum, frisk' as it is the most direct and least processed form of fresh basil available in the database. 'basilikum, tørret' is a more processed form of basil. 'persille' is a different herb. 'pesto' is a final product and not a suitable match.",
+            "closest_match_explanation": "The ingredient '1 stor håndfuld frisk basilikum' is best matched with 'basilikum, frisk' as it directly specifies 'frisk basilikum', making it the most accurate and least processed option. 'Basilikum, tørret' is a processed form, and 'persille' and 'pesto' are different ingredients or prepared products.",
             "ingredient_id": "Ra00486",
             "closest_match_name": "basilikum, frisk",
             "ingredient": "1 stor håndfuld frisk basilikum",
@@ -73,7 +73,7 @@
             "protein_g_100g": 3.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 dl fløde' is best matched with 'fløde 38 %, piskefløde' as it is the most direct and least processed form of cream available in the database. 'flødeis' and 'likør, kaffe med fløde' are final products. 'flødeost, ost 60+' is a different dairy product.",
+            "closest_match_explanation": "The ingredient '2 dl fløde' is best matched with 'fløde 38 %, piskefløde' as it is the most direct and least processed form of cream available. 'Flødeis' and 'likør, kaffe med fløde' are processed products, and 'flødeost, ost 60+' is a different dairy product.",
             "ingredient_id": "Ra00345",
             "closest_match_name": "fløde 38 %, piskefløde",
             "ingredient": "2 dl fløde",
@@ -85,7 +85,7 @@
             "protein_g_100g": 2.1
         },
         {
-            "closest_match_explanation": "The ingredient '1 dl vand' is best matched with 'vand, postevand' as it is the most direct and least processed form of water available in the database. 'vandmelon' is a fruit. 'tun i vand, konserves' and 'sild' are fish products.",
+            "closest_match_explanation": "The ingredient '1 dl vand' is best matched with 'vand, postevand' as it is the most direct and least processed form of water available. Other options like 'vandmelon', 'tun i vand, konserves', or 'sild' are completely different food items.",
             "ingredient_id": "Ra00068",
             "closest_match_name": "vand, postevand",
             "ingredient": "1 dl vand",
@@ -97,7 +97,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '6 spsk revet parmesan' is best matched with 'parmesan ost, 32+' as it is the most direct and least processed form of parmesan cheese available in the database. 'vegansk ost, revet eller skiver' is a different type of cheese. 'fyldt frisk pasta' is a final product. 'brie, ost 45+' is a different type of cheese.",
+            "closest_match_explanation": "The ingredient '6 spsk revet parmesan' is best matched with 'parmesan ost, 32+' as it is the most direct and least processed form of parmesan cheese available. 'Vegansk ost, revet eller skiver' is a different type of cheese, and 'fyldt frisk pasta' and 'brie, ost 45+' are different food items.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "parmesan ost, 32+",
             "ingredient": "6 spsk revet parmesan",
@@ -109,7 +109,7 @@
             "protein_g_100g": 32.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 håndfuld mozzarella' is best matched with 'mozzarella ost, 30+' as it is the most direct and least processed form of mozzarella cheese available in the database. 'mozarella sticks' is a final product. 'parmesan ost, 32+' is a different type of cheese. 'pasta' is a different ingredient entirely.",
+            "closest_match_explanation": "The ingredient '1 håndfuld mozzarella' is best matched with 'mozzarella ost, 30+' as it is the most direct and least processed form of mozzarella cheese available. 'Mozarella sticks' are a processed product, and 'parmesan ost, 32+' and 'pasta' are different food items.",
             "ingredient_id": "Ra00080",
             "closest_match_name": "mozzarella ost, 30+",
             "ingredient": "1 håndfuld mozzarella",
@@ -121,7 +121,7 @@
             "protein_g_100g": 28.3
         },
         {
-            "closest_match_explanation": "The ingredient 'Lidt salt' is best matched with 'salt, bordsalt (jodberiget)' as it is the most direct and least processed form of salt available in the database. 'lakrids, salt' is a candy. 'smør, saltet' is a dairy product. 'sild, marineret' is a fish product.",
+            "closest_match_explanation": "The ingredient 'Lidt salt' is best matched with 'salt, bordsalt (jodberiget)' as it is the most direct and least processed form of salt available. Other options like 'lakrids, salt', 'smør, saltet', or 'sild, marineret' are different food items that contain salt but are not simply salt.",
             "ingredient_id": "Ra00151",
             "closest_match_name": "salt, bordsalt (jodberiget)",
             "ingredient": "Lidt salt",
@@ -133,7 +133,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient 'Lidt peber' is best matched with 'peber, sort' as it is the most direct and least processed form of pepper available in the database. 'peber, chili' and 'peber, chili, konserves' are different types of pepper. 'peberfrugt' is a vegetable.",
+            "closest_match_explanation": "The ingredient 'Lidt peber' is best matched with 'peber, sort' as it is the most common and least processed form of pepper. 'Peber, chili' and 'peberfrugt' are different types of peppers, and 'peber, chili, konserves' is a processed form of chili.",
             "ingredient_id": "Ra00302",
             "closest_match_name": "peber, sort",
             "ingredient": "Lidt peber",
@@ -145,7 +145,7 @@
             "protein_g_100g": 10.9
         },
         {
-            "closest_match_explanation": "The ingredient 'Olie' is a general term for oil. Among the available options, 'olivenolie' has the highest emission factor and is a common type of oil. 'rapsolie' and 'solsikkeolie' are also common oils but have lower emission factors. 'oliven tapenade' is a final product and not a suitable match. Therefore, 'olivenolie' is the best match.",
+            "closest_match_explanation": "The ingredient 'Olie' is best matched with 'olivenolie' as it is a common type of cooking oil and has the highest emission factor among the available oil options, providing a conservative estimate. While 'rapsolie' and 'solsikkeolie' are also oils, 'olivenolie' is a widely used cooking oil, and 'oliven tapenade' is a prepared product.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "Olie",

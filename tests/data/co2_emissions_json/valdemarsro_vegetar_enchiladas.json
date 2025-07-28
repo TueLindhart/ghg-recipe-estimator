@@ -1,7 +1,7 @@
 {
     "emissions": [
         {
-            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient. The other options, 'hvidløg i olie' and 'hvidløgsbaguette, frost', involve additional processing or are part of a prepared meal, making 'hvidløg' the most appropriate match for raw garlic.",
+            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "2 fed hvidløg",
@@ -13,7 +13,7 @@
             "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 spsk olivenolie' is best matched with 'olivenolie' as it is an exact match. This choice directly reflects the ingredient without unnecessary processing or broader categorization.",
+            "closest_match_explanation": "The ingredient '1 spsk olivenolie' is directly matched to 'olivenolie' as it is the exact ingredient and represents the least processed form of olive oil among the given options. This adheres to the rule of prioritizing direct matches and considering the processing level.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "1 spsk olivenolie",
@@ -25,7 +25,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient. The other options, 'løg, ristede' and 'løg, hakkede, dybfrost', involve additional processing, making 'løg' the most appropriate match for a raw onion.",
+            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' as it is the most direct and least processed form of onion available. This follows the principle of selecting the least processed option when no specific processing is indicated for the ingredient.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "1 løg",
@@ -37,7 +37,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 dl grøntsagsbouillon' is best matched with 'bouillon, hønsekød, spiseklar' as it is the closest available option for a ready-to-use bouillon. While 'grøntsagsbouillon' is not directly listed, 'bouillon, hønsekød, spiseklar' represents a general, ready-to-use bouillon, which is a reasonable broader category. The other bouillon options are either meat-based and concentrated, or a 'grøntsagsbøf' which is a final meal, making 'bouillon, hønsekød, spiseklar' the most appropriate match.",
+            "closest_match_explanation": "The ingredient '1 dl grøntsagsbouillon' is best matched with 'bouillon, hønsekød, spiseklar' because it is a ready-to-eat liquid bouillon, which is consistent with the common sense interpretation of '1 dl' being a liquid measure. While 'grøntsagsbouillon' is not directly available, 'bouillon, hønsekød, spiseklar' is the closest in form and processing to a ready-to-use liquid bouillon, and it has a lower emission factor than the concentrated beef bouillon, making it a more reasonable match for a vegetable-based bouillon.",
             "ingredient_id": "Ra00213",
             "closest_match_name": "bouillon, hønsekød, spiseklar",
             "ingredient": "1 dl grøntsagsbouillon",
@@ -49,7 +49,7 @@
             "protein_g_100g": 0.3
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because it is the closest option for canned tomatoes. 'Hakkede tomater' implies a processed, canned form, and 'flået, konserves' (peeled, canned) is the most similar processing level available. The other options, 'soltørrede tomater' and 'tomatpure, koncentreret', represent different forms of processing, making 'tomat, flået, konserves' the most appropriate match.",
+            "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because 'hakkede tomater' implies a processed, canned form of tomatoes, and 'flået, konserves' (peeled, canned) is the closest option in terms of processing and form. This aligns with the rule of considering the amount of processing.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomat, flået, konserves",
             "ingredient": "1 dåse hakkede tomater",
@@ -61,7 +61,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 spsk olivenolie' is best matched with 'olivenolie' as it is an exact match. This choice directly reflects the ingredient without unnecessary processing or broader categorization.",
+            "closest_match_explanation": "The ingredient '1 spsk olivenolie' is directly matched to 'olivenolie' as it is the exact ingredient and represents the least processed form of olive oil among the given options. This adheres to the rule of prioritizing direct matches and considering the processing level.",
             "ingredient_id": "Ra00349",
             "closest_match_name": "olivenolie",
             "ingredient": "1 spsk olivenolie",
@@ -73,7 +73,7 @@
             "protein_g_100g": 0.0
         },
         {
-            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' because it is the most direct and least processed form of onion available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient. The other options, 'løg, ristede' and 'løg, hakkede, dybfrost', involve additional processing, making 'løg' the most appropriate match for a raw onion.",
+            "closest_match_explanation": "The ingredient '1 løg' is best matched with 'løg' as it is the most direct and least processed form of onion available. This follows the principle of selecting the least processed option when no specific processing is indicated for the ingredient.",
             "ingredient_id": "Ra00266",
             "closest_match_name": "løg",
             "ingredient": "1 løg",
@@ -85,7 +85,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient. The other options, 'hvidløg i olie' and 'hvidløgsbaguette, frost', involve additional processing or are part of a prepared meal, making 'hvidløg' the most appropriate match for raw garlic.",
+            "closest_match_explanation": "The ingredient '2 fed hvidløg' is best matched with 'hvidløg' because it is the most direct and least processed form of garlic available in the database. This aligns with the principle of choosing the least processed option when no specific processing is mentioned for the ingredient.",
             "ingredient_id": "Ra00136",
             "closest_match_name": "hvidløg",
             "ingredient": "2 fed hvidløg",
@@ -97,7 +97,7 @@
             "protein_g_100g": 6.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 squash' is best matched with 'squash' as it is an exact match. This choice directly reflects the ingredient without unnecessary processing or broader categorization. The other options are different vegetables or a processed product (rasp), which are not suitable matches.",
+            "closest_match_explanation": "The ingredient '1 squash' is directly matched to 'squash' as it is the exact ingredient and represents the least processed form available. This aligns with the rule of prioritizing direct matches and choosing the least processed option.",
             "ingredient_id": "Ra00003",
             "closest_match_name": "squash",
             "ingredient": "1 squash",
@@ -109,7 +109,7 @@
             "protein_g_100g": 1.4
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because it is the closest option for canned tomatoes. 'Hakkede tomater' implies a processed, canned form, and 'flået, konserves' (peeled, canned) is the most similar processing level available. The other options, 'soltørrede tomater' and 'tomatpure, koncentreret', represent different forms of processing, making 'tomat, flået, konserves' the most appropriate match.",
+            "closest_match_explanation": "The ingredient '1 dåse hakkede tomater' is best matched with 'tomat, flået, konserves' because 'hakkede tomater' implies a processed, canned form of tomatoes, and 'flået, konserves' (peeled, canned) is the closest option in terms of processing and form. This aligns with the rule of considering the amount of processing.",
             "ingredient_id": "Ra00361",
             "closest_match_name": "tomat, flået, konserves",
             "ingredient": "1 dåse hakkede tomater",
@@ -121,7 +121,7 @@
             "protein_g_100g": 1.2
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse sorte bønner' is best matched with 'sorte bønner, konserves' as it is an exact match, reflecting the canned nature of the ingredient. This choice directly reflects the ingredient without unnecessary processing or broader categorization.",
+            "closest_match_explanation": "The ingredient '1 dåse sorte bønner' is best matched with 'sorte bønner, konserves' as it is a direct match that specifies the canned form, aligning with the processing level of the ingredient.",
             "ingredient_id": "Ra00439",
             "closest_match_name": "sorte bønner, konserves",
             "ingredient": "1 dåse sorte bønner",
@@ -133,7 +133,7 @@
             "protein_g_100g": 5.3
         },
         {
-            "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' as it is an exact match, reflecting the canned nature of the ingredient. This choice directly reflects the ingredient without unnecessary processing or broader categorization.",
+            "closest_match_explanation": "The ingredient '1 dåse kidneybønner' is best matched with 'kidney bønner, konserves' as it is a direct match that specifies the canned form, aligning with the processing level of the ingredient.",
             "ingredient_id": "Ra00422",
             "closest_match_name": "kidney bønner, konserves",
             "ingredient": "1 dåse kidneybønner",
@@ -145,7 +145,7 @@
             "protein_g_100g": 5.0
         },
         {
-            "closest_match_explanation": "The ingredient '300 g majs' is best matched with 'majs, kerner, konserves' because it is the most common form of corn used in recipes when a specific form is not mentioned, and it represents a processed form (kernels, canned) which is a reasonable assumption for 'majs' in a recipe context. While 'majs, hele kolber' is also an option, 'majs, kerner, konserves' is more likely for a general 'majs' ingredient. 'Majsmel' is a different product, and 'babymajs' is a specific type of corn. Therefore, 'majs, kerner, konserves' is the most appropriate match.",
+            "closest_match_explanation": "The ingredient '300 g majs' is best matched with 'majs, kerner, konserves' because it is common for corn to be sold in kernels and canned, which is a processed form. This is a more realistic match than whole cobs or cornmeal, considering the typical use of 'majs' in recipes without further specification.",
             "ingredient_id": "Ra00299",
             "closest_match_name": "majs, kerner, konserves",
             "ingredient": "300 g majs",
@@ -157,7 +157,7 @@
             "protein_g_100g": 3.1
         },
         {
-            "closest_match_explanation": "The ingredient '8 tortillas pandekager' is best matched with 'tortillabrød, hvede' as it is the most direct and common form of tortilla available in the database. This choice directly reflects the ingredient without unnecessary processing or broader categorization. The other options are either different types of pancakes or snack items, making 'tortillabrød, hvede' the most appropriate match.",
+            "closest_match_explanation": "The ingredient '8 tortillas pandekager' is best matched with 'tortillabrød, hvede' as it is a direct and specific match for the type of pancake mentioned. This aligns with prioritizing direct matches.",
             "ingredient_id": "Ra00401",
             "closest_match_name": "tortillabrød, hvede",
             "ingredient": "8 tortillas pandekager",
@@ -169,7 +169,7 @@
             "protein_g_100g": 8.0
         },
         {
-            "closest_match_explanation": "The ingredient '150 g cheddar ost' is best matched with 'parmesan ost, 32+' because both are hard cheeses with similar production processes and therefore likely to have similar CO2 emissions. While 'gedeost, ost' and 'brie, ost 45+' are also cheeses, their production methods and fat content can differ significantly from cheddar, making parmesan a more realistic comparison for CO2 emissions.",
+            "closest_match_explanation": "The ingredient '150 g cheddar ost' is best matched with 'parmesan ost, 32+' because both are hard cheeses and are likely to have similar CO2 emissions due to similar production processes. Among the available cheese options, parmesan has the highest emission factor, which is chosen as a conservative estimate when multiple viable options exist with similar processing levels.",
             "ingredient_id": "Ra00079",
             "closest_match_name": "parmesan ost, 32+",
             "ingredient": "150 g cheddar ost",
@@ -181,7 +181,7 @@
             "protein_g_100g": 32.9
         },
         {
-            "closest_match_explanation": "The ingredient '1 håndfuld frisk koriander' is best matched with 'persille' because both are fresh herbs with similar growth and processing characteristics, making their CO2 emissions comparable. The other options are vegetables, which are not suitable matches for a fresh herb.",
+            "closest_match_explanation": "The ingredient '1 håndfuld frisk koriander' is best matched with 'persille' as both are fresh herbs commonly used in similar culinary contexts. While not an exact match, 'persille' is the closest available option for a fresh herb, and it is a reasonable comparison in terms of CO2 emissions for fresh leafy greens.",
             "ingredient_id": "Ra00134",
             "closest_match_name": "persille",
             "ingredient": "1 håndfuld frisk koriander",
@@ -193,7 +193,7 @@
             "protein_g_100g": 3.7
         },
         {
-            "closest_match_explanation": "The ingredient '1 spsk smør' is best matched with 'smør, saltet' as it is the most direct and common form of butter available in the database. This choice directly reflects the ingredient without unnecessary processing or broader categorization. The other options are different types of spreads, making 'smør, saltet' the most appropriate match.",
+            "closest_match_explanation": "The ingredient '1 spsk smør' is best matched with 'smør, saltet' as it is a direct and specific match for butter. This aligns with prioritizing direct matches and choosing the least processed form when no specific processing is mentioned.",
             "ingredient_id": "Ra00037",
             "closest_match_name": "smør, saltet",
             "ingredient": "1 spsk smør",
