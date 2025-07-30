@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Button, Card, Modal } from "flowbite-svelte";
   import { InfoCircleOutline } from "flowbite-svelte-icons";
+  import ThermometerChart from "./ThermometerChart.svelte";
 
   export let co2PerPerson: number;
   export let mealBudget: number;
@@ -28,22 +29,40 @@
   <div class="flex flex-col h-full min-h-0 lg:min-h-52">
     <!-- Centered container for budget comparisons -->
     <div class="flex-grow flex items-center justify-center">
-      <div class="flex justify-center items-center gap-12">
-        <div class="flex flex-col items-center justify-center">
-          <span class="text-3xl font-bold text-[#404040]"
-            >{pctMeal.toFixed(0)}%</span
-          >
-          <span class="text-sm mt-2 text-[#404040]"
-            >af dit CO2e-budget per måltid</span
-          >
+      <div class="flex justify-center items-start gap-12">
+        <div class="flex flex-row items-start gap-2">
+          <div class="flex flex-col items-center justify-center">
+            <span class="text-3xl font-bold text-[#404040]"
+              >{pctMeal.toFixed(0)}%</span
+            >
+            <span class="text-base sm:text-sm mt-2 sm:mt-1 text-[#404040] text-center"
+              >af dit CO2e-budget per måltid</span
+            >
+          </div>
+          <div class="flex items-start">
+            <ThermometerChart 
+              value={pctMeal} 
+              budget={mealBudget} 
+              label="måltid" 
+            />
+          </div>
         </div>
-        <div class="flex flex-col items-center">
-          <span class="text-3xl font-bold text-[#404040]"
-            >{pctDay.toFixed(0)}%</span
-          >
-          <span class="text-sm mt-2 text-[#404040]"
-            >af dit daglige måltids CO2e-budget</span
-          >
+        <div class="flex flex-row items-start gap-2">
+          <div class="flex flex-col items-center">
+            <span class="text-3xl font-bold text-[#404040]"
+              >{pctDay.toFixed(0)}%</span
+            >
+            <span class="text-base sm:text-sm mt-2 sm:mt-1 text-[#404040] text-center"
+              >af dit daglige måltids CO2e-budget</span
+            >
+          </div>
+          <div class="flex items-start">
+            <ThermometerChart 
+              value={pctDay} 
+              budget={dayBudget} 
+              label="dag" 
+            />
+          </div>
         </div>
       </div>
     </div>
