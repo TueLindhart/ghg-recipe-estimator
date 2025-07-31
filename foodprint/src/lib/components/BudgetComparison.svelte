@@ -12,6 +12,32 @@
   $: pctMeal = (co2PerPerson / mealBudget) * 100;
   $: pctDay = (co2PerPerson / dayBudget) * 100;
 
+  // Color logic: green below 100%, gradient above 100% (based on meal percentage)
+  function getThermometerColor(percentage: number) {
+    const maxValue = 500; // 500% for meal budget
+    if (percentage <= 100) {
+      return "#5ED4A3"; // Green for values at or below budget
+    } else {
+      // Apply gradient similar to GradientHeading
+      const ratio = Math.min((percentage - 100) / (maxValue - 100), 1);
+      if (ratio <= 0.5) {
+        // Transition from green to yellow
+        const r = Math.round(94 + (247 - 94) * (ratio * 2));
+        const g = Math.round(212 + (215 - 212) * (ratio * 2));
+        const b = Math.round(163 + (134 - 163) * (ratio * 2));
+        return `rgb(${r}, ${g}, ${b})`;
+      } else {
+        // Transition from yellow to red
+        const r = Math.round(251 + (247 - 251) * ((ratio - 0.5) * 2));
+        const g = Math.round(215 + (121 - 215) * ((ratio - 0.5) * 2));
+        const b = Math.round(134 + (125 - 134) * ((ratio - 0.5) * 2));
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+    }
+  }
+
+  $: thermometerColor = getThermometerColor(pctMeal);
+
   let showModal = false;
 </script>
 
@@ -29,21 +55,25 @@
   <div class="flex flex-col h-full min-h-0 lg:min-h-52">
     <!-- Centered container for budget comparisons -->
     <div class="flex-grow flex items-center justify-center">
-      <div class="flex justify-center items-start gap-12">
+      <div
+        class="flex justify-center items-start gap-8 w-full max-w-md mx-auto"
+      >
         <div class="flex flex-row items-start gap-2">
           <div class="flex flex-col items-center justify-center">
             <span class="text-3xl font-bold text-[#404040]"
               >{pctMeal.toFixed(0)}%</span
             >
-            <span class="text-base sm:text-sm mt-2 sm:mt-1 text-[#404040] text-center"
+            <span
+              class="text-base sm:text-sm mt-2 sm:mt-1 text-[#404040] text-center"
               >af dit CO2e-budget per måltid</span
             >
           </div>
           <div class="flex items-start">
-            <ThermometerChart 
-              value={pctMeal} 
-              budget={mealBudget} 
-              label="måltid" 
+            <ThermometerChart
+              value={pctMeal}
+              budget={mealBudget}
+              label="måltid"
+              color={thermometerColor}
             />
           </div>
         </div>
@@ -52,15 +82,17 @@
             <span class="text-3xl font-bold text-[#404040]"
               >{pctDay.toFixed(0)}%</span
             >
-            <span class="text-base sm:text-sm mt-2 sm:mt-1 text-[#404040] text-center"
+            <span
+              class="text-base sm:text-sm mt-2 sm:mt-1 text-[#404040] text-center"
               >af dit daglige måltids CO2e-budget</span
             >
           </div>
           <div class="flex items-start">
-            <ThermometerChart 
-              value={pctDay} 
-              budget={dayBudget} 
-              label="dag" 
+            <ThermometerChart
+              value={pctDay}
+              budget={dayBudget}
+              label="dag"
+              color={thermometerColor}
             />
           </div>
         </div>
@@ -68,7 +100,7 @@
     </div>
 
     <!-- Average person comparison -->
-    <div class="flex flex-col items-center mt-8">
+    <div class="flex flex-col items-center mt-12">
       <p class="text-sm text-center">
         Gennemsnitsdansker udleder {avgMeal} CO2e per måltid
       </p>
