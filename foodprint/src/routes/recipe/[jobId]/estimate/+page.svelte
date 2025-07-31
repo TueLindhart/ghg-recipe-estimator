@@ -112,13 +112,13 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
             mealBudget={data.comparison.budget_emission_per_person.meal}
             dayBudget={data.comparison.budget_emission_per_person.day}
             avgMeal={data.comparison.avg_emission_per_person.meal}
-            cardClass="max-w-full lg:p-6 lg:py-12  relative lg:min-h-60 flex flex-col justify-center"
+            cardClass="max-w-full pt-12 lg:p-6 lg:pt-12 lg:pb-4 relative lg:min-h-60 flex flex-col justify-center"
           />
         </TabItem>
         <TabItem title="Svare til">
           <EquivalentComparison
             comparisons={data.comparison.comparisons}
-            cardClass="max-w-full lg:p-6 lg:py-12  relative lg:min-h-60  flex flex-col justify-center"
+            cardClass="max-w-full pt-12 lg:p-6 lg:pt-12 lg:pb-4 relative lg:min-h-60 flex flex-col justify-center"
           />
         </TabItem>
         <TabItem title="Næringsindhold">
@@ -128,7 +128,7 @@ CO2e Udledning Noter: ${ing.co2_emission_notes}`;
             fatPerPersonG={data.result.fat_per_person_g ?? 0}
             carbohydratePerPersonG={data.result.carbohydrate_per_person_g ?? 0}
             proteinPerPersonG={data.result.protein_per_person_g ?? 0}
-            cardClass="max-w-full lg:p-6 lg:py-12 relative lg:min-h-60 flex flex-col justify-center"
+            cardClass="max-w-full pt-12 lg:p-6 lg:pt-12 lg:pb-4 relative lg:min-h-60 flex flex-col justify-center"
           />
         </TabItem>
       </Tabs>

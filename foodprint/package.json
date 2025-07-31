@@ -25,6 +25,7 @@
 		"vite": "^6.2.5"
 	},
 	"dependencies": {
+		"chart.js": "^4.5.0",
 		"flowbite-svelte": "^0.48.4",
 		"flowbite-svelte-icons": "^2.1.0",
 		"lucide-svelte": "^0.525.0"
