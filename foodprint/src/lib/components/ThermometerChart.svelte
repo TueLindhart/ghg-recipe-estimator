@@ -6,6 +6,9 @@
 
   // Calculate max value (5x budget for meal, 2x budget for day)
   $: maxValue = label.includes("måltid") ? 500 : 200; // 500% for meal, 200% for day
+  
+  // Fixed amount to add when value exceeds maxValue
+  const fixedOverflowAmount = 50; // Additional percentage points to show when exceeding max
 
   // Color logic: green below 100%, gradient above 100%
   function getColor(percentage: number) {
@@ -30,8 +33,11 @@
     }
   }
 
-  // Calculate the height percentage for the bar
-  $: barHeight = Math.min((value / maxValue) * 100, 100);
+  // Calculate the effective max value for display (max of actual percentage + fixed amount or maxValue)
+  $: effectiveMaxValue = Math.max(value + fixedOverflowAmount, maxValue);
+  
+  // Calculate the height percentage for the bar based on the effective max value
+  $: barHeight = Math.min((value / effectiveMaxValue) * 100, 100);
   $: barColor = color || getColor(value); // Use provided color or calculate
   $: actualValue = ((value * budget) / 100).toFixed(1);
 </script>
@@ -52,7 +58,7 @@
     <!-- 100% budget line -->
     <div
       class="absolute w-8 border-t-2 border-gray-600"
-      style="bottom: {(100 / maxValue) * 100}%"
+      style="bottom: {(100 / effectiveMaxValue) * 100}%"
     >
       <!-- Budget value label (positioned to the right) -->
       <div class="absolute left-10 -top-2 text-xs font-medium text-gray-600">
